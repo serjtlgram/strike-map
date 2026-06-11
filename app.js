@@ -1,4 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // i18n Dictionary
+    const i18n = {
+        title: { ru: 'Пораженные объекты', uk: 'Уражені об\'єкти' },
+        search: { ru: 'Поиск по названию или региону...', uk: 'Пошук за назвою чи регіоном...' },
+        filter_all: { ru: 'Все', uk: 'Всі' },
+        filter_oil: { ru: 'Нефтегаз', uk: 'Нафтогаз' },
+        filter_logistics: { ru: 'Логистика', uk: 'Логістика' },
+        filter_military: { ru: 'ВПК / Авиабазы', uk: 'ВПК / Авіабази' },
+        total: { ru: 'Всего объектов:', uk: 'Всього об\'єктів:' },
+        updated: { ru: 'Обновлено: Июнь 2026', uk: 'Оновлено: Червень 2026' },
+        mobile_btn: { ru: 'Список объектов', uk: 'Список об\'єктів' },
+        distance: { ru: 'Дальность: ~{dist} км от линии фронта', uk: 'Дальність: ~{dist} км від лінії фронту' },
+        not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені' }
+    };
+
+    let currentLang = localStorage.getItem('strike-map-lang') || 'uk';
+
+    function setLang(lang) {
+        currentLang = lang;
+        localStorage.setItem('strike-map-lang', lang);
+        
+        document.querySelectorAll('.lang-selector').forEach(btn => {
+            if (btn.getAttribute('data-set-lang') === lang) {
+                btn.classList.add('text-blue-600', 'bg-white', 'shadow-sm');
+                btn.classList.remove('text-slate-500', 'hover:text-slate-700');
+            } else {
+                btn.classList.remove('text-blue-600', 'bg-white', 'shadow-sm');
+                btn.classList.add('text-slate-500', 'hover:text-slate-700');
+            }
+        });
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (i18n[key]) el.textContent = i18n[key][lang];
+        });
+        
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (i18n[key]) el.placeholder = i18n[key][lang];
+        });
+
+        // Use setTimeout to ensure functions are defined
+        if (typeof applyFilters === 'function') applyFilters();
+    }
+
+    document.querySelectorAll('.lang-selector').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setLang(btn.getAttribute('data-set-lang'));
+        });
+    });
+
     // 1. Initialize Map
     const map = L.map('map', {
         zoomControl: false
@@ -81,10 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTheme(savedTheme);
 
     function getCategoryType(category) {
+        if (!category) return 'other';
         const cat = category.toLowerCase();
-        if (cat.includes('нефтегаз')) return 'oilgas';
-        if (cat.includes('логистика')) return 'logistics';
-        if (cat.includes('впк') || cat.includes('авиабаза')) return 'military';
+        if (cat.includes('нефтегаз') || cat.includes('нафтогаз')) return 'oilgas';
+        if (cat.includes('логистика') || cat.includes('логістика')) return 'logistics';
+        if (cat.includes('впк') || cat.includes('авиабаза') || cat.includes('авіабаза')) return 'military';
         return 'other';
     }
 
@@ -142,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${item.distance !== undefined ? `
                     <div class="flex items-start gap-2">
                         <svg class="w-4 h-4 mt-0.5 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                        <span class="font-medium text-blue-500">Дальность: ~${item.distance} км от линии фронта</span>
+                        <span class="font-medium text-blue-500">${i18n.distance[currentLang].replace('{dist}', item.distance)}</span>
                     </div>` : ''}
                 </div>
 
@@ -168,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.length === 0) {
             objectList.innerHTML = `
                 <div class="text-center py-8 theme-text-muted">
-                    <p>Объекты не найдены</p>
+                    <p>${i18n.not_found[currentLang]}</p>
                 </div>
             `;
             return;
@@ -228,21 +280,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function applyFilters() {
         let filtered = strikeData.filter(item => {
+            const locItem = item[currentLang];
             const searchMatch = currentSearch === '' || 
-                                item.target.toLowerCase().includes(currentSearch) || 
-                                item.region.toLowerCase().includes(currentSearch) ||
-                                item.details.toLowerCase().includes(currentSearch);
+                                locItem.target.toLowerCase().includes(currentSearch) || 
+                                locItem.region.toLowerCase().includes(currentSearch) ||
+                                locItem.details.toLowerCase().includes(currentSearch);
             
             let filterMatch = true;
             if (currentFilter !== 'all') {
-                const type = getCategoryType(item.category);
+                const type = getCategoryType(item.ru.category);
                 if (currentFilter === 'Нефтегаз') filterMatch = type === 'oilgas';
                 if (currentFilter === 'Топливная логистика') filterMatch = type === 'logistics';
-                if (currentFilter === 'ВПК') filterMatch = type === 'military';
+                if (currentFilter === 'ВПК / Авиабазы') filterMatch = type === 'military';
             }
 
             return searchMatch && filterMatch;
-        });
+        }).map(item => ({
+            ...item,
+            ...item[currentLang],
+            originalCategory: item.ru.category
+        }));
 
         renderData(filtered);
     }
@@ -287,5 +344,5 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleSidebarBtn.addEventListener('click', closeSidebar);
     openSidebarBtn.addEventListener('click', openSidebar);
 
-    renderData(strikeData);
+    setLang(currentLang);
 });
