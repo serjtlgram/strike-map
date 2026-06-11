@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Management
     function setTheme(theme) {
+        localStorage.setItem('strike-map-theme', theme);
+        
         // Set attribute for CSS on html element (matches :root)
         if (theme === 'dark') {
             document.documentElement.removeAttribute('data-theme');
@@ -74,8 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize default theme (dark)
-    setTheme('dark');
+    // Initialize default theme from localStorage or default to dark
+    const savedTheme = localStorage.getItem('strike-map-theme') || 'dark';
+    setTheme(savedTheme);
 
     function getCategoryType(category) {
         const cat = category.toLowerCase();
@@ -255,10 +258,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function closeSidebar() {
-        sidebar.classList.remove('translate-x-0');
+        sidebar.classList.remove('translate-x-0', 'md:translate-x-0');
         sidebar.classList.add('-translate-x-full');
         setTimeout(() => {
-            openSidebarBtn.classList.remove('scale-0');
+            openSidebarBtn.classList.remove('scale-0', 'md:scale-0');
             openSidebarBtn.classList.add('scale-100');
         }, 300);
     }
@@ -266,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openSidebar() {
         sidebar.classList.remove('-translate-x-full');
         sidebar.classList.add('translate-x-0');
-        openSidebarBtn.classList.remove('scale-100');
+        openSidebarBtn.classList.remove('scale-100', 'md:scale-0');
         openSidebarBtn.classList.add('scale-0');
     }
 
