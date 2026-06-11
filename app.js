@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Management
     function setTheme(theme) {
-        // Set body attribute for CSS
+        // Set attribute for CSS on html element (matches :root)
         if (theme === 'dark') {
-            document.body.removeAttribute('data-theme');
+            document.documentElement.removeAttribute('data-theme');
         } else {
-            document.body.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('data-theme', theme);
         }
 
         // Swap Map Tiles
