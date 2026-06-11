@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const popupContent = generatePopupHTML(item, type, colors);
-            marker.bindPopup(popupContent, { maxWidth: 320, minWidth: 320 });
+            marker.bindPopup(popupContent, { maxWidth: 320, minWidth: 260 });
             markerLayerGroup.addLayer(marker);
             
             activeMarkers.push({ data: item, marker: marker });
