@@ -183,7 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const popupContent = generatePopupHTML(item, type, colors);
-            marker.bindPopup(popupContent, { maxWidth: 320, minWidth: 260 });
+            const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
+            marker.bindPopup(popupContent, { 
+                maxWidth: 320, 
+                minWidth: 260,
+                autoPanPaddingTopLeft: [paddingLeft, 20],
+                autoPanPaddingBottomRight: [20, 20]
+            });
             markerLayerGroup.addLayer(marker);
             
             activeMarkers.push({ data: item, marker: marker });
