@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         document.querySelectorAll('.lang-selector').forEach(btn => {
             if (btn.getAttribute('data-set-lang') === lang) {
-                btn.classList.add('text-blue-600', 'bg-white', 'shadow-sm');
-                btn.classList.remove('text-slate-500', 'hover:text-slate-700');
+                btn.classList.add('lang-active');
+                btn.classList.remove('theme-text-muted');
             } else {
-                btn.classList.remove('text-blue-600', 'bg-white', 'shadow-sm');
-                btn.classList.add('text-slate-500', 'hover:text-slate-700');
+                btn.classList.remove('lang-active');
+                btn.classList.add('theme-text-muted');
             }
         });
 
