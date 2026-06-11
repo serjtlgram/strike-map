@@ -11,41 +11,35 @@ function haversine(lat1, lon1, lat2, lon2) {
     return R * c;
 }
 
-async function run() {
-    // 1. Fetch UKR GeoJSON
-    const res = await fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries/UKR.geo.json');
-    const ukrGeo = await res.json();
-    
-    // Extract all coordinates from polygons/multipolygons
-    let ukrCoords = [];
-    const extractCoords = (coords) => {
-        if (typeof coords[0] === 'number') {
-            ukrCoords.push({lon: coords[0], lat: coords[1]});
-        } else {
-            coords.forEach(extractCoords);
-        }
-    };
-    extractCoords(ukrGeo.features[0].geometry.coordinates);
+const referenceCities = [
+    { name: 'Херсон', lat: 46.6354, lon: 32.6169 },
+    { name: 'Запорожье', lat: 47.8388, lon: 35.1396 },
+    { name: 'Харьков', lat: 49.9935, lon: 36.2304 },
+    { name: 'Сумы', lat: 50.9077, lon: 34.7981 },
+    { name: 'Чернигов', lat: 51.4982, lon: 31.2893 },
+    { name: 'Краматорск', lat: 48.7390, lon: 37.5844 }
+];
 
-    // 2. Read data.js
+function run() {
+    // 1. Read data.js
     const content = fs.readFileSync('data.js', 'utf8');
     let dataStr = content.replace('const strikeData = ', '').replace(/;$/, '').trim();
     let data = new Function('return ' + dataStr)();
 
-    // 3. Calculate min distance for each target
+    // 2. Calculate min distance for each target
     data.forEach(item => {
         let minDist = Infinity;
-        for (const pt of ukrCoords) {
-            const d = haversine(item.lat, item.lng, pt.lat, pt.lon);
+        for (const city of referenceCities) {
+            const d = haversine(item.lat, item.lng, city.lat, city.lon);
             if (d < minDist) minDist = d;
         }
         item.distance = Math.round(minDist);
     });
 
-    // 4. Write back
+    // 3. Write back
     const newContent = 'const strikeData = ' + JSON.stringify(data, null, 2) + ';\n';
     fs.writeFileSync('data.js', newContent);
-    console.log('Distance calculated and data.js updated!');
+    console.log('Distance recalculated from frontline proxy cities and data.js updated!');
 }
 
 run();
