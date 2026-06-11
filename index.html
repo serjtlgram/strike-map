@@ -266,6 +266,21 @@
         <span data-i18n="mobile_btn">Список объектов</span>
     </button>
 
+    <!-- Welcome Toast -->
+    <div id="welcomeToast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[2000] w-[90%] max-w-sm theme-bg-item rounded-2xl shadow-2xl border border-blue-500/30 p-4 transition-all duration-500 translate-y-10 opacity-0 pointer-events-none hidden">
+        <div class="flex items-start gap-3">
+            <div class="bg-blue-500/20 text-blue-500 p-2 rounded-full shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div class="text-sm font-medium theme-text-main leading-relaxed flex-1" data-i18n="onboarding">
+                Тисни на мигаючу крапку на території Росії і дивися, що там демілітаризували в рамках еСВеО.
+            </div>
+            <button id="closeToastBtn" class="shrink-0 p-1 theme-text-muted hover:theme-text-main transition -mr-1 -mt-1">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    </div>
+
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     

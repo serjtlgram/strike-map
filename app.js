@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updated: { ru: 'Обновлено: Июнь 2026', uk: 'Оновлено: Червень 2026' },
         mobile_btn: { ru: 'Список объектов', uk: 'Список об\'єктів' },
         distance: { ru: 'Дальность: ~{dist} км от линии фронта', uk: 'Дальність: ~{dist} км від лінії фронту' },
-        not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені' }
+        not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені' },
+        onboarding: { ru: 'Жми на мигающую точку на территории России и смотри, что там демилитаризировали в рамках эСВэО.', uk: 'Тисни на мигаючу крапку на території Росії і дивися, що там демілітаризували в рамках еСВеО.' }
     };
 
     let currentLang = localStorage.getItem('strike-map-lang') || 'uk';
@@ -343,6 +344,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toggleSidebarBtn.addEventListener('click', closeSidebar);
     openSidebarBtn.addEventListener('click', openSidebar);
+
+    // Welcome Toast Logic
+    const welcomeToast = document.getElementById('welcomeToast');
+    const closeToastBtn = document.getElementById('closeToastBtn');
+    
+    if (!localStorage.getItem('strike-map-onboarding')) {
+        setTimeout(() => {
+            welcomeToast.classList.remove('hidden');
+            // Trigger reflow
+            void welcomeToast.offsetWidth;
+            welcomeToast.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
+        }, 1500);
+    }
+
+    closeToastBtn.addEventListener('click', () => {
+        welcomeToast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+            welcomeToast.classList.add('hidden');
+        }, 500);
+        localStorage.setItem('strike-map-onboarding', 'true');
+    });
 
     setLang(currentLang);
 });
