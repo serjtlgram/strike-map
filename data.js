@@ -9,7 +9,7 @@ const strikeData = [
     "lat": 44.8717,
     "lng": 38.8336,
     "source": "Сводка Генштаба ВСУ, заявления СБУ",
-    "distance": 192
+    "distance": 435
   },
   {
     "date": "21.03.2026",
@@ -21,7 +21,7 @@ const strikeData = [
     "lat": 51.5406,
     "lng": 46.0086,
     "source": "Сводка Генштаба ВСУ, NASA FIRMS",
-    "distance": 471
+    "distance": 676
   },
   {
     "date": "23.03.2026",
@@ -33,7 +33,7 @@ const strikeData = [
     "lat": 54.847,
     "lng": 56.071,
     "source": "Militarnyi, Минобороны Украины",
-    "distance": 1232
+    "distance": 1435
   },
   {
     "date": "23.03.2026",
@@ -45,7 +45,7 @@ const strikeData = [
     "lat": 60.3347,
     "lng": 28.7167,
     "source": "Militarnyi, Минобороны Украины",
-    "distance": 923
+    "distance": 995
   },
   {
     "date": "26.03.2026",
@@ -57,7 +57,7 @@ const strikeData = [
     "lat": 59.4891,
     "lng": 32.0772,
     "source": "Генштаб ВСУ",
-    "distance": 801
+    "distance": 890
   },
   {
     "date": "28.03.2026",
@@ -69,7 +69,7 @@ const strikeData = [
     "lat": 57.5501,
     "lng": 39.7917,
     "source": "Militarnyi, NASA FIRMS",
-    "distance": 696
+    "distance": 806
   },
   {
     "date": "03.04.2026",
@@ -81,7 +81,7 @@ const strikeData = [
     "lat": 54.83,
     "lng": 56.12,
     "source": "Украинские СМИ, Reuters",
-    "distance": 1235
+    "distance": 1438
   },
   {
     "date": "05.04.2026",
@@ -93,7 +93,7 @@ const strikeData = [
     "lat": 56.1072,
     "lng": 44.1549,
     "source": "Украинские СМИ, OSINT",
-    "distance": 773
+    "distance": 846
   },
   {
     "date": "05.04.2026",
@@ -105,7 +105,7 @@ const strikeData = [
     "lat": 60.3347,
     "lng": 28.7167,
     "source": "Региональные власти, OSINT",
-    "distance": 923
+    "distance": 995
   },
   {
     "date": "16.04.2026",
@@ -117,7 +117,7 @@ const strikeData = [
     "lat": 44.05,
     "lng": 39.18,
     "source": "СБУ, СБС, Militarnyi",
-    "distance": 254
+    "distance": 524
   },
   {
     "date": "18.04.2026",
@@ -129,7 +129,7 @@ const strikeData = [
     "lat": 53.1258,
     "lng": 49.9086,
     "source": "Генштаб ВСУ, СБС",
-    "distance": 787
+    "distance": 990
   },
   {
     "date": "18.04.2026",
@@ -141,7 +141,7 @@ const strikeData = [
     "lat": 53.18,
     "lng": 48.4,
     "source": "Генштаб ВСУ, СБС",
-    "distance": 701
+    "distance": 903
   },
   {
     "date": "18.04.2026",
@@ -153,7 +153,7 @@ const strikeData = [
     "lat": 60.619,
     "lng": 28.567,
     "source": "Генштаб ВСУ, СБС",
-    "distance": 956
+    "distance": 1028
   },
   {
     "date": "18.04.2026",
@@ -165,7 +165,7 @@ const strikeData = [
     "lat": 45.85,
     "lng": 40.12,
     "source": "Генштаб ВСУ, СБС",
-    "distance": 201
+    "distance": 374
   },
   {
     "date": "19.04.2026",
@@ -177,7 +177,7 @@ const strikeData = [
     "lat": 44.05,
     "lng": 39.18,
     "source": "OSINT Astra",
-    "distance": 254
+    "distance": 524
   },
   {
     "date": "21.04.2026",
@@ -189,7 +189,7 @@ const strikeData = [
     "lat": 53.1,
     "lng": 50.1,
     "source": "Пресс-служба СБУ",
-    "distance": 797
+    "distance": 1000
   },
   {
     "date": "27.04.2026",
@@ -201,7 +201,7 @@ const strikeData = [
     "lat": 46.54,
     "lng": 39.54,
     "source": "OSINT, Mash",
-    "distance": 118
+    "distance": 285
   },
   {
     "date": "27.04.2026",
@@ -213,7 +213,7 @@ const strikeData = [
     "lat": 44.85,
     "lng": 38.66,
     "source": "OSINT, Mash",
-    "distance": 181
+    "distance": 428
   },
   {
     "date": "29.04.2026",
@@ -225,7 +225,7 @@ const strikeData = [
     "lat": 58,
     "lng": 56.2,
     "source": "СБУ (Telegram)",
-    "distance": 1406
+    "distance": 1571
   },
   {
     "date": "30.04.2026",
@@ -237,7 +237,7 @@ const strikeData = [
     "lat": 57.925,
     "lng": 56.136,
     "source": "СБУ (Telegram)",
-    "distance": 1398
+    "distance": 1564
   },
   {
     "date": "30.04.2026",
@@ -249,7 +249,7 @@ const strikeData = [
     "lat": 58,
     "lng": 56.2,
     "source": "СБУ (Telegram)",
-    "distance": 1406
+    "distance": 1571
   },
   {
     "date": "01.05.2026",
@@ -261,7 +261,7 @@ const strikeData = [
     "lat": 44.05,
     "lng": 39.18,
     "source": "Генштаб ВСУ, СБУ, СБС",
-    "distance": 254
+    "distance": 524
   },
   {
     "date": "01.05.2026",
@@ -273,7 +273,7 @@ const strikeData = [
     "lat": 55.26,
     "lng": 61.3,
     "source": "OSINT-аналитика",
-    "distance": 1563
+    "distance": 1767
   },
   {
     "date": "05.05.2026",
@@ -285,7 +285,7 @@ const strikeData = [
     "lat": 59.4891,
     "lng": 32.0772,
     "source": "СБУ, Reuters",
-    "distance": 801
+    "distance": 890
   },
   {
     "date": "05.05.2026",
@@ -297,7 +297,7 @@ const strikeData = [
     "lat": 59.4891,
     "lng": 32.0772,
     "source": "СБУ (соцсети)",
-    "distance": 801
+    "distance": 890
   },
   {
     "date": "07-08.05.2026",
@@ -309,7 +309,7 @@ const strikeData = [
     "lat": 57.925,
     "lng": 56.136,
     "source": "Президент Украины, СБУ",
-    "distance": 1398
+    "distance": 1564
   },
   {
     "date": "08.05.2026",
@@ -321,7 +321,7 @@ const strikeData = [
     "lat": 58,
     "lng": 56.2,
     "source": "СБУ (ЦСО «Альфа»)",
-    "distance": 1406
+    "distance": 1571
   },
   {
     "date": "08.05.2026",
@@ -333,7 +333,7 @@ const strikeData = [
     "lat": 57.5501,
     "lng": 39.7917,
     "source": "Минобороны Украины",
-    "distance": 696
+    "distance": 806
   },
   {
     "date": "15.05.2026",
@@ -345,7 +345,7 @@ const strikeData = [
     "lat": 54.58,
     "lng": 39.78,
     "source": "ССО, СБС, Генштаб ВСУ",
-    "distance": 470
+    "distance": 528
   },
   {
     "date": "16.05.2026",
@@ -357,7 +357,7 @@ const strikeData = [
     "lat": 44.64,
     "lng": 41.95,
     "source": "OSINT Astra",
-    "distance": 398
+    "distance": 564
   },
   {
     "date": "16.05.2026",
@@ -369,7 +369,7 @@ const strikeData = [
     "lat": 46.7005,
     "lng": 38.2475,
     "source": "СБС, Генштаб ВСУ",
-    "distance": 45
+    "distance": 232
   },
   {
     "date": "16.05.2026",
@@ -381,7 +381,7 @@ const strikeData = [
     "lat": 53.4,
     "lng": 34,
     "source": "Генштаб ВСУ",
-    "distance": 120
+    "distance": 280
   },
   {
     "date": "17.05.2026",
@@ -393,7 +393,7 @@ const strikeData = [
     "lat": 55.638,
     "lng": 37.794,
     "source": "Власти РФ, Reuters",
-    "distance": 452
+    "distance": 562
   },
   {
     "date": "21.05.2026",
@@ -405,7 +405,7 @@ const strikeData = [
     "lat": 53.18,
     "lng": 48.4,
     "source": "Минобороны Украины, Reuters",
-    "distance": 701
+    "distance": 903
   },
   {
     "date": "22-23.05.2026",
@@ -417,7 +417,7 @@ const strikeData = [
     "lat": 44.75,
     "lng": 37.81,
     "source": "Минобороны Украины, OSINT",
-    "distance": 123
+    "distance": 400
   },
   {
     "date": "22.05.2026",
@@ -429,7 +429,7 @@ const strikeData = [
     "lat": 49.2786,
     "lng": 38.9105,
     "source": "Генштаб ВСУ",
-    "distance": 76
+    "distance": 114
   },
   {
     "date": "23.05.2026",
@@ -441,7 +441,7 @@ const strikeData = [
     "lat": 58.85,
     "lng": 57.58,
     "source": "Минобороны Украины",
-    "distance": 1526
+    "distance": 1684
   },
   {
     "date": "24.05.2026",
@@ -453,7 +453,7 @@ const strikeData = [
     "lat": 56.28,
     "lng": 40.85,
     "source": "СБУ (Telegram)",
-    "distance": 635
+    "distance": 718
   },
   {
     "date": "29.05.2026",
@@ -465,7 +465,7 @@ const strikeData = [
     "lat": 48.51,
     "lng": 44.57,
     "source": "Генштаб ВСУ, ССО",
-    "distance": 340
+    "distance": 514
   },
   {
     "date": "31.05.2026",
@@ -477,7 +477,7 @@ const strikeData = [
     "lat": 51.5406,
     "lng": 46.0086,
     "source": "NASA FIRMS, OSINT",
-    "distance": 471
+    "distance": 676
   },
   {
     "date": "31.05.2026",
@@ -489,7 +489,7 @@ const strikeData = [
     "lat": 47.56,
     "lng": 38.86,
     "source": "Данные OSINT",
-    "distance": 30
+    "distance": 162
   },
   {
     "date": "31.05.2026",
@@ -501,7 +501,7 @@ const strikeData = [
     "lat": 57.17,
     "lng": 49.92,
     "source": "OSINT, Стерненко",
-    "distance": 1063
+    "distance": 1202
   },
   {
     "date": "31.05.2026",
@@ -513,7 +513,7 @@ const strikeData = [
     "lat": 47.78,
     "lng": 39.9,
     "source": "ВМС ВСУ",
-    "distance": 18
+    "distance": 202
   },
   {
     "date": "02.06.2026",
@@ -525,7 +525,7 @@ const strikeData = [
     "lat": 45.24,
     "lng": 38,
     "source": "OSINT Astra",
-    "distance": 118
+    "distance": 362
   },
   {
     "date": "02.06.2026",
@@ -537,7 +537,7 @@ const strikeData = [
     "lat": 44.85,
     "lng": 38.66,
     "source": "OSINT Astra",
-    "distance": 181
+    "distance": 428
   },
   {
     "date": "03.06.2026",
@@ -549,7 +549,7 @@ const strikeData = [
     "lat": 59.87,
     "lng": 30.17,
     "source": "Президент Украины, ССО",
-    "distance": 854
+    "distance": 934
   },
   {
     "date": "03.06.2026",
@@ -561,7 +561,7 @@ const strikeData = [
     "lat": 52.89,
     "lng": 40.48,
     "source": "Президент Украины",
-    "distance": 351
+    "distance": 436
   },
   {
     "date": "03.06.2026",
@@ -573,7 +573,7 @@ const strikeData = [
     "lat": 45.0911,
     "lng": 33.5877,
     "source": "Генштаб ВСУ",
-    "distance": 7
+    "distance": 187
   },
   {
     "date": "03.06.2026",
@@ -585,7 +585,7 @@ const strikeData = [
     "lat": 49.52,
     "lng": 44.02,
     "source": "Генштаб ВСУ",
-    "distance": 285
+    "distance": 476
   },
   {
     "date": "05.06.2026",
@@ -597,7 +597,7 @@ const strikeData = [
     "lat": 47.05,
     "lng": 37.5,
     "source": "Генштаб ВСУ",
-    "distance": 6
+    "distance": 188
   },
   {
     "date": "06.06.2026",
@@ -609,7 +609,7 @@ const strikeData = [
     "lat": 45.21,
     "lng": 39.68,
     "source": "СБУ, ВСУ, ГУР, OSINT",
-    "distance": 238
+    "distance": 423
   },
   {
     "date": "06.06.2026",
@@ -621,7 +621,7 @@ const strikeData = [
     "lat": 59.99,
     "lng": 29.77,
     "source": "ССО, СБС, СБУ, ГУР",
-    "distance": 872
+    "distance": 949
   },
   {
     "date": "08.06.2026",
@@ -633,7 +633,7 @@ const strikeData = [
     "lat": 51.03,
     "lng": 36.73,
     "source": "Генштаб ВСУ",
-    "distance": 86
+    "distance": 121
   },
   {
     "date": "08.06.2026",
@@ -645,7 +645,7 @@ const strikeData = [
     "lat": 59.95,
     "lng": 30.37,
     "source": "OSINT, службы спасения",
-    "distance": 861
+    "distance": 942
   },
   {
     "date": "09-10.06.2026",
@@ -657,7 +657,7 @@ const strikeData = [
     "lat": 56.12,
     "lng": 47.26,
     "source": "Генштаб ВСУ, Президент",
-    "distance": 870
+    "distance": 1002
   },
   {
     "date": "09-10.06.2026",
@@ -669,7 +669,7 @@ const strikeData = [
     "lat": 53.1,
     "lng": 50.08,
     "source": "Reuters, Telegram Astra",
-    "distance": 796
+    "distance": 999
   },
   {
     "date": "10.06.2026",
@@ -681,7 +681,7 @@ const strikeData = [
     "lat": 56.28,
     "lng": 40.85,
     "source": "Meduza, Supernova+",
-    "distance": 635
+    "distance": 718
   },
   {
     "date": "11.06.2026",
@@ -693,6 +693,6 @@ const strikeData = [
     "lat": 44.8717,
     "lng": 38.8336,
     "source": "Генштаб ВСУ, Exilenova+",
-    "distance": 192
+    "distance": 435
   }
 ];
