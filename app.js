@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize default theme from localStorage or default to dark
-    const savedTheme = localStorage.getItem('strike-map-theme') || 'dark';
+    // Initialize default theme from localStorage or default to beige
+    const savedTheme = localStorage.getItem('strike-map-theme') || 'beige';
     setTheme(savedTheme);
 
     function getCategoryType(category) {
@@ -139,6 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         <span>${item.weapon}</span>
                     </div>
+                    ${item.distance !== undefined ? `
+                    <div class="flex items-start gap-2">
+                        <svg class="w-4 h-4 mt-0.5 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        <span class="font-medium text-blue-500">Дальность: ~${item.distance} км от границы Украины</span>
+                    </div>` : ''}
                 </div>
 
                 <div class="theme-bg-input rounded-lg p-3 border theme-border mb-3">
