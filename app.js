@@ -312,33 +312,97 @@ document.addEventListener('DOMContentLoaded', () => {
         return Array.from(months).sort((a, b) => b.localeCompare(a));
     }
 
+    // --- Логика кастомного дропдауна (месяцы) ---
+    const customDropdownBtn = document.getElementById('customDropdownBtn');
+    const customDropdownMenu = document.getElementById('customDropdownMenu');
+    const customDropdownList = document.getElementById('customDropdownList');
+    const customDropdownText = document.getElementById('customDropdownText');
+    const customDropdownIcon = document.getElementById('customDropdownIcon');
+
+    customDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isExpanded = customDropdownMenu.classList.contains('opacity-100');
+        if (isExpanded) {
+            closeCustomDropdown();
+        } else {
+            openCustomDropdown();
+        }
+    });
+
+    function openCustomDropdown() {
+        customDropdownMenu.classList.remove('opacity-0', 'invisible', 'translate-y-[-10px]');
+        customDropdownMenu.classList.add('opacity-100', 'visible', 'translate-y-0');
+        customDropdownIcon.classList.add('rotate-180');
+    }
+
+    function closeCustomDropdown() {
+        customDropdownMenu.classList.add('opacity-0', 'invisible', 'translate-y-[-10px]');
+        customDropdownMenu.classList.remove('opacity-100', 'visible', 'translate-y-0');
+        customDropdownIcon.classList.remove('rotate-180');
+    }
+
+    document.addEventListener('click', (e) => {
+        const customDropdownContainer = document.getElementById('customDropdownContainer');
+        if (customDropdownContainer && !customDropdownContainer.contains(e.target)) {
+            closeCustomDropdown();
+        }
+    });
+
+    // Обновленная функция заполнения
     function populateMonthFilter() {
         const selectedValue = monthFilter.value || 'all';
         monthFilter.innerHTML = '';
+        customDropdownList.innerHTML = '';
         
-        const allOption = document.createElement('option');
-        allOption.value = 'all';
-        allOption.textContent = currentLang === 'uk' ? 'Всі місяці' : 'Все месяцы';
-        monthFilter.appendChild(allOption);
+        const allText = currentLang === 'uk' ? 'Всі місяці' : 'Все месяцы';
+        
+        addOptionToDropdown('all', allText, selectedValue);
         
         const uniqueMonths = getUniqueMonths();
         uniqueMonths.forEach(mKey => {
             const [year, month] = mKey.split('-');
-            const opt = document.createElement('option');
-            opt.value = mKey;
-            
             const monthName = monthNames[month] ? monthNames[month][currentLang] : month;
-            opt.textContent = `${monthName} ${year}`;
-            monthFilter.appendChild(opt);
+            const textContent = `${monthName} ${year}`;
+            
+            addOptionToDropdown(mKey, textContent, selectedValue);
         });
         
         monthFilter.value = selectedValue;
     }
 
-    monthFilter.addEventListener('change', (e) => {
-        currentMonth = e.target.value;
-        applyFilters();
-    });
+    function addOptionToDropdown(value, text, selectedValue) {
+        // Обновляем скрытый select
+        const opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = text;
+        monthFilter.appendChild(opt);
+
+        // Создаем элемент списка для кастомного UI
+        const li = document.createElement('li');
+        li.className = `px-4 py-2.5 text-sm cursor-pointer transition-colors duration-200 theme-text-main hover:bg-blue-500/10 hover:text-blue-500 flex items-center justify-between group`;
+        
+        const isSelected = value === selectedValue;
+        li.innerHTML = `
+            <span class="${isSelected ? 'font-semibold text-blue-500' : ''}">${text}</span>
+            ${isSelected ? '<svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>' : ''}
+        `;
+        
+        li.addEventListener('click', () => {
+            monthFilter.value = value;
+            currentMonth = value;
+            
+            // Перерисовываем для обновления иконки галочки
+            populateMonthFilter(); 
+            applyFilters();
+            closeCustomDropdown();
+        });
+        
+        if (isSelected) {
+            customDropdownText.textContent = text;
+        }
+
+        customDropdownList.appendChild(li);
+    }
 
     function applyFilters() {
         let filtered = strikeData.filter(item => {
