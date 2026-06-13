@@ -41,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i18n[key]) el.placeholder = i18n[key][lang];
         });
 
+        // Populate/update month filter options with correct lang
+        if (typeof populateMonthFilter === 'function') populateMonthFilter();
+
         // Use setTimeout to ensure functions are defined
         if (typeof applyFilters === 'function') applyFilters();
     }
@@ -84,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let activeMarkers = [];
 
     const searchInput = document.getElementById('searchInput');
+    const monthFilter = document.getElementById('monthFilter');
     const filterBtns = document.querySelectorAll('.filter-btn');
     const objectList = document.getElementById('objectList');
     const totalCount = document.getElementById('totalCount');
@@ -278,6 +282,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentFilter = 'all';
     let currentSearch = '';
+    let currentMonth = 'all';
+
+    const monthNames = {
+        '01': { ru: 'Январь', uk: 'Січень' },
+        '02': { ru: 'Февраль', uk: 'Лютий' },
+        '03': { ru: 'Март', uk: 'Березень' },
+        '04': { ru: 'Апрель', uk: 'Квітень' },
+        '05': { ru: 'Май', uk: 'Травень' },
+        '06': { ru: 'Июнь', uk: 'Червень' },
+        '07': { ru: 'Июль', uk: 'Липень' },
+        '08': { ru: 'Август', uk: 'Серпень' },
+        '09': { ru: 'Сентябрь', uk: 'Вересень' },
+        '10': { ru: 'Октябрь', uk: 'Жовтень' },
+        '11': { ru: 'Ноябрь', uk: 'Листопад' },
+        '12': { ru: 'Декабрь', uk: 'Грудень' }
+    };
+
+    function getUniqueMonths() {
+        const months = new Set();
+        strikeData.forEach(item => {
+            if (item.date) {
+                const parts = item.date.split('.');
+                if (parts.length === 3) {
+                    months.add(`${parts[2]}-${parts[1]}`);
+                }
+            }
+        });
+        return Array.from(months).sort((a, b) => b.localeCompare(a));
+    }
+
+    function populateMonthFilter() {
+        const selectedValue = monthFilter.value || 'all';
+        monthFilter.innerHTML = '';
+        
+        const allOption = document.createElement('option');
+        allOption.value = 'all';
+        allOption.textContent = currentLang === 'uk' ? 'Всі місяці' : 'Все месяцы';
+        monthFilter.appendChild(allOption);
+        
+        const uniqueMonths = getUniqueMonths();
+        uniqueMonths.forEach(mKey => {
+            const [year, month] = mKey.split('-');
+            const opt = document.createElement('option');
+            opt.value = mKey;
+            
+            const monthName = monthNames[month] ? monthNames[month][currentLang] : month;
+            opt.textContent = `${monthName} ${year}`;
+            monthFilter.appendChild(opt);
+        });
+        
+        monthFilter.value = selectedValue;
+    }
+
+    monthFilter.addEventListener('change', (e) => {
+        currentMonth = e.target.value;
+        applyFilters();
+    });
 
     function applyFilters() {
         let filtered = strikeData.filter(item => {
@@ -295,7 +356,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (currentFilter === 'ВПК / Авиабазы') filterMatch = type === 'military';
             }
 
-            return searchMatch && filterMatch;
+            let monthMatch = true;
+            if (currentMonth !== 'all') {
+                if (item.date) {
+                    const parts = item.date.split('.');
+                    if (parts.length === 3) {
+                        const itemMonthKey = `${parts[2]}-${parts[1]}`;
+                        monthMatch = itemMonthKey === currentMonth;
+                    } else {
+                        monthMatch = false;
+                    }
+                } else {
+                    monthMatch = false;
+                }
+            }
+
+            return searchMatch && filterMatch && monthMatch;
         }).map(item => ({
             ...item,
             ...item[currentLang],

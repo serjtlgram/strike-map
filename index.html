@@ -192,6 +192,16 @@
             color: var(--bg-body) !important;
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
         }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
     </style>
 </head>
 <body>
@@ -231,20 +241,25 @@
                     </div>
                 </div>
                 
-                <!-- Search -->
-                <div class="relative mb-4">
+                <!-- Search & Month Filter -->
+                <div class="flex gap-2 mb-4">
+                    <div class="relative flex-1">
                         <input type="text" id="searchInput" data-i18n-placeholder="search" placeholder="Поиск по названию или региону..." class="w-full pl-10 pr-4 py-2.5 theme-bg-input border theme-border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 theme-transition text-sm">
-                    <svg class="absolute left-3 top-3.5 h-4 w-4 theme-text-muted" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+                        <svg class="absolute left-3 top-3.5 h-4 w-4 theme-text-muted" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <select id="monthFilter" class="px-3 py-2.5 theme-bg-input border theme-border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 theme-transition text-sm max-w-[140px] cursor-pointer">
+                        <!-- Will be dynamically populated -->
+                    </select>
                 </div>
 
                 <!-- Filters -->
-                <div class="flex flex-wrap gap-2 mb-4" id="filters">
-                    <button class="filter-btn active px-3 py-1.5 rounded-full text-xs font-medium theme-transition bg-blue-500/20 text-blue-500 border border-blue-500/30" data-filter="all" data-i18n="filter_all">Все</button>
-                    <button class="filter-btn px-3 py-1.5 rounded-full text-xs font-medium theme-transition theme-filter-bg border" data-filter="Нефтегаз" data-i18n="filter_oil">Нефтегаз</button>
-                    <button class="filter-btn px-3 py-1.5 rounded-full text-xs font-medium theme-transition theme-filter-bg border" data-filter="Топливная логистика" data-i18n="filter_logistics">Логистика</button>
-                    <button class="filter-btn px-3 py-1.5 rounded-full text-xs font-medium theme-transition theme-filter-bg border" data-filter="ВПК / Авиабазы" data-i18n="filter_military">ВПК / Авиабазы</button>
+                <div class="flex flex-nowrap overflow-x-auto gap-2 mb-4 no-scrollbar" id="filters">
+                    <button class="filter-btn active shrink-0 px-3 py-1.5 rounded-full text-xs font-medium theme-transition bg-blue-500/20 text-blue-500 border border-blue-500/30" data-filter="all" data-i18n="filter_all">Все</button>
+                    <button class="filter-btn shrink-0 px-3 py-1.5 rounded-full text-xs font-medium theme-transition theme-filter-bg border" data-filter="Нефтегаз" data-i18n="filter_oil">Нефтегаз</button>
+                    <button class="filter-btn shrink-0 px-3 py-1.5 rounded-full text-xs font-medium theme-transition theme-filter-bg border" data-filter="Топливная логистика" data-i18n="filter_logistics">Логистика</button>
+                    <button class="filter-btn shrink-0 px-3 py-1.5 rounded-full text-xs font-medium theme-transition theme-filter-bg border" data-filter="ВПК / Авиабазы" data-i18n="filter_military">ВПК / Авиабазы</button>
                 </div>
             </div>
 
