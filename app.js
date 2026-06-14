@@ -52,6 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Use setTimeout to ensure functions are defined
         if (typeof applyFilters === 'function') applyFilters();
+
+        // Update Map labels language dynamically
+        if (typeof updateMapLanguage === 'function') updateMapLanguage();
     }
 
     document.querySelectorAll('.lang-selector').forEach(btn => {
@@ -67,24 +70,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // Tile Layers for themes
+    // Tile Layers for themes (using OpenFreeMap Vector styles)
     const tileLayers = {
-        dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap & CARTO',
-            subdomains: 'abcd',
-            maxZoom: 19
+        dark: L.maplibreGL({
+            style: 'https://tiles.openfreemap.org/styles/dark',
+            attribution: '&copy; OpenStreetMap & OpenFreeMap'
         }),
-        light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap & CARTO',
-            subdomains: 'abcd',
-            maxZoom: 19
+        light: L.maplibreGL({
+            style: 'https://tiles.openfreemap.org/styles/positron',
+            attribution: '&copy; OpenStreetMap & OpenFreeMap'
         }),
-        beige: L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap & CARTO',
-            subdomains: 'abcd',
-            maxZoom: 19
+        beige: L.maplibreGL({
+            style: 'https://tiles.openfreemap.org/styles/liberty',
+            attribution: '&copy; OpenStreetMap & OpenFreeMap'
         })
     };
+
+    function updateMapLanguage() {
+        if (!currentTileLayer || typeof currentTileLayer.getMaplibreMap !== 'function') return;
+        const maplibreMap = currentTileLayer.getMaplibreMap();
+        if (!maplibreMap) return;
+
+        const setStyleLang = () => {
+            try {
+                const style = maplibreMap.getStyle();
+                if (!style || !style.layers) return;
+
+                let mapLang = currentLang;
+                if (mapLang === 'uk') mapLang = 'uk';
+                else if (mapLang === 'ru') mapLang = 'ru';
+                else mapLang = 'en';
+
+                style.layers.forEach(layer => {
+                    if (layer.layout && layer.layout['text-field']) {
+                        maplibreMap.setLayoutProperty(layer.id, 'text-field', [
+                            'coalesce',
+                            ['get', 'name:' + mapLang],
+                            ['get', 'name:en'],
+                            ['get', 'name']
+                        ]);
+                    }
+                });
+            } catch (e) {
+                console.error('Error updating map language:', e);
+            }
+        };
+
+        if (maplibreMap.isStyleLoaded()) {
+            setStyleLang();
+        } else {
+            maplibreMap.off('style.load', setStyleLang);
+            maplibreMap.on('style.load', setStyleLang);
+        }
+    }
+
 
     let currentTileLayer = tileLayers.dark;
     currentTileLayer.addTo(map);
@@ -121,6 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
         map.removeLayer(currentTileLayer);
         currentTileLayer = tileLayers[theme];
         currentTileLayer.addTo(map);
+
+        // Update Map labels language dynamically
+        if (typeof updateMapLanguage === 'function') updateMapLanguage();
 
         // Update Theme Buttons
         themeSelectors.forEach(btn => {
