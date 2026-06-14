@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         mobile_btn: { ru: 'Список объектов', uk: 'Список об\'єктів' },
         distance: { ru: 'Дальность: ~{dist} км от линии фронта', uk: 'Дальність: ~{dist} км від лінії фронту' },
         not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені' },
-        onboarding: { ru: 'Жми на мигающую точку на территории России и смотри, что там демилитаризировали в рамках эСВэО.', uk: 'Тисни на мигаючу крапку на території Росії і дивися, що там демілітаризували в рамках еСВеО.' }
+        onboarding: { ru: 'Жми на мигающую точку на территории России и смотри, что там демилитаризировали в рамках эСВэО.', uk: 'Тисни на мигаючу крапку на території Росії і дивися, що там демілітаризували в рамках еСВеО.' },
+        sort_asc: { ru: 'Сначала старые', uk: 'Спочатку старі' },
+        sort_desc: { ru: 'Сначала новые', uk: 'Спочатку нові' },
+        sort_title: { ru: 'Сортировка по дате', uk: 'Сортування за датою' }
     };
 
     let currentLang = localStorage.getItem('strike-map-lang') || 'uk';
@@ -43,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Populate/update month filter options with correct lang
         if (typeof populateMonthFilter === 'function') populateMonthFilter();
+
+        // Update sort button tooltip and icon
+        if (typeof updateSortButton === 'function') updateSortButton();
 
         // Use setTimeout to ensure functions are defined
         if (typeof applyFilters === 'function') applyFilters();
@@ -91,6 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const objectList = document.getElementById('objectList');
     const totalCount = document.getElementById('totalCount');
+    const sortToggleBtn = document.getElementById('sortToggleBtn');
+    
+    let currentSortOrder = localStorage.getItem('strike-map-sort-order') || 'asc';
     
     const sidebar = document.getElementById('sidebar');
     const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
@@ -442,6 +451,13 @@ document.addEventListener('DOMContentLoaded', () => {
             originalCategory: item.ru.category
         }));
 
+        // Sort items by date
+        filtered.sort((a, b) => {
+            const dateA = parseDate(a.date);
+            const dateB = parseDate(b.date);
+            return currentSortOrder === 'asc' ? dateA - dateB : dateB - dateA;
+        });
+
         renderData(filtered);
     }
 
@@ -505,6 +521,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
         localStorage.setItem('strike-map-onboarding', 'true');
     });
+
+    function parseDate(dateStr) {
+        if (!dateStr) return 0;
+        let target = dateStr;
+        if (dateStr.includes('-')) {
+            const parts = dateStr.split('-');
+            target = parts[parts.length - 1];
+        }
+        const cleanParts = target.trim().split('.');
+        if (cleanParts.length === 3) {
+            return new Date(cleanParts[2], cleanParts[1] - 1, cleanParts[0]).getTime();
+        }
+        return 0;
+    }
+
+    function updateSortButton() {
+        if (!sortToggleBtn) return;
+        const label = currentSortOrder === 'asc' ? i18n.sort_asc[currentLang] : i18n.sort_desc[currentLang];
+        sortToggleBtn.setAttribute('title', `${i18n.sort_title[currentLang]}: ${label}`);
+        
+        const path = currentSortOrder === 'asc' 
+            ? 'M3 4h13M3 8h9M3 12h6M17 16V10m0 0l-3 3m3-3l3 3' 
+            : 'M3 4h13M3 8h9M3 12h6M17 10v6m0 0l-3-3m3 3l3-3';
+            
+        sortToggleBtn.innerHTML = `<svg class="w-4 h-4 theme-text-main transition-transform duration-300" id="sortIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${path}" />
+        </svg>`;
+    }
+
+    if (sortToggleBtn) {
+        sortToggleBtn.addEventListener('click', () => {
+            currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+            localStorage.setItem('strike-map-sort-order', currentSortOrder);
+            updateSortButton();
+            applyFilters();
+        });
+    }
 
     setLang(currentLang);
 });
