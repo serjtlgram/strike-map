@@ -438,28 +438,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Initialize Map and Render Data
-    updateTranslations();
-    renderData(strikeData);
-    
-    // Check for ID in URL to automatically open a specific popup
-    const urlParams = new URLSearchParams(window.location.search);
-    const eventIdToOpen = urlParams.get('id');
-    if (eventIdToOpen) {
-        const targetMarkerObj = activeMarkers.find(m => m.data.id && m.data.id.toString() === eventIdToOpen);
-        if (targetMarkerObj) {
-            // Wait for map to finish initial rendering
-            setTimeout(() => {
-                map.setView(targetMarkerObj.marker.getLatLng(), 11, { animate: false });
-                targetMarkerObj.marker.openPopup();
-                
-                // On mobile, close sidebar automatically
-                if (window.innerWidth < 768 && sidebar) {
-                    sidebar.classList.remove('open');
-                }
-            }, 500);
-        }
-    }
 
     function renderData(data) {
         markerLayerGroup.clearLayers();
@@ -851,6 +829,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setLang(currentLang);
+
+    // Check for ID in URL to automatically open a specific popup
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventIdToOpen = urlParams.get('id');
+    if (eventIdToOpen) {
+        const targetMarkerObj = activeMarkers.find(m => m.data.id && m.data.id.toString() === eventIdToOpen);
+        if (targetMarkerObj) {
+            // Wait for map to finish initial rendering
+            setTimeout(() => {
+                map.setView(targetMarkerObj.marker.getLatLng(), 11, { animate: false });
+                targetMarkerObj.marker.openPopup();
+                
+                // On mobile, close sidebar automatically
+                if (window.innerWidth < 768 && sidebar) {
+                    sidebar.classList.remove('open');
+                }
+            }, 500);
+        }
+    }
 
     // Modal Close Logic
     const imageModal = document.getElementById('imageModal');
