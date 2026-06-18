@@ -254,11 +254,25 @@ document.addEventListener('DOMContentLoaded', () => {
         let imageHtml = '';
         if (item.images && item.images.length > 0) {
             const mainImg = item.images[0];
-            const countHtml = item.images.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none">+${item.images.length - 1}</div>` : '';
+            const countHtml = item.images.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none md:hidden">+${item.images.length - 1}</div>` : '';
             const imagesJson = JSON.stringify(item.images).replace(/"/g, '&quot;');
+            
+            let thumbnailsHtml = '';
+            if (item.images.length > 1) {
+                thumbnailsHtml = `<div class="hidden md:flex flex-col gap-2 mt-2 w-full">`;
+                for (let i = 1; i < item.images.length; i++) {
+                    thumbnailsHtml += `
+                        <div class="w-full h-16 rounded-lg shadow-sm overflow-hidden relative border theme-border hover:opacity-90 transition" onclick="event.stopPropagation(); window.openFullscreenGallery('${imagesJson}', ${i})">
+                            <img src="${item.images[i]}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                        </div>
+                    `;
+                }
+                thumbnailsHtml += `</div>`;
+            }
+            
             imageHtml = `
-                <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenGallery('${imagesJson}', 0)">
-                    <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
+                <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group">
+                    <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border" onclick="window.openFullscreenGallery('${imagesJson}', 0)">
                         <img src="${mainImg}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         ${countHtml}
                         <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
@@ -266,6 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span>${textExpand}</span>
                         </div>
                     </div>
+                    ${thumbnailsHtml}
                 </div>
             `;
         } else if (item.image) {
