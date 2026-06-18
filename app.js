@@ -226,13 +226,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generatePopupHTML(item, type, colors) {
         const imageHtml = item.image ? `
-            <div class="ml-4 shrink-0 w-48 h-full flex flex-col justify-start">
+            <div class="mt-4 md:mt-0 md:ml-4 shrink-0 md:w-48 flex flex-col justify-start">
                 <img src="${item.image}" alt="${item.target}" class="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition object-cover border theme-border" onclick="window.openFullscreenImage('${item.image}')">
             </div>
         ` : '';
 
-        const containerClasses = item.image ? 'flex flex-row justify-between items-stretch' : '';
-        const contentClasses = item.image ? 'flex-1 min-w-[260px]' : '';
+        const containerClasses = item.image ? 'flex flex-col md:flex-row justify-between items-stretch' : '';
+        const contentClasses = item.image ? 'flex-1 min-w-0 md:min-w-[260px]' : '';
 
         return `
             <div class="p-5 font-sans ${containerClasses}">
@@ -284,6 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (modal && modalImg) {
             modalImg.src = src;
             modal.classList.remove('hidden');
+            modal.classList.add('flex');
             setTimeout(() => {
                 modal.classList.remove('opacity-0');
             }, 10);
@@ -317,8 +318,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const popupContent = generatePopupHTML(item, type, colors);
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
             const hasImage = !!item.image;
-            const maxW = hasImage ? 550 : 320;
-            const minW = hasImage ? 480 : 260;
+            const isMobile = window.innerWidth < 768;
+            const maxW = hasImage ? (isMobile ? 320 : 550) : 320;
+            const minW = hasImage ? (isMobile ? 260 : 480) : 260;
 
             marker.bindPopup(popupContent, { 
                 maxWidth: maxW, 
@@ -346,9 +348,9 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             listItem.addEventListener('click', () => {
-                map.setView([item.lat, item.lng], 10, { animate: true });
-                marker.openPopup();
                 if (window.innerWidth < 768) closeSidebar();
+                map.setView([item.lat, item.lng], 10, { animate: false });
+                marker.openPopup();
             });
 
             objectList.appendChild(listItem);
@@ -639,6 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imageModal.classList.add('opacity-0');
             setTimeout(() => {
                 imageModal.classList.add('hidden');
+                imageModal.classList.remove('flex');
             }, 300);
         });
         imageModal.addEventListener('click', (e) => {
