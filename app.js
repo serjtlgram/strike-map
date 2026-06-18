@@ -321,12 +321,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const isMobile = window.innerWidth < 768;
             const maxW = hasImage ? (isMobile ? 320 : 550) : 320;
             const minW = hasImage ? (isMobile ? 260 : 480) : 260;
+            const maxH = window.innerHeight - (isMobile ? 140 : 100);
 
             marker.bindPopup(popupContent, { 
                 maxWidth: maxW, 
                 minWidth: minW,
-                autoPanPaddingTopLeft: [paddingLeft, 20],
-                autoPanPaddingBottomRight: [20, 20]
+                maxHeight: maxH,
+                autoPanPaddingTopLeft: [paddingLeft, 40],
+                autoPanPaddingBottomRight: [20, isMobile ? 80 : 40]
             });
             markerLayerGroup.addLayer(marker);
             
