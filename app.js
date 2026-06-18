@@ -184,9 +184,15 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Set attribute for CSS on html element (matches :root)
             if (theme === 'dark') {
-                if (document.documentElement) document.documentElement.removeAttribute('data-theme');
+                if (document.documentElement) {
+                    document.documentElement.removeAttribute('data-theme');
+                    document.documentElement.classList.add('dark');
+                }
             } else {
-                if (document.documentElement) document.documentElement.setAttribute('data-theme', theme);
+                if (document.documentElement) {
+                    document.documentElement.setAttribute('data-theme', theme);
+                    document.documentElement.classList.remove('dark');
+                }
             }
 
             // Swap Map Tiles
