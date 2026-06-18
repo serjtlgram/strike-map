@@ -72,9 +72,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Force popup contents to scroll back to the top on opening (mobile only)
     map.on('popupopen', (e) => {
-        if (window.innerWidth >= 768) return;
         const popup = e.popup;
-        if (popup && popup.getElement()) {
+        if (!popup) return;
+
+        if (window.innerWidth >= 768) {
+            // For PC: force layout update to trigger autoPan centering and make sure the whole card is visible
+            setTimeout(() => {
+                popup.update();
+            }, 100);
+            return;
+        }
+
+        // Mobile only scroll reset
+        if (popup.getElement()) {
             const contentNode = popup.getElement().querySelector('.leaflet-popup-content');
             if (contentNode) {
                 contentNode.scrollTop = 0;
@@ -366,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isMobile = window.innerWidth < 768;
             const maxW = isMobile ? 300 : (hasImage ? 550 : 320);
             const minW = isMobile ? 240 : (hasImage ? 450 : 260);
-            const maxH = isMobile ? Math.min(window.innerHeight * 0.65, 420) : window.innerHeight - 100;
+            const maxH = isMobile ? Math.min(window.innerHeight * 0.65, 420) : null;
 
             marker.bindPopup(popupContent, { 
                 className: hasImage && !isMobile ? 'desktop-image-popup' : '',
