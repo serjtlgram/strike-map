@@ -254,12 +254,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let imageHtml = '';
         if (item.images && item.images.length > 0) {
             const mainImg = item.images[0];
-            const countHtml = item.images.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none md:hidden">+${item.images.length - 1}</div>` : '';
+            const countHtml = item.images.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none mobile-only">+${item.images.length - 1}</div>` : '';
             const imagesJson = JSON.stringify(item.images).replace(/"/g, '&quot;');
             
             let thumbnailsHtml = '';
             if (item.images.length > 1) {
-                thumbnailsHtml = `<div class="hidden md:flex flex-col gap-2 mt-2 w-full">`;
+                thumbnailsHtml = `<div class="desktop-only-flex flex-col gap-2 mt-2 w-full">`;
                 for (let i = 1; i < item.images.length; i++) {
                     thumbnailsHtml += `
                         <div class="w-full h-16 rounded-lg shadow-sm overflow-hidden relative border theme-border hover:opacity-90 transition" onclick="event.stopPropagation(); window.openFullscreenGallery('${imagesJson}', ${i})">
