@@ -369,11 +369,18 @@
     </div>
 
     <!-- Fullscreen Image Modal -->
-    <div id="imageModal" class="fixed inset-0 z-[3000] bg-black/90 hidden items-center justify-center backdrop-blur-sm transition-opacity duration-300 opacity-0">
-        <button id="closeImageModalBtn" class="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors p-2 bg-black/50 rounded-full">
+    <div id="imageModal" class="fixed inset-0 z-[3000] bg-black/90 hidden items-center justify-center backdrop-blur-sm transition-opacity duration-300 opacity-0 group">
+        <div id="imageCounter" class="absolute top-6 left-6 text-white text-sm bg-black/50 px-3 py-1.5 rounded-full hidden"></div>
+        <button id="closeImageModalBtn" class="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors p-2 bg-black/50 rounded-full z-10">
             <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
-        <img id="modalImage" src="" alt="Fullscreen view" class="max-w-[95vw] max-h-[95vh] object-contain rounded-lg shadow-2xl">
+        <button id="prevImageBtn" class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 p-2 bg-black/50 rounded-full hidden z-10">
+            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <button id="nextImageBtn" class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 p-2 bg-black/50 rounded-full hidden z-10">
+            <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+        <img id="modalImage" src="" alt="Fullscreen view" class="max-w-[95vw] max-h-[95vh] object-contain rounded-lg shadow-2xl transition-opacity duration-200">
     </div>
 
     <!-- Leaflet JS -->

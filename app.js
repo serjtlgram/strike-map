@@ -251,20 +251,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generatePopupHTML(item, type, colors) {
         const textExpand = currentLang === 'uk' ? 'Збільшити' : 'Увеличить';
-        const imageHtml = item.image ? `
-            <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
-                <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
-                    <img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
-                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                        <span>${textExpand}</span>
+        let imageHtml = '';
+        if (item.images && item.images.length > 0) {
+            const mainImg = item.images[0];
+            const countHtml = item.images.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none">+${item.images.length - 1}</div>` : '';
+            const imagesJson = JSON.stringify(item.images).replace(/"/g, '&quot;');
+            imageHtml = `
+                <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenGallery('${imagesJson}', 0)">
+                    <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
+                        <img src="${mainImg}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        ${countHtml}
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <span>${textExpand}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        ` : '';
+            `;
+        } else if (item.image) {
+            imageHtml = `
+                <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
+                    <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
+                        <img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <span>${textExpand}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
 
-        const containerClasses = item.image ? 'popup-has-image flex flex-col md:flex-row justify-between items-stretch' : '';
-        const contentClasses = item.image ? 'popup-content-col flex-1 min-w-0 md:min-w-[260px]' : '';
+        const hasImage = !!item.image || (item.images && item.images.length > 0);
+        const containerClasses = hasImage ? 'popup-has-image flex flex-col md:flex-row justify-between items-stretch' : '';
+        const contentClasses = hasImage ? 'popup-content-col flex-1 min-w-0 md:min-w-[260px]' : '';
 
         return `
             <div class="p-4 md:p-5 font-sans ${containerClasses}">
@@ -310,11 +330,36 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    let currentGalleryImages = [];
+    let currentGalleryIndex = 0;
+
     window.openFullscreenImage = function(src) {
+        window.openFullscreenGallery(JSON.stringify([src]), 0);
+    };
+
+    window.openFullscreenGallery = function(imagesJson, startIndex) {
+        const images = JSON.parse(imagesJson);
+        currentGalleryImages = images;
+        currentGalleryIndex = startIndex;
+        
         const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        if (modal && modalImg) {
-            modalImg.src = src;
+        const prevBtn = document.getElementById('prevImageBtn');
+        const nextBtn = document.getElementById('nextImageBtn');
+        const counter = document.getElementById('imageCounter');
+        
+        if (images.length > 1) {
+            if (prevBtn) prevBtn.classList.remove('hidden');
+            if (nextBtn) nextBtn.classList.remove('hidden');
+            if (counter) counter.classList.remove('hidden');
+        } else {
+            if (prevBtn) prevBtn.classList.add('hidden');
+            if (nextBtn) nextBtn.classList.add('hidden');
+            if (counter) counter.classList.add('hidden');
+        }
+        
+        updateModalImage(false);
+        
+        if (modal) {
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             setTimeout(() => {
@@ -322,6 +367,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 10);
         }
     };
+
+    function updateModalImage(animate = true) {
+        const modalImg = document.getElementById('modalImage');
+        const counter = document.getElementById('imageCounter');
+        if (modalImg && currentGalleryImages.length > 0) {
+            if (animate) {
+                modalImg.style.opacity = '0';
+                setTimeout(() => {
+                    modalImg.src = currentGalleryImages[currentGalleryIndex];
+                    modalImg.style.opacity = '1';
+                }, 150);
+            } else {
+                modalImg.src = currentGalleryImages[currentGalleryIndex];
+                modalImg.style.opacity = '1';
+            }
+            
+            if (counter) {
+                counter.textContent = `${currentGalleryIndex + 1} / ${currentGalleryImages.length}`;
+            }
+        }
+    }
 
     function renderData(data) {
         markerLayerGroup.clearLayers();
@@ -372,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const popupContent = generatePopupHTML(item, type, colors);
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
-            const hasImage = !!item.image;
+            const hasImage = !!item.image || (item.images && item.images.length > 0);
             const isMobile = window.innerWidth < 768;
             const maxW = isMobile ? 300 : (hasImage ? 550 : 320);
             const minW = isMobile ? 240 : (hasImage ? 450 : 260);
@@ -725,5 +791,58 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeImageModalBtn.click();
             }
         });
+    }
+
+    // Gallery navigation
+    const prevBtn = document.getElementById('prevImageBtn');
+    const nextBtn = document.getElementById('nextImageBtn');
+    
+    if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentGalleryImages.length > 1) {
+                currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+                updateModalImage();
+            }
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (currentGalleryImages.length > 1) {
+                currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
+                updateModalImage();
+            }
+        });
+    }
+    
+    // Swipe support for gallery
+    let touchStartX = 0;
+    let touchEndX = 0;
+    if (imageModal) {
+        imageModal.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, {passive: true});
+        
+        imageModal.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, {passive: true});
+        
+        function handleSwipe() {
+            if (currentGalleryImages.length <= 1) return;
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left -> next image
+                currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
+                updateModalImage();
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right -> prev image
+                currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+                updateModalImage();
+            }
+        }
     }
 });
