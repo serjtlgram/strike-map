@@ -112,40 +112,44 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function updateMapLanguage() {
-        if (!currentTileLayer || typeof currentTileLayer.getMaplibreMap !== 'function') return;
-        const maplibreMap = currentTileLayer.getMaplibreMap();
-        if (!maplibreMap) return;
+        try {
+            if (!currentTileLayer || typeof currentTileLayer.getMaplibreMap !== 'function') return;
+            const maplibreMap = currentTileLayer.getMaplibreMap();
+            if (!maplibreMap) return;
 
-        const setStyleLang = () => {
-            try {
-                const style = maplibreMap.getStyle();
-                if (!style || !style.layers) return;
+            const setStyleLang = () => {
+                try {
+                    const style = maplibreMap.getStyle();
+                    if (!style || !style.layers) return;
 
-                let mapLang = currentLang;
-                if (mapLang === 'uk') mapLang = 'uk';
-                else if (mapLang === 'ru') mapLang = 'ru';
-                else mapLang = 'en';
+                    let mapLang = currentLang;
+                    if (mapLang === 'uk') mapLang = 'uk';
+                    else if (mapLang === 'ru') mapLang = 'ru';
+                    else mapLang = 'en';
 
-                style.layers.forEach(layer => {
-                    if (layer.layout && layer.layout['text-field']) {
-                        maplibreMap.setLayoutProperty(layer.id, 'text-field', [
-                            'coalesce',
-                            ['get', 'name:' + mapLang],
-                            ['get', 'name:en'],
-                            ['get', 'name']
-                        ]);
-                    }
-                });
-            } catch (e) {
-                console.error('Error updating map language:', e);
+                    style.layers.forEach(layer => {
+                        if (layer.layout && layer.layout['text-field']) {
+                            maplibreMap.setLayoutProperty(layer.id, 'text-field', [
+                                'coalesce',
+                                ['get', 'name:' + mapLang],
+                                ['get', 'name:en'],
+                                ['get', 'name']
+                            ]);
+                        }
+                    });
+                } catch (e) {
+                    console.error('Error updating map language style:', e);
+                }
+            };
+
+            if (maplibreMap.isStyleLoaded()) {
+                setStyleLang();
+            } else {
+                maplibreMap.off('style.load', setStyleLang);
+                maplibreMap.on('style.load', setStyleLang);
             }
-        };
-
-        if (maplibreMap.isStyleLoaded()) {
-            setStyleLang();
-        } else {
-            maplibreMap.off('style.load', setStyleLang);
-            maplibreMap.on('style.load', setStyleLang);
+        } catch (e) {
+            console.error('Error updating map language:', e);
         }
     }
 
@@ -172,34 +176,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Management
     function setTheme(theme) {
-        localStorage.setItem('strike-map-theme', theme);
-        
-        // Set attribute for CSS on html element (matches :root)
-        if (theme === 'dark') {
-            document.documentElement.removeAttribute('data-theme');
-        } else {
-            document.documentElement.setAttribute('data-theme', theme);
-        }
-
-        // Swap Map Tiles
-        map.removeLayer(currentTileLayer);
-        currentTileLayer = tileLayers[theme];
-        currentTileLayer.addTo(map);
-
-        // Update Map labels language dynamically
-        if (typeof updateMapLanguage === 'function') updateMapLanguage();
-
-        // Update Theme Buttons
-        themeSelectors.forEach(btn => {
-            btn.classList.remove('ring-2', 'ring-blue-500', 'ring-offset-2');
-            if (btn.getAttribute('data-set-theme') === theme) {
-                btn.classList.add('ring-2', 'ring-blue-500', 'ring-offset-2');
+        try {
+            if (!tileLayers[theme]) {
+                theme = 'beige';
             }
-        });
-        
-        // Ensure ring offset matches body bg
-        const bgColor = getComputedStyle(document.body).getPropertyValue('--bg-body').trim();
-        document.documentElement.style.setProperty('--tw-ring-offset-color', bgColor);
+            localStorage.setItem('strike-map-theme', theme);
+            
+            // Set attribute for CSS on html element (matches :root)
+            if (theme === 'dark') {
+                if (document.documentElement) document.documentElement.removeAttribute('data-theme');
+            } else {
+                if (document.documentElement) document.documentElement.setAttribute('data-theme', theme);
+            }
+
+            // Swap Map Tiles
+            if (map && currentTileLayer) {
+                map.removeLayer(currentTileLayer);
+            }
+            currentTileLayer = tileLayers[theme];
+            if (map && currentTileLayer) {
+                currentTileLayer.addTo(map);
+            }
+
+            // Update Map labels language dynamically
+            if (typeof updateMapLanguage === 'function') updateMapLanguage();
+
+            // Update Theme Buttons
+            if (themeSelectors) {
+                themeSelectors.forEach(btn => {
+                    btn.classList.remove('ring-2', 'ring-blue-500', 'ring-offset-2');
+                    if (btn.getAttribute('data-set-theme') === theme) {
+                        btn.classList.add('ring-2', 'ring-blue-500', 'ring-offset-2');
+                    }
+                });
+            }
+            
+            // Ensure ring offset matches body bg
+            if (document.body && document.documentElement) {
+                const bgColor = getComputedStyle(document.body).getPropertyValue('--bg-body').trim();
+                document.documentElement.style.setProperty('--tw-ring-offset-color', bgColor);
+            }
+        } catch (e) {
+            console.error('Error setting theme:', e);
+        }
     }
 
     themeSelectors.forEach(btn => {
@@ -831,22 +850,30 @@ document.addEventListener('DOMContentLoaded', () => {
     setLang(currentLang);
 
     // Check for ID in URL to automatically open a specific popup
-    const urlParams = new URLSearchParams(window.location.search);
-    const eventIdToOpen = urlParams.get('id');
-    if (eventIdToOpen) {
-        const targetMarkerObj = activeMarkers.find(m => m.data.id && m.data.id.toString() === eventIdToOpen);
-        if (targetMarkerObj) {
-            // Wait for map to finish initial rendering
-            setTimeout(() => {
-                map.setView(targetMarkerObj.marker.getLatLng(), 11, { animate: false });
-                targetMarkerObj.marker.openPopup();
-                
-                // On mobile, close sidebar automatically
-                if (window.innerWidth < 768 && sidebar) {
-                    sidebar.classList.remove('open');
-                }
-            }, 500);
+    try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventIdToOpen = urlParams.get('id');
+        if (eventIdToOpen) {
+            const targetMarkerObj = activeMarkers.find(m => m && m.data && m.data.id && m.data.id.toString() === eventIdToOpen);
+            if (targetMarkerObj && targetMarkerObj.marker && typeof targetMarkerObj.marker.getLatLng === 'function') {
+                // Wait for map to finish initial rendering
+                setTimeout(() => {
+                    try {
+                        map.setView(targetMarkerObj.marker.getLatLng(), 11, { animate: false });
+                        targetMarkerObj.marker.openPopup();
+                        
+                        // On mobile, close sidebar automatically
+                        if (window.innerWidth < 768 && sidebar) {
+                            sidebar.classList.remove('open');
+                        }
+                    } catch (err) {
+                        console.error('Error centering map or opening popup for URL ID:', err);
+                    }
+                }, 500);
+            }
         }
+    } catch (e) {
+        console.error('Error handling URL query params:', e);
     }
 
     // Modal Close Logic
