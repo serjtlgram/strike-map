@@ -70,6 +70,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
+    // Force popup contents to scroll back to the top on opening
+    map.on('popupopen', (e) => {
+        const popup = e.popup;
+        if (popup && popup.getElement()) {
+            const contentNode = popup.getElement().querySelector('.leaflet-popup-content');
+            if (contentNode) {
+                contentNode.scrollTop = 0;
+                setTimeout(() => { contentNode.scrollTop = 0; }, 10);
+                setTimeout(() => { contentNode.scrollTop = 0; }, 50);
+                setTimeout(() => { contentNode.scrollTop = 0; }, 150);
+            }
+        }
+    });
+
     // Tile Layers for themes (using OpenFreeMap Vector styles)
     const tileLayers = {
         dark: L.maplibreGL({
