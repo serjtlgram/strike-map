@@ -3171,6 +3171,7 @@ const strikeData = [
     "date": "18.06.2026",
     "lat": 55.638,
     "lng": 37.794,
+    "image": "mnpz_explosion.jpg",
     "ru": {
       "region": "Москва, Капотня",
       "target": "Московский НПЗ (МНПЗ)",

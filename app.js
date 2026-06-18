@@ -225,46 +225,70 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generatePopupHTML(item, type, colors) {
+        const imageHtml = item.image ? `
+            <div class="ml-4 shrink-0 w-48 h-full flex flex-col justify-start">
+                <img src="${item.image}" alt="${item.target}" class="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition object-cover border theme-border" onclick="window.openFullscreenImage('${item.image}')">
+            </div>
+        ` : '';
+
+        const containerClasses = item.image ? 'flex flex-row justify-between items-stretch' : '';
+        const contentClasses = item.image ? 'flex-1 min-w-[260px]' : '';
+
         return `
-            <div class="p-5 font-sans">
-                <div class="mb-3">
-                    <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text} mb-2">
-                        ${item.category}
-                    </span>
-                    <h3 class="text-lg font-bold theme-text-main leading-tight">${item.target}</h3>
-                </div>
-                
-                <div class="space-y-2 text-sm theme-text-muted mb-4">
-                    <div class="flex items-start gap-2">
-                        <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        <span>${item.date}</span>
+            <div class="p-5 font-sans ${containerClasses}">
+                <div class="${contentClasses}">
+                    <div class="mb-3">
+                        <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text} mb-2">
+                            ${item.category}
+                        </span>
+                        <h3 class="text-lg font-bold theme-text-main leading-tight">${item.target}</h3>
                     </div>
-                    <div class="flex items-start gap-2">
-                        <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                        <span class="leading-snug">${item.region}</span>
+                    
+                    <div class="space-y-2 text-sm theme-text-muted mb-4">
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <span>${item.date}</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span class="leading-snug">${item.region}</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span>${item.weapon}</span>
+                        </div>
+                        ${item.distance !== undefined ? `
+                        <div class="flex items-start gap-2">
+                            <svg class="w-4 h-4 mt-0.5 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            <span class="font-medium text-blue-500">${i18n.distance[currentLang].replace('{dist}', item.distance)}</span>
+                        </div>` : ''}
                     </div>
-                    <div class="flex items-start gap-2">
-                        <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        <span>${item.weapon}</span>
-                    </div>
-                    ${item.distance !== undefined ? `
-                    <div class="flex items-start gap-2">
-                        <svg class="w-4 h-4 mt-0.5 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                        <span class="font-medium text-blue-500">${i18n.distance[currentLang].replace('{dist}', item.distance)}</span>
-                    </div>` : ''}
-                </div>
 
-                <div class="theme-bg-input rounded-lg p-3 border theme-border mb-3">
-                    <p class="text-sm theme-text-main leading-relaxed">${item.details}</p>
-                </div>
+                    <div class="theme-bg-input rounded-lg p-3 border theme-border mb-3">
+                        <p class="text-sm theme-text-main leading-relaxed">${item.details}</p>
+                    </div>
 
-                <div class="text-xs theme-text-muted flex items-center gap-1.5 mt-2">
-                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span class="truncate">${item.source}</span>
+                    <div class="text-xs theme-text-muted flex items-center gap-1.5 mt-2">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="truncate">${item.source}</span>
+                    </div>
                 </div>
+                ${imageHtml}
             </div>
         `;
     }
+
+    window.openFullscreenImage = function(src) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        if (modal && modalImg) {
+            modalImg.src = src;
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+        }
+    };
 
     function renderData(data) {
         markerLayerGroup.clearLayers();
@@ -292,9 +316,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const popupContent = generatePopupHTML(item, type, colors);
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
+            const hasImage = !!item.image;
+            const maxW = hasImage ? 550 : 320;
+            const minW = hasImage ? 480 : 260;
+
             marker.bindPopup(popupContent, { 
-                maxWidth: 320, 
-                minWidth: 260,
+                maxWidth: maxW, 
+                minWidth: minW,
                 autoPanPaddingTopLeft: [paddingLeft, 20],
                 autoPanPaddingBottomRight: [20, 20]
             });
@@ -602,4 +630,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setLang(currentLang);
+
+    // Modal Close Logic
+    const imageModal = document.getElementById('imageModal');
+    const closeImageModalBtn = document.getElementById('closeImageModalBtn');
+    if (imageModal && closeImageModalBtn) {
+        closeImageModalBtn.addEventListener('click', () => {
+            imageModal.classList.add('opacity-0');
+            setTimeout(() => {
+                imageModal.classList.add('hidden');
+            }, 300);
+        });
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                closeImageModalBtn.click();
+            }
+        });
+    }
 });
