@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ` : '';
 
         const containerClasses = item.image ? 'flex flex-col md:flex-row justify-between items-stretch' : '';
-        const contentClasses = item.image ? 'flex-1 min-w-0' : '';
+        const contentClasses = item.image ? 'flex-1 min-w-0 md:min-w-[260px]' : '';
 
         return `
             <div class="p-4 md:p-5 font-sans ${containerClasses}">
