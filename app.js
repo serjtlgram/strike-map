@@ -305,9 +305,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="p-4 md:p-5 font-sans ${containerClasses}">
                 <div class="${contentClasses}">
                     <div class="mb-3">
-                        <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text} mb-2">
-                            ${item.category}
-                        </span>
+                        <div class="flex justify-between items-start mb-2 gap-2">
+                            <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text}">
+                                ${item.category}
+                            </span>
+                            <button onclick="window.copyEventLink(${item.id}, event)" class="shrink-0 flex items-center gap-1 px-2 py-1 text-[11px] font-medium rounded-md bg-slate-100 dark:bg-slate-800 theme-text-muted hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-700 transition border theme-border active:scale-95" title="${currentLang === 'uk' ? 'Копіювати посилання' : 'Копировать ссылку'}">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                                <span>${currentLang === 'uk' ? 'Поділитися' : 'Поделиться'}</span>
+                            </button>
+                        </div>
                         <h3 class="text-lg font-bold theme-text-main leading-tight">${item.target}</h3>
                     </div>
                     
@@ -344,6 +350,34 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
+
+    window.showToast = function(message) {
+        let toast = document.getElementById('copyToast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'copyToast';
+            toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 z-[3000] bg-slate-800 text-white px-4 py-2 rounded-lg shadow-lg font-medium text-sm transition-opacity duration-300 opacity-0 pointer-events-none';
+            document.body.appendChild(toast);
+        }
+        toast.textContent = message;
+        toast.classList.remove('opacity-0');
+        
+        if (window.copyToastTimeout) clearTimeout(window.copyToastTimeout);
+        window.copyToastTimeout = setTimeout(() => {
+            toast.classList.add('opacity-0');
+        }, 2000);
+    };
+
+    window.copyEventLink = function(id, e) {
+        if (e) e.stopPropagation();
+        const url = new URL(window.location.href);
+        url.searchParams.set('id', id);
+        navigator.clipboard.writeText(url.toString()).then(() => {
+            showToast(currentLang === 'uk' ? 'Посилання скопійовано!' : 'Ссылка скопирована!');
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    };
 
     let currentGalleryImages = [];
     let currentGalleryIndex = 0;
@@ -404,6 +438,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Initialize Map and Render Data
+    updateTranslations();
+    renderData(strikeData);
+    
+    // Check for ID in URL to automatically open a specific popup
+    const urlParams = new URLSearchParams(window.location.search);
+    const eventIdToOpen = urlParams.get('id');
+    if (eventIdToOpen) {
+        const targetMarkerObj = activeMarkers.find(m => m.data.id && m.data.id.toString() === eventIdToOpen);
+        if (targetMarkerObj) {
+            // Wait for map to finish initial rendering
+            setTimeout(() => {
+                map.setView(targetMarkerObj.marker.getLatLng(), 11, { animate: false });
+                targetMarkerObj.marker.openPopup();
+                
+                // On mobile, close sidebar automatically
+                if (window.innerWidth < 768 && sidebar) {
+                    sidebar.classList.remove('open');
+                }
+            }, 500);
+        }
+    }
+
     function renderData(data) {
         markerLayerGroup.clearLayers();
         objectList.innerHTML = '';
@@ -450,6 +507,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const marker = L.marker([finalLat, finalLng], {
                 icon: createCustomIcon(type)
             });
+            
+            // Store reference for direct access by ID
+            if (item.id) {
+                marker.eventId = item.id;
+            }
 
             const popupContent = generatePopupHTML(item, type, colors);
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
