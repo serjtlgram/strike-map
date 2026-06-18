@@ -225,17 +225,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generatePopupHTML(item, type, colors) {
+        const textExpand = currentLang === 'uk' ? 'Збільшити' : 'Увеличить';
         const imageHtml = item.image ? `
-            <div class="mt-4 md:mt-0 md:ml-4 shrink-0 md:w-48 flex flex-col justify-start">
-                <img src="${item.image}" alt="${item.target}" class="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition object-cover border theme-border" onclick="window.openFullscreenImage('${item.image}')">
+            <div class="mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
+                <div class="w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
+                    <img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        <span>${textExpand}</span>
+                    </div>
+                </div>
             </div>
         ` : '';
 
         const containerClasses = item.image ? 'flex flex-col md:flex-row justify-between items-stretch' : '';
-        const contentClasses = item.image ? 'flex-1 min-w-0 md:min-w-[260px]' : '';
+        const contentClasses = item.image ? 'flex-1 min-w-0' : '';
 
         return `
-            <div class="p-5 font-sans ${containerClasses}">
+            <div class="p-4 md:p-5 font-sans ${containerClasses}">
                 <div class="${contentClasses}">
                     <div class="mb-3">
                         <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text} mb-2">
@@ -319,15 +326,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
             const hasImage = !!item.image;
             const isMobile = window.innerWidth < 768;
-            const maxW = hasImage ? (isMobile ? 320 : 550) : 320;
-            const minW = hasImage ? (isMobile ? 260 : 480) : 260;
-            const maxH = window.innerHeight - (isMobile ? 140 : 100);
+            const maxW = isMobile ? 300 : (hasImage ? 550 : 320);
+            const minW = isMobile ? 240 : (hasImage ? 450 : 260);
+            const maxH = isMobile ? Math.min(window.innerHeight * 0.65, 420) : window.innerHeight - 100;
 
             marker.bindPopup(popupContent, { 
                 maxWidth: maxW, 
                 minWidth: minW,
                 maxHeight: maxH,
-                autoPanPaddingTopLeft: [paddingLeft, 40],
+                autoPanPaddingTopLeft: [paddingLeft, isMobile ? 60 : 40],
                 autoPanPaddingBottomRight: [20, isMobile ? 80 : 40]
             });
             markerLayerGroup.addLayer(marker);
