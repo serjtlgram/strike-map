@@ -70,8 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // Force popup contents to scroll back to the top on opening
+    // Force popup contents to scroll back to the top on opening (mobile only)
     map.on('popupopen', (e) => {
+        if (window.innerWidth >= 768) return;
         const popup = e.popup;
         if (popup && popup.getElement()) {
             const contentNode = popup.getElement().querySelector('.leaflet-popup-content');
@@ -395,11 +396,27 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             listItem.addEventListener('click', () => {
-                if (window.innerWidth < 768) closeSidebar();
-                map.setView([finalLat, finalLng], 10, { animate: false });
-                setTimeout(() => {
-                    marker.openPopup();
-                }, 100);
+                if (window.innerWidth < 768) {
+                    closeSidebar();
+                    map.setView([finalLat, finalLng], 10, { animate: false });
+                    setTimeout(() => {
+                        marker.openPopup();
+                    }, 100);
+                } else {
+                    const currentCenter = map.getCenter();
+                    const isSameView = (map.getZoom() === 10 && 
+                                        Math.abs(currentCenter.lat - finalLat) < 0.0001 && 
+                                        Math.abs(currentCenter.lng - finalLng) < 0.0001);
+                    
+                    if (isSameView) {
+                        marker.openPopup();
+                    } else {
+                        map.once('moveend', () => {
+                            marker.openPopup();
+                        });
+                        map.setView([finalLat, finalLng], 10, { animate: false });
+                    }
+                }
             });
 
             objectList.appendChild(listItem);
