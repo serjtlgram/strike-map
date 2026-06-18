@@ -227,8 +227,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function generatePopupHTML(item, type, colors) {
         const textExpand = currentLang === 'uk' ? 'Збільшити' : 'Увеличить';
         const imageHtml = item.image ? `
-            <div class="mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
-                <div class="w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
+            <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
+                <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
                     <img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
                         <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -238,8 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         ` : '';
 
-        const containerClasses = item.image ? 'flex flex-col md:flex-row justify-between items-stretch' : '';
-        const contentClasses = item.image ? 'flex-1 min-w-0 md:min-w-[260px]' : '';
+        const containerClasses = item.image ? 'popup-has-image flex flex-col md:flex-row justify-between items-stretch' : '';
+        const contentClasses = item.image ? 'popup-content-col flex-1 min-w-0 md:min-w-[260px]' : '';
 
         return `
             <div class="p-4 md:p-5 font-sans ${containerClasses}">
@@ -331,6 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const maxH = isMobile ? Math.min(window.innerHeight * 0.65, 420) : window.innerHeight - 100;
 
             marker.bindPopup(popupContent, { 
+                className: hasImage && !isMobile ? 'desktop-image-popup' : '',
                 maxWidth: maxW, 
                 minWidth: minW,
                 maxHeight: maxH,
@@ -359,7 +360,9 @@ document.addEventListener('DOMContentLoaded', () => {
             listItem.addEventListener('click', () => {
                 if (window.innerWidth < 768) closeSidebar();
                 map.setView([item.lat, item.lng], 10, { animate: false });
-                marker.openPopup();
+                setTimeout(() => {
+                    marker.openPopup();
+                }, 100);
             });
 
             objectList.appendChild(listItem);
