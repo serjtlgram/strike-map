@@ -314,11 +314,34 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Track how many times each coordinate is used to apply offsets for overlapping markers
+        const coordinateCounts = {};
+
         data.forEach((item, index) => {
             const type = getCategoryType(item.category);
             const colors = getCategoryColorClass(type);
 
-            const marker = L.marker([item.lat, item.lng], {
+            // Compute coordinate key with standard precision (5 decimals)
+            const coordKey = `${item.lat.toFixed(5)},${item.lng.toFixed(5)}`;
+            let finalLat = item.lat;
+            let finalLng = item.lng;
+
+            if (coordinateCounts[coordKey] !== undefined) {
+                coordinateCounts[coordKey]++;
+                const count = coordinateCounts[coordKey];
+                
+                // Distribute overlapping markers in a small circle around the original point
+                // 0.0006 degrees is approx 65 meters. This is visually separated when zoomed in.
+                const angle = (count * 2 * Math.PI) / 8; // Max 8 directions in first ring
+                const radius = 0.0006 + Math.floor(count / 8) * 0.0003;
+                
+                finalLat += Math.sin(angle) * radius;
+                finalLng += Math.cos(angle) * radius;
+            } else {
+                coordinateCounts[coordKey] = 0;
+            }
+
+            const marker = L.marker([finalLat, finalLng], {
                 icon: createCustomIcon(type)
             });
 
@@ -359,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             listItem.addEventListener('click', () => {
                 if (window.innerWidth < 768) closeSidebar();
-                map.setView([item.lat, item.lng], 10, { animate: false });
+                map.setView([finalLat, finalLng], 10, { animate: false });
                 setTimeout(() => {
                     marker.openPopup();
                 }, 100);
