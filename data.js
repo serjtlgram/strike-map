@@ -3342,9 +3342,9 @@ const strikeData = [
   },
   {
     "date": "20.06.2026",
-    "lat": null,
-    "lng": null,
-    "distance": null,
+    "lat": 45.1642,
+    "lng": 34.025,
+    "distance": 197,
     "ru": {
       "region": "Крым, Симферопольский район (с. Журавлевка)",
       "target": "Газораспределительная станция и хранилище «ТЕС»",
@@ -3365,9 +3365,9 @@ const strikeData = [
   },
   {
     "date": "20.06.2026",
-    "lat": null,
-    "lng": null,
-    "distance": null,
+    "lat": 45.2881,
+    "lng": 34.8031,
+    "distance": 226,
     "ru": {
       "region": "Крым, Советский район (с. Лоховка)",
       "target": "Газопровод",
@@ -3388,9 +3388,9 @@ const strikeData = [
   },
   {
     "date": "20.06.2026",
-    "lat": null,
-    "lng": null,
-    "distance": null,
+    "lat": 44.685,
+    "lng": 33.566,
+    "distance": 229,
     "ru": {
       "region": "Крым, Севастополь",
       "target": "Аэродром «Бельбек» (мобильная огневая группа)",
@@ -3413,7 +3413,7 @@ const strikeData = [
     "date": "20.06.2026",
     "lat": 47.1998,
     "lng": 38.8815,
-    "distance": null,
+    "distance": 197,
     "ru": {
       "region": "Ростовская область, Таганрог",
       "target": "Завод «Атлант-Аэро»",
