@@ -292,6 +292,39 @@
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
+
+        /* === Photo Badge (camera icon + count) === */
+        .photo-badge {
+            position: absolute;
+            top: 7px;
+            right: 8px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            padding: 3px 6px 3px 5px;
+            border-radius: 20px;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+            pointer-events: none;
+            z-index: 2;
+        }
+        .group:hover .photo-badge {
+            color: var(--text-main);
+            transform: scale(1.05);
+        }
+        .photo-badge-icon {
+            width: 13px;
+            height: 13px;
+            flex-shrink: 0;
+        }
+        .photo-badge-count {
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.02em;
+        }
     </style>
 </head>
 <body>
@@ -434,6 +467,6 @@
     <!-- Data Source -->
     <script src="data.js?v=20"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=23"></script>
+    <script src="app.js?v=24"></script>
 </body>
 </html>
