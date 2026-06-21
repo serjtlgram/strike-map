@@ -3506,6 +3506,12 @@ const strikeData = [
     "lat": 45.343,
     "lng": 36.444,
     "distance": 295,
+    "images": [
+      "images/26_21-06_kerch.jpg",
+      "images/26_21-06_kerch1.jpg",
+      "images/26_21-06_kerch2.jpg",
+      "images/26_21-06_kerch3.jpg"
+    ],
     "ru": {
       "region": "АР Крым, Керчь",
       "target": "Нефтяной терминал («ТЭС-Терминал-1» / Морской рыбный порт)",
