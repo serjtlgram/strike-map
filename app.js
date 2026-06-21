@@ -539,8 +539,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const listItem = document.createElement('div');
             listItem.className = `p-3 rounded-xl theme-bg-item border theme-border theme-hover-bg-item transition cursor-pointer group relative overflow-hidden`;
             
+            const photoCount = item.images && item.images.length > 0 ? item.images.length : (item.image ? 1 : 0);
+            const cameraBadge = photoCount > 0 ? `
+                <div class="photo-badge" title="${photoCount} фото">
+                    <svg class="photo-badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Flash bolt -->
+                        <path d="M14.5 3L11 9h3l-2.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Camera body -->
+                        <path d="M2 9.5C2 8.67 2.67 8 3.5 8H5l1.5-2h7L15 8h1.5C17.33 8 18 8.67 18 9.5v9c0 .83-.67 1.5-1.5 1.5h-13C2.67 20 2 19.33 2 18.5v-9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                        <!-- Lens ring -->
+                        <circle cx="10" cy="14" r="3" stroke="currentColor" stroke-width="1.6"/>
+                        <!-- Lens glint -->
+                        <circle cx="11.2" cy="12.8" r="0.6" fill="currentColor"/>
+                    </svg>
+                    <span class="photo-badge-count">${photoCount}</span>
+                </div>
+            ` : '';
+            
             listItem.innerHTML = `
                 <div class="absolute left-0 top-0 bottom-0 w-1 ${colors.bg} opacity-50 group-hover:opacity-100 transition"></div>
+                ${cameraBadge}
                 <div class="pl-2">
                     <div class="text-xs ${colors.text} font-medium mb-1">${item.category}</div>
                     <div class="font-semibold text-sm theme-text-main mb-1 leading-tight transition">${item.target}</div>
