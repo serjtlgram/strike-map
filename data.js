@@ -3603,7 +3603,7 @@ const strikeData = [
     "date": "22.06.2026",
     "lat": 51.6784,
     "lng": 39.2582,
-    "distance": null,
+    "distance": 283,
     "images": [
       "images/26-2206-voronezh.jpg",
       "images/26-2206-voronezh1.jpg",
@@ -3633,7 +3633,7 @@ const strikeData = [
     "date": "22.06.2026",
     "lat": 56.7378,
     "lng": 37.2511,
-    "distance": null,
+    "distance": 668,
     "ru": {
       "region": "Московская область, Дубна",
       "target": "Центр космической связи (ЦКС) «Дубна»",
