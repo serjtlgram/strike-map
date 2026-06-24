@@ -126,6 +126,9 @@
             background-color: var(--bg-body);
             color: var(--text-main);
             transition: background-color 0.3s, color 0.3s;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-variant-numeric: tabular-nums;
         }
 
         #map {
@@ -140,8 +143,8 @@
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid var(--border-color);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s, border-color 0.3s;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
         }
 
         /* Leaflet Popup overrides for Glassmorphism */
@@ -150,7 +153,7 @@
             backdrop-filter: blur(16px) !important;
             -webkit-backdrop-filter: blur(16px) !important;
             border: 1px solid var(--leaflet-popup-border) !important;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1) !important;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
             color: var(--text-main) !important;
             border-radius: 1rem !important;
             padding: 0 !important;
@@ -338,7 +341,7 @@
             <!-- Header -->
             <div class="p-4 pb-2.5 border-b theme-border shrink-0 relative">
                 <div class="flex justify-between items-start mb-2.5">
-                    <h1 class="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-500 dark:from-blue-400 dark:to-indigo-400 tracking-tight" data-i18n="title">Пораженные объекты</h1>
+                    <h1 class="text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-500 dark:from-blue-400 dark:to-indigo-400 tracking-tight" style="text-wrap: balance;" data-i18n="title">Пораженные объекты</h1>
                     <!-- Mobile toggle button -->
                     <button id="toggleSidebarBtn" class="md:hidden absolute top-4 right-4 theme-text-muted hover:theme-text-main transition bg-slate-100 dark:bg-slate-800 p-1.5 rounded-full z-50">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
