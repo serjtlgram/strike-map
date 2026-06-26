@@ -20,6 +20,14 @@ const strikeData = [
       "details": "У новорічну ніч зафіксовано влучання по об'єкту з подальшою пожежею на території підприємства.",
       "source": "СБС, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Ilsky",
+      "target": "Ilsky Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On New Year's night a direct hit was recorded po facilityu s subsequent fireom on the facility's territory.",
+      "source": "SBS, AFU General Staff"
+    },
     "id": 1
   },
   {
@@ -42,6 +50,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Уражені резервуари паливного сховища («Калуганафтопродукт»), масштабну пожежу зафіксовано супутниковими знімками.",
       "source": "СБС"
+    },
+    "en": {
+      "region": "Kaluga Oblast, Lyudinovo",
+      "target": "Lyudinovskaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Fuel tanks were struck fuel storage facility (\"Kaluganefteprodukt\"), large-scale fire zafiksirovan satellite imagery.",
+      "source": "SBS"
     },
     "id": 2
   },
@@ -66,6 +82,14 @@ const strikeData = [
       "details": "Успішна атака безпілотників на стратегічний нафтовий об'єкт.",
       "source": "СБС, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Republic of Tatarstan, Almetyevsky District",
+      "target": "Oil Treatment Unit \"Almetyevskaya\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "successful strike droneov na strategic oil facility.",
+      "source": "SBS, AFU General Staff"
+    },
     "id": 3
   },
   {
@@ -89,6 +113,14 @@ const strikeData = [
       "details": "Ударні безпілотники ССО уразили рухомий склад з паливно-мастильними матеріалами прямо на паливній естакаді нафтобази.",
       "source": "ССО, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "AR Crimea, пгт Gvardeyskoe",
+      "target": "Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strike drones SOF porazili rolling stock with fuel and lubricants pryamo na fuel loading rack fuel depot.",
+      "source": "SOF, AFU General Staff"
+    },
     "id": 4
   },
   {
@@ -110,6 +142,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Внаслідок падіння уламків виникло загоряння, розглядалася можливість евакуації населення.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Volgograd Oblast, Volgograd",
+      "target": "Volgogradskiy Oil Refinery / Fuel Depot",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "As a result of falling debris vozniklo fire outbreak, evacuation of the population was considered.",
       "source": "OSINT"
     },
     "id": 5
@@ -135,6 +175,14 @@ const strikeData = [
       "details": "Уражено три льодостійкі стаціонарні платформи (ім. В. Філановського, Юрія Корчагіна та Валерія Грайфера), зупинено роботу свердловин.",
       "source": "ССО, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Caspian Sea Waters",
+      "target": "Drilling Rigs Corporation \"Lukoyl\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "were struck tri ice-resistant stationary platforms (im. V. Filanovskogo, Yuriya Korchagina i Valeriya Grayfera), well operations were halted.",
+      "source": "SOF, AFU General Staff"
+    },
     "id": 6
   },
   {
@@ -157,6 +205,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Масована атака безпілотників на місто та військовий аеродром, де базуються фронтові бомбардувальники Су-34. У місті запроваджувався режим НС, зафіксовано пошкодження від уламків.",
       "source": "OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Voronezh Oblast, Voronezh",
+      "target": "Airfield \"Baltimor\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "massive strike droneov na city i military airfield, gde baziruyutsya frontline bombers Su-34. V citye a state of emergency was declared emergency, damage was recorded ot debris.",
+      "source": "OSINT, Russian Media"
     },
     "id": 7
   },
@@ -181,6 +237,14 @@ const strikeData = [
       "details": "Історична операція ГУР МО. Вперше з початку повномасштабної війни український ударний безпілотник пролетів понад 1200 км і досяг Ленінградської області, уразивши інфраструктуру найбільшого російського термінала з перевалки нафтопродуктів у Балтійському регіоні.",
       "source": "ГУР, OSINT"
     },
+    "en": {
+      "region": "Санкт-Петербург",
+      "target": "Peterburgskiy neftyanoy Terminal",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "historic operation HUR MoD. For the first time since the start of the full-scale war Ukrainian strike drone proletel bolee 1200 km i dostig Leningradskoy oblast, poraziv infrastrukturu krupneyshego Russian terminala po transshipment of petroleum products v Baltic region.",
+      "source": "HUR, OSINT"
+    },
     "id": 8
   },
   {
@@ -203,6 +267,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Успішна операція ГУР МО. Унаслідок удару БПЛА спалахнула масштабна пожежа, горіло щонайменше чотири резервуари з пальним загальним об'ємом близько 6 тис. кубометрів. Вогонь був настільки сильним, що його гасили понад дві доби.",
       "source": "ГУР, OSINT"
+    },
+    "en": {
+      "region": "Bryansk Oblast, Klintsy",
+      "target": "Klintsovskaya Fuel Depot (OAO \"Bryansknefteprodukt\")",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "successful operation HUR MoD. As a result of the strike UAV vspykhnul large-scale fire, burned at least chetyre storage tanka s fuelm obshchim obemom okolo 6 tys. cubic meters. Ogon byl nastolko silnym, chto ego was extinguished bolee dvukh days.",
+      "source": "HUR, OSINT"
     },
     "id": 9
   },
@@ -227,6 +299,14 @@ const strikeData = [
       "details": "Удар по стратегічному підприємству, що виробляє крилаті ракети Х-59 та дрони-«обманки». Зафіксовано вибухи на території завода.",
       "source": "ГУР, OSINT"
     },
+    "en": {
+      "region": "Smolensk Oblast, Smolensk",
+      "target": "Smolenskiy aviatsionnyy Plant (SmAZ)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "strike on strategicheskomu predpriyatiyu, proizvodyashchemu cruise missiles Kh-59 i drones-\"obmanki\". explosions were recorded on the plant's territory.",
+      "source": "HUR, OSINT"
+    },
     "id": 10
   },
   {
@@ -249,6 +329,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Успішна спецоперація СБУ. Безпілотники уразили завод з переробки газового конденсату. Спалахнула колосальна пожежа, підприємство було змушене повністю зупинити технологічний процес та відвантаження пального на экспорт.",
       "source": "СБУ"
+    },
+    "en": {
+      "region": "Leningrad Oblast, порт Усть-Луга",
+      "target": "Morskoy Terminal kompanii \"Novatek\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Uspeshnaya spetsoperation SBU. drones porazili plant po pererabotke gasovogo kondensata. Vspykhnul kolossalnyy fire, facility bylo vynuzhdeno polnostyu ostanovit tekhnologicheskiy protsess i otgruzku topliva na eksport.",
+      "source": "SBU"
     },
     "id": 11
   },
@@ -273,6 +361,14 @@ const strikeData = [
       "details": "Потужна пожежа на нафтобазі, а також зафіксовано наслідки удару по місцевому енергооб'єкту (ТЕЦ).",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Penza Oblast, Penza",
+      "target": "Fuel Depot \"Penzanefteprodukt\" i Heat & Power Plant",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "powerful fire na fuel depot, a takzhe zafiksirovany posledstviya of the strike po mestnomu energofacilityu (heat & power plant).",
+      "source": "AFU General Staff"
+    },
     "id": 12
   },
   {
@@ -294,6 +390,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Успішна операція СБУ. Масштабна пожежа на вакуумній установці, завод тимчасово повністю зупинив переробку нафти.",
+      "source": "SBU, OSINT"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Tuapse",
+      "target": "Tuapsinskiy Oil Refinery (\"Rosneft\")",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "successful operation SBU. large-scale fire na vakuumnoy ustanovke, plant vremenno polnostyu ostanovil pererabotku oil.",
       "source": "SBU, OSINT"
     },
     "id": 13
@@ -319,6 +423,14 @@ const strikeData = [
       "details": "Підтверджено загоряння нафтопродуктів на ключовій базі забезпечення північного угруповання військ РФ.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Voronezh Oblast, Хохольский район",
+      "target": "Fuel Depot \"Khokholskaya\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "confirmed fire outbreak petroleum products na klyuchevoy baze obespecheniya severnoy gruppirovki voysk RF.",
+      "source": "AFU General Staff"
+    },
     "id": 14
   },
   {
@@ -341,6 +453,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Операція ГУР. Ударний безпілотник успішно подолав ППО над містом і впав на території нафтопереробного підприємства (Глухоозерське шосе), пошкодивши порожні резервуари та автомобілі.",
       "source": "ГУР, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Санкт-Петербург",
+      "target": "Plant \"Nevskiy mazut\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "operation HUR. strikenyy bespinik successfully preodolel air defense nad cityom i upal na territory neftepererabatyvayushchego facility (Glukhoozerskoe shosse), povrediv pustye storage tanks i avtomobili.",
+      "source": "HUR, Russian Media"
     },
     "id": 15
   },
@@ -365,6 +485,14 @@ const strikeData = [
       "details": "Серія ударів дронів по двох НПЗ. На Ільському НПЗ пошкоджено установку первинної переробки нафти потужністю 3,6 млн тонн на рік.",
       "source": "СБУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Северский район",
+      "target": "Ilsky i Afipskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Seriya strikeov droneov po dvum oil refinery. Na Ilskom oil refinery was damageda ustanovka pervichnoy pererabotki oil moshchnostyu 3,6 mln tons v god.",
+      "source": "SBU"
+    },
     "id": 16
   },
   {
@@ -387,6 +515,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Внаслідок масованої атаки дронів на НПЗ спалахнула масштабна пожежа.",
       "source": "OSINT, моніторингові канали"
+    },
+    "en": {
+      "region": "Volgograd Oblast, Volgograd",
+      "target": "Volgogradskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "V rezultate massirovannoy drone strikes na oil refinery vspykhnul large-scale fire.",
+      "source": "OSINT, monitoringovye kanaly"
     },
     "id": 17
   },
@@ -411,6 +547,14 @@ const strikeData = [
       "details": "Удар по арсеналу головного ракетно-артилерійського управління армії РФ. Виникла масштабна пожежа та почалася детонація боєприпасів, місцева влада оголошувала часткову евакуацію.",
       "source": "ГУР, OSINT"
     },
+    "en": {
+      "region": "Volgograd Oblast, пгт Котлубань",
+      "target": "Arsenal GRAU (V/Ch 57229-51)",
+      "category": "Military Infrastructure",
+      "weapon": "Drone",
+      "details": "strike on arsenalu glavnogo raketno-artilleriyskogo upravleniya armii RF. Voznik large-scale fire i nachalas detonation boepripasov, mestnye vlasti obyavlyali hourtichnuyu evakuatsiyu.",
+      "source": "HUR, OSINT"
+    },
     "id": 18
   },
   {
@@ -433,6 +577,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Успішна нічна операція ГУР. Два безпілотники уразили нафтобазу, спалахнула масштабна пожежа — загорілися резервуари з дизельним пальним загальним об'ємом понад 1400 кубометрів.",
       "source": "ГУР, OSINT"
+    },
+    "en": {
+      "region": "Kursk Oblast, Kurskий район (д. Полевая)",
+      "target": "Fuel Depot OOO \"Polevaya\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Uspeshnaya nochnaya operation HUR. Dva drone porazili fuel depot, vspykhnul large-scale fire — zaburnedis storage tanks s dizelnym fuelm obshchim obemom bolee 1400 cubic meters.",
+      "source": "HUR, OSINT"
     },
     "id": 19
   },
@@ -457,6 +609,14 @@ const strikeData = [
       "details": "Повторний за місяць удар по найбільшому на півдні РФ нафтоперевалочному комплексу, зафіксовано пожежу.",
       "source": "СБУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Волна",
+      "target": "Terminal \"Tamanneftegaz\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Povtornyy za mesyats strike on krupneyshemu na yuge RF nefteperevalochnomu kompleksu, a fire was recorded.",
+      "source": "SBU"
+    },
     "id": 20
   },
   {
@@ -480,6 +640,14 @@ const strikeData = [
       "details": "Ураження Ільського НПЗ та найбільшої станції Каспійського трубопровідного консорціуму, зупинка нафтоперекачування.",
       "source": "ССО, СБУ, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Krasnodar Krai",
+      "target": "NPS \"Kropotkinskaya\" / Ilsky Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was struckie Ilskogo oil refinery i krupneyshey stantsii Kaspiyskogo truboprovodnogo konsortsiuma, ostanovka nefteperekachki.",
+      "source": "SOF, SBU, AFU General Staff"
+    },
     "id": 21
   },
   {
@@ -501,6 +669,14 @@ const strikeData = [
       "category": "ВПК",
       "weapon": "Дрон / Ракета",
       "details": "Удар по оборонному підприємству, що виробляє компоненти для ракет і дронів.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Chuvash Republic, Cheboksary",
+      "target": "Plant \"VNIIR-Progress\"",
+      "category": "Defense Industry",
+      "weapon": "Drone / Missile",
+      "details": "strike on oboronnomu predpriyatiyu, proizvodyashchemu komponenty dlya raket i droneov.",
       "source": "OSINT"
     },
     "id": 22
@@ -526,6 +702,14 @@ const strikeData = [
       "details": "Щонайменше чотири вибухи, масштабна пожежа резервуарів (об'єкт належить ТОВ «Псковнафтопродукт»), евакуація співробітників.",
       "source": "СБУ"
     },
+    "en": {
+      "region": "Pskov Oblast, Великие Луки",
+      "target": "Velikolukskaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "at least chetyre explosiona, large-scale fire storage tankov (facility prinadlezhit OOO \"Pskovnefteprodukt\"), evacuation sotrudnikov.",
+      "source": "SBU"
+    },
     "id": 23
   },
   {
@@ -547,6 +731,14 @@ const strikeData = [
       "category": "Військова інфраструктура / Авіація",
       "weapon": "Дрон",
       "details": "Нічна атака дронів на військовий об'єкт. Місцева влада підтверджувала роботу ППО та падіння уламків у периметрі аеродрому.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "AR Crimea, Sevastopol",
+      "target": "Airfield \"Belbek\"",
+      "category": "Voennaya infraestructura / Aviatsiya",
+      "weapon": "Drone",
+      "details": "Nochnaya drone strike na military facility. Mestnye vlasti podtverzhdali rabotu air defense i padenie debris v perimetre aerodroma.",
       "source": "OSINT"
     },
     "id": 24
@@ -572,6 +764,14 @@ const strikeData = [
       "details": "Масштабна пожежа на газопереробному заводі, спалахнуло щонайменше 5 резервуарів, теплові аномалії зафіксовано супутниками NASA.",
       "source": "OSINT"
     },
+    "en": {
+      "region": "Samara Oblast, Нефтегорск",
+      "target": "Neftegorskiy GPZ",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "large-scale fire na gasopererabatyvayushchem plante, vspykhnulo at least 5 storage tankov, teplovye anomalii zafiksirovany sputnikami NASA.",
+      "source": "OSINT"
+    },
     "id": 25
   },
   {
@@ -595,6 +795,14 @@ const strikeData = [
       "details": "Успішна операція ГУР МОУ. Внаслідок атаки дронів спалахнула масштабна пожежа, горіло від одного до трьох резервуарів з пальним.",
       "source": "ГУР, OSINT"
     },
+    "en": {
+      "region": "Belgorod Oblast, Gubkinский ГО (с. Долгое)",
+      "target": "Gubkinskaya Fuel Depot (AO \"Belgorodnefteprodukt\")",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "successful operation HUR MoDU. As a result of the strike droneov vspykhnul large-scale fire, burned ot odnogo do trekh storage tankov s fuelm.",
+      "source": "HUR, OSINT"
+    },
     "id": 26
   },
   {
@@ -616,6 +824,14 @@ const strikeData = [
       "category": "Паливна логістика",
       "weapon": "Дрон",
       "details": "Атака безпілотників на резервуари з пальним. Цього ж дня фіксувалися повторні спроби дронів атакувати військовий аеродром «Балтимор» у Воронежі.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Voronezh Oblast, пгт Анна",
+      "target": "Fuel Depot OOO \"Annanefteprodukt\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "drone strike na fuel tanks. V etot zhe den fiksirovalis povtornye popytki droneov strikesovat military airfield \"Baltimor\" v Voronezhe.",
       "source": "OSINT"
     },
     "id": 27
@@ -641,6 +857,14 @@ const strikeData = [
       "details": "Спецоперація ГУР. Два безпілотники з інтервалом у часі атакували склад паливно-мастильних матеріалів одного з найбільших у РФ підприємств зі збагачення залізної руди (постачає сировину для виробників бронетехніки).",
       "source": "ГУР, OSINT"
     },
+    "en": {
+      "region": "Kursk Oblast, Железногорск",
+      "target": "Mikhaylovskiy GOK named after A.V. Varicheva",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Spetsoperation HUR. Dva drone s intervalom vo vremeni strikesovali warehouse fuel and lubricants odnogo iz krupneyshikh v RF facilities po obogashcheniyu zheleznoy rudy (postavlyaet syre dlya produceseley bronetekhniki).",
+      "source": "HUR, OSINT"
+    },
     "id": 28
   },
   {
@@ -663,6 +887,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Масована атака безпілотників на завод, де ремонтують і модернізують стратегічні бомбардувальники Ту-95 та унікальні літаки-розвідники А-50.",
       "source": "OSINT, Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Taganrog",
+      "target": "AviaPlant named after G. M. Berieva (TANTK)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "massive strike droneov na plant, gde remontiruyut i moderniziruyut strategic bombers Tu-95 i unikalnye aircrafty-razvedchiki A-50.",
+      "source": "OSINT, AFU General Staff"
     },
     "id": 29
   },
@@ -687,6 +919,14 @@ const strikeData = [
       "details": "Ударний безпілотник прорвав ППО та здетонував на території нафтобази в самому Курську, викликавши пожежу в резервуарному парку.",
       "source": "ЗМІ РФ, місцева влада"
     },
+    "en": {
+      "region": "Kursk Oblast, Kursk",
+      "target": "Fuel Depot OOO \"Kurskoblnefteprodukt\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strike drone prorval air defense i sdetonated na territory fuel depot in samom Kurske, vyzvav fire in storage tanknom parke.",
+      "source": "Russian Media, mestnye vlasti"
+    },
     "id": 30
   },
   {
@@ -710,6 +950,14 @@ const strikeData = [
       "details": "Серія потужних вибухів на території бази військово-морської авіації РФ внаслідок нічного нальоту дронів.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "AR Crimea, Sevastopol (Кача)",
+      "target": "Airfield \"Kacha\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "Seriya moshchnykh explosionov on the base's territory voenno-morskoy aviatsii RF v rezultate nochnogo naleta droneov.",
+      "source": "AFU General Staff"
+    },
     "id": 31
   },
   {
@@ -731,6 +979,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Атака безпілотників на другий за обсягами переробки нафти завод у Росії. Місцева влада заявила про збиття дрона літакового типу на підльоті до об'єкта, однак сам факт удару змусив РФ посилювати ППО регіону.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Leningrad Oblast, Кириши",
+      "target": "Oil Refinery \"KINEF\" (Kirishinefteorgsintez)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "drone strike na vtoroy po obemam pererabotki oil plant v Rossii. Mestnye vlasti zayavili o sbitii dronea aircraftnogo tipa na podlete k facilityu, odnako sam fakt of the strike zastavil RF usilivat air defense region.",
       "source": "OSINT"
     },
     "id": 32
@@ -756,6 +1012,14 @@ const strikeData = [
       "details": "Атака дронів-камікадзе призвела до аварійної зупинки технологічних установок найбільшого на півдні РФ нафтопереробного підприємства.",
       "source": "ЗМІ РФ, OSINT"
     },
+    "en": {
+      "region": "Rostov Oblast, Новошахтинск",
+      "target": "Novoshakhtinskiy Plant nefteproduktov (NZNP)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "drone strike-kamikadze privela k avariynoy ostanovke tekhnologicheskikh ustanovok krupneyshego na yuge RF neftepererabatyvayushchego facility.",
+      "source": "Russian Media, OSINT"
+    },
     "id": 33
   },
   {
@@ -778,6 +1042,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Атака ударних безпілотників на військовий аеродром под Майкопом, де базується навчальна авіаційна база та бойові літаки. Місцеві жителі фіксували серію вибухів у районі злітної смуги.",
       "source": "OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Республика Адыгея, ст. Ханская",
+      "target": "Airfield \"Khanskaya\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "strikesa strikenykh droneov na military airfield pod Maykopom, gde baziruetsya uchebnaya airbase i boevye aircrafty. Mestnye residents fiksirovali seriyu explosionov v districte vzletnoy polosy.",
+      "source": "OSINT, Russian Media"
     },
     "id": 34
   },
@@ -802,6 +1074,14 @@ const strikeData = [
       "details": "Пошкоджено встановлення первинної переробки нафти АТ-22/4 (ключовий вузол). Зафіксовано масштабну пожежу.",
       "source": "Зведення Генштабу ЗСУ, заяви СБУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Афипский",
+      "target": "Afipskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was damageda ustanovka pervichnoy pererabotki oil AT-22/4 (klyuchevoy uzel). Zafiksirovan large-scale fire.",
+      "source": "Svodka Genshtaba AFU, zayavleniya SBU"
+    },
     "id": 35
   },
   {
@@ -824,6 +1104,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Спільна операція СБУ, ССО та СБС. Зафіксовано точний приліт по атмосферних та вакуумних блоках заводу, сильна пожежа.",
       "source": "СБУ, ССО"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Славянск-на-Кубани",
+      "target": "Slavyanskiy Oil Refinery (\"Slavyansk-EKO\")",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Sovmestnaya operation SBU, SOF i SBS. Zafiksirovan tochnyy prilet po atmosfernym i vakuumnym blokam planta, silnyy fire.",
+      "source": "SBU, SOF"
     },
     "id": 36
   },
@@ -848,6 +1136,14 @@ const strikeData = [
       "details": "Перша велика спроба масованого нальоту безпілотників на промислову зону хімічного підприємства. Зафіксовано вибухи та роботу ППО над містом.",
       "source": "ЗМІ РФ, місцева влада"
     },
+    "en": {
+      "region": "Stavropol Krai, Невинномысск",
+      "target": "Promzona / Khimkombinat \"Nevinnomysskiy Azot\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Pervaya krupnaya popytka massirovannogo naleta droneov na promyshlennuyu zonu khimicheskogo facility. explosions were recorded i rabota air defense nad cityom.",
+      "source": "Russian Media, mestnye vlasti"
+    },
     "id": 37
   },
   {
@@ -870,6 +1166,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пошкоджено блок вторинної переробки та резервуар РВС-10000. Велика пожежа, що горіла щонайменше дві доби.",
       "source": "Зведення Генштабу ЗСУ, NASA FIRMS"
+    },
+    "en": {
+      "region": "Saratovская обл., Saratov",
+      "target": "Saratovskiy Oil Refinery (Rosneft)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was damagedy blok vtorichnoy pererabotki i storage tank RVS-10000. major fire, gorevshiy at least dvoe days.",
+      "source": "Svodka Genshtaba AFU, NASA FIRMS"
     },
     "id": 38
   },
@@ -894,6 +1198,14 @@ const strikeData = [
       "details": "Уражено паливно-енергетичний об'єкт, зафіксовано пожежу на території підприємства.",
       "source": "Militarnyi, Міноборони України"
     },
+    "en": {
+      "region": "Башкортостан, Ufa",
+      "target": "Oil Refinery \"Bashneft-Ufaneftekhim\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was struck toplivno-energeticheskiy facility, a fire was recorded on the facility's territory.",
+      "source": "Militarnyi, MoD Ukrainy"
+    },
     "id": 39
   },
   {
@@ -916,6 +1228,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "удар по об'єкту перевалки нафти, що забезпечує експорт через Балтику; пожежі на території.",
       "source": "Militarnyi, Міноборони України"
+    },
+    "en": {
+      "region": "Ленинградская обл., Приморск",
+      "target": "Terminal \"Transneft – port Primorsk\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strike on the facility perevalki oil, obespechivayushchemu eksport cherez Baltiku; fire na territory.",
+      "source": "Militarnyi, MoD Ukrainy"
     },
     "id": 40
   },
@@ -940,6 +1260,14 @@ const strikeData = [
       "details": "Атака БПЛА на підприємство повного циклу, що виробляє високоякісний метал, який використовується для потреб російської військової техніки. Зафіксовано пошкодження цехів.",
       "source": "ССО, моніторингові канали"
     },
+    "en": {
+      "region": "Belgorod Oblast, Stary Oskol",
+      "target": "Oskolskiy elektrometallurgicheskiy kombinat (OEMK)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "strikesa UAV na facility polnogo tsikla, proizvodyashchee vysokokachestvennyy metall, ispolzuemyy dlya nuzhd rossiyskoy voennoy tekhniki. damage was recorded tsekhov.",
+      "source": "SOF, monitoringovye kanaly"
+    },
     "id": 41
   },
   {
@@ -962,6 +1290,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пожежа з горінням; пошкодження установок ЕЛОУ-АВТ-2 та ЕЛОУ-АВТ-6, виробництво бітуму, гідроочищення.",
       "source": "Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Ленинградская обл., Кириши",
+      "target": "Kirishskiy Oil Refinery (KINEF)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "fire s fire outbreakm; was damagedie ustanovok ELOU-AVT-2 i ELOU-AVT-6, bitumnogo production, gidroochistki.",
+      "source": "AFU General Staff"
     },
     "id": 42
   },
@@ -986,6 +1322,14 @@ const strikeData = [
       "details": "Повторна атака дронів на територію підприємства, яка збіглася з инспекційним візитом високопосадовців із Радбезу РФ. Зафіксовано падіння уламків біля прохідної заводу, куди масово з'їжджалися швидкі та МНС.",
       "source": "OSINT, моніторингові канали"
     },
+    "en": {
+      "region": "Smolensk Oblast, Smolensk",
+      "target": "Smolenskiy aviatsionnyy Plant (SmAZ)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Povtornaya drone strike na territory facility, kotoraya sovpala s inspektsionnym vizitom vysokopostavlennykh lits iz Sovbeza RF. Zafiksirovano padenie debris u prokhodnoy planta, kuda massovo sezzhalis skorye i EMERCOM.",
+      "source": "OSINT, monitoringovye kanaly"
+    },
     "id": 43
   },
   {
@@ -1007,6 +1351,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Множинні влучення FP-1-дронами; велика пожежа, аномальні теплові сигнали по всій промзоні.",
+      "source": "Militarnyi, NASA FIRMS"
+    },
+    "en": {
+      "region": "Ярославская обл., Yaroslavl",
+      "target": "Yaroslavskiy Oil Refinery \"Slavneft-YaNOS\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Mnozhestvennye direct hits FP-1-droneami; major fire, anomalnye teplovye signaly po vsey promzone.",
       "source": "Militarnyi, NASA FIRMS"
     },
     "id": 44
@@ -1032,6 +1384,14 @@ const strikeData = [
       "details": "Уражено та зупинено встановлення первинної переробки CDU-5, що забезпечує 28% продукції заводу.",
       "source": "Українські ЗМІ, Reuters"
     },
+    "en": {
+      "region": "Башкортостан, Ufa",
+      "target": "Novo-Ufimskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was strucka i ostanovlena ustanovka pervichnoy pererabotki CDU-5, obespechivayushchaya 28% produktsii planta.",
+      "source": "Ukrainskie Media, Reuters"
+    },
     "id": 45
   },
   {
@@ -1054,6 +1414,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пошкоджено як мінімум два технологічні об'єкти, великомасштабну пожежу (потужний осередок на NASA FIRMS).",
       "source": "Українські ЗМІ, OSINT"
+    },
+    "en": {
+      "region": "Нижегородская обл., Кстово",
+      "target": "Oil Refinery \"Lukoyl-Nizhegorodnefteorgsintez\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was damagedy kak at least dva tekhnologicheskikh facilitya, krupnolarge-scale fire (powerful ochag na NASA FIRMS).",
+      "source": "Ukrainskie Media, OSINT"
     },
     "id": 46
   },
@@ -1078,6 +1446,14 @@ const strikeData = [
       "details": "Пошкоджено ділянку трубопроводу, ведеться «контрольований факельний пропал» після спрацьовування відсікових пристроїв.",
       "source": "Регіональна влада, OSINT"
     },
+    "en": {
+      "region": "Ленинградская обл., Приморск",
+      "target": "Uchastok Oil Pipelinea (port Primorsk)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Povrezhdyon uhourtok truboprovoda, vedyotsya \"kontroliruemyy fakelnyy prozhig\" posle srabatyvaniya otsechnykh ustroystv.",
+      "source": "Regionalnye vlasti, OSINT"
+    },
     "id": 47
   },
   {
@@ -1101,6 +1477,14 @@ const strikeData = [
       "details": "Масштабний удар по аеродрому, де базувалися десятки бомбардувальників Су-34. Успішна спільна операція СБУ та Сил оборони.",
       "source": "СБУ"
     },
+    "en": {
+      "region": "Rostov Oblast, Morozovsk",
+      "target": "Airfield \"Morozovsk\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "large-scale strike on aerodromu, gde bazirovalis desyatki bombardirovshchikov Su-34. Uspeshnaya sovmestnaya operation SBU i Sil oborony.",
+      "source": "SBU"
+    },
     "id": 48
   },
   {
@@ -1122,6 +1506,14 @@ const strikeData = [
       "category": "ВПК / Промисловість",
       "weapon": "Дрон",
       "details": "Два безпілотники атакували підприємство, що входить до холдингу «Техмаш» (Ростех). Завод спеціалізується на виробництві промислових вибухових речовин та боєприпасів. Зафіксовано пробиття покрівлі одного з цехів та займання.",
+      "source": "OSINT (Astra)"
+    },
+    "en": {
+      "region": "Bryansk Oblast, Сельцо",
+      "target": "Bryanskiy khimicheskiy Plant named after 50-letiya SSSR",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Dva drone strikesovali facility, vkhodyashchee v kholding \"Tekhmash\" (Rostekh). plant spetsializiruetsya na proizvodstve promyshlennykh explosionchatykh veshchestv i boepripasov. Zafiksirovan proryv krovli odnogo iz tsekhov i fire outbreak.",
       "source": "OSINT (Astra)"
     },
     "id": 49
@@ -1147,6 +1539,14 @@ const strikeData = [
       "details": "Успішна спецоперація ГУР МО. Ударні дрони уразили головний виробничий цех підприємства, що займається ремонтом авіаційних ракет і радіотехніки для ВПС РФ.",
       "source": "ГУР"
     },
+    "en": {
+      "region": "Voronezh Oblast, Борисоглебск",
+      "target": "711-y aviatsionnyy remontnyy Plant (711 ARZ)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Uspeshnaya spetsoperation HUR MoD. strike drones porazili glavnyy proizvodstvennyy tsekh facility, kotoroe zanimaetsya remontom aviatsionnykh raket i radiotekhniki dlya VVS RF.",
+      "source": "HUR"
+    },
     "id": 50
   },
   {
@@ -1170,6 +1570,14 @@ const strikeData = [
       "details": "Масова атака безпілотників на 4-й державний центральний межвидовий полігон РФ, де випробовуються ракетні комплекси. Через наліт тимчасово закривали повітряний простір та аеропорт в Астрахані.",
       "source": "OSINT, ЗМІ РФ"
     },
+    "en": {
+      "region": "Astrakhan Oblast, Знаменск",
+      "target": "Poligon \"Kapustin Yar\"",
+      "category": "Military Infrastructure",
+      "weapon": "Drone",
+      "details": "massive strike droneov na 4-y gosstrikestvennyy tsentralnyy mezhvidovoy poligon RF, gde ispytyvayutsya raketnye kompleksy. Iz-za naleta vremenno zakryvali vozdushnoe prostranstvo i aeroport v Astrakhani.",
+      "source": "OSINT, Russian Media"
+    },
     "id": 51
   },
   {
@@ -1191,6 +1599,14 @@ const strikeData = [
       "category": "Військова інфраструктура / Авіація",
       "weapon": "Дрон",
       "details": "Російська влада приховала атаку, проте OSINT-джерела підтвердили падіння БПЛА на злітно-посадкову смугу аеропорту, що використовується для військових потреб. Виникла пожежа.",
+      "source": "OSINT (Astra)"
+    },
+    "en": {
+      "region": "Belgorod Oblast, Belgorod",
+      "target": "Airfield \"Belgorod\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "Russian vlasti skryli strike, odnako OSINT-sources podtverdili padenie UAV na vzletno-posadochnuyu polosu aeroporta, kotoryy ispolzuetsya dlya voennykh nuzhd. Voznik fire.",
       "source": "OSINT (Astra)"
     },
     "id": 52
@@ -1216,6 +1632,14 @@ const strikeData = [
       "details": "Ударний безпілотник врізався в будівлю ресурсопостачального підприємства «Газпрому» (5-й Заводський провулок), завдано пошкоджень фасаду.",
       "source": "ЗМІ РФ"
     },
+    "en": {
+      "region": "Belgorod Oblast, Belgorod",
+      "target": "Administrativnoe zdanie \"Gazprom\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "strike drone vrezalsya v zdanie resursosnabzhayushchego facility \"gasproma\" (5-y plantskoy pereulok), naneseny was damagediya fasadu.",
+      "source": "Russian Media"
+    },
     "id": 53
   },
   {
@@ -1238,6 +1662,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Горіли резервуари та інфраструктура НПЗ; серія ударів вивела з ладу значну частину танк-парку.",
       "source": "СБУ, СБС, Militarnyi"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Tuapse",
+      "target": "Tuapsinskiy Oil Refinery i portovaya infrastruktura",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "burnedi storage tanks i infrastructure oil refinery; seriya strikeov vyvela iz stroya znachitelnuyu hourt tank-parka.",
+      "source": "SBU, SBS, Militarnyi"
     },
     "id": 54
   },
@@ -1262,6 +1694,14 @@ const strikeData = [
       "details": "Спільна операція сил глибинної поразки; масштабна пожежа на території підприємства",
       "source": "Генштаб ЗСУ, СБС"
     },
+    "en": {
+      "region": "Самарская обл., Novokuybyshevsk",
+      "target": "Novokuybyshevskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Sovmestnaya operation sil glubinnogo was struckiya; large-scale fire on the facility's territory.",
+      "source": "AFU General Staff, SBS"
+    },
     "id": 55
   },
   {
@@ -1284,6 +1724,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Синхронізований рейд; сильні пожежі на території підприємства після ударів БПЛА.",
       "source": "Генштаб ЗСУ, СБС"
+    },
+    "en": {
+      "region": "Самарская обл., Syzran",
+      "target": "Syzranskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Sinkhronnyy nalyot; silnye firey on the facility's territory posle strikeov UAV.",
+      "source": "AFU General Staff, SBS"
     },
     "id": 56
   },
@@ -1308,6 +1756,14 @@ const strikeData = [
       "details": "Пожежа у резервуарному парку нафтоналивного експортного морського терміналу на Балтиці.",
       "source": "Генштаб ЗСУ, СБС"
     },
+    "en": {
+      "region": "Ленинградская обл., Высоцк",
+      "target": "Terminal \"RPK-Vysotsk Lukoyl-2\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "fire v storage tanknom parke neftenalivnogo eksportnogo morskogo terminala na Baltike.",
+      "source": "AFU General Staff, SBS"
+    },
     "id": 57
   },
   {
@@ -1331,6 +1787,14 @@ const strikeData = [
       "details": "Вражена стратегічна нафтоперекачувальна станція (транспорт нафти за південним напрямом), пожежа.",
       "source": "Генштаб ЗСУ, СБС"
     },
+    "en": {
+      "region": "Krasnodar Krai, Tikhoretsk",
+      "target": "NPS \"Tikhoretsk\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "was strucka strategicheskaya neftepumping station (transport oil po yuzhnomu napravleniyu), fire.",
+      "source": "AFU General Staff, SBS"
+    },
     "id": 58
   },
   {
@@ -1352,6 +1816,14 @@ const strikeData = [
       "category": "Паливна логістика",
       "weapon": "Дрон",
       "details": "Близько 10 точок горіння, пошкоджено резервуари, встановлення АВТ-12, пошкоджено судно біля причалу.",
+      "source": "OSINT Astra"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Tuapse",
+      "target": "Tuapsinskiy Oil Refinery i morskoy port",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Okolo 10 tochek goreniya, was damagedy storage tanks, ustanovka AVT-12, was damagedo sudno u prichala.",
       "source": "OSINT Astra"
     },
     "id": 59
@@ -1377,6 +1849,14 @@ const strikeData = [
       "details": "Масштабна нічна атака на перевалочну базу пального. Внаслідок прильотів почалося сильне і тривале загоряння великих резервуарів з паливно-мастильними матеріалами.",
       "source": "ЗМІ РФ, OSINT"
     },
+    "en": {
+      "region": "Smolensk Oblast, Кардымово",
+      "target": "Fuel Depot OOO \"LUKOYL-Tsentrnefteprodukt\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Masshtabnaya nochnaya strikesa na perevalochnuyu bazu fuel. V rezultate priletov nachalos silnoe i prodolzhitelnoe fire outbreak krupnykh storage tankov s goryuche-smazochnymi materialami.",
+      "source": "Russian Media, OSINT"
+    },
     "id": 60
   },
   {
@@ -1399,6 +1879,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пошкоджено п'ять резервуарів по 20 тис. м³ сирої нафти, зафіксовано масштабну пожежу.",
       "source": "Прес-служба СБУ"
+    },
+    "en": {
+      "region": "Самарская обл., Samara",
+      "target": "LPDS \"Samara\" (Transneft)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "was damagedy pyat storage tankov po 20 tys. m³ syroy oil, zafiksirovan large-scale fire.",
+      "source": "Press-sluzhba SBU"
     },
     "id": 61
   },
@@ -1423,6 +1911,14 @@ const strikeData = [
       "details": "Повторна атака українських безпілотників. Місцева влада і ППО намагалися захистити об'єкт сітками, проте дрони пробили огорожу і впали на території підприємства.",
       "source": "ЗМІ РФ, OSINT"
     },
+    "en": {
+      "region": "Pskov Oblast, Великие Луки",
+      "target": "Velikolukskaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Povtornaya strikesa ukrainskikh droneov. Mestnye vlasti i air defense pytalis zashchitit facility setkami, odnako drones probili ograzhdenie i upali on the facility's territory.",
+      "source": "Russian Media, OSINT"
+    },
     "id": 62
   },
   {
@@ -1445,6 +1941,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Успішна спецоперація СБУ. Одночасно атаковано дві важливі бази для зберігання і перекачування ПММ, на яких знаходилося близько 26 тисяч кубометрів російського пального. Почалися масштабні пожежі, проведено екстрену евакуацію персоналу.",
       "source": "СБУ, супутникові знімки"
+    },
+    "en": {
+      "region": "Smolensk Oblast, Ярцево и Раздорово",
+      "target": "Neftebazy kompanii \"Rosneft\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Uspeshnaya spetsoperation SBU. simultaneously strikesovany dve vazhnye bazy dlya khraneniya i perekachki GSM, na kotorykh nakhodilos okolo 26 thousand cubic meters Russian fuel. Nachalis masshtabnye firey, provedena ekstrennaya evacuation personnela.",
+      "source": "SBU, sputnikovye snimki"
     },
     "id": 63
   },
@@ -1469,6 +1973,14 @@ const strikeData = [
       "details": "Масований комбінований удар по інфраструктурі базування літаків. Окупанти екстрено піднімали авіацію в повітря.",
       "source": "СБУ, OSINT"
     },
+    "en": {
+      "region": "AR Crimea, Новофедоровка",
+      "target": "Airfield \"Saki\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Missile / Drone",
+      "details": "massive kombinirovannyy strike on infrastrukture bazirovaniya aircraftov. Okkupanty ekstrenno podnimali aviatsiyu v vozdukh.",
+      "source": "SBU, OSINT"
+    },
     "id": 64
   },
   {
@@ -1490,6 +2002,14 @@ const strikeData = [
       "category": "Авіабаза",
       "weapon": "Дрон",
       "details": "Поразка інфраструктури аеродрому (направлено 38 БПЛА).",
+      "source": "OSINT, Mash"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Кущёвская",
+      "target": "Kushchyovskiy Airfield",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "was struckie infrastructure aerodroma (napravleno 38 UAV).",
       "source": "OSINT, Mash"
     },
     "id": 65
@@ -1515,6 +2035,14 @@ const strikeData = [
       "details": "Падіння уламків БПЛА на території НПЗ.",
       "source": "OSINT, Mash"
     },
+    "en": {
+      "region": "Krasnodar Krai, Ilsky",
+      "target": "Ilsky Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Padenie debris UAV na territory oil refinery.",
+      "source": "OSINT, Mash"
+    },
     "id": 66
   },
   {
@@ -1537,6 +2065,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Серія вибухів; Багато резервуари з нафтопродуктами охоплені вогнем. Об'єкт знаходиться більш ніж за 1500 км від України.",
       "source": "СБУ (Telegram)"
+    },
+    "en": {
+      "region": "Perm Krai, Perm",
+      "target": "LPDS \"Perm\" (Transneft)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Seriya explosionov; pochti vse storage tanks s nefteproduktami okhvacheny ognyom. facility nakhoditsya bolee chem v 1500 km ot Ukrainy.",
+      "source": "SBU (Telegram)"
     },
     "id": 67
   },
@@ -1561,6 +2097,14 @@ const strikeData = [
       "details": "Вражена установка АВТ-4 (вузол первинної переробки); спалахнули вакуумна та атмосферна колони.",
       "source": "СБУ (Telegram)"
     },
+    "en": {
+      "region": "Perm Krai, Perm",
+      "target": "Oil Refinery \"Lukoyl-Permnefteorgsintez\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was strucka ustanovka AVT-4 (uzel pervichnoy pererabotki); zaburnedis vakuumnaya i atmosfernaya kolonny.",
+      "source": "SBU (Telegram)"
+    },
     "id": 68
   },
   {
@@ -1583,6 +2127,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пошкоджено резервуари на станції; виникло нове вогнище пожежі (повторний удар).",
       "source": "СБУ (Telegram)"
+    },
+    "en": {
+      "region": "Perm Krai, Perm",
+      "target": "LPDS \"Perm\" (Transneft)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "was damagedy storage tanks na stantsii; voznik novyy ochag firea (povtornyy strike).",
+      "source": "SBU (Telegram)"
     },
     "id": 69
   },
@@ -1607,6 +2159,14 @@ const strikeData = [
       "details": "Пожежа в резервуарах з нафтою та мазутом; чорний дим; знищено 52% парку (24 резервуари), роботу заводу зупинено.",
       "source": "Генштаб ЗСУ, СБУ, СБС"
     },
+    "en": {
+      "region": "Krasnodar Krai, Tuapse",
+      "target": "Tuapsinskiy Oil Refinery i portovyy Terminal",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "fire v storage tankakh s oilyu i mazutom; chernyy dym; was destroyedo 52% parka (24 storage tanka), rabota planta ostanovlena.",
+      "source": "AFU General Staff, SBU, SBS"
+    },
     "id": 70
   },
   {
@@ -1629,6 +2189,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пошкоджено бомбардувальники Су-34 та винищувач Су-57 (сумарно уражено 4 борти).",
       "source": "OSINT-аналітика"
+    },
+    "en": {
+      "region": "Chelyabinskая обл., Chelyabinsk",
+      "target": "Voennyy Airfield \"Shagol\"",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "was damagedy bombardirovshchiki Su-34 i fighter jet Su-57 (summarno was strucko 4 borta).",
+      "source": "OSINT-analitika"
     },
     "id": 71
   },
@@ -1653,6 +2221,14 @@ const strikeData = [
       "details": "Унаслідок нічної спецоперації ГУР безпілотники атакували територію нафтосховища, що забезпечує потреби російської армії.",
       "source": "ГУР, OSINT"
     },
+    "en": {
+      "region": "Voronezh Oblast, Voronezh",
+      "target": "Fuel Depot AO \"Voronezhnefteprodukt\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "V rezultate nochnoy spetsoperation HUR drones strikesovali territory oil storage facility, obespechivayushchego nuzhdy rossiyskoy armii.",
+      "source": "HUR, OSINT"
+    },
     "id": 72
   },
   {
@@ -1675,6 +2251,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Влучення по 3 установкам АВТ. Завод (7% переробки РФ) повністю зупинено, триває пожежа.",
       "source": "СБУ, Reuters"
+    },
+    "en": {
+      "region": "Ленинградская обл., Кириши",
+      "target": "Kirishskiy Oil Refinery (KINEF)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "direct hits po 3 ustanovkam AVT. plant (7% pererabotki RF) polnostyu ostanovlen, prodolzhaetsya fire.",
+      "source": "SBU, Reuters"
     },
     "id": 73
   },
@@ -1699,6 +2283,14 @@ const strikeData = [
       "details": "Уражений резервуар із нафтопродуктами; виникла пожежа на нафтоперекачувальній станції.",
       "source": "СБУ (соцмережі)"
     },
+    "en": {
+      "region": "Ленинградская обл., Кириши",
+      "target": "NPS \"Kirishi\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "A fuel tank was struck s nefteproduktami; voznik fire na nefteperekachivayushchey stantsii.",
+      "source": "SBU (sotsseti)"
+    },
     "id": 74
   },
   {
@@ -1721,6 +2313,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "пожежа на території; уражені резервуари та займання ключової установки АВТ (повна зупинка переробки).",
       "source": "Президент України, СБУ"
+    },
+    "en": {
+      "region": "Perm Krai, Perm",
+      "target": "Oil Refinery \"Lukoyl-Permnefteorgsintez\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "fire na territory; Fuel tanks were struck i fire outbreak klyuchevoy ustanovki AVT (polnaya ostanovka pererabotki).",
+      "source": "Prezident Ukrainy, SBU"
     },
     "id": 75
   },
@@ -1745,6 +2345,14 @@ const strikeData = [
       "details": "Пошкоджено резервуар на станції – виникло нове вогнище пожежі (третя атака).",
       "source": "СБУ (ЦСО «Альфа»)"
     },
+    "en": {
+      "region": "Perm Krai, Perm",
+      "target": "LPDS \"Perm\" (Transneft)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Povrezhdyon storage tank na stantsii – voznik novyy ochag firea (tretya strikesa).",
+      "source": "SBU (TsSO \"Alfa\")"
+    },
     "id": 76
   },
   {
@@ -1767,6 +2375,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пожежа на підприємстві та поразка насосної станції, що подає паливо до Балтики та до Москви.",
       "source": "Міноборони України"
+    },
+    "en": {
+      "region": "Ярославская обл., Yaroslavl",
+      "target": "Yaroslavskiy Oil Refinery i LPDS \"Yaroslavl-3\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "fire na predpriyatii i was struckie nasosnoy stantsii, podayushchey fuel k Baltike i v Moskvu.",
+      "source": "MoD Ukrainy"
     },
     "id": 77
   },
@@ -1791,6 +2407,14 @@ const strikeData = [
       "details": "Ударні дрони уразили перевалочну нафтобазу, що постачає пальне російським військам у Криму. Пошкоджено щонайменше 6 резервуарів.",
       "source": "СБУ, OSINT"
     },
+    "en": {
+      "region": "Krasnodar Krai, с. Юровка (Anapa)",
+      "target": "Fuel Depot OOO \"Temryukmortrans\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strike drones porazili perevalochnuyu fuel depot, snabzhayushchuyu fuelm Russian troops v Krymu. was damagedy at least 6 storage tankov.",
+      "source": "SBU, OSINT"
+    },
     "id": 78
   },
   {
@@ -1813,6 +2437,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Внаслідок нічної атаки дронів пошкоджено установки первинної переробки нафти (АВТ-1 та АВТ-6), а також кабелі управління та димову трубу.",
       "source": "ГУР"
+    },
+    "en": {
+      "region": "Volgograd Oblast, Volgograd",
+      "target": "Volgogradskiy Oil Refinery (\"Lukoyl\")",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "V rezultate nochnoy drone strikes was damagedy ustanovki pervichnoy pererabotki oil (AVT-1 i AVT-6), a takzhe kabeli upravleniya i dymovaya truba.",
+      "source": "HUR"
     },
     "id": 79
   },
@@ -1837,6 +2469,14 @@ const strikeData = [
       "details": "Масштабна пожежа на вакуумних дистиляційних вузлах, випадання опадів у вигляді нафтового дощу.",
       "source": "СЗГ, СБС, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Рязанская обл., Ryazan",
+      "target": "Ryazanskiy Oil Refinery (Rosneft)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "large-scale fire na vakuumnykh distillyatsionnykh uzlakh, vypadenie osadkov v vide \"neftyanogo dozhdya\".",
+      "source": "SOF, SBS, AFU General Staff"
+    },
     "id": 80
   },
   {
@@ -1858,6 +2498,14 @@ const strikeData = [
       "category": "ВПК (хімпром)",
       "weapon": "Дрон",
       "details": "Серія вибухів та масштабна пожежа у промисловій зоні стратегічного хімічного підприємства.",
+      "source": "OSINT Astra"
+    },
+    "en": {
+      "region": "Stavropol Krai, Невинномысск",
+      "target": "KhimPlant \"Nevinnomysskiy Azot\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Seriya explosionov i large-scale fire v promyshlennoy zone strategicheskogo khimicheskogo facility.",
       "source": "OSINT Astra"
     },
     "id": 81
@@ -1883,6 +2531,14 @@ const strikeData = [
       "details": "Знищено унікальний літак-амфібія Бе-200 та морський вертоліт Ка-27. Підтверджено супутниками.",
       "source": "СБС, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Yeisk",
+      "target": "Voennyy Airfield \"Yeisk\"",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "were destroyed unikalnyy aircraft-amfibiya Be-200 i morskoy helicopter Ka-27. confirmed sputnikami.",
+      "source": "SBS, AFU General Staff"
+    },
     "id": 82
   },
   {
@@ -1905,6 +2561,14 @@ const strikeData = [
       "weapon": "Невідомо",
       "details": "Точне ураження та виведення з ладу радіолокаційної станції стеження.",
       "source": "Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Bryanskая обл., Лесное",
+      "target": "Stantsiya kontrolya vozdushnogo prostranstva",
+      "category": "Defense Industry",
+      "weapon": "Unknown",
+      "details": "Tochnoe was struckie i vyvedenie iz stroya radiolokatsionnoy stantsii slezheniya.",
+      "source": "AFU General Staff"
     },
     "id": 83
   },
@@ -1929,6 +2593,14 @@ const strikeData = [
       "details": "Завод повністю зупинив переробку для мінімізації ризиків після падіння БПЛА біля прохідної.",
       "source": "Влада РФ, Reuters"
     },
+    "en": {
+      "region": "Moscow, Капотня",
+      "target": "Moskovskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "plant polnostyu ostanovil pererabotku dlya minimizatsii riskov posle padeniya UAV u prokhodnoy.",
+      "source": "Vlasti RF, Reuters"
+    },
     "id": 84
   },
   {
@@ -1951,6 +2623,14 @@ const strikeData = [
       "weapon": "Ракета",
       "details": "Знищено ЗРК «Панцир-С2», радар С-400, пункти управління безпілотниками та диспетчерську вежу.",
       "source": "СБУ, Сили оборони"
+    },
+    "en": {
+      "region": "AR Crimea, Sevastopol",
+      "target": "Airfield \"Belbek\"",
+      "category": "Military Infrastructure",
+      "weapon": "Missile",
+      "details": "were destroyed air defense system \"Pantsir-S2\", radar S-400, punkty upravleniya dronemi i dispetcherskaya vyshka.",
+      "source": "SBU, Sily oborony"
     },
     "id": 85
   },
@@ -1975,6 +2655,14 @@ const strikeData = [
       "details": "Масована комбінована атака (близько 100 дронів на регіон). Уражено об'єкти інфраструктури в порту (термінал, залізнична станція), а також завдано повторного удару по Туапсинському НПЗ.",
       "source": "СБУ, ГУР"
     },
+    "en": {
+      "region": "Krasnodar Krai, Novorossiysk",
+      "target": "Mazutnyy Terminal / Port Novorossiyska",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Massirovannaya kombinirovannaya strikesa (okolo 100 droneov na region). were struck facilityy infrastructure v portu (terminal, zh/d stantsiya), a takzhe nanesen povtornyy strike on Tuapsinskomu oil refinery.",
+      "source": "SBU, HUR"
+    },
     "id": 86
   },
   {
@@ -1997,6 +2685,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Чергова нічна атака на аеродром та НПЗ. Завод у Слов'янську-на-Кубані був змушений знову призупинити роботу після падіння дронів на його території.",
       "source": "СБУ, OSINT"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Славянск-на-Кубани / ст. Кущевская",
+      "target": "Slavyanskiy Oil Refinery / Airfield \"Kushchevskaya\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Ocherednaya nochnaya strikesa na aerodrom i oil refinery. plant v Slavyanske-na-Kubani byl vynuzhden vnov priostanovit rabotu posle padeniya droneov na ego territory.",
+      "source": "SBU, OSINT"
     },
     "id": 87
   },
@@ -2021,6 +2717,14 @@ const strikeData = [
       "details": "Український безпілотник прорвався безпосередньо до крайового центру. Після падіння та детонації його уламки були виявлені в межах Ставрополя.",
       "source": "ЗМІ РФ"
     },
+    "en": {
+      "region": "Stavropol Krai, Stavropol",
+      "target": "Voenno-infrastrukturnye obekty",
+      "category": "Military Infrastructure",
+      "weapon": "Drone",
+      "details": "Ukrainian drone prorvalsya neposredstvenno k kraevomu tsentru. Posle padeniya i detonation ego debris byli obnaruzheny v cherte Stavropolya.",
+      "source": "Russian Media"
+    },
     "id": 88
   },
   {
@@ -2043,6 +2747,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Пошкоджено установку АВТ-6, що забезпечує понад 70% потужності заводу (серйозне зниження переробки).",
       "source": "Міноборони України, Reuters"
+    },
+    "en": {
+      "region": "Самарская обл., Syzran",
+      "target": "Syzranskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "was damageda ustanovka AVT-6, obespechivayushchaya svyshe 70% moshchnosti planta (sereznoe snizhenie pererabotki).",
+      "source": "MoD Ukrainy, Reuters"
     },
     "id": 89
   },
@@ -2067,6 +2779,14 @@ const strikeData = [
       "details": "Поразка складів боєприпасів, засобів ППО та штабу загону БПЛА «Рубікон».",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Luhanskая обл., Старобельск",
+      "target": "Warehouse boepripasov / baza BPLA",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "was struckie warehouseov boepripasov, sredstv air defense i shtaba otryada UAV \"Rubikon\".",
+      "source": "AFU General Staff"
+    },
     "id": 90
   },
   {
@@ -2089,6 +2809,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Займання технічних/адміністративних будівель та пожежі у резервуарному парку найбільшого терміналу Півдня РФ.",
       "source": "Міноборони України, OSINT"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Novorossiysk",
+      "target": "Fuel Depot \"Grushovaya balka\" / Terminal \"Sheskharis\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "fire outbreak tekhnicheskikh/administrativnykh zdaniy i firey v storage tanknom parke krupneyshego terminala Yuga RF.",
+      "source": "MoD Ukrainy, OSINT"
     },
     "id": 91
   },
@@ -2113,6 +2841,14 @@ const strikeData = [
       "details": "Удар по хімічному підприємству, що виробляє важливу сировину для оборонної промисловості.",
       "source": "Міноборони України"
     },
+    "en": {
+      "region": "Perm Krai, Губаха",
+      "target": "Plant Metafrax Chemicals",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "strike on khimicheskomu predpriyatiyu, proizvodyashchemu vazhnoe syre dlya oboronnoy promyshlennosti.",
+      "source": "MoD Ukrainy"
+    },
     "id": 92
   },
   {
@@ -2136,6 +2872,14 @@ const strikeData = [
       "details": "Масштабна пожежа (бл. 800 кв. м) на об'єкті, що забезпечує московські аеропорти та експортні порти.",
       "source": "СБУ (Telegram)"
     },
+    "en": {
+      "region": "Владимирская обл., Камешковский р-н",
+      "target": "LPDS \"Vtorovo\" (Transneft)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "large-scale fire (ok. 800 kv. m) na facilitye, snabzhayushchem moskovskie aeroporty i eksportnye porty.",
+      "source": "SBU (Telegram)"
+    },
     "id": 93
   },
   {
@@ -2157,6 +2901,14 @@ const strikeData = [
       "category": "ВПК / Авіація",
       "weapon": "Дрон",
       "details": "Повторний удар по авіабудівній інфраструктурі Таганрога. Зафіксовано велику пожежу на території заводу, що займається ремонтом транспортної авіації.",
+      "source": "OSINT (Astra)"
+    },
+    "en": {
+      "region": "Rostov Oblast, Taganrog",
+      "target": "325-y aviaremontnyy Plant",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Povtornyy strike on aviastroitelnoy infrastrukture Taganroga. Zafiksirovan major fire on the plant's territory, zanimayushchegosya remontom transportnoy aviatsii.",
       "source": "OSINT (Astra)"
     },
     "id": 94
@@ -2182,6 +2934,14 @@ const strikeData = [
       "details": "Зупинено установки первинної переробки нафти АВТ-1, АВТ-5 та АВТ-6; повна зупинка переробки.",
       "source": "Генштаб ЗСУ, СЗГ"
     },
+    "en": {
+      "region": "Volgogradская обл., Volgograd",
+      "target": "Volgogradskiy Oil Refinery \"Lukoyl\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Ostanovleny ustanovki pervichnoy pererabotki oil AVT-1, AVT-5 i AVT-6; polnaya ostanovka pererabotki.",
+      "source": "AFU General Staff, SOF"
+    },
     "id": 95
   },
   {
@@ -2205,6 +2965,14 @@ const strikeData = [
       "details": "Удар по найбільшій нафтобазі півострова. Зафіксовано два великих осередки займання, шлейф диму пішов у бік моря.",
       "source": "СБС"
     },
+    "en": {
+      "region": "AR Crimea, Феодосия",
+      "target": "Morskoy neftyanoy Terminal",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strike on krupneyshey fuel depot poluostrova. Zafiksirovany dva krupnykh ochaga vozgoraniya, shleyf dyma ushel v storonu morya.",
+      "source": "SBS"
+    },
     "id": 96
   },
   {
@@ -2226,6 +2994,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Повторний удар; зафіксовано щонайменше 3 вогнища горіння на території заводу, потужні стовпи диму.",
+      "source": "NASA FIRMS, OSINT"
+    },
+    "en": {
+      "region": "Saratovская обл., Saratov",
+      "target": "Saratovskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Povtornyy strike; zafiksirovano kak at least 3 ochaga goreniya on the plant's territory, moshchnye stolby dyma.",
       "source": "NASA FIRMS, OSINT"
     },
     "id": 97
@@ -2251,6 +3027,14 @@ const strikeData = [
       "details": "Пожежа на великому паливному сховищі, була потрібна евакуація населення та пожежний поїзд.",
       "source": "Дані OSINT"
     },
+    "en": {
+      "region": "Ростовская обл., Матвеев Курган",
+      "target": "Chastnaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "fire na krupnom toplivnom storage facility, potrebovalas evacuation of the population i firenyy poezd.",
+      "source": "Dannye OSINT"
+    },
     "id": 98
   },
   {
@@ -2273,6 +3057,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Точний удар по лінійній виробничо-диспетчерській станції системи магістральних нафтопроводів.",
       "source": "OSINT, Стерненко"
+    },
+    "en": {
+      "region": "Kirovская обл., Уржумский р-н",
+      "target": "LPDS \"Lazarevo\" (Transneft)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Tochnyy strike on lineynoy proizvodstvenno-dispetcherskoy stantsii sistemy magistralnykh oil pipelineov.",
+      "source": "OSINT, Sternenko"
     },
     "id": 99
   },
@@ -2297,6 +3089,14 @@ const strikeData = [
       "details": "Знищено/виведено з ладу дві установки первинної переробки потужністю до 2,5 млн тонн кожна.",
       "source": "ВМС ЗСУ"
     },
+    "en": {
+      "region": "Ростовская обл., Новошахтинск",
+      "target": "Novoshakhtinskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Missile",
+      "details": "were destroyed/vyvedeny iz stroya dve ustanovki pervichnoy pererabotki moshchnostyu do 2,5 mln tons kazhdaya.",
+      "source": "VMS AFU"
+    },
     "id": 100
   },
   {
@@ -2320,6 +3120,14 @@ const strikeData = [
       "details": "Успішна операція ВМС та Сил оборони із застосуванням протикорабельних ракет «Нептун». Уражено резервуари з пальним у порту та інфраструктуру поромної переправи.",
       "source": "ВМС ЗСУ, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Темрюкский район",
+      "target": "Port \"Kavkaz\" / Fuel Depot v Temryuke",
+      "category": "Fuel Logistics",
+      "weapon": "Missile / Drone",
+      "details": "successful operation VMS i Sil oborony s primeneniem protivokorabelnykh raket \"Neptun\". Fuel tanks were struck s fuelm v portu i infrastructure paromnoy perepravy.",
+      "source": "VMS AFU, AFU General Staff"
+    },
     "id": 101
   },
   {
@@ -2341,6 +3149,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Загоряння залізничних цистерн з паливом, пожежа на об'єктах НПЗ після прямих влучень.",
+      "source": "OSINT Astra"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Славянск",
+      "target": "Slavyanskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "fire outbreak zh/d tsistern s fuelm, fire na facilityakh oil refinery posle pryamykh direct hits.",
       "source": "OSINT Astra"
     },
     "id": 102
@@ -2366,6 +3182,14 @@ const strikeData = [
       "details": "Пожежа на об'єктах НПЗ після прямих влучень.",
       "source": "OSINT Astra"
     },
+    "en": {
+      "region": "Krasnodar Krai, Ilsky",
+      "target": "Ilsky Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "fire na facilityakh oil refinery posle pryamykh direct hits.",
+      "source": "OSINT Astra"
+    },
     "id": 103
   },
   {
@@ -2388,6 +3212,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Поразка найбільшого перевалочного комплексу на Балтиці (31 резервуар, ємність 324 тис. м3).",
       "source": "Президент Украины, ССО"
+    },
+    "en": {
+      "region": "Санкт-Петербург",
+      "target": "Peterburgskiy neftyanoy Terminal",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "was struckie krupneyshego perevalochnogo kompleksa na Baltike (31 storage tank, emkost 324 tys. m³).",
+      "source": "Prezident Ukrainy, SOF"
     },
     "id": 104
   },
@@ -2412,6 +3244,14 @@ const strikeData = [
       "details": "Пожежа на території заводу, що випускає гіромотори та автопілоти для ракет Х-101 та Х-59.",
       "source": "Президент України"
     },
+    "en": {
+      "region": "Tambovская обл., Мичуринск",
+      "target": "Oboronnyy Plant \"Progress\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "fire on the plant's territory, vypuskayushchego giromotory i avtopiloty dlya raket Kh-101 i Kh-59.",
+      "source": "Prezident Ukrainy"
+    },
     "id": 105
   },
   {
@@ -2434,6 +3274,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Точне ураження радіотехнічної системи ближньої навігації РБСН-4Н біля авіабази.",
       "source": "Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Крым, Новофедоровка",
+      "target": "Airfield \"Saki\"",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "Tochnoe was struckie radiotekhnicheskoy sistemy blizhney navigatsii RBSN-4N na territory aviabazy.",
+      "source": "AFU General Staff"
     },
     "id": 106
   },
@@ -2458,6 +3306,14 @@ const strikeData = [
       "details": "Поразка станції, що призвела до зупинки перекачування сирої нафти трубопроводом.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Volgogradская обл., Зензеватка",
+      "target": "NPS \"Zenzevatka\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "was struckie stantsii, privevshee k ostanovke perekachki syroy oil po truboprovodu.",
+      "source": "AFU General Staff"
+    },
     "id": 107
   },
   {
@@ -2480,6 +3336,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Прильоти по об'єктах зберігання пального в межах міста (район залізничної станції), виникла велика пожежа.",
       "source": "OSINT, Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "AR Crimea, Simferopol",
+      "target": "Toplivnaya baza (State Power Plant)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Prilety po facilityam khraneniya fuel v cherte city (district zh/d stantsii), voznik major fire.",
+      "source": "OSINT, AFU General Staff"
     },
     "id": 108
   },
@@ -2504,6 +3368,14 @@ const strikeData = [
       "details": "Підтверджено знищення восьми та пошкодження дев'яти резервуарів для зберігання палива в порту.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Donetskая обл., Мариуполь",
+      "target": "Portovaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Unknown",
+      "details": "confirmed was destroyedie vosmi i was damagedie devyati storage tankov dlya khraneniya topliva v portu.",
+      "source": "AFU General Staff"
+    },
     "id": 109
   },
   {
@@ -2526,6 +3398,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Серія вибухів; масштабна пожежа на площі 5000 кв. м, який охопив щонайменше трьох резервуарів.",
       "source": "СБУ, ЗСУ, ГУР, OSINT"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Усть-Лабинск",
+      "target": "Fuel Depot \"Ust-Labinsk\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Seriya explosionov; large-scale fire na ploshchadi 5000 kv. m, okhvativshiy ne menee trekh storage tankov.",
+      "source": "SBU, AFU, HUR, OSINT"
     },
     "id": 110
   },
@@ -2550,6 +3430,14 @@ const strikeData = [
       "details": "Пожежа та вторинні детонації боєприпасів на складі арсеналу після подолання дронами ~1000 км.",
       "source": "СЗГ, СБС, СБУ, ГУР"
     },
+    "en": {
+      "region": "Ленинградская обл., Кронштадт",
+      "target": "VMB Kronshtadt / 15-y arsenal VMF",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "fire i vtorichnye detonation boepripasov na warehousee arsenala posle preodoleniya droneami ~1000 km.",
+      "source": "SOF, SBS, SBU, HUR"
+    },
     "id": 111
   },
   {
@@ -2572,6 +3460,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Успішна планова атака безпілотників ГУР. Стався вибух, за яким послідувало загоряння щонайменше одного паливного резервуара. Будівлю охорони було пошкоджено вибуховою хвилею.",
       "source": "ГУР, місцева влада"
+    },
+    "en": {
+      "region": "Belgorod Oblast, Старооскольский ГО",
+      "target": "Fuel Depot Starogo Oskola",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Uspeshnaya planovaya drone strike HUR. Proizoshel explosion, za kotorym posledovalo fire outbreak at least odnogo toplivnogo storage tanka. Zdanie okhrany bylo was damagedo explosionnoy volnoy.",
+      "source": "HUR, mestnye vlasti"
     },
     "id": 112
   },
@@ -2596,6 +3492,14 @@ const strikeData = [
       "details": "Потужний удар (імовірно комбінований, ракетами «Нептун» та дронами), що спричинив масштабну пожежу. Серйозно пошкоджено установки первинної переробки нафти.",
       "source": "ВМС ЗСУ"
     },
+    "en": {
+      "region": "Rostov Oblast, Новошахтинск",
+      "target": "Novoshakhtinskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Missile / Drone",
+      "details": "powerful strike (presumably kombinirovannyy, missilemi \"Neptun\" i droneami), vyzvavshiy large-scale fire. Serezno was damagedy ustanovki pervichnoy pererabotki oil.",
+      "source": "VMS AFU"
+    },
     "id": 113
   },
   {
@@ -2618,6 +3522,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Уражено резервуари бази, що забезпечує пальним східне угруповання РФ.",
       "source": "ССО, СБС"
+    },
+    "en": {
+      "region": "AR Crimea, Ленино (Еды-Кую)",
+      "target": "Fuel Depot \"Semikolodezyanskaya\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Fuel tanks were struck bazy, obespechivayushchey fuelm vostochnuyu gruppirovku RF.",
+      "source": "SOF, SBS"
     },
     "id": 114
   },
@@ -2642,6 +3554,14 @@ const strikeData = [
       "details": "Точна поразка передового складу, масштабна вторинна детонація боєприпасів.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Belgorodская обл., Prokhorovka",
+      "target": "Warehouse boepripasov",
+      "category": "Defense Industry",
+      "weapon": "Unknown",
+      "details": "Tochnoe was struckie peredovogo warehousea, masshtabnaya vtorichnaya detonation boepripasov.",
+      "source": "AFU General Staff"
+    },
     "id": 115
   },
   {
@@ -2664,6 +3584,14 @@ const strikeData = [
       "weapon": "Невідомо",
       "details": "Вибух і пожежа в ангарі хімреагентів завдано шкоди оборонному виробництву ВМФ.",
       "source": "OSINT, служби порятунку"
+    },
+    "en": {
+      "region": "Санкт-Петербург",
+      "target": "Plant \"Arsenal\"",
+      "category": "Defense Industry",
+      "weapon": "Unknown",
+      "details": "explosion i fire v angare khimreagentov, nanesen ushcherb oboronnomu proizvodstvu VMF.",
+      "source": "OSINT, sluzhby spaseniya"
     },
     "id": 116
   },
@@ -2688,6 +3616,14 @@ const strikeData = [
       "details": "Офіційно підтверджений Генштабом ЗСУ удар. Масштабний вибух (шлейф у вигляді «гриба» було видно з Бєлгорода) з тривалою вторинною детонацією на складах у районі н.п. Новосадовий та Білівське.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Belgorod Oblast, Belgorodский район",
+      "target": "Logisticheskiy khab / Warehouse boepripasov",
+      "category": "Military Infrastructure",
+      "weapon": "Drone / Missile",
+      "details": "Ofitsialno podtverzhdennyy Genshtabom AFU strike. large-scale explosion (shleyf v vide \"griba\" byl viden iz Belcity) s dlitelnoy vtorichnoy detonatsiey na warehouseakh v districte n.p. Novosadovyy i Belovskoe.",
+      "source": "AFU General Staff"
+    },
     "id": 117
   },
   {
@@ -2710,6 +3646,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Історична спецоперація ГУР. Українські безпілотники вперше з початку повномасштабної війни подолали близько 1000 км і атакували аеродром базування стратегічних бомбардувальників Ту-22М3 та носіїв «Кинджалів» МіГ-31К.",
       "source": "ГУР"
+    },
+    "en": {
+      "region": "Республика Северная Осетия, Моздок",
+      "target": "Airfield \"Mozdok\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "Istoricheskaya spetsoperation HUR. Ukrainian drones For the first time since the start of the full-scale war preodoleli okolo 1000 km i strikesovali aerodrom bazirovaniya strategicallykh bombardirovshchikov Tu-22M3 i nositeley \"Kinzhalov\" MiG-31K.",
+      "source": "HUR"
     },
     "id": 118
   },
@@ -2734,6 +3678,14 @@ const strikeData = [
       "details": "Видатна операція ГУР МО (Астраханська область географічно примикає до північнокавказького вузла). Вперше в історії зафіксовано ураження найновіших російських винищувачів п'ятого покоління Су-57. Супутникові знімки підтвердили пошкодження щонайменше одного (за уточненими даними — двох) бортів.",
       "source": "ГУР"
     },
+    "en": {
+      "region": "Astrakhan Oblast, Ахтубинск",
+      "target": "Airfield \"Akhtubinsk\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "Vydayushchayasya operation HUR MoD (Astrakhan Oblast geograficheski primykaet k severokavkazskomu uzlu). For the first time v istorii zafiksirovano was struckie noveyshikh Russian istrebiteley pyatogo pokoleniya Su-57. satellite images podtverdili was damagedie at least odnogo (po utochnennym dannym — dvukh) bortov.",
+      "source": "HUR"
+    },
     "id": 119
   },
   {
@@ -2757,6 +3709,14 @@ const strikeData = [
       "details": "Повторний результативний удар далекобійною крилатою ракетою FP-5 \"Фламінго\"; пожежа, пошкоджені навігаційні об'єкти.",
       "source": "Генштаб ЗСУ, Президент"
     },
+    "en": {
+      "region": "Чувашия, Cheboksary",
+      "target": "Oboronnyy Plant AO \"VNIIR-Progress\"",
+      "category": "Defense Industry",
+      "weapon": "Missile",
+      "details": "Povtornyy rezultativnyy strike dalnoboynoy krylatoy missile FP-5 \"Flamingo\"; fire, was damagedy facilityy navigatsii.",
+      "source": "AFU General Staff, Prezident"
+    },
     "id": 120
   },
   {
@@ -2778,6 +3738,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Зупинено дві критичні установки первинної переробки нафти (CDU-4, CDU-5) на Куйбишевському НПЗ.",
+      "source": "Reuters, Telegram Astra"
+    },
+    "en": {
+      "region": "Самарская обл., Samara",
+      "target": "Kuybyshevskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Ostanovleny dve kriticheskie ustanovki pervichnoy pererabotki oil (CDU-4, CDU-5) na Kuybyshevskom oil refinery.",
       "source": "Reuters, Telegram Astra"
     },
     "id": 121
@@ -2803,6 +3771,14 @@ const strikeData = [
       "details": "Зафіксовано пожежі на території критично важливих нафтоперекачувальних станцій.",
       "source": "Meduza, Supernova+"
     },
+    "en": {
+      "region": "Владимирская обл., Камешковский р-н",
+      "target": "NPS \"Vtorovo\" i \"Lobkovo\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Zafiksirovany firey na territory kriticheski vazhnykh nefteperekachivayushchikh stantsiy.",
+      "source": "Meduza, Supernova+"
+    },
     "id": 122
   },
   {
@@ -2825,6 +3801,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Повторне масштабне спалах на заводі, що переробляє близько 2% усієї сирої нафти РФ.",
       "source": "Генштаб ЗСУ, Exilenova+"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Афипский",
+      "target": "Afipskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Povtornoe masshtabnoe fire outbreak na plante, pererabatyvayushchem okolo 2% vsey syroy oil RF.",
+      "source": "AFU General Staff, Exilenova+"
     },
     "id": 123
   },
@@ -2849,6 +3833,14 @@ const strikeData = [
       "details": "На території хімічного заводу, що виробляє компоненти для твердого ракетного палива та добавки до бензину, спалахнула пожежа.",
       "source": "Генштаб ЗСУ, OSINT"
     },
+    "en": {
+      "region": "Samara Oblast, Тольятти",
+      "target": "Plant \"Tolyattikauchuk\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Na territory khimicheskogo planta, proizvodyashchego komponenty dlya tverdogo raketnogo topliva i dobavki k benzinu, a fire broke out.",
+      "source": "AFU General Staff, OSINT"
+    },
     "id": 124
   },
   {
@@ -2871,6 +3863,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Генштаб ЗСУ підтвердив ураження хімічного комбінату та пов'язаних логістичних об'єктів.",
       "source": "Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Samara Oblast, Тольятти",
+      "target": "Tolyattiazot (khimicheskiy kombinat)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "AFU General Staff podtverdil was struckie khimicheskogo kombinata i svyazannykh logisticheskikh facilityov.",
+      "source": "AFU General Staff"
     },
     "id": 125
   },
@@ -2895,6 +3895,14 @@ const strikeData = [
       "details": "Зафіксовано вибухи та стрілянину в районі військового аеродрому під час нічної атаки.",
       "source": "Моніторингові пабліки"
     },
+    "en": {
+      "region": "Крым, Новофедоровка",
+      "target": "Airfield \"Saki\"",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "explosions were recorded i strelba v districte military airfield vo vremya nochnoy strikes.",
+      "source": "Monitoringovye pabliki"
+    },
     "id": 126
   },
   {
@@ -2917,6 +3925,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Підтверджено ураження нафтопереробного комплексу ТАНЕКО. Зафіксовано пожежу на території підприємства.",
       "source": "Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Republic of Tatarstan, Nizhnekamsk",
+      "target": "TANEKO",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "confirmed was struckie neftepererabatyvayushchego kompleksa TANEKO. a fire was recorded on the facility's territory.",
+      "source": "AFU General Staff"
     },
     "id": 127
   },
@@ -2941,6 +3957,14 @@ const strikeData = [
       "details": "Підтверджено ураження НПЗ ТАІФ-НК. На об'єкті виникла пожежа після удару.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Republic of Tatarstan, Nizhnekamsk",
+      "target": "TAIF-NK",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "confirmed was struckie oil refinery TAIF-NK. Na facilitye voznik fire posle of the strike.",
+      "source": "AFU General Staff"
+    },
     "id": 128
   },
   {
@@ -2963,6 +3987,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Виникла масштабна пожежа біля складської інфраструктури та стоянки, також уражено системи ППО, що прикривали об'єкт.",
       "source": "СБУ, ССО, ГУР МО"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Волна",
+      "target": "Terminal \"Tamanneftegaz\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Voznik large-scale fire vozle warehouseskoy infrastructure i stoyanki, takzhe were struck sistemy air defense, prikryvavshie facility.",
+      "source": "SBU, SOF, HUR MoD"
     },
     "id": 129
   },
@@ -2987,6 +4019,14 @@ const strikeData = [
       "details": "Підтверджено ураження об'єкта обробки, транспортування та перекачування нафти. Виникла пожежа на підприємстві, що забезпечує транспортування магістральними трубопроводами.",
       "source": "Генштаб ЗСУ, Reuters"
     },
+    "en": {
+      "region": "Volgograd Oblast, Котово",
+      "target": "Tsekh podgotovki i perekachki nefti / Neftepererabatyvayushchiy uzel",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "confirmed was struckie facilitya obrabotki, transportirovki i perekachki oil. Voznik fire na predpriyatii, obespechivayushchem transportirovku po magistralnym truboprovodam.",
+      "source": "AFU General Staff, Reuters"
+    },
     "id": 130
   },
   {
@@ -3009,6 +4049,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Зафіксовано 23 влучання, постраждали всі цехи підприємства, що виробляє сировину для пороху та вибухівки. Виробництво зупинено.",
       "source": "СБС"
+    },
+    "en": {
+      "region": "Крым, Армянск",
+      "target": "KhimPlant \"Krymskiy Titan\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Zafiksirovano 23 direct hits, postradali vse tsekha facility, proizvodyashchego syre dlya porokha i explosionchatki. production ostanovleno.",
+      "source": "SBS"
     },
     "id": 131
   },
@@ -3033,6 +4081,14 @@ const strikeData = [
       "details": "Уражено об'єкт Росрезерву, що використовується для зберігання стратегічних запасів пального та нафтопродуктів. Після влучань зафіксовано пожежу на території нафтобази.",
       "source": "Президент України, СБУ, Exilenova+"
     },
+    "en": {
+      "region": "Yaroslavl Oblast, Рыбинск",
+      "target": "Kombinat \"Temp\" (Fuel Depot Rosrezerva)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Porazhyon facility Rosrezerva, ispolzuemyy dlya khraneniya strategicallykh zapasov topliva i petroleum products. Posle direct hits a fire was recorded na territory fuel depot.",
+      "source": "Prezident Ukrainy, SBU, Exilenova+"
+    },
     "id": 132
   },
   {
@@ -3055,6 +4111,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Зафіксовано численні влучання по території хімічного підприємства. Виникла пожежа. Завод виробляє аміак, аміачну селітру та хімічні компоненти, що використовуються у виробництві вибухових речовин.",
       "source": "Exilenova+, Obozrevatel, місцева влада"
+    },
+    "en": {
+      "region": "Tula Oblast, Новомосковск",
+      "target": "Novomoskovskiy khimicheskiy kombinat \"Azot\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Zafiksirovany mnogochislennye direct hits po territory khimicheskogo facility. Voznik fire. plant produces ammiak, ammiachnuyu selitru i khimicheskie komponenty, ispolzuemye v proizvodstve explosionchatykh veshchestv.",
+      "source": "Exilenova+, Obozrevatel, mestnye vlasti"
     },
     "id": 133
   },
@@ -3079,6 +4143,14 @@ const strikeData = [
       "details": "Масований нічний наліт (ГУР використало близько 70 безпілотників). Подтверждено ураження інфраструктури бази та авіаційної техніки.",
       "source": "ГУР"
     },
+    "en": {
+      "region": "Rostov Oblast, Morozovsk",
+      "target": "Airfield \"Morozovsk\"",
+      "category": "Voennaya infraestructura / Aviatsiya",
+      "weapon": "Drone",
+      "details": "massive nochnoy nalet (HUR ispolzovalo okolo 70 droneov). confirmed was struckie infrastructure bazy i aviatsionnoy tekhniki.",
+      "source": "HUR"
+    },
     "id": 134
   },
   {
@@ -3101,6 +4173,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Нічна атака ударних безпілотників. Унаслідок прильоту та детонації уламків було пошкоджено резервуар найбільшої в районі нафтобази.",
       "source": "ЗМІ РФ, OSINT"
+    },
+    "en": {
+      "region": "Voronezh Oblast, Лискинский район (х. Старая Покровка)",
+      "target": "Liskinskaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Nochnaya strikesa strikenykh droneov. V rezultate prileta i detonation debris byl was damaged storage tank krupneyshey v districte fuel depot.",
+      "source": "Russian Media, OSINT"
     },
     "id": 135
   },
@@ -3125,6 +4205,14 @@ const strikeData = [
       "details": "Офіційно підтверджений у ранковій зведенні Генштабу ЗСУ удар по ключовому командному пункту, який координував дії прикордонного угруповання російських військ на Брянському напрямку.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Bryansk Oblast, Sevskий район (д. Некислица)",
+      "target": "Komandno-nablyudatelnyy punkt VS RF",
+      "category": "Vonenaya infrastruktura",
+      "weapon": "Missile / Drone",
+      "details": "Ofitsialno podtverzhdennyy v utrenney svodke Genshtaba AFU strike on klyuchevomu komandnomu punktu, koordinirovavshemu deystviya prigranichnoy gruppirovki Russian voysk na Bryanskom napravlenii.",
+      "source": "AFU General Staff"
+    },
     "id": 136
   },
   {
@@ -3147,6 +4235,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Масована атака БПЛА на ключове хімічне підприємство РФ, що виробляє аміачну селітру, аміак та оцтову кислоту (використовуються під час створення вибухівки та ракетного палива). Пошкоджено цехи, виробництво тимчасово зупинялося.",
       "source": "Генштаб ЗСУ, OSINT"
+    },
+    "en": {
+      "region": "Stavropol Krai, Невинномысск",
+      "target": "Khimkombinat \"Nevinnomysskiy Azot\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "massive strike UAV na klyuchevoe khimicheskoe facility RF, proizvodyashchee ammiachnuyu selitru, ammiak i uksusnuyu kislotu (ispolzuyutsya pri sozdanii explosionchatki i raketnogo topliva). was damagedy tsekha, production vremenno ostanavlivalos.",
+      "source": "AFU General Staff, OSINT"
     },
     "id": 137
   },
@@ -3171,6 +4267,14 @@ const strikeData = [
       "details": "Нічна атака безпілотників на одне з найбільших хімічних підприємств півдня РФ, де виробляється тверде паливо для міжконтинентальних балістичних ракет. Зафіксовано падіння уламків на території проммайданчика.",
       "source": "OSINT, ЗМІ РФ"
     },
+    "en": {
+      "region": "Rostov Oblast, Каменск-Шахтинский",
+      "target": "Khimicheskiy kombinat \"Kamenskiy\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Nochnaya drone strike na odno iz krupneyshikh khimicheskikh facilities yuga RF, gde producessya tverdoe fuel dlya mezhkontinentalnykh ballisticheskikh raket. Zafiksirovano padenie debris na territory promploshchadki.",
+      "source": "OSINT, Russian Media"
+    },
     "id": 138
   },
   {
@@ -3193,6 +4297,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Ударні БПЛА успішно атакували перевалочну базу пального, що забезпечує мережі заправок компанії «Лукойл». На території спалахнула масштабна пожежа (підтверджено супутниками NASA FIRMS), було перекрито трасу.",
       "source": "OSINT, Оперативний штаб Краснодарського краю"
+    },
+    "en": {
+      "region": "Krasnodar Krai, ст. Полтавская",
+      "target": "Poltavskaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strikenye UAV successfully strikesovali perevalochnuyu bazu fuel, obespechivayushchuyu seti zapravok kompanii \"Lukoyl\". Na territory vspykhnul large-scale fire (confirmed sputnikami NASA FIRMS), byla perekryta trassa.",
+      "source": "OSINT, Operativnyy shtab Krasnodarskogo kraya"
     },
     "id": 139
   },
@@ -3217,6 +4329,14 @@ const strikeData = [
       "details": "Спецоперація ГУР МОУ. Масована атака на промислову територію Липецька. Зафіксовано вибухи та задимлення над комбінатом і тракторним заводом, продукція яких безпосередньо використовується російским ОПК.",
       "source": "ГУР, OSINT (Astra)"
     },
+    "en": {
+      "region": "Lipetsk Oblast, Lipetsk",
+      "target": "Novolipetskiy metallurgicheskiy kombinat (NLMK) i Traktornyy Plant",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "Spetsoperation HUR MoDU. massive strike na promyshlennuyu territory Lipetska. explosions were recorded i zadymleniya nad kombinatom i traktornym plantom, produktsiya kotorykh napryamuyu ispolzuetsya rossiyskim OPK.",
+      "source": "HUR, OSINT (Astra)"
+    },
     "id": 140
   },
   {
@@ -3239,6 +4359,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "У Підмосков'ї безпілотники завдали удару за 600 метрів від підприємства, що розробляє гіперзвукові ракети «Циркон» та стратегічний ракетний комплекс «Авангард». Над містом підіймався стовп диму.",
       "source": "OSINT, Telegram-канали"
+    },
+    "en": {
+      "region": "Moscow Oblast, Реутов",
+      "target": "AO \"VPK \"NPO mashinostroeniya\"",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "V Podmoskove drones nanesli strike v 600 metrakh ot facility, razrabatyvayushchego giperzvukovye missiles \"Tsirkon\" i strategicallyy missile kompleks \"Avangard\". Nad cityom podnimalsya stolb dyma.",
+      "source": "OSINT, Telegram-kanaly"
     },
     "id": 141
   },
@@ -3263,12 +4391,21 @@ const strikeData = [
       "details": "Безпілотники завдали удару по найбільшому нафтопереробному заводу Москви, який покриває близько 40% потреб столиці у бензині. Внаслідок влучань на об'єкті виникла масштабна пожежа, в небо піднявся чорний стовп диму.",
       "source": "ЦПД при РНБО України, OSINT"
     },
+    "en": {
+      "region": "Moscow, Капотня",
+      "target": "Moskovskiy Oil Refinery (MOil Refinery)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "drones nanesli strike on krupneyshemu neftepererabatyvayushchemu plantu Moskvy, pokryvayushchemu okolo 40% potrebnostey stolitsy v benzine. V rezultate direct hits na facilitye voznik large-scale fire, v nebo podnyalsya chernyy stolb dyma.",
+      "source": "TsPD pri SNBO Ukrainy, OSINT"
+    },
     "id": 142
   },
   {
     "date": "17.06.2026",
     "lat": 50.4369,
     "lng": 36.9875,
+    "distance": 73,
     "ru": {
       "region": "Белгородская область, Шебекинский район, с. Ржевка",
       "target": "Военный склад",
@@ -3285,13 +4422,21 @@ const strikeData = [
       "details": "Удар безпілотників по складських приміщеннях у промисловій зоні на межі сіл Ржевка та Вознесенка. Виникла сильна пожежа; за даними OSINT-аналізу, склад міг використовуватися для зберігання військових вантажів.",
       "source": "OSINT, місцевий губернатор"
     },
-    "distance": 73,
+    "en": {
+      "region": "Belgorod Oblast, Шебекинский район, с. Ржевка",
+      "target": "Voennyy Warehouse",
+      "category": "Military Infrastructure",
+      "weapon": "Drone",
+      "details": "strike droneov po warehouseskim pomeshcheniyam v promyshlennoy zone na granitse syol Rzhevka i Voznesenka. Voznik silnyy fire; according to OSINT-analiza, warehouse mog ispolzovatsya dlya khraneniya voennykh gruzov.",
+      "source": "OSINT, mestnyy gubernator"
+    },
     "id": 143
   },
   {
     "date": "18.06.2026",
     "lat": 48.0612,
     "lng": 39.9345,
+    "distance": 189,
     "ru": {
       "region": "Ростовская область, Гуково",
       "target": "Нефтебаза",
@@ -3308,19 +4453,21 @@ const strikeData = [
       "details": "Безпілотники атакували нафтобазу в Гуково на вулиці Карла Маркса. Виникла велика пожежа, пошкоджено тепловоз та комерційні об'єкти. За інформацією Генштабу ЗСУ, база використовувалася для забезпечення російських військ паливно-мастильними матеріалами.",
       "source": "OSINT, Генштаб ЗСУ, місцевий губернатор"
     },
-    "distance": 189,
+    "en": {
+      "region": "Rostov Oblast, Гуково",
+      "target": "Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "drones strikesovali fuel depot v Gukovo na ulitse Karla Marksa. Voznik major fire, was damaged teplovoz i kommercheskie facilityy. Po informatsii Genshtaba AFU, baza ispolzovalas dlya obespecheniya Russian voysk goryuche-smazochnymi materialami.",
+      "source": "OSINT, AFU General Staff, mestnyy gubernator"
+    },
     "id": 144
   },
   {
     "date": "18.06.2026",
     "lat": 55.638,
     "lng": 37.794,
-    "images": [
-      "images/mnpz_explosion.jpg",
-      "images/mnpz_explosion1.jpg",
-      "images/mnpz_explosion2.jpg",
-      "images/mnpz_explosion3.jpg"
-    ],
+    "distance": 562,
     "ru": {
       "region": "Москва, Капотня",
       "target": "Московский НПЗ (МНПЗ)",
@@ -3337,7 +4484,15 @@ const strikeData = [
       "details": "Повторна масована атака безпілотників на найбільший нафтопереробний завод Москви. Внаслідок влучань на об'єкті виникла сильна пожежа з кількома осередками загоряння, постраждали установки переробки нафти та резервуарний парк.",
       "source": "СБУ, ССО, ГУР, Сили безпілотних систем, мер Москви"
     },
-    "distance": 562,
+    "en": {
+      "region": "Moscow, Капотня",
+      "target": "Moskovskiy Oil Refinery (MOil Refinery)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Povtornaya massive strike droneov na krupneyshiy oil refinery Moskvy. V rezultate direct hits na facilitye voznik silnyy fire s neskolkimi ochagami vozgoraniya, postradali ustanovki pererabotki oil i storage tanknyy park.",
+      "source": "SBU, SOF, HUR, Sily bespilotnykh sistem, mer Moskvy"
+    },
+    "images": ["images/mnpz_explosion.jpg","images/mnpz_explosion1.jpg","images/mnpz_explosion2.jpg","images/mnpz_explosion3.jpg"],
     "id": 145
   },
   {
@@ -3359,6 +4514,14 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "details": "Під час нічної атаки зафіксовано осередки займання на газорозподільній станції та нафтогазовому сховищі, підтверджені супутниками NASA FIRMS.",
+      "source": "NASA FIRMS, OSINT"
+    },
+    "en": {
+      "region": "Крым, Simferopolский район (с. Журавлевка)",
+      "target": "Gazoraspredelitelnaya stantsiya i Storage \"TES\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "V khode nochnoy strikes zafiksirovany ochagi vozgoraniya na gasoraspredelitelnoy stantsii i neftegasovom storage facility, podtverzhdennye sputnikami NASA FIRMS.",
       "source": "NASA FIRMS, OSINT"
     },
     "id": 146
@@ -3384,6 +4547,14 @@ const strikeData = [
       "details": "Зафіксовано 5 влучань дронів у газопровід. З третьої спроби трубу було розірвано, виникла масштабна пожежа на прилеглій території.",
       "source": "Кримський вітер, OSINT"
     },
+    "en": {
+      "region": "Крым, Советский район (с. Лоховка)",
+      "target": "Gas Pipeline",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Zafiksirovano 5 direct hits droneov v gas pipeline. S tretey popytki truba byla razorvana, voznik large-scale fire na prilegayushchey territory.",
+      "source": "Krymskiy veter, OSINT"
+    },
     "id": 147
   },
   {
@@ -3406,6 +4577,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Під час атаки зафіксовано влучання та короткочасну детонацію на позиціях мобільної вогневої групи, що прикривала військовий аеродром.",
       "source": "Кримський вітер, OSINT"
+    },
+    "en": {
+      "region": "Крым, Sevastopol",
+      "target": "Airfield \"Belbek\" (mobilnaya ognevaya gruppa)",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "V khode strikes direct hits were recorded i kratkovremennaya detonation na pozitsiyakh mobilnoy ognevoy gruppy, prikryvavshey military airfield.",
+      "source": "Krymskiy veter, OSINT"
     },
     "id": 148
   },
@@ -3430,6 +4609,14 @@ const strikeData = [
       "details": "Знеструмлено підстанцію, що живить оборонний завод, який збирає дрони «Молнія» та компоненти до БПЛА «Оріон». Через відсутність електрики виробництво повністю зупинено.",
       "source": "АТЕШ"
     },
+    "en": {
+      "region": "Rostov Oblast, Taganrog",
+      "target": "Plant \"Atlant-Aero\"",
+      "category": "Defense Industry",
+      "weapon": "Unknown (Diversiya)",
+      "details": "Obestochena podstantsiya, pitayushchaya oboronnyy plant, sobirayushchiy drones \"Molniya\" i komponenty k UAV \"Orion\". Iz-za otsutstviya elektrichestva production polnostyu ostanovleno.",
+      "source": "ATESh"
+    },
     "id": 149
   },
   {
@@ -3452,6 +4639,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Атака українських ударних БПЛА на рекордній відстані (близько 2000 км від кордону). Зафіксовано вибухи та густе задимлення над територією нафтопереробного заводу, призупинялася робота місцевого аеропорту «Рощино».",
       "source": "OSINT (Astra), ЗМІ РФ"
+    },
+    "en": {
+      "region": "Tyumen Oblast, Tyumen (мкр-н Антипино)",
+      "target": "Tyumenskiy Oil Refinery (byvshiy Antipinskiy Oil Refinery)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "strikesa ukrainskikh strikenykh UAV na rekordnom rasstoyanii (okolo 2000 km ot granitsy). explosions were recorded i gustoe zadymlenie nad territoriey oil refinery, priostanavlivalas rabota mestnogo aeroporta \"Roshchino\".",
+      "source": "OSINT (Astra), Russian Media"
     },
     "id": 150
   },
@@ -3476,6 +4671,14 @@ const strikeData = [
       "details": "Масована нічна атака українських БПЛА. Супутникові знімки NASA FIRMS та дані OSINT-аналітиків підтверджують кілька сильних осередків пожежі в районі будівель біля східної частини злітно-посадкової смуги аеродрому базування тактичної авіації РФ.",
       "source": "Генштаб ЗСУ, OSINT"
     },
+    "en": {
+      "region": "Krasnodar Krai, Yeisk",
+      "target": "Airfield \"Yeisk\"",
+      "category": "Military Infrastructure / Aviation",
+      "weapon": "Drone",
+      "details": "Massirovannaya nochnaya strikesa ukrainskikh UAV. satellite images NASA FIRMS i data OSINT-analitikov confirm neskolko silnykh ochagov firea v districte zdaniy u vostochnoy hourti vzletno-posadochnoy polosy aerodroma bazirovaniya takticheskoy aviatsii RF.",
+      "source": "AFU General Staff, OSINT"
+    },
     "id": 151
   },
   {
@@ -3499,6 +4702,14 @@ const strikeData = [
       "details": "Успішна спільна операція Сил оборони. Уражено комплекс перевалки нафтопродуктів, що забезпечує пальним військову угруповання РФ у Криму. Підтверджено масштабну пожежу, поромна переправа була повністю зупинена.",
       "source": "СБС, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Темрюкский район (п. Чушка)",
+      "target": "Neftyanoy Terminal porta \"Kavkaz\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone / Missile",
+      "details": "Uspeshnaya sovmestnaya operation Sil oborony. was struck kompleks perevalki petroleum products, obespechivayushchiy fuelm voennuyu gruppirovku RF v Krymu. Podtverzhden large-scale fire, paromnaya pereprava byla polnostyu ostanovlena.",
+      "source": "SBS, AFU General Staff"
+    },
     "id": 152
   },
   {
@@ -3506,12 +4717,6 @@ const strikeData = [
     "lat": 45.343,
     "lng": 36.444,
     "distance": 295,
-    "images": [
-      "images/26_21-06_kerch.jpg",
-      "images/26_21-06_kerch1.jpg",
-      "images/26_21-06_kerch2.jpg",
-      "images/26_21-06_kerch3.jpg"
-    ],
     "ru": {
       "region": "АР Крым, Керчь",
       "target": "Нефтяной терминал («ТЭС-Терминал-1» / Морской рыбный порт)",
@@ -3528,6 +4733,15 @@ const strikeData = [
       "details": "Удари ударних БПЛА Сил безпілотних систем (СБС) по об'єктах перевалки нафтопродуктів та скрапленого газу («АЕГАЗ-Термінал» та «ТЕС»). Зафіксовано значну кількість теплових аномалій та пожеж.",
       "source": "СБС, Генштаб ЗСУ"
     },
+    "en": {
+      "region": "AR Crimea, Керчь",
+      "target": "Neftyanoy Terminal (\"Thermal Power Station-Terminal-1\" / Morskoy rybnyy port)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "strikes strikenykh UAV Sil bespilotnykh sistem (SBS) po facilityam perevalki petroleum products i szhizhennogo gasa (\"AEgas-Terminal\" i \"thermal power station\"). Zafiksirovano znachitelnoe kolichestvo teplovykh anomaliy i fireov.",
+      "source": "SBS, AFU General Staff"
+    },
+    "images": ["images/26_21-06_kerch.jpg","images/26_21-06_kerch1.jpg","images/26_21-06_kerch2.jpg","images/26_21-06_kerch3.jpg"],
     "id": 153
   },
   {
@@ -3550,6 +4764,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Офіційно підтверджений Генштабом ЗСУ нічний наліт на інфраструктуру нафтопереробного заводу. Зафіксовано падіння дронів, пошкодження та займання на території підприємства.",
       "source": "Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Северский район (пгт Ilsky)",
+      "target": "Ilsky Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Ofitsialno podtverzhdennyy Genshtabom AFU nochnoy nalet na infrastrukturu oil refinery. Zafiksirovany padeniya droneov, was damagediya i vozgoraniya on the facility's territory.",
+      "source": "AFU General Staff"
     },
     "id": 154
   },
@@ -3574,6 +4796,14 @@ const strikeData = [
       "details": "Нічна атака ударних безпілотників у рамках масштабної комбінованої операції Сил оборони Украины щодо випалювання паливної бази ЗС РФ на півдні. Удар підтверджено офіційним зведенням Генштабу.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Krasnodar Krai, Северский район (пгт Афипский)",
+      "target": "Afipskiy Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Nochnaya strikesa strikenykh droneov v ramkakh masshtabnoy kombinirovannoy operation Sil oborony Ukrainy po vyzhiganiyu toplivnoy bazy VS RF na yuge. strike ondtverzhden ofitsialnoy svodkoy Genshtaba.",
+      "source": "AFU General Staff"
+    },
     "id": 155
   },
   {
@@ -3597,6 +4827,14 @@ const strikeData = [
       "details": "Атака дронів на газопереробний комплекс («Газпром видобуток Астрахань»). Інформація про успішний удар включена до офіційного ранкового зведення Генштабу ЗСУ.",
       "source": "Генштаб ЗСУ"
     },
+    "en": {
+      "region": "Astrakhan Oblast, Аксарайский",
+      "target": "Astrakhanskiy Oil Refinery / Gazopererabatyvayushchiy Plant",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "drone strike na gasopererabatyvayushchiy kompleks (\"gasprom dobycha Astrakhan\"). information ob successfullym strikee vklyuchena v ofitsialnuyu utrennyuyu svodku Genshtaba AFU.",
+      "source": "AFU General Staff"
+    },
     "id": 156
   },
   {
@@ -3604,13 +4842,6 @@ const strikeData = [
     "lat": 51.6784,
     "lng": 39.2582,
     "distance": 283,
-    "images": [
-      "images/26-2206-voronezh.jpg",
-      "images/26-2206-voronezh1.jpg",
-      "images/26-2206-voronezh2.jpg",
-      "images/26-2206-voronezh3.jpg",
-      "images/26-2206-voronezh4.jpg"
-    ],
     "ru": {
       "region": "Воронежская область, Воронеж",
       "target": "Завод полупроводниковых приборов «Сборка» (АО «ВЗПП-С»)",
@@ -3627,6 +4858,15 @@ const strikeData = [
       "details": "Масований денний ракетний удар по підприємству, що перебуває під західними санкціями. Завод є провідним виробником електроніки (матриць і транзисторів) для російських ракет «Іскандер-К», Х-101 та зенітних комплексів «Панцир-С1». Зафіксовано 4 точні влучання, обвал даху головного корпусу та сильну пожежу. Атака офіційно підтверджена Генштабом ЗСУ.",
       "source": "Генштаб ЗСУ, OSINT"
     },
+    "en": {
+      "region": "Voronezh Oblast, Voronezh",
+      "target": "Plant poluprovodnikovykh priborov \"Sborka\" (AO \"VZPP-S\")",
+      "category": "Defense Industry",
+      "weapon": "Cruise Missile (veroyatno Storm Shadow)",
+      "details": "massive dnevnoy missile strike on predpriyatiyu, nakhodyashchemusya pod zapadnymi sanktsiyami. plant yavlyaetsya vedushchim produceselem elektroniki (matrits i tranzistorov) dlya Russian raket \"Iskander-K\", Kh-101 i zenitnykh kompleksov \"Pantsir-S1\". Zafiksirovano 4 tochnykh direct hits, obrushenie kryshi glavnogo korpusa i silnyy fire. strikesa ofitsialno podtverzhdena Genshtabom AFU.",
+      "source": "AFU General Staff, OSINT"
+    },
+    "images": ["images/26-2206-voronezh.jpg","images/26-2206-voronezh1.jpg","images/26-2206-voronezh2.jpg","images/26-2206-voronezh3.jpg","images/26-2206-voronezh4.jpg"],
     "id": 157
   },
   {
@@ -3649,6 +4889,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Успішна атака ударних БПЛА на найбільшу станцію космічного зв'язку в РФ, що забезпечує обмін військовою інформацією та зв'язок з орбітальним супутниковим угрупованням. Генштаб ЗСУ та російська пресслужба підприємства підтвердили масований наліт, на об'єкті було зафіксовано масштабне задимлення.",
       "source": "Генштаб ЗСУ, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Moscow Oblast, Дубна",
+      "target": "Tsentr kosmicheskoy svyazi (TsKS) \"Dubna\"",
+      "category": "Military Infrastructure",
+      "weapon": "Drone",
+      "details": "successful strike strikenykh UAV na krupneyshuyu stantsiyu kosmicheskoy svyazi v RF, obespechivayushchuyu obmen voennoy informatsiey i svyaz s orbitalnoy sputnikovoy gruppirovkoy. AFU General Staff i Russian press-sluzhba facility podtverdili massive nalet, na facilitye bylo zafiksirovano masshtabnoe zadymlenie.",
+      "source": "AFU General Staff, Russian Media"
     },
     "id": 158
   },
@@ -3673,6 +4921,14 @@ const strikeData = [
       "details": "Масована атака на стратегічні газопереробні підприємства ПАТ «Газпром». У промисловій зоні зафіксовано кілька великих осередків горіння. Інформацію про атаку підтвердила місцева влада та OSINT-ресурси.",
       "source": "OSINT, ЗМІ РФ"
     },
+    "en": {
+      "region": "Orenburg Oblast, Orenburg",
+      "target": "Orenburgskiy gazopererabatyvayushchiy Plant (GPZ) i Gelievyy Plant",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "massive strike na strategicallye gasopererabatyvayushchie facility PAO \"gasprom\". V promyshlennoy zone zafiksirovano neskolko krupnykh tochek goreniya. Informatsiyu ob strikese podtverdili mestnye vlasti i OSINT-resursy.",
+      "source": "OSINT, Russian Media"
+    },
     "id": 159
   },
   {
@@ -3695,6 +4951,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Повторний і результативний удар українських БПЛА по морському порту Керчі. Уражено великий логістичний комплекс, призначений для зберігання та перевалки нафтопродуктів і скрапленого газу.",
       "source": "СБС, OSINT (Кримський вітер)"
+    },
+    "en": {
+      "region": "AR Crimea, Керчь",
+      "target": "Fuel Depot / Kompleks perevalki \"Thermal Power Station-Terminal\"",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Povtornyy i rezultativnyy strike ukrainskikh UAV po morskomu portu Kerchi. was struck major logisticheskiy kompleks, prednaznachennyy dlya khraneniya i perevalki petroleum products i szhizhennogo gasa.",
+      "source": "SBS, OSINT (Krymskiy veter)"
     },
     "id": 160
   },
@@ -3719,6 +4983,14 @@ const strikeData = [
       "details": "Точне влучання ударного безпілотника в нафтовий резервуар мазутосховища. Виникла масштабна пожежа, шлейф чорного диму розтягнувся над півостровом майже на 50 кілометрів.",
       "source": "OSINT, моніторингові канали"
     },
+    "en": {
+      "region": "AR Crimea, Керчь (мкр-н Аршинцево)",
+      "target": "Rezervuary mazutokhranilishcha (Kamysh-Burunskaya Heat & Power Plant)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Tochnoe direct hit strikenogo drone v neftyanoy storage tank mazutostorage facility. Voznik large-scale fire, shleyf chernogo dyma rastyanulsya nad poluostrovom pochti na 50 kilometers.",
+      "source": "OSINT, monitoringovye kanaly"
+    },
     "id": 161
   },
   {
@@ -3741,6 +5013,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Повторна атака на паливну інфраструктуру кубанського порту, який забезпечує перевалку пального для російських окупаційних сил у Криму. Зафіксовано загоряння на території термінала.",
       "source": "СБС, OSINT"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Темрюкский район",
+      "target": "NefteTerminal v portu \"Kavkaz\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Povtornaya strikesa na toplivnuyu infrastrukturu kubanskogo porta, kotoryy obespechivaet perevalku fuel dlya Russian okkupatsionnykh sil v Krymu. a fire outbreak was recorded na territory terminala.",
+      "source": "SBS, OSINT"
     },
     "id": 162
   },
@@ -3765,6 +5045,14 @@ const strikeData = [
       "details": "За повідомленням Сил безпілотних систем України, уражено головну розподільчу підстанцію, яка передає електроенергію від Балаклавської ТЕС. Після удару в місті відбулися масштабні відключення електропостачання.",
       "source": "Сили безпілотних систем ЗСУ, Reuters"
     },
+    "en": {
+      "region": "г. Sevastopol (временно оккупированный Крым)",
+      "target": "Glavnaya elektricheskaya podstantsiya \"Sevastopol\" (330/220/110/35 kV)",
+      "category": "Energeticheskaya infrastruktura",
+      "weapon": "Drone",
+      "details": "Po zayavleniyu komandovaniya Sil bespilotnykh sistem Ukrainy, by a strike byla was strucka glavnaya raspredelitelnaya podstantsiya, obespechivayushchaya peredachu elektroenergii ot Balaklavskoy thermal power station. Posle strikes v citye proizoshli masshtabnye otklyucheniya elektroenergii.",
+      "source": "Sily bespilotnykh sistem AFU, Reuters"
+    },
     "id": 163
   },
   {
@@ -3787,6 +5075,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "СБУ повідомила про ураження інфраструктури аеродрому. За попередніми даними уражено чотири ангари для зберігання авіаційної техніки.",
       "source": "СБУ"
+    },
+    "en": {
+      "region": "AR Crimea, Новофёдоровка (временно оккупированный Крым)",
+      "target": "Voennyy Airfield \"Saki\"",
+      "category": "Voennyy aerodrom",
+      "weapon": "Drone",
+      "details": "SBU soobshchila ob strikee po infrastrukture aerodroma. Po predvaritelnym dannym were struck chetyre angara dlya khraneniya aviatsionnoy tekhniki.",
+      "source": "SBU"
     },
     "id": 164
   },
@@ -3811,6 +5107,14 @@ const strikeData = [
       "details": "СБУ офіційно підтвердила ураження інфраструктури військового аеродрому в межах комплексної операції проти російських військових об'єктів у Криму.",
       "source": "СБУ"
     },
+    "en": {
+      "region": "AR Crimea, Gvardeyskoe (временно оккупированный Крым)",
+      "target": "Voennyy Airfield \"Gvardeyskoe\"",
+      "category": "Voennyy aerodrom",
+      "weapon": "Drone",
+      "details": "SBU ofitsialno podtverdila strike on infrastrukture military airfield v ramkakh kompleksnoy operation protiv Russian voennykh facilityov v Krymu.",
+      "source": "SBU"
+    },
     "id": 165
   },
   {
@@ -3834,6 +5138,14 @@ const strikeData = [
       "details": "Під час нічної атаки кілька ударних безпілотників атакували промислову зону на лівому березі Дону (вул. 1-ша Лугова). Місцева влада підтвердила прорив ППО і падіння уламків БПЛА літакового типу на територію промислового підприємства, що є філіалом найбільшого НПЗ регіону.",
       "source": "OSINT (Astra), заяви керівництва регіону"
     },
+    "en": {
+      "region": "Rostov Oblast, Rostov-on-Don (Промзона на левом берегу Дона)",
+      "target": "Filial Novoshakhtinskogo Planta nefteproduktov (OAO \"NZNP\" filial \"Rostovskiy\")",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "V khode nochnoy strikes neskolko strikenykh droneov strikesovali promyshlennuyu zonu na levom beregu Dona (ul. 1-ya Lugovaya). Mestnye vlasti podtverdili proryv air defense i padenie debris UAV aircraftnogo tipa na territory promyshlennogo facility, yavlyayushchegosya filialom krupneyshego oil refinery region.",
+      "source": "OSINT (Astra), zayavleniya rukovodstva regiona"
+    },
     "id": 166
   },
   {
@@ -3841,11 +5153,6 @@ const strikeData = [
     "lat": 54.843,
     "lng": 56.079,
     "distance": 1436,
-    "images": [
-      "images/26_25-06_bashneft1.jpg",
-      "images/26_25-06_bashneft2.jpg",
-      "images/26_25-06_bashneft3.jpg"
-    ],
     "ru": {
       "region": "Республика Башкортостан, Уфа (мкр-н Черниковка)",
       "target": "Нефтеперерабатывающие заводы «Башнефть» («Башнефть-Новойл» и «Башнефть-Уфанефтехим»)",
@@ -3862,6 +5169,15 @@ const strikeData = [
       "details": "Українські далекобійні БПЛА атакували найбільший нафтопереробний вузол Росії на відстані близько 1400-1500 км від кордону України. Зафіксовано прильоти, пожежі та густий чорний дим над територіями підприємств «Башнєфть-Новойл» та «Башнєфть-Уфанафтохім». Українські джерела повідомляли про ураження установок первинної переробки нафти.",
       "source": "Президент України, СБУ, Exilenova+, ASTRA, українські та російські ЗМІ"
     },
+    "en": {
+      "region": "Republic of Bashkortostan, Ufa (мкр-н Черниковка)",
+      "target": "Neftepererabatyvayushchie Planty \"Bashneft\" (\"Bashneft-Novoyl\" i \"Bashneft-Ufaneftekhim\")",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Ukrainian dalnoboynye UAV strikesovali krupneyshiy neftepererabatyvayushchiy uzel Rossii na rasstoyanii okolo 1400-1500 km ot granitsy Ukrainy. Zafiksirovany prilety, firey i gustoy chernyy dym nad territorymi facilities \"Bashoil-Novoyl\" i \"Bashoil-Ufaneftekhim\". Ukrainian sources soobshchali o was struckii ustanovok pervichnoy pererabotki oil.",
+      "source": "Prezident Ukrainy, SBU, Exilenova+, ASTRA, ukrainskie i rossiyskie Media"
+    },
+    "images": ["images/26_25-06_bashneft1.jpg","images/26_25-06_bashneft2.jpg","images/26_25-06_bashneft3.jpg"],
     "id": 167
   },
   {
@@ -3885,6 +5201,14 @@ const strikeData = [
       "details": "Масована атака БПЛА на одного з найбільших виробників аміаку та азотної кислоти в РФ. Продукція підприємства використовується у ланцюгах виробництва вибухових речовин і постачається на суміжні підприємства оборонно-промислового комплексу. Місцеві жителі повідомляли про серію вибухів і запах аміаку.",
       "source": "OSINT (ASTRA, Exilenova+), російські ЗМІ та місцева влада"
     },
+    "en": {
+      "region": "Tula Oblast, Новомосковск",
+      "target": "Khimicheskiy kombinat \"Novomoskovskiy Azot\" (EvroKhim)",
+      "category": "Defense Industry",
+      "weapon": "Drone",
+      "details": "massive strike UAV na odnogo iz krupneyshikh produceseley ammiaka i azotnoy kisloty v RF. Produktsiya facility ispolzuetsya v tsepochkakh production explosionchatykh veshchestv i postavlyaetsya na smezhnye facility oboronno-promyshlennogo kompleksa. Mestnye residents soobshchali o serii explosionov i zapakhe ammiaka.",
+      "source": "OSINT (ASTRA, Exilenova+), rossiyskie Media i mestnye vlasti"
+    },
     "id": 168
   },
   {
@@ -3907,6 +5231,14 @@ const strikeData = [
       "weapon": "Дрон",
       "details": "Повторна атака на ключову нафтобазу півдня Росії. Після удару виникла масштабна пожежа щонайменше трьох резервуарів із пальним. Об'єкт використовується для зберігання та розподілу нафтопродуктів, що мають значення для військової та цивільної логістики.",
       "source": "OSINT (ASTRA, Exilenova+), Оперативний штаб Краснодарського краю, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Krasnodar Krai, станица Полтавская",
+      "target": "Poltavskaya Fuel Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Povtornaya strikesa na klyuchevuyu fuel depot yuga Rossii. Posle of the strike vozniklo masshtabnoe fire outbreak kak at least trekh storage tankov s fuelm. facility ispolzuetsya dlya khraneniya i raspredeleniya petroleum products, imeyushchikh znachenie dlya voennoy i grazhdanskoy logistiki.",
+      "source": "OSINT (ASTRA, Exilenova+), Operativnyy shtab Krasnodarskogo kraya, Russian Media"
     },
     "id": 169
   }

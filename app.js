@@ -1,28 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     // i18n Dictionary
     const i18n = {
-        title: { ru: 'Пораженные объекты', uk: 'Уражені об\'єкти' },
-        search: { ru: 'Поиск по названию или региону...', uk: 'Пошук за назвою чи регіоном...' },
-        filter_all: { ru: 'Все', uk: 'Всі' },
-        filter_oil: { ru: 'Нефтегаз', uk: 'Нафтогаз' },
-        filter_logistics: { ru: 'Логистика', uk: 'Логістика' },
-        filter_military: { ru: 'ВПК / Авиабазы', uk: 'ВПК / Авіабази' },
-        total: { ru: 'Всего объектов:', uk: 'Всього об\'єктів:' },
-        updated: { ru: 'Обновлено: Июнь 2026', uk: 'Оновлено: Червень 2026' },
-        mobile_btn: { ru: 'Список объектов', uk: 'Список об\'єктів' },
-        distance: { ru: 'Дальность: ~{dist} км от линии фронта', uk: 'Дальність: ~{dist} км від лінії фронту' },
-        not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені' },
-        onboarding: { ru: 'Жми на мигающую точку на территории России и смотри, что там демилитаризировали в рамках эСВэО.', uk: 'Тисни на мигаючу крапку на території Росії і дивися, що там демілітаризували в рамках еСВеО.' },
-        sort_asc: { ru: 'Сначала старые', uk: 'Спочатку старі' },
-        sort_desc: { ru: 'Сначала новые', uk: 'Спочатку нові' },
-        sort_title: { ru: 'Сортировка по дате', uk: 'Сортування за датою' }
+        title: { ru: 'Пораженные объекты', uk: 'Уражені об\'єкти', en: 'Struck Facilities' },
+        search: { ru: 'Поиск по названию или региону...', uk: 'Пошук за назвою чи регіоном...', en: 'Search by name or region...' },
+        filter_all: { ru: 'Все', uk: 'Всі', en: 'All' },
+        filter_oil: { ru: 'Нефтегаз', uk: 'Нафтогаз', en: 'Oil & Gas' },
+        filter_logistics: { ru: 'Логистика', uk: 'Логістика', en: 'Logistics' },
+        filter_military: { ru: 'ВПК / Авиабазы', uk: 'ВПК / Авіабази', en: 'Defense / Airbases' },
+        total: { ru: 'Всего объектов:', uk: 'Всього об\'єктів:', en: 'Total facilities:' },
+        updated: { ru: 'Обновлено: Июнь 2026', uk: 'Оновлено: Червень 2026', en: 'Updated: June 2026' },
+        mobile_btn: { ru: 'Список объектов', uk: 'Список об\'єктів', en: 'Object List' },
+        distance: { ru: 'Дальность: ~{dist} км от линии фронта', uk: 'Дальність: ~{dist} км від лінії фронту', en: 'Range: ~{dist} km from front line' },
+        not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені', en: 'No objects found' },
+        onboarding: { ru: 'Жми на мигающую точку на территории России и смотри, что там демилитаризировали в рамках эСВэО.', uk: 'Тисни на мигаючу крапку на території Росії і дивися, що там демілітаризували в рамках еСВеО.', en: 'Click on a blinking dot on Russian territory to see what was demilitarized as part of the special operation.' },
+        sort_asc: { ru: 'Сначала старые', uk: 'Спочатку старі', en: 'Oldest first' },
+        sort_desc: { ru: 'Сначала новые', uk: 'Спочатку нові', en: 'Newest first' },
+        sort_title: { ru: 'Сортировка по дате', uk: 'Сортування за датою', en: 'Sort by date' },
+        copy_link: { ru: 'Копировать ссылку', uk: 'Копіювати посилання', en: 'Copy link' },
+        share: { ru: 'Поделиться', uk: 'Поділитися', en: 'Share' },
+        copied: { ru: 'Ссылка скопирована!', uk: 'Посилання скопійовано!', en: 'Link copied!' },
+        expand: { ru: 'Увеличить', uk: 'Збільшити', en: 'Expand' },
+        filter_all_months: { ru: 'Все месяцы', uk: 'Всі місяці', en: 'All months' }
     };
 
     let currentLang = localStorage.getItem('strike-map-lang') || 'uk';
+    const supportedLangs = ['uk', 'ru', 'en'];
 
     function setLang(lang) {
         currentLang = lang;
         localStorage.setItem('strike-map-lang', lang);
+        
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
         
         document.querySelectorAll('.lang-selector').forEach(btn => {
             if (btn.getAttribute('data-set-lang') === lang) {
@@ -36,12 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (i18n[key]) el.textContent = i18n[key][lang];
+            if (i18n[key] && i18n[key][lang]) el.textContent = i18n[key][lang];
         });
         
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
-            if (i18n[key]) el.placeholder = i18n[key][lang];
+            if (i18n[key] && i18n[key][lang]) el.placeholder = i18n[key][lang];
         });
 
         // Populate/update month filter options with correct lang
@@ -125,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let mapLang = currentLang;
                     if (mapLang === 'uk') mapLang = 'uk';
                     else if (mapLang === 'ru') mapLang = 'ru';
+                    else if (mapLang === 'en') mapLang = 'en';
                     else mapLang = 'en';
 
                     style.layers.forEach(layer => {
@@ -240,9 +250,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function getCategoryType(category) {
         if (!category) return 'other';
         const cat = category.toLowerCase();
-        if (cat.includes('нефтегаз') || cat.includes('нафтогаз')) return 'oilgas';
-        if (cat.includes('логистика') || cat.includes('логістика')) return 'logistics';
-        if (cat.includes('впк') || cat.includes('авиабаза') || cat.includes('авіабаза')) return 'military';
+        if (cat.includes('нефтегаз') || cat.includes('нафтогаз') || cat.includes('oil & gas') || cat.includes('oil and gas')) return 'oilgas';
+        if (cat.includes('логистика') || cat.includes('логістика') || cat.includes('logistics') || cat.includes('fuel logistics')) return 'logistics';
+        if (cat.includes('впк') || cat.includes('авиабаза') || cat.includes('авіабаза') || cat.includes('defense') || cat.includes('airbase') || cat.includes('military')) return 'military';
         return 'other';
     }
 
@@ -275,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generatePopupHTML(item, type, colors) {
-        const textExpand = currentLang === 'uk' ? 'Збільшити' : 'Увеличить';
+        const textExpand = i18n.expand[currentLang] || 'Expand';
         let imageHtml = '';
         if (item.images && item.images.length > 0) {
             const mainImg = item.images[0];
@@ -334,9 +344,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text}">
                                 ${item.category}
                             </span>
-                            <button onclick="window.copyEventLink(${item.id}, event)" class="shrink-0 flex items-center gap-1 px-2 py-1 text-[11px] font-medium rounded-md bg-slate-100 dark:bg-slate-800 theme-text-muted hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-700 transition border theme-border active:scale-95" title="${currentLang === 'uk' ? 'Копіювати посилання' : 'Копировать ссылку'}">
+                            <button onclick="window.copyEventLink(${item.id}, event)" class="shrink-0 flex items-center gap-1 px-2 py-1 text-[11px] font-medium rounded-md bg-slate-100 dark:bg-slate-800 theme-text-muted hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-slate-700 transition border theme-border active:scale-95" title="${i18n.copy_link[currentLang]}">
                                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-                                <span>${currentLang === 'uk' ? 'Поділитися' : 'Поделиться'}</span>
+                                <span>${i18n.share[currentLang]}</span>
                             </button>
                         </div>
                         <h3 class="text-lg font-bold theme-text-main leading-tight">${item.target}</h3>
@@ -398,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const url = new URL(window.location.href);
         url.searchParams.set('id', id);
         navigator.clipboard.writeText(url.toString()).then(() => {
-            showToast(currentLang === 'uk' ? 'Посилання скопійовано!' : 'Ссылка скопирована!');
+            showToast(i18n.copied[currentLang]);
         }).catch(err => {
             console.error('Failed to copy: ', err);
         });
@@ -606,18 +616,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentMonth = 'all';
 
     const monthNames = {
-        '01': { ru: 'Январь', uk: 'Січень' },
-        '02': { ru: 'Февраль', uk: 'Лютий' },
-        '03': { ru: 'Март', uk: 'Березень' },
-        '04': { ru: 'Апрель', uk: 'Квітень' },
-        '05': { ru: 'Май', uk: 'Травень' },
-        '06': { ru: 'Июнь', uk: 'Червень' },
-        '07': { ru: 'Июль', uk: 'Липень' },
-        '08': { ru: 'Август', uk: 'Серпень' },
-        '09': { ru: 'Сентябрь', uk: 'Вересень' },
-        '10': { ru: 'Октябрь', uk: 'Жовтень' },
-        '11': { ru: 'Ноябрь', uk: 'Листопад' },
-        '12': { ru: 'Декабрь', uk: 'Грудень' }
+        '01': { ru: 'Январь', uk: 'Січень', en: 'January' },
+        '02': { ru: 'Февраль', uk: 'Лютий', en: 'February' },
+        '03': { ru: 'Март', uk: 'Березень', en: 'March' },
+        '04': { ru: 'Апрель', uk: 'Квітень', en: 'April' },
+        '05': { ru: 'Май', uk: 'Травень', en: 'May' },
+        '06': { ru: 'Июнь', uk: 'Червень', en: 'June' },
+        '07': { ru: 'Июль', uk: 'Липень', en: 'July' },
+        '08': { ru: 'Август', uk: 'Серпень', en: 'August' },
+        '09': { ru: 'Сентябрь', uk: 'Вересень', en: 'September' },
+        '10': { ru: 'Октябрь', uk: 'Жовтень', en: 'October' },
+        '11': { ru: 'Ноябрь', uk: 'Листопад', en: 'November' },
+        '12': { ru: 'Декабрь', uk: 'Грудень', en: 'December' }
     };
 
     function getUniqueMonths() {
@@ -675,7 +685,7 @@ document.addEventListener('DOMContentLoaded', () => {
         monthFilter.innerHTML = '';
         customDropdownList.innerHTML = '';
         
-        const allText = currentLang === 'uk' ? 'Всі місяці' : 'Все месяцы';
+        const allText = i18n.filter_all_months[currentLang] || 'All months';
         
         addOptionToDropdown('all', allText, selectedValue);
         
@@ -727,7 +737,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function applyFilters() {
         let filtered = strikeData.filter(item => {
-            const locItem = item[currentLang];
+            const locItem = item[currentLang] || item['en'] || item['ru'];
             const searchMatch = currentSearch === '' || 
                                 locItem.target.toLowerCase().includes(currentSearch) || 
                                 locItem.region.toLowerCase().includes(currentSearch) ||
@@ -759,7 +769,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return searchMatch && filterMatch && monthMatch;
         }).map(item => ({
             ...item,
-            ...item[currentLang],
+            ...(item[currentLang] || item['en'] || item['ru']),
             originalCategory: item.ru.category
         }));
 
