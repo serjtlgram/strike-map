@@ -21,6 +21,7 @@ const categoryMap = {
     'Нефтебаза': 'Fuel Depot',
     'Энергетика': 'Energy',
     'Химическая промышленность': 'Chemical Industry',
+    'ВПК / Химическая промышленность': 'Defense Industry / Chemical Industry',
 };
 
 const regionNameMap = {
@@ -246,6 +247,11 @@ const translit = (str) => {
 
 function translateRegion(ruRegion) {
     if (!ruRegion) return ruRegion;
+    const regionOverrides = {
+        "Нижегородская область, Кстово": "Nizhny Novgorod Oblast, Kstovo",
+        "Тверская область, пгт Редкино": "Tver Oblast, pgt Redkino"
+    };
+    if (regionOverrides[ruRegion]) return regionOverrides[ruRegion];
     let result = ruRegion;
     const sortedKeys = Object.keys(regionNameMap).sort((a, b) => b.length - a.length);
     for (const key of sortedKeys) {
@@ -256,6 +262,11 @@ function translateRegion(ruRegion) {
 
 function translateTarget(ruTarget) {
     if (!ruTarget) return ruTarget;
+    const targetOverrides = {
+        "НПЗ «Нижегороднефтеоргсинтез» (НОРСИ, компания «Лукойл»)": "Nizhny Novgorodnefteorgsintez Oil Refinery (NORSI, Lukoil company)",
+        "«Редкинский опытный завод»": "Redkinsky Experimental Plant"
+    };
+    if (targetOverrides[ruTarget]) return targetOverrides[ruTarget];
     let result = ruTarget;
     const replacements = [
         [/Установка подготовки нефти/gi, 'Oil Treatment Unit'],
@@ -346,6 +357,13 @@ function translateSource(ruSource) {
 // Comprehensive details translation using ordered phrase replacements
 function translateDetails(ruDetails) {
     if (!ruDetails) return ruDetails;
+    const overrides = {
+        "В ходе сверхмассированного налета беспилотников поражен один из крупнейших в РФ нефтеперерабатывающих заводов, входящий в топ-4 по мощности. Международное агентство Reuters со ссылкой на источники сообщило, что успешный удар привел к повреждениям и принудительной остановке стратегически важной установки первичной переработки нефти (CDU-5).":
+            "During a super-massive drone raid, one of the largest oil refineries in Russia, ranking in the top 4 in terms of capacity, was hit. Reuters agency, citing sources, reported that the successful strike caused damage and a forced shutdown of the strategically important primary oil refining unit (CDU-5).",
+        "Беспилотники атаковали крупнейшее в регионе химическое предприятие. На территории зафиксированы взрывы и масштабный пожар. Этот опытный завод плотно интегрирован в военно-промышленный комплекс России, поскольку выпускает широкий спектр спецхимии и компоненты специализированного авиационного топлива для нужд ВКС РФ.":
+            "Drones attacked the largest chemical enterprise in the region. Explosions and a large-scale fire were recorded on the territory. This experimental plant is closely integrated into the military-industrial complex of Russia, as it produces a wide range of specialty chemicals and components of specialized aviation fuel for the needs of the Russian Aerospace Forces."
+    };
+    if (overrides[ruDetails]) return overrides[ruDetails];
     let r = ruDetails;
 
     // --- Abbreviations and proper nouns first ---

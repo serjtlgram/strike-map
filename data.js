@@ -5204,7 +5204,7 @@ const strikeData = [
     "en": {
       "region": "Tula Oblast, Новомосковск",
       "target": "Khimicheskiy kombinat \"Novomoskovskiy Azot\" (EvroKhim)",
-      "category": "Defense Industry",
+      "category": "Defense Industry / Chemical Industry",
       "weapon": "Drone",
       "details": "massive strike UAV na odnogo iz krupneyshikh produceseley ammiaka i azotnoy kisloty v RF. Produktsiya facility ispolzuetsya v tsepochkakh production explosionchatykh veshchestv i postavlyaetsya na smezhnye facility oboronno-promyshlennogo kompleksa. Mestnye residents soobshchali o serii explosionov i zapakhe ammiaka.",
       "source": "OSINT (ASTRA, Exilenova+), rossiyskie Media i mestnye vlasti"
@@ -5241,5 +5241,67 @@ const strikeData = [
       "source": "OSINT (ASTRA, Exilenova+), Operativnyy shtab Krasnodarskogo kraya, Russian Media"
     },
     "id": 169
+  },
+  {
+    "date": "26.06.2026",
+    "lat": 56.1264,
+    "lng": 44.1528,
+    "distance": 847,
+    "ru": {
+      "region": "Нижегородская область, Кстово",
+      "target": "НПЗ «Нижегороднефтеоргсинтез» (НОРСИ, компания «Лукойл»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ходе сверхмассированного налета беспилотников поражен один из крупнейших в РФ нефтеперерабатывающих заводов, входящий в топ-4 по мощности. Международное агентство Reuters со ссылкой на источники сообщило, что успешный удар привел к повреждениям и принудительной остановке стратегически важной установки первичной переработки нефти (CDU-5).",
+      "source": "Reuters, OSINT"
+    },
+    "uk": {
+      "region": "Нижегородська область, Кстово",
+      "target": "НПЗ «Нижегороднефтеоргсинтез» (НОРСІ, компанія «Лукойл»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Під час надмасованого нальоту безпілотників уражено один із найбільших у РФ нафтопереробних заводів, що входить до топ-4 за потужністю. Міжнародне агентство Reuters із посиланням на джерела повідомило, що успішний удар призвів до пошкоджень та примусової зупинки стратегічно важливої установки первинної переробки нафти (CDU-5).",
+      "source": "Reuters, OSINT"
+    },
+    "en": {
+      "region": "Nizhny Novgorod Oblast, Kstovo",
+      "target": "Nizhny Novgorodnefteorgsintez Oil Refinery (NORSI, Lukoil company)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "During a super-massive drone raid, one of the largest oil refineries in Russia, ranking in the top 4 in terms of capacity, was hit. Reuters agency, citing sources, reported that the successful strike caused damage and a forced shutdown of the strategically important primary oil refining unit (CDU-5).",
+      "source": "Reuters, OSINT"
+    },
+    "id": 170
+  },
+  {
+    "date": "26.06.2026",
+    "lat": 56.6385,
+    "lng": 36.2737,
+    "distance": 645,
+    "ru": {
+      "region": "Тверская область, пгт Редкино",
+      "target": "«Редкинский опытный завод»",
+      "category": "ВПК / Химическая промышленность",
+      "weapon": "Дрон",
+      "details": "Беспилотники атаковали крупнейшее в регионе химическое предприятие. На территории зафиксированы взрывы и масштабный пожар. Этот опытный завод плотно интегрирован в военно-промышленный комплекс России, поскольку выпускает широкий спектр спецхимии и компоненты специализированного авиационного топлива для нужд ВКС РФ.",
+      "source": "OSINT (Astra, Baza)"
+    },
+    "uk": {
+      "region": "Тверська область, смт Редкіно",
+      "target": "«Редкінський дослідний завод»",
+      "category": "ВПК / Хімічна промисловість",
+      "weapon": "Дрон",
+      "details": "Безпілотники атакували найбільше в регіоні хімічне підприємство. На території зафіксовано вибухи та масштабну пожежу. Цей дослідний завод тісно інтегрований у військово-промисловий комплекс Росії, оскільки випускає широкий спектр спецхимии та компоненти спеціалізованого авіаційного палива для потреб ПКС РФ.",
+      "source": "OSINT (Astra, Baza)"
+    },
+    "en": {
+      "region": "Tver Oblast, pgt Redkino",
+      "target": "Redkinsky Experimental Plant",
+      "category": "Defense Industry / Chemical Industry",
+      "weapon": "Drone",
+      "details": "Drones attacked the largest chemical enterprise in the region. Explosions and a large-scale fire were recorded on the territory. This experimental plant is closely integrated into the military-industrial complex of Russia, as it produces a wide range of specialty chemicals and components of specialized aviation fuel for the needs of the Russian Aerospace Forces.",
+      "source": "OSINT (Astra, Baza)"
+    },
+    "id": 171
   }
 ];
