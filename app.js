@@ -297,8 +297,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 thumbnailsHtml = `<div class="desktop-only-flex flex-col gap-2 mt-2 w-full">`;
                 for (let i = 1; i < item.images.length; i++) {
                     thumbnailsHtml += `
-                        <div class="w-full h-16 rounded-lg shadow-sm overflow-hidden relative border theme-border hover:opacity-90 transition" onclick="event.stopPropagation(); window.openFullscreenGallery('${imagesJson}', ${i})">
-                            <img src="${item.images[i]}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <div class="w-full h-16 rounded-lg shadow-sm overflow-hidden relative border theme-border hover:opacity-90 transition group" onclick="event.stopPropagation(); window.openFullscreenGallery('${imagesJson}', ${i})">
+                            ${item.images[i].toLowerCase().endsWith('.mp4') ? 
+                        `<video src="${item.images[i]}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 pointer-events-none" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
+                        `<img src="${item.images[i]}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">`}
                         </div>
                     `;
                 }
@@ -308,7 +310,9 @@ document.addEventListener('DOMContentLoaded', () => {
             imageHtml = `
                 <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group">
                     <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border" onclick="window.openFullscreenGallery('${imagesJson}', 0)">
-                        <img src="${mainImg}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        ${mainImg.toLowerCase().endsWith('.mp4') ? 
+                        `<video src="${mainImg}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="w-12 h-12 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
+                        `<img src="${mainImg}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">`}
                         ${countHtml}
                         <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -454,17 +458,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateModalImage(animate = true) {
         const modalImg = document.getElementById('modalImage');
+        const modalVideo = document.getElementById('modalVideo');
         const counter = document.getElementById('imageCounter');
-        if (modalImg && currentGalleryImages.length > 0) {
+        if (currentGalleryImages.length > 0) {
+            const currentSrc = currentGalleryImages[currentGalleryIndex];
+            const isVideo = currentSrc.toLowerCase().endsWith('.mp4');
+            const activeElement = isVideo ? modalVideo : modalImg;
+            const hiddenElement = isVideo ? modalImg : (modalVideo || null);
+            
+            if (hiddenElement) {
+                hiddenElement.classList.add('hidden');
+                if (hiddenElement.tagName === 'VIDEO') {
+                    hiddenElement.pause();
+                }
+            }
+            if (activeElement) {
+                activeElement.classList.remove('hidden');
+            }
+
             if (animate) {
-                modalImg.style.opacity = '0';
+                activeElement.style.opacity = '0';
                 setTimeout(() => {
-                    modalImg.src = currentGalleryImages[currentGalleryIndex];
-                    modalImg.style.opacity = '1';
+                    activeElement.src = currentSrc;
+                    activeElement.style.opacity = '1';
                 }, 150);
             } else {
-                modalImg.src = currentGalleryImages[currentGalleryIndex];
-                modalImg.style.opacity = '1';
+                activeElement.src = currentSrc;
+                activeElement.style.opacity = '1';
             }
             
             if (counter) {
@@ -549,22 +569,41 @@ document.addEventListener('DOMContentLoaded', () => {
             const listItem = document.createElement('div');
             listItem.className = `p-3 rounded-xl theme-bg-item border theme-border theme-hover-bg-item transition cursor-pointer group relative overflow-hidden`;
             
-            const photoCount = item.images && item.images.length > 0 ? item.images.length : (item.image ? 1 : 0);
-            const cameraBadge = photoCount > 0 ? `
-                <div class="photo-badge" title="${photoCount} фото">
-                    <svg class="photo-badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Flash bolt -->
-                        <path d="M14.5 3L11 9h3l-2.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        <!-- Camera body -->
-                        <path d="M2 9.5C2 8.67 2.67 8 3.5 8H5l1.5-2h7L15 8h1.5C17.33 8 18 8.67 18 9.5v9c0 .83-.67 1.5-1.5 1.5h-13C2.67 20 2 19.33 2 18.5v-9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                        <!-- Lens ring -->
-                        <circle cx="10" cy="14" r="3" stroke="currentColor" stroke-width="1.6"/>
-                        <!-- Lens glint -->
-                        <circle cx="11.2" cy="12.8" r="0.6" fill="currentColor"/>
-                    </svg>
-                    <span class="photo-badge-count">${photoCount}</span>
-                </div>
-            ` : '';
+            let pCount = 0;
+            let vCount = 0;
+            if (item.images && item.images.length > 0) {
+                pCount = item.images.filter(s => !s.toLowerCase().endsWith('.mp4')).length;
+                vCount = item.images.filter(s => s.toLowerCase().endsWith('.mp4')).length;
+            } else if (item.image) {
+                if (item.image.toLowerCase().endsWith('.mp4')) vCount = 1;
+                else pCount = 1;
+            }
+            let cameraBadge = '';
+            if (pCount > 0 || vCount > 0) {
+                cameraBadge = '<div class="absolute top-2 right-2 flex gap-1 z-[2] pointer-events-none">';
+                if (pCount > 0) {
+                    cameraBadge += `
+                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded-xl bg-[var(--bg-input)] border border-[var(--border-color)] text-[var(--text-muted)] transition transform group-hover:text-[var(--text-main)] shadow-sm backdrop-blur-md" title="${pCount} фото">
+                            <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5 3L11 9h3l-2.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 9.5C2 8.67 2.67 8 3.5 8H5l1.5-2h7L15 8h1.5C17.33 8 18 8.67 18 9.5v9c0 .83-.67 1.5-1.5 1.5h-13C2.67 20 2 19.33 2 18.5v-9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                <circle cx="10" cy="14" r="3" stroke="currentColor" stroke-width="1.6"/>
+                                <circle cx="11.2" cy="12.8" r="0.6" fill="currentColor"/>
+                            </svg>
+                            <span class="text-[10px] font-bold leading-none">${pCount}</span>
+                        </div>
+                    `;
+                }
+                if (vCount > 0) {
+                    cameraBadge += `
+                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded-xl bg-[var(--bg-input)] border border-[var(--border-color)] text-[var(--text-muted)] transition transform group-hover:text-[var(--text-main)] shadow-sm backdrop-blur-md" title="${vCount} відео">
+                            <svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>
+                            <span class="text-[10px] font-bold leading-none">${vCount}</span>
+                        </div>
+                    `;
+                }
+                cameraBadge += '</div>';
+            }
             
             listItem.innerHTML = `
                 <div class="absolute left-0 top-0 bottom-0 w-1 ${colors.bg} opacity-50 group-hover:opacity-100 transition"></div>
