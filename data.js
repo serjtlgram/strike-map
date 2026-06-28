@@ -4492,7 +4492,12 @@ const strikeData = [
       "details": "Povtornaya massive strike droneov na krupneyshiy oil refinery Moskvy. V rezultate direct hits na facilitye voznik silnyy fire s neskolkimi ochagami vozgoraniya, postradali ustanovki pererabotki oil i storage tanknyy park.",
       "source": "SBU, SOF, HUR, Sily bespilotnykh sistem, mer Moskvy"
     },
-    "images": ["images/mnpz_explosion.jpg","images/mnpz_explosion1.jpg","images/mnpz_explosion2.jpg","images/mnpz_explosion3.jpg"],
+    "images": [
+      "images/mnpz_explosion.jpg",
+      "images/mnpz_explosion1.jpg",
+      "images/mnpz_explosion2.jpg",
+      "images/mnpz_explosion3.jpg"
+    ],
     "id": 145
   },
   {
@@ -4741,7 +4746,12 @@ const strikeData = [
       "details": "strikes strikenykh UAV Sil bespilotnykh sistem (SBS) po facilityam perevalki petroleum products i szhizhennogo gasa (\"AEgas-Terminal\" i \"thermal power station\"). Zafiksirovano znachitelnoe kolichestvo teplovykh anomaliy i fireov.",
       "source": "SBS, AFU General Staff"
     },
-    "images": ["images/26_21-06_kerch.jpg","images/26_21-06_kerch1.jpg","images/26_21-06_kerch2.jpg","images/26_21-06_kerch3.jpg"],
+    "images": [
+      "images/26_21-06_kerch.jpg",
+      "images/26_21-06_kerch1.jpg",
+      "images/26_21-06_kerch2.jpg",
+      "images/26_21-06_kerch3.jpg"
+    ],
     "id": 153
   },
   {
@@ -4866,7 +4876,13 @@ const strikeData = [
       "details": "massive dnevnoy missile strike on predpriyatiyu, nakhodyashchemusya pod zapadnymi sanktsiyami. plant yavlyaetsya vedushchim produceselem elektroniki (matrits i tranzistorov) dlya Russian raket \"Iskander-K\", Kh-101 i zenitnykh kompleksov \"Pantsir-S1\". Zafiksirovano 4 tochnykh direct hits, obrushenie kryshi glavnogo korpusa i silnyy fire. strikesa ofitsialno podtverzhdena Genshtabom AFU.",
       "source": "AFU General Staff, OSINT"
     },
-    "images": ["images/26-2206-voronezh.jpg","images/26-2206-voronezh1.jpg","images/26-2206-voronezh2.jpg","images/26-2206-voronezh3.jpg","images/26-2206-voronezh4.jpg"],
+    "images": [
+      "images/26-2206-voronezh.jpg",
+      "images/26-2206-voronezh1.jpg",
+      "images/26-2206-voronezh2.jpg",
+      "images/26-2206-voronezh3.jpg",
+      "images/26-2206-voronezh4.jpg"
+    ],
     "id": 157
   },
   {
@@ -5177,7 +5193,11 @@ const strikeData = [
       "details": "Ukrainian dalnoboynye UAV strikesovali krupneyshiy neftepererabatyvayushchiy uzel Rossii na rasstoyanii okolo 1400-1500 km ot granitsy Ukrainy. Zafiksirovany prilety, firey i gustoy chernyy dym nad territorymi facilities \"Bashoil-Novoyl\" i \"Bashoil-Ufaneftekhim\". Ukrainian sources soobshchali o was struckii ustanovok pervichnoy pererabotki oil.",
       "source": "Prezident Ukrainy, SBU, Exilenova+, ASTRA, ukrainskie i rossiyskie Media"
     },
-    "images": ["images/26_25-06_bashneft1.jpg","images/26_25-06_bashneft2.jpg","images/26_25-06_bashneft3.jpg"],
+    "images": [
+      "images/26_25-06_bashneft1.jpg",
+      "images/26_25-06_bashneft2.jpg",
+      "images/26_25-06_bashneft3.jpg"
+    ],
     "id": 167
   },
   {
@@ -5303,5 +5323,98 @@ const strikeData = [
       "source": "OSINT (Astra, Baza)"
     },
     "id": 171
+  },
+  {
+    "date": "27.06.2026",
+    "lat": 56.634,
+    "lng": 36.311,
+    "ru": {
+      "region": "Тверская область, пгт Редкино",
+      "target": "ОАО «Редкинский опытный завод» (РОЗ)",
+      "category": "ВПК / Химическая промышленность",
+      "weapon": "Дрон",
+      "details": "В ночное время суток территорию предприятия атаковало несколько дронов-камикадзе (эксперты идентифицировали применение дальнобойных БПЛА «Лютый»). Зафиксировано поражение крыши одного из ключевых цехов (№4), а также повреждение трубопровода в зоне с легковоспламеняющимися жидкостями, вызвавшее мощный пожар и взрывы. Завод производит для ОПК критически важное специализированное ракетное и авиационное топливо (децилин) для авиации ВВС РФ.",
+      "source": "OSINT (ASTRA, Baza, Мілітарний), сообщения местных жителей"
+    },
+    "uk": {
+      "region": "Тверська область, смт Редкіно",
+      "target": "ВАТ «Редкінський дослідний завод» (РОЗ)",
+      "category": "ВПК / Хімічна промисловість",
+      "weapon": "Дрон",
+      "details": "У нічний час територію підприємства атакували кілька дронів-камікадзе (експерти ідентифікували застосування далекобійних БПЛА «Лютий»). Зафіксовано ураження даху одного з ключових цехів (№4), а також пошкодження трубопроводу в зоні з легкозаймистими рідинами, що викликало потужну пожежу і вибухи. Завод виробляє для ОПК критично важливе спеціалізоване ракетне та авіаційне паливо (децилін) для авіації ВПС РФ.",
+      "source": "OSINT (ASTRA, Baza, Мілітарний), повідомлення місцевих мешканців"
+    },
+    "en": {
+      "region": "Tver Oblast, pgt Redkino",
+      "target": "Redkinsky Experimental Plant (ROZ)",
+      "category": "Defense Industry / Chemical Industry",
+      "weapon": "Drone",
+      "details": "At night, the enterprise's territory was attacked by several kamikaze drones (experts identified the use of long-range Lyutyi UAVs). A hit on the roof of one of the key workshops (No. 4) was recorded, as well as damage to a pipeline in the zone with flammable liquids, causing a powerful fire and explosions. The plant produces critically important specialized missile and aviation fuel (decilin) for the Russian Air Force.",
+      "source": "OSINT (ASTRA, Baza, Militarnyi), local residents' reports"
+    },
+    "distance": 644,
+    "id": 172
+  },
+  {
+    "date": "27.06.2026",
+    "lat": 56.1778,
+    "lng": 40.5748,
+    "ru": {
+      "region": "Владимирская область, Камешковский район (район села Второво)",
+      "target": "Промежуточная нефтеперекачивающая станция (ППС) «Второво» (АО «Транснефть – Верхняя Волга»)",
+      "category": "Топливная логистика / Нефтегаз",
+      "weapon": "Дрон",
+      "details": "СБУ заявила о повторном ударе по нефтеперекачивающей станции «Второво», обеспечивающей поставки топлива в Московский регион. По предварительным данным украинской стороны, поражено техническое здание станции, после чего произошёл взрыв. Российские региональные источники и OSINT-сообщества сообщали о возгорании и работе ПВО в районе объекта.",
+      "source": "СБУ, OSINT (ASTRA), российские региональные источники"
+    },
+    "uk": {
+      "region": "Володимирська область, Камешковський район (район села Второво)",
+      "target": "Проміжна нафтоперекачувальна станція (ППС) «Второво» (АТ «Транснєфть – Верхня Волга»)",
+      "category": "Паливна логістика / Нафтогаз",
+      "weapon": "Дрон",
+      "details": "СБУ заявила про повторний удар по нафтоперекачувальній станції «Второво», яка забезпечує постачання пального до Московського регіону. За попередніми даними української сторони, уражено технічну будівлю станції, після чого стався вибух. Російські регіональні джерела та OSINT-спільноти повідомляли про пожежу та роботу ППО в районі об'єкта.",
+      "source": "СБУ, OSINT (ASTRA), російські регіональні джерела"
+    },
+    "en": {
+      "region": "Vladimir Oblast, Kameshkovsky District (near Vtorovo)",
+      "target": "Vtorovo Intermediate Oil Pumping Station (Transneft - Verkhnyaya Volga)",
+      "category": "Fuel Logistics / Oil & Gas",
+      "weapon": "Drone",
+      "details": "The SBU announced a repeated strike on the Vtorovo oil pumping station, which supplies fuel to the Moscow region. According to preliminary Ukrainian data, the station's technical building was hit, followed by an explosion. Russian regional sources and OSINT communities reported a fire and air defense activity near the facility.",
+      "source": "SBU, OSINT (ASTRA), Russian regional sources"
+    },
+    "distance": 699,
+    "id": 173
+  },
+  {
+    "date": "28.06.2026",
+    "lat": 48.7845,
+    "lng": 44.5912,
+    "ru": {
+      "region": "Волгоградская область, Волгоград",
+      "target": "ФНПЦ «Титан-Баррикады»",
+      "category": "ВПК / Оборонная промышленность",
+      "weapon": "Ракета FP-5 «Flamingo»",
+      "details": "Беспрецедентный и исторический удар новейшей дальнобойной ракетой FP-5 «Flamingo» по стратегическому предприятию российского ОПК, которое занимается производством компонентов и пусковых установок для ОТРК «Искандер» и ядерных комплексов («Тополь-М», «Ярс»). Точное поражение цехов вызвало масштабные разрушения производственной инфраструктуры и вторичные детонации. Операция подтверждена представителями украинского военного командования и нанесла серьезный ущерб российскому ракетному производству.",
+      "source": "Генштаб ВСУ, ГУР, OSINT (мониторинговые группы), сообщения властей Волгограда"
+    },
+    "uk": {
+      "region": "Волгоградська область, Волгоград",
+      "target": "ФНВЦ «Титан-Барикади»",
+      "category": "ВПК / Оборонна промисловість",
+      "weapon": "Ракета FP-5 «Flamingo»",
+      "details": "Безпрецедентний та історичний удар новітньою далекобійною ракетою FP-5 «Flamingo» по стратегічному підприємству російського ОПК, що займається виробництвом компонентів і пускових установок для ОТРК «Іскандер» та ядерних комплексів («Тополь-М», «Ярс»). Точне ураження цехів викликало масштабні руйнування виробничої інфраструктури та вторинні детонації. Операція підтверджена представниками українського військового командування і завдала серйозної шкоди російському ракетному виробництву.",
+      "source": "Генштаб ЗСУ, ГУР, OSINT (моніторингові групи), повідомлення влади Волгограда"
+    },
+    "en": {
+      "region": "Volgograd Oblast, Volgograd",
+      "target": "Federal Research and Production Center Titan-Barrikady",
+      "category": "Defense Industry",
+      "weapon": "FP-5 Flamingo Missile",
+      "details": "An unprecedented and historic strike by the newest long-range FP-5 Flamingo missile on a strategic Russian defense enterprise that manufactures components and launchers for the Iskander missile systems and nuclear complexes (Topol-M, Yars). The precise hit on the workshops caused massive destruction of the production infrastructure and secondary detonations. The operation was confirmed by the Ukrainian military command and caused serious damage to Russian missile production.",
+      "source": "General Staff of the Armed Forces of Ukraine, GUR, OSINT, local authorities"
+    },
+    "distance": 513,
+    "id": 174
   }
 ];
