@@ -5415,6 +5415,11 @@ const strikeData = [
       "source": "General Staff of the Armed Forces of Ukraine, GUR, OSINT, local authorities"
     },
     "distance": 513,
+    "images": [
+      "images/26_27-06_titan0.jpg",
+      "images/26_27-06_titan1.jpg",
+      "images/26_27-06_titan2.jpg"
+    ],
     "id": 174
   }
 ];
