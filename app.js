@@ -23,8 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         filter_all_months: { ru: 'Все месяцы', uk: 'Всі місяці', en: 'All months' }
     };
 
-    let currentLang = localStorage.getItem('strike-map-lang') || 'uk';
     const supportedLangs = ['uk', 'ru', 'en'];
+    function getDefaultLang() {
+        const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        if (browserLang.startsWith('ru')) return 'ru';
+        if (browserLang.startsWith('uk')) return 'uk';
+        return 'en';
+    }
+    let currentLang = localStorage.getItem('strike-map-lang') || getDefaultLang();
 
     function setLang(lang) {
         currentLang = lang;
@@ -177,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalCount = document.getElementById('totalCount');
     const sortToggleBtn = document.getElementById('sortToggleBtn');
     
-    let currentSortOrder = localStorage.getItem('strike-map-sort-order') || 'asc';
+    let currentSortOrder = localStorage.getItem('strike-map-sort-order') || 'desc';
     
     const sidebar = document.getElementById('sidebar');
     const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
@@ -243,8 +249,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize default theme from localStorage or default to beige
-    const savedTheme = localStorage.getItem('strike-map-theme') || 'beige';
+    // Initialize default theme from localStorage or default to light
+    const savedTheme = localStorage.getItem('strike-map-theme') || 'light';
     setTheme(savedTheme);
 
     function getCategoryType(category) {
