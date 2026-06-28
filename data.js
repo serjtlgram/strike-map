@@ -5416,6 +5416,7 @@ const strikeData = [
     },
     "distance": 513,
     "images": [
+      "video/26-2706-titan-barikady.MP4",
       "images/26_27-06_titan0.jpg",
       "images/26_27-06_titan1.jpg",
       "images/26_27-06_titan2.jpg"
