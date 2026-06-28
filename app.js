@@ -955,6 +955,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (imageModal && closeImageModalBtn) {
         closeImageModalBtn.addEventListener('click', () => {
             imageModal.classList.add('opacity-0');
+            const modalVideo = document.getElementById('modalVideo');
+            if (modalVideo) {
+                modalVideo.pause();
+            }
             setTimeout(() => {
                 imageModal.classList.add('hidden');
                 imageModal.classList.remove('flex');
