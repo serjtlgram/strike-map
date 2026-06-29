@@ -5422,5 +5422,75 @@ const strikeData = [
       "images/26_27-06_titan2.jpg"
     ],
     "id": 174
+  },
+  {
+    "date": "28.06.2026",
+    "lat": 45.2420,
+    "lng": 38.1060,
+    "distance": 300,
+    "ru": {
+      "region": "Краснодарский край, Славянск-на-Кубани",
+      "target": "Славянский НПЗ (ООО «Славянск ЭКО»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В результате беспрецедентно массовой комбинированной атаки Сил обороны успешно поражен стратегический Славянский НПЗ. Раздалась серия мощных взрывов, после чего на объекте вспыхнул масштабный пожар в резервуарном парке. Местный оперштаб и губернатор признали прямое возгорание нескольких нефтеналивных емкостей, а также повреждение прилегающего газопровода и сопутствующей инфраструктуры.",
+      "source": "Президент Украины, Генштаб ВСУ, OSINT (Exilenova+, Supernova+), Оперштаб Кубани"
+    },
+    "uk": {
+      "region": "Краснодарський край, Слов'янськ-на-Кубані",
+      "target": "Слов'янський НПЗ (ТОВ «Слов'янськ ЕКО»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Унаслідок безпрецедентно масової комбінованої атаки Сил оборони успішно уражено стратегічний Слов'янський НПЗ. Пролунала серія потужних вибухів, після чого на об'єкті спалахнула масштабна пожежа в резервуарному парку. Місцевий оперштаб і губернатор визнали пряме загоряння кількох нафтоналивних ємностей, а також пошкодження прилеглого газопроводу та супутньої інфраструктури.",
+      "source": "Президент України, Генштаб ЗСУ, OSINT (Exilenova+, Supernova+), Оперштаб Кубані"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Slavyansk-na-Kubani",
+      "target": "Slavyansk Oil Refinery (LLC Slavyansk ECO)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "As a result of an unprecedentedly massive combined attack by the Defense Forces, the strategic Slavyansk Oil Refinery was successfully struck. A series of powerful explosions rang out, after which a large-scale fire broke out in the tank farm at the facility. The local operational headquarters and the governor acknowledged the direct ignition of several oil storage tanks, as well as damage to the adjacent gas pipeline and accompanying infrastructure.",
+      "source": "President of Ukraine, General Staff of the Armed Forces of Ukraine, OSINT (Exilenova+, Supernova+), Operational Headquarters of Kuban"
+    },
+    "images": [
+      "video/26-2806-NPZ_slavansk-na-kubani.mp4",
+      "images/26-2806-na-kubani1.jpg",
+      "images/26-2806-na-kubani2.jpg",
+      "images/26-2806-na-kubani3.jpg",
+      "images/26-2806-na-kubani4.jpg",
+      "images/26-2806-na-kubani5.jpg"
+    ],
+    "id": 175
+  },
+  {
+    "date": "28.06.2026",
+    "lat": 57.5683,
+    "lng": 39.8519,
+    "distance": 800,
+    "ru": {
+      "region": "Ярославская область, Ярославль",
+      "target": "Ярославский НПЗ (ПАО «Славнефть-ЯНОС»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Синхронно со Славянском дальнобойные украинские беспилотники атаковали один из крупнейших в центральной РФ нефтеперерабатывающих заводов в Ярославле (глубина удара около 800 км от границы). Из-за прорыва БПЛА российские власти экстренно останавливали транспортную логистику и полностью перекрыли движение автотранспорта в радиусе завода.",
+      "source": "СБУ, Генштаб ВСУ, мониторинговые каналы, местные СМИ РФ"
+    },
+    "uk": {
+      "region": "Ярославська область, Ярославль",
+      "target": "Ярославський НПЗ (ПАТ «Славнефть-ЯНОС»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Синхронно зі Слов'янськом далекобійні українські безпілотники атакували один з найбільших у центральній РФ нафтопереробних заводів у Ярославлі (глибина удару близько 800 км від кордону). Через прорив БПЛА російська влада екстрено зупиняла транспортну логістику та повністю перекрила рух автотранспорту в радіусі заводу.",
+      "source": "СБУ, Генштаб ЗСУ, моніторингові канали, місцеві ЗМІ РФ"
+    },
+    "en": {
+      "region": "Yaroslavl Oblast, Yaroslavl",
+      "target": "Yaroslavl Oil Refinery (PJSC Slavneft-YANOS)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Synchronously with Slavyansk, long-range Ukrainian drones attacked one of the largest oil refineries in central Russia, located in Yaroslavl (strike depth about 800 km from the border). Due to the UAV breakthrough, Russian authorities urgently halted transport logistics and completely blocked road traffic within the refinery's radius.",
+      "source": "SBU, General Staff of the Armed Forces of Ukraine, monitoring channels, local Russian media"
+    },
+    "id": 176
   }
 ];
