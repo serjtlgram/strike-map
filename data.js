@@ -5425,9 +5425,9 @@ const strikeData = [
   },
   {
     "date": "28.06.2026",
-    "lat": 45.2420,
-    "lng": 38.1060,
-    "distance": 300,
+    "lat": 45.242,
+    "lng": 38.106,
+    "distance": 367,
     "ru": {
       "region": "Краснодарский край, Славянск-на-Кубани",
       "target": "Славянский НПЗ (ООО «Славянск ЭКО»)",
@@ -5466,7 +5466,7 @@ const strikeData = [
     "date": "28.06.2026",
     "lat": 57.5683,
     "lng": 39.8519,
-    "distance": 800,
+    "distance": 810,
     "ru": {
       "region": "Ярославская область, Ярославль",
       "target": "Ярославский НПЗ (ПАО «Славнефть-ЯНОС»)",
@@ -5492,5 +5492,67 @@ const strikeData = [
       "source": "SBU, General Staff of the Armed Forces of Ukraine, monitoring channels, local Russian media"
     },
     "id": 176
+  },
+  {
+    "date": "29.06.2026",
+    "lat": 52.8832,
+    "lng": 40.4851,
+    "ru": {
+      "region": "Тамбовская область, Мичуринский муниципальный округ (с. Новоникольское)",
+      "target": "Линейно-производственная диспетчерская станция (ЛПДС) «Никольское» / Нефтебаза (АО «Транснефть-Дружба»)",
+      "category": "Нефтегаз / Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Ранним утром беспилотник-камикадзе успешно поразил территорию стратегической нефтеперекачивающей станции, интегрированной в нефтепроводную магистраль «Дружба». Зафиксировано возгорание резервуара. Этот объект играет критическую роль в распределении горюче-смазочных материалов по Центральному федеральному округу РФ и бесперебойном обеспечении логистических цепей снабжения российских войск.",
+      "source": "OSINT (ASTRA), подтверждено губернатором Тамбовской области"
+    },
+    "uk": {
+      "region": "Тамбовська область, Мічурінський муніципальний округ (с. Новонікольське)",
+      "target": "Лінійно-виробнича диспетчерська станція (ЛВДС) «Нікольське» / Нафтобаза (АТ «Транснєфть-Дружба»)",
+      "category": "Нафтогаз / Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Рано вранці безпілотник-камікадзе успішно вразив територію стратегічної нафтоперекачувальної станції, що інтегрована у нафтопровідну магістраль «Дружба». Зафіксовано загоряння резервуара. Цей об'єкт відіграє критичну роль у розподілі паливно-мастильних матеріалів Центральним федеральним округом РФ і безперебійному забезпеченні логістичних ланцюгів постачання російських військ.",
+      "source": "OSINT (ASTRA), підтверджено губернатором Тамбовської області"
+    },
+    "en": {
+      "region": "Tambov Oblast, Michurinsky Municipal District (Novonikolskoye village)",
+      "target": "Nikolskoye Line Production and Junction Station (LPDS) / Fuel Depot (JSC Transneft-Druzhba)",
+      "category": "Oil & Gas / Fuel Logistics",
+      "weapon": "Drone",
+      "details": "In the early morning, a kamikaze drone successfully struck the territory of a strategic oil pumping station integrated into the Druzhba oil pipeline network. A fire outbreak in a storage tank was recorded. This facility plays a critical role in the distribution of fuel and lubricants across the Central Federal District of the Russian Federation and in the uninterrupted supply of logistics chains for Russian troops.",
+      "source": "OSINT (ASTRA), confirmed by the governor of Tambov Oblast"
+    },
+    "id": 177,
+    "distance": 436
+  },
+  {
+    "date": "29.06.2026",
+    "lat": 53.2458,
+    "lng": 34.3302,
+    "ru": {
+      "region": "Брянская область, Брянск",
+      "target": "Завод микроэлектроники «Кремний Эл» (АО «ГРУППА КРЕМНИЙ ЭЛ»)",
+      "category": "ВПК / Промышленность",
+      "weapon": "Дрон",
+      "details": "Очередной успешный налет на одно из крупнейших микроэлектронных предприятий России (входит в госхолдинги ВПК), которое выпускает военные радиоэлектронные компоненты, микросхемы для радаров ПВО, ракет систем «Искандер» и ударных беспилотников РФ. Местные жители зафиксировали мощные взрывы, вспышку и последующий пожар в одном из производственных и административных цехов.",
+      "source": "OSINT (сообщения жителей Брянска, видеоматериалы прилетов)"
+    },
+    "uk": {
+      "region": "Брянська область, Брянськ",
+      "target": "Завод мікроелектроніки «Кремній Ел» (АТ «ГРУППА КРЕМНІЙ ЕЛ»)",
+      "category": "ВПК / Промисловість",
+      "weapon": "Дрон",
+      "details": "Черговий успішний наліт на одне з найбільших мікроелектронних підприємств Росії (входить у держхолдинги ВПК), що випускає військові радіоелектронні компоненти, мікросхеми для радарів ППО, ракет систем «Іскандер» та ударних безпілотників РФ. Місцеві мешканці зафіксували потужні вибухи, спалах і подальшу пожежу в одному з виробничих та административних цехів.",
+      "source": "OSINT (повідомлення мешканців Брянська, відеоматеріали прильотів)"
+    },
+    "en": {
+      "region": "Bryansk Oblast, Bryansk",
+      "target": "Kremny El Microelectronics Plant (JSC Kremny El Group)",
+      "category": "Defense Industry / Manufacturing",
+      "weapon": "Drone",
+      "details": "Another successful raid on one of Russia's largest microelectronics enterprises (part of state-owned defense holdings), which manufactures military radio-electronic components, microchips for air defense radars, Iskander missile systems, and Russian strike drones. Local residents recorded powerful explosions, a bright flash, and a subsequent fire in one of the production and administrative workshops.",
+      "source": "OSINT (reports from Bryansk residents, arrival footage)"
+    },
+    "id": 178,
+    "distance": 262
   }
 ];
