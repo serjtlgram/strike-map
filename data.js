@@ -5554,5 +5554,160 @@ const strikeData = [
     },
     "id": 178,
     "distance": 262
+  },
+  {
+    "date": "30.06.2026",
+    "lat": 56.7378,
+    "lng": 37.2511,
+    "ru": {
+      "region": "Московская область, Дубна",
+      "target": "ЦКС «Дубна» / Оборонные заводы «Радуга» и «Кронштадт»",
+      "category": "ВПК / Инфраструктура военной связи",
+      "weapon": "Дрон",
+      "details": "Повторная массированная атака беспилотников. В своем обращении Президент Украины подтвердил системный удар по крупнейшему узлу спутниковой космической связи ВС РФ. Также OSINT-ресурсы, подтверждая слова местных жителей, сообщили о попаданиях и пожаре в непосредственной близости от оборонных производств города: ракетного конструкторского бюро ГосМКБ «Радуга» (производители Х-101/Х-69) и завода по сборке БПЛА «Кронштадт».",
+      "source": "Президент Украины, OSINT (Astra, Exilenova+)"
+    },
+    "uk": {
+      "region": "Московська область, Дубна",
+      "target": "ЦКЗ «Дубна» / Оборонні заводи «Радуга» та «Кронштадт»",
+      "category": "ВПК / Інфраструктура військового зв'язку",
+      "weapon": "Дрон",
+      "details": "Повторна масована атака безпілотників. У своєму зверненні Президент України підтвердив системний удар по найбільшому вузлу супутникового космічного зв'язку ЗС РФ. Також OSINT-ресурси, підтверджуючи слова місцевих мешканців, повідомили про влучання та пожежу в безпосередній близькості від оборонних виробництв міста: ракетного конструкторського бюро ДержМКБ «Радуга» (виробники Х-101/Х-69) і заводу зі складання БПЛА «Кронштадт».",
+      "source": "Президент України, OSINT (Astra, Exilenova+)"
+    },
+    "en": {
+      "region": "Moscow Oblast, Dubna",
+      "target": "SCC \"Dubna\" / Defense Plants \"Raduga\" and \"Kronshtadt\"",
+      "category": "Defense Industry / Military Communications Infrastructure",
+      "weapon": "Drone",
+      "details": "Repeated massive drone attack. In his address, the President of Ukraine confirmed a systematic strike on the largest satellite space communications hub of the Russian Armed Forces. Also, OSINT resources, confirming the words of local residents, reported hits and a fire in the immediate vicinity of the city's defense production facilities: the Raduga State Machine-Building Design Bureau (manufacturers of Kh-101/Kh-69) and the Kronshtadt UAV assembly plant.",
+      "source": "President of Ukraine, OSINT (Astra, Exilenova+)"
+    },
+    "id": 179,
+    "distance": 668
+  },
+  {
+    "date": "30.06.2026",
+    "lat": 52.57,
+    "lng": 39.638,
+    "ru": {
+      "region": "Липецкая область, Липецк",
+      "target": "Новолипецкий металлургический комбинат (НЛМК)",
+      "category": "ВПК / Промышленность",
+      "weapon": "Дрон",
+      "details": "Группа БПЛА-камикадзе (более семи единиц) преодолела российское ПВО и вновь нанесла удар по производственным площадям сталелитейного предприятия НЛМК, которое играет значимую роль в производстве сырья для военно-промышленного комплекса. Зафиксированы мощные взрывы и прямое поражение станции разделения кислорода, в связи с чем возник сильный пожар.",
+      "source": "OSINT (Baza), мониторинговые группы"
+    },
+    "uk": {
+      "region": "Липецька область, Липецьк",
+      "target": "Новолипецький металургійний комбінат (НЛМК)",
+      "category": "ВПК / Промисловість",
+      "weapon": "Дрон",
+      "details": "Група БПЛА-камікадзе (більше ніж сім одиниць) подолала російську ППО і знову завдала удару по виробничих площах сталеливарного підприємства НЛМК, яке відіграє значну роль у виробництві сировини для військово-промислового комплексу. Зафіксовані потужні вибухи і пряме ураження станції розділення кисню, в зв'язку з чим виникла сильна пожежа.",
+      "source": "OSINT (Baza), моніторингові групи"
+    },
+    "en": {
+      "region": "Lipetsk Oblast, Lipetsk",
+      "target": "Novolipetsk Metallurgical Plant (NLMK)",
+      "category": "Defense Industry / Manufacturing",
+      "weapon": "Drone",
+      "details": "A group of kamikaze UAVs (more than seven units) bypassed Russian air defense and once again struck the production areas of the NLMK steel plant, which plays a significant role in the production of raw materials for the military-industrial complex. Powerful explosions and a direct hit on the oxygen separation station were recorded, causing a severe fire.",
+      "source": "OSINT (Baza), monitoring groups"
+    },
+    "id": 180,
+    "distance": 372
+  },
+  {
+    "date": "01.07.2026",
+    "lat": 53.1812,
+    "lng": 45.021,
+    "ru": {
+      "region": "Пензенская область, Пенза",
+      "target": "Завод АО «Маяк» / АО «НИИФИ» / Государственный подшипниковый завод",
+      "category": "ВПК / НИИ",
+      "weapon": "Дрон",
+      "details": "Крайне результативный удар Сил обороны сразу по нескольким предприятиям из структур ВПК и «Роскосмоса». Атакован НИИ Физических измерений (занимается бортовыми компонентами и датчиками для новейших самолетов Су-57 и стратегических ракет) и ОАО «Маяк» (разработка приборов систем связи и радиоэлектроники для боевой техники). Информацию об успешном ударе по этому стратегическому узлу электроники подтвердили Президент Украины, а также сводки ГШ ВСУ. Местные зафиксировали густое облако черного дыма и вторичную детонацию.",
+      "source": "Президент Украины, Генштаб ВСУ, OSINT (Astra, Supernova+)"
+    },
+    "uk": {
+      "region": "Пензенська область, Пенза",
+      "target": "Завод АТ «Маяк» / АТ «НДІФВ» / Державний підшипниковий завод",
+      "category": "ВПК / НДІ",
+      "weapon": "Дрон",
+      "details": "Вкрай результативний удар Сил оборони відразу по декількох підприємствах зі структур ВПК і «Роскосмосу». Атаковано НДІ Фізичних вимірювань (займається бортовими компонентами та датчиками для новітніх літаків Су-57 і стратегічних ракет) і ВАТ «Маяк» (розробка приладів систем зв'язку та радіоелектроніки для бойової техніки). Інформацію про успішний удар по цьому стратегічному вузлу електроніки підтвердили Президент України, а також зведення ГШ ЗСУ. Місцеві зафіксували густу хмару чорного диму і вторинну детонацію.",
+      "source": "Президент України, Генштаб ЗСУ, OSINT (Astra, Supernova+)"
+    },
+    "en": {
+      "region": "Penza Oblast, Penza",
+      "target": "Plant JSC \"Mayak\" / JSC \"NIIFI\" / State Bearing Plant",
+      "category": "Defense Industry / Research Institute",
+      "weapon": "Drone",
+      "details": "An extremely effective strike by the Defense Forces simultaneously on several enterprises of the military-industrial complex and \"Roscosmos\" structures. The Research Institute of Physical Measurements (engaged in onboard components and sensors for the latest Su-57 aircraft and strategic missiles) and OJSC \"Mayak\" (development of communication systems and radio electronics for military equipment) were attacked. Information about a successful strike on this strategic electronics hub was confirmed by the President of Ukraine, as well as the summary of the General Staff of the Armed Forces of Ukraine. Locals recorded a thick cloud of black smoke and secondary detonation.",
+      "source": "President of Ukraine, AFU General Staff, OSINT (Astra, Supernova+)"
+    },
+    "id": 181,
+    "distance": 702
+  },
+  {
+    "date": "01.07.2026",
+    "lat": 54.843,
+    "lng": 56.079,
+    "ru": {
+      "region": "Республика Башкортостан, Уфа",
+      "target": "НПЗ «Башнефть» (маслопромышленный и перерабатывающий узел)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Сверхдальняя и синхронная (наряду с Пензой) ночная атака на объекты топливной системы противника. Силы обороны второй раз нанесли точечные попадания по инфраструктуре одного из крупнейших в РФ производителей масел и переработки топлива на Урале («Башнефть»). Температурные аномалии от пожаров были идентифицированы сервисом NASA FIRMS, удар официально внесен в список достижений дальнобойного вооружения в речи президента.",
+      "source": "Президент Украины, спутниковые данные FIRMS, мониторинговые каналы"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, Уфа",
+      "target": "НПЗ «Башнєфть» (маслопромисловий і переробний вузол)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Наддалека і синхронна (разом із Пензою) нічна атака на об'єкти паливної системи противника. Сили оборони вдруге завдали точкових влучань по інфраструктурі одного з найбільших у РФ виробників мастил і перероблення палива на Уралі («Башнєфть»). Температурні аномалії від пожеж були ідентифіковані сервісом NASA FIRMS, удар офіційно внесено до списку досягнень далекобійного озброєння в промові президента.",
+      "source": "Президент України, супутникові дані FIRMS, моніторингові канали"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Ufa",
+      "target": "Bashneft Refinery (oil and processing hub)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "An ultra-long-range and synchronous (along with Penza) night attack on enemy fuel system facilities. For the second time, the Defense Forces inflicted pinpoint hits on the infrastructure of one of the largest oil producers and fuel processing plants in the Urals in the Russian Federation (\"Bashneft\"). Temperature anomalies from the fires were identified by the NASA FIRMS service, and the strike was officially added to the list of long-range weapons achievements in the president's speech.",
+      "source": "President of Ukraine, NASA FIRMS satellite data, monitoring channels"
+    },
+    "id": 182,
+    "distance": 1436
+  },
+  {
+    "date": "01.07.2026",
+    "lat": 45.093,
+    "lng": 33.599,
+    "ru": {
+      "region": "АР Крым, Новофедоровка",
+      "target": "Военный аэродром «Саки»",
+      "category": "Военная инфраструктура / Авиабаза",
+      "weapon": "Дрон",
+      "details": "Разрушительный налет БПЛА Службы Безопасности Украины. В результате 5 зафиксированных прямых попаданий уничтожены/сильно повреждены ангары с авиационной техникой ВКС РФ. Сообщалось о нахождении там ценных истребителей Су-30, оцениваемых в сотни миллионов долларов. Над аэродромом несколько часов продолжался масштабный пожар и раздавались взрывы, о чем массово писали крымчане.",
+      "source": "СБУ, OSINT (Крымский Ветер), Генштаб ВСУ"
+    },
+    "uk": {
+      "region": "АР Крим, Новофедорівка",
+      "target": "Військовий аеродром «Саки»",
+      "category": "Військова інфраструктура / Авіабаза",
+      "weapon": "Дрон",
+      "details": "Руйнівний наліт БПЛА Служби Безпеки України. Внаслідок 5 зафіксованих прямих влучань знищені/сильно пошкоджені ангари з авіаційною технікою ПКС РФ. Повідомлялося про знаходження там цінних винищувачів Су-30, які оцінюються в сотні мільйонів доларів. Над аеродромом декілька годин тривала масштабна пожежа та лунали вибухи, про що масово писали кримчани.",
+      "source": "СБУ, OSINT (Кримський Вітер), Генштаб ЗСУ"
+    },
+    "en": {
+      "region": "AR Crimea, Novofedorivka",
+      "target": "Military Airfield \"Saki\"",
+      "category": "Military Infrastructure / Airbase",
+      "weapon": "Drone",
+      "details": "A devastating UAV raid by the Security Service of Ukraine. As a result of 5 recorded direct hits, hangars with aviation equipment of the Russian Aerospace Forces were destroyed/severely damaged. It was reported that valuable Su-30 fighters, estimated at hundreds of millions of dollars, were located there. A large-scale fire and explosions continued over the airfield for several hours, as massively reported by Crimeans.",
+      "source": "SBU, OSINT (Crimean Wind), AFU General Staff"
+    },
+    "id": 183,
+    "distance": 188
   }
 ];
