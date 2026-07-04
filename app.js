@@ -294,30 +294,45 @@ document.addEventListener('DOMContentLoaded', () => {
         const textExpand = i18n.expand[currentLang] || 'Expand';
         let imageHtml = '';
         if (item.images && item.images.length > 0) {
-            const mainImg = item.images[0];
-            const countHtml = item.images.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none mobile-only">+${item.images.length - 1}</div>` : '';
-            const imagesJson = JSON.stringify(item.images).replace(/"/g, '&quot;');
+            // Sort images so videos are always first
+            const sortedImages = [...item.images].sort((a, b) => {
+                const aIsVideo = a.toLowerCase().endsWith('.mp4');
+                const bIsVideo = b.toLowerCase().endsWith('.mp4');
+                if (aIsVideo && !bIsVideo) return -1;
+                if (!aIsVideo && bIsVideo) return 1;
+                return 0;
+            });
+            const mainImg = sortedImages[0];
+            const countHtml = sortedImages.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none mobile-only">+${sortedImages.length - 1}</div>` : '';
+            const imagesJson = JSON.stringify(sortedImages).replace(/"/g, '&quot;');
             
+            const videoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>`;
+            const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
+
             let thumbnailsHtml = '';
-            if (item.images.length > 1) {
+            if (sortedImages.length > 1) {
                 thumbnailsHtml = `<div class="desktop-only-flex flex-col gap-2 mt-2 w-full">`;
-                for (let i = 1; i < item.images.length; i++) {
+                for (let i = 1; i < sortedImages.length; i++) {
+                    const isVideo = sortedImages[i].toLowerCase().endsWith('.mp4');
                     thumbnailsHtml += `
                         <div class="w-full h-16 rounded-lg shadow-sm overflow-hidden relative border theme-border hover:opacity-90 transition group" onclick="event.stopPropagation(); window.openFullscreenGallery('${imagesJson}', ${i})">
-                            ${item.images[i].toLowerCase().endsWith('.mp4') ? 
-                        `<video src="${item.images[i]}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 pointer-events-none" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
-                        `<img src="${item.images[i]}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">`}
+                            ${isVideo ? videoIconBadge : photoIconBadge}
+                            ${isVideo ? 
+                        `<video src="${sortedImages[i]}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 pointer-events-none" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-6 h-6 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
+                        `<img src="${sortedImages[i]}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">`}
                         </div>
                     `;
                 }
                 thumbnailsHtml += `</div>`;
             }
             
+            const mainIsVideo = mainImg.toLowerCase().endsWith('.mp4');
             imageHtml = `
                 <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group">
                     <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border" onclick="window.openFullscreenGallery('${imagesJson}', 0)">
-                        ${mainImg.toLowerCase().endsWith('.mp4') ? 
-                        `<video src="${mainImg}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20"><svg class="w-12 h-12 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
+                        ${mainIsVideo ? videoIconBadge : photoIconBadge}
+                        ${mainIsVideo ? 
+                        `<video src="${mainImg}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-12 h-12 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
                         `<img src="${mainImg}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">`}
                         ${countHtml}
                         <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
@@ -329,10 +344,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
         } else if (item.image) {
+            const isVideo = item.image.toLowerCase().endsWith('.mp4');
+            const videoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>`;
+            const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
+
             imageHtml = `
                 <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
                     <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
-                        <img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        ${isVideo ? videoIconBadge : photoIconBadge}
+                        ${isVideo ? 
+                        `<video src="${item.image}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-12 h-12 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
+                        `<img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">`}
                         <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                             <span>${textExpand}</span>
