@@ -5778,8 +5778,7 @@ const strikeData = [
     },
     "images": [
       "images/airfield.jpg",
-      "video/dzhankoi_1.mp4",
-      "video/dzhankoi_2.mp4"
+      "video/dzhankoi_3.mp4"
     ],
     "id": 185
   }
