@@ -5709,5 +5709,76 @@ const strikeData = [
     },
     "id": 183,
     "distance": 188
+  },
+  {
+    "date": "02.07.2026",
+    "lat": 56.1264,
+    "lng": 44.1528,
+    "distance": 847,
+    "ru": {
+      "region": "Нижегородская область, Кстово",
+      "target": "НПЗ «Нижегороднефтеоргсинтез» (Лукойл)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Успешная дальнобойная атака ударными БПЛА. Зафиксирован точный прилет по инфраструктуре завода, вызвавший возгорание на критически важной установке первичной переработки нефти АВТ-6. Это мощнейший удар по одному из ведущих предприятий нефтеперерабатывающей промышленности РФ.",
+      "source": "OSINT, сообщения местных жителей, спутниковый мониторинг"
+    },
+    "uk": {
+      "region": "Нижегородська область, Кстово",
+      "target": "НПЗ «Нижегороднефтеоргсинтез» (Лукойл)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Успішна далекобійна атака ударними БПЛА. Зафіксовано точний приліт по інфраструктурі заводу, що спричинив загоряння на критично важливій установці первинної переробки нафти АВТ-6. Це надзвичайно потужний удар по одному з провідних підприємств нафтопереробної промисловості РФ.",
+      "source": "OSINT, повідомлення місцевих мешканців, супутниковий моніторинг"
+    },
+    "en": {
+      "region": "Nizhny Novgorod Oblast, Kstovo",
+      "target": "Oil Refinery «Nizhegorodnefteorgsintez» (Lukoil)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Successful long-range attack by strike UAVs. A precise hit was recorded on the refinery's infrastructure, causing a fire at a critically important primary oil refining unit AVT-6. This is a very powerful strike against one of the leading enterprises of the Russian oil refining industry.",
+      "source": "OSINT, local residents' reports, satellite monitoring"
+    },
+    "images": [
+      "images/kstovo1.jpg",
+      "images/kstovo2.jpg",
+      "images/kstovo3.jpg",
+      "video/kstovo.mp4"
+    ],
+    "id": 184
+  },
+  {
+    "date": "03.07.2026",
+    "lat": 45.7008,
+    "lng": 34.4258,
+    "distance": 174,
+    "ru": {
+      "region": "АР Крым, Джанкой",
+      "target": "Военный аэродром «Джанкой»",
+      "category": "Военный аэродром",
+      "weapon": "Ракета / Дрон",
+      "details": "Во время массированной ночной атаки на энергетику полуострова спутниковая система NASA FIRMS зафиксировала дополнительные температурные аномалии и очаги пожаров непосредственно на территории военного аэродрома Джанкой (места базирования 39-го вертолетного полка РФ).",
+      "source": "NASA FIRMS, OSINT (Крымский ветер)"
+    },
+    "uk": {
+      "region": "АР Крим, Джанкой",
+      "target": "Військовий аеродром «Джанкой»",
+      "category": "Військовий аеродром",
+      "weapon": "Ракета / Дрон",
+      "details": "Під час масованої нічної атаки на енергетику півострова супутникова система NASA FIRMS зафіксувала додаткові температурні аномалії та осередки пожеж безпосередньо на території військового аеродрому Джанкой (місця базування 39-го вертолітного полку РФ).",
+      "source": "NASA FIRMS, OSINT (Кримський вітер)"
+    },
+    "en": {
+      "region": "AR Crimea, Dzhankoi",
+      "target": "Military Airfield «Dzhankoi»",
+      "category": "Military Airfield",
+      "weapon": "Missile / Drone",
+      "details": "During a massive night attack on the peninsula's energy infrastructure, the NASA FIRMS satellite system recorded additional temperature anomalies and fire outbreaks directly on the territory of the Dzhankoi military airfield (base of the 39th Helicopter Regiment of the Russian Federation).",
+      "source": "NASA FIRMS, OSINT (Crimean Wind)"
+    },
+    "images": [
+      "images/airfield.jpg"
+    ],
+    "id": 185
   }
 ];
