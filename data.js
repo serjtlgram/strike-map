@@ -5777,7 +5777,9 @@ const strikeData = [
       "source": "NASA FIRMS, OSINT (Crimean Wind)"
     },
     "images": [
-      "images/airfield.jpg"
+      "images/airfield.jpg",
+      "video/dzhankoi_1.mp4",
+      "video/dzhankoi_2.mp4"
     ],
     "id": 185
   }
