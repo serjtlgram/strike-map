@@ -5776,10 +5776,7 @@ const strikeData = [
       "details": "During a massive night attack on the peninsula's energy infrastructure, the NASA FIRMS satellite system recorded additional temperature anomalies and fire outbreaks directly on the territory of the Dzhankoi military airfield (base of the 39th Helicopter Regiment of the Russian Federation).",
       "source": "NASA FIRMS, OSINT (Crimean Wind)"
     },
-    "images": [
-      "images/airfield.jpg",
-      "video/dzhankoi_3.mp4"
-    ],
+    "images": [],
     "id": 185
   }
 ];
