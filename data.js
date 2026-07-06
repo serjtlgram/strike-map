@@ -5778,5 +5778,101 @@ const strikeData = [
     },
     "images": [],
     "id": 185
+  },
+  {
+    "date": "04.07.2026",
+    "lat": 59.8790,
+    "lng": 30.1880,
+    "distance": 950,
+    "ru": {
+      "region": "Санкт-Петербург (Угольная гавань)",
+      "target": "Петербургский нефтяной терминал",
+      "category": "Топливная логистика / Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 4 июля дальнобойные украинские беспилотники атаковали крупнейший российский комплекс по перевалке нефтепродуктов в Балтийском регионе (расстояние около 900-1000 км от границы). В результате попадания на инфраструктурном объекте возник масштабный пожар. Факт поражения логистического терминала официально подтвердил Генштаб ВСУ и Президент Украины в своем обращении.",
+      "source": "Президент Украины, Генштаб ВСУ, OSINT-ресурсы, СМИ РФ"
+    },
+    "uk": {
+      "region": "Санкт-Петербург (Вугільна гавань)",
+      "target": "Петербурзький нафтовий термінал",
+      "category": "Паливна логістика / Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч проти 4 липня далекобійні українські безпілотники атакували найбільший російський комплекс з перевалки нафтопродуктів у Балтійському регіоні (відстань близько 900-1000 км від кордону). Внаслідок влучання на інфраструктурному об'єкті виникла масштабна пожежа. Факт ураження логістичного термінала офіційно підтвердив Генштаб ЗСУ та Президент України у своєму зверненні.",
+      "source": "Президент України, Генштаб ЗСУ, OSINT-ресурси, ЗМІ РФ"
+    },
+    "en": {
+      "region": "St. Petersburg (Ugolnaya Gavan)",
+      "target": "Petersburg Oil Terminal",
+      "category": "Fuel Logistics / Oil and Gas",
+      "weapon": "Drone",
+      "details": "On the night of July 4, long-range Ukrainian drones attacked the largest Russian oil products transshipment complex in the Baltic region (distance about 900-1000 km from the border). A massive fire broke out at the infrastructure facility as a result of the hit. The fact of hitting the logistics terminal was officially confirmed by the General Staff of the Armed Forces of Ukraine and the President of Ukraine in his address.",
+      "source": "President of Ukraine, General Staff of the Armed Forces of Ukraine, OSINT resources, Russian mass media"
+    },
+    "images": [],
+    "id": 186
+  },
+  {
+    "date": "04.07.2026",
+    "lat": 44.6850,
+    "lng": 33.5660,
+    "distance": 260,
+    "ru": {
+      "region": "АР Крым, Севастополь",
+      "target": "Военный аэродром «Бельбек» (истребитель МиГ-29)",
+      "category": "Военная инфраструктура / Авиабаза",
+      "weapon": "Дрон",
+      "details": "Главное управление разведки (ГУР) МОУ опубликовало официальное подтверждение результативности операции Департамента беспилотных систем. Одним точным ударом по аэродрому был полностью сожжен российский истребитель МиГ-29, а также поражена аэродромная пусковая установка, которая в момент атаки обслуживала авиационную технику. Ущерб оценен в десятки миллионов долларов.",
+      "source": "ГУР МОУ, Силы обороны Украины"
+    },
+    "uk": {
+      "region": "АР Крим, Севастополь",
+      "target": "Військовий аеродром «Бельбек» (винищувач МіГ-29)",
+      "category": "Військова інфраструктура / Авіабаза",
+      "weapon": "Дрон",
+      "details": "Головне управління розвідки (ГУР) МОУ опублікувало офіційне підтвердження результативності операції Департаменту безпілотних систем. Одним точним ударом по аеродрому було повністю спалено російський винищувач МіГ-29, а також уражено аеродромну пускову установку, яка в момент атаки обслуговувала авіаційну техніку. Збитки оцінено в десятки мільйонів доларів.",
+      "source": "ГУР МОУ, Сили оборони України"
+    },
+    "en": {
+      "region": "AR Crimea, Sevastopol",
+      "target": "Military airfield «Belbek» (MiG-29 fighter)",
+      "category": "Military Infrastructure / Airbase",
+      "weapon": "Drone",
+      "details": "The Main Intelligence Directorate (HUR) of the Ministry of Defense of Ukraine published an official confirmation of the success of the Unmanned Systems Department operation. With one precise strike on the airfield, a Russian MiG-29 fighter was completely burned, and an airfield launcher, which was servicing aviation equipment at the time of the attack, was also hit. The damage is estimated at tens of millions of dollars.",
+      "source": "HUR MOU, Defense Forces of Ukraine"
+    },
+    "images": [],
+    "id": 187
+  },
+  {
+    "date": "05.07.2026",
+    "lat": 45.1167,
+    "lng": 33.9760,
+    "distance": 240,
+    "ru": {
+      "region": "АР Крым, пгт Гвардейское",
+      "target": "Военный аэродром «Гвардейское»",
+      "category": "Военная инфраструктура / Авиабаза",
+      "weapon": "Дрон",
+      "details": "В ночь на 5 июля подразделения Сил обороны Украины нанесли массированный удар по военному аэродрому Воздушно-космических сил РФ. Эта авиабаза используется противником как один из главных логистических узлов полуострова для обеспечения боевых вылетов самолетов оперативно-тактической авиации, а также как пункт технического обслуживания штурмовиков. Атака подтверждена утренней сводкой Генштаба.",
+      "source": "Генштаб ВСУ, OSINT (Крымский ветер)"
+    },
+    "uk": {
+      "region": "АР Крим, смт Гвардійське",
+      "target": "Військовий аеродром «Гвардійське»",
+      "category": "Військова інфраструктура / Авіабаза",
+      "weapon": "Дрон",
+      "details": "У ніч проти 5 липня підрозділи Сил оборони України завдали масованого удару по військовому аеродрому Повітряно-космічних сил РФ. Ця авіабаза використовується противником як один із головних логістичних вузлів півострова для забезпечення бойових вильотів літаків оперативно-тактичної авіації, а також як пункт технічного обслуговування штурмовиків. Атака підтверджена ранковим зведенням Генштабу.",
+      "source": "Генштаб ЗСУ, OSINT (Кримський вітер)"
+    },
+    "en": {
+      "region": "AR Crimea, Hvardiiske settlement",
+      "target": "Military airfield «Hvardiiske»",
+      "category": "Military Infrastructure / Airbase",
+      "weapon": "Drone",
+      "details": "On the night of July 5, units of the Defense Forces of Ukraine launched a massive strike on the military airfield of the Russian Aerospace Forces. This airbase is used by the enemy as one of the main logistics hubs of the peninsula to ensure combat sorties of operational-tactical aviation aircraft, as well as a maintenance point for attack aircraft. The attack was confirmed by the morning report of the General Staff.",
+      "source": "General Staff of the Armed Forces of Ukraine, OSINT (Crimean Wind)"
+    },
+    "images": [],
+    "id": 188
   }
 ];
