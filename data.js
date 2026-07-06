@@ -5808,7 +5808,10 @@ const strikeData = [
       "details": "On the night of July 4, long-range Ukrainian drones attacked the largest Russian oil products transshipment complex in the Baltic region (distance about 900-1000 km from the border). A massive fire broke out at the infrastructure facility as a result of the hit. The fact of hitting the logistics terminal was officially confirmed by the General Staff of the Armed Forces of Ukraine and the President of Ukraine in his address.",
       "source": "President of Ukraine, General Staff of the Armed Forces of Ukraine, OSINT resources, Russian mass media"
     },
-    "images": [],
+    "images": [
+      "images/piter-4iyulya.jpg",
+      "video/piter-4iyulya.mp4"
+    ],
     "id": 186
   },
   {
