@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const mainIsVideo = mainImg.toLowerCase().endsWith('.mp4');
             imageHtml = `
-                <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group">
+                <div class="popup-image-col shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group">
                     <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border" onclick="window.openFullscreenGallery('${imagesJson}', 0)">
                         ${mainIsVideo ? videoIconBadge : photoIconBadge}
                         ${mainIsVideo ? 
@@ -349,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
 
             imageHtml = `
-                <div class="popup-image-col mt-4 md:mt-0 md:ml-4 shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
+                <div class="popup-image-col shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
                     <div class="popup-image-container w-full h-32 md:h-auto md:min-h-[140px] rounded-xl shadow-sm overflow-hidden relative border theme-border">
                         ${isVideo ? videoIconBadge : photoIconBadge}
                         ${isVideo ? 
@@ -364,13 +364,11 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
 
-        const hasImage = !!item.image || (item.images && item.images.length > 0);
-        const containerClasses = hasImage ? 'popup-has-image flex flex-col md:flex-row justify-between items-stretch' : '';
-        const contentClasses = hasImage ? 'popup-content-col flex-1 min-w-0 md:min-w-[260px]' : '';
+        const containerClasses = 'popup-container flex flex-col md:flex-row justify-between items-stretch gap-4 md:gap-5';
 
         return `
             <div class="p-4 md:p-5 font-sans ${containerClasses}">
-                <div class="${contentClasses}">
+                <div class="flex-1 min-w-0 md:min-w-[220px] flex flex-col">
                     <div class="mb-3">
                         <div class="flex justify-between items-start mb-2 gap-2 pr-8">
                             <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text}">
@@ -404,15 +402,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>` : ''}
                     </div>
 
-                    <div class="theme-bg-input rounded-lg p-3 border theme-border mb-3">
-                        <p class="text-sm theme-text-main leading-relaxed">${item.details}</p>
-                    </div>
-
-                    <div class="text-xs theme-text-muted flex items-center gap-1.5 mt-2">
-                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span class="truncate">${item.source}</span>
+                    <div class="mt-auto pt-2 text-xs theme-text-muted flex items-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="truncate" title="${item.source}">${item.source}</span>
                     </div>
                 </div>
+
+                <div class="flex-1 min-w-0 md:min-w-[280px] flex flex-col">
+                    <div class="theme-bg-input rounded-lg p-3 md:p-4 border theme-border h-full">
+                        <p class="text-sm theme-text-main leading-relaxed">${item.details}</p>
+                    </div>
+                </div>
+                
                 ${imageHtml}
             </div>
         `;
@@ -578,8 +579,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
             const hasImage = !!item.image || (item.images && item.images.length > 0);
             const isMobile = window.innerWidth < 768;
-            const maxW = isMobile ? 300 : (hasImage ? 550 : 320);
-            const minW = isMobile ? 240 : (hasImage ? 450 : 260);
+            const maxW = isMobile ? 300 : (hasImage ? 800 : 550);
+            const minW = isMobile ? 240 : (hasImage ? 700 : 450);
             const maxH = isMobile ? Math.min(window.innerHeight * 0.65, 420) : null;
 
             marker.bindPopup(popupContent, { 
