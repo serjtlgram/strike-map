@@ -6101,7 +6101,9 @@ const strikeData = [
     },
     "id": 195,
     "images": [
-      "video/070626 omsk.MP4"
+      "video/070626 omsk.MP4",
+      "video/070626 omsk1.mp4",
+      "video/070626 omsk2.mp4"
     ]
   }
 ];
