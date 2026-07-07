@@ -5781,9 +5781,9 @@ const strikeData = [
   },
   {
     "date": "04.07.2026",
-    "lat": 59.8790,
-    "lng": 30.1880,
-    "distance": 950,
+    "lat": 59.879,
+    "lng": 30.188,
+    "distance": 934,
     "ru": {
       "region": "Санкт-Петербург (Угольная гавань)",
       "target": "Петербургский нефтяной терминал",
@@ -5816,9 +5816,9 @@ const strikeData = [
   },
   {
     "date": "04.07.2026",
-    "lat": 44.6850,
-    "lng": 33.5660,
-    "distance": 260,
+    "lat": 44.685,
+    "lng": 33.566,
+    "distance": 229,
     "ru": {
       "region": "АР Крым, Севастополь",
       "target": "Военный аэродром «Бельбек» (истребитель МиГ-29)",
@@ -5849,8 +5849,8 @@ const strikeData = [
   {
     "date": "05.07.2026",
     "lat": 45.1167,
-    "lng": 33.9760,
-    "distance": 240,
+    "lng": 33.976,
+    "distance": 199,
     "ru": {
       "region": "АР Крым, пгт Гвардейское",
       "target": "Военный аэродром «Гвардейское»",
@@ -5877,5 +5877,223 @@ const strikeData = [
     },
     "images": [],
     "id": 188
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 57.57,
+    "lng": 39.81,
+    "distance": 809,
+    "ru": {
+      "region": "Ярославская область, Ярославль",
+      "target": "Ярославский НПЗ (Славнефть-ЯНОС)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Успешная атака беспилотников на нефтеперерабатывающий завод.",
+      "source": "OSINT"
+    },
+    "uk": {
+      "region": "Ярославська область, Ярославль",
+      "target": "Ярославський НПЗ (Славнефть-ЯНОС)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Успішна атака безпілотників на нафтопереробний завод.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Yaroslavl Oblast, Yaroslavl",
+      "target": "Yaroslavl Refinery (Slavneft-YANOS)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Successful drone attack on the oil refinery.",
+      "source": "OSINT"
+    },
+    "id": 189
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 45.3586,
+    "lng": 36.4839,
+    "distance": 294,
+    "ru": {
+      "region": "АР Крым, Керчь",
+      "target": "Морской порт Керчь",
+      "category": "ВПК / Логистика",
+      "weapon": "Неизвестно",
+      "details": "Атака на портовую инфраструктуру оккупированной Керчи.",
+      "source": "OSINT, местные СМИ"
+    },
+    "uk": {
+      "region": "АР Крим, Керч",
+      "target": "Морський порт Керч",
+      "category": "ВПК / Логістика",
+      "weapon": "Невідомо",
+      "details": "Атака на портову інфраструктуру окупованої Керчі.",
+      "source": "OSINT, місцеві ЗМІ"
+    },
+    "en": {
+      "region": "AR Crimea, Kerch",
+      "target": "Kerch Sea Port",
+      "category": "Military-Industrial Complex / Logistics",
+      "weapon": "Unknown",
+      "details": "Attack on the port infrastructure in occupied Kerch.",
+      "source": "OSINT, local media"
+    },
+    "id": 190
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 46.7753,
+    "lng": 36.7469,
+    "distance": 169,
+    "ru": {
+      "region": "Запорожская область, Бердянск",
+      "target": "Завод «Азовкабель»",
+      "category": "ВПК",
+      "weapon": "Неизвестно",
+      "details": "Атака на производственные мощности завода «Азовкабель» во временно оккупированном Бердянске.",
+      "source": "OSINT"
+    },
+    "uk": {
+      "region": "Запорізька область, Бердянськ",
+      "target": "Завод «Азовкабель»",
+      "category": "ВПК",
+      "weapon": "Невідомо",
+      "details": "Атака на виробничі потужності заводу «Азовкабель» у тимчасово окупованому Бердянську.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Zaporizhzhia Oblast, Berdyansk",
+      "target": "Azovkabel Factory",
+      "category": "Military-Industrial Complex",
+      "weapon": "Unknown",
+      "details": "Attack on the production facilities of the Azovkabel factory in temporarily occupied Berdyansk.",
+      "source": "OSINT"
+    },
+    "id": 191
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 59.6811,
+    "lng": 28.3655,
+    "distance": 928,
+    "ru": {
+      "region": "Ленинградская область, Усть-Луга",
+      "target": "Морской порт Усть-Луга",
+      "category": "Логистика / ВПК",
+      "weapon": "Дрон",
+      "details": "Атака беспилотников на портовую инфраструктуру Усть-Луги.",
+      "source": "СБУ / ГУР МО, OSINT"
+    },
+    "uk": {
+      "region": "Ленінградська область, Усть-Луга",
+      "target": "Морський порт Усть-Луга",
+      "category": "Логістика / ВПК",
+      "weapon": "Дрон",
+      "details": "Атака безпілотників на портову інфраструктуру Усть-Луги.",
+      "source": "СБУ / ГУР МО, OSINT"
+    },
+    "en": {
+      "region": "Leningrad Oblast, Ust-Luga",
+      "target": "Ust-Luga Sea Port",
+      "category": "Logistics / Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "Drone attack on the port infrastructure of Ust-Luga.",
+      "source": "SBU / HUR MO, OSINT"
+    },
+    "id": 192
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 58.7539,
+    "lng": 29.5662,
+    "distance": 814,
+    "ru": {
+      "region": "Ленинградская область, Лужский район",
+      "target": "Лужский артиллерийский полигон",
+      "category": "Военный объект",
+      "weapon": "Дрон",
+      "details": "Успешное поражение военного полигона в Ленинградской области.",
+      "source": "OSINT"
+    },
+    "uk": {
+      "region": "Ленінградська область, Лузький район",
+      "target": "Лузький артилерійський полігон",
+      "category": "Військовий об'єкт",
+      "weapon": "Дрон",
+      "details": "Успішне ураження військового полігону в Ленінградській області.",
+      "source": "OSINT"
+    },
+    "en": {
+      "region": "Leningrad Oblast, Luzhsky District",
+      "target": "Luzhsky Artillery Range",
+      "category": "Military Facility",
+      "weapon": "Drone",
+      "details": "Successful strike on a military range in the Leningrad region.",
+      "source": "OSINT"
+    },
+    "id": 193
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 58.73,
+    "lng": 29.84,
+    "distance": 809,
+    "ru": {
+      "region": "Ленинградская область, Луга",
+      "target": "ППД 26-й ракетной бригады",
+      "category": "Военный объект",
+      "weapon": "Дрон",
+      "details": "Успешно поражен пункт постоянной дислокации 26-й ракетной бригады (в/ч 54006).",
+      "source": "Силы Обороны Украины, OSINT"
+    },
+    "uk": {
+      "region": "Ленінградська область, Луга",
+      "target": "ППД 26-ї ракетної бригади",
+      "category": "Військовий об'єкт",
+      "weapon": "Дрон",
+      "details": "Успішно уражено пункт постійної дислокації 26-ї ракетної бригади (в/ч 54006).",
+      "source": "Сили Оборони України, OSINT"
+    },
+    "en": {
+      "region": "Leningrad Oblast, Luga",
+      "target": "Base of the 26th Missile Brigade",
+      "category": "Military Facility",
+      "weapon": "Drone",
+      "details": "Successful strike on the permanent deployment point of the 26th Missile Brigade (Military Unit 54006).",
+      "source": "Ukrainian Defense Forces, OSINT"
+    },
+    "id": 194
+  },
+  {
+    "date": "06.07.2026",
+    "lat": 55.0417,
+    "lng": 73.3056,
+    "distance": 2519,
+    "video": "video/070626 omsk.MP4",
+    "ru": {
+      "region": "Омская область, Омск",
+      "target": "Омский НПЗ",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Поражение Омского нефтеперерабатывающего завода Силами Обороны Украины.",
+      "source": "Силы Обороны Украины"
+    },
+    "uk": {
+      "region": "Омська область, Омськ",
+      "target": "Омський НПЗ",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Ураження Омського нафтопереробного заводу Силами Оборони України.",
+      "source": "Сили Оборони України"
+    },
+    "en": {
+      "region": "Omsk Oblast, Omsk",
+      "target": "Omsk Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Strike on the Omsk Oil Refinery by the Ukrainian Defense Forces.",
+      "source": "Ukrainian Defense Forces"
+    },
+    "id": 195
   }
 ];
