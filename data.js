@@ -5888,26 +5888,27 @@ const strikeData = [
       "target": "Ярославский НПЗ (Славнефть-ЯНОС)",
       "category": "Нефтегаз",
       "weapon": "Дрон",
-      "details": "Успешная атака беспилотников на нефтеперерабатывающий завод.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "Ярославский нефтеперерабатывающий завод (Славнефть-ЯНОС) — одно из крупнейших предприятий России по производству нефтепродуктов, играющее ключевую роль в обеспечении топливом центральных регионов и нужд ВПК РФ. Завод перерабатывает миллионы тонн нефти ежегодно, выпуская бензин, дизельное и авиационное топливо. Успешная атака беспилотников на объекты НПЗ привела к повреждениям критической инфраструктуры переработки, что значительно снизило производственные мощности предприятия. Это событие стало серьезным логистическим и экономическим ударом, так как завод напрямую вовлечен в снабжение российских войск."
     },
     "uk": {
       "region": "Ярославська область, Ярославль",
       "target": "Ярославський НПЗ (Славнефть-ЯНОС)",
       "category": "Нафтогаз",
       "weapon": "Дрон",
-      "details": "Успішна атака безпілотників на нафтопереробний завод.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "Ярославський нафтопереробний завод (Славнєфть-ЯНОС) — одне з найбільших підприємств Росії з виробництва нафтопродуктів, що відіграє ключову роль у забезпеченні паливом центральних регіонів і потреб ВПК РФ. Завод переробляє мільйони тонн нафти щорічно, випускаючи бензин, дизельне та авіаційне паливо. Успішна атака безпілотників на об'єкти НПЗ призвела до пошкоджень критичної інфраструктури переробки, що значно знизило виробничі потужності підприємства. Ця подія стала серйозним логістичним та економічним ударом, оскільки завод безпосередньо залучений до постачання російських військ."
     },
     "en": {
       "region": "Yaroslavl Oblast, Yaroslavl",
       "target": "Yaroslavl Refinery (Slavneft-YANOS)",
       "category": "Oil & Gas",
       "weapon": "Drone",
-      "details": "Successful drone attack on the oil refinery.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "The Yaroslavl Oil Refinery (Slavneft-YANOS) is one of Russia's largest petroleum product manufacturers, playing a key role in supplying fuel to central regions and the Russian military-industrial complex. The plant processes millions of tons of oil annually, producing gasoline, diesel, and aviation fuel. A successful drone attack on the refinery's facilities caused damage to critical processing infrastructure, significantly reducing the plant's production capacity. This event was a major logistical and economic blow, as the plant is directly involved in supplying the Russian military."
     },
-    "id": 189
+    "id": 189,
+    "images": []
   },
   {
     "date": "06.07.2026",
@@ -5919,26 +5920,27 @@ const strikeData = [
       "target": "Морской порт Керчь",
       "category": "ВПК / Логистика",
       "weapon": "Неизвестно",
-      "details": "Атака на портовую инфраструктуру оккупированной Керчи.",
-      "source": "OSINT, местные СМИ"
+      "source": "OSINT, местные СМИ",
+      "details": "Морской порт в оккупированной Керчи является одним из главных логистических узлов для переброски военной техники, боеприпасов и топлива на Крымский полуостров. Инфраструктура порта активно используется российской армией для снабжения своей группировки на юге Украины. В результате точечного удара были поражены портовые сооружения и складские помещения. Выведение из строя этих объектов усложняет оккупантам морскую логистику и ослабляет их возможности по быстрому восполнению резервов через Керченский пролив."
     },
     "uk": {
       "region": "АР Крим, Керч",
       "target": "Морський порт Керч",
       "category": "ВПК / Логістика",
       "weapon": "Невідомо",
-      "details": "Атака на портову інфраструктуру окупованої Керчі.",
-      "source": "OSINT, місцеві ЗМІ"
+      "source": "OSINT, місцеві ЗМІ",
+      "details": "Морський порт в окупованій Керчі є одним із головних логістичних вузлів для перекидання військової техніки, боєприпасів і палива на Кримський півострів. Інфраструктура порту активно використовується російською армією для постачання свого угруповання на півдні України. Внаслідок точкового удару було уражено портові споруди та складські приміщення. Виведення з ладу цих об'єктів ускладнює окупантам морську логістику та послаблює їхні можливості щодо швидкого поповнення резервів через Керченську протоку."
     },
     "en": {
       "region": "AR Crimea, Kerch",
       "target": "Kerch Sea Port",
       "category": "Military-Industrial Complex / Logistics",
       "weapon": "Unknown",
-      "details": "Attack on the port infrastructure in occupied Kerch.",
-      "source": "OSINT, local media"
+      "source": "OSINT, local media",
+      "details": "The seaport in occupied Kerch is one of the main logistical hubs for the transfer of military equipment, ammunition, and fuel to the Crimean peninsula. The port's infrastructure is actively used by the Russian army to supply its forces in southern Ukraine. A targeted strike hit port facilities and warehouses. Disabling these facilities complicates the occupiers' maritime logistics and weakens their ability to quickly replenish reserves through the Kerch Strait."
     },
-    "id": 190
+    "id": 190,
+    "images": []
   },
   {
     "date": "06.07.2026",
@@ -5950,26 +5952,27 @@ const strikeData = [
       "target": "Завод «Азовкабель»",
       "category": "ВПК",
       "weapon": "Неизвестно",
-      "details": "Атака на производственные мощности завода «Азовкабель» во временно оккупированном Бердянске.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "Завод «Азовкабель» во временно оккупированном Бердянске был превращен российскими войсками в укрепленную военную базу и ремонтную зону для армейской техники. Обширные производственные площади использовались оккупантами для скрытного размещения личного состава, складирования боеприпасов и восстановления поврежденных в боях машин. Мощный удар по территории завода привел к детонации боекомплекта и уничтожению значительного количества военной техники. Это успешное поражение лишило противника важной тыловой ремонтной базы на Запорожском направлении."
     },
     "uk": {
       "region": "Запорізька область, Бердянськ",
       "target": "Завод «Азовкабель»",
       "category": "ВПК",
       "weapon": "Невідомо",
-      "details": "Атака на виробничі потужності заводу «Азовкабель» у тимчасово окупованому Бердянську.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "Завод «Азовкабель» у тимчасово окупованому Бердянську був перетворений російськими військами на укріплену військову базу та ремонтну зону для армійської техніки. Великі виробничі площі використовувалися окупантами для прихованого розміщення особового складу, складування боєприпасів та відновлення пошкоджених у боях машин. Потужний удар по території заводу призвів до детонації боєкомплекту та знищення значної кількості військової техніки. Це успішне ураження позбавило противника важливої тилової ремонтної бази на Запорізькому напрямку."
     },
     "en": {
       "region": "Zaporizhzhia Oblast, Berdyansk",
       "target": "Azovkabel Factory",
       "category": "Military-Industrial Complex",
       "weapon": "Unknown",
-      "details": "Attack on the production facilities of the Azovkabel factory in temporarily occupied Berdyansk.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "The Azovkabel factory in temporarily occupied Berdyansk was turned into a fortified military base and repair zone for army equipment by Russian troops. The vast production areas were used by the occupiers to covertly house personnel, store ammunition, and restore battle-damaged vehicles. A powerful strike on the factory territory led to the detonation of ammunition and the destruction of a significant amount of military equipment. This successful hit deprived the enemy of an important rear repair base in the Zaporizhzhia direction."
     },
-    "id": 191
+    "id": 191,
+    "images": []
   },
   {
     "date": "06.07.2026",
@@ -5981,26 +5984,27 @@ const strikeData = [
       "target": "Морской порт Усть-Луга",
       "category": "Логистика / ВПК",
       "weapon": "Дрон",
-      "details": "Атака беспилотников на портовую инфраструктуру Усть-Луги.",
-      "source": "СБУ / ГУР МО, OSINT"
+      "source": "СБУ / ГУР МО, OSINT",
+      "details": "Порт Усть-Луга в Ленинградской области — крупнейший морской порт на Балтике и важнейший транспортный хаб России для экспорта углеводородов. На территории порта расположены крупные газовые и нефтяные терминалы, приносящие миллиардные доходы в бюджет страны-агрессора. Атака ударными БПЛА привела к остановке работы ключевых терминалов и сильному пожару на объектах топливно-энергетического комплекса. Данная операция СБУ и ГУР МО стала не только экономическим ударом, но и продемонстрировала уязвимость стратегических портов РФ в глубоком тылу."
     },
     "uk": {
       "region": "Ленінградська область, Усть-Луга",
       "target": "Морський порт Усть-Луга",
       "category": "Логістика / ВПК",
       "weapon": "Дрон",
-      "details": "Атака безпілотників на портову інфраструктуру Усть-Луги.",
-      "source": "СБУ / ГУР МО, OSINT"
+      "source": "СБУ / ГУР МО, OSINT",
+      "details": "Порт Усть-Луга в Ленінградській області — найбільший морський порт на Балтиці та найважливіший транспортний хаб Росії для експорту вуглеводнів. На території порту розташовані великі газові та нафтові термінали, що приносять мільярдні доходи до бюджету країни-агресора. Атака ударними БПЛА призвела до зупинки роботи ключових терміналів і сильної пожежі на об'єктах паливно-енергетичного комплексу. Ця операція СБУ та ГУР МО стала не лише економічним ударом, а й продемонструвала вразливість стратегічних портів РФ у глибокому тилу."
     },
     "en": {
       "region": "Leningrad Oblast, Ust-Luga",
       "target": "Ust-Luga Sea Port",
       "category": "Logistics / Military-Industrial Complex",
       "weapon": "Drone",
-      "details": "Drone attack on the port infrastructure of Ust-Luga.",
-      "source": "SBU / HUR MO, OSINT"
+      "source": "SBU / HUR MO, OSINT",
+      "details": "The Ust-Luga port in the Leningrad Oblast is the largest seaport on the Baltic and Russia's most important transport hub for hydrocarbon exports. The port houses large gas and oil terminals that bring billions in revenue to the aggressor state's budget. The strike by attack UAVs led to the shutdown of key terminals and a severe fire at fuel and energy complex facilities. This joint operation by the SBU and HUR MO was not only an economic blow but also demonstrated the vulnerability of Russia's strategic ports deep in the rear."
     },
-    "id": 192
+    "id": 192,
+    "images": []
   },
   {
     "date": "06.07.2026",
@@ -6012,26 +6016,27 @@ const strikeData = [
       "target": "Лужский артиллерийский полигон",
       "category": "Военный объект",
       "weapon": "Дрон",
-      "details": "Успешное поражение военного полигона в Ленинградской области.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "Лужский артиллерийский полигон (33-й полигон) является одним из главных центров боевой подготовки войск Западного военного округа РФ. Здесь проходят слаживание артиллерийские и ракетные подразделения перед отправкой на фронт, а также тестируются новые образцы вооружений. Точный удар беспилотников по территории полигона пришелся по скоплению личного состава и техники противника. Поражение этого объекта нарушает графики подготовки резервов и наносит существенный урон боеспособности подразделений, готовящихся к переброске в Украину."
     },
     "uk": {
       "region": "Ленінградська область, Лузький район",
       "target": "Лузький артилерійський полігон",
       "category": "Військовий об'єкт",
       "weapon": "Дрон",
-      "details": "Успішне ураження військового полігону в Ленінградській області.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "Лузький артилерійський полігон (33-й полігон) є одним із головних центрів бойової підготовки військ Західного військового округу РФ. Тут проходять злагодження артилерійські та ракетні підрозділи перед відправкою на фронт, а також тестуються нові зразки озброєнь. Точний удар безпілотників по території полігону припав на скупчення особового складу та техніки противника. Ураження цього об'єкта порушує графіки підготовки резервів і завдає суттєвої шкоди боєздатності підрозділів, що готуються до перекидання в Україну."
     },
     "en": {
       "region": "Leningrad Oblast, Luzhsky District",
       "target": "Luzhsky Artillery Range",
       "category": "Military Facility",
       "weapon": "Drone",
-      "details": "Successful strike on a military range in the Leningrad region.",
-      "source": "OSINT"
+      "source": "OSINT",
+      "details": "The Luzhsky artillery range (33rd range) is one of the main combat training centers for the forces of Russia's Western Military District. It is here that artillery and missile units undergo combat coordination before being sent to the front, and new types of weapons are tested. A precise drone strike on the range hit a concentration of enemy personnel and equipment. The destruction of this facility disrupts the training schedules of reserves and inflicts significant damage on the combat readiness of units preparing for deployment to Ukraine."
     },
-    "id": 193
+    "id": 193,
+    "images": []
   },
   {
     "date": "06.07.2026",
@@ -6043,57 +6048,60 @@ const strikeData = [
       "target": "ППД 26-й ракетной бригады",
       "category": "Военный объект",
       "weapon": "Дрон",
-      "details": "Успешно поражен пункт постоянной дислокации 26-й ракетной бригады (в/ч 54006).",
-      "source": "Силы Обороны Украины, OSINT"
+      "source": "Силы Обороны Украины, OSINT",
+      "details": "В городе Луга Ленинградской области располагается пункт постоянной дислокации 26-й ракетной бригады (в/ч 54006) сухопутных войск РФ. На вооружении этой бригады стоят оперативно-тактические ракетные комплексы «Искандер», которые регулярно используются для террористических ударов по мирным городам и инфраструктуре Украины. Атака Сил Обороны по месту базирования бригады была направлена на уничтожение пусковых установок, складов с ракетами и обслуживающего персонала. Данная операция имеет важнейшее стратегическое значение для снижения ракетного потенциала врага и защиты украинских населенных пунктов."
     },
     "uk": {
       "region": "Ленінградська область, Луга",
       "target": "ППД 26-ї ракетної бригади",
       "category": "Військовий об'єкт",
       "weapon": "Дрон",
-      "details": "Успішно уражено пункт постійної дислокації 26-ї ракетної бригади (в/ч 54006).",
-      "source": "Сили Оборони України, OSINT"
+      "source": "Сили Оборони України, OSINT",
+      "details": "У місті Луга Ленінградської області розташований пункт постійної дислокації 26-ї ракетної бригади (в/ч 54006) сухопутних військ РФ. На озброєнні цієї бригади стоять оперативно-тактичні ракетні комплекси «Іскандер», які регулярно використовуються для терористичних ударів по мирних містах та інфраструктурі України. Атака Сил Оборони по місцю базування бригади була спрямована на знищення пускових установок, складів із ракетами та обслуговуючого персоналу. Ця операція має найважливіше стратегічне значення для зниження ракетного потенціалу ворога та захисту українських населених пунктів."
     },
     "en": {
       "region": "Leningrad Oblast, Luga",
       "target": "Base of the 26th Missile Brigade",
       "category": "Military Facility",
       "weapon": "Drone",
-      "details": "Successful strike on the permanent deployment point of the 26th Missile Brigade (Military Unit 54006).",
-      "source": "Ukrainian Defense Forces, OSINT"
+      "source": "Ukrainian Defense Forces, OSINT",
+      "details": "The city of Luga in the Leningrad Oblast houses the permanent deployment point of the 26th Missile Brigade (Military Unit 54006) of the Russian Ground Forces. This brigade is armed with Iskander operational-tactical missile systems, which are regularly used for terrorist strikes on peaceful cities and infrastructure in Ukraine. The Defense Forces' attack on the brigade's base was aimed at destroying launchers, missile depots, and maintenance personnel. This operation is of vital strategic importance in reducing the enemy's missile potential and protecting Ukrainian settlements."
     },
-    "id": 194
+    "id": 194,
+    "images": []
   },
   {
     "date": "06.07.2026",
     "lat": 55.0417,
     "lng": 73.3056,
     "distance": 2519,
-    "video": "video/070626 omsk.MP4",
     "ru": {
       "region": "Омская область, Омск",
       "target": "Омский НПЗ",
       "category": "Нефтегаз",
       "weapon": "Дрон",
-      "details": "Поражение Омского нефтеперерабатывающего завода Силами Обороны Украины.",
-      "source": "Силы Обороны Украины"
+      "source": "Силы Обороны Украины",
+      "details": "Омский нефтеперерабатывающий завод — это гигантское предприятие, являющееся крупнейшим НПЗ в России по объему переработки нефти (свыше 21 млн тонн в год). Завод выступает критически важным звеном в производстве бензина, авиационного керосина и дизельного топлива, снабжая как гражданский сектор, так и огромную долю военной машины РФ. Точный и дальнобойный удар украинских сил (на расстоянии более 2200 км) по Омскому НПЗ вызвал масштабный пожар на технологических установках первичной переработки. Поражение столь важного и глубоко расположенного объекта в Сибири наносит колоссальный ущерб российской экономике и существенно усложняет обеспечение топливом оккупационных войск."
     },
     "uk": {
       "region": "Омська область, Омськ",
       "target": "Омський НПЗ",
       "category": "Нафтогаз",
       "weapon": "Дрон",
-      "details": "Ураження Омського нафтопереробного заводу Силами Оборони України.",
-      "source": "Сили Оборони України"
+      "source": "Сили Оборони України",
+      "details": "Омський нафтопереробний завод — це гігантське підприємство, що є найбільшим НПЗ у Росії за обсягом переробки нафти (понад 21 млн тонн на рік). Завод виступає критично важливою ланкою у виробництві бензину, авіаційного гасу та дизельного палива, постачаючи як цивільний сектор, так і величезну частку військової машини РФ. Точний і далекобійний удар українських сил (на відстані понад 2200 км) по Омському НПЗ викликав масштабну пожежу на технологічних установках первинної переробки. Ураження такого важливого і глибоко розташованого об'єкта в Сибіру завдає колосальної шкоди російській економіці та суттєво ускладнює забезпечення паливом окупаційних військ."
     },
     "en": {
       "region": "Omsk Oblast, Omsk",
       "target": "Omsk Refinery",
       "category": "Oil & Gas",
       "weapon": "Drone",
-      "details": "Strike on the Omsk Oil Refinery by the Ukrainian Defense Forces.",
-      "source": "Ukrainian Defense Forces"
+      "source": "Ukrainian Defense Forces",
+      "details": "The Omsk Oil Refinery is a massive enterprise, being the largest oil refinery in Russia by refining volume (over 21 million tons per year). The plant acts as a critical link in the production of gasoline, aviation kerosene, and diesel fuel, supplying both the civilian sector and a huge portion of the Russian military machine. A precise and long-range strike by Ukrainian forces (at a distance of over 2200 km) on the Omsk Refinery caused a large-scale fire at primary processing technological units. Striking such an important and deeply located target in Siberia inflicts colossal damage on the Russian economy and significantly complicates the supply of fuel to the occupying forces."
     },
-    "id": 195
+    "id": 195,
+    "images": [
+      "video/070626 omsk.MP4"
+    ]
   }
 ];
