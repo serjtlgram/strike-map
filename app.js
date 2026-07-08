@@ -74,7 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.lang-selector').forEach(btn => {
         btn.addEventListener('click', () => {
-            setLang(btn.getAttribute('data-set-lang'));
+            const newLang = btn.getAttribute('data-set-lang');
+            setLang(newLang);
+            if (window.va) window.va('track', 'LanguageChanged', { lang: newLang });
         });
     });
 
@@ -438,6 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.copyEventLink = function(id, e) {
         if (e) e.stopPropagation();
+        if (window.va) window.va('track', 'CopyLinkClicked', { id: String(id) });
         const url = new URL(window.location.href);
         url.searchParams.set('id', id);
         navigator.clipboard.writeText(url.toString()).then(() => {
@@ -591,6 +594,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 autoPanPaddingTopLeft: [paddingLeft, isMobile ? 60 : 40],
                 autoPanPaddingBottomRight: [20, isMobile ? 80 : 40]
             });
+            marker.on('click', () => {
+                if (window.va) window.va('track', 'MarkerClicked', { 
+                    city: item.city?.en || 'unknown', 
+                    type: type, 
+                    date: item.date 
+                });
+            });
             markerLayerGroup.addLayer(marker);
             
             activeMarkers.push({ data: item, marker: marker });
@@ -648,6 +658,10 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             listItem.addEventListener('click', () => {
+                if (window.va) window.va('track', 'SidebarItemClicked', { 
+                    city: item.city?.en || 'unknown', 
+                    date: item.date 
+                });
                 if (window.innerWidth < 768) {
                     closeSidebar();
                     map.setView([finalLat, finalLng], 10, { animate: false });
