@@ -6116,7 +6116,7 @@ const strikeData = [
       "target": "Белгородское ЛПУМГ",
       "category": "Нефтегаз",
       "weapon": "Дрон",
-      "details": "Горит территория Белгородского линейного производственного управления магистральных газопроводов.",
+      "details": "Белгородское линейное производственное управление магистральных газопроводов является важнейшим узлом газотранспортной системы региона. Оно отвечает за распределение и бесперебойную подачу газа как гражданским, так и промышленным потребителям, включая предприятия ВПК. Поражение такого объекта нарушает логистику энергоносителей, усложняя работу местной промышленности. Кроме того, пожары на газовой инфраструктуре требуют значительных ресурсов для ликвидации и наносят ощутимый экономический ущерб государству-агрессору.",
       "source": "СМИ, OSINT"
     },
     "uk": {
@@ -6124,7 +6124,7 @@ const strikeData = [
       "target": "Бєлгородське ЛВУМГ",
       "category": "Нафтогаз",
       "weapon": "Дрон",
-      "details": "Горить територія Бєлгородського лінійного виробничого управління магістральних газопроводів.",
+      "details": "Бєлгородське лінійне виробниче управління магістральних газопроводів є найважливішим вузлом газотранспортної системи регіону. Воно відповідає за розподіл і безперебійне постачання газу як цивільним, так і промисловим споживачам, включаючи підприємства ВПК. Ураження такого об'єкта порушує логістику енергоносіїв, ускладнюючи роботу місцевої промисловості. Крім того, пожежі на газовій інфраструктурі вимагають значних ресурсів для ліквідації та завдають відчутних економічних збитків державі-агресору.",
       "source": "ЗМІ, OSINT"
     },
     "en": {
@@ -6132,10 +6132,11 @@ const strikeData = [
       "target": "Belgorod LPU MG (Gas Pipeline Admin)",
       "category": "Oil & Gas",
       "weapon": "Drone",
-      "details": "A fire was recorded on the territory of the Belgorod linear production department of main gas pipelines.",
+      "details": "The Belgorod linear production department of main gas pipelines is a crucial node in the region's gas transmission system. It is responsible for the distribution and uninterrupted supply of gas to both civilian and industrial consumers, including military-industrial complex enterprises. Striking such a facility disrupts energy logistics, complicating the operation of local industry. Furthermore, fires at gas infrastructure facilities require significant resources to extinguish and cause substantial economic damage to the aggressor state.",
       "source": "Media, OSINT"
     },
-    "id": 196
+    "id": 196,
+    "images": []
   },
   {
     "date": "07.07.2026",
@@ -6147,7 +6148,7 @@ const strikeData = [
       "target": "Судно / Морская цель",
       "category": "Флот",
       "weapon": "БЭК/Дрон",
-      "details": "К северу от Керчи зафиксирован пожар в море. Возможно, было атаковано судно.",
+      "details": "Акватория севернее Керчи является критически важной для российской военной логистики. Через этот район проходят маршруты снабжения оккупационной группировки в Крыму и на юге Украины. Поражение морских целей в этой зоне ограничивает возможности Черноморского флота РФ и усложняет транспортировку топлива и боеприпасов. Подобные инциденты также создают дополнительное напряжение для российских сил ПВО и береговой охраны, вынуждая их отвлекать ресурсы на защиту морских путей.",
       "source": "СМИ, OSINT"
     },
     "uk": {
@@ -6155,7 +6156,7 @@ const strikeData = [
       "target": "Судно / Морська ціль",
       "category": "Флот",
       "weapon": "БЕК/Дрон",
-      "details": "На північ від Керчі зафіксовано пожежу в морі. Можливо, було атаковано судно.",
+      "details": "Акваторія на північ від Керчі є критично важливою для російської військової логістики. Через цей район проходять маршрути постачання окупаційного угруповання в Криму та на півдні України. Ураження морських цілей у цій зоні обмежує можливості Чорноморського флоту РФ та ускладнює транспортування палива й боєприпасів. Подібні інциденти також створюють додаткову напругу для російських сил ППО та берегової охорони, змушуючи їх відволікати ресурси на захист морських шляхів.",
       "source": "ЗМІ, OSINT"
     },
     "en": {
@@ -6163,10 +6164,11 @@ const strikeData = [
       "target": "Vessel / Naval Target",
       "category": "Fleet",
       "weapon": "USV/Drone",
-      "details": "A fire in the sea was recorded north of Kerch. Possibly a vessel was attacked.",
+      "details": "The waters north of Kerch are critically important for Russian military logistics. Supply routes for the occupying forces in Crimea and southern Ukraine pass through this area. Striking naval targets in this zone limits the capabilities of the Russian Black Sea Fleet and complicates the transportation of fuel and ammunition. Such incidents also create additional strain on Russian air defense and coast guard forces, forcing them to divert resources to protect sea lanes.",
       "source": "Media, OSINT"
     },
-    "id": 197
+    "id": 197,
+    "images": []
   },
   {
     "date": "07.07.2026",
@@ -6178,29 +6180,29 @@ const strikeData = [
       "target": "Мини-НПЗ «Первый Завод»",
       "category": "Нефтегаз",
       "weapon": "Дрон",
-      "details": "Успешная атака Сил обороны Украины по мини-НПЗ «Первый Завод».",
-      "source": "СБС, Генштаб ВСУ, ГУР",
-      "media": "miniNPZ-070726.jpg"
+      "details": "«Первый Завод» — крупнейшее нефтеперерабатывающее предприятие Калужской области. Завод специализируется на переработке товарной нефти и газового конденсата, производя дизельное топливо, мазут и другие нефтепродукты. Продукция предприятия активно используется для обеспечения нужд российской армии, в том числе для заправки военной техники. Регулярные удары по таким мини-НПЗ снижают общие мощности переработки в РФ, создавая дефицит топлива на внутреннем рынке и нарушая ритмичность военных поставок. Успешная атака вызвала масштабный пожар, надолго остановивший технологический процесс.",
+      "source": "СБС, Генштаб ВСУ, ГУР"
     },
     "uk": {
       "region": "Калузька область, Полотняний Завод",
       "target": "Міні-НПЗ «Первый Завод»",
       "category": "Нафтогаз",
       "weapon": "Дрон",
-      "details": "Успішна атака Сил оборони України по міні-НПЗ «Первый Завод».",
-      "source": "СБС, Генштаб ЗСУ, ГУР",
-      "media": "miniNPZ-070726.jpg"
+      "details": "«Первый Завод» — найбільше нафтопереробне підприємство Калузької області. Завод спеціалізується на переробці товарної нафти та газового конденсату, виробляючи дизельне паливо, мазут та інші нафтопродукти. Продукція підприємства активно використовується для забезпечення потреб російської армії, зокрема для заправки військової техніки. Регулярні удари по таких міні-НПЗ знижують загальні потужності переробки в РФ, створюючи дефіцит палива на внутрішньому ринку та порушуючи ритмічність військових поставок. Успішна атака спричинила масштабну пожежу, що надовго зупинила технологічний процес.",
+      "source": "СБС, Генштаб ЗСУ, ГУР"
     },
     "en": {
       "region": "Kaluga Oblast, Polotnyaniy Zavod",
       "target": "Mini-Refinery \"Perviy Zavod\"",
       "category": "Oil & Gas",
       "weapon": "Drone",
-      "details": "Successful strike by the Ukrainian Defense Forces on the mini-refinery \"Perviy Zavod\".",
-      "source": "SBS, AFU General Staff, GUR",
-      "media": "miniNPZ-070726.jpg"
+      "details": "\"Perviy Zavod\" is the largest oil refinery in the Kaluga region. The plant specializes in processing commercial oil and gas condensate, producing diesel fuel, fuel oil, and other petroleum products. The enterprise's output is actively used to meet the needs of the Russian army, including fueling military equipment. Regular strikes on such mini-refineries reduce overall refining capacity in the Russian Federation, creating a fuel shortage in the domestic market and disrupting the rhythm of military supplies. The successful attack caused a large-scale fire, halting the technological process for a long time.",
+      "source": "SBS, AFU General Staff, GUR"
     },
-    "id": 198
+    "id": 198,
+    "images": [
+      "images/miniNPZ-070726.jpg"
+    ]
   },
   {
     "date": "07.07.2026",
@@ -6212,29 +6214,29 @@ const strikeData = [
       "target": "Краснозаводский химический завод",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Поражено предприятие, производящее продукцию военного назначения, в частности компоненты для боеприпасов и ракетного вооружения.",
-      "source": "СМИ, OSINT",
-      "media": "photo1.jpg"
+      "details": "Краснозаводский химический завод (КХЗ) — одно из старейших и важнейших предприятий оборонно-промышленного комплекса России. Завод специализируется на выпуске боеприпасов, сигнальных и осветительных средств, а также компонентов для ракетного вооружения. Продукция КХЗ напрямую поставляется на фронт для использования оккупационными войсками. Удар по производственным цехам завода нарушает цепочки поставок взрывчатых веществ и боеприпасов. Это снижает огневую мощь российской артиллерии и авиации, оказывая непосредственное влияние на боеспособность армии РФ.",
+      "source": "СМИ, OSINT"
     },
     "uk": {
       "region": "Московська область, Краснозаводськ",
       "target": "Краснозаводський хімічний завод",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Уражено підприємство, що виробляє продукцію військового призначення, зокрема компоненти для боєприпасів і ракетного озброєння.",
-      "source": "ЗМІ, OSINT",
-      "media": "photo1.jpg"
+      "details": "Краснозаводський хімічний завод (КХЗ) — одне з найстаріших і найважливіших підприємств оборонно-промислового комплексу Росії. Завод спеціалізується на випуску боєприпасів, сигнальних і освітлювальних засобів, а також компонентів для ракетного озброєння. Продукція КХЗ безпосередньо постачається на фронт для використання окупаційними військами. Удар по виробничих цехах заводу порушує ланцюжки постачання вибухових речовин і боєприпасів. Це знижує вогневу міць російської артилерії та авіації, безпосередньо впливаючи на боєздатність армії РФ.",
+      "source": "ЗМІ, OSINT"
     },
     "en": {
       "region": "Moscow Oblast, Krasnozavodsk",
       "target": "Krasnozavodsk Chemical Plant",
       "category": "Military-Industrial Complex",
       "weapon": "Drone",
-      "details": "The plant, which produces military products, in particular components for ammunition and rocket armaments, was struck.",
-      "source": "Media, OSINT",
-      "media": "photo1.jpg"
+      "details": "The Krasnozavodsk Chemical Plant (KhZ) is one of the oldest and most important enterprises of Russia's military-industrial complex. The plant specializes in the production of ammunition, signal and illumination devices, as well as components for rocket armaments. KhZ products are supplied directly to the front for use by the occupying forces. Striking the plant's production workshops disrupts the supply chains for explosives and ammunition. This reduces the firepower of Russian artillery and aviation, directly impacting the combat capability of the Russian army.",
+      "source": "Media, OSINT"
     },
-    "id": 199
+    "id": 199,
+    "images": [
+      "images/photo1.jpg"
+    ]
   },
   {
     "date": "07.07.2026",
@@ -6246,29 +6248,29 @@ const strikeData = [
       "target": "ЦНИИТОЧМАШ",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Атакован Центральный научно-исследовательский институт точного машиностроения, один из ведущих центров разработки стрелкового вооружения, боеприпасов и военной экипировки РФ.",
-      "source": "СМИ, OSINT",
-      "media": "video2_opt.mp4"
+      "details": "Центральный научно-исследовательский институт точного машиностроения (ЦНИИТОЧМАШ) в Климовске — ключевой центр разработки и испытаний стрелкового оружия, экипировки (включая комплект «Ратник») и артиллерийских систем. Именно здесь проектируются новые виды вооружений, которые затем массово применяются российской армией в войне против Украины. Институт обладает уникальной испытательной базой и научно-техническим потенциалом. Удар по ЦНИИТОЧМАШ не только наносит физический урон лабораториям и цехам, но и тормозит перспективные разработки в сфере ВПК, лишая российскую пехоту современных технологических решений.",
+      "source": "СМИ, OSINT"
     },
     "uk": {
       "region": "Московська область, Клімовськ",
       "target": "ЦНДІТОЧМАШ",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Атаковано Центральний науково-дослідний інститут точного машинобудування, один із провідних центрів розробки стрілецького озброєння, боєприпасів та військової екіпіровки РФ.",
-      "source": "ЗМІ, OSINT",
-      "media": "video2_opt.mp4"
+      "details": "Центральний науково-дослідний інститут точного машинобудування (ЦНДІТОЧМАШ) у Клімовську — ключовий центр розробки та випробувань стрілецької зброї, екіпіровки (включаючи комплект «Ратнік») та артилерійських систем. Саме тут проєктуються нові види озброєнь, які згодом масово застосовуються російською армією у війні проти України. Інститут володіє унікальною випробувальною базою та науково-технічним потенціалом. Удар по ЦНДІТОЧМАШ не лише завдає фізичної шкоди лабораторіям і цехам, а й гальмує перспективні розробки у сфері ВПК, позбавляючи російську піхоту сучасних технологічних рішень.",
+      "source": "ЗМІ, OSINT"
     },
     "en": {
       "region": "Moscow Oblast, Klimovsk",
       "target": "TsNIITochMash",
       "category": "Military-Industrial Complex",
       "weapon": "Drone",
-      "details": "The Central Research Institute of Precision Machine Building, one of Russia's leading centers for the development of small arms, ammunition, and military equipment, was attacked.",
-      "source": "Media, OSINT",
-      "media": "video2_opt.mp4"
+      "details": "The Central Research Institute of Precision Machine Building (TsNIITochMash) in Klimovsk is a key center for the development and testing of small arms, equipment (including the \"Ratnik\" combat gear), and artillery systems. It is here that new types of weapons are designed, which are then used en masse by the Russian army in the war against Ukraine. The institute has a unique testing base and scientific and technical potential. A strike on TsNIITochMash not only causes physical damage to laboratories and workshops but also slows down advanced developments in the military-industrial complex, depriving Russian infantry of modern technological solutions.",
+      "source": "Media, OSINT"
     },
-    "id": 200
+    "id": 200,
+    "images": [
+      "video/video2_opt.mp4"
+    ]
   },
   {
     "date": "07.07.2026",
@@ -6280,29 +6282,29 @@ const strikeData = [
       "target": "ЦНИИСМ",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Удар по Центральному научно-исследовательскому институту специального машиностроения, занимающемуся разработкой и испытаниями боеприпасов и специального вооружения.",
-      "source": "СМИ, OSINT",
-      "media": "video3_opt.mp4"
+      "details": "Центральный научно-исследовательский институт специального машиностроения (ЦНИИСМ) в Хотьково является ведущим российским разработчиком конструкций из современных композитных материалов для ракетно-космической техники и бронетанкового вооружения. Институт участвует в создании элементов для ракетных комплексов, в том числе межконтинентальных баллистических ракет и систем ПВО. Это предприятие критически важно для высокотехнологичной части российского ВПК, поскольку композитные материалы определяют вес, прочность и дальность полета современных ракет. Успешная атака дронов на этот объект замедляет производство современных систем вооружения и наносит невосполнимый ущерб стратегическим военным программам РФ.",
+      "source": "СМИ, OSINT"
     },
     "uk": {
       "region": "Московська область, Хотьково",
       "target": "ЦНДІСМ",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Удар по Центральному науково-дослідному інституту спеціального машинобудування, який займається розробкою та випробуваннями боєприпасів і спеціального озброєння.",
-      "source": "ЗМІ, OSINT",
-      "media": "video3_opt.mp4"
+      "details": "Центральний науково-дослідний інститут спеціального машинобудування (ЦНДІСМ) у Хотьково є провідним російським розробником конструкцій із сучасних композитних матеріалів для ракетно-космічної техніки та бронетанкового озброєння. Інститут бере участь у створенні елементів для ракетних комплексів, зокрема міжконтинентальних балістичних ракет і систем ППО. Це підприємство є критично важливим для високотехнологічної частини російського ВПК, оскільки композитні матеріали визначають вагу, міцність і дальність польоту сучасних ракет. Успішна атака дронів на цей об'єкт уповільнює виробництво сучасних систем озброєння та завдає непоправної шкоди стратегічним військовим програмам РФ.",
+      "source": "ЗМІ, OSINT"
     },
     "en": {
       "region": "Moscow Oblast, Khotkovo",
       "target": "TsNIISM",
       "category": "Military-Industrial Complex",
       "weapon": "Drone",
-      "details": "Strike on the Central Research Institute of Special Machine Building, which develops and tests ammunition and special armaments.",
-      "source": "Media, OSINT",
-      "media": "video3_opt.mp4"
+      "details": "The Central Research Institute of Special Machine Building (TsNIISM) in Khotkovo is a leading Russian developer of structures made of advanced composite materials for aerospace equipment and armored vehicles. The institute participates in the creation of components for missile systems, including intercontinental ballistic missiles and air defense systems. This enterprise is critically important for the high-tech segment of the Russian military-industrial complex, as composite materials determine the weight, strength, and flight range of modern missiles. A successful drone attack on this facility slows down the production of modern weapon systems and causes irreparable damage to Russia's strategic military programs.",
+      "source": "Media, OSINT"
     },
-    "id": 201
+    "id": 201,
+    "images": [
+      "video/video3_opt.mp4"
+    ]
   },
   {
     "date": "07.07.2026",
@@ -6314,29 +6316,30 @@ const strikeData = [
       "target": "8 танкеров теневого флота РФ",
       "category": "Флот / Топливная логистика",
       "weapon": "Дрон",
-      "details": "В Азовском море вполювано 8 танкеров теневого флота РФ, находящихся под международными санкциями (Венера-3, Санар-1, Санар-17, Климена, Тети, Алексей Саврасов, Пенелопа и др.), дедвейтом по 7000 тонн.",
-      "source": "ВМС ВСУ, СМИ, OSINT",
-      "media": "tenevoy_flot2_opt.mp4"
+      "details": "Теневой флот РФ является главным инструментом обхода международных санкций, позволяющим Москве продолжать экспортировать нефть и нефтепродукты, финансируя тем самым ведение агрессивной войны. Выявление и поражение сразу 8 танкеров (среди которых «Венера-3», «Санар-1», «Санар-17», «Климена», «Тети», «Алексей Саврасов», «Пенелопа») дедвейтом по 7000 тонн каждый — это колоссальный удар по теневой логистике. Операция в Азовском море не только уничтожает дорогостоящие суда и грузы, но и посылает четкий сигнал покупателям российской нефти о высоких рисках. Потеря таких судов существенно усложняет экспорт углеводородов из портов Азово-Черноморского бассейна, снижая приток валюты в военный бюджет РФ.",
+      "source": "ВМС ВСУ, СМИ, OSINT"
     },
     "uk": {
       "region": "Азовське море (акваторія)",
       "target": "8 танкерів тіньового флоту РФ",
       "category": "Флот / Паливна логістика",
       "weapon": "Дрон",
-      "details": "В Азовському морі впольовано 8 танкерів тіньового флоту РФ, які знаходяться під міжнародними санкціями (Венера-3, Санар-1, Санар-17, Климена, Теті, Алексей Саврасов, Пенелопа та ін.), дедвейтом по 7000 тонн, довжиною по 140 метрів.",
-      "source": "ВМС ЗСУ, ЗМІ, OSINT",
-      "media": "tenevoy_flot2_opt.mp4"
+      "details": "Тіньовий флот РФ є головним інструментом обходу міжнародних санкцій, що дозволяє Москві продовжувати експортувати нафту й нафтопродукти, фінансуючи тим самим ведення агресивної війни. Виявлення та ураження відразу 8 танкерів (серед яких «Венера-3», «Санар-1», «Санар-17», «Климена», «Теті», «Алексей Саврасов», «Пенелопа») дедвейтом по 7000 тонн кожен — це колосальний удар по тіньовій логістиці. Операція в Азовському морі не лише знищує дорогі судна і вантажі, а й надсилає чіткий сигнал покупцям російської нафти про високі ризики. Втрата таких суден суттєво ускладнює експорт вуглеводнів з портів Азово-Чорноморського басейну, знижуючи приплив валюти у військовий бюджет РФ.",
+      "source": "ВМС ЗСУ, ЗМІ, OSINT"
     },
     "en": {
       "region": "Sea of Azov (waters)",
       "target": "8 Shadow Fleet Tankers",
       "category": "Fleet / Fuel Logistics",
       "weapon": "Drone",
-      "details": "8 Russian shadow fleet tankers under international sanctions (Venera-3, Sanar-1, Sanar-17, Klimena, Teti, Aleksey Savrasov, Penelopa, etc.), with a deadweight of 7,000 tons and a length of 140 meters each, were hunted down in the Sea of Azov.",
-      "source": "Ukrainian Navy, Media, OSINT",
-      "media": "tenevoy_flot2_opt.mp4"
+      "details": "The Russian shadow fleet is the main tool for bypassing international sanctions, allowing Moscow to continue exporting oil and petroleum products, thereby financing its aggressive war. The identification and targeting of 8 tankers simultaneously (including \"Venera-3\", \"Sanar-1\", \"Sanar-17\", \"Klimena\", \"Teti\", \"Aleksey Savrasov\", and \"Penelopa\"), each with a deadweight of 7,000 tons, is a colossal blow to this shadow logistics network. The operation in the Sea of Azov not only destroys expensive vessels and cargo but also sends a clear signal to buyers of Russian oil about the high risks involved. The loss of such vessels significantly complicates hydrocarbon exports from the ports of the Azov-Black Sea basin, reducing foreign currency inflows into the Russian military budget.",
+      "source": "Ukrainian Navy, Media, OSINT"
     },
-    "id": 202
+    "id": 202,
+    "images": [
+      "video/tenevoy_flot2_opt.mp4",
+      "video/tenevoy flot1-070726.mp4"
+    ]
   },
   {
     "date": "07.07.2026",
@@ -6348,28 +6351,28 @@ const strikeData = [
       "target": "Компрессорная станция «Краснодарская»",
       "category": "Нефтегаз",
       "weapon": "Дрон",
-      "details": "Атакована компрессорная станция «Краснодарская».",
-      "source": "СМИ, OSINT",
-      "media": "krasnodar_opt.mp4"
+      "details": "Компрессорная станция «Краснодарская» — стратегически важный инфраструктурный объект газотранспортной сети на юге России. Станция обеспечивает поддержание давления в магистральных газопроводах, включая маршруты, по которым осуществляется экспорт газа (в частности, «Голубой поток»). Выведение из строя компрессорных агрегатов приводит к падению давления в системе, срыву поставок и огромным финансовым потерям. Удар дронов по таким объектам демонстрирует уязвимость российской нефтегазовой инфраструктуры в глубоком тылу и способность Сил обороны Украины системно разрушать экономическую базу агрессора.",
+      "source": "СМИ, OSINT"
     },
     "uk": {
       "region": "Краснодарський край, Сіверський район",
       "target": "Компресорна станція «Краснодарська»",
       "category": "Нафтогаз",
       "weapon": "Дрон",
-      "details": "Атаковано компресорну станцію «Краснодарська».",
-      "source": "ЗМІ, OSINT",
-      "media": "krasnodar_opt.mp4"
+      "details": "Компресорна станція «Краснодарська» — стратегічно важливий інфраструктурний об'єкт газотранспортної мережі на півдні Росії. Станція забезпечує підтримання тиску в магістральних газопроводах, включаючи маршрути, якими здійснюється експорт газу (зокрема, «Блакитний потік»). Виведення з ладу компресорних агрегатів призводить до падіння тиску в системі, зриву поставок і величезних фінансових втрат. Удар дронів по таких об'єктах демонструє вразливість російської нафтогазової інфраструктури в глибокому тилу і здатність Сил оборони України системно руйнувати економічну базу агресора.",
+      "source": "ЗМІ, OSINT"
     },
     "en": {
       "region": "Krasnodar Krai, Seversky District",
       "target": "Compressor Station \"Krasnodar\"",
       "category": "Oil & Gas",
       "weapon": "Drone",
-      "details": "The \"Krasnodar\" compressor station was attacked.",
-      "source": "Media, OSINT",
-      "media": "krasnodar_opt.mp4"
+      "details": "The \"Krasnodar\" compressor station is a strategically important infrastructure facility of the gas transmission network in southern Russia. The station ensures pressure maintenance in main gas pipelines, including routes used for gas exports (such as the Blue Stream). Taking compressor units out of service leads to a pressure drop in the system, supply disruptions, and massive financial losses. Drone strikes on such facilities demonstrate the vulnerability of Russian oil and gas infrastructure deep in the rear and the ability of the Ukrainian Defense Forces to systematically destroy the aggressor's economic base.",
+      "source": "Media, OSINT"
     },
-    "id": 203
+    "id": 203,
+    "images": [
+      "video/krasnodar_opt.mp4"
+    ]
   }
 ];
