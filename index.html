@@ -180,22 +180,27 @@
 
         .leaflet-container a.leaflet-popup-close-button {
             color: var(--text-muted) !important;
-            top: 16px !important;
-            right: 16px !important;
-            width: 28px !important;
-            height: 28px !important;
+            top: -12px !important;
+            right: -12px !important;
+            width: 30px !important;
+            height: 30px !important;
             padding: 0 !important;
-            font-size: 24px !important;
+            font-size: 22px !important;
             line-height: 28px !important;
             text-align: center !important;
-            z-index: 10;
+            z-index: 100;
             border-radius: 50%;
-            transition: color 0.3s, background-color 0.3s;
+            background: var(--bg-panel) !important;
+            border: 1px solid var(--border-color) !important;
+            backdrop-filter: blur(12px) !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
 
         .leaflet-container a.leaflet-popup-close-button:hover {
             color: var(--text-main) !important;
-            background-color: var(--bg-item-hover) !important;
+            background: var(--bg-item-hover) !important;
+            transform: scale(1.1);
         }
 
         /* Custom Scrollbar */

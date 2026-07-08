@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="p-4 md:p-5 font-sans ${containerClasses}">
                 <div class="flex-1 min-w-0 md:min-w-[220px] flex flex-col">
                     <div class="mb-3">
-                        <div class="flex justify-between items-start mb-2 gap-2 pr-8">
+                        <div class="flex justify-between items-start mb-2 gap-2">
                             <span class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold theme-bg-item border ${colors.border} ${colors.text}">
                                 ${item.category}
                             </span>
