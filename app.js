@@ -408,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
 
-                <div class="flex-1 min-w-0 md:min-w-[280px] flex flex-col">
+                <div class="flex-1 min-w-0 md:min-w-[420px] flex flex-col">
                     <div class="theme-bg-input rounded-lg p-3 md:p-4 border theme-border h-full">
                         <p class="text-sm theme-text-main leading-relaxed">${item.details}</p>
                     </div>
@@ -579,8 +579,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const paddingLeft = window.innerWidth >= 768 ? 400 : 20;
             const hasImage = !!item.image || (item.images && item.images.length > 0);
             const isMobile = window.innerWidth < 768;
-            const maxW = isMobile ? 300 : (hasImage ? 800 : 550);
-            const minW = isMobile ? 240 : (hasImage ? 700 : 450);
+            const maxW = isMobile ? 300 : (hasImage ? 940 : 690);
+            const minW = isMobile ? 240 : (hasImage ? 840 : 590);
             const maxH = isMobile ? Math.min(window.innerHeight * 0.65, 420) : null;
 
             marker.bindPopup(popupContent, { 
