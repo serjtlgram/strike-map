@@ -6378,40 +6378,9 @@ const strikeData = [
   },
   {
     "date": "08.07.2026",
-    "lat": 45.4,
-    "lng": 36.5,
-    "distance": null,
-    "ru": {
-      "region": "Азовское море (акватория)",
-      "target": "9 судов теневого флота (5 танкеров, 4 сухогруза)",
-      "category": "Флот / Логистика",
-      "weapon": "Дрон",
-      "details": "В акватории Азовского моря и вблизи Крымского моста украинские ударные дроны атаковали скопление судов. Поражены 9 судов, среди которых 5 танкеров теневого флота РФ, нелегально перевозящих нефтепродукты, и 4 сухогруза. Подобные операции серьезно нарушают логистику оккупантов на юге и блокируют морские поставки топлива для нужд агрессора.",
-      "source": "СБС, ВМС ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Азовське море (акваторія)",
-      "target": "9 суден тіньового флоту (5 танкерів, 4 суховантажі)",
-      "category": "Флот / Логістика",
-      "weapon": "Дрон",
-      "details": "В акваторії Азовського моря та поблизу Кримського мосту українські ударні дрони атакували скупчення суден. Уражено 9 суден, серед яких 5 танкерів тіньового флоту РФ, що нелегально перевозять нафтопродукти, та 4 суховантажі. Подібні операції серйозно порушують логістику окупантів на півдні та блокують морські поставки пального для потреб агресора.",
-      "source": "СБС, ВМС ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Sea of Azov (waters)",
-      "target": "9 shadow fleet vessels (5 tankers, 4 dry cargo ships)",
-      "category": "Fleet / Logistics",
-      "weapon": "Drone",
-      "details": "In the Sea of Azov and near the Crimean Bridge, Ukrainian attack drones targeted a concentration of vessels. Nine ships were hit, including five Russian shadow fleet tankers illegally transporting petroleum products, and four dry cargo ships. Such operations seriously disrupt the occupiers' logistics in the south and block maritime fuel supplies for the aggressor's needs.",
-      "source": "SBS, Ukrainian Navy, OSINT"
-    },
-    "id": 204
-  },
-  {
-    "date": "08.07.2026",
     "lat": 51.361661,
     "lng": 42.190028,
-    "distance": null,
+    "distance": 439,
     "ru": {
       "region": "Воронежская область, Борисоглебск",
       "target": "Военный аэродром «Борисоглебск»",
@@ -6437,13 +6406,15 @@ const strikeData = [
       "source": "SSO, OSINT"
     },
     "id": 205,
-    "image": "images/borisoglebsk1.jpg"
+    "images": [
+      "images/borisoglebsk1.jpg"
+    ]
   },
   {
     "date": "08.07.2026",
     "lat": 51.456835,
     "lng": 45.940629,
-    "distance": null,
+    "distance": 668,
     "ru": {
       "region": "Саратов",
       "target": "Саратовский НПЗ",
@@ -6469,13 +6440,19 @@ const strikeData = [
       "source": "GUR, OSINT"
     },
     "id": 206,
-    "image": "video/saratov-2.MP4"
+    "images": [
+      "images/saratov-1.jpg",
+      "images/saratov-2.jpg",
+      "video/saratov-1 080726.MOV",
+      "video/saratov-2.MP4",
+      "video/saratov-3.MP4"
+    ]
   },
   {
     "date": "08.07.2026",
     "lat": 55.604904,
     "lng": 51.955749,
-    "distance": null,
+    "distance": 1224,
     "ru": {
       "region": "Республика Татарстан, Нижнекамск",
       "target": "Нижнекамский НПЗ (ТАИФ-НК)",
@@ -6501,16 +6478,29 @@ const strikeData = [
       "source": "GUR, SBU, OSINT"
     },
     "id": 207,
-    "image": "video/nizhnekamsk-4.mp4"
+    "images": [
+      "images/nizhnekamsk-1.jpg",
+      "images/nizhnekamsk-2.jpg",
+      "images/nizhnekamsk-3.jpg",
+      "images/nizhnekamsk-4.jpg",
+      "images/nizhnekamsk-5.jpg",
+      "images/nizhnekamsk-6.jpg",
+      "video/nizhnekamsk-1.mp4",
+      "video/nizhnekamsk-2.mp4",
+      "video/nizhnekamsk-3.mp4",
+      "video/nizhnekamsk-4.mp4",
+      "video/nizhnekamsk-5.mp4",
+      "video/nizhnekamsk-6.mp4"
+    ]
   },
   {
     "date": "08.07.2026",
     "lat": 47.1,
     "lng": 39.4,
-    "distance": null,
+    "distance": 227,
     "ru": {
       "region": "Ростовская область",
-      "target": "2 танкера",
+      "target": "2 танкера в Ростовской области",
       "category": "Флот / Логистика",
       "weapon": "Дрон",
       "details": "Местные власти сообщили об атаке на два танкера. Удары по наливным судам противника направлены на разрушение логистических цепочек доставки нефтепродуктов. Танкерный флот РФ активно используется как для экспорта в обход санкций, так и для обеспечения топливом южной группировки оккупационных войск.",
@@ -6518,7 +6508,7 @@ const strikeData = [
     },
     "uk": {
       "region": "Ростовська область",
-      "target": "2 танкери",
+      "target": "2 танкери в Ростовській області",
       "category": "Флот / Логістика",
       "weapon": "Дрон",
       "details": "Місцева влада повідомила про атаку на два танкери. Удари по наливних суднах противника спрямовані на руйнування логістичних ланцюжків доставки нафтопродуктів. Танкерний флот РФ активно використовується як для експорту в обхід санкцій, так і для забезпечення паливом південного угруповання окупаційних військ.",
@@ -6526,23 +6516,27 @@ const strikeData = [
     },
     "en": {
       "region": "Rostov Oblast",
-      "target": "2 tankers",
+      "target": "2 tankers in Rostov Oblast",
       "category": "Fleet / Logistics",
       "weapon": "Drone",
       "details": "Local authorities reported an attack on two tankers. Strikes on enemy liquid cargo vessels are aimed at destroying the logistical chains of petroleum product delivery. The Russian tanker fleet is actively used both for export circumventing sanctions and for supplying fuel to the southern group of occupying forces.",
       "source": "Russian Media, OSINT"
     },
     "id": 208,
-    "image": "images/tanker-rosnjv.jpg"
+    "images": [
+      "images/tanker-rosnjv.jpg",
+      "video/tankerr1.MP4",
+      "video/tankerr2.MP4"
+    ]
   },
   {
     "date": "08.07.2026",
     "lat": 54.906976,
     "lng": 56.167804,
-    "distance": null,
+    "distance": 1443,
     "ru": {
       "region": "Республика Башкортостан, Уфа",
-      "target": "ЛПДС «Черкассы-ПП»",
+      "target": "Уфимская ЛПДС «Черкассы-ПП»",
       "category": "Топливная логистика",
       "weapon": "Дрон",
       "details": "ЛПДС «Черкассы-ПП» является важнейшим узлом трубопроводного транспорта и крупным хранилищем нефтепродуктов в районе Уфы. Рекордный удар на расстояние свыше 1400 км поразил резервуарный парк, что вызвало масштабный пожар. Уничтожение таких баз хранения нарушает стабильность распределения топлива внутри России.",
@@ -6550,7 +6544,7 @@ const strikeData = [
     },
     "uk": {
       "region": "Республіка Башкортостан, Уфа",
-      "target": "ЛВДС «Черкаси-ПП»",
+      "target": "Уфимська ЛВДС «Черкаси-ПП»",
       "category": "Паливна логістика",
       "weapon": "Дрон",
       "details": "ЛВДС «Черкаси-ПП» є найважливішим вузлом трубопровідного транспорту та великим сховищем нафтопродуктів у районі Уфи. Рекордний удар на відстань понад 1400 км вразив резервуарний парк, що викликало масштабну пожежу. Знищення таких баз зберігання порушує стабільність розподілу пального всередині Росії.",
@@ -6558,42 +6552,47 @@ const strikeData = [
     },
     "en": {
       "region": "Republic of Bashkortostan, Ufa",
-      "target": "LPDS \"Cherkassy-PP\"",
+      "target": "Ufa LPDS \"Cherkassy-PP\"",
       "category": "Fuel Logistics",
       "weapon": "Drone",
       "details": "LPDS \"Cherkassy-PP\" is a crucial pipeline transport hub and a large storage facility for petroleum products in the Ufa area. A record strike at a distance of over 1400 km hit the tank farm, causing a large-scale fire. The destruction of such storage bases disrupts the stability of fuel distribution within Russia.",
       "source": "SBU, OSINT"
     },
     "id": 209,
-    "image": "video/ufa1.mp4"
+    "images": [
+      "images/ufa1.jpg",
+      "images/ufa2.jpg",
+      "images/ufa3.jpg",
+      "video/ufa1.mp4"
+    ]
   },
   {
     "date": "09.07.2026",
     "lat": 45.4625,
     "lng": 36.64018,
-    "distance": null,
+    "distance": 288,
     "ru": {
       "region": "Азовское море (акватория)",
-      "target": "14 судов обеспечения РФ",
+      "target": "14 судов обеспечения (в т.ч. 12 танкеров)",
       "category": "Флот / Логистика",
       "weapon": "Дрон / БЭК",
-      "details": "Масштабная операция по ликвидации теневого флота РФ. Сервис NASA FIRMS зафиксировал мощные термические аномалии. Поражены 14 судов: 12 танкеров (включая «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один сухогруз и буксир. Систематические удары по морской логистике лишают оккупантов возможности безопасно снабжать крымскую группировку.",
+      "details": "Масштабная операция 8-9 июля по ликвидации теневого флота РФ в акватории Азовского моря. Украинские ударные дроны атаковали скопление судов, а сервис NASA FIRMS зафиксировал мощные термические аномалии. В результате поражены 14 судов: 12 танкеров (включая «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один сухогруз и буксир. Систематические удары по морской логистике лишают оккупантов возможности безопасно снабжать свои южные группировки топливом.",
       "source": "OSINT, NASA FIRMS"
     },
     "uk": {
       "region": "Азовське море (акваторія)",
-      "target": "14 суден забезпечення РФ",
+      "target": "14 суден забезпечення (в т.ч. 12 танкерів)",
       "category": "Флот / Логістика",
       "weapon": "Дрон / БЕК",
-      "details": "Масштабна операція з ліквідації тіньового флоту РФ. Сервіс NASA FIRMS зафіксував потужні термічні аномалії. Уражено 14 суден: 12 танкерів (включно з «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один суховантаж та буксир. Систематичні удари по морській логістиці позбавляють окупантів можливості безпечно постачати кримське угруповання.",
+      "details": "Масштабна операція 8-9 липня з ліквідації тіньового флоту РФ в акваторії Азовського моря. Українські ударні дрони атакували скупчення суден, а сервіс NASA FIRMS зафіксував потужні термічні аномалії. В результаті уражено 14 суден: 12 танкерів (включно з «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один суховантаж та буксир. Систематичні удари по морській логістиці позбавляють окупантів можливості безпечно постачати свої південні угруповання паливом.",
       "source": "OSINT, NASA FIRMS"
     },
     "en": {
       "region": "Sea of Azov (waters)",
-      "target": "14 Russian supply vessels",
+      "target": "14 supply vessels (incl. 12 tankers)",
       "category": "Fleet / Logistics",
       "weapon": "Drone / USV",
-      "details": "A large-scale operation to eliminate the Russian shadow fleet. The NASA FIRMS service recorded powerful thermal anomalies. 14 vessels were hit: 12 tankers (including \"Chelsea-6\", \"Aura\", \"Sonar-1\", \"Ilya Repin\"), one dry cargo ship, and a tugboat. Systematic strikes on maritime logistics deprive the occupiers of the ability to safely supply their Crimean grouping.",
+      "details": "A large-scale operation on July 8-9 to eliminate the Russian shadow fleet in the Sea of Azov. Ukrainian attack drones targeted a concentration of vessels, and the NASA FIRMS service recorded powerful thermal anomalies. As a result, 14 vessels were hit: 12 tankers (including \"Chelsea-6\", \"Aura\", \"Sonar-1\", \"Ilya Repin\"), one dry cargo ship, and a tugboat. Systematic strikes on maritime logistics deprive the occupiers of the ability to safely supply their southern groupings with fuel.",
       "source": "OSINT, NASA FIRMS"
     },
     "id": 210
@@ -6602,10 +6601,10 @@ const strikeData = [
     "date": "09.07.2026",
     "lat": 47.1,
     "lng": 39.4,
-    "distance": null,
+    "distance": 227,
     "ru": {
       "region": "Ростовская область, Азов",
-      "target": "Портовая инфраструктура / Нефтебаза",
+      "target": "Азовская портовая инфраструктура и нефтебаза",
       "category": "Нефтегаз / Логистика",
       "weapon": "Дрон",
       "details": "Город Азов играет важную роль в перевалке нефтепродуктов из внутренних регионов РФ в Черное море. Атака на местные объекты направлена на паралич портовой инфраструктуры, через которую оккупанты осуществляют логистическое обеспечение своих войск на южном фронте.",
@@ -6613,7 +6612,7 @@ const strikeData = [
     },
     "uk": {
       "region": "Ростовська область, Азов",
-      "target": "Портова інфраструктура / Нафтобаза",
+      "target": "Азовська портова інфраструктура та нафтобаза",
       "category": "Нафтогаз / Логістика",
       "weapon": "Дрон",
       "details": "Місто Азов відіграє важливу роль у перевалці нафтопродуктів із внутрішніх регіонів РФ у Чорне море. Атака на місцеві об'єкти спрямована на параліч портової інфраструктури, через яку окупанти здійснюють логістичне забезпечення своїх військ на південному фронті.",
@@ -6621,22 +6620,25 @@ const strikeData = [
     },
     "en": {
       "region": "Rostov Oblast, Azov",
-      "target": "Port infrastructure / Oil Depot",
+      "target": "Azov port infrastructure and oil depot",
       "category": "Oil & Gas / Logistics",
       "weapon": "Drone",
       "details": "The city of Azov plays an important role in the transshipment of petroleum products from the internal regions of the Russian Federation to the Black Sea. The attack on local facilities is aimed at paralyzing the port infrastructure through which the occupiers provide logistical support to their troops on the southern front.",
       "source": "Russian Media, OSINT"
     },
-    "id": 211
+    "id": 211,
+    "images": [
+      "images/azov1.jpg"
+    ]
   },
   {
     "date": "09.07.2026",
     "lat": 45.105562,
     "lng": 41.951864,
-    "distance": null,
+    "distance": 523,
     "ru": {
       "region": "Ставропольский край, Михайловск",
-      "target": "Нефтебаза",
+      "target": "Михайловская нефтебаза",
       "category": "Топливная логистика",
       "weapon": "Дрон",
       "details": "В городе Михайловск ударные дроны поразили крупную местную нефтебазу. Попадание привело к масштабному возгоранию резервуаров с ГСМ. Уничтожение топливных запасов в этом регионе усложняет снабжение российской военной техники на фронте и заставляет агрессора растягивать свои логистические линии.",
@@ -6644,7 +6646,7 @@ const strikeData = [
     },
     "uk": {
       "region": "Ставропольський край, Михайловськ",
-      "target": "Нафтобаза",
+      "target": "Михайлівська нафтобаза",
       "category": "Паливна логістика",
       "weapon": "Дрон",
       "details": "У місті Михайловськ ударні дрони вразили велику місцеву нафтобазу. Влучання призвело до масштабного займання резервуарів з ПММ. Знищення паливних запасів у цьому регіоні ускладнює постачання російської військової техніки на фронті та змушує агресора розтягувати свої логістичні лінії.",
@@ -6652,20 +6654,23 @@ const strikeData = [
     },
     "en": {
       "region": "Stavropol Krai, Mikhaylovsk",
-      "target": "Oil Depot",
+      "target": "Mikhaylovsk oil depot",
       "category": "Fuel Logistics",
       "weapon": "Drone",
       "details": "In the city of Mikhaylovsk, attack drones hit a large local oil depot. The strike led to a massive fire in fuel and lubricant tanks. The destruction of fuel reserves in this region complicates the supply of Russian military equipment at the front and forces the aggressor to stretch its logistical lines.",
       "source": "OSINT"
     },
     "id": 212,
-    "image": "video/miha1.mp4"
+    "images": [
+      "video/miha1.mp4",
+      "video/miha2.mp4"
+    ]
   },
   {
     "date": "09.07.2026",
     "lat": 56.85,
     "lng": 35.9,
-    "distance": null,
+    "distance": 665,
     "ru": {
       "region": "Тверь",
       "target": "Тверская нефтебаза (Тверьнефтепродукт)",
@@ -6691,6 +6696,15 @@ const strikeData = [
       "source": "Media, OSINT"
     },
     "id": 213,
-    "image": "video/tver2.mp4"
+    "images": [
+      "images/tver1.jpg",
+      "images/tver2.jpg",
+      "images/tver3.jpg",
+      "video/tver1.mp4",
+      "video/tver2.mp4",
+      "video/tver3.mp4",
+      "video/tver4.mp4",
+      "video/tver5.mp4"
+    ]
   }
 ];
