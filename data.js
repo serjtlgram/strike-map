@@ -6081,7 +6081,8 @@ const strikeData = [
       "category": "Нефтегаз",
       "weapon": "Дрон",
       "source": "Силы Обороны Украины",
-      "details": "Омский нефтеперерабатывающий завод — это гигантское предприятие, являющееся крупнейшим НПЗ в России по объему переработки нефти (свыше 21 млн тонн в год). Завод выступает критически важным звеном в производстве бензина, авиационного керосина и дизельного топлива, снабжая как гражданский сектор, так и огромную долю военной машины РФ. Точный и дальнобойный удар украинских сил (на расстоянии более 2200 км) по Омскому НПЗ вызвал масштабный пожар на технологических установках первичной переработки. Поражение столь важного и глубоко расположенного объекта в Сибири наносит колоссальный ущерб российской экономике и существенно усложняет обеспечение топливом оккупационных войск."
+      "details": "Омский нефтеперерабатывающий завод — это гигантское предприятие, являющееся крупнейшим НПЗ в России по объему переработки нефти (свыше 21 млн тонн в год). Завод выступает критически важным звеном в производстве бензина, авиационного керосина и дизельного топлива, снабжая как гражданский сектор, так и огромную долю военной машины РФ. Точный и дальнобойный удар украинских сил (на расстоянии более 2200 км) по Омскому НПЗ вызвал масштабный пожар на технологических установках первичной переработки. Поражение столь важного и глубоко расположенного объекта в Сибири наносит колоссальный ущерб российской экономике и существенно усложняет обеспечение топливом оккупационных войск.",
+      "media": "omsk-60726.MP4"
     },
     "uk": {
       "region": "Омська область, Омськ",
@@ -6089,7 +6090,8 @@ const strikeData = [
       "category": "Нафтогаз",
       "weapon": "Дрон",
       "source": "Сили Оборони України",
-      "details": "Омський нафтопереробний завод — це гігантське підприємство, що є найбільшим НПЗ у Росії за обсягом переробки нафти (понад 21 млн тонн на рік). Завод виступає критично важливою ланкою у виробництві бензину, авіаційного гасу та дизельного палива, постачаючи як цивільний сектор, так і величезну частку військової машини РФ. Точний і далекобійний удар українських сил (на відстані понад 2200 км) по Омському НПЗ викликав масштабну пожежу на технологічних установках первинної переробки. Ураження такого важливого і глибоко розташованого об'єкта в Сибіру завдає колосальної шкоди російській економіці та суттєво ускладнює забезпечення паливом окупаційних військ."
+      "details": "Омський нафтопереробний завод — це гігантське підприємство, що є найбільшим НПЗ у Росії за обсягом переробки нафти (понад 21 млн тонн на рік). Завод виступає критично важливою ланкою у виробництві бензину, авіаційного гасу та дизельного палива, постачаючи як цивільний сектор, так і величезну частку військової машини РФ. Точний і далекобійний удар українських сил (на відстані понад 2200 км) по Омському НПЗ викликав масштабну пожежу на технологічних установках первинної переробки. Ураження такого важливого і глибоко розташованого об'єкта в Сибіру завдає колосальної шкоди російській економіці та суттєво ускладнює забезпечення паливом окупаційних військ.",
+      "media": "omsk-60726.MP4"
     },
     "en": {
       "region": "Omsk Oblast, Omsk",
@@ -6097,7 +6099,8 @@ const strikeData = [
       "category": "Oil & Gas",
       "weapon": "Drone",
       "source": "Ukrainian Defense Forces",
-      "details": "The Omsk Oil Refinery is a massive enterprise, being the largest oil refinery in Russia by refining volume (over 21 million tons per year). The plant acts as a critical link in the production of gasoline, aviation kerosene, and diesel fuel, supplying both the civilian sector and a huge portion of the Russian military machine. A precise and long-range strike by Ukrainian forces (at a distance of over 2200 km) on the Omsk Refinery caused a large-scale fire at primary processing technological units. Striking such an important and deeply located target in Siberia inflicts colossal damage on the Russian economy and significantly complicates the supply of fuel to the occupying forces."
+      "details": "The Omsk Oil Refinery is a massive enterprise, being the largest oil refinery in Russia by refining volume (over 21 million tons per year). The plant acts as a critical link in the production of gasoline, aviation kerosene, and diesel fuel, supplying both the civilian sector and a huge portion of the Russian military machine. A precise and long-range strike by Ukrainian forces (at a distance of over 2200 km) on the Omsk Refinery caused a large-scale fire at primary processing technological units. Striking such an important and deeply located target in Siberia inflicts colossal damage on the Russian economy and significantly complicates the supply of fuel to the occupying forces.",
+      "media": "omsk-60726.MP4"
     },
     "id": 195,
     "images": [
@@ -6374,5 +6377,336 @@ const strikeData = [
     "images": [
       "video/krasnodar_opt.mp4"
     ]
+  },
+  {
+    "date": "08.07.2026",
+    "lat": 45.4,
+    "lng": 36.5,
+    "distance": null,
+    "ru": {
+      "region": "Азовское море (акватория)",
+      "target": "9 судов теневого флота (5 танкеров, 4 сухогруза)",
+      "category": "Флот / Логистика",
+      "weapon": "Дрон",
+      "details": "В акватории Азовского моря и вблизи Крымского моста украинские ударные дроны атаковали скопление судов. Поражены 9 судов, среди которых 5 танкеров теневого флота РФ, нелегально перевозящих нефтепродукты, и 4 сухогруза. Подобные операции серьезно нарушают логистику оккупантов на юге и блокируют морские поставки топлива для нужд агрессора.",
+      "source": "СБС, ВМС ВСУ, OSINT"
+    },
+    "uk": {
+      "region": "Азовське море (акваторія)",
+      "target": "9 суден тіньового флоту (5 танкерів, 4 суховантажі)",
+      "category": "Флот / Логістика",
+      "weapon": "Дрон",
+      "details": "В акваторії Азовського моря та поблизу Кримського мосту українські ударні дрони атакували скупчення суден. Уражено 9 суден, серед яких 5 танкерів тіньового флоту РФ, що нелегально перевозять нафтопродукти, та 4 суховантажі. Подібні операції серйозно порушують логістику окупантів на півдні та блокують морські поставки пального для потреб агресора.",
+      "source": "СБС, ВМС ЗСУ, OSINT"
+    },
+    "en": {
+      "region": "Sea of Azov (waters)",
+      "target": "9 shadow fleet vessels (5 tankers, 4 dry cargo ships)",
+      "category": "Fleet / Logistics",
+      "weapon": "Drone",
+      "details": "In the Sea of Azov and near the Crimean Bridge, Ukrainian attack drones targeted a concentration of vessels. Nine ships were hit, including five Russian shadow fleet tankers illegally transporting petroleum products, and four dry cargo ships. Such operations seriously disrupt the occupiers' logistics in the south and block maritime fuel supplies for the aggressor's needs.",
+      "source": "SBS, Ukrainian Navy, OSINT"
+    },
+    "id": 204
+  },
+  {
+    "date": "08.07.2026",
+    "lat": 51.361661,
+    "lng": 42.190028,
+    "distance": null,
+    "ru": {
+      "region": "Воронежская область, Борисоглебск",
+      "target": "Военный аэродром «Борисоглебск»",
+      "category": "Аэродром",
+      "weapon": "Дрон",
+      "details": "Военный аэродром Борисоглебск активно используется авиацией ВКС РФ для нанесения бомбовых ударов по территории Украины. На базе размещаются истребители-бомбардировщики Су-34, многоцелевые Су-35, Су-30СМ. В результате атаки дронов на территории авиабазы прогремели взрывы. Поражение таких объектов существенно снижает боевые возможности российской авиации и интенсивность ударов КАБами.",
+      "source": "ССО, OSINT",
+      "media": "borisoglebsk1.jpg"
+    },
+    "uk": {
+      "region": "Воронезька область, Борисоглєбськ",
+      "target": "Військовий аеродром «Борисоглєбськ»",
+      "category": "Аеродром",
+      "weapon": "Дрон",
+      "details": "Військовий аеродром Борисоглєбськ активно використовується авіацією ПКС РФ для нанесення бомбових ударів по території України. На базі розміщуються винищувачі-бомбардувальники Су-34, багатоцільові Су-35, Су-30СМ. Внаслідок атаки дронів на території авіабази пролунали вибухи. Ураження таких об'єктів суттєво знижує бойові можливості російської авіації та інтенсивність ударів КАБами.",
+      "source": "ССО, OSINT",
+      "media": "borisoglebsk1.jpg"
+    },
+    "en": {
+      "region": "Voronezh Oblast, Borisoglebsk",
+      "target": "Borisoglebsk Military Airbase",
+      "category": "Airbase",
+      "weapon": "Drone",
+      "details": "The Borisoglebsk military airfield is actively used by the Russian Aerospace Forces to launch bomb strikes on Ukrainian territory. Su-34 fighter-bombers, multirole Su-35s, and Su-30SMs are stationed at the base. As a result of a drone attack, explosions rocked the airbase territory. Striking such targets significantly reduces the combat capabilities of Russian aviation and the intensity of glide bomb attacks.",
+      "source": "SSO, OSINT",
+      "media": "borisoglebsk1.jpg"
+    },
+    "id": 205
+  },
+  {
+    "date": "08.07.2026",
+    "lat": 51.456835,
+    "lng": 45.940629,
+    "distance": null,
+    "ru": {
+      "region": "Саратов",
+      "target": "Саратовский НПЗ",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Саратовский нефтеперерабатывающий завод входит в число важнейших предприятий нефтегазового сектора России. Целью удара стала установка изомеризации пентан-гексановой фракции. Успешное поражение таких высокотехнологичных установок надолго выводит мощности завода из строя, нанося значительный ущерб и снижая объемы производства топлива для нужд российской армии.",
+      "source": "ГУР, OSINT",
+      "media": "saratov-2.MP4"
+    },
+    "uk": {
+      "region": "Саратов",
+      "target": "Саратовський НПЗ",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Саратовський нафтопереробний завод входить до числа найважливіших підприємств нафтогазового сектору Росії. Ціллю удару стала установка ізомеризації пентан-гексанової фракції. Успішне ураження таких високотехнологічних установок надовго виводить потужності заводу з ладу, завдаючи значної шкоди та знижуючи обсяги виробництва пального для потреб російської армії.",
+      "source": "ГУР, OSINT",
+      "media": "saratov-2.MP4"
+    },
+    "en": {
+      "region": "Saratov",
+      "target": "Saratov Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "The Saratov Oil Refinery is among the most important enterprises in Russia's oil and gas sector. The target of the strike was the pentane-hexane fraction isomerization unit. Successfully hitting such high-tech units disables the plant's capacities for a long time, causing significant damage and reducing fuel production volumes for the needs of the Russian army.",
+      "source": "GUR, OSINT",
+      "media": "saratov-2.MP4"
+    },
+    "id": 206
+  },
+  {
+    "date": "08.07.2026",
+    "lat": 55.604904,
+    "lng": 51.955749,
+    "distance": null,
+    "ru": {
+      "region": "Республика Татарстан, Нижнекамск",
+      "target": "Нижнекамский НПЗ (ТАИФ-НК)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Одно из крупнейших нефтехимических предприятий РФ («Нижнекамскнефтехим»), расположенное на удалении более 1000 км от границы. Атаке подверглась установка первичной переработки нефти ЕЛОУ-АВТ-7. Вывод из строя данного комплекса парализует значительную часть производственного цикла, нанося мощный удар по доходам агрессора и демонстрируя растущие возможности украинских дальнобойных систем.",
+      "source": "ГУР, СБУ, OSINT",
+      "media": "nizhnekamsk-4.mp4"
+    },
+    "uk": {
+      "region": "Республіка Татарстан, Нижньокамськ",
+      "target": "Нижньокамський НПЗ (ТАІФ-НК)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Одне з найбільших нафтохімічних підприємств РФ («Нижньокамськнафтохім»), розташоване на відстані понад 1000 км від кордону. Атаці піддалася установка первинної переробки нафти ЕЛОУ-АВТ-7. Виведення з ладу цього комплексу паралізує значну частину виробничого циклу, завдаючи потужного удару по доходах агресора та демонструючи зростаючі можливості українських далекобійних систем.",
+      "source": "ГУР, СБУ, OSINT",
+      "media": "nizhnekamsk-4.mp4"
+    },
+    "en": {
+      "region": "Republic of Tatarstan, Nizhnekamsk",
+      "target": "Nizhnekamsk Refinery (TAIF-NK)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "One of the largest petrochemical enterprises in the Russian Federation (\"Nizhnekamskneftekhim\"), located more than 1000 km from the border. The ELOU-AVT-7 primary oil processing unit was attacked. Disabling this complex paralyzes a significant part of the production cycle, dealing a powerful blow to the aggressor's revenues and demonstrating the growing capabilities of Ukrainian long-range systems.",
+      "source": "GUR, SBU, OSINT",
+      "media": "nizhnekamsk-4.mp4"
+    },
+    "id": 207
+  },
+  {
+    "date": "08.07.2026",
+    "lat": 47.1,
+    "lng": 39.4,
+    "distance": null,
+    "ru": {
+      "region": "Ростовская область",
+      "target": "2 танкера",
+      "category": "Флот / Логистика",
+      "weapon": "Дрон",
+      "details": "Местные власти сообщили об атаке на два танкера. Удары по наливным судам противника направлены на разрушение логистических цепочек доставки нефтепродуктов. Танкерный флот РФ активно используется как для экспорта в обход санкций, так и для обеспечения топливом южной группировки оккупационных войск.",
+      "source": "СМИ РФ, OSINT",
+      "media": "tanker-rosnjv.jpg"
+    },
+    "uk": {
+      "region": "Ростовська область",
+      "target": "2 танкери",
+      "category": "Флот / Логістика",
+      "weapon": "Дрон",
+      "details": "Місцева влада повідомила про атаку на два танкери. Удари по наливних суднах противника спрямовані на руйнування логістичних ланцюжків доставки нафтопродуктів. Танкерний флот РФ активно використовується як для експорту в обхід санкцій, так і для забезпечення паливом південного угруповання окупаційних військ.",
+      "source": "ЗМІ РФ, OSINT",
+      "media": "tanker-rosnjv.jpg"
+    },
+    "en": {
+      "region": "Rostov Oblast",
+      "target": "2 tankers",
+      "category": "Fleet / Logistics",
+      "weapon": "Drone",
+      "details": "Local authorities reported an attack on two tankers. Strikes on enemy liquid cargo vessels are aimed at destroying the logistical chains of petroleum product delivery. The Russian tanker fleet is actively used both for export circumventing sanctions and for supplying fuel to the southern group of occupying forces.",
+      "source": "Russian Media, OSINT",
+      "media": "tanker-rosnjv.jpg"
+    },
+    "id": 208
+  },
+  {
+    "date": "08.07.2026",
+    "lat": 54.906976,
+    "lng": 56.167804,
+    "distance": null,
+    "ru": {
+      "region": "Республика Башкортостан, Уфа",
+      "target": "ЛПДС «Черкассы-ПП»",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "ЛПДС «Черкассы-ПП» является важнейшим узлом трубопроводного транспорта и крупным хранилищем нефтепродуктов в районе Уфы. Рекордный удар на расстояние свыше 1400 км поразил резервуарный парк, что вызвало масштабный пожар. Уничтожение таких баз хранения нарушает стабильность распределения топлива внутри России.",
+      "source": "СБУ, OSINT",
+      "media": "ufa1.mp4"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, Уфа",
+      "target": "ЛВДС «Черкаси-ПП»",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "ЛВДС «Черкаси-ПП» є найважливішим вузлом трубопровідного транспорту та великим сховищем нафтопродуктів у районі Уфи. Рекордний удар на відстань понад 1400 км вразив резервуарний парк, що викликало масштабну пожежу. Знищення таких баз зберігання порушує стабільність розподілу пального всередині Росії.",
+      "source": "СБУ, OSINT",
+      "media": "ufa1.mp4"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Ufa",
+      "target": "LPDS \"Cherkassy-PP\"",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "LPDS \"Cherkassy-PP\" is a crucial pipeline transport hub and a large storage facility for petroleum products in the Ufa area. A record strike at a distance of over 1400 km hit the tank farm, causing a large-scale fire. The destruction of such storage bases disrupts the stability of fuel distribution within Russia.",
+      "source": "SBU, OSINT",
+      "media": "ufa1.mp4"
+    },
+    "id": 209
+  },
+  {
+    "date": "09.07.2026",
+    "lat": 45.4625,
+    "lng": 36.64018,
+    "distance": null,
+    "ru": {
+      "region": "Азовское море (акватория)",
+      "target": "14 судов обеспечения РФ",
+      "category": "Флот / Логистика",
+      "weapon": "Дрон / БЭК",
+      "details": "Масштабная операция по ликвидации теневого флота РФ. Сервис NASA FIRMS зафиксировал мощные термические аномалии. Поражены 14 судов: 12 танкеров (включая «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один сухогруз и буксир. Систематические удары по морской логистике лишают оккупантов возможности безопасно снабжать крымскую группировку.",
+      "source": "OSINT, NASA FIRMS"
+    },
+    "uk": {
+      "region": "Азовське море (акваторія)",
+      "target": "14 суден забезпечення РФ",
+      "category": "Флот / Логістика",
+      "weapon": "Дрон / БЕК",
+      "details": "Масштабна операція з ліквідації тіньового флоту РФ. Сервіс NASA FIRMS зафіксував потужні термічні аномалії. Уражено 14 суден: 12 танкерів (включно з «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один суховантаж та буксир. Систематичні удари по морській логістиці позбавляють окупантів можливості безпечно постачати кримське угруповання.",
+      "source": "OSINT, NASA FIRMS"
+    },
+    "en": {
+      "region": "Sea of Azov (waters)",
+      "target": "14 Russian supply vessels",
+      "category": "Fleet / Logistics",
+      "weapon": "Drone / USV",
+      "details": "A large-scale operation to eliminate the Russian shadow fleet. The NASA FIRMS service recorded powerful thermal anomalies. 14 vessels were hit: 12 tankers (including \"Chelsea-6\", \"Aura\", \"Sonar-1\", \"Ilya Repin\"), one dry cargo ship, and a tugboat. Systematic strikes on maritime logistics deprive the occupiers of the ability to safely supply their Crimean grouping.",
+      "source": "OSINT, NASA FIRMS"
+    },
+    "id": 210
+  },
+  {
+    "date": "09.07.2026",
+    "lat": 47.1,
+    "lng": 39.4,
+    "distance": null,
+    "ru": {
+      "region": "Ростовская область, Азов",
+      "target": "Портовая инфраструктура / Нефтебаза",
+      "category": "Нефтегаз / Логистика",
+      "weapon": "Дрон",
+      "details": "Город Азов играет важную роль в перевалке нефтепродуктов из внутренних регионов РФ в Черное море. Атака на местные объекты направлена на паралич портовой инфраструктуры, через которую оккупанты осуществляют логистическое обеспечение своих войск на южном фронте.",
+      "source": "СМИ РФ, OSINT"
+    },
+    "uk": {
+      "region": "Ростовська область, Азов",
+      "target": "Портова інфраструктура / Нафтобаза",
+      "category": "Нафтогаз / Логістика",
+      "weapon": "Дрон",
+      "details": "Місто Азов відіграє важливу роль у перевалці нафтопродуктів із внутрішніх регіонів РФ у Чорне море. Атака на місцеві об'єкти спрямована на параліч портової інфраструктури, через яку окупанти здійснюють логістичне забезпечення своїх військ на південному фронті.",
+      "source": "ЗМІ РФ, OSINT"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov",
+      "target": "Port infrastructure / Oil Depot",
+      "category": "Oil & Gas / Logistics",
+      "weapon": "Drone",
+      "details": "The city of Azov plays an important role in the transshipment of petroleum products from the internal regions of the Russian Federation to the Black Sea. The attack on local facilities is aimed at paralyzing the port infrastructure through which the occupiers provide logistical support to their troops on the southern front.",
+      "source": "Russian Media, OSINT"
+    },
+    "id": 211
+  },
+  {
+    "date": "09.07.2026",
+    "lat": 45.105562,
+    "lng": 41.951864,
+    "distance": null,
+    "ru": {
+      "region": "Ставропольский край, Михайловск",
+      "target": "Нефтебаза",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "В городе Михайловск ударные дроны поразили крупную местную нефтебазу. Попадание привело к масштабному возгоранию резервуаров с ГСМ. Уничтожение топливных запасов в этом регионе усложняет снабжение российской военной техники на фронте и заставляет агрессора растягивать свои логистические линии.",
+      "source": "OSINT",
+      "media": "miha1.mp4"
+    },
+    "uk": {
+      "region": "Ставропольський край, Михайловськ",
+      "target": "Нафтобаза",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "У місті Михайловськ ударні дрони вразили велику місцеву нафтобазу. Влучання призвело до масштабного займання резервуарів з ПММ. Знищення паливних запасів у цьому регіоні ускладнює постачання російської військової техніки на фронті та змушує агресора розтягувати свої логістичні лінії.",
+      "source": "OSINT",
+      "media": "miha1.mp4"
+    },
+    "en": {
+      "region": "Stavropol Krai, Mikhaylovsk",
+      "target": "Oil Depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "In the city of Mikhaylovsk, attack drones hit a large local oil depot. The strike led to a massive fire in fuel and lubricant tanks. The destruction of fuel reserves in this region complicates the supply of Russian military equipment at the front and forces the aggressor to stretch its logistical lines.",
+      "source": "OSINT",
+      "media": "miha1.mp4"
+    },
+    "id": 212
+  },
+  {
+    "date": "09.07.2026",
+    "lat": 56.85,
+    "lng": 35.9,
+    "distance": null,
+    "ru": {
+      "region": "Тверь",
+      "target": "Тверская нефтебаза (Тверьнефтепродукт)",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Беспилотники атаковали нефтебазу «Тверьнефтепродукт», что привело к сильному пожару. Эта инфраструктура используется для снабжения топливом центральных и северо-западных регионов России, а также военных баз. Систематическое уничтожение объектов хранения ГСМ истощает ресурсы агрессора.",
+      "source": "СМИ, OSINT",
+      "media": "tver2.mp4"
+    },
+    "uk": {
+      "region": "Твер",
+      "target": "Тверська нафтобаза (Твернафтопродукт)",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Безпілотники атакували нафтобазу «Твернафтопродукт», що призвело до сильної пожежі. Ця інфраструктура використовується для постачання пального центральним і північно-західним регіонам Росії, а також військовим базам. Систематичне знищення об'єктів зберігання ПММ виснажує ресурси агресора.",
+      "source": "ЗМІ, OSINT",
+      "media": "tver2.mp4"
+    },
+    "en": {
+      "region": "Tver",
+      "target": "Tver Oil Depot (Tvernefteprodukt)",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Drones attacked the Tvernefteprodukt oil depot, leading to a massive fire. This infrastructure is used to supply fuel to the central and northwestern regions of Russia, as well as military bases. The systematic destruction of fuel storage facilities depletes the aggressor's resources.",
+      "source": "Media, OSINT",
+      "media": "tver2.mp4"
+    },
+    "id": 213
   }
 ];
