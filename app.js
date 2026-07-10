@@ -685,6 +685,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
+            marker.on('popupopen', () => {
+                listItem.classList.add('theme-active-item');
+                if (window.innerWidth >= 768) {
+                    listItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
+
+            marker.on('popupclose', () => {
+                listItem.classList.remove('theme-active-item');
+            });
+
             objectList.appendChild(listItem);
         });
 
