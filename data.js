@@ -6488,7 +6488,7 @@ const strikeData = [
       "video/nizhnekamsk-1.mp4",
       "video/nizhnekamsk-2.mp4",
       "video/nizhnekamsk-3.mp4",
-      "video/nizhnekamsk-4.mp4",
+      "video/nizhnekamsk-4_opt.mp4",
       "video/nizhnekamsk-5.mp4",
       "video/nizhnekamsk-6.mp4"
     ]
@@ -6525,8 +6525,8 @@ const strikeData = [
     "id": 208,
     "images": [
       "images/tanker-rosnjv.jpg",
-      "video/tankerr1.MP4",
-      "video/tankerr2.MP4"
+      "video/tankerr1_opt.mp4",
+      "video/tankerr2_opt.mp4"
     ]
   },
   {
@@ -6706,5 +6706,284 @@ const strikeData = [
       "video/tver4.mp4",
       "video/tver5.mp4"
     ]
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 44.860573,
+    "lng": 38.614943,
+    "distance": 425,
+    "ru": {
+      "region": "Краснодарский край, Ильский (Северский район)",
+      "target": "Ільський НПЗ — установка АВТ-6",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Ільський НПЗ ім. А.А. Шамара (КНГК-ІНПЗ) — один з найбільших нафтопереробних заводів Півдня Росії потужністю 6,6 млн тонн нафти на рік. Об'єкт займає стратегічне положення поблизу чорноморських і азовських портів Новоросійськ, Туапсе, Темрюк, через які здійснюється експорт нафтопродуктів. В ніч на 10 липня ударні БПЛА атакували завод, при цьому в зону займання потрапила установка АВТ-6 — найбільша установка первинної переробки нафти потужністю 3,6 млн тонн на рік, що забезпечує 56% загального обсягу переробки НПЗ. Також зафіксовано пошкодження трубопроводів і займання поблизу установок АТ-2 і АТ-3. ГУР МО і Генштаб ЗСУ підтвердили успішний удар, підкресливши ключову роль об'єкта у забезпеченні паливом російських військ на півдні.",
+      "source": "ГУР МО, Генштаб ВСУ, OSINT"
+    },
+    "uk": {
+      "region": "Краснодарський край, Ільський (Северський район)",
+      "target": "Ільський НПЗ — установка АВТ-6",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Ільський НПЗ ім. А.А. Шамара (КНГК-ІНПЗ) — один з найбільших нафтопереробних заводів Півдня Росії потужністю 6,6 млн тонн нафти на рік. Об'єкт займає стратегічне положення поблизу чорноморських і азовських портів Новоросійськ, Туапсе, Темрюк, через які здійснюється експорт нафтопродуктів. В ніч на 10 липня ударні БПЛА атакували завод, при цьому в зону займання потрапила установка АВТ-6 — найбільша установка первинної переробки нафти потужністю 3,6 млн тонн на рік, що забезпечує 56% загального обсягу переробки НПЗ. Також зафіксовано пошкодження трубопроводів і займання поблизу установок АТ-2 і АТ-3. ГУР МО і Генштаб ЗСУ підтвердили успішний удар, підкресливши ключову роль об'єкта у забезпеченні паливом російських військ на півдні.",
+      "source": "ГУР МО, Генштаб ЗСУ, OSINT"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Ilsky (Seversky District)",
+      "target": "Ilsky Refinery — AVT-6 Primary Distillation Unit",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "The Ilsky Oil Refinery (KNGK-INPZ) is one of the largest refineries in Southern Russia, with a capacity of 6.6 million tonnes of oil per year. The facility holds a strategic position near the Black Sea and Azov ports of Novorossiysk, Tuapse, and Temryuk, through which petroleum product exports are conducted. On the night of July 10, attack drones struck the refinery, with the AVT-6 unit — the largest primary oil distillation unit with a capacity of 3.6 million tonnes per year, accounting for 56% of total refinery output — falling within the fire zone. Pipeline damage and fires near the AT-2 and AT-3 units were also recorded. Ukraine's GUR and AFU General Staff confirmed the successful strike, emphasizing the facility's key role in supplying fuel to Russian forces in the south.",
+      "source": "GUR MoD, AFU General Staff, OSINT"
+    },
+    "id": 214
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 47.202043,
+    "lng": 38.946455,
+    "distance": 199,
+    "ru": {
+      "region": "Ростовская область, Таганрог (район порта)",
+      "target": "Портовый терминал «КурганНефтепродукт» (ОАО «Югтранзитсервис»)",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Портовый терминал ООО «КурганНефтепродукт» (бывш. ОАО «Югтранзитсервис») расположен в морском порту Таганрога и специализируется на перевалке нефтепродуктов на морские суда. Терминал является важным звеном в цепочке экспорта нефтепродуктов из внутренних регионов России через Азовское море. В ночь на 10 июля в районе порта Таганрога была зафиксирована продолжительная атака беспилотников — местные жители сообщали о взрывах и пожарах на протяжении всей ночи. В результате на территории терминала вспыхнул масштабный пожар. Губернатор Ростовской области подтвердил факт атаки и пожара в морском порту. Власти объявили эвакуацию жителей прилегающих кварталов в связи с сохраняющейся угрозой.",
+      "source": "OSINT, СМИ РФ, Губернатор Ростовской области"
+    },
+    "uk": {
+      "region": "Ростовська область, Таганрог (район порту)",
+      "target": "Портовий термінал «КурганНафтопродукт» (ВАТ «Югтранзитсервіс»)",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Портовий термінал ТОВ «КурганНафтопродукт» (кол. ВАТ «Югтранзитсервіс») розташований у морському порту Таганрога і спеціалізується на перевалці нафтопродуктів на морські судна. Термінал є важливою ланкою в ланцюжку експорту нафтопродуктів із внутрішніх регіонів Росії через Азовське море. В ніч на 10 липня в районі порту Таганрога було зафіксовано тривалу атаку безпілотників — місцеві жителі повідомляли про вибухи і пожежі впродовж усієї ночі. В результаті на території терміналу спалахнула масштабна пожежа. Губернатор Ростовської області підтвердив факт атаки і пожежі в морському порту. Влада оголосила евакуацію жителів прилеглих кварталів у зв'язку з загрозою, що зберігається.",
+      "source": "OSINT, ЗМІ РФ, Губернатор Ростовської області"
+    },
+    "en": {
+      "region": "Rostov Oblast, Taganrog (port area)",
+      "target": "Port Terminal 'KurganNefteprodukt' (JSC 'Yugtransitservis')",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "The port terminal of KurganNefteprodukt LLC (formerly JSC Yugtransitservis) is located in the sea port of Taganrog and specializes in the transshipment of petroleum products onto sea vessels. The terminal is a key link in the export chain for petroleum products from Russia's interior regions through the Sea of Azov. On the night of July 10, a prolonged drone attack was recorded in the port area of Taganrog — local residents reported explosions and fires throughout the night. As a result, a large-scale fire broke out on the terminal's territory. The Governor of Rostov Oblast confirmed the attack and the fire in the sea port. Authorities announced the evacuation of residents of neighboring blocks due to the ongoing threat.",
+      "source": "OSINT, Russian Media, Governor of Rostov Oblast"
+    },
+    "id": 215
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 47.093611,
+    "lng": 39.413056,
+    "distance": 228,
+    "ru": {
+      "region": "Ростовская область, Азов",
+      "target": "АО «Азовский оптико-механический завод» (АОМЗ)",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "АО «Азовский оптико-механический завод» (АОМЗ) — ключевое предприятие оборонно-промышленного комплекса России, специализирующееся на разработке и производстве оптико-электронных, радиолокационных и высокоточных систем. Завод выпускает тепловизионные прицелы, оптические приборы для бронетехники и авиации, а также прицельные комплексы для вооружений — продукцию, которая напрямую применяется на фронте. В ніч на 10 июля в промышленной зоне Азова, где расположен АОМЗ, был зафиксирован пожар. По данным OSINT-анализа геолокации видеозаписей с места событий, возгорание произошло в районе завода. Официального подтверждения от российских властей не поступало, однако OSINT-сообщества (Exilenova+) подтвердили идентификацию по геолокации.",
+      "source": "OSINT (Exilenova+), СМИ"
+    },
+    "uk": {
+      "region": "Ростовська область, Азов",
+      "target": "АТ «Азовський оптико-механічний завод» (АОМЗ)",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "АТ «Азовський оптико-механічний завод» (АОМЗ) — ключове підприємство оборонно-промислового комплексу Росії, яке спеціалізується на розробці та виробництві оптико-електронних, радіолокаційних і високоточних систем. Завод випускає тепловізійні приціли, оптичні прилади для бронетехніки та авіації, а також прицільні комплекси для озброєнь — продукцію, яка безпосередньо застосовується на фронті. В ніч на 10 липня в промисловій зоні Азова, де розташований АОМЗ, зафіксовано пожежу. За даними OSINT-аналізу геолокації відеозаписів з місця подій, займання сталося в районі заводу. Офіційного підтвердження від російських властей не надійшло, проте OSINT-спільноти (Exilenova+) підтвердили ідентифікацію за геолокацією.",
+      "source": "OSINT (Exilenova+), ЗМІ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov",
+      "target": "JSC 'Azov Optical-Mechanical Plant' (AOMZ)",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "JSC 'Azov Optical-Mechanical Plant' (AOMZ) is a key enterprise of Russia's defense-industrial complex, specializing in the development and production of optoelectronic, radar, and precision systems. The plant produces thermal imaging sights, optical instruments for armored vehicles and aircraft, as well as targeting systems for weapons — products directly used at the front. On the night of July 10, a fire was recorded in the industrial zone of Azov where AOMZ is located. According to OSINT geolocation analysis of video footage from the scene, the fire occurred in the area of the plant. No official confirmation was received from Russian authorities, however OSINT communities (Exilenova+) confirmed identification by geolocation.",
+      "source": "OSINT (Exilenova+), Media"
+    },
+    "id": 216
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 47.111246,
+    "lng": 39.38205,
+    "distance": 225,
+    "ru": {
+      "region": "Ростовская область, Азов (территория порта)",
+      "target": "Нефтебаза «Порт» (Decal Azov) — портовый резервуарный парк",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Нефтебаза «Порт» (известная также как Decal Azov) расположена непосредственно на территории морского порта Азов — одного из ключевых пунктов перевалки нефтепродуктов на Азовском море. Резервуарный парк обеспечивает хранение и последующую погрузку топлива на суда теневого флота, которые вывозят нефтепродукты в обход санкций. В ночь на 10 июля по всем пяти нефтебазам города Азов были нанесены скоординированные удары беспилотников. Возгорание портовой нефтебазы подтверждено фото- и видеозаписями с геолокацией. Уничтожение резервуаров в порту непосредственно парализует экспортную перевалку нефтепродуктов.",
+      "source": "OSINT, СМИ РФ"
+    },
+    "uk": {
+      "region": "Ростовська область, Азов (територія порту)",
+      "target": "Нафтобаза «Порт» (Decal Azov) — портовий резервуарний парк",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Нафтобаза «Порт» (також відома як Decal Azov) розташована безпосередньо на території морського порту Азов — одного з ключових пунктів перевалки нафтопродуктів на Азовському морі. Резервуарний парк забезпечує зберігання та подальше завантаження палива на судна тіньового флоту, які вивозять нафтопродукти в обхід санкцій. В ніч на 10 липня по всіх п'яти нафтобазах міста Азов були завдані скоординовані удари безпілотників. Займання портової нафтобази підтверджено фото- та відеозаписами з геолокацією. Знищення резервуарів у порту безпосередньо паралізує експортну перевалку нафтопродуктів.",
+      "source": "OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov (port territory)",
+      "target": "Oil Depot 'Port' (Decal Azov) — port tank farm",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "The 'Port' oil depot (also known as Decal Azov) is located directly on the territory of the Azov sea port — one of the key transshipment points for petroleum products on the Sea of Azov. The tank farm provides storage and subsequent loading of fuel onto shadow fleet vessels that export petroleum products in circumvention of sanctions. On the night of July 10, coordinated drone strikes were conducted against all five oil depots in the city of Azov. The fire at the port oil depot was confirmed by geolocated photo and video evidence. The destruction of the port tanks directly paralyzes the export transshipment of petroleum products.",
+      "source": "OSINT, Russian Media"
+    },
+    "id": 217
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 47.098398,
+    "lng": 39.379148,
+    "distance": 226,
+    "ru": {
+      "region": "Ростовская область, Азов",
+      "target": "Нефтебаза №1 ООО «ДонТерминал»",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Нефтебаза ООО «ДонТерминал» входит в портовую нефтеэкспортную инфраструктуру Азова и расположена в 2 км от порта. Предприятие специализируется на хранении и перевалке больших объёмов нефтепродуктов, являясь частью единой логистической цепи поставок топлива из внутренних регионов РФ на международные рынки и для нужд оккупационных войск. В ночь на 10 июля нефтебаза была атакована вместе с другими четырьмя объектами хранения нефтепродуктов в Азове. Фото- и видеоматериалы с геолокацией подтвердили возгорание в районе объекта. Скоординированное поражение всех нефтебаз города разрушает местный узел топливной логистики.",
+      "source": "OSINT, СМИ РФ"
+    },
+    "uk": {
+      "region": "Ростовська область, Азов",
+      "target": "Нафтобаза №1 ТОВ «ДонТермінал»",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Нафтобаза ТОВ «ДонТермінал» входить до портової нафтоекспортної інфраструктури Азова і розташована в 2 км від порту. Підприємство спеціалізується на зберіганні та перевалці великих обсягів нафтопродуктів, будучи частиною єдиного логістичного ланцюга постачання палива з внутрішніх регіонів РФ на міжнародні ринки та для потреб окупаційних військ. В ніч на 10 липня нафтобаза була атакована разом з іншими чотирма об'єктами зберігання нафтопродуктів в Азові. Фото- та відеоматеріали з геолокацією підтвердили займання в районі об'єкта. Скоординоване ураження всіх нафтобаз міста руйнує місцевий вузол паливної логістики.",
+      "source": "OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov",
+      "target": "Oil Depot No. 1 — DonTerminal LLC",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "The DonTerminal LLC oil depot is part of Azov's port oil export infrastructure, located 2 km from the port. The enterprise specializes in the storage and transshipment of large volumes of petroleum products, forming part of the integrated logistics chain supplying fuel from Russia's interior regions to international markets and for the needs of the occupying forces. On the night of July 10, the depot was attacked along with four other petroleum storage facilities in Azov. Geolocated photo and video evidence confirmed fires in the area of the facility. The coordinated destruction of all city oil depots dismantles the local fuel logistics hub.",
+      "source": "OSINT, Russian Media"
+    },
+    "id": 218
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 47.09648,
+    "lng": 39.426216,
+    "distance": 228,
+    "ru": {
+      "region": "Ростовская область, Азов (жд ст. Азов)",
+      "target": "Нефтебаза №2 — нефтебаза железнодорожной станции «Азов»",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Нефтебаза при железнодорожной станции «Азов» обеспечивает прием, хранение и перегрузку нефтепродуктов с железнодорожного транспорта. Это ключевой узел «сухопутного плеча» цепи поставок топлива, по которой горючее из нефтяных регионов страны поступает в Азов и далее на флот. В ночь на 10 июля объект подвергся удару беспилотников в рамках масштабной операции по поражению нефтяной инфраструктуры города. Возгорание зафиксировано по спутниковым данным и фото- и видеозаписям. Поражение этого узла обрывает железнодорожный маршрут подвоза нефтепродуктов к портовым терминалам Азова.",
+      "source": "OSINT, СМИ РФ"
+    },
+    "uk": {
+      "region": "Ростовська область, Азов (зал. ст. Азов)",
+      "target": "Нафтобаза №2 — нафтобаза залізничної станції «Азов»",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Нафтобаза при залізничній станції «Азов» забезпечує приймання, зберігання та перевантаження нафтопродуктів із залізничного транспорту. Це ключовий вузол «сухопутного плеча» ланцюга постачання палива, по якому пальне з нафтових регіонів країни надходить до Азова та далі на флот. В ніч на 10 липня об'єкт зазнав удару безпілотників в рамках масштабної операції з ураження нафтової інфраструктури міста. Займання зафіксовано за супутниковими даними і фото- та відеозаписами. Ураження цього вузла перериває залізничний маршрут підвозу нафтопродуктів до портових терміналів Азова.",
+      "source": "OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov (Azov railway station)",
+      "target": "Oil Depot No. 2 — Azov Railway Station fuel depot",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "The oil depot at Azov railway station handles the reception, storage, and transshipment of petroleum products from rail transport. It is a key node in the 'land leg' of the fuel supply chain, through which fuel from Russia's oil regions reaches Azov and subsequently the fleet. On the night of July 10, the facility was struck by drones as part of a large-scale operation targeting the city's oil infrastructure. Fires were confirmed by satellite data and photo and video evidence. Striking this hub cuts the railway supply route for petroleum products to Azov's port terminals.",
+      "source": "OSINT, Russian Media"
+    },
+    "id": 219
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 47.067811,
+    "lng": 39.435359,
+    "distance": 231,
+    "ru": {
+      "region": "Ростовская область, Азов (южная промзона)",
+      "target": "Нефтебазы №3 и №4 — южная промышленная зона Азова",
+      "category": "Топливная логистика",
+      "weapon": "Дрон",
+      "details": "Два объекта хранения нефтепродуктов расположены в южной промышленной зоне Азова, образуя часть разветвлённой инфраструктуры топливных резервуаров города. В ночь на 10 июля оба объекта были одновременно атакованы в рамках масштабной скоординированной операции — ударам подверглись все пять нефтебаз Азова. Возгорание зафиксировано фото- и видеоматериалами с привязкой к местности. Одновременное поражение всех резервуарных хранилищ города нанесло серьёзный урон нефтетранзитному потенциалу порта Азов, который является важным звеном цепочки снабжения оккупационных сил топливом.",
+      "source": "OSINT, СМИ РФ"
+    },
+    "uk": {
+      "region": "Ростовська область, Азов (південна промзона)",
+      "target": "Нафтобази №3 і №4 — південна промислова зона Азова",
+      "category": "Паливна логістика",
+      "weapon": "Дрон",
+      "details": "Два об'єкти зберігання нафтопродуктів розташовані в південній промисловій зоні Азова, утворюючи частину розгалуженої інфраструктури паливних резервуарів міста. В ніч на 10 липня обидва об'єкти були одночасно атаковані в рамках масштабної скоординованої операції — ударів зазнали всі п'ять нафтобаз Азова. Займання зафіксовано фото- і відеоматеріалами з прив'язкою до місцевості. Одночасне ураження всіх резервуарних сховищ міста завдало серйозної шкоди нафтотранзитному потенціалу порту Азов, який є важливою ланкою ланцюжка постачання окупаційних сил паливом.",
+      "source": "OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov (southern industrial zone)",
+      "target": "Oil Depots No. 3 and No. 4 — southern industrial zone of Azov",
+      "category": "Fuel Logistics",
+      "weapon": "Drone",
+      "details": "Two petroleum storage facilities are located in the southern industrial zone of Azov, forming part of the city's extensive fuel tank infrastructure. On the night of July 10, both facilities were simultaneously struck as part of a large-scale coordinated operation — all five oil depots in Azov were hit. Fires were confirmed by geolocated photo and video evidence. The simultaneous destruction of all the city's tank storage facilities severely damaged the oil transit capacity of the Port of Azov, which is an important link in the supply chain of fuel for the occupying forces.",
+      "source": "OSINT, Russian Media"
+    },
+    "id": 220
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 55.661,
+    "lng": 37.797,
+    "distance": 565,
+    "ru": {
+      "region": "Москва, район Капотня",
+      "target": "Московский НПЗ (МНПЗ) — зона возгорания",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Московский нефтеперерабатывающий завод в Капотне (МНПЗ, «Газпром нефть») — крупнейший НПЗ столичного региона с мощностью переработки около 12 млн тонн в год. В ночь на 10 июля на фоне массированной атаки БПЛА на Москву (не менее 14 беспилотников) в мониторинговых каналах и Telegram появились сообщения и видео с густым дымом в районе МНПЗ. МЧС России официально опровергло информацию о пожаре на территории завода. Завод ранее уже поражался в июне 2026 года — тогда было подтверждено повреждение установок первичной переработки нефти. Информация о пожаре 10 июля остаётся неподтверждённой официальными источниками.",
+      "source": "Мониторинговые каналы, Telegram (неподтверждено МЧС РФ)"
+    },
+    "uk": {
+      "region": "Москва, район Капотня",
+      "target": "Московський НПЗ (МНПЗ) — зона займання",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Московський нафтопереробний завод у Капотні (МНПЗ, «Газпром нефть») — найбільший НПЗ столичного регіону з потужністю переробки близько 12 млн тонн на рік. В ніч на 10 липня на тлі масованої атаки БПЛА на Москву (не менше 14 безпілотників) у моніторингових каналах і Telegram з'явилися повідомлення та відео з густим димом у районі МНПЗ. МНС Росії офіційно спростувало інформацію про пожежу на території заводу. Завод раніше вже уражався в червні 2026 року — тоді було підтверджено пошкодження установок первинної переробки нафти. Інформація про пожежу 10 липня залишається непідтвердженою офіційними джерелами.",
+      "source": "Моніторингові канали, Telegram (не підтверджено МНС РФ)"
+    },
+    "en": {
+      "region": "Moscow, Kapotnya district",
+      "target": "Moscow Oil Refinery (MNPZ) — reported fire zone",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "The Moscow Oil Refinery in Kapotnya (MNPZ, Gazprom Neft) is the largest refinery in the Moscow region with a processing capacity of approximately 12 million tonnes per year. On the night of July 10, amid a massive drone attack on Moscow (at least 14 UAVs), monitoring channels and Telegram reported videos showing thick smoke in the area of the MNPZ. Russia's EMERCOM officially denied information about a fire on the plant's territory. The refinery had previously been struck in June 2026, when damage to primary oil processing units was confirmed. Information about the July 10 fire remains unconfirmed by official sources.",
+      "source": "Monitoring channels, Telegram (unconfirmed by Russian EMERCOM)"
+    },
+    "id": 221
+  },
+  {
+    "date": "10.07.2026",
+    "lat": 45.37,
+    "lng": 36.47,
+    "distance": 293,
+    "ru": {
+      "region": "Краснодарский край, акватория у Керченского порта",
+      "target": "Горящий танкер теневого флота РФ",
+      "category": "Флот / Логистика",
+      "weapon": "Дрон / БЭК",
+      "details": "В акватории у Керченского порта был зафиксирован горящий танкер — последствие масштабной серии атак украинских Сил беспилотных систем (СБС) по «теневому флоту» РФ в Азовском море 9-10 июля. Спутниковый сервис NASA FIRMS зафиксировал термические аномалии, а проект «Схемы» опубликовал снимки горящего судна в районе Керченского пролива. Теневой флот активно используется Россией для транспортировки нефтепродуктов в обход санкций — прежде всего с нефтебаз Азова и Ростова к черноморским покупателям. После серии ударов Россия временно остановила судоходство по Азово-Донскому каналу и ввела ограничения на проход через Керченский пролив.",
+      "source": "NASA FIRMS, OSINT (Схемы), СБС"
+    },
+    "uk": {
+      "region": "Краснодарський край, акваторія біля Керченського порту",
+      "target": "Палаючий танкер тіньового флоту РФ",
+      "category": "Флот / Логістика",
+      "weapon": "Дрон / БЕК",
+      "details": "В акваторії біля Керченського порту було зафіксовано палаючий танкер — наслідок масштабної серії атак українських Сил безпілотних систем (СБС) по «тіньовому флоту» РФ в Азовському морі 9-10 липня. Супутниковий сервіс NASA FIRMS зафіксував теплові аномалії, а проект «Схеми» опублікував знімки палаючого судна в районі Керченської протоки. Тіньовий флот активно використовується Росією для транспортування нафтопродуктів в обхід санкцій — передусім з нафтобаз Азова і Ростова до чорноморських покупців. Після серії ударів Росія тимчасово зупинила судноплавство по Азово-Донському каналу та ввела обмеження на прохід через Керченську протоку.",
+      "source": "NASA FIRMS, OSINT (Схеми), СБС"
+    },
+    "en": {
+      "region": "Krasnodar Krai, waters near Kerch port",
+      "target": "Burning shadow fleet tanker of the Russian Federation",
+      "category": "Fleet / Logistics",
+      "weapon": "Drone / USV",
+      "details": "A burning tanker was recorded in the waters near the port of Kerch — a result of the large-scale series of strikes by Ukrainian Unmanned Systems Forces (SBS) against Russia's 'shadow fleet' in the Sea of Azov on July 9-10. The NASA FIRMS satellite service recorded thermal anomalies, and the 'Skhemy' project published images of a burning vessel in the Kerch Strait area. The shadow fleet is actively used by Russia to transport petroleum products in circumvention of sanctions — primarily from the oil depots of Azov and Rostov to Black Sea buyers. After the series of strikes, Russia temporarily halted shipping on the Azov-Don Canal and introduced restrictions on passage through the Kerch Strait.",
+      "source": "NASA FIRMS, OSINT (Skhemy), SBS"
+    },
+    "id": 222
   }
 ];
