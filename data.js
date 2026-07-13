@@ -1,5 +1,40 @@
 const strikeData = [
   {
+    "date": "12.07.2026",
+    "lat": 53.0854,
+    "lng": 48.3971,
+    "distance": 870,
+    "images": [
+      "images/syzran_2026_1.jpg",
+      "images/syzran_2026_2.jpg",
+      "video/syzran_2026_comp.mp4"
+    ],
+    "ru": {
+      "region": "Самарская область, Сызрань",
+      "target": "Сызранский НПЗ (Роснефть)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 12 июля 2026 года Сызранский НПЗ был атакован ударными беспилотниками. На территории завода произошёл мощный взрыв и начался масштабный пожар. По данным источников в Генштабе ВСУ и OSINT-аналитиков, в результате прилетов значительные повреждения получили установки первичной переработки нефти АВТ-5 и АВТ-6, которые являются основой производственного цикла предприятия. Атака на этот НПЗ является частью систематической кампании Украины по уничтожению нефтегазовой инфраструктуры РФ, работающей на ВПК и финансирующей войну. Сызранский НПЗ входит в структуру «Роснефти» и является одним из ключевых производителей нефтепродуктов в регионе. Местные паблики также публиковали многочисленные видео с густым дымом, поднимающимся над промышленной зоной завода.",
+      "source": "Генштаб ВСУ, OSINT, СМИ РФ"
+    },
+    "uk": {
+      "region": "Самарська область, Сизрань",
+      "target": "Сизранський НПЗ (Роснафта)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 12 липня 2026 року Сизранський НПЗ був атакований ударними безпілотниками. На території заводу стався потужний вибух та почалася масштабна пожежа. За даними джерел у Генштабі ЗСУ та OSINT-аналітиків, внаслідок прильотів значних пошкоджень зазнали установки первинної переробки нафти АВТ-5 та АВТ-6, які є основою виробничого циклу підприємства. Атака на цей НПЗ є частиною систематичної кампанії України зі знищення нафтогазової інфраструктури РФ, що працює на ВПК та фінансує війну. Сизранський НПЗ входить до структури «Роснафти» та є одним із ключових виробників нафтопродуктів у регіоні. Місцеві пабліки також публікували численні відео з густим димом, що підіймався над промисловою зоною заводу.",
+      "source": "Генштаб ЗСУ, OSINT, ЗМІ РФ"
+    },
+    "en": {
+      "region": "Samara Oblast, Syzran",
+      "target": "Syzran Oil Refinery (Rosneft)",
+      "category": "Oil and Gas",
+      "weapon": "Drone",
+      "details": "On the night of July 12, 2026, the Syzran oil refinery was attacked by strike drones. A powerful explosion occurred on the plant's territory, followed by a large-scale fire. According to sources in the Armed Forces of Ukraine General Staff and OSINT analysts, the primary oil processing units AVT-5 and AVT-6, which are crucial for the plant's production cycle, sustained significant damage. This strike is part of Ukraine's systematic campaign to destroy Russian oil and gas infrastructure that supports the military-industrial complex and funds the war. The Syzran refinery is part of the Rosneft structure and is a key producer of petroleum products in the region. Local social media channels also published numerous videos showing thick smoke rising above the plant's industrial zone.",
+      "source": "AFU General Staff, OSINT, Russian Media"
+    }
+  },
+  {
     "date": "01.01.2026",
     "lat": 44.85,
     "lng": 38.5769,
