@@ -80,6 +80,67 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Helper: Rolling Numbers Animation
+    function animateValue(obj, end, duration) {
+        if (!obj) return;
+        const start = parseInt(obj.textContent.replace(/[^0-9]/g, '')) || 0;
+        if (start === end) return;
+        const startTime = performance.now();
+        const step = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const ease = 1 - Math.pow(1 - progress, 3);
+            obj.textContent = Math.round(start + (end - start) * ease);
+            if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+    }
+
+    // Hero Animation & Cursor Logic
+    const loader = document.getElementById('heroLoader');
+    setTimeout(() => {
+        if(loader) {
+            loader.classList.add('hidden-loader');
+            const mapContainer = document.getElementById('map');
+            if(mapContainer) mapContainer.classList.remove('scale-105');
+        }
+    }, 1400);
+
+    // Custom Cursor logic
+    if (window.matchMedia("(pointer: fine)").matches) {
+        const dot = document.getElementById('customCursorDot');
+        const ring = document.getElementById('customCursorRing');
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let ringX = mouseX;
+        let ringY = mouseY;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            if(dot) dot.style.left = mouseX + 'px';
+            if(dot) dot.style.top = mouseY + 'px';
+        });
+
+        const animateCursor = () => {
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+            if(ring) ring.style.left = ringX + 'px';
+            if(ring) ring.style.top = ringY + 'px';
+            requestAnimationFrame(animateCursor);
+        };
+        animateCursor();
+
+        document.addEventListener('mouseover', (e) => {
+            const target = e.target.closest('a, button, input, .cursor-pointer, .leaflet-interactive, .list-item, .popup-image-container');
+            if (target) {
+                document.body.classList.add('cursor-hover');
+            } else {
+                document.body.classList.remove('cursor-hover');
+            }
+        });
+    }
+
     // 1. Initialize Map
     const map = L.map('map', {
         zoomControl: false
@@ -276,10 +337,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function createCustomIcon(type) {
         const colors = getCategoryColorClass(type);
         const html = `
-            <div class="relative flex items-center justify-center w-8 h-8">
-                <div class="absolute w-full h-full ${colors.bg} opacity-20 rounded-full animate-ping"></div>
-                <div class="absolute w-6 h-6 ${colors.bg} rounded-full shadow-lg ${colors.glow} flex items-center justify-center border-2 border-white/50">
-                    <div class="w-2 h-2 bg-white rounded-full"></div>
+            <div class="relative flex items-center justify-center w-8 h-8 group-hover:scale-110 transition-transform">
+                <div class="absolute w-full h-full ${colors.bg} rounded-full" style="animation: outerPing 3s cubic-bezier(0.1, 0.2, 0.3, 1) infinite;"></div>
+                <div class="absolute w-6 h-6 ${colors.bg} rounded-full" style="animation: innerPing 1.5s cubic-bezier(0.1, 0.2, 0.3, 1) infinite;"></div>
+                <div class="absolute w-4 h-4 ${colors.bg} rounded-full shadow-lg ${colors.glow} flex items-center justify-center border border-white/50 z-10">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
                 </div>
             </div>
         `;
@@ -387,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="space-y-2 text-sm theme-text-muted mb-4">
                         <div class="flex items-start gap-2">
                             <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                            <span>${item.date}</span>
+                            <span class="monospace">${item.date}</span>
                         </div>
                         <div class="flex items-start gap-2">
                             <svg class="w-4 h-4 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
@@ -400,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${item.distance !== undefined ? `
                         <div class="flex items-start gap-2">
                             <svg class="w-4 h-4 mt-0.5 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                            <span class="font-medium text-blue-500">${i18n.distance[currentLang].replace('{dist}', item.distance)}</span>
+                            <span class="font-medium text-blue-500 monospace">${i18n.distance[currentLang].replace('{dist}', item.distance)}</span>
                         </div>` : ''}
                     </div>
 
@@ -530,8 +592,6 @@ document.addEventListener('DOMContentLoaded', () => {
         markerLayerGroup.clearLayers();
         objectList.innerHTML = '';
         activeMarkers = [];
-        
-        totalCount.textContent = data.length;
 
         if (data.length === 0) {
             objectList.innerHTML = `
@@ -594,20 +654,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 autoPanPaddingTopLeft: [paddingLeft, isMobile ? 60 : 40],
                 autoPanPaddingBottomRight: [20, isMobile ? 80 : 40]
             });
-            marker.on('click', () => {
+            marker.on('click', (e) => {
                 if (window.va) window.va('track', 'MarkerClicked', { 
                     city: item.city?.en || 'unknown', 
                     type: type, 
                     date: item.date 
                 });
+                
+                // Crosshair Animation
+                const crosshair = document.createElement('div');
+                crosshair.className = 'crosshair-effect';
+                const pos = map.latLngToContainerPoint(e.latlng);
+                crosshair.style.left = pos.x + 'px';
+                crosshair.style.top = pos.y + 'px';
+                document.getElementById('map').appendChild(crosshair);
+                setTimeout(() => crosshair.remove(), 800);
             });
             markerLayerGroup.addLayer(marker);
             
             activeMarkers.push({ data: item, marker: marker });
 
             const listItem = document.createElement('div');
-            listItem.className = `p-3 rounded-xl theme-bg-item border theme-border theme-hover-bg-item transition cursor-pointer group relative overflow-hidden`;
+            // Add stagger delay based on index (cap at 20 items so it doesn't take forever)
+            const delay = Math.min(index * 30, 600);
+            listItem.className = `p-3 rounded-xl theme-bg-item border theme-border theme-hover-bg-item transition cursor-pointer group relative overflow-hidden list-item-enter list-item`;
+            listItem.style.animationDelay = `${delay}ms`;
             
+            // Search Highlight Helper
+            const highlightSearch = (text) => {
+                if (!currentSearch) return text;
+                const regex = new RegExp(`(${currentSearch})`, 'gi');
+                return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+            };
+            const displayTarget = highlightSearch(item.target);
+            const displayRegion = highlightSearch(item.region.split(',')[0]);
             let pCount = 0;
             let vCount = 0;
             if (item.images && item.images.length > 0) {
@@ -645,29 +725,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             listItem.innerHTML = `
-                <div class="absolute left-0 top-0 bottom-0 w-1 ${colors.bg} opacity-50 group-hover:opacity-100 transition"></div>
+                <div class="absolute left-0 top-0 bottom-0 color-bar ${colors.bg} opacity-50 transition"></div>
                 ${cameraBadge}
-                <div class="pl-2">
-                    <div class="text-xs ${colors.text} font-medium mb-1">${item.category}</div>
-                    <div class="font-semibold text-sm theme-text-main mb-1 leading-tight transition">${item.target}</div>
-                    <div class="text-xs theme-text-muted flex justify-between">
-                        <span class="truncate max-w-[60%]">${item.region.split(',')[0]}</span>
-                        <span>${item.date}</span>
+                <div class="pl-3 relative z-10">
+                    <div class="text-[10px] uppercase tracking-wider ${colors.text} font-bold mb-1">${item.category}</div>
+                    <div class="font-semibold text-sm theme-text-main mb-1.5 leading-tight transition">${displayTarget}</div>
+                    <div class="text-xs theme-text-muted flex justify-between items-center opacity-80">
+                        <span class="truncate max-w-[60%] flex items-center gap-1">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                            ${displayRegion}
+                        </span>
+                        <span class="monospace text-[11px]">${item.date}</span>
                     </div>
                 </div>
             `;
 
-            listItem.addEventListener('click', () => {
+            listItem.addEventListener('click', (e) => {
                 if (window.va) window.va('track', 'SidebarItemClicked', { 
                     city: item.city?.en || 'unknown', 
                     date: item.date 
                 });
+                
+                // Crosshair Animation from sidebar click
+                const crosshair = document.createElement('div');
+                crosshair.className = 'crosshair-effect';
+                const pos = map.latLngToContainerPoint([finalLat, finalLng]);
+                crosshair.style.left = pos.x + 'px';
+                crosshair.style.top = pos.y + 'px';
+                document.getElementById('map').appendChild(crosshair);
+                setTimeout(() => crosshair.remove(), 800);
+
                 if (window.innerWidth < 768) {
                     closeSidebar();
-                    map.setView([finalLat, finalLng], 10, { animate: false });
+                    map.flyTo([finalLat, finalLng], 10, { duration: 1.2, easeLinearity: 0.25 });
                     setTimeout(() => {
                         marker.openPopup();
-                    }, 100);
+                    }, 1200);
                 } else {
                     const currentCenter = map.getCenter();
                     const isSameView = (map.getZoom() === 10 && 
@@ -680,10 +773,18 @@ document.addEventListener('DOMContentLoaded', () => {
                         map.once('moveend', () => {
                             marker.openPopup();
                         });
-                        map.setView([finalLat, finalLng], 10, { animate: false });
+                        map.flyTo([finalLat, finalLng], 10, { duration: 1.2, easeLinearity: 0.25 });
                     }
                 }
             });
+
+            if (window.matchMedia("(pointer: fine)").matches) {
+                listItem.addEventListener('mousemove', (e) => {
+                    const rect = listItem.getBoundingClientRect();
+                    listItem.style.setProperty('--x', \`\${e.clientX - rect.left}px\`);
+                    listItem.style.setProperty('--y', \`\${e.clientY - rect.top}px\`);
+                });
+            }
 
             marker.on('popupopen', () => {
                 listItem.classList.add('theme-active-item');
@@ -700,8 +801,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (data.length > 0) {
-            map.fitBounds(markerLayerGroup.getBounds(), { padding: [50, 50], maxZoom: 8 });
+            map.fitBounds(markerLayerGroup.getBounds(), { padding: [50, 50], maxZoom: 8, duration: 1.5, easeLinearity: 0.25 });
         }
+        
+        // Update Stats
+        animateValue(document.getElementById('totalCount'), data.length, 600);
+        
+        const oilCount = data.filter(d => getCategoryType(d.category) === 'oilgas').length;
+        const milCount = data.filter(d => getCategoryType(d.category) === 'military').length;
+        const logCount = data.filter(d => getCategoryType(d.category) === 'logistics').length;
+        
+        animateValue(document.getElementById('oilCount'), oilCount, 600);
+        animateValue(document.getElementById('milCount'), milCount, 600);
+        animateValue(document.getElementById('logCount'), logCount, 600);
     }
 
     let currentFilter = 'all';
