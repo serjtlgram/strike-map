@@ -432,6 +432,29 @@
             mask-image: radial-gradient(circle at center, black, transparent 80%);
             -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
         }
+
+        /* Drone Cursor Variables */
+        :root {
+            --cursor-default: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M3 3 L10 28 L16 20 L24 24 L20 16 L28 10 Z' fill='%231e293b' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23ef4444' /%3E%3C/svg%3E") 3 3, auto;
+            --cursor-pointer: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M3 3 L10 28 L16 20 L24 24 L20 16 L28 10 Z' fill='%233b82f6' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23ef4444' /%3E%3C/svg%3E") 3 3, pointer;
+        }
+
+        [data-theme='dark'] {
+            --cursor-default: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M3 3 L10 28 L16 20 L24 24 L20 16 L28 10 Z' fill='%23f8fafc' stroke='%230f172a' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23ef4444' /%3E%3C/svg%3E") 3 3, auto;
+            --cursor-pointer: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M3 3 L10 28 L16 20 L24 24 L20 16 L28 10 Z' fill='%2360a5fa' stroke='%230f172a' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23ef4444' /%3E%3C/svg%3E") 3 3, pointer;
+        }
+
+        [data-theme='beige'] {
+            --cursor-default: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M3 3 L10 28 L16 20 L24 24 L20 16 L28 10 Z' fill='%23433422' stroke='%23f4ebd8' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23ef4444' /%3E%3C/svg%3E") 3 3, auto;
+            --cursor-pointer: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M3 3 L10 28 L16 20 L24 24 L20 16 L28 10 Z' fill='%23ca8a04' stroke='%23f4ebd8' stroke-width='1.5' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%23ef4444' /%3E%3C/svg%3E") 3 3, pointer;
+        }
+
+        @media (pointer: fine) {
+            body, .leaflet-container { cursor: var(--cursor-default) !important; }
+            a, button, input, select, .leaflet-interactive, .cursor-pointer { cursor: var(--cursor-pointer) !important; }
+            .leaflet-grab { cursor: var(--cursor-default) !important; }
+            .leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable { cursor: var(--cursor-default) !important; }
+        }
     </style>
 </head>
 <body>
