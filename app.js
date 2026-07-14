@@ -115,21 +115,33 @@ document.addEventListener('DOMContentLoaded', () => {
         let ringX = mouseX;
         let ringY = mouseY;
         
+        let isAnimating = false;
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            if(dot) dot.style.left = mouseX + 'px';
-            if(dot) dot.style.top = mouseY + 'px';
+            if(dot) {
+                dot.style.left = mouseX + 'px';
+                dot.style.top = mouseY + 'px';
+            }
+            if (!isAnimating) {
+                isAnimating = true;
+                requestAnimationFrame(animateCursor);
+            }
         });
 
         const animateCursor = () => {
-            ringX += (mouseX - ringX) * 0.15;
-            ringY += (mouseY - ringY) * 0.15;
-            if(ring) ring.style.left = ringX + 'px';
-            if(ring) ring.style.top = ringY + 'px';
-            requestAnimationFrame(animateCursor);
+            ringX += (mouseX - ringX) * 0.2;
+            ringY += (mouseY - ringY) * 0.2;
+            if(ring) {
+                ring.style.left = ringX + 'px';
+                ring.style.top = ringY + 'px';
+            }
+            if (Math.abs(mouseX - ringX) < 0.1 && Math.abs(mouseY - ringY) < 0.1) {
+                isAnimating = false;
+            } else {
+                requestAnimationFrame(animateCursor);
+            }
         };
-        animateCursor();
 
         document.addEventListener('mouseover', (e) => {
             const target = e.target.closest('a, button, input, .cursor-pointer, .leaflet-interactive, .list-item, .popup-image-container');
