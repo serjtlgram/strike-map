@@ -781,8 +781,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.matchMedia("(pointer: fine)").matches) {
                 listItem.addEventListener('mousemove', (e) => {
                     const rect = listItem.getBoundingClientRect();
-                    listItem.style.setProperty('--x', \`\${e.clientX - rect.left}px\`);
-                    listItem.style.setProperty('--y', \`\${e.clientY - rect.top}px\`);
+                    listItem.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                    listItem.style.setProperty('--y', `${e.clientY - rect.top}px`);
                 });
             }
 
