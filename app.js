@@ -818,14 +818,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update Stats
         animateValue(document.getElementById('totalCount'), data.length, 600);
-        
-        const oilCount = data.filter(d => getCategoryType(d.category) === 'oilgas').length;
-        const milCount = data.filter(d => getCategoryType(d.category) === 'military').length;
-        const logCount = data.filter(d => getCategoryType(d.category) === 'logistics').length;
-        
-        animateValue(document.getElementById('oilCount'), oilCount, 600);
-        animateValue(document.getElementById('milCount'), milCount, 600);
-        animateValue(document.getElementById('logCount'), logCount, 600);
     }
 
     let currentFilter = 'all';

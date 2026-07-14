@@ -483,7 +483,7 @@
     <!-- Custom Cursor -->
     <div id="customCursorDot" class="hidden md:block">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM2 6C2 4.34315 3.34315 3 5 3C6.65685 3 8 4.34315 8 6C8 7.21852 7.27318 8.26788 6.22384 8.76136L8.83547 11.373C9.6455 10.5137 10.7634 10 12 10C13.2366 10 14.3545 10.5137 15.1645 11.373L17.7762 8.76136C16.7268 8.26788 16 7.21852 16 6C16 4.34315 17.3431 3 19 3C20.6569 3 22 4.34315 22 6C22 7.65685 20.6569 9 19 9C17.7815 9 16.7321 8.27318 16.2386 7.22384L13.627 9.83547C14.4863 10.6455 15 11.7634 15 13C15 14.2366 14.4863 15.3545 13.627 16.1645L16.2386 18.7762C16.7321 17.7268 17.7815 17 19 17C20.6569 17 22 18.3431 22 20C22 21.6569 20.6569 23 19 23C17.3431 23 16 21.6569 16 20C16 18.7815 16.7268 17.7321 17.7762 17.2386L15.1645 14.627C14.3545 15.4863 13.2366 16 12 16C10.7634 16 9.6455 15.4863 8.83547 14.627L6.22384 17.2386C7.27318 17.7321 8 18.7815 8 20C8 21.6569 6.65685 23 5 23C3.34315 23 2 21.6569 2 20C2 18.3431 3.34315 17 5 17C6.21852 17 7.26788 17.7268 7.76136 18.7762L10.373 16.1645C9.51373 15.3545 9 14.2366 9 13C9 11.7634 9.51373 10.6455 10.373 9.83547L7.76136 7.22384C7.26788 8.27318 6.21852 9 5 9C3.34315 9 2 7.65685 2 6Z"/>
+            <path d="M2 2 L22 9 L13 13 L9 22 Z" fill="currentColor"/>
         </svg>
     </div>
     <div id="customCursorRing" class="hidden md:block"></div>
@@ -577,21 +577,6 @@
                 <div class="flex justify-between items-center text-xs text-slate-500">
                     <span><span data-i18n="total">Всего объектов:</span> <strong id="totalCount" class="monospace text-sm text-slate-700 dark:text-slate-300">0</strong></span>
                     <span data-i18n="updated" class="monospace text-[10px] opacity-70">Обновлено: Июнь 2026</span>
-                </div>
-                <!-- Mini Stats -->
-                <div class="flex gap-3 text-[10px] font-medium opacity-80 mt-1 justify-between px-1">
-                    <span class="flex items-center gap-1.5">
-                        <span class="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
-                        <span id="oilCount" class="monospace">0</span>
-                    </span>
-                    <span class="flex items-center gap-1.5">
-                        <span class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]"></span>
-                        <span id="milCount" class="monospace">0</span>
-                    </span>
-                    <span class="flex items-center gap-1.5">
-                        <span class="w-2 h-2 rounded-full bg-yellow-500 shadow-[0_0_8px_rgba(234,179,8,0.6)]"></span>
-                        <span id="logCount" class="monospace">0</span>
-                    </span>
                 </div>
             </div>
         </div>
