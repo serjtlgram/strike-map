@@ -107,51 +107,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1400);
 
     // Custom Cursor logic
-    if (window.matchMedia("(pointer: fine)").matches) {
-        const dot = document.getElementById('customCursorDot');
-        const ring = document.getElementById('customCursorRing');
-        let mouseX = window.innerWidth / 2;
-        let mouseY = window.innerHeight / 2;
-        let ringX = mouseX;
-        let ringY = mouseY;
-        
-        let isAnimating = false;
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            if(dot) {
-                dot.style.left = mouseX + 'px';
-                dot.style.top = mouseY + 'px';
-            }
-            if (!isAnimating) {
-                isAnimating = true;
-                requestAnimationFrame(animateCursor);
-            }
-        });
-
-        const animateCursor = () => {
-            ringX += (mouseX - ringX) * 0.2;
-            ringY += (mouseY - ringY) * 0.2;
-            if(ring) {
-                ring.style.left = ringX + 'px';
-                ring.style.top = ringY + 'px';
-            }
-            if (Math.abs(mouseX - ringX) < 0.1 && Math.abs(mouseY - ringY) < 0.1) {
-                isAnimating = false;
-            } else {
-                requestAnimationFrame(animateCursor);
-            }
-        };
-
-        document.addEventListener('mouseover', (e) => {
-            const target = e.target.closest('a, button, input, .cursor-pointer, .leaflet-interactive, .list-item, .popup-image-container');
-            if (target) {
-                document.body.classList.add('cursor-hover');
-            } else {
-                document.body.classList.remove('cursor-hover');
-            }
-        });
-    }
 
     // 1. Initialize Map
     const map = L.map('map', {
@@ -790,13 +745,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            if (window.matchMedia("(pointer: fine)").matches) {
-                listItem.addEventListener('mousemove', (e) => {
-                    const rect = listItem.getBoundingClientRect();
-                    listItem.style.setProperty('--x', `${e.clientX - rect.left}px`);
-                    listItem.style.setProperty('--y', `${e.clientY - rect.top}px`);
-                });
-            }
 
             marker.on('popupopen', () => {
                 listItem.classList.add('theme-active-item');
