@@ -7175,5 +7175,77 @@ const strikeData = [
       "source": "NASA FIRMS, OSINT (Skhemy), SBS"
     },
     "id": 222
+  },
+  {
+    "date": "14.07.2026",
+    "lat": 53.4073,
+    "lng": 55.8817,
+    "distance": 1500,
+    "images": [
+      "images/salavat1.jpg",
+      "images/salavat2.jpg",
+      "video/salavat.mp4"
+    ],
+    "ru": {
+      "region": "Республика Башкортостан, Салават",
+      "target": "«Газпром нефтехим Салават» — НПЗ и нефтехимический комплекс",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "«Газпром нефтехим Салават» — один из крупнейших нефтеперерабатывающих и нефтехимических комплексов России, работающий с 1948 года. Ежегодная мощность переработки превышает 8 млн тонн нефти, предприятие выпускает бензин, дизельное топливо, керосин, сжиженные углеводородные газы и широкий спектр нефтехимической продукции. В ночь на 14 июля 2026 года подразделения Deep Strike ССО Украины совместно с подпольным движением «Черная искра» нанесли точный удар по промышленной зоне Салавата — расстояние от украинской границы составило около 1500 км. В результате атаки вспыхнул крупный пожар, местные жители наблюдали серию взрывов и столбы чёрного дыма над заводом. По данным отраслевых источников, цитируемых Reuters, были выведены из строя обе установки первичной переработки нефти (ЭЛОУ-АВТ-4 и ЭЛОУ-АВТ-6), что привело к полной остановке работы комплекса. Потенциальный срок восстановления — несколько недель или месяцев. Удар стал символическим: Салават был последним крупным НПЗ России, который ещё не подвергался украинским ударам в 2026 году.",
+      "source": "ССО ВСУ, Генштаб ВСУ, Reuters, OSINT (Astra, Exilenova+), СМИ РФ"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, Салават",
+      "target": "«Газпром нафтохім Салават» — НПЗ та нафтохімічний комплекс",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "«Газпром нафтохім Салават» — один із найбільших нафтопереробних і нафтохімічних комплексів Росії, що працює з 1948 року. Річна потужність переробки перевищує 8 млн тонн нафти, підприємство виробляє бензин, дизельне пальне, гас, зріджені вуглеводневі гази та широкий спектр нафтохімічної продукції. В ніч на 14 липня 2026 року підрозділи Deep Strike ССО України спільно з підпільним рухом «Чорна іскра» завдали точного удару по промисловій зоні Салавата — відстань від українського кордону склала близько 1500 км. Внаслідок атаки спалахнула велика пожежа, місцеві жителі спостерігали серію вибухів і стовпи чорного диму над заводом. За даними галузевих джерел, що цитуються Reuters, були виведені з ладу обидві установки первинної переробки нафти (ЕЛОУ-АВТ-4 та ЕЛОУ-АВТ-6), що призвело до повної зупинки роботи комплексу. Потенційний термін відновлення — кілька тижнів або місяців. Удар став символічним: Салават був останнім великим НПЗ Росії, який ще не зазнавав українських ударів у 2026 році.",
+      "source": "ССО ЗСУ, Генштаб ЗСУ, Reuters, OSINT (Astra, Exilenova+), ЗМІ РФ"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Salavat",
+      "target": "Gazprom Neftekhim Salavat — Oil Refinery and Petrochemical Complex",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Gazprom Neftekhim Salavat is one of Russia's largest oil refining and petrochemical complexes, operating since 1948. Its annual crude oil processing capacity exceeds 8 million tonnes, producing gasoline, diesel fuel, kerosene, liquefied petroleum gases and a wide range of petrochemicals. On the night of July 14, 2026, Ukraine's Special Operations Forces (SOF) Deep Strike units, in cooperation with the underground 'Black Spark' movement, carried out a precision strike on the Salavat industrial zone — approximately 1,500 kilometers from the Ukrainian border. The attack triggered a major fire, with local residents witnessing a series of explosions and columns of black smoke above the plant. According to industry sources cited by Reuters, both primary crude distillation units (CDU-4 and CDU-6) were damaged and shut down, leading to a complete suspension of the complex's operations. The potential recovery timeline is several weeks to months. The strike was symbolic: Salavat was the last major Russian refinery that had not yet been targeted by Ukrainian strikes in 2026.",
+      "source": "SOF of the Armed Forces of Ukraine, General Staff of the AFU, Reuters, OSINT (Astra, Exilenova+), Russian Media"
+    },
+    "id": 223
+  },
+  {
+    "date": "14.07.2026",
+    "lat": 44.884,
+    "lng": 38.829,
+    "distance": 680,
+    "images": [
+      "images/afipsky1.jpg",
+      "images/afipsky2.jpg",
+      "video/afipsky.mp4"
+    ],
+    "ru": {
+      "region": "Краснодарский край, пгт Афипский, Северский район",
+      "target": "Афипский нефтеперерабатывающий завод (ООО «Афипский НПЗ»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Афипский НПЗ — один из ведущих нефтеперерабатывающих заводов юга России с проектной мощностью переработки около 6,25 млн тонн нефти в год. Предприятие производит дизельное топливо, авиакеросин, мазут и другие нефтепродукты, часть из которых уходит на снабжение военной техники и авиации российской группировки на южном направлении. В ночь на 14 июля 2026 года украинские ударные БПЛА нанесли точечный удар по заводу — мощные взрывы были слышны около полуночи. Пожар охватил территорию резервуарного парка, в воздух поднялись густые столбы чёрного дыма. Оперативный штаб Краснодарского края подтвердил атаку и возгорание, также сообщив о падении обломков БПЛА на 16 объектов в посёлке, в том числе жилые дома. К утру пожар был ликвидирован. Это уже не первая атака на Афипский НПЗ в 2026 году — завод также подвергался ударам в марте и июне.",
+      "source": "Оперштаб Краснодарского края, Генштаб ВСУ, OSINT (Astra, UNN), СМИ РФ"
+    },
+    "uk": {
+      "region": "Краснодарський край, смт Афіпський, Северський район",
+      "target": "Афіпський нафтопереробний завод (ТОВ «Афіпський НПЗ»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Афіпський НПЗ — один із провідних нафтопереробних заводів півдня Росії з проектною потужністю переробки близько 6,25 млн тонн нафти на рік. Підприємство виробляє дизельне пальне, авіагас, мазут та інші нафтопродукти, частина з яких іде на постачання військової техніки і авіації російського угруповання на південному напрямку. В ніч на 14 липня 2026 року українські ударні БПЛА завдали точкового удару по заводу — потужні вибухи було чутно близько опівночі. Пожежа охопила територію резервуарного парку, у повітря піднялися густі стовпи чорного диму. Оперативний штаб Краснодарського краю підтвердив атаку та займання, також повідомивши про падіння уламків БПЛА на 16 об'єктів у селищі, зокрема житлові будинки. До ранку пожежу було ліквідовано. Це вже не перша атака на Афіпський НПЗ у 2026 році — завод також зазнав ударів у березні та червні.",
+      "source": "Оперштаб Краснодарського краю, Генштаб ЗСУ, OSINT (Astra, UNN), ЗМІ РФ"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Afipsky settlement, Seversky district",
+      "target": "Afipsky Oil Refinery (Afipsky Refinery LLC)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "The Afipsky refinery is one of the key oil processing facilities in southern Russia, with a designed crude oil processing capacity of approximately 6.25 million metric tonnes per year. The plant produces diesel fuel, aviation kerosene, fuel oil and other petroleum products, a portion of which supplies military equipment and aircraft of the Russian grouping on the southern front. On the night of July 14, 2026, Ukrainian strike UAVs carried out a precision attack on the plant — powerful explosions were heard around midnight. A fire broke out in the tank farm area, with thick black smoke rising into the sky. The Krasnodar Krai operational headquarters confirmed the attack and the fire, also reporting that drone debris struck 16 facilities in the settlement, including residential buildings. By morning, the fire had been extinguished. This is not the first attack on the Afipsky refinery in 2026 — the plant was also struck in March and June.",
+      "source": "Krasnodar Krai Operational HQ, General Staff of the AFU, OSINT (Astra, UNN), Russian Media"
+    },
+    "id": 224
   }
 ];
