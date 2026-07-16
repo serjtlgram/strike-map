@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         filter_logistics: { ru: 'Логистика', uk: 'Логістика', en: 'Logistics' },
         filter_military: { ru: 'ВПК / Авиабазы', uk: 'ВПК / Авіабази', en: 'Defense / Airbases' },
         total: { ru: 'Всего объектов:', uk: 'Всього об\'єктів:', en: 'Total facilities:' },
-        updated: { ru: 'Обновлено: Июнь 2026', uk: 'Оновлено: Червень 2026', en: 'Updated: June 2026' },
+        updated: { ru: 'Обновлено: Июль 2026', uk: 'Оновлено: Липень 2026', en: 'Updated: July 2026' },
         mobile_btn: { ru: 'Список объектов', uk: 'Список об\'єктів', en: 'Object List' },
         distance: { ru: 'Дальность: ~{dist} км от линии фронта', uk: 'Дальність: ~{dist} км від лінії фронту', en: 'Range: ~{dist} km from front line' },
         not_found: { ru: 'Объекты не найдены', uk: 'Об\'єкти не знайдені', en: 'No objects found' },
