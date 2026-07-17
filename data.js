@@ -447,7 +447,7 @@ const strikeData = [
       "target": "Установка подготовки нефти «Альметьевская»",
       "category": "Нефтегаз",
       "weapon": "Дрон",
-      "details": "Успешная атака беспилотников на стратегический нефтяной объект.",
+      "details": "Установка подготовки нефти «Альметьевская» — объект нефтетехнологической инфраструктуры ПАО «Татнефть» в Альметьевском районе Республики Татарстан. Татарстан является одним из крупнейших нефтедобывающих регионов России: «Татнефть» ежегодно добывает свыше 25 млн тонн нефти, а Альметьевск служит штаб-квартирой компании и главным хабом всего нефтяного комплекса республики. Установки подготовки нефти (УПН) выполняют ключевую технологическую функцию — обезвоживание, обессоливание и стабилизацию сырой нефти перед её подачей в магистральные трубопроводы. В первый день 2026 года ударные беспилотники поразили Северный товарный парк «Татнефти» — объект сбора, сепарации и хранения товарной нефти, — вызвав возгорание на территории предприятия. Атака на нефтяную инфраструктуру глубокого тыла противника в праздничный день стала символическим началом года и обозначила новый уровень дальности и точности украинских БПЛА.",
       "source": "СБС, Генштаб ВСУ"
     },
     "uk": {
@@ -455,7 +455,7 @@ const strikeData = [
       "target": "Установка підготовки нафти «Альметьєвська»",
       "category": "Нафтогаз",
       "weapon": "Дрон",
-      "details": "Успішна атака безпілотників на стратегічний нафтовий об'єкт.",
+      "details": "Установка підготовки нафти «Альметьєвська» — об'єкт нафтотехнологічної інфраструктури ПАТ «Татнафта» в Альметьєвському районі Республіки Татарстан. Татарстан є одним із найбільших нафтовидобувних регіонів Росії: «Татнафта» щорічно видобуває понад 25 млн тонн нафти, а Альметьєвськ слугує штаб-квартирою компанії та головним хабом усього нафтового комплексу республіки. Установки підготовки нафти (УПН) виконують ключову технологічну функцію — зневоднення, знесолення та стабілізацію сирої нафти перед її подачею до магістральних трубопроводів. У перший день 2026 року ударні безпілотники вразили Північний товарний парк «Татнафти» — об'єкт збору, сепарації та зберігання товарної нафти, — спричинивши займання на території підприємства. Атака на нафтову інфраструктуру глибокого тилу противника в святковий день стала символічним початком року і позначила новий рівень дальності та точності українських БПЛА.",
       "source": "СБС, Генштаб ЗСУ"
     },
     "en": {
@@ -463,7 +463,7 @@ const strikeData = [
       "target": "Oil Treatment Unit \"Almetyevskaya\"",
       "category": "Oil & Gas",
       "weapon": "Drone",
-      "details": "successful strike droneov na strategic oil facility.",
+      "details": "The Almetyevskaya Oil Treatment Unit is part of the oil and gas infrastructure of PJSC Tatneft in the Almetyevsky District of the Republic of Tatarstan. Tatarstan is one of Russia's largest oil-producing regions, with Tatneft extracting over 25 million tons of crude oil annually; Almetyevsk serves as the company's headquarters and the central hub of the republic's entire petroleum complex. Oil treatment units (OTUs) perform the critical technological function of dehydration, desalting, and stabilization of crude oil before it is pumped into trunk pipelines. On the first day of 2026, attack drones struck Tatneft's Northern Product Park — a facility for gathering, separation, and storage of marketable crude — igniting a fire on the plant's territory. Striking oil infrastructure deep in enemy territory on a holiday sent a symbolic message and demonstrated a new level of range and precision for Ukrainian UAVs.",
       "source": "SBS, AFU General Staff"
     },
     "id": 3
