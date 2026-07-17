@@ -2121,23 +2121,23 @@ const strikeData = [
       "target": "Терминал «РПК-Высоцк Лукойл-2»",
       "category": "Топливная логистика",
       "weapon": "Дрон",
-      "details": "Пожар в резервуарном парке нефтеналивного экспортного морского терминала на Балтике.",
+      "details": "РПК-Высоцк «ЛУКОЙЛ-II» — специализированный морской нефтеналивной терминал «Лукойла» на острове Высоцкий в Финском заливе (Ленинградская область), введённый в эксплуатацию в 2004 году. Являясь одним из ключевых балтийских экспортных хабов России, терминал принимает нефтепродукты по железной дороге и трубопроводу и перегружает их на крупнотоннажные танкеры дедвейтом до 90 тыс. тонн. Проектная мощность объекта — около 12 млн тонн нефтепродуктов в год; основная номенклатура — дизельное топливо, мазут, нафта и вакуумный газойль. В результате удара ударных БПЛА в резервуарном парке терминала вспыхнул масштабный пожар, нарушивший отгрузку российских нефтепродуктов на европейский рынок. Поражение терминала сокращает валютную выручку страны-агрессора и ослабляет её способность финансировать войну против Украины.",
       "source": "Генштаб ВСУ, СБС"
     },
     "uk": {
       "region": "Ленінградська обл., Висоцьк",
-      "target": "Термінал «РПК-Висок Лукойл-2»",
+      "target": "Термінал «РПК-Висоцьк Лукойл-2»",
       "category": "Паливна логістика",
       "weapon": "Дрон",
-      "details": "Пожежа у резервуарному парку нафтоналивного експортного морського терміналу на Балтиці.",
+      "details": "РПК-Висоцьк «ЛУКОЙЛ-II» — спеціалізований морський нафтоналивний термінал «Лукойлу» на острові Висоцький у Фінській затоці (Ленінградська область), введений в експлуатацію 2004 року. Будучи одним із ключових балтійських експортних хабів Росії, термінал приймає нафтопродукти залізницею та трубопроводом і перевантажує їх на великотоннажні танкери дедвейтом до 90 тис. тонн. Проектна потужність об'єкта — близько 12 млн тонн нафтопродуктів на рік; основна номенклатура — дизельне паливо, мазут, нафта та вакуумний газойль. Внаслідок удару ударних БПЛА у резервуарному парку терміналу спалахнула масштабна пожежа, що порушила відвантаження російських нафтопродуктів на європейський ринок. Ураження терміналу скорочує валютну виручку країни-агресора та послаблює її здатність фінансувати війну проти України.",
       "source": "Генштаб ЗСУ, СБС"
     },
     "en": {
-      "region": "Ленинградская обл., Высоцк",
-      "target": "Terminal \"RPK-Vysotsk Lukoyl-2\"",
+      "region": "Leningrad Oblast, Vysotsk",
+      "target": "Terminal \"RPK-Vysotsk Lukoil-2\"",
       "category": "Fuel Logistics",
       "weapon": "Drone",
-      "details": "fire v storage tanknom parke neftenalivnogo eksportnogo morskogo terminala na Baltike.",
+      "details": "RPK-Vysotsk \"LUKOIL-II\" is a specialized marine oil product export terminal owned by Lukoil, located on Vysotsky Island in the Gulf of Finland (Leningrad Oblast), commissioned in 2004. As one of Russia's key Baltic export hubs, the terminal receives petroleum products by rail and pipeline and transfers them onto large-tonnage tankers with a deadweight of up to 90,000 tons. The facility's design capacity is approximately 12 million tons of petroleum products per year, handling primarily diesel fuel, fuel oil, naphtha, and vacuum gas oil. A strike by attack UAVs ignited a large-scale fire in the terminal's tank farm, disrupting the shipment of Russian petroleum products to European markets. Targeting the terminal reduces the aggressor state's foreign currency revenues and weakens its ability to finance the war against Ukraine.",
       "source": "AFU General Staff, SBS"
     },
     "id": 57
