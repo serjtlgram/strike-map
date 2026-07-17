@@ -416,7 +416,7 @@ const strikeData = [
       "target": "Людиновская нефтебаза",
       "category": "Топливная логистика",
       "weapon": "Дрон",
-      "details": "Поражены резервуары топливного хранилища («Калуганефтепродукт»), масштабный пожар зафиксирован спутниковыми снимками.",
+      "details": "Людиновская нефтебаза — объект АО «Калуганефтепродукт», дочерней структуры «Роснефти», расположенная в Калужской области — в ~330 км от украинской границы. Резервуарный парк базы насчитывал 9 резервуаров общей емкостью ~6700 м³, где хранились бензин и дизельное топливо. База служила логистическим центром для мелкооптовых поставок топлива потребителям региона, в том числе военным структурам. В ночь на 1 января 2026 года ударные БПЛА поразили резервуары: возник масштабный пожар, зафиксированный на спутниковых снимках. Удар по топливной инфраструктуре в первый день нового года выдал одну из наиболее удалённых и точных атак украинских БПЛА на тот период.",
       "source": "СБС"
     },
     "uk": {
@@ -424,7 +424,7 @@ const strikeData = [
       "target": "Людиновська нафтобаза",
       "category": "Паливна логістика",
       "weapon": "Дрон",
-      "details": "Уражені резервуари паливного сховища («Калуганафтопродукт»), масштабну пожежу зафіксовано супутниковими знімками.",
+      "details": "Людиновська нафтобаза — об'єкт АТ «Калуганафтопродукт», дочірньої структури «Роснафти», розташована в Калузькій області — за ~330 км від українського кордону. Резервуарний парк бази налічував 9 резервуарів загальною ємністю ~6700 м³, де зберігались бензин і дизельне паливо. База слугувала логістичним центром для дрібнооптових постачань палива споживачам регіону, в тому числі військовим структурам. В ніч на 1 січня 2026 року ударні БПЛА вразили резервуари: виникла масштабна пожежа, зафіксована на супутникових знімках. Удар по паливній інфраструктурі у перший день нового року став одним із найвіддаленіших і точних ударів українських БПЛА того періоду.",
       "source": "СБС"
     },
     "en": {
@@ -432,7 +432,7 @@ const strikeData = [
       "target": "Lyudinovskaya Fuel Depot",
       "category": "Fuel Logistics",
       "weapon": "Drone",
-      "details": "Fuel tanks were struck fuel storage facility (\"Kaluganefteprodukt\"), large-scale fire zafiksirovan satellite imagery.",
+      "details": "The Lyudinovo fuel depot is an asset of JSC Kaluganefteprodukt, a retail subsidiary of Rosneft, located in Kaluga Oblast around 330 km from Ukraine's border. The depot's tank farm held 9 tanks with a total capacity of around 6,700 m³, storing gasoline and diesel fuel. It served as a regional distribution hub for small-volume fuel deliveries to local consumers and military units. On the night of January 1, 2026, Ukrainian strike UAVs hit the tanks, triggering a large-scale fire confirmed by satellite imagery. The strike on fuel infrastructure on the first day of the new year was one of the longest-range and most precise UAV attacks of that period.",
       "source": "SBS"
     },
     "id": 2
