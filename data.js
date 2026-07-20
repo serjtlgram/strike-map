@@ -155,7 +155,7 @@ const strikeData = [
     "id": 239
   },
   {
-    "date": "19.07.2026",
+    "date": "18.07.2026",
     "lat": 55.792,
     "lng": 38.446,
     "distance": 594,
@@ -186,7 +186,7 @@ const strikeData = [
     "id": 240
   },
   {
-    "date": "19.07.2026",
+    "date": "18.07.2026",
     "lat": 52.585,
     "lng": 41.51,
     "distance": 467,
