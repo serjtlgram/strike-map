@@ -155,7 +155,7 @@ const strikeData = [
     "id": 239
   },
   {
-    "date": "18.07.2026",
+    "date": "19.07.2026",
     "lat": 55.792,
     "lng": 38.446,
     "distance": 594,
@@ -164,7 +164,7 @@ const strikeData = [
       "target": "Логистический центр Wildberries (склад подсанкционных комплектующих для дронов)",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Складской комплекс Wildberries в Электростали — один из крупнейших логистических хабов компании в московском регионе, расположенный в посёлке Случайный на территории промышленного массива. По заявлению президента Украины Владимира Зеленского, объект использовался российским ВПК для хранения и перераспределения подсанкционных комплектующих: деталей для производства ударных беспилотников и навигационного оборудования — что делает его законной военной целью. В ночь на 18 июля 2026 года удары БПЛА спровоцировали масштабный пожар на территории склада. Губернатор Московской области Андрей Воробьёв подтвердил атаку: 24 человека пострадали. Московская ПВО в ту ночь перехватила 64 дрона над столицей, однако часть всё же достигла целей по всей области.",
+      "details": "Логистический центр Wildberries в Электростали, один из крупнейших хабов компании в Подмосковье, подвергся разрушительному удару беспилотников. По заявлениям украинской стороны, склад использовался российским ВПК для перераспределения подсанкционных деталей, необходимых для сборки дронов и навигационных систем. Атака спровоцировала колоссальный пожар, который уничтожил около 350 тысяч квадратных метров складских площадей, что составляет порядка 7% всей логистической инфраструктуры маркетплейса. Пожар сопровождался сильнейшим задымлением, а экстренные службы боролись с огнём несколько дней. В результате удара один человек скончался в больнице, ещё десятки сотрудников получили ранения различной степени тяжести. Финансовый ущерб от потери самого здания, оборудования и сгоревших товаров оценивается аналитиками в астрономическую сумму от 30 до 100 миллиардов рублей. Этот инцидент стал мощнейшим ударом не только по военной логистике, но и по всей цепочке поставок компании.",
       "source": "Президент Зеленский, губернатор МО Воробьёв, dialog.ua, rbc.ua, belsat.eu"
     },
     "uk": {
@@ -172,7 +172,7 @@ const strikeData = [
       "target": "Логістичний центр Wildberries (склад підсанкційних комплектуючих для дронів)",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Складський комплекс Wildberries в Електростали — один із найбільших логістичних хабів компанії в московському регіоні, розташований у селищі Випадковому на території промислового масиву. За заявою президента України Володимира Зеленського, об'єкт використовувався російським ВПК для зберігання та перерозподілу підсанкційних комплектуючих: деталей для виробництва ударних безпілотників та навігаційного обладнання — що робить його законною військовою ціллю. Вночі 18 липня 2026 року удари БПЛА спровокували масштабну пожежу на території складу. Губернатор Московської області Андрій Воробйов підтвердив атаку: 24 особи постраждали. Московська ППО тієї ночі перехопила 64 дрони над столицею, однак частина все ж досягла цілей по всій області.",
+      "details": "Логістичний центр Wildberries в Електросталі, один із найбільших хабів компанії в Підмосков'ї, зазнав руйнівного удару безпілотників. За заявами української сторони, склад використовувався російським ВПК для перерозподілу підсанкційних деталей, необхідних для збирання дронів та навігаційних систем. Атака спровокувала колосальну пожежу, яка знищила близько 350 тисяч квадратних метрів складських площ, що становить близько 7% усієї логістичної інфраструктури маркетплейсу. Пожежа супроводжувалася надзвичайно сильним задимленням, а екстрені служби боролися з вогнем кілька днів. Унаслідок удару одна людина померла в лікарні, ще десятки співробітників отримали поранення різного ступеня тяжкості. Фінансовий збиток від втрати самої будівлі, обладнання та згорілих товарів оцінюється аналітиками в астрономічну суму від 30 до 100 мільярдів рублів. Цей інцидент став потужним ударом не лише по військовій логістиці, а й по всьому ланцюгу постачання компанії.",
       "source": "Президент Зеленський, губернатор МО Воробйов, dialog.ua, rbc.ua, belsat.eu"
     },
     "en": {
@@ -180,13 +180,13 @@ const strikeData = [
       "target": "Wildberries Logistics Centre (warehouse of sanctioned drone components)",
       "category": "Military-Industrial Complex",
       "weapon": "Drone",
-      "details": "The Wildberries warehouse complex in Elektrostal is one of the company's largest logistics hubs in the Moscow region, located in the Sluchaynyy industrial estate. According to Ukrainian President Volodymyr Zelensky, the facility was used by Russia's military-industrial complex to store and redistribute sanctioned components — parts for strike drone production and navigation equipment — making it a legitimate military target. On the night of July 17–18, 2026, drone strikes triggered a major fire at the facility. Moscow Oblast Governor Andrei Vorobyov confirmed the attack: 24 people were injured. Moscow's air defences intercepted 64 drones over the capital that night, but part of the strike wave reached targets across the region.",
+      "details": "The Wildberries logistics centre in Elektrostal, one of the company's largest hubs in the Moscow region, suffered a devastating drone strike. According to Ukrainian officials, the warehouse was being utilized by the Russian military-industrial complex to redistribute sanctioned components essential for assembling drones and navigation systems. The attack triggered a massive fire that completely destroyed approximately 350,000 square meters of warehouse space, wiping out nearly 7% of the marketplace's total logistics capacity. The blaze was accompanied by severe smoke, and emergency services battled the flames for several days. As a result of the strike, one person died in the hospital and dozens of other employees sustained varying degrees of injuries. Financial losses from the destruction of the building, equipment, and incinerated goods are estimated by analysts at a staggering 30 to 100 billion rubles. This incident delivered a crippling blow not only to military logistics but to the company's entire supply chain.",
       "source": "President Zelensky, Moscow Oblast Governor Vorobyov, dialog.ua, rbc.ua, belsat.eu"
     },
     "id": 240
   },
   {
-    "date": "18.07.2026",
+    "date": "19.07.2026",
     "lat": 52.585,
     "lng": 41.51,
     "distance": 467,
@@ -195,7 +195,7 @@ const strikeData = [
       "target": "Логистический центр Wildberries / складская зона вблизи ФКП «Тамбовский пороховой завод»",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Котовск — моногород, чьим градообразующим предприятием является ФКП «Тамбовский пороховой завод» (входит в Ростех) — один из ключевых производителей пироксилиновых порохов и зарядов для стрелкового оружия, артиллерии и танков, работающий с 1916 года. В ночь на 18 июля 2026 года украинские ударные БПЛА, оснащённые осколочными боевыми частями, атаковали логистический центр Wildberries в городе. По заявлению Зеленского, склад использовался для поставок подсанкционных комплектующих для дронов. В результате попаданий вспыхнул масштабный пожар. По официальным данным губернатора Тамбовской области Евгения Первышова, погибли 7 сотрудников ночной смены, ещё 25 человек получили ранения различной степени тяжести. Работа ПВО региона зафиксировала перехват 28 БПЛА, но часть достигла цели.",
+      "details": "Логистический хаб Wildberries в городе Котовск Тамбовской области был атакован ударными дронами ввиду его стратегического расположения вблизи «Тамбовского порохового завода». Этот завод является одним из ключевых предприятий России по производству пороха и зарядов для артиллерии, и, по имеющимся данным, складская инфраструктура маркетплейса была интегрирована в логистику ВПК. В результате точного попадания БПЛА на объекте вспыхнул мощный пожар, полностью уничтоживший хранившиеся там запасы и часть строений. К сожалению для сотрудников ночной смены, последствия оказались трагическими: подтверждена гибель семи человек, ещё несколько десятков получили ранения. Спасательные работы и тушение пожара продолжались длительное время из-за масштабов возгорания и угрозы повторных детонаций на соседних промышленных площадках. Этот удар наглядно продемонстрировал уязвимость складов двойного назначения, которые используются для нужд российской армии.",
       "source": "Президент Зеленский, губернатор Тамбовской обл. Первышов, meduza.io, kyivpost.com, belsat.eu"
     },
     "uk": {
@@ -203,7 +203,7 @@ const strikeData = [
       "target": "Логістичний центр Wildberries / складська зона поблизу ФКП «Тамбовський пороховий завод»",
       "category": "ВПК",
       "weapon": "Дрон",
-      "details": "Котовськ — монопромислове місто, чиїм містоутворюючим підприємством є ФКП «Тамбовський пороховий завод» (входить до Ростеху) — один із ключових виробників піроксилінових порохів і зарядів для стрілецької зброї, артилерії та танків, що працює з 1916 року. Вночі 18 липня 2026 року українські ударні БПЛА, оснащені осколковими бойовими частинами, атакували логістичний центр Wildberries у місті. За заявою Зеленського, склад використовувався для поставок підсанкційних комплектуючих для дронів. Внаслідок влучань спалахнула масштабна пожежа. За офіційними даними губернатора Тамбовської області Євгена Первишова, загинули 7 співробітників нічної зміни, ще 25 осіб отримали поранення різного ступеня тяжкості. ППО регіону зафіксувало перехоплення 28 БПЛА, але частина досягла цілей.",
+      "details": "Логістичний хаб Wildberries у місті Котовськ Тамбовської області був атакований ударними дронами з огляду на його стратегічне розташування поблизу «Тамбовського порохового заводу». Цей завод є одним із ключових підприємств Росії з виробництва пороху та зарядів для артилерії, і, за наявними даними, складська інфраструктура маркетплейсу була інтегрована в логістику ВПК. Унаслідок точного влучання БПЛА на об'єкті спалахнула потужна пожежа, яка повністю знищила запаси, що там зберігалися, та частину будівель. На жаль для працівників нічної зміни, наслідки виявилися трагічними: підтверджено загибель семи осіб, ще кілька десятків отримали поранення. Рятувальні роботи та гасіння пожежі тривали довгий час через масштаби займання та загрозу повторних детонацій на сусідніх промислових майданчиках. Цей удар наочно продемонстрував уразливість складів подвійного призначення, які використовуються для потреб російської армії.",
       "source": "Президент Зеленський, губернатор Тамбовської обл. Первишов, meduza.io, kyivpost.com, belsat.eu"
     },
     "en": {
@@ -211,7 +211,7 @@ const strikeData = [
       "target": "Wildberries Logistics Centre / warehouse zone near Tambov Powder Plant",
       "category": "Military-Industrial Complex",
       "weapon": "Drone",
-      "details": "Kotovsk is a company town whose city-forming enterprise is the Federal State Unitary Enterprise Tambov Powder Plant (part of Rostec) — one of Russia's key producers of pyroxylin powders and propellant charges for small arms, artillery and tanks, in operation since 1916. On the night of July 17–18, 2026, Ukrainian strike UAVs equipped with fragmentation warheads hit the Wildberries logistics centre in the city. President Zelensky stated the warehouse was used to supply sanctioned drone components. A large fire broke out after the strikes. Tambov Oblast Governor Yevgeny Pervyshov confirmed seven night-shift workers were killed and 25 others wounded to varying degrees. Regional air defences intercepted 28 UAVs, but part of the attack wave hit its targets.",
+      "details": "The Wildberries logistics hub in Kotovsk, Tambov Oblast, was targeted by strike drones due to its strategic location near the Tambov Powder Plant. This plant is one of Russia's key enterprises for producing gunpowder and artillery charges, and reports indicate that the marketplace's warehouse infrastructure had been integrated into military logistics. A direct UAV hit sparked a massive fire at the facility, completely obliterating the stored inventory and sections of the buildings. For the night shift employees, the consequences were tragic: the deaths of seven people were confirmed, with several dozen more injured. Rescue and firefighting operations lasted for a considerable time due to the massive scale of the blaze and the risk of secondary detonations at adjacent industrial sites. This strike starkly demonstrated the vulnerability of dual-use warehouses that are secretly repurposed to supply the Russian military.",
       "source": "President Zelensky, Tambov Oblast Governor Pervyshov, meduza.io, kyivpost.com, belsat.eu"
     },
     "id": 241
