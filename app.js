@@ -305,11 +305,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 return 0;
             });
             const mainImg = sortedImages[0];
-            const countHtml = sortedImages.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md backdrop-blur-md shadow-lg pointer-events-none mobile-only">+${sortedImages.length - 1}</div>` : '';
+            const countHtml = sortedImages.length > 1 ? `<div class="absolute top-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded-md shadow-lg pointer-events-none mobile-only">+${sortedImages.length - 1}</div>` : '';
             const imagesJson = JSON.stringify(sortedImages).replace(/"/g, '&quot;');
             
-            const videoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>`;
-            const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
+            const videoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>`;
+            const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
 
             let thumbnailsHtml = '';
             if (sortedImages.length > 1) {
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         `<video src="${mainImg}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-12 h-12 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
                         `<img src="${mainImg}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">`}
                         ${countHtml}
-                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 shadow-lg pointer-events-none">
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                             <span>${textExpand}</span>
                         </div>
@@ -347,8 +347,8 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         } else if (item.image) {
             const isVideo = item.image.toLowerCase().endsWith('.mp4');
-            const videoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>`;
-            const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md backdrop-blur-sm shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
+            const videoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>`;
+            const photoIconBadge = `<div class="absolute top-2 left-2 bg-black/60 text-white p-1 rounded-md shadow-sm pointer-events-none z-10"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg></div>`;
 
             imageHtml = `
                 <div class="popup-image-col shrink-0 w-full md:w-40 lg:w-48 flex flex-col justify-start cursor-pointer group" onclick="window.openFullscreenImage('${item.image}')">
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${isVideo ? 
                         `<video src="${item.image}#t=0.1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500" preload="metadata" muted playsinline></video><div class="absolute inset-0 flex items-center justify-center bg-black/20 pointer-events-none"><svg class="w-12 h-12 text-white drop-shadow-md" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>` : 
                         `<img src="${item.image}" alt="${item.target}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500">`}
-                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 backdrop-blur-md shadow-lg pointer-events-none">
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] font-medium px-2 py-1 rounded-md flex items-center gap-1 shadow-lg pointer-events-none">
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                             <span>${textExpand}</span>
                         </div>
@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cameraBadge = '<div class="absolute top-2 right-2 flex gap-1 z-[2] pointer-events-none">';
                 if (pCount > 0) {
                     cameraBadge += `
-                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded-xl bg-[var(--bg-input)] border border-[var(--border-color)] text-[var(--text-muted)] transition transform group-hover:text-[var(--text-main)] shadow-sm backdrop-blur-md" title="${pCount} фото">
+                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded-xl bg-[var(--bg-input)] border border-[var(--border-color)] text-[var(--text-muted)] transition transform group-hover:text-[var(--text-main)] shadow-sm" title="${pCount} фото">
                             <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.5 3L11 9h3l-2.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M2 9.5C2 8.67 2.67 8 3.5 8H5l1.5-2h7L15 8h1.5C17.33 8 18 8.67 18 9.5v9c0 .83-.67 1.5-1.5 1.5h-13C2.67 20 2 19.33 2 18.5v-9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
@@ -635,7 +635,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 if (vCount > 0) {
                     cameraBadge += `
-                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded-xl bg-[var(--bg-input)] border border-[var(--border-color)] text-[var(--text-muted)] transition transform group-hover:text-[var(--text-main)] shadow-sm backdrop-blur-md" title="${vCount} відео">
+                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded-xl bg-[var(--bg-input)] border border-[var(--border-color)] text-[var(--text-muted)] transition transform group-hover:text-[var(--text-main)] shadow-sm" title="${vCount} відео">
                             <svg class="w-3.5 h-3.5 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/></svg>
                             <span class="text-[10px] font-bold leading-none">${vCount}</span>
                         </div>
