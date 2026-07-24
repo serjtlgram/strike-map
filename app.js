@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const colors = getCategoryColorClass(type);
         const html = `
             <div class="relative flex items-center justify-center w-8 h-8">
-                <div class="absolute w-full h-full ${colors.bg} opacity-20 rounded-full animate-ping"></div>
+                <div class="absolute w-full h-full ${colors.bg} opacity-20 rounded-full animate-ping pulse-ring"></div>
                 <div class="absolute w-6 h-6 ${colors.bg} rounded-full shadow-lg ${colors.glow} flex items-center justify-center border-2 border-white/50">
                     <div class="w-2 h-2 bg-white rounded-full"></div>
                 </div>

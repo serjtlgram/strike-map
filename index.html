@@ -289,6 +289,19 @@
             line-height: 1;
             letter-spacing: 0.02em;
         }
+
+        /* Marker Animation GPU Layer Optimization */
+        .custom-div-icon {
+            contain: layout style paint;
+        }
+        .pulse-ring {
+            will-change: transform, opacity;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+        .leaflet-marker-pane {
+            contain: layout style;
+        }
     </style>
 </head>
 <body>
@@ -433,6 +446,6 @@
     <!-- Data Source -->
     <script src="data.js?v=22"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=25"></script>
+    <script src="app.js?v=26"></script>
 </body>
 </html>
