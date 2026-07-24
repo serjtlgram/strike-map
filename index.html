@@ -292,12 +292,13 @@
 
         /* Marker Animation GPU Layer Optimization */
         .custom-div-icon {
-            contain: layout style paint;
+            contain: layout style;
         }
         .pulse-ring {
             will-change: transform, opacity;
             transform: translateZ(0);
             backface-visibility: hidden;
+            border-radius: 50% !important;
         }
         .leaflet-marker-pane {
             contain: layout style;
@@ -446,6 +447,6 @@
     <!-- Data Source -->
     <script src="data.js?v=22"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=26"></script>
+    <script src="app.js?v=27"></script>
 </body>
 </html>
