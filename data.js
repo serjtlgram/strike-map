@@ -1,6 +1,37 @@
 const strikeData = [
   {
     "date": "24.07.2026",
+    "lat": 44.9521,
+    "lng": 34.1024,
+    "distance": 220,
+    "ru": {
+      "region": "Крым, Симферополь",
+      "target": "Сортировочный центр Wildberries (Симферополь)",
+      "category": "Логистика",
+      "weapon": "Дрон",
+      "details": "В ночь на 24 июля 2026 года дальнобойные украинские беспилотники атаковали крупный логистический и сортировочный центр компании Wildberries в Симферополе. В результате прицельного удара БПЛА и последующей детонации боевой части на территории комплекса вспыхнул сильный пожар. Огонь быстро охватил складские помещения и заблокировал работу нескольких погрузочных терминалов. Пресс-служба компании подтвердила факт воздушной атаки и экстренную эвакуацию персонала складского комплекса в соответствии с протоколами безопасности. Данный распределительный узел в Симферополе выполняет ключевую роль в обработке логистических потоков, складировании и снабжении армейских подразделений товарами двойного назначения и обмундированием. В результате налета складским мощностям был нанесен значительный ущерб, а операционная деятельность хаба временно приостановлена.",
+      "source": "OSINT (Крымский ветер), пресс-служба Wildberries, СМИ"
+    },
+    "uk": {
+      "region": "Крим, Сімферополь",
+      "target": "Сортувальний центр Wildberries (Сімферополь)",
+      "category": "Логістика",
+      "weapon": "Дрон",
+      "details": "У ніч проти 24 липня 2026 року далекобійні українські безпілотники атакували великий логістичний та сортувальний центр компанії Wildberries у Симферополі. Внаслідок прицільного удару БПЛА та подальшої детонації бойової частини на території комплексу спалахнула сильна пожежа. Вогонь швидко охопив складські приміщення та заблокував роботу кількох навантажувальних терміналів. Прес-служба компанії підтвердила факт повітряної атаки та екстрену евакуацію персоналу складського комплексу відповідно до протоколів безпеки. Цей розподільчий вузол у Симферополі відіграє ключову роль в обробці логістичних потоків, складуванні та постачанні армійських підрозділів товарами подвійного призначення і обмундируванням. Внаслідок нальоту складським потужностям було завдано значних збитків.",
+      "source": "OSINT (Кримський вітер), прес-служба Wildberries, ЗМІ"
+    },
+    "en": {
+      "region": "Crimea, Simferopol",
+      "target": "Wildberries Sorting Center (Simferopol)",
+      "category": "Logistics",
+      "weapon": "Drone",
+      "details": "On the night of July 24, 2026, long-range Ukrainian strike drones targeted the major Wildberries logistics and sorting center in Simferopol, Crimea. Direct drone impacts and warhead detonations triggered a heavy fire inside the warehouse complex. Flames rapidly spread through storage sections, heavily damaging loading terminals and automated sorting lines. The corporate press service confirmed the aerial attack and stated that warehouse personnel were evacuated in compliance with emergency safety protocols. The Simferopol logistics hub functions as a vital distribution facility handling regional freight flows, military logistics, and dual-use supply chains across Crimea. Due to severe structural damage from the fire, operations at the facility were temporarily suspended pending repair work.",
+      "source": "OSINT (Crimean Wind), Wildberries Press Office, Media"
+    },
+    "id": 262
+  },
+  {
+    "date": "24.07.2026",
     "lat": 54.7312,
     "lng": 35.9719,
     "distance": 432,
