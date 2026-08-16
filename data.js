@@ -558,6 +558,99 @@ const strikeData = [
     "id": 18
   },
   {
+    "date": "10.08.2026",
+    "lat": 48.1294,
+    "lng": 38.9328,
+    "distance": 120,
+    "ru": {
+      "region": "Луганская область, г. Хрустальный (оккупированная территория)",
+      "target": "Ремонтно-восстановительная база и стоянка поврежденной бронетехники ВС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "10 августа 2026 года Силы обороны Украины нанесли точный удар беспилотными авиационными комплексами по ремонтно-восстановительной базе подразделений ВС РФ в городе Хрустальном на временно оккупированной территории Луганской области. Данный промышленно-ремонтный комплекс использовался российским военным командованием для оперативного ремонта тяжелой бронетехники, танков, артиллерийских систем и двигателей перед их повторной отправкой на линию фронта. В результате серии точных прилетов ударных БПЛА произошло обрушение кровли ремонтных цехов, возник сильный пожар и детонация хранившихся запчастей и боекомплекта. Генеральный штаб ВСУ официально подтвердил результативное поражение ремонтного подразделения. Уничтожение ремонтной инфраструктуры сорвало график восстановления боеспособности поврежденной бронетехники противника.",
+      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
+    },
+    "uk": {
+      "region": "Луганська область, м. Хрустальний (окупована територія)",
+      "target": "Ремонтно-відновлювальна база та стоянка пошкодженої бронетехніки ЗС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "10 серпня 2026 року Сили оборони України завдали точного удару безпілотними авіаційними комплексами по ремонтно-відновлювальній базі підрозділів ЗС РФ у місті Хрустальний на тимчасово окупованій території Луганської області. Цей промислово-ремонтний комплекс використовувався російським військовим командуванням для оперативного ремонту важкої бронетехніки, танків, артилерійських систем та двигунів перед їх повторним відправленням на лінію фронту. У результаті серії точних влучань ударних БПЛА сталося обвалення покрівлі ремонтних цехів, виникла сильна пожежа та детонація накопичених запчастин і боєкомплекту. Генеральний штаб ЗСУ офіційно підтвердив результативне ураження ремонтного підрозділу. Знищення ремонтної інфраструктури зірвало графік відновлення боєздатності пошкодженої бронетехніки противника.",
+      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
+    },
+    "en": {
+      "region": "Luhansk Oblast, Khrustalnyi (Occupied Territory)",
+      "target": "Military Armored Vehicle Repair and Maintenance Facility",
+      "category": "Military",
+      "weapon": "Drone",
+      "details": "On August 10, 2026, the Ukrainian Defense Forces carried out a precision strike using unmanned aerial systems against a Russian military repair and maintenance base located in the occupied city of Khrustalnyi, Luhansk Oblast. This industrial repair facility was heavily utilized by the Russian military command for the overhaul, welding, and refitting of battle-damaged armored fighting vehicles, tanks, and artillery systems before redeployment to the front line. Multiple strike drones directly penetrated the main maintenance workshops, triggering severe structural fires and secondary explosions of ammunition and spare part stores. The General Staff of the Armed Forces of Ukraine officially confirmed the destruction of this repair unit. The strike severely degraded Russian capabilities to rapidly return heavy armored combat vehicles to operational status.",
+      "source": "General Staff of AFU, GUR MO, OSINT, Media"
+    },
+    "id": 19
+  },
+  {
+    "date": "10.08.2026",
+    "lat": 47.165,
+    "lng": 37.285,
+    "distance": 176,
+    "ru": {
+      "region": "Донецкая область, Мариупольский район, с. Боевое (оккупированная территория)",
+      "target": "Полевой артиллерийский склад боеприпасов группировки войск ВС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "10 августа 2026 года подразделения Сил обороны Украины провели успешную операцию по уничтожению крупного полевого артиллерийского склада боеприпасов ВС РФ в районе села Боевое на временно оккупированной территории Донецкой области. Складской узел выполнял критически важную функцию промежуточного накопления снарядов ствольной артиллерии, реактивных выстрелов для РСЗО и мин для снабжения наступающих российских частей на южном направлении. В результате попадания дальнобойных дронов-камикадзе на объекте началась масштабная вторичная детонация артиллерийских боеприпасов, продолжавшаяся несколько часов и сопровождавшаяся сильными пожарами. Генеральный штаб ВСУ подтвердил уничтожение склада. Ликвидация артиллерийского арсенала существенно снизила плотность вражеских обстрелов на данном участке фронта.",
+      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
+    },
+    "uk": {
+      "region": "Донецька область, Маріупольський район, с. Бойове (окупована територія)",
+      "target": "Польовий артилерійський склад боєприпасів угруповання військ ЗС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "10 серпня 2026 року підрозділи Сил оборони України провели успішну операцію зі знищення великого польового артилерійського складу боєприпасів ЗС РФ у районі села Бойове на тимчасово окупованій території Донецької області. Складський вузол виконував критично важливу функцію проміжного накопичення снарядів ствольної артилерії, реактивних пострілів для РСЗВ та мін для постачання наступальних російських частин на південному напрямку. У результаті влучання далекобійних дронів-камікадзе на об'єкті почалася масштабна вторинна детонація артилерійських боєприпасів, яка тривала кілька годин і супроводжувалася сильними пожежами. Генеральний штаб ЗСУ підтвердив знищення складу. Ліквідація артилерійського арсеналу суттєво знизила щільність ворожих обстрілів на цій ділянці фронту.",
+      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
+    },
+    "en": {
+      "region": "Donetsk Oblast, Mariupol District, Boyove (Occupied Territory)",
+      "target": "Forward Field Artillery Ammunition Supply Depot",
+      "category": "Military",
+      "weapon": "Drone",
+      "details": "On August 10, 2026, units of the Ukrainian Defense Forces carried out a precision operation destroying a large forward field artillery ammunition depot of the Russian Armed Forces near the village of Boyove in occupied Donetsk Oblast. This ammunition depot served as a critical forward transshipment hub storing tube artillery shells, MLRS rockets, and heavy mortar rounds allocated to Russian operational formations on the southern axis. Direct impacts by Ukrainian strike drones triggered extensive secondary detonations of stored ordnance that continued for several hours, completely razing the depot storage area. The General Staff of the Armed Forces of Ukraine officially verified the total destruction of the field depot. The loss of these stockpiles significantly curtailed Russian artillery fire intensity along the front sector.",
+      "source": "General Staff of AFU, GUR MO, OSINT, Media"
+    },
+    "id": 20
+  },
+  {
+    "date": "10.08.2026",
+    "lat": 47.985,
+    "lng": 37.33,
+    "distance": 86,
+    "ru": {
+      "region": "Донецкая область, Покровский район, с. Новоселидовка (оккупированная территория)",
+      "target": "Склад материально-технических средств и войскового снабжения ВС РФ",
+      "category": "Логистический центр",
+      "weapon": "Дрон",
+      "details": "10 августа 2026 года Силы обороны Украины нанесли результативный удар ударными БПЛА по крупному складу материально-технических средств российских войск в районе Новоселидовки в Донецкой области. Объект служил ключевым передовым распределительным узлом для снабжения российских подразделений инженерным имуществом, полевым снаряжением, средствами связи, маскировочными сетями и горюче-смазочными материалами. В результате точного налета дронов загорелись основные ангары и складские площадки открытого хранения, что привело к полному выгоранию имущества и детонации хранившихся емкостей с ГСМ. Генеральный штаб ВСУ официально подтвердил успешное поражение склада. Уничтожение распределительного хаба сорвало тыловое обеспечение группировки противника на покровско-кураховском направлении.",
+      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
+    },
+    "uk": {
+      "region": "Донецька область, Покровський район, с. Новоселідівка (окупована територія)",
+      "target": "Склад матеріально-технічних засобів та військового забезпечення ЗС РФ",
+      "category": "Логістичний центр",
+      "weapon": "Дрон",
+      "details": "10 серпня 2026 року Сили оборони України завдали результативного удару ударними БПЛА по великому складу матеріально-технічних засобів російських військ у районі Новоселідівки в Донецькій області. Об'єкт слугував ключовим передовим розподільчим вузлом для забезпечення російських підрозділів інженерним майном, польовим спорядженням, засобами зв'язку, маскувальними сітками та пально-мастильними матеріалами. У результаті точного нальоту дронів зайнялися основні ангари та складські майданчики відкритого зберігання, що призвело до повного вигорання майна та детонації ємностей із ПММ. Генеральний штаб ЗСУ офіційно підтвердив успішне ураження складу. Знищення розподільчого хабу зірвало тилове забезпечення угруповання противника на покровсько-курахівському напрямку.",
+      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
+    },
+    "en": {
+      "region": "Donetsk Oblast, Pokrovsk District, Novoselydivka (Occupied Territory)",
+      "target": "Material and Technical Military Supply Depot",
+      "category": "Logistics Hub",
+      "weapon": "Drone",
+      "details": "On August 10, 2026, the Ukrainian Defense Forces executed a successful UAV strike targeting a major material-technical storage and logistics depot of Russian forces near Novoselydivka in Donetsk Oblast. The installation functioned as an essential forward logistics distribution node supplying Russian assault units with combat engineering equipment, field gear, tactical radios, camouflage supplies, and technical lubricants. Precision drone strikes set ablaze the primary warehouse hangars and outdoor staging sectors, leading to complete destruction of stored equipment and secondary combustions of fuel containers. The General Staff of the Armed Forces of Ukraine officially confirmed the destruction of the logistics facility. The elimination of this depot severely disrupted rear logistics for Russian combat units on the Pokrovsk-Kurakhove axis.",
+      "source": "General Staff of AFU, GUR MO, OSINT, Media"
+    },
+    "id": 21
+  },
+  {
     "date": "09.08.2026",
     "lat": 54.8872,
     "lng": 56.1086,
@@ -586,7 +679,7 @@ const strikeData = [
       "details": "On the night of August 9, 2026, long-range Ukrainian strike drones targeted the Bashneft-Ufaneftekhim oil refining and petrochemical complex in Ufa, located over 1,400 kilometers from the frontline. Processing up to 9.5 million metric tons of crude annually, this major facility produces high-octane gasoline, diesel, and jet fuel essential for Russian military transport units. A swarm of attack UAVs penetrated regional air defenses, with one drone falling near the industrial perimeter and triggering a heavy fire. Local emergency protocols were triggered across the industrial district, while Ufa International Airport briefly halted all flight operations. The strike forced partial shutdowns of refining units for safety checks and damage evaluation.",
       "source": "General Staff of AFU, GUR MO, Bashkortostan Administration, OSINT (Astra), Media"
     },
-    "id": 19
+    "id": 22
   },
   {
     "date": "09.08.2026",
@@ -617,7 +710,7 @@ const strikeData = [
       "details": "On the night of August 9, 2026, Ukrainian Defense Forces launched a long-range UAV attack on oil product transfer terminals and port logistics facilities in Novorossiysk. Serving as the primary Black Sea fuel hub, Novorossiysk plays a central role in supplying fuel to Russian forces stationed in southern Ukraine and occupied Crimea. Despite heavy anti-aircraft fire and SAM interceptions, several drones reached the industrial premises of Importpischeprom LLC and storage assets near Vyerkhnyebakansky. Falling strike drones and debris ignited fires across auxiliary structures and fuel storage infrastructure, injuring one technician. The operation temporarily disrupted marine oil loading and forced port authorities to lock down maritime traffic.",
       "source": "General Staff of AFU, GUR MO, Krasnodar Operational HQ, OSINT (Astra), Media"
     },
-    "id": 20
+    "id": 23
   },
   {
     "date": "09.08.2026",
@@ -648,7 +741,7 @@ const strikeData = [
       "details": "On August 9, 2026, Ukrainian attack drones carried out a precision strike on Russian Black Sea Fleet logistic storage and fuel depots located in the Inzhir area near Cape Aiya, Sevastopol. Russian forces utilized these sheltered coastal military positions for storing fuel supplies and tactical gear dedicated to naval infantry and patrol boats. Impacting kamikaze UAVs detonated inside the storage facility, triggering a massive fire that consumed warehouse infrastructure and adjacent terrain. Military firefighting units battled the flames across several hectares throughout the day. The strike disrupted supply pipelines supporting Russian light naval craft and coastal defense units based along the Crimean Peninsula.",
       "source": "Unmanned Systems Forces of AFU, Sevastopol Operational HQ, OSINT (Astra), Media"
     },
-    "id": 21
+    "id": 24
   },
   {
     "date": "09.08.2026",
@@ -679,7 +772,7 @@ const strikeData = [
       "details": "On August 9, 2026, the Ukrainian Armed Forces executed a synchronized strike using loitering munitions against military-industrial manufacturing and storage sites in Belgorod's industrial zone. The target area houses metalworking, machinery, and equipment repair plants contracted by the Russian Ministry of Defense to service armored vehicles and fabricate defensive structures. Low-flying drones bypassed local air defense batteries, scoring direct hits on assembly workshops and logistics warehouses. The strikes triggered widespread fires, causing severe structural collapse of roofs and machinery lines. The action damaged critical military repair infrastructure and disrupted logistics operations supporting frontline combat units.",
       "source": "General Staff of AFU, Governor Gladkov, OSINT (Astra, Pepel), Media"
     },
-    "id": 22
+    "id": 25
   },
   {
     "date": "09.08.2026",
@@ -710,7 +803,7 @@ const strikeData = [
       "details": "Throughout August 9, 2026, Ukrainian attack UAVs hit a forward fuel and logistics depot belonging to Russia's \"Sever\" grouping of forces in the Rylsky District of Kursk Oblast. The site served as a tactical staging area for distributing diesel, gasoline, and combat supplies to Russian military units deployed near the border. Multiple loitering munitions struck fuel storage tanks and equipment maintenance hangars, triggering secondary explosions and a major blaze. Heavy flames and smoke columns were documented by local eyewitnesses and satellite thermal monitoring. The destruction of this tactical supply node disrupted fuel replenishment for armored vehicles operating in the border sector.",
       "source": "General Staff of AFU, GUR MO, Acting Governor Smirnov, OSINT (Astra), Media"
     },
-    "id": 23
+    "id": 26
   },
   {
     "date": "08.08.2026",
@@ -741,7 +834,7 @@ const strikeData = [
       "details": "On the night of August 8, 2026, Ukrainian Defense Forces, in coordination with the GUR Active Operations and Unmanned Systems departments, launched a heavy long-range drone strike on the Ilsky Oil Refinery in Krasnodar Krai. Operating with a processing capacity of 6.6 million metric tons per year, this major refinery serves as a vital fuel supplier of diesel and aviation kerosene for Russian forces operating on the southern front. According to regional emergency services and OSINT monitors from Astra, a swarm of attack UAVs bypassed local air defenses and hit processing units. The strike triggered a large-scale fire across the main technological installations. Five refinery technicians suffered injuries and required medical care. The damage forced an emergency shutdown of crude distillation units, severely disrupting regional military fuel supplies.",
       "source": "General Staff of AFU, GUR MO, Krasnodar Operational HQ, OSINT (Astra), Media"
     },
-    "id": 24
+    "id": 27
   },
   {
     "date": "08.08.2026",
@@ -772,7 +865,7 @@ const strikeData = [
       "details": "On the night of August 8, 2026, long-range Ukrainian strike UAVs launched a successful raid against the Syzran Oil Refinery owned by Rosneft in Samara Oblast, located over 850 kilometers from the frontline. With an annual capacity of 8.9 million metric tons, the facility is a key fuel production asset supporting Russian military logistics across the central and southern sectors. According to the General Staff of the AFU and local eyewitness accounts, up to 30 drones approached the facility, resulting in more than a dozen heavy explosions inside the refinery perimeter. The main strikes hit the primary crude distillation unit (AVT) and fuel storage reservoirs, sparking a high-intensity fire detected by NASA FIRMS satellite thermal sensors. Regional authorities confirmed direct impacts, while Samara's Kurumoch Airport introduced \"Kover\" airspace security protocols.",
       "source": "General Staff of AFU, GUR MO, Governor Fedorishchev, OSINT (Astra, FIRMS), Media"
     },
-    "id": 25
+    "id": 28
   },
   {
     "date": "08.08.2026",
@@ -803,7 +896,7 @@ const strikeData = [
       "details": "On August 8, 2026, the Unmanned Systems Forces (SBS) of Ukraine executed a precision loitering munition strike against an S-400 \"Triumf\" air defense missile battery positioned near Gelendzhik in Krasnodar Krai. According to SBS Commander Robert Brovdi (\"Madyar\"), this specific battery carried out six anti-aircraft missile launches targeting Ukrainian territory between 09:25 and 12:51 AM that same day. Ukrainian UAV operators pinpointed the active battery coordinates and deployed a swarm of strike drones. Direct hits ignited the TEL launchers and the target engagement radar station. The resulting fire blazed for over three hours, accompanied by secondary missile cook-offs. The destruction of this high-tier S-400 system significantly compromised Russian air defense coverage over the Black Sea coastline and supply lines heading into Crimea.",
       "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
     },
-    "id": 26
+    "id": 29
   },
   {
     "date": "08.08.2026",
@@ -834,7 +927,7 @@ const strikeData = [
       "details": "On August 8, 2026, special units of GUR MO and Ukrainian Defense Forces conducted a naval operation targeting a key technical surveillance and radar post installed on the Sivash offshore gas platform in the Black Sea. Russian forces had transformed the drilling rig into a fortified electronic intelligence node equipped with surface and airspace tracking radars to monitor Ukrainian ship and aircraft movements. A successful drone strike directly hit the radar domes, radio relay transmitters, and electro-optical surveillance gear. A localized fire broke out on the platform structure, as verified by combat imagery. The elimination of this electronic surveillance post severely degraded Russian early warning and tracking capabilities across the western Black Sea region.",
       "source": "General Staff of AFU, GUR MO, OSINT, Media"
     },
-    "id": 27
+    "id": 30
   },
   {
     "date": "08.08.2026",
@@ -865,7 +958,7 @@ const strikeData = [
       "details": "On August 8, 2026, Ukrainian Unmanned Systems Forces executed a targeted strike on a Podlet-K1 low-altitude surveillance radar station located near Golovatovka in Rostov Oblast. This mobile 3D radar system is designed to detect low-flying targets, including cruise missiles and strike drones, feeding real-time targeting data to S-300 and S-400 air defense batteries. A precision attack drone struck the primary radar antenna array and the command module, triggering a fire that completely put the system out of operation. The destruction of this radar created a vital blind spot in Russian radar coverage along the Sea of Azov coastline and the Rostov logistics hub, facilitating subsequent deep strikes against military targets.",
       "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
     },
-    "id": 28
+    "id": 31
   },
   {
     "date": "08.08.2026",
@@ -896,7 +989,7 @@ const strikeData = [
       "details": "On August 8, 2026, Ukrainian Unmanned Systems Forces successfully hit and neutralized a mobile Kasta-2E2 (39N6E) low-altitude radar station operating near Latonovo in Rostov Oblast. Designed to detect extremely low-flying targets amid heavy ground clutter and electronic countermeasures, the Kasta radar serves as an essential sensor for Russian tactical air defense network. A kamikaze strike drone scored a direct hit on the elevated antenna vehicle and command module, setting the specialized electronics ablaze. The loss of this radar node severely blinded Russian frontline air defenses in western Rostov Oblast, disrupting their ability to detect incoming low-altitude strike drones heading toward rear supply lines.",
       "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
     },
-    "id": 29
+    "id": 32
   },
   {
     "date": "08.08.2026",
@@ -927,7 +1020,7 @@ const strikeData = [
       "details": "On August 8, 2026, a coordinated drone strike by the Unmanned Systems Forces of Ukraine destroyed a short-range Tor air defense system near Pudovy in Rostov Oblast. The Tor vehicle was deployed to provide point defense for military logistics corridors and troop concentrations against incoming drones and precision munitions. Ukrainian drone reconnaissance spotted the air defense vehicle while it was maneuvering into position. A direct kamikaze drone impact triggered a secondary explosion of the onboard surface-to-air missiles, completely destroying the unit. The destruction of this tactical air defense system degraded Russian force protection along the critical Rostov logistics corridor.",
       "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
     },
-    "id": 30
+    "id": 33
   },
   {
     "date": "08.08.2026",
@@ -958,7 +1051,7 @@ const strikeData = [
       "details": "On August 8, 2026, Ukrainian Unmanned Systems Forces launched a successful kamikaze drone strike against a Pantsir-S1 air defense system positioned near Yeysk in Krasnodar Krai. The Pantsir-S1 unit was stationed on the coast to guard the local naval airbase and strategic airspace approaches near the Sea of Azov. A direct drone hit detonated the missile tubes and severely damaged the tracking radar. Secondary cook-offs completely neutralized the weapon system. The loss of this air defense platform compromised the point defenses around the Yeysk military airfield and naval facilities, opening up pathways for subsequent long-range drone strikes.",
       "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
     },
-    "id": 31
+    "id": 34
   },
   {
     "date": "07.08.2026",
@@ -989,7 +1082,7 @@ const strikeData = [
       "details": "On the night of August 7, 2026, the Ukrainian Defense Forces carried out a combined long-range strike against the Gvardeyskoye military airfield in occupied Crimea. The airbase functions as an operational hub for Russian tactical aviation and a key storage and launch facility for Shahed-type strike drones. According to the General Staff of the AFU and OSINT monitors, multiple impacts were registered near the drone launch control grounds and fuel storage depots. Local residents reported two waves of powerful explosions between 03:30 and 04:47 AM accompanied by secondary ammo detonations. The strike triggered two major industrial fires across the airbase infrastructure. Russian air defense claimed to have downed several incoming drones, yet confirmed direct impacts were verified by thermal satellite imagery and eyewitness reports.",
       "source": "General Staff of AFU, GUR MO, OSINT (Astra, Crimean Wind), Media"
     },
-    "id": 32
+    "id": 35
   },
   {
     "date": "07.08.2026",
@@ -1020,7 +1113,7 @@ const strikeData = [
       "details": "On the night of August 7, 2026, Ukrainian Defense Forces and intelligence units conducted a precision strike targeting military surveillance and communications infrastructure near Olenevka on the Tarkhankut Peninsula in Crimea. The targeted site contained an early warning radar station and a key ground relay control node for Shahed and Geran attack UAVs. These high-tech installations maintained airspace monitoring and long-range drone control over the western Black Sea region. Direct impacts destroyed critical antenna systems and operational control equipment, as officially confirmed by the General Staff of the AFU. Satellite imagery confirmed structural damage to the radar dome and a localized fire at the repeater station, significantly undermining Russian capabilities to coordinate drone flight paths toward southern Ukraine.",
       "source": "General Staff of AFU, GUR MO, OSINT (Astra, Crimean Wind), Media"
     },
-    "id": 33
+    "id": 36
   },
   {
     "date": "07.08.2026",
@@ -1051,7 +1144,7 @@ const strikeData = [
       "details": "On the morning of August 7, 2026, Ukrainian long-range strike drones targeted the Wildberries logistics and distribution hub in Yekaterinburg, roughly 2,000 kilometers from the Ukrainian border. This major distribution center plays a vital role in Urals logistics networks, facilitating shipments of dual-use supplies, tactical equipment, and commercial goods. According to regional authorities and OSINT outlet Astra, at least 8 drones participated in the attack, with three striking the main warehouse roof. A massive fire broke out across the upper storage racks inside the facility. Approximately 800 warehouse workers were evacuated safely, avoiding casualties. The attack forced temporary flight restrictions at Yekaterinburg's Koltsovo Airport, while inbound freight operations at the logistics center were suspended indefinitely due to heavy damage.",
       "source": "OSINT (Astra), Media, Governor Pasler, Wildberries PR"
     },
-    "id": 34
+    "id": 37
   },
   {
     "date": "06.08.2026",
@@ -1082,7 +1175,7 @@ const strikeData = [
       "details": "On the night of August 6, 2026, the Ukrainian Defense Forces launched a massive long-range drone strike against the Slavneft-YANOS oil refinery in Yaroslavl, over 700 kilometers from the Ukrainian border. Ranking among Russia's top five petroleum refineries, the facility is vital for supplying military units and central Russian regions with diesel, gasoline, and jet fuel. Despite local authority claims that air defenses intercepted dozens of UAVs, several strike drones breached the defense perimeter and hit critical infrastructure. According to the General Staff of the AFU and OSINT channel Astra, direct impacts targeted the ELOU-1 and AVT-3 primary crude distillation units and ignited four raw oil storage tanks. A large-scale industrial fire erupted across multiple sectors. Regional authorities temporarily shut down main highway exits toward Moscow, and 4 individuals were reported injured.",
       "source": "General Staff of AFU, SBU, OSINT (Astra), Media, Governor Evraev"
     },
-    "id": 35
+    "id": 38
   },
   {
     "date": "06.08.2026",
@@ -1113,7 +1206,7 @@ const strikeData = [
       "details": "On the night of August 6, 2026, Ukrainian strike drones hit the Wildberries logistics distribution hub in the Kalininsky District of Tver Oblast near Tver. This key regional distribution complex plays a noticeable role in supply chain logistics, including dual-use gear and tactical supplies bound for military logistics routes. During the night attack, multiple drones reached the facility, resulting in direct hits and falling debris from air defense engagements. According to OSINT reports and statements by regional officials, the strike inflicted structural damage on the main warehouse facade and adjacent utility buildings. A localized fire broke out, disabling portion of the automated sorting lines. Facility personnel were evacuated without reported casualties, but receiving and shipping operations at the hub were temporarily suspended due to the damage.",
       "source": "OSINT (Astra), Media, Acting Governor Korolev, Wildberries PR"
     },
-    "id": 36
+    "id": 39
   },
   {
     "date": "05.08.2026",
@@ -1144,7 +1237,7 @@ const strikeData = [
       "details": "On the night of August 5, 2026, Ukrainian deep-strike drones targeted the Bashneft-Novoil oil refinery in Ufa, located over 1,400 kilometers from the front line. The facility is a premier petroleum producer in the Volga-Ural region supplying high-octane fuel and lubricants vital for military supply chains. Multiple attack drones breached local air defenses and scored direct hits on processing units. According to the General Staff of the AFU and OSINT analysts, the strike damaged a combined processing unit and the L-35-11/1000 catalytic reforming unit, triggering a massive industrial fire. Regional authorities acknowledged the strike while claiming most incoming UAVs were intercepted.",
       "source": "General Staff of AFU, OSINT (Astra), Media, Head of Bashkortostan Khabirov"
     },
-    "id": 37
+    "id": 40
   },
   {
     "date": "05.08.2026",
@@ -1175,7 +1268,7 @@ const strikeData = [
       "details": "On the night of August 5, 2026, Ukrainian long-range strike drones bombarded the massive Wildberries logistics distribution center in Aleksin, Tula Oblast. Spanning nearly 300,000 square meters, the hub serves as a critical strategic node for regional civilian and military dual-use logistics. Direct drone impacts sparked an extensive fire across warehouse blocks, accompanied by secondary explosions. Regional Governor Milyaev confirmed drone hits and reported at least one injury. Operations at the facility were completely halted due to structural destruction, delivering a noticeable blow to regional commercial and defense distribution pipelines.",
       "source": "OSINT (Astra), Media, Governor Milyaev, Wildberries PR"
     },
-    "id": 38
+    "id": 41
   },
   {
     "date": "04.08.2026",
@@ -1206,7 +1299,7 @@ const strikeData = [
       "details": "On the night of August 4, 2026, Ukrainian Defense Forces launched a swarm drone strike against a major Wildberries logistics hub located in the Novoselki industrial zone of Moscow Oblast. The complex plays a key role in regional distribution and supply chains serving army equipment logistics. Several long-range drones bypassed regional air defenses, hitting warehouse facilities and starting a large-scale fire. The attack also damaged an adjacent electrical substation and an administrative building. Regional authorities confirmed 5 fatalities and at least 6 injuries, alongside severe destruction to warehouse storage infrastructure.",
       "source": "OSINT (Astra), Media, Governor Vorobyov"
     },
-    "id": 39
+    "id": 42
   },
   {
     "date": "04.08.2026",
@@ -1237,7 +1330,7 @@ const strikeData = [
       "details": "On the night of August 4, 2026, long-range Ukrainian drones targeted the 154,000-square-meter Wildberries warehouse complex near Krasny Bor in Leningrad Oblast. This hub serves as a critical strategic supply node in northwestern Russia handling heavy throughput of civilian and dual-use inventory. Direct drone strikes triggered a massive fire across multiple storage sectors, sending plumes of smoke into the sky visible from miles away. Regional Governor Drozdenko confirmed drone impacts and structural damage to the warehouses, noting one injury. The disruption severely destabilized commercial and military dual-use delivery chains in the St. Petersburg area.",
       "source": "OSINT (Astra), Media, Governor Drozdenko"
     },
-    "id": 40
+    "id": 43
   },
   {
     "date": "04.08.2026",
@@ -1268,7 +1361,7 @@ const strikeData = [
       "details": "During a massive overnight raid on August 4, 2026, Ukrainian attack drones hit the Wildberries logistical storage terminal in the village of Emmaus near Tver. Strategically situated along the M-10 highway, this hub functions as a vital transshipment point for regional freight and dual-use supply flows. The strike damaged the building façade and structural walls of the warehouse facility, igniting a localized fire. Tver regional authorities acknowledged drone impacts in the industrial sector and structural damage, stating no casualties occurred. The strike formed part of a synchronized effort targeting Russian rear logistical networks.",
       "source": "OSINT (Astra), Media, Tver Regional Administration"
     },
-    "id": 41
+    "id": 44
   },
   {
     "date": "31.07.2026",
@@ -1299,7 +1392,7 @@ const strikeData = [
       "details": "On the morning of July 31, 2026, long-range Ukrainian strike UAVs launched a coordinated raid against major refining complexes in the Nizhnekamsk industrial cluster. Attacking drones targeted processing units belonging to the TANECO and TAIF-NK oil refineries. Explosions, active air defense engagements, and heavy smoke were reported around petrochemical tank farms. Regional emergency services issued air raid alerts and evacuated factory personnel while airspace over Kazan and Nizhnekamsk was temporarily grounded. TANECO stands among Russia's top five oil refining facilities, producing diesel and jet fuel directly supporting Russian military aviation. Striking at a record distance of 1,240 km from the border, the operation exposed deep rear oil infrastructure to long-range threat.",
       "source": "OSINT (Astra), GUR, Regional Authorities, Media"
     },
-    "id": 42
+    "id": 45
   },
   {
     "date": "31.07.2026",
@@ -1330,7 +1423,7 @@ const strikeData = [
       "details": "On the night of July 31, 2026, the AFU General Staff and GUR confirmed a joint long-range drone operation destroying a major Russian ammunition depot near Naumovka in occupied Crimea's Saksky District. Multiple precision strike UAVs hit storage sites and field ordnance bunkers across the military facility. The impact detonated stored artillery shells and rockets, initiating a massive fire and hours of secondary explosions. Local residents across the Saky region reported heavy shockwaves felt tens of kilometers away. The depot operated as a primary logistics staging area supplying artillery ammunition to Russian forces in the Kherson and Zaporizhzhia sectors. Positioned 175 km from the active frontline, the strike severely undermined Russian frontline artillery sustainment.",
       "source": "AFU General Staff, GUR, OSINT (Astra), Media"
     },
-    "id": 43
+    "id": 46
   },
   {
     "date": "31.07.2026",
@@ -1361,7 +1454,7 @@ const strikeData = [
       "details": "On the morning of July 31, 2026, long-range Ukrainian drones attacked an industrial logistics zone in Zelenodolsk, Republic of Tatarstan. Multiple UAV strikes caused explosions and smoke over warehouse terminals within the commercial distribution hub. Zelenodolsk District Head Mikhail Afanasyev confirmed the drone incident as management ordered an emergency evacuation of warehouse workers. The drone raid prompted air traffic authorities (Rosaviatsia) to temporarily suspend operations at Kazan International Airport. The Zelenodolsk logistics center plays a vital role in routing dual-use components and hardware to nearby defense plants, such as the Zelenodolsk Shipyard. Reaching 1,180 km from the border, the raid exposed deep rear vulnerabilities in Russian industrial supply chains.",
       "source": "OSINT (Astra), District Head Afanasyev, Rosaviatsia, Media"
     },
-    "id": 44
+    "id": 47
   },
   {
     "date": "31.07.2026",
@@ -1392,7 +1485,7 @@ const strikeData = [
       "details": "On the night of July 31, 2026, SBU specialized units conducted a precision long-range drone attack against the Yevpatoria Aircraft Repair Plant in occupied Crimea. Ukrainian kamikaze UAVs hit two large maintenance hangars housing military aviation equipment and damaged a primary assembly workshop. Local residents and satellite monitors reported dense smoke plumes rising over the secured facility alongside secondary explosions inside the plant grounds. EARZ is a key defense installation tasked with overhauling, maintaining, and upgrading Su-25 attack aircraft and components for Russian Aerospace Forces. Disruption of factory operations directly undermines Russia's capability to repair damaged frontline warplanes. Striking 210 km from the border, the raid severely weakened enemy air repair capacity.",
       "source": "SBU, AFU General Staff, OSINT (Astra), Crimean media"
     },
-    "id": 45
+    "id": 48
   },
   {
     "date": "31.07.2026",
@@ -1423,7 +1516,7 @@ const strikeData = [
       "details": "On July 31, 2026, the SBU and Ukrainian Defense Forces confirmed a joint long-range strike on the Taman commercial seaport in Krasnodar Krai. Ukrainian attack UAVs hit fuel transfer infrastructure, starting massive fires across storage tank farms with satellite imagery showing over ten active fire spots. Russian transport prosecutors acknowledged structural damages to loading piers and reported two personnel injured during the night raid. The Port of Taman serves as a critical deep-water hub for exporting Russian liquefied petroleum gas, fuel oil, and refined petroleum products. It directly feeds fuel supplies to Russian naval vessels and military units stationed in the Black Sea region. Located 250 km from the frontline, the strike crippled maritime fuel logistics.",
       "source": "SBU, AFU General Staff, OSINT (Astra), Russian Transport Prosecutor, Media"
     },
-    "id": 46
+    "id": 49
   },
   {
     "date": "31.07.2026",
@@ -1454,7 +1547,7 @@ const strikeData = [
       "details": "On July 31, 2026, during an overnight drone raid, Ukrainian UAVs struck the main Wildberries logistics distribution hub in Volgograd's Dzerzhinsky District. Impacting strike drones ignited a large fire inside storage modules, triggering structural collapse and secondary explosions. Wildberries management reported the emergency evacuation of over 100 workers, with local medical services confirming five injuries. Emergency response crews spent several hours extinguishing the blaze covering over 1,000 square meters. The facility operated as a central 3PL sorting node handling dual-use industrial gear and tactical supplies for Russian army logistics. Positioned 480 km from the Ukrainian border, the attack severely impaired supply distribution across the region.",
       "source": "OSINT (Astra), EMERCOM, Wildberries, Governor Bocharov, Media"
     },
-    "id": 47
+    "id": 50
   },
   {
     "date": "31.07.2026",
@@ -1485,7 +1578,7 @@ const strikeData = [
       "details": "On the night of July 31, 2026, the Ukrainian Defense Forces and GUR carried out a successful drone attack on the Volgograd Oil Refinery. Several long-range strike UAVs breached regional air defenses and directly hit primary refining units. The strike triggered a large fire across the industrial site in the Krasnoarmeysky District, confirmed by Governor Andrey Bocharov. As the largest refinery in Southern Russia, the facility processes up to 15 million metric tons of crude oil annually. The plant supplies critical diesel and aviation fuel directly to Russian occupation forces operating along the southern frontlines. Striking roughly 470 km from the border, the raid inflicted significant operational disruption on Russia's military fuel supply infrastructure.",
       "source": "AFU General Staff, GUR, OSINT (Astra), Governor Bocharov, Media"
     },
-    "id": 48
+    "id": 51
   },
   {
     "date": "30.07.2026",
@@ -1516,7 +1609,7 @@ const strikeData = [
       "details": "On July 30, 2026, the AFU General Staff officially confirmed a successful long-range precision strike on the Russian military training facility 'Primorsky Posad' in occupied Zaporizhzhia Oblast. Long-range UAVs hit troop staging sectors, equipment firing ranges, and temporary ammunition storage points near the coast. The attack triggered secondary detonations of stored munitions and a widespread fire across the military ground. Russian forces utilized this coastal site for training assault units and qualifying drone operators prior to frontline deployment. Striking 140 km from the active frontline, the strike destroyed military hardware and severely disrupted Russian reserve troop preparation.",
       "source": "AFU General Staff, GUR MO, OSINT, Media"
     },
-    "id": 49
+    "id": 52
   },
   {
     "date": "30.07.2026",
@@ -1547,7 +1640,7 @@ const strikeData = [
       "details": "On the night of July 30, 2026, the Ukrainian Defense Forces launched a large-scale drone attack against military targets in Taganrog. The strike prioritized the Taganrog-South military airfield and the adjacent Beriev Aircraft Complex (TANTK). Explosions detonated across the airfield apron and factory territory, forcing local authorities to evacuate residents within a 500-meter perimeter around impact zones. Fires and structural damage were recorded in workshops where A-50 Airborne Early Warning aircraft and Tu-142 maritime patrol planes undergo maintenance. The facility serves as Russia's top strategic aviation repair hub. Located 170 km from the frontline, the strike crippled critical repair infrastructure supporting Russian Aerospace Forces operations.",
       "source": "AFU General Staff, OSINT (Astra), City Administration, Media"
     },
-    "id": 50
+    "id": 53
   },
   {
     "date": "30.07.2026",
@@ -1578,7 +1671,7 @@ const strikeData = [
       "details": "On July 30, 2026, an overnight attack by Ukrainian long-range drones struck the Wildberries distribution center on Izhevsky Trakt in Sarapul, Udmurt Republic. Drone strikes sparked a intense fire in the main storage section, resulting in a roof collapse over the loading docks. The RWB company press office confirmed that all warehouse staff were evacuated immediately following the air raid warning, avoiding casualties. Located near major Udmurt defense production plants, the facility handled sorting for dual-use components and electronics. Executed 1,370 km from the border, the raid highlighted the vulnerability of deep rear Russian defense industrial hubs and disrupted supply routing.",
       "source": "OSINT (Astra), RWB / Wildberries press service, Media"
     },
-    "id": 51
+    "id": 54
   },
   {
     "date": "30.07.2026",
@@ -1609,7 +1702,7 @@ const strikeData = [
       "details": "On the night of July 30, 2026, Ukrainian attack UAVs struck the newly built Wildberries logistics complex in Mastinovka village, Penza Oblast. Multiple long-range drones directly hit warehouse bays, initiating a massive fire and heavy structural destruction. Penza Oblast Governor Oleg Melnichenko confirmed the drone raid and stated that nearly 200 facility employees were evacuated. Local emergency services reported one injury requiring hospitalization during the attack and subsequent blaze. The hub operated as a main logistics center for storing commercial goods and dual-use industrial military supplies. Positioned 580 km from the Ukrainian frontline, the strike severed logistics flow across the Volga transport sector.",
       "source": "OSINT (Astra), Governor Melnichenko, Wildberries, Media"
     },
-    "id": 52
+    "id": 55
   },
   {
     "date": "30.07.2026",
@@ -1640,7 +1733,7 @@ const strikeData = [
       "details": "On July 30, 2026, Ukrainian long-range strike drones targeted the major Wildberries distribution center located in Zamulyanka village near Perm. The AFU General Staff and the Astra OSINT project confirmed successful hits on the commercial logistics warehouse module. The impact of several suicide drones triggered multiple explosions and a high-intensity fire across the storage facilities. Perm Krai Governor Dmitry Makhonin acknowledged regional air defense operations and reported damage to industrial structures. The facility served as a key regional 3PL node used for warehousing dual-use and military-adjacent supply lines. Striking over 1,560 km from the Ukrainian border, the operation disrupted major Russian military supply networks in the Urals.",
       "source": "AFU General Staff, OSINT (Astra), Governor Makhonin, Media"
     },
-    "id": 53
+    "id": 56
   },
   {
     "date": "29.07.2026",
@@ -1671,7 +1764,7 @@ const strikeData = [
       "details": "On July 29, 2026, Ukrainian long-range strike drones targeted the LUKOIL-Permnefteorgsintez oil refinery in Perm, one of the largest petroleum complexes in the Urals. The Security Service of Ukraine (SBU) officially confirmed the successful strike on the energy infrastructure. The attack directly damaged the primary crude distillation unit CDU-5 (ELOU-AVT-5), igniting a heavy fire and forcing an emergency shutdown. According to Reuters analysis, disabling CDU-5 wiped out roughly 34% of the refinery's total processing capacity. Perm Krai Governor Dmitry Makhonin acknowledged the massive drone raid over the region. Striking at a record distance of nearly 1,500 km from the Ukrainian border, the operation delivered a major blow to Russian military diesel and aviation fuel supplies.",
       "source": "SBU, Reuters, OSINT (Astra), Governor Makhonin, Media"
     },
-    "id": 54
+    "id": 57
   },
   {
     "date": "29.07.2026",
@@ -1702,7 +1795,7 @@ const strikeData = [
       "details": "On the night of July 29, 2026, the Ukrainian Defense Forces carried out a precision strike on an air defense radar station (Radar) near Pochep, Bryansk Oblast. The AFU General Staff officially confirmed the successful hit on the military radar installation. Explosions caused by attacking drones inflicted critical damage on the radar antenna array and electronic systems, triggering a fire at the position. The Pochep radar site provided airspace monitoring and target tracking for Russian SAM systems defending the western border region. Positioned 160 km from the frontline, destroying this radar node blinded a vital sector of Russian air defense coverage in Bryansk Oblast, facilitating further deep UAV penetrations into Russian airspace.",
       "source": "AFU General Staff, OSINT (Astra), Russian media"
     },
-    "id": 55
+    "id": 58
   },
   {
     "date": "29.07.2026",
@@ -1733,7 +1826,7 @@ const strikeData = [
       "details": "On July 29, 2026, during an overnight UAV attack on Ryazan Oblast, long-range Ukrainian drones struck the major Wildberries logistics hub in the Ryazansky Industrial Park near Tyushevo village. Drones hit warehouse modules and distribution infrastructure serving central Russian commercial and military supply networks. A large-scale fire erupted at the complex, forcing Wildberries to order an emergency evacuation of staff and temporarily suspend warehouse operations. Company officials and regional emergency services confirmed fires across industrial sections and damage to warehouse structures. The facility acts as a critical 3PL logistics node for general goods and dual-use supply chains. Striking 460 km from the front line, the raid disrupted regional distribution channels and logistical operations around Ryazan.",
       "source": "OSINT (Astra), Wildberries, Governor Malkov, Russian media"
     },
-    "id": 56
+    "id": 59
   },
   {
     "date": "29.07.2026",
@@ -1764,7 +1857,7 @@ const strikeData = [
       "details": "On July 29, 2026, Ukrainian Defense Forces launched a massive long-range drone attack against the Ryazan Oil Refinery, one of the largest petroleum refining facilities in Russia. The AFU General Staff and the Security Service of Ukraine (SBU) officially confirmed successful strikes on the plant's industrial infrastructure. Direct hits triggered a high-intensity fire across the facility in the Southern Industrial Zone, sending thick black smoke visible throughout the city. According to Ryazan Oblast Governor Pavel Malkov, six people sustained injuries and were hospitalized during the raid and emergency response. The refinery generates a substantial portion of gasoline, diesel, and jet fuel supplying central Russia and frontline military units. Striking over 470 km from the Ukrainian border, the operation dealt a heavy blow to Russian military fuel logistics.",
       "source": "AFU General Staff, SBU, OSINT (Astra), Governor Malkov, Media"
     },
-    "id": 57
+    "id": 60
   },
   {
     "date": "28.07.2026",
@@ -1795,7 +1888,7 @@ const strikeData = [
       "details": "On July 28, 2026, as part of a massive overnight UAV raid on the Moscow region, Ukrainian long-range drones struck the Koledino industrial and logistics park in Podolsk district. The strike hit major 3PL warehousing facilities and distribution terminals that serve the e-commerce giant Wildberries as well as secondary logistics channels. Direct drone impacts and falling debris sparked fires across the industrial zone, resulting in structural damage to warehouse facades and storage bays. The Koledino complex is one of the largest distribution hubs in Eastern Europe, playing a critical role in consumer supply as well as dual-use military logistics. OSINT observers and regional channels documented multiple detonations and thick smoke rising from the logistics center. Striking over 450 km from the front line, the operation disrupted regional supply nodes serving the Moscow area.",
       "source": "OSINT (Astra), Moscow Mayor, Wildberries, Russian media"
     },
-    "id": 58
+    "id": 61
   },
   {
     "date": "28.07.2026",
@@ -1826,7 +1919,7 @@ const strikeData = [
       "details": "On the night of July 28, 2026, Ukrainian long-range strike UAVs targeted industrial facilities in Chekhov, Moscow Oblast. One of the drones hit a production stack and manufacturing building at the Gidrostalkonstruktsiya plant, located adjacent to the Chekhov Regeneration Plant. The impact triggered a heavy fire across open storage areas and factory workshops, sending dense black smoke into the air. The enterprise manufactures critical heavy steel structures and engineering equipment for hydro-technical, energy, and military infrastructure projects. Moscow Mayor Sergei Sobyanin and local municipal authorities confirmed the direct drone strike on the industrial site. Located over 460 km from the Ukrainian border, the raid underscores Ukraine's capability to hit defense-adjacent manufacturing hubs deep in the Russian rear.",
       "source": "OSINT (Astra, Exilenova+), Moscow Mayor, Russian media, AFU General Staff"
     },
-    "id": 59
+    "id": 62
   },
   {
     "date": "27.07.2026",
@@ -1857,7 +1950,7 @@ const strikeData = [
       "details": "On the night of July 27, 2026, Ukrainian UAVs struck the 4th cargo district of the Rostov-on-Don Sea Trade Port — a general-cargo terminal in the Zarechnaya district on the left bank of the Don River, just downstream from the railway swing bridge. The facility handles export cargo and serves as a key revenue-generating node for the Russian state budget. The AFU General Staff confirmed the hit, with fire and smoke observed at the terminal. Rostov Oblast Governor Yury Slyusar reported that 5 people were killed, including a child, and 8 others injured during the overnight strike. Residential buildings in the Zheleznodorozhny, Proletarsky, and Leninsky districts also sustained damage. President Zelensky cited the port as a target located approximately 250 km from the front line.",
       "source": "AFU General Staff, President Zelensky, Governor Slyusar, OSINT (hromadske), Media"
     },
-    "id": 60
+    "id": 63
   },
   {
     "date": "27.07.2026",
@@ -1888,7 +1981,7 @@ const strikeData = [
       "details": "On July 27, 2026, Ukrainian UAVs struck an industrial facility in Yaroslavl identified by sources as the Slavneft-YANOS refinery — one of Russia's largest oil processing plants, with a throughput capacity of up to 15 million tonnes per year. The facility produces gasoline, diesel fuel, fuel oil, and aviation kerosene. Regional governor Evraev confirmed a drone hit on an industrial site and said the resulting fire was quickly brought under control. Traffic on the Yaroslavl-Moscow road was briefly halted as a safety precaution. President Zelensky identified the Yaroslavl oil strikes as part of Ukraine's 'long-range sanctions' strategy aimed at cutting Russian war revenues.",
       "source": "President Zelensky, AFU General Staff, OSINT (Astra), Russian media"
     },
-    "id": 61
+    "id": 64
   },
   {
     "date": "27.07.2026",
@@ -1919,7 +2012,7 @@ const strikeData = [
       "details": "On the night of July 27, 2026, Ukrainian long-range UAVs struck the closed strategic fuel depot of Russia's State Material Reserve (Rosrezerv) — the 'Prioritet' (formerly 'Gorizont') facility in Borok, Kambarsky District. The facility stores strategic reserves of fuel and lubricants for military and civil emergency needs. The AFU General Staff confirmed the hit, and OSINT channels documented a fire breaking out on the premises. The target sits approximately 1,300 km from the front line, making the strike one of the longest-range Ukrainian UAV operations to date. The head of Udmurtia, Alexander Brechalov, called the attack the most intense drone raid the republic had experienced. Destroying strategic fuel stockpiles directly degrades Russia's mobilization logistics supply chain.",
       "source": "AFU General Staff, Kyiv Independent, OSINT, Russian media"
     },
-    "id": 62
+    "id": 65
   },
   {
     "date": "26.07.2026",
@@ -1950,7 +2043,7 @@ const strikeData = [
       "details": "On July 26, 2026, the Unmanned Systems Forces of Ukraine conducted a drone strike targeting a military mechanical repair plant and adjacent defense storage hub in Belgorod. The attack targeted armored vehicle restoration workshops along with warehouses storing spare parts and tactical gear. Precision drone hits ignited a major fire inside the facility, resulting in a partial roof collapse over the main assembly hall. Secondary explosions of repair kits and lubricants broke out inside the logistics storage area. The plant played a vital role in rapidly repairing and restoring damaged Russian military vehicles deployed along the border. The strike completely halted repair operations and vehicle refurbishing at the site.",
       "source": "SBS, GUR, OSINT, Media"
     },
-    "id": 63
+    "id": 66
   },
   {
     "date": "26.07.2026",
@@ -1981,7 +2074,7 @@ const strikeData = [
       "details": "On July 26, 2026, the Security Service of Ukraine and the AFU launched a joint long-range drone attack against an export port terminal in Rostov-on-Don. Fixed-wing UAVs penetrated local air defense systems to strike dockside infrastructure, storage facilities, and cargo loading zones. The strikes triggered immediate explosions and heavy fires across temporary storage warehouses and transport trucks. The port facility functions as a strategic logistics hub for supplying Russian military formations and handling sanctioned cargo exports. Emergency response crews fought the spreading industrial fire across hundreds of square meters. The destruction at the terminal forced a shutdown of loading operations and severely disrupted regional supply chains.",
       "source": "SBU, AFU General Staff, OSINT, Media"
     },
-    "id": 64
+    "id": 67
   },
   {
     "date": "26.07.2026",
@@ -2012,7 +2105,7 @@ const strikeData = [
       "details": "On the night of July 26, 2026, the Unmanned Systems Department of Ukrainian Military Intelligence (GUR) conducted a successful strike against S-400 Triumf air defense components in western Crimea. During the night operation, long-range attack UAVs destroyed a 5P85S TEL launcher unit and a key engagement radar. The direct strike detonated surface-to-air missiles mounted on the launcher and smashed the radar scanner array. A fierce fire broke out at the firing position, triggering secondary cook-offs of ready-to-launch missiles. The S-400 battery provided air defense coverage over vital military airfields and coastal supply hubs. Losing these key elements significantly degraded Russian air defense capabilities across western Crimea.",
       "source": "GUR MO Ukraine, OSINT, Media"
     },
-    "id": 65
+    "id": 68
   },
   {
     "date": "26.07.2026",
@@ -2043,7 +2136,7 @@ const strikeData = [
       "details": "On July 26, 2026, the Ukrainian Defense Forces executed a precision strike against a Russian ground-based drone relay station near Chornomorske. The specialized electronic installation was operated by Russian military units to extend the range and targeting guidance of Geran and Gerbera strike UAVs. A direct hit by a long-range Ukrainian drone completely destroyed the main antenna mast assembly and the telemetry container. The warhead detonation ignited an adjacent power generation shed supplying the installation. Neutralizing this key relay complex compromised Russian drone control networks operating across the western Black Sea theater. The successful engagement was formally validated in the AFU General Staff operational report.",
       "source": "AFU General Staff, GUR, OSINT, Media"
     },
-    "id": 66
+    "id": 69
   },
   {
     "date": "26.07.2026",
@@ -2074,7 +2167,7 @@ const strikeData = [
       "details": "On July 26, 2026, the General Staff of the Armed Forces of Ukraine confirmed a successful strike by long-range drones against the Chernomorneftegaz facility near Vnukovo in western Crimea. The gas distribution and fuel storage node was extensively used by Russian forces to store and transport energy supplies across the peninsula. According to aerial surveillance reports, multiple kamikaze UAVs struck primary gas pumping modules and fuel tanks. The impact sparked a massive fire, accompanied by secondary equipment explosions and dense smoke columns. The facility served as a key energy node supplying Russian military garrisons and early warning radar stations on the Tarkhankut Peninsula. The precision strike temporarily disrupted fuel and gas operations.",
       "source": "AFU General Staff, OSINT, Media"
     },
-    "id": 67
+    "id": 70
   },
   {
     "date": "25.07.2026",
@@ -2105,7 +2198,7 @@ const strikeData = [
       "details": "On July 25, 2026, the Ukrainian Defense Forces launched a coordinated strike using attack drones against power infrastructure and military logistics hubs in Belgorod. The primary targets were the Yuzhnaya 330 kV main substation and adjacent supply storage facilities supporting the Russian North Group of Forces. Multiple strike drones struck power transformers, inducing severe electrical arcs and fires that caused widespread blackouts in the industrial sector. Concurrently, direct hits were recorded at supply warehouses storing military vehicle parts and tactical equipment, sparking secondary fires. The Yuzhnaya substation supplies electricity to critical repair plants and military workshops operating near the border. The strike disrupted power feeds to defense facilities and destroyed stored military supplies.",
       "source": "SBS, GUR, OSINT, Media"
     },
-    "id": 68
+    "id": 71
   },
   {
     "date": "25.07.2026",
@@ -2136,7 +2229,7 @@ const strikeData = [
       "details": "On the morning of July 25, 2026, Ukrainian long-range strike drones targeted the major Wildberries distribution complex located in the Chkalovsky district of Yekaterinburg. Striking at a distance of nearly 1,750 kilometers from the border, the raid reached deep into Russia's Ural region. Drone impacts and detonating debris ignited a heavy fire across a truck parking area and sorting terminal spanning over 300 square meters. The blaze destroyed several long-haul transport trucks and caused structural damage to the primary warehouse building facade. Facility personnel were evacuated as regional emergency authorities issued a drone warning. The Yekaterinburg distribution center acts as a crucial logistics node processing dual-use supplies and military field equipment. Sorting operations were temporarily suspended while emergency teams contained the fire.",
       "source": "OSINT, Russian EMERCOM, Media"
     },
-    "id": 69
+    "id": 72
   },
   {
     "date": "25.07.2026",
@@ -2167,7 +2260,7 @@ const strikeData = [
       "details": "On the night of July 25, 2026, Ukrainian long-range strike UAVs launched a targeted attack against the Engels-2 strategic airbase in Saratov Oblast. During the overnight raid, explosions rocked administrative facilities housing the headquarters of the 22nd Guards Heavy Bomber Aviation Division. A strike drone penetrated the roof of the primary command and administrative building, triggering an intense fire and interior structural collapses. Engels-2 serves as the primary home base for Russian Tu-95MS and Tu-160 strategic bombers responsible for launching cruise missile salvos against Ukraine. The raid triggered Plan Carpet restrictions, temporarily halting civilian operations at Saratov Gagarin Airport. The strike inflicted significant structural damage on division command facilities.",
       "source": "SBU, GUR, OSINT, Media"
     },
-    "id": 70
+    "id": 73
   },
   {
     "date": "25.07.2026",
@@ -2198,7 +2291,7 @@ const strikeData = [
       "details": "On July 25, 2026, Ukrainian special services executed a precedent-setting long-range drone operation targeting offshore petroleum infrastructure in the Caspian Sea. The primary target was an offshore drilling platform at the V. Filanovsky oil field operated by LUKOIL. A direct kamikaze UAV impact ignited a fire within the primary drilling module and damaged auxiliary power systems. Producing up to 6 million tons of high-grade crude oil annually, the offshore complex serves as a critical strategic energy node supporting regional fuel supplies. Thermal satellite sensors verified active fires and heavy smoke rising from the offshore structure. Following the attack, oil extraction activities were suspended and non-essential personnel were evacuated from the rig.",
       "source": "SBU, OSINT, Media"
     },
-    "id": 71
+    "id": 74
   },
   {
     "date": "25.07.2026",
@@ -2229,7 +2322,7 @@ const strikeData = [
       "details": "On the night of July 25, 2026, the Security Service of Ukraine executed a targeted long-range drone operation against critical air defense and military assets in Rostov-on-Don. Precision strikes hit and destroyed a vital 92N6E multi-function radar along with its mobile antenna tower, vital for the S-400 Triumf air defense network. Secondary strikes neutralized a Tor-M2 surface-to-air missile launcher and a Pole-21 electronic warfare station. Furthermore, Ukrainian UAVs struck two warehouse facilities utilized for storing and assembling military FPV strike drones. Multiple explosions shook the city while falling debris inflicted damage on nearby commercial warehouses and residential buildings. Eliminating the 92N6E radar severely degraded Russian early warning capabilities and S-400 targeting across the southern theater.",
       "source": "SBU, OSINT, Russian MoD, Media"
     },
-    "id": 72
+    "id": 75
   },
   {
     "date": "25.07.2026",
@@ -2260,7 +2353,7 @@ const strikeData = [
       "details": "On July 25, 2026, Ukrainian Special Operations Forces and the SBU carried out a long-range drone strike targeting the Tyumen Oil Refinery in the Antipino industrial zone. The strike drones covered a record distance exceeding 2,000 kilometers from the border to hit the remote Siberian installation. A direct UAV crash on the processing grounds triggered an explosion followed by a major fuel fire. Local authorities declared an airborne drone alert, while Roshchino International Airport briefly suspended all flight operations. Due to the emergency, official City Day celebrations and planned fireworks in Tyumen were completely cancelled. Operating with a processing capacity of 7.5 million tons of crude annually, the refinery is a vital energy asset for the Ural region. The strike forced an emergency temporary shutdown of primary refining units.",
       "source": "SSO, SBU, OSINT (Astra), Russian EMERCOM, Media"
     },
-    "id": 73
+    "id": 76
   },
   {
     "date": "24.07.2026",
@@ -2291,7 +2384,7 @@ const strikeData = [
       "details": "On the night of July 24, 2026, long-range Ukrainian strike drones targeted the major Wildberries logistics and sorting center in Simferopol, Crimea. Direct drone impacts and warhead detonations triggered a heavy fire inside the warehouse complex. Flames rapidly spread through storage sections, heavily damaging loading terminals and automated sorting lines. The corporate press service confirmed the aerial attack and stated that warehouse personnel were evacuated in compliance with emergency safety protocols. The Simferopol logistics hub functions as a vital distribution facility handling regional freight flows, military logistics, and dual-use supply chains across Crimea. Due to severe structural damage from the fire, operations at the facility were temporarily suspended pending repair work.",
       "source": "OSINT (Crimean Wind), Wildberries Press Office, Media"
     },
-    "id": 74
+    "id": 77
   },
   {
     "date": "24.07.2026",
@@ -2322,7 +2415,7 @@ const strikeData = [
       "details": "On July 24, 2026, Ukrainian long-range strike drones carried out a successful attack on the Perviy Zavod oil refinery in Kaluga Oblast. Located in the settlement of Polotnyany Zavod roughly 365 kilometers from the frontline, the plant operates as a key regional fuel processing site. Multiple fixed-wing drones bypassed electronic warfare systems, directly striking distillation columns and storage tank infrastructure. The impacts triggered an intense oil fire that released dense smoke over the surrounding industrial sector. Emergency crews from the Ministry of Emergency Situations spent several hours containing and extinguishing the blaze. Perviy Zavod is the largest independent oil refinery in Kaluga Oblast, producing gasoline, diesel, and naphtha. The strike forced an immediate suspension of refining activities.",
       "source": "SBU, OSINT, Russian EMERCOM, Media"
     },
-    "id": 75
+    "id": 78
   },
   {
     "date": "24.07.2026",
@@ -2353,7 +2446,7 @@ const strikeData = [
       "details": "On July 24, 2026, Ukrainian strike drones executed a targeted operation planned by the SBU against the NS-Oil refinery in Novospasskoye, Ulyanovsk Oblast. Situated roughly 900 kilometers from the Ukrainian border, the plant serves as an essential fuel supplier for the Volga federal district. Direct drone impacts ignited a primary oil distillation unit and adjacent liquefied petroleum gas storage tanks. The attack resulted in a major industrial blaze sending thick black smoke columns into the sky, prompting heavy emergency responses. Due to airborne threats, aviation authorities declared Plan Carpet in Ulyanovsk, briefly suspending operations at the regional airport. The NS-Oil facility produces refined gasoline, diesel, and liquefied gas essential for industrial logistics.",
       "source": "SBU, OSINT, Russian EMERCOM, Media"
     },
-    "id": 76
+    "id": 79
   },
   {
     "date": "24.07.2026",
@@ -2384,7 +2477,7 @@ const strikeData = [
       "details": "On July 24, 2026, the Security Service of Ukraine carried out a synchronized long-range drone strike on the Subkhankulovo dispatch station in the Republic of Bashkortostan. Striking at a record distance of approximately 1,350 kilometers from the border, it represented one of the deepest raids into Russian territory. A strike drone bypassed local air defenses and scored a direct hit on a primary crude oil storage tank inside the tank farm. The impact caused an immediate detonation and an intense petroleum fire, as confirmed by satellite imagery and eyewitness footage. Operated by Transneft-Ural, Subkhankulovo is a critical strategic hub for blending, storing, and pumping West Siberian crude into major trunk pipelines. The strike forced an emergency shutdown of oil pumping operations.",
       "source": "SBU, OSINT (Astra), Russian EMERCOM, Media"
     },
-    "id": 77
+    "id": 80
   },
   {
     "date": "24.07.2026",
@@ -2415,7 +2508,7 @@ const strikeData = [
       "details": "On the night of July 24, 2026, long-range drones struck a major Wildberries distribution center located in the Shushary industrial area of Saint Petersburg. Drone impacts and warhead detonations sparked a fast-moving fire inside the main administrative and sorting block. Flames damaged roof supports, exterior panels, and automated conveyor sorting machinery across the facility. Heavy emergency response crews from the Ministry of Emergency Situations were deployed to suppress the blaze, which burned across several hundred square meters. The Shushary distribution hub functions as a vital supply node for processing dual-use goods, tactical gear, and military logistics shipments. Following the attack, sorting lines were temporarily shut down while damage assessments and repairs took place.",
       "source": "OSINT, Russian EMERCOM, Media"
     },
-    "id": 78
+    "id": 81
   },
   {
     "date": "24.07.2026",
@@ -2446,7 +2539,7 @@ const strikeData = [
       "details": "On the night of July 24, 2026, Ukrainian strike drones targeted the Russian Naval Aviation airfield Saky located in Novofedorivka, Crimea. During the overnight raid, a formation of long-range UAVs struck critical fuel infrastructure elements at the airbase. A direct hit destroyed a large aviation fuel storage tank, triggering a powerful detonation and a widespread fire. The blaze quickly engulfed adjacent fuel reservoirs, producing dense plumes of black smoke visible from miles away. Emergency firefighting units and military response teams were deployed to contain the raging fuel fire. Saky airfield houses Su-30SM fighters and Su-24M bombers that regularly launch strikes against southern Ukrainian targets. The destruction of fuel supplies caused severe operational disruptions to Russian tactical air sorties.",
       "source": "SBU, AFU General Staff, OSINT, Media"
     },
-    "id": 79
+    "id": 82
   },
   {
     "date": "24.07.2026",
@@ -2477,7 +2570,7 @@ const strikeData = [
       "details": "On the night of July 24, 2026, the Security Service of Ukraine conducted a targeted special operation against military infrastructure at the Belbek airfield near Sevastopol. The primary target of the long-range drone strike was a valuable Nebo-U 3D long-range air surveillance radar station. Multiple strike UAVs successfully penetrated Crimean air defense networks and delivered direct hits onto the radar array. The explosion and resulting blaze caused critical damage to the primary antenna structure and control units. The Nebo-U system was essential for monitoring airspace over the Black Sea and southern Ukraine at ranges up to 600 kilometers. The destruction of this radar complex severely compromised Russian early warning capabilities and degraded integrated air defense oversight across the Crimean peninsula.",
       "source": "SBU, Ukrainian Navy, OSINT (Astra), Media"
     },
-    "id": 80
+    "id": 83
   },
   {
     "date": "24.07.2026",
@@ -2508,7 +2601,7 @@ const strikeData = [
       "details": "On the morning of July 24, 2026, the Ukrainian Defense Forces executed a precision long-range strike against the Vyatka Machine-Building Plant Avitek in Kirov. According to OSINT reports and official confirmation from the President of Ukraine, the raid was carried out using the Ukrainian FP-5 Flamingo long-range cruise missile over a distance exceeding 1,100 kilometers. Direct missile impacts severely damaged the main production building where critical defense components were assembled. The detonation triggered a massive industrial fire across several workshops, resulting in partial roof collapses and heavy smoke. Local authorities confirmed 6 fatalities and 32 injured personnel following the attack. Operating under the Almaz-Antey Concern, Avitek serves as a primary manufacturer of guided anti-aircraft missiles for Tor and S-300 air defense systems as well as pilot ejection seats. Due to the extensive destruction of specialized machinery, manufacturing operations were completely halted.",
       "source": "SBU, GUR, President of Ukraine, Russian EMERCOM, OSINT"
     },
-    "id": 81
+    "id": 84
   },
   {
     "date": "23.07.2026",
@@ -2539,7 +2632,7 @@ const strikeData = [
       "details": "On the night of July 23, 2026, long-range Ukrainian strike drones launched a targeted attack on the NS-Oil refinery in the settlement of Novospasskoye, Ulyanovsk Oblast. Multiple fixed-wing UAVs successfully bypassed regional air defenses, striking the refinery's core processing units and liquefied petroleum gas storage facility. The impact triggered a major fire accompanied by heavy black smoke, which rapidly spread across fuel storage tanks and distillation infrastructure. The drone raid prompted aviation authorities to initiate Plan Carpet in Ulyanovsk, temporarily shutting down operations at the local airport. The NS-Oil facility operates as a vital regional fuel processing hub, producing light petroleum products and liquefied gas for transport and industrial logistics across the Volga region.",
       "source": "OSINT (Astra), Russian EMERCOM, Russian Media"
     },
-    "id": 82
+    "id": 85
   },
   {
     "date": "23.07.2026",
@@ -2570,7 +2663,7 @@ const strikeData = [
       "details": "On July 23, 2026, Ukrainian long-range strike drones targeted the Subkhankulovo linear production and dispatch station, a major oil infrastructure facility in Bashkortostan. A precise drone strike penetrated local defense networks, causing a detonation and a massive fire in a large crude oil storage tank. Satellite imagery and footage from the site confirmed intense burning, requiring heavy emergency crews from the Ministry of Emergency Situations to suppress the flames. Operated by Transneft-Ural, the Subkhankulovo station plays a central strategic role in blending, storing, and pumping oil from West Siberian and Bashkir fields into main pipelines. The drone attack forced a temporary suspension of dispatch operations while damage assessments were conducted.",
       "source": "OSINT, Russian EMERCOM, Russian Media"
     },
-    "id": 83
+    "id": 86
   },
   {
     "date": "23.07.2026",
@@ -2601,7 +2694,7 @@ const strikeData = [
       "details": "On the night of July 23, 2026, Voronezh Oblast was hit by a large-scale drone attack that targeted the major Wildberries logistics center near Nechayevka. OSINT analysis and satellite imagery revealed structural damage to the warehouse roofing and interior sections caused by drone impacts and detonations. Localized fires erupted inside the logistics center, causing damage to sorting lines, structural framing, and stored inventory. The Nechayevka distribution hub serves as a critical supply node handling dual-use commodities, tactical gear, and clothing for regional military supply chains. Following the strike, warehouse operations were partially disrupted, forcing logistics managers to initiate emergency re-routing of incoming shipments.",
       "source": "OSINT, Radio Liberty, Russian Media"
     },
-    "id": 84
+    "id": 87
   },
   {
     "date": "23.07.2026",
@@ -2632,7 +2725,7 @@ const strikeData = [
       "details": "On the night of July 23, 2026, Ukrainian strike drones hit a major logistics center located in the Elevator settlement on the outskirts of Tver. The attack directly struck the main administrative and storage building, causing a powerful explosion followed by an extensive structure fire. Flames destroyed sections of the roof and interior facilities, releasing heavy smoke across the industrial area. Emergency response units from the Ministry of Emergency Situations were dispatched to contain the blaze and protect adjacent infrastructure. The Tver logistics hub plays an essential role in freight transit, warehousing, and distribution of industrial and dual-use supplies. Due to the severe structural damage, operations at the facility were fully halted pending site clearance.",
       "source": "OSINT, Russian EMERCOM, Russian Media"
     },
-    "id": 85
+    "id": 88
   },
   {
     "date": "22.07.2026",
@@ -2663,7 +2756,7 @@ const strikeData = [
       "details": "On the night of July 22, 2026, long-range Ukrainian strike drones targeted oil and gas infrastructure facilities in Russia's Krasnodar Krai. The primary target of the attack was the oil depot located in the Northern Industrial Zone of Armavir. Over 16 strike UAVs were launched at the site, with a portion penetrating air defenses and directly hitting the tank farm. A large-scale fire broke out across the fuel complex, spreading over an area of more than 800 square meters. Falling debris and detonations resulted in the death of a security worker at the facility. Emergency services deployed over 40 firefighters and 9 specialized vehicles to suppress the blaze. The Armavir oil depot serves as a critical fuel supply node for logistics and military vehicles supporting Russian operations in the south.",
       "source": "OSINT, Russian EMERCOM, Russian Media"
     },
-    "id": 86
+    "id": 89
   },
   {
     "date": "22.07.2026",
@@ -2694,7 +2787,7 @@ const strikeData = [
       "details": "On the night of July 22, 2026, Ukrainian long-range strike drones targeted the major Wildberries distribution center located in the Industrialny settlement near Krasnodar. A drone strike followed by detonations ignited a severe fire inside the warehouse complex, which stored tons of commercial goods and logistics supplies. The blaze rapidly engulfed a substantial portion of the facility, causing structural collapse and halting center operations. Night-shift staff were evacuated, but multiple workers suffered severe burns and injuries, with one female employee later dying in the hospital. The hub served as an important hub for dual-use equipment and military supply logistics. Following the strike, Wildberries suspended site operations and re-routed logistics traffic.",
       "source": "OSINT, Wildberries, Russian Media"
     },
-    "id": 87
+    "id": 90
   },
   {
     "date": "22.07.2026",
@@ -2725,7 +2818,7 @@ const strikeData = [
       "details": "On the night of July 22, 2026, strike drones attacked the Wildberries regional logistics hub in the industrial district of Nevinnomyssk, Stavropol Krai. A direct drone impact triggered a powerful explosion and an intense fire across the storage and sorting sections. Regional authorities were forced to declare a local state of emergency around the damaged facility. At least five warehouse employees sustained injuries and smoke inhalation, requiring urgent hospitalization. The Nevinnomyssk logistics center plays a strategic role in freight supply chains across southern Russia, including shipments of tactical gear and dual-use goods. Due to the attack, all operations at the site were halted, and inventory flows were urgently rerouted to alternate hubs.",
       "source": "OSINT, Wildberries, Russian Media"
     },
-    "id": 88
+    "id": 91
   },
   {
     "date": "21.07.2026",
@@ -2756,7 +2849,7 @@ const strikeData = [
       "details": "On the night of July 21, 2026, the Defense Forces of Ukraine (specifically the 15th Separate Artillery Reconnaissance Brigade \"Black Forest\" alongside Unmanned Systems Forces and GUR) carried out a comprehensive long-range drone strike on the Khalino military airfield (Kursk-Vostok). As a result of the attack, a Russian MiG-29 fighter aircraft and a Pantsir-S1 air defense system guarding the base were struck. In addition, direct hits were recorded on the satellite communications command center, drone launch platforms, and the fuel storage depot. This airfield serves as a primary forward base for Russian tactical aviation conducting airstrikes against Ukraine's border regions.",
       "source": "General Staff of the UAF, 15th OBAR, OSINT"
     },
-    "id": 89
+    "id": 92
   },
   {
     "date": "21.07.2026",
@@ -2787,7 +2880,7 @@ const strikeData = [
       "details": "On the night of July 21, 2026, a group of Ukrainian strike drones targeted industrial facilities in Lipetsk. A major fire erupted at the industrial complex, covering an area of approximately 2,500 square meters. Explosions and damage were also reported near the local thermal power plant (CHP), which supplies electricity and steam to key defense manufacturing plants in the region. The strike caused disruptions in power supply to industrial facilities and forced a temporary shutdown of production workshops. The Lipetsk industrial hub plays a vital role in supplying metal and specialized components for Russian military production.",
       "source": "OSINT, Russian EMERCOM, Russian Media"
     },
-    "id": 90
+    "id": 93
   },
   {
     "date": "20.07.2026",
@@ -2818,7 +2911,7 @@ const strikeData = [
       "details": "On the night of July 20, long-range SBU drones carried out a successful attack on the Engels military airfield in the Saratov region. The drones covered about 800 kilometers to strike the parking area of Russian strategic aviation. According to Ukrainian intelligence, a Tu-95MS strategic bomber sustained critical damage as a result of the attack. It is claimed that the aircraft's tail section was completely torn off, making its restoration extremely difficult and time-consuming. Local authorities and the Russian Ministry of Defense traditionally reported the interception of all drones, but the massive damage to the equipment indicates a breach in air defense. This airfield serves as a key base for bombers that regularly launch missile strikes against Ukrainian territory.",
       "source": "SBU, OSINT, Russian Media"
     },
-    "id": 91
+    "id": 94
   },
   {
     "date": "20.07.2026",
@@ -2849,7 +2942,7 @@ const strikeData = [
       "details": "As part of a massive drone attack on facilities in the Moscow region on the night of July 20, an oil depot in the Lvivsky microdistrict of Podolsk was successfully struck. In total, over 400 drones were directed at the Russian capital region, with a portion breaching the enemy's layered air defenses. Powerful explosions rocked the fuel storage facility, followed by a large-scale fire. The Russian side claimed successful air defense operations, but eyewitness footage confirmed direct hits on the fuel tanks. The President of Ukraine officially verified the successful long-range strikes on oil infrastructure near Moscow. The destruction of such logistical hubs is aimed at weakening the supply of fuel and lubricants to Russian troops.",
       "source": "Ukrainian Officials, Russian Media, OSINT"
     },
-    "id": 92
+    "id": 95
   },
   {
     "date": "19.07.2026",
@@ -2880,7 +2973,7 @@ const strikeData = [
       "details": "The oil depot in the Vyazniki hamlet (Shpakovsky municipal district, Stavropol Krai) plays an important role in storing and transferring fuel in southern Russia, supplying military logistics in the North Caucasus direction. On the night of July 19, the facility came under a massive drone strike — the third such attack on this depot in just a few weeks. Local authorities and the regional governor confirmed the drone impacts, which ignited fires in at least two separate areas within the industrial zone. Due to the scale of the incident, a local state of emergency was declared in the district. The Russian Defense Ministry claimed to have intercepted 140 drones across various regions that night, but a portion of the strike UAVs breached air defenses and reached their targets. While the exact volume of destroyed fuel remains undisclosed and no casualties were reported, the systematic strikes on this specific facility point to a targeted campaign aimed at dismantling Russia's fuel infrastructure in the region.",
       "source": "Stavropol Governor, Russian Media, OSINT"
     },
-    "id": 93
+    "id": 96
   },
   {
     "date": "19.07.2026",
@@ -2911,7 +3004,7 @@ const strikeData = [
       "details": "The Caspian Pipeline Consortium (CPC) marine terminal near Novorossiysk is a key hub for Russian oil exports, utilizing single point moorings to load tankers directly in the Black Sea. On July 19, the facility was attacked by Ukrainian drones, striking two oil tankers: the Liberia-flagged ASIA and the Marshall Islands-flagged NISSOS IOS. Following the drone impact, a fire broke out on board the ASIA tanker, forcing the consortium to urgently suspend oil loading operations and begin firefighting efforts. This operation was part of a broader campaign aimed at disrupting Russia's logistical and financial supply chains in the Black Sea, increasingly targeting vessels associated with the so-called \"shadow fleet\". Although the Russian Defense Ministry claimed a massive drone interception, footage and local reports confirmed the successful hits. Preliminary data suggests there were no casualties, but the incident significantly complicated the terminal's operations, temporarily paralyzing the export of crude oil.",
       "source": "Russian Media, Maritime monitoring channels, OSINT"
     },
-    "id": 94
+    "id": 97
   },
   {
     "date": "17.07.2026",
@@ -2942,7 +3035,7 @@ const strikeData = [
       "details": "TES-Terminal-1 is one of Crimea's largest oil products terminals, specialising in the transshipment, storage and transportation of light and dark petroleum products as well as liquefied petroleum gas. Located in Kerch's port zone, it belongs to the TES Group — one of the peninsula's leading oil traders. Ukraine's General Staff listed the terminal among confirmed strike targets for July 17, 2026, noting it supplies fuel to Russian occupation forces. This was not the first attack: in June–July 2026 the terminal had already been hit multiple times by Ukrainian strike UAVs, each time triggering fires in the tank farm. The strike is part of a systematic campaign to cut off fuel supply chains to Russian forces in Crimea.",
       "source": "AFU General Staff, pravda.com.ua, nv.ua, investigator.org.ua"
     },
-    "id": 95
+    "id": 98
   },
   {
     "date": "17.07.2026",
@@ -2973,7 +3066,7 @@ const strikeData = [
       "details": "The fuel and lubricants depot in Kerch's port district is part of the logistical supply chain serving the Kerch Strait crossing and the fuel needs of Russian occupation forces. The facility stores and dispenses diesel, gasoline and lubricants for Russian military units and technical services in Crimea. Ukraine's General Staff confirmed the depot as a struck target on July 17, 2026, in the same strike package that hit TES-Terminal-1. Two simultaneous hits on Kerch's fuel infrastructure significantly reduce the throughput of the fuel supply chain for Russia's Crimean grouping. Ukrainian OSINT analysts reported large smoke plumes visible over Kerch from multiple simultaneous fires that night.",
       "source": "AFU General Staff, nv.ua, interfax.com.ua, Militarnyi"
     },
-    "id": 96
+    "id": 99
   },
   {
     "date": "18.07.2026",
@@ -3004,7 +3097,7 @@ const strikeData = [
       "details": "The Noginskaya oil depot stores and dispatches light petroleum products — gasoline, diesel and kerosene — with a tank farm of 24 reservoirs totalling 11,500 cubic metres of capacity, representing significant fuel reserves for the region and military logistics chains. An air raid alert was declared across the Moscow region on the evening of July 17, 2026, as more than 370 UAVs were tracked heading toward the Moscow area. A drone strike ignited a fire in the tank farm. Moscow Oblast Governor Andrei Vorobyov confirmed the blaze: two people were injured, and residents of nearby apartment buildings and a maternity hospital on Radchenko Street were evacuated. The facility is part of the region's fuel infrastructure that also supports military transport logistics.",
       "source": "Moscow Oblast Governor Vorobyov, OSINT (Astra, UNN), dialog.ua, interfax.ru"
     },
-    "id": 97
+    "id": 100
   },
   {
     "date": "18.07.2026",
@@ -3035,7 +3128,7 @@ const strikeData = [
       "details": "The Wildberries logistics centre in Elektrostal, one of the company's largest hubs in the Moscow region, suffered a devastating drone strike. According to Ukrainian officials, the warehouse was being utilized by the Russian military-industrial complex to redistribute sanctioned components essential for assembling drones and navigation systems. The attack triggered a massive fire that completely destroyed approximately 350,000 square meters of warehouse space, wiping out nearly 7% of the marketplace's total logistics capacity. The blaze was accompanied by severe smoke, and emergency services battled the flames for several days. As a result of the strike, one person died in the hospital and dozens of other employees sustained varying degrees of injuries. Financial losses from the destruction of the building, equipment, and incinerated goods are estimated by analysts at a staggering 30 to 100 billion rubles. This incident delivered a crippling blow not only to military logistics but to the company's entire supply chain.",
       "source": "President Zelensky, Moscow Oblast Governor Vorobyov, dialog.ua, rbc.ua, belsat.eu"
     },
-    "id": 98
+    "id": 101
   },
   {
     "date": "18.07.2026",
@@ -3066,7 +3159,7 @@ const strikeData = [
       "details": "The Wildberries logistics hub in Kotovsk, Tambov Oblast, was targeted by strike drones due to its strategic location near the Tambov Powder Plant. This plant is one of Russia's key enterprises for producing gunpowder and artillery charges, and reports indicate that the marketplace's warehouse infrastructure had been integrated into military logistics. A direct UAV hit sparked a massive fire at the facility, completely obliterating the stored inventory and sections of the buildings. For the night shift employees, the consequences were tragic: the deaths of seven people were confirmed, with several dozen more injured. Rescue and firefighting operations lasted for a considerable time due to the massive scale of the blaze and the risk of secondary detonations at adjacent industrial sites. This strike starkly demonstrated the vulnerability of dual-use warehouses that are secretly repurposed to supply the Russian military.",
       "source": "President Zelensky, Tambov Oblast Governor Pervyshov, meduza.io, kyivpost.com, belsat.eu"
     },
-    "id": 99
+    "id": 102
   },
   {
     "date": "16.07.2026",
@@ -3097,7 +3190,7 @@ const strikeData = [
       "details": "Slavneft-YANOS is one of Russia's oldest and largest oil refineries, operating since 1961 with a processing capacity exceeding 15 million tonnes per year (~3–4% of all Russian refining capacity). The plant produces automotive and aviation gasoline, jet fuel, diesel, fuel oil, and petrochemical feedstocks, making it a key fuel supplier for the Moscow region. On the morning of July 16, 2026, Ukrainian long-range strike UAVs hit the plant's oil storage tank farm; OSINT analysts confirmed the strike and heavy smoke over the facility. Yaroslavl Oblast Governor Yevrayev confirmed the attack: 19 drones were intercepted, but a number reached their targets. One local resident was killed and four injured; the Yaroslavl–Moscow highway was temporarily closed and local airport operations were restricted. This was not the first attack on YANOS in 2026 — the plant has become a regular target of Ukrainian deep strikes.",
       "source": "OSINT (Militarnyi, Kurs, Informator), Yaroslavl Oblast Governor Yevrayev, 24tv.ua, Meduza"
     },
-    "id": 100
+    "id": 103
   },
   {
     "date": "16.07.2026",
@@ -3128,7 +3221,7 @@ const strikeData = [
       "details": "The Saky (Novofedorivka) airfield is a first-class military airbase on Crimea's western coast, home to Russia's 43rd Separate Naval Assault Aviation Regiment. Su-24M frontline bombers stationed here regularly carry out strikes on Ukrainian positions and cities, as well as conduct Black Sea reconnaissance missions. On July 16, 2026, combat diver special operators from Ukraine's National Guard special operations unit 'Omega' conducted a bold deep-strike operation, destroying a Russian Su-24M frontline bomber while it was being readied for a combat sortie. The operation employed attack UAVs: the first drone struck the aircraft's nose section, while the second targeted the fuel tanks — resulting in complete destruction of the aircraft. National Guard Commander General Oleksandr Pivnenko confirmed the success of the operation, emphasizing that Ukraine is expanding its capacity for deep offensive strikes. Hitting a bomber on the occupied peninsula demonstrates Ukraine's ability to reach the enemy anywhere, including Crimea.",
       "source": "NGU 'Omega', NGU Commander Pivnenko, pravda.com.ua, dsnews.ua, Kyiv Independent"
     },
-    "id": 101
+    "id": 104
   },
   {
     "date": "16.07.2026",
@@ -3159,7 +3252,7 @@ const strikeData = [
       "details": "On July 16, 2026, as part of the ongoing Operation 'MoLoChKa', Ukraine's Unmanned Systems Forces (USF) under commander Robert 'Madyar' Brovdi struck 11 more vessels of the Russian shadow fleet in the Black Sea and Sea of Azov. Among those hit were five oil tankers, one LNG tanker, three dry cargo vessels, and two tugboats. By the end of July 16, the total number of vessels struck during Operation MoLoChKa reached 147 — 117 in the Sea of Azov and 30 in the Black Sea. The operation's concept envisions 'incurable logistical paralysis': Ukrainian unmanned surface vessels disable ships by targeting their propulsion, steering, and navigation systems without breaching hulls, thus avoiding environmental catastrophe. Russia's shadow fleet is its primary tool for exporting oil in circumvention of Western sanctions — and it is oil revenues that fund the Kremlin's war machine. By systematically striking these vessels, Ukraine is cutting off the financial lifelines of the war and turning the Sea of Azov into hostile waters for Russian shipping.",
       "source": "USF of the AFU (Robert 'Madyar' Brovdi), pravda.com.ua, Ukrinform, Armyinform"
     },
-    "id": 102
+    "id": 105
   },
   {
     "date": "15.07.2026",
@@ -3190,7 +3283,7 @@ const strikeData = [
       "details": "On the night of July 15, 2026, Ukraine's Unmanned Systems Forces (USF) conducted a large-scale operation codenamed 'MoLoChKa' in the Black Sea. Symbolically, the launch of the Black Sea cluster of the operation was timed to coincide with Ukrainian Statehood Day. USF Commander Robert 'Madyar' Brovdi personally announced the results: 20 vessels of Russia's 'shadow fleet' were struck overnight — 17 oil tankers, two LNG tankers, and one tugboat. The shadow fleet is Russia's key tool for circumventing Western sanctions and illegally exporting oil, generating hundreds of millions of dollars to fund the war. Previously, in the first stage of the same 'MoLoChKa' operation in the Sea of Azov, 116 vessels had been struck in the preceding days — bringing the operation's total to 136 vessels over nine days. The systematic destruction of Russia's shadow fleet in both seas is causing colossal damage to Moscow's oil export capacity and undermining the financing of its aggression against Ukraine.",
       "source": "USF of the AFU (Commander Robert 'Madyar' Brovdi), Armyinform, Ukrpravda, NV.ua, Meduza"
     },
-    "id": 103
+    "id": 106
   },
   {
     "date": "14.07.2026",
@@ -3226,7 +3319,7 @@ const strikeData = [
       "details": "Gazprom Neftekhim Salavat is one of Russia's largest oil refining and petrochemical complexes, operating since 1948. Its annual crude oil processing capacity exceeds 8 million tonnes, producing gasoline, diesel fuel, kerosene, liquefied petroleum gases and a wide range of petrochemicals. On the night of July 14, 2026, Ukraine's Special Operations Forces (SOF) Deep Strike units, in cooperation with the underground 'Black Spark' movement, carried out a precision strike on the Salavat industrial zone — approximately 1,500 kilometers from the Ukrainian border. The attack triggered a major fire, with local residents witnessing a series of explosions and columns of black smoke above the plant. According to industry sources cited by Reuters, both primary crude distillation units (CDU-4 and CDU-6) were damaged and shut down, leading to a complete suspension of the complex's operations. The potential recovery timeline is several weeks to months. The strike was symbolic: Salavat was the last major Russian refinery that had not yet been targeted by Ukrainian strikes in 2026.",
       "source": "SOF of the Armed Forces of Ukraine, General Staff of the AFU, Reuters, OSINT (Astra, Exilenova+), Russian Media"
     },
-    "id": 104
+    "id": 107
   },
   {
     "date": "14.07.2026",
@@ -3262,7 +3355,7 @@ const strikeData = [
       "details": "The Afipsky refinery is one of the key oil processing facilities in southern Russia, with a designed crude oil processing capacity of approximately 6.25 million metric tonnes per year. The plant produces diesel fuel, aviation kerosene, fuel oil and other petroleum products, a portion of which supplies military equipment and aircraft of the Russian grouping on the southern front. On the night of July 14, 2026, Ukrainian strike UAVs carried out a precision attack on the plant — powerful explosions were heard around midnight. A fire broke out in the tank farm area, with thick black smoke rising into the sky. The Krasnodar Krai operational headquarters confirmed the attack and the fire, also reporting that drone debris struck 16 facilities in the settlement, including residential buildings. By morning, the fire had been extinguished. This is not the first attack on the Afipsky refinery in 2026 — the plant was also struck in March and June.",
       "source": "Krasnodar Krai Operational HQ, General Staff of the AFU, OSINT (Astra, UNN), Russian Media"
     },
-    "id": 105
+    "id": 108
   },
   {
     "date": "13.07.2026",
@@ -3298,7 +3391,7 @@ const strikeData = [
       "details": "On the night of July 13, 2026, the Tsimlyansk oil depot, owned by a Rosneft subsidiary, was accurately targeted by Ukrainian drones. Following the strike, a massive fire broke out at the facility, which stored significant reserves of gasoline and diesel fuel for the needs of the occupying forces. The fire was assigned the third rank of complexity, engulfing an area of over 200 square meters and posing a serious threat to neighboring tanks. To mitigate the consequences, local authorities had to deploy dozens of firefighting crews and a specialized firefighting train. This oil depot played an important role in the logistics chain of fuel supplies to the southern front. The strike marked another step in the systematic destruction of Russia's oil infrastructure.",
       "source": "Russian Media, OSINT analysts"
     },
-    "id": 106
+    "id": 109
   },
   {
     "date": "13.07.2026",
@@ -3334,7 +3427,7 @@ const strikeData = [
       "details": "On the night of July 13, 2026, Ukrainian strike UAVs successfully attacked an industrial zone in the Vyazniki settlement of Stavropol Krai, where the Korona LLC oil depot is located. The pinpoint strike resulted in a massive fire, accompanied by the burning of petroleum product storage tanks. It is worth noting that this is the second successful attack on oil depots in this settlement within the last week, demonstrating a systematic approach to dismantling local fuel logistics. Local authorities were forced to declare a municipal-level state of emergency due to the scale of the blaze. The destruction of this facility further complicates the logistics and fuel supply for Russian army units operating in the North Caucasus and the south.",
       "source": "OSINT analysts, Russian Media"
     },
-    "id": 107
+    "id": 110
   },
   {
     "date": "12.07.2026",
@@ -3370,7 +3463,7 @@ const strikeData = [
       "details": "On the night of July 12, 2026, the Syzran oil refinery was attacked by strike drones. A powerful explosion occurred on the plant's territory, followed by a large-scale fire. According to sources in the Armed Forces of Ukraine General Staff and OSINT analysts, the primary oil processing units AVT-5 and AVT-6, which are crucial for the plant's production cycle, sustained significant damage. This strike is part of Ukraine's systematic campaign to destroy Russian oil and gas infrastructure that supports the military-industrial complex and funds the war. The Syzran refinery is part of the Rosneft structure and is a key producer of petroleum products in the region. Local social media channels also published numerous videos showing thick smoke rising above the plant's industrial zone.",
       "source": "AFU General Staff, OSINT, Russian Media"
     },
-    "id": 108
+    "id": 111
   },
   {
     "date": "11.07.2026",
@@ -3406,7 +3499,7 @@ const strikeData = [
       "details": "On the night of July 11, 2026, Ukrainian strike drones delivered a powerful blow to two terminals of the Azov oil depot: Azovprodukt CJSC and Donterminal LLC. According to the SBU and Ukrainian intelligence sources, this was a planned operation aimed at destroying logistical hubs that supply fuel to the Russian military grouping in the south. The Azov base is of strategic importance for the transshipment of light oil products and overall military-industrial logistics. Following the strikes, a massive fire broke out, engulfing several fuel storage tanks with a total volume of tens of thousands of cubic meters. Firefighting efforts were complicated by extreme heat and the threat of the fire spreading to neighboring tanks, prompting local authorities to deploy a firefighting train. Local social media channels were flooded with footage of a massive glow and columns of black smoke visible from dozens of kilometers away.",
       "source": "SBU, HUR MO, OSINT analysts, Russian Media"
     },
-    "id": 109
+    "id": 112
   },
   {
     "date": "11.07.2026",
@@ -3442,7 +3535,7 @@ const strikeData = [
       "details": "On the same night of July 11, 2026, the Ilsky oil refinery in the Kuban region came under a massive attack by Ukrainian kamikaze drones. This refinery is one of the largest producers of fuel oil and diesel fuel in southern Russia, and its products are critical for supplying the Black Sea Fleet and occupation forces in Crimea. According to the Unmanned Systems Forces (SBS) and HUR, pinpoint strikes damaged the primary oil processing unit, leading to a severe fire and the temporary shutdown of part of the production cycle. The Ilsky refinery has been targeted in similar operations before, underscoring Ukraine's systematic efforts to dismantle Russian fuel generation. Local residents posted numerous videos showing drones flying overhead, the sounds of explosions, and the subsequent large-scale fire at the facility.",
       "source": "SBS, HUR MO, OSINT, Russian Media"
     },
-    "id": 110
+    "id": 113
   },
   {
     "date": "01.01.2026",
@@ -3473,7 +3566,7 @@ const strikeData = [
       "details": "On New Year's night a direct hit was recorded po facilityu s subsequent fireom on the facility's territory.",
       "source": "SBS, AFU General Staff"
     },
-    "id": 111
+    "id": 114
   },
   {
     "date": "01.01.2026",
@@ -3504,7 +3597,7 @@ const strikeData = [
       "details": "The Lyudinovo fuel depot is an asset of JSC Kaluganefteprodukt, a retail subsidiary of Rosneft, located in Kaluga Oblast around 330 km from Ukraine's border. The depot's tank farm held 9 tanks with a total capacity of around 6,700 m³, storing gasoline and diesel fuel. It served as a regional distribution hub for small-volume fuel deliveries to local consumers and military units. On the night of January 1, 2026, Ukrainian strike UAVs hit the tanks, triggering a large-scale fire confirmed by satellite imagery. The strike on fuel infrastructure on the first day of the new year was one of the longest-range and most precise UAV attacks of that period.",
       "source": "SBS"
     },
-    "id": 112
+    "id": 115
   },
   {
     "date": "01.01.2026",
@@ -3535,7 +3628,7 @@ const strikeData = [
       "details": "The Almetyevskaya Oil Treatment Unit is part of the oil and gas infrastructure of PJSC Tatneft in the Almetyevsky District of the Republic of Tatarstan. Tatarstan is one of Russia's largest oil-producing regions, with Tatneft extracting over 25 million tons of crude oil annually; Almetyevsk serves as the company's headquarters and the central hub of the republic's entire petroleum complex. Oil treatment units (OTUs) perform the critical technological function of dehydration, desalting, and stabilization of crude oil before it is pumped into trunk pipelines. On the first day of 2026, attack drones struck Tatneft's Northern Product Park — a facility for gathering, separation, and storage of marketable crude — igniting a fire on the plant's territory. Striking oil infrastructure deep in enemy territory on a holiday sent a symbolic message and demonstrated a new level of range and precision for Ukrainian UAVs.",
       "source": "SBS, AFU General Staff"
     },
-    "id": 113
+    "id": 116
   },
   {
     "date": "08.01.2026",
@@ -3566,7 +3659,7 @@ const strikeData = [
       "details": "strike drones SOF porazili rolling stock with fuel and lubricants pryamo na fuel loading rack fuel depot.",
       "source": "SOF, AFU General Staff"
     },
-    "id": 114
+    "id": 117
   },
   {
     "date": "10.01.2026",
@@ -3597,7 +3690,7 @@ const strikeData = [
       "details": "As a result of falling debris vozniklo fire outbreak, evacuation of the population was considered.",
       "source": "OSINT"
     },
-    "id": 115
+    "id": 118
   },
   {
     "date": "11.01.2026",
@@ -3628,7 +3721,7 @@ const strikeData = [
       "details": "were struck tri ice-resistant stationary platforms (im. V. Filanovskogo, Yuriya Korchagina i Valeriya Grayfera), well operations were halted.",
       "source": "SOF, AFU General Staff"
     },
-    "id": 116
+    "id": 119
   },
   {
     "date": "16.01.2026",
@@ -3659,7 +3752,7 @@ const strikeData = [
       "details": "massive strike droneov na city i military airfield, gde baziruyutsya frontline bombers Su-34. V citye a state of emergency was declared emergency, damage was recorded ot debris.",
       "source": "OSINT, Russian Media"
     },
-    "id": 117
+    "id": 120
   },
   {
     "date": "18.01.2026",
@@ -3690,7 +3783,7 @@ const strikeData = [
       "details": "historic operation HUR MoD. For the first time since the start of the full-scale war Ukrainian strike drone proletel bolee 1200 km i dostig Leningradskoy oblast, poraziv infrastrukturu krupneyshego Russian terminala po transshipment of petroleum products v Baltic region.",
       "source": "HUR, OSINT"
     },
-    "id": 118
+    "id": 121
   },
   {
     "date": "19.01.2026",
@@ -3721,7 +3814,7 @@ const strikeData = [
       "details": "successful operation HUR MoD. As a result of the strike UAV vspykhnul large-scale fire, burned at least chetyre storage tanka s fuelm obshchim obemom okolo 6 tys. cubic meters. Ogon byl nastolko silnym, chto ego was extinguished bolee dvukh days.",
       "source": "HUR, OSINT"
     },
-    "id": 119
+    "id": 122
   },
   {
     "date": "21.01.2026",
@@ -3752,7 +3845,7 @@ const strikeData = [
       "details": "strike on strategicheskomu predpriyatiyu, proizvodyashchemu cruise missiles Kh-59 i drones-\"obmanki\". explosions were recorded on the plant's territory.",
       "source": "HUR, OSINT"
     },
-    "id": 120
+    "id": 123
   },
   {
     "date": "21.01.2026",
@@ -3783,7 +3876,7 @@ const strikeData = [
       "details": "Uspeshnaya spetsoperation SBU. drones porazili plant po pererabotke gasovogo kondensata. Vspykhnul kolossalnyy fire, facility bylo vynuzhdeno polnostyu ostanovit tekhnologicheskiy protsess i otgruzku topliva na eksport.",
       "source": "SBU"
     },
-    "id": 121
+    "id": 124
   },
   {
     "date": "23.01.2026",
@@ -3814,7 +3907,7 @@ const strikeData = [
       "details": "powerful fire na fuel depot, a takzhe zafiksirovany posledstviya of the strike po mestnomu energofacilityu (heat & power plant).",
       "source": "AFU General Staff"
     },
-    "id": 122
+    "id": 125
   },
   {
     "date": "24.01.2026",
@@ -3845,7 +3938,7 @@ const strikeData = [
       "details": "successful operation SBU. large-scale fire na vakuumnoy ustanovke, plant vremenno polnostyu ostanovil pererabotku oil.",
       "source": "SBU, OSINT"
     },
-    "id": 123
+    "id": 126
   },
   {
     "date": "28.01.2026",
@@ -3876,7 +3969,7 @@ const strikeData = [
       "details": "confirmed fire outbreak petroleum products na klyuchevoy baze obespecheniya severnoy gruppirovki voysk RF.",
       "source": "AFU General Staff"
     },
-    "id": 124
+    "id": 127
   },
   {
     "date": "31.01.2026",
@@ -3907,7 +4000,7 @@ const strikeData = [
       "details": "operation HUR. strikenyy bespinik successfully preodolel air defense nad cityom i upal na territory neftepererabatyvayushchego facility (Glukhoozerskoe shosse), povrediv pustye storage tanks i avtomobili.",
       "source": "HUR, Russian Media"
     },
-    "id": 125
+    "id": 128
   },
   {
     "date": "09.02.2026",
@@ -3938,7 +4031,7 @@ const strikeData = [
       "details": "Seriya strikeov droneov po dvum oil refinery. Na Ilskom oil refinery was damageda ustanovka pervichnoy pererabotki oil moshchnostyu 3,6 mln tons v god.",
       "source": "SBU"
     },
-    "id": 126
+    "id": 129
   },
   {
     "date": "11.02.2026",
@@ -3969,7 +4062,7 @@ const strikeData = [
       "details": "V rezultate massirovannoy drone strikes na oil refinery vspykhnul large-scale fire.",
       "source": "OSINT, monitoringovye kanaly"
     },
-    "id": 127
+    "id": 130
   },
   {
     "date": "12.02.2026",
@@ -4000,7 +4093,7 @@ const strikeData = [
       "details": "strike on arsenalu glavnogo raketno-artilleriyskogo upravleniya armii RF. Voznik large-scale fire i nachalas detonation boepripasov, mestnye vlasti obyavlyali hourtichnuyu evakuatsiyu.",
       "source": "HUR, OSINT"
     },
-    "id": 128
+    "id": 131
   },
   {
     "date": "15.02.2026",
@@ -4031,7 +4124,7 @@ const strikeData = [
       "details": "Uspeshnaya nochnaya operation HUR. Dva drone porazili fuel depot, vspykhnul large-scale fire — zaburnedis storage tanks s dizelnym fuelm obshchim obemom bolee 1400 cubic meters.",
       "source": "HUR, OSINT"
     },
-    "id": 129
+    "id": 132
   },
   {
     "date": "17.02.2026",
@@ -4062,7 +4155,7 @@ const strikeData = [
       "details": "Povtornyy za mesyats strike on krupneyshemu na yuge RF nefteperevalochnomu kompleksu, a fire was recorded.",
       "source": "SBU"
     },
-    "id": 130
+    "id": 133
   },
   {
     "date": "17.02.2026",
@@ -4093,7 +4186,7 @@ const strikeData = [
       "details": "was struckie Ilskogo oil refinery i krupneyshey stantsii Kaspiyskogo truboprovodnogo konsortsiuma, ostanovka nefteperekachki.",
       "source": "SOF, SBU, AFU General Staff"
     },
-    "id": 131
+    "id": 134
   },
   {
     "date": "18.02.2026",
@@ -4124,7 +4217,7 @@ const strikeData = [
       "details": "strike on oboronnomu predpriyatiyu, proizvodyashchemu komponenty dlya raket i droneov.",
       "source": "OSINT"
     },
-    "id": 132
+    "id": 135
   },
   {
     "date": "19.02.2026",
@@ -4155,7 +4248,7 @@ const strikeData = [
       "details": "at least chetyre explosiona, large-scale fire storage tankov (facility prinadlezhit OOO \"Pskovnefteprodukt\"), evacuation sotrudnikov.",
       "source": "SBU"
     },
-    "id": 133
+    "id": 136
   },
   {
     "date": "19.02.2026",
@@ -4186,7 +4279,7 @@ const strikeData = [
       "details": "Nochnaya drone strike na military facility. Mestnye vlasti podtverzhdali rabotu air defense i padenie debris v perimetre aerodroma.",
       "source": "OSINT"
     },
-    "id": 134
+    "id": 137
   },
   {
     "date": "21.02.2026",
@@ -4217,7 +4310,7 @@ const strikeData = [
       "details": "large-scale fire na gasopererabatyvayushchem plante, vspykhnulo at least 5 storage tankov, teplovye anomalii zafiksirovany sputnikami NASA.",
       "source": "OSINT"
     },
-    "id": 135
+    "id": 138
   },
   {
     "date": "05.03.2026",
@@ -4248,7 +4341,7 @@ const strikeData = [
       "details": "successful operation HUR MoDU. As a result of the strike droneov vspykhnul large-scale fire, burned ot odnogo do trekh storage tankov s fuelm.",
       "source": "HUR, OSINT"
     },
-    "id": 136
+    "id": 139
   },
   {
     "date": "06.03.2026",
@@ -4279,7 +4372,7 @@ const strikeData = [
       "details": "drone strike na fuel tanks. V etot zhe den fiksirovalis povtornye popytki droneov strikesovat military airfield \"Baltimor\" v Voronezhe.",
       "source": "OSINT"
     },
-    "id": 137
+    "id": 140
   },
   {
     "date": "06.03.2026",
@@ -4310,7 +4403,7 @@ const strikeData = [
       "details": "Spetsoperation HUR. Dva drone s intervalom vo vremeni strikesovali warehouse fuel and lubricants odnogo iz krupneyshikh v RF facilities po obogashcheniyu zheleznoy rudy (postavlyaet syre dlya produceseley bronetekhniki).",
       "source": "HUR, OSINT"
     },
-    "id": 138
+    "id": 141
   },
   {
     "date": "09.03.2026",
@@ -4341,7 +4434,7 @@ const strikeData = [
       "details": "massive strike droneov na plant, gde remontiruyut i moderniziruyut strategic bombers Tu-95 i unikalnye aircrafty-razvedchiki A-50.",
       "source": "OSINT, AFU General Staff"
     },
-    "id": 139
+    "id": 142
   },
   {
     "date": "10.03.2026",
@@ -4372,7 +4465,7 @@ const strikeData = [
       "details": "strike drone prorval air defense i sdetonated na territory fuel depot in samom Kurske, vyzvav fire in storage tanknom parke.",
       "source": "Russian Media, mestnye vlasti"
     },
-    "id": 140
+    "id": 143
   },
   {
     "date": "12.03.2026",
@@ -4403,7 +4496,7 @@ const strikeData = [
       "details": "Seriya moshchnykh explosionov on the base's territory voenno-morskoy aviatsii RF v rezultate nochnogo naleta droneov.",
       "source": "AFU General Staff"
     },
-    "id": 141
+    "id": 144
   },
   {
     "date": "12.03.2026",
@@ -4434,7 +4527,7 @@ const strikeData = [
       "details": "drone strike na vtoroy po obemam pererabotki oil plant v Rossii. Mestnye vlasti zayavili o sbitii dronea aircraftnogo tipa na podlete k facilityu, odnako sam fakt of the strike zastavil RF usilivat air defense region.",
       "source": "OSINT"
     },
-    "id": 142
+    "id": 145
   },
   {
     "date": "13.03.2026",
@@ -4465,7 +4558,7 @@ const strikeData = [
       "details": "drone strike-kamikadze privela k avariynoy ostanovke tekhnologicheskikh ustanovok krupneyshego na yuge RF neftepererabatyvayushchego facility.",
       "source": "Russian Media, OSINT"
     },
-    "id": 143
+    "id": 146
   },
   {
     "date": "13.03.2026",
@@ -4496,7 +4589,7 @@ const strikeData = [
       "details": "strikesa strikenykh droneov na military airfield pod Maykopom, gde baziruetsya uchebnaya airbase i boevye aircrafty. Mestnye residents fiksirovali seriyu explosionov v districte vzletnoy polosy.",
       "source": "OSINT, Russian Media"
     },
-    "id": 144
+    "id": 147
   },
   {
     "date": "14.03.2026",
@@ -4527,7 +4620,7 @@ const strikeData = [
       "details": "was damageda ustanovka pervichnoy pererabotki oil AT-22/4 (klyuchevoy uzel). Zafiksirovan large-scale fire.",
       "source": "Svodka Genshtaba AFU, zayavleniya SBU"
     },
-    "id": 145
+    "id": 148
   },
   {
     "date": "17.03.2026",
@@ -4558,7 +4651,7 @@ const strikeData = [
       "details": "Sovmestnaya operation SBU, SOF i SBS. Zafiksirovan tochnyy prilet po atmosfernym i vakuumnym blokam planta, silnyy fire.",
       "source": "SBU, SOF"
     },
-    "id": 146
+    "id": 149
   },
   {
     "date": "19.03.2026",
@@ -4589,7 +4682,7 @@ const strikeData = [
       "details": "Pervaya krupnaya popytka massirovannogo naleta droneov na promyshlennuyu zonu khimicheskogo facility. explosions were recorded i rabota air defense nad cityom.",
       "source": "Russian Media, mestnye vlasti"
     },
-    "id": 147
+    "id": 150
   },
   {
     "date": "21.03.2026",
@@ -4620,7 +4713,7 @@ const strikeData = [
       "details": "was damagedy blok vtorichnoy pererabotki i storage tank RVS-10000. major fire, gorevshiy at least dvoe days.",
       "source": "Svodka Genshtaba AFU, NASA FIRMS"
     },
-    "id": 148
+    "id": 151
   },
   {
     "date": "23.03.2026",
@@ -4651,7 +4744,7 @@ const strikeData = [
       "details": "was struck toplivno-energeticheskiy facility, a fire was recorded on the facility's territory.",
       "source": "Militarnyi, MoD Ukrainy"
     },
-    "id": 149
+    "id": 152
   },
   {
     "date": "23.03.2026",
@@ -4682,7 +4775,7 @@ const strikeData = [
       "details": "strike on the facility perevalki oil, obespechivayushchemu eksport cherez Baltiku; fire na territory.",
       "source": "Militarnyi, MoD Ukrainy"
     },
-    "id": 150
+    "id": 153
   },
   {
     "date": "23.03.2026",
@@ -4713,7 +4806,7 @@ const strikeData = [
       "details": "strikesa UAV na facility polnogo tsikla, proizvodyashchee vysokokachestvennyy metall, ispolzuemyy dlya nuzhd rossiyskoy voennoy tekhniki. damage was recorded tsekhov.",
       "source": "SOF, monitoringovye kanaly"
     },
-    "id": 151
+    "id": 154
   },
   {
     "date": "26.03.2026",
@@ -4744,7 +4837,7 @@ const strikeData = [
       "details": "fire s fire outbreakm; was damagedie ustanovok ELOU-AVT-2 i ELOU-AVT-6, bitumnogo production, gidroochistki.",
       "source": "AFU General Staff"
     },
-    "id": 152
+    "id": 155
   },
   {
     "date": "26.03.2026",
@@ -4775,7 +4868,7 @@ const strikeData = [
       "details": "Povtornaya drone strike na territory facility, kotoraya sovpala s inspektsionnym vizitom vysokopostavlennykh lits iz Sovbeza RF. Zafiksirovano padenie debris u prokhodnoy planta, kuda massovo sezzhalis skorye i EMERCOM.",
       "source": "OSINT, monitoringovye kanaly"
     },
-    "id": 153
+    "id": 156
   },
   {
     "date": "28.03.2026",
@@ -4806,7 +4899,7 @@ const strikeData = [
       "details": "Mnozhestvennye direct hits FP-1-droneami; major fire, anomalnye teplovye signaly po vsey promzone.",
       "source": "Militarnyi, NASA FIRMS"
     },
-    "id": 154
+    "id": 157
   },
   {
     "date": "03.04.2026",
@@ -4837,7 +4930,7 @@ const strikeData = [
       "details": "was strucka i ostanovlena ustanovka pervichnoy pererabotki CDU-5, obespechivayushchaya 28% produktsii planta.",
       "source": "Ukrainskie Media, Reuters"
     },
-    "id": 155
+    "id": 158
   },
   {
     "date": "05.04.2026",
@@ -4868,7 +4961,7 @@ const strikeData = [
       "details": "was damagedy kak at least dva tekhnologicheskikh facilitya, krupnolarge-scale fire (powerful ochag na NASA FIRMS).",
       "source": "Ukrainskie Media, OSINT"
     },
-    "id": 156
+    "id": 159
   },
   {
     "date": "05.04.2026",
@@ -4899,7 +4992,7 @@ const strikeData = [
       "details": "Povrezhdyon uhourtok truboprovoda, vedyotsya \"kontroliruemyy fakelnyy prozhig\" posle srabatyvaniya otsechnykh ustroystv.",
       "source": "Regionalnye vlasti, OSINT"
     },
-    "id": 157
+    "id": 160
   },
   {
     "date": "05.04.2026",
@@ -4930,7 +5023,7 @@ const strikeData = [
       "details": "large-scale strike on aerodromu, gde bazirovalis desyatki bombardirovshchikov Su-34. Uspeshnaya sovmestnaya operation SBU i Sil oborony.",
       "source": "SBU"
     },
-    "id": 158
+    "id": 161
   },
   {
     "date": "05.04.2026",
@@ -4961,7 +5054,7 @@ const strikeData = [
       "details": "Dva drone strikesovali facility, vkhodyashchee v kholding \"Tekhmash\" (Rostekh). plant spetsializiruetsya na proizvodstve promyshlennykh explosionchatykh veshchestv i boepripasov. Zafiksirovan proryv krovli odnogo iz tsekhov i fire outbreak.",
       "source": "OSINT (Astra)"
     },
-    "id": 159
+    "id": 162
   },
   {
     "date": "09.04.2026",
@@ -4992,7 +5085,7 @@ const strikeData = [
       "details": "Uspeshnaya spetsoperation HUR MoD. strike drones porazili glavnyy proizvodstvennyy tsekh facility, kotoroe zanimaetsya remontom aviatsionnykh raket i radiotekhniki dlya VVS RF.",
       "source": "HUR"
     },
-    "id": 160
+    "id": 163
   },
   {
     "date": "11.04.2026",
@@ -5023,7 +5116,7 @@ const strikeData = [
       "details": "massive strike droneov na 4-y gosstrikestvennyy tsentralnyy mezhvidovoy poligon RF, gde ispytyvayutsya raketnye kompleksy. Iz-za naleta vremenno zakryvali vozdushnoe prostranstvo i aeroport v Astrakhani.",
       "source": "OSINT, Russian Media"
     },
-    "id": 161
+    "id": 164
   },
   {
     "date": "12.04.2026",
@@ -5054,7 +5147,7 @@ const strikeData = [
       "details": "Russian vlasti skryli strike, odnako OSINT-sources podtverdili padenie UAV na vzletno-posadochnuyu polosu aeroporta, kotoryy ispolzuetsya dlya voennykh nuzhd. Voznik fire.",
       "source": "OSINT (Astra)"
     },
-    "id": 162
+    "id": 165
   },
   {
     "date": "12.04.2026",
@@ -5085,7 +5178,7 @@ const strikeData = [
       "details": "strike drone vrezalsya v zdanie resursosnabzhayushchego facility \"gasproma\" (5-y plantskoy pereulok), naneseny was damagediya fasadu.",
       "source": "Russian Media"
     },
-    "id": 163
+    "id": 166
   },
   {
     "date": "16.04.2026",
@@ -5116,7 +5209,7 @@ const strikeData = [
       "details": "burnedi storage tanks i infrastructure oil refinery; seriya strikeov vyvela iz stroya znachitelnuyu hourt tank-parka.",
       "source": "SBU, SBS, Militarnyi"
     },
-    "id": 164
+    "id": 167
   },
   {
     "date": "18.04.2026",
@@ -5147,7 +5240,7 @@ const strikeData = [
       "details": "Sovmestnaya operation sil glubinnogo was struckiya; large-scale fire on the facility's territory.",
       "source": "AFU General Staff, SBS"
     },
-    "id": 165
+    "id": 168
   },
   {
     "date": "18.04.2026",
@@ -5178,7 +5271,7 @@ const strikeData = [
       "details": "Sinkhronnyy nalyot; silnye firey on the facility's territory posle strikeov UAV.",
       "source": "AFU General Staff, SBS"
     },
-    "id": 166
+    "id": 169
   },
   {
     "date": "18.04.2026",
@@ -5209,7 +5302,7 @@ const strikeData = [
       "details": "RPK-Vysotsk \"LUKOIL-II\" is a specialized marine oil product export terminal owned by Lukoil, located on Vysotsky Island in the Gulf of Finland (Leningrad Oblast), commissioned in 2004. As one of Russia's key Baltic export hubs, the terminal receives petroleum products by rail and pipeline and transfers them onto large-tonnage tankers with a deadweight of up to 90,000 tons. The facility's design capacity is approximately 12 million tons of petroleum products per year, handling primarily diesel fuel, fuel oil, naphtha, and vacuum gas oil. A strike by attack UAVs ignited a large-scale fire in the terminal's tank farm, disrupting the shipment of Russian petroleum products to European markets. Targeting the terminal reduces the aggressor state's foreign currency revenues and weakens its ability to finance the war against Ukraine.",
       "source": "AFU General Staff, SBS"
     },
-    "id": 167
+    "id": 170
   },
   {
     "date": "18.04.2026",
@@ -5240,7 +5333,7 @@ const strikeData = [
       "details": "was strucka strategicheskaya neftepumping station (transport oil po yuzhnomu napravleniyu), fire.",
       "source": "AFU General Staff, SBS"
     },
-    "id": 168
+    "id": 171
   },
   {
     "date": "19.04.2026",
@@ -5271,7 +5364,7 @@ const strikeData = [
       "details": "Okolo 10 tochek goreniya, was damagedy storage tanks, ustanovka AVT-12, was damagedo sudno u prichala.",
       "source": "OSINT Astra"
     },
-    "id": 169
+    "id": 172
   },
   {
     "date": "20.04.2026",
@@ -5302,7 +5395,7 @@ const strikeData = [
       "details": "Masshtabnaya nochnaya strikesa na perevalochnuyu bazu fuel. V rezultate priletov nachalos silnoe i prodolzhitelnoe fire outbreak krupnykh storage tankov s goryuche-smazochnymi materialami.",
       "source": "Russian Media, OSINT"
     },
-    "id": 170
+    "id": 173
   },
   {
     "date": "21.04.2026",
@@ -5333,7 +5426,7 @@ const strikeData = [
       "details": "was damagedy pyat storage tankov po 20 tys. m³ syroy oil, zafiksirovan large-scale fire.",
       "source": "Press-sluzhba SBU"
     },
-    "id": 171
+    "id": 174
   },
   {
     "date": "21.04.2026",
@@ -5364,7 +5457,7 @@ const strikeData = [
       "details": "Povtornaya strikesa ukrainskikh droneov. Mestnye vlasti i air defense pytalis zashchitit facility setkami, odnako drones probili ograzhdenie i upali on the facility's territory.",
       "source": "Russian Media, OSINT"
     },
-    "id": 172
+    "id": 175
   },
   {
     "date": "24.04.2026",
@@ -5395,7 +5488,7 @@ const strikeData = [
       "details": "Uspeshnaya spetsoperation SBU. simultaneously strikesovany dve vazhnye bazy dlya khraneniya i perekachki GSM, na kotorykh nakhodilos okolo 26 thousand cubic meters Russian fuel. Nachalis masshtabnye firey, provedena ekstrennaya evacuation personnela.",
       "source": "SBU, sputnikovye snimki"
     },
-    "id": 173
+    "id": 176
   },
   {
     "date": "26.04.2026",
@@ -5426,7 +5519,7 @@ const strikeData = [
       "details": "massive kombinirovannyy strike on infrastrukture bazirovaniya aircraftov. Okkupanty ekstrenno podnimali aviatsiyu v vozdukh.",
       "source": "SBU, OSINT"
     },
-    "id": 174
+    "id": 177
   },
   {
     "date": "27.04.2026",
@@ -5457,7 +5550,7 @@ const strikeData = [
       "details": "was struckie infrastructure aerodroma (napravleno 38 UAV).",
       "source": "OSINT, Mash"
     },
-    "id": 175
+    "id": 178
   },
   {
     "date": "27.04.2026",
@@ -5488,7 +5581,7 @@ const strikeData = [
       "details": "Padenie debris UAV na territory oil refinery.",
       "source": "OSINT, Mash"
     },
-    "id": 176
+    "id": 179
   },
   {
     "date": "29.04.2026",
@@ -5519,7 +5612,7 @@ const strikeData = [
       "details": "Seriya explosionov; pochti vse storage tanks s nefteproduktami okhvacheny ognyom. facility nakhoditsya bolee chem v 1500 km ot Ukrainy.",
       "source": "SBU (Telegram)"
     },
-    "id": 177
+    "id": 180
   },
   {
     "date": "30.04.2026",
@@ -5550,7 +5643,7 @@ const strikeData = [
       "details": "was strucka ustanovka AVT-4 (uzel pervichnoy pererabotki); zaburnedis vakuumnaya i atmosfernaya kolonny.",
       "source": "SBU (Telegram)"
     },
-    "id": 178
+    "id": 181
   },
   {
     "date": "30.04.2026",
@@ -5581,7 +5674,7 @@ const strikeData = [
       "details": "was damagedy storage tanks na stantsii; voznik novyy ochag firea (povtornyy strike).",
       "source": "SBU (Telegram)"
     },
-    "id": 179
+    "id": 182
   },
   {
     "date": "01.05.2026",
@@ -5612,7 +5705,7 @@ const strikeData = [
       "details": "fire v storage tankakh s oilyu i mazutom; chernyy dym; was destroyedo 52% parka (24 storage tanka), rabota planta ostanovlena.",
       "source": "AFU General Staff, SBU, SBS"
     },
-    "id": 180
+    "id": 183
   },
   {
     "date": "01.05.2026",
@@ -5643,7 +5736,7 @@ const strikeData = [
       "details": "was damagedy bombardirovshchiki Su-34 i fighter jet Su-57 (summarno was strucko 4 borta).",
       "source": "OSINT-analitika"
     },
-    "id": 181
+    "id": 184
   },
   {
     "date": "01.05.2026",
@@ -5674,7 +5767,7 @@ const strikeData = [
       "details": "V rezultate nochnoy spetsoperation HUR drones strikesovali territory oil storage facility, obespechivayushchego nuzhdy rossiyskoy armii.",
       "source": "HUR, OSINT"
     },
-    "id": 182
+    "id": 185
   },
   {
     "date": "05.05.2026",
@@ -5705,7 +5798,7 @@ const strikeData = [
       "details": "direct hits po 3 ustanovkam AVT. plant (7% pererabotki RF) polnostyu ostanovlen, prodolzhaetsya fire.",
       "source": "SBU, Reuters"
     },
-    "id": 183
+    "id": 186
   },
   {
     "date": "05.05.2026",
@@ -5736,38 +5829,7 @@ const strikeData = [
       "details": "A fuel tank was struck s nefteproduktami; voznik fire na nefteperekachivayushchey stantsii.",
       "source": "SBU (sotsseti)"
     },
-    "id": 184
-  },
-  {
-    "date": "07-08.05.2026",
-    "lat": 57.925,
-    "lng": 56.136,
-    "distance": 1564,
-    "ru": {
-      "region": "Пермский край, Пермь",
-      "target": "НПЗ «Лукойл-Пермнефтеоргсинтез»",
-      "category": "Нефтегаз",
-      "weapon": "Дрон",
-      "details": "Пожар на территории; поражены резервуары и возгорание ключевой установки АВТ (полная остановка переработки).",
-      "source": "Президент Украины, СБУ"
-    },
-    "uk": {
-      "region": "Пермський край, Перм",
-      "target": "НПЗ «Лукойл-Пермнафтооргсинтез»",
-      "category": "Нафтогаз",
-      "weapon": "Дрон",
-      "details": "пожежа на території; уражені резервуари та займання ключової установки АВТ (повна зупинка переробки).",
-      "source": "Президент України, СБУ"
-    },
-    "en": {
-      "region": "Perm Krai, Perm",
-      "target": "Oil Refinery \"Lukoyl-Permnefteorgsintez\"",
-      "category": "Oil & Gas",
-      "weapon": "Drone",
-      "details": "fire na territory; Fuel tanks were struck i fire outbreak klyuchevoy ustanovki AVT (polnaya ostanovka pererabotki).",
-      "source": "Prezident Ukrainy, SBU"
-    },
-    "id": 185
+    "id": 187
   },
   {
     "date": "08.05.2026",
@@ -5798,7 +5860,7 @@ const strikeData = [
       "details": "Povrezhdyon storage tank na stantsii – voznik novyy ochag firea (tretya strikesa).",
       "source": "SBU (TsSO \"Alfa\")"
     },
-    "id": 186
+    "id": 188
   },
   {
     "date": "08.05.2026",
@@ -5829,7 +5891,7 @@ const strikeData = [
       "details": "fire na predpriyatii i was struckie nasosnoy stantsii, podayushchey fuel k Baltike i v Moskvu.",
       "source": "MoD Ukrainy"
     },
-    "id": 187
+    "id": 189
   },
   {
     "date": "09.05.2026",
@@ -5860,7 +5922,7 @@ const strikeData = [
       "details": "strike drones porazili perevalochnuyu fuel depot, snabzhayushchuyu fuelm Russian troops v Krymu. was damagedy at least 6 storage tankov.",
       "source": "SBU, OSINT"
     },
-    "id": 188
+    "id": 190
   },
   {
     "date": "11.05.2026",
@@ -5891,7 +5953,7 @@ const strikeData = [
       "details": "V rezultate nochnoy drone strikes was damagedy ustanovki pervichnoy pererabotki oil (AVT-1 i AVT-6), a takzhe kabeli upravleniya i dymovaya truba.",
       "source": "HUR"
     },
-    "id": 189
+    "id": 191
   },
   {
     "date": "15.05.2026",
@@ -5922,7 +5984,7 @@ const strikeData = [
       "details": "large-scale fire na vakuumnykh distillyatsionnykh uzlakh, vypadenie osadkov v vide \"neftyanogo dozhdya\".",
       "source": "SOF, SBS, AFU General Staff"
     },
-    "id": 190
+    "id": 192
   },
   {
     "date": "16.05.2026",
@@ -5953,7 +6015,7 @@ const strikeData = [
       "details": "Seriya explosionov i large-scale fire v promyshlennoy zone strategicheskogo khimicheskogo facility.",
       "source": "OSINT Astra"
     },
-    "id": 191
+    "id": 193
   },
   {
     "date": "16.05.2026",
@@ -5984,7 +6046,7 @@ const strikeData = [
       "details": "were destroyed unikalnyy aircraft-amfibiya Be-200 i morskoy helicopter Ka-27. confirmed sputnikami.",
       "source": "SBS, AFU General Staff"
     },
-    "id": 192
+    "id": 194
   },
   {
     "date": "16.05.2026",
@@ -6015,7 +6077,7 @@ const strikeData = [
       "details": "Tochnoe was struckie i vyvedenie iz stroya radiolokatsionnoy stantsii slezheniya.",
       "source": "AFU General Staff"
     },
-    "id": 193
+    "id": 195
   },
   {
     "date": "17.05.2026",
@@ -6046,7 +6108,7 @@ const strikeData = [
       "details": "plant polnostyu ostanovil pererabotku dlya minimizatsii riskov posle padeniya UAV u prokhodnoy.",
       "source": "Vlasti RF, Reuters"
     },
-    "id": 194
+    "id": 196
   },
   {
     "date": "17.05.2026",
@@ -6077,7 +6139,7 @@ const strikeData = [
       "details": "were destroyed air defense system \"Pantsir-S2\", radar S-400, punkty upravleniya dronemi i dispetcherskaya vyshka.",
       "source": "SBU, Sily oborony"
     },
-    "id": 195
+    "id": 197
   },
   {
     "date": "17.05.2026",
@@ -6108,7 +6170,7 @@ const strikeData = [
       "details": "Massirovannaya kombinirovannaya strikesa (okolo 100 droneov na region). were struck facilityy infrastructure v portu (terminal, zh/d stantsiya), a takzhe nanesen povtornyy strike on Tuapsinskomu oil refinery.",
       "source": "SBU, HUR"
     },
-    "id": 196
+    "id": 198
   },
   {
     "date": "19.05.2026",
@@ -6139,7 +6201,7 @@ const strikeData = [
       "details": "Ocherednaya nochnaya strikesa na aerodrom i oil refinery. plant v Slavyanske-na-Kubani byl vynuzhden vnov priostanovit rabotu posle padeniya droneov na ego territory.",
       "source": "SBU, OSINT"
     },
-    "id": 197
+    "id": 199
   },
   {
     "date": "20.05.2026",
@@ -6170,7 +6232,7 @@ const strikeData = [
       "details": "Ukrainian drone prorvalsya neposredstvenno k kraevomu tsentru. Posle padeniya i detonation ego debris byli obnaruzheny v cherte Stavropolya.",
       "source": "Russian Media"
     },
-    "id": 198
+    "id": 200
   },
   {
     "date": "21.05.2026",
@@ -6201,7 +6263,7 @@ const strikeData = [
       "details": "was damageda ustanovka AVT-6, obespechivayushchaya svyshe 70% moshchnosti planta (sereznoe snizhenie pererabotki).",
       "source": "MoD Ukrainy, Reuters"
     },
-    "id": 199
+    "id": 201
   },
   {
     "date": "22.05.2026",
@@ -6232,38 +6294,7 @@ const strikeData = [
       "details": "was struckie warehouseov boepripasov, sredstv air defense i shtaba otryada UAV \"Rubikon\".",
       "source": "AFU General Staff"
     },
-    "id": 200
-  },
-  {
-    "date": "22-23.05.2026",
-    "lat": 44.75,
-    "lng": 37.81,
-    "distance": 400,
-    "ru": {
-      "region": "Краснодарский край, Новороссийск",
-      "target": "Нефтебаза «Грушовая балка» / терминал «Шесхарис»",
-      "category": "Топливная логистика",
-      "weapon": "Дрон",
-      "details": "Возгорание технических/административных зданий и пожары в резервуарном парке крупнейшего терминала Юга РФ.",
-      "source": "Минобороны Украины, OSINT"
-    },
-    "uk": {
-      "region": "Краснодарський край, Новоросійськ",
-      "target": "Нафтобаза «Грушова балка» / термінал «Шесхаріс»",
-      "category": "Паливна логістика",
-      "weapon": "Дрон",
-      "details": "Займання технічних/адміністративних будівель та пожежі у резервуарному парку найбільшого терміналу Півдня РФ.",
-      "source": "Міноборони України, OSINT"
-    },
-    "en": {
-      "region": "Krasnodar Krai, Novorossiysk",
-      "target": "Fuel Depot \"Grushovaya balka\" / Terminal \"Sheskharis\"",
-      "category": "Fuel Logistics",
-      "weapon": "Drone",
-      "details": "fire outbreak tekhnicheskikh/administrativnykh zdaniy i firey v storage tanknom parke krupneyshego terminala Yuga RF.",
-      "source": "MoD Ukrainy, OSINT"
-    },
-    "id": 201
+    "id": 202
   },
   {
     "date": "23.05.2026",
@@ -6294,7 +6325,7 @@ const strikeData = [
       "details": "strike on khimicheskomu predpriyatiyu, proizvodyashchemu vazhnoe syre dlya oboronnoy promyshlennosti.",
       "source": "MoD Ukrainy"
     },
-    "id": 202
+    "id": 203
   },
   {
     "date": "24.05.2026",
@@ -6325,7 +6356,7 @@ const strikeData = [
       "details": "large-scale fire (ok. 800 kv. m) na facilitye, snabzhayushchem moskovskie aeroporty i eksportnye porty.",
       "source": "SBU (Telegram)"
     },
-    "id": 203
+    "id": 204
   },
   {
     "date": "27.05.2026",
@@ -6356,7 +6387,7 @@ const strikeData = [
       "details": "Povtornyy strike on aviastroitelnoy infrastrukture Taganroga. Zafiksirovan major fire on the plant's territory, zanimayushchegosya remontom transportnoy aviatsii.",
       "source": "OSINT (Astra)"
     },
-    "id": 204
+    "id": 205
   },
   {
     "date": "29.05.2026",
@@ -6387,7 +6418,7 @@ const strikeData = [
       "details": "Ostanovleny ustanovki pervichnoy pererabotki oil AVT-1, AVT-5 i AVT-6; polnaya ostanovka pererabotki.",
       "source": "AFU General Staff, SOF"
     },
-    "id": 205
+    "id": 206
   },
   {
     "date": "29.05.2026",
@@ -6418,7 +6449,7 @@ const strikeData = [
       "details": "strike on krupneyshey fuel depot poluostrova. Zafiksirovany dva krupnykh ochaga vozgoraniya, shleyf dyma ushel v storonu morya.",
       "source": "SBS"
     },
-    "id": 206
+    "id": 207
   },
   {
     "date": "31.05.2026",
@@ -6449,7 +6480,7 @@ const strikeData = [
       "details": "Povtornyy strike; zafiksirovano kak at least 3 ochaga goreniya on the plant's territory, moshchnye stolby dyma.",
       "source": "NASA FIRMS, OSINT"
     },
-    "id": 207
+    "id": 208
   },
   {
     "date": "31.05.2026",
@@ -6480,7 +6511,7 @@ const strikeData = [
       "details": "fire na krupnom toplivnom storage facility, potrebovalas evacuation of the population i firenyy poezd.",
       "source": "Dannye OSINT"
     },
-    "id": 208
+    "id": 209
   },
   {
     "date": "31.05.2026",
@@ -6511,7 +6542,7 @@ const strikeData = [
       "details": "Tochnyy strike on lineynoy proizvodstvenno-dispetcherskoy stantsii sistemy magistralnykh oil pipelineov.",
       "source": "OSINT, Sternenko"
     },
-    "id": 209
+    "id": 210
   },
   {
     "date": "31.05.2026",
@@ -6542,7 +6573,7 @@ const strikeData = [
       "details": "were destroyed/vyvedeny iz stroya dve ustanovki pervichnoy pererabotki moshchnostyu do 2,5 mln tons kazhdaya.",
       "source": "VMS AFU"
     },
-    "id": 210
+    "id": 211
   },
   {
     "date": "31.05.2026",
@@ -6573,7 +6604,7 @@ const strikeData = [
       "details": "successful operation VMS i Sil oborony s primeneniem protivokorabelnykh raket \"Neptun\". Fuel tanks were struck s fuelm v portu i infrastructure paromnoy perepravy.",
       "source": "VMS AFU, AFU General Staff"
     },
-    "id": 211
+    "id": 212
   },
   {
     "date": "02.06.2026",
@@ -6604,7 +6635,7 @@ const strikeData = [
       "details": "fire outbreak zh/d tsistern s fuelm, fire na facilityakh oil refinery posle pryamykh direct hits.",
       "source": "OSINT Astra"
     },
-    "id": 212
+    "id": 213
   },
   {
     "date": "02.06.2026",
@@ -6635,7 +6666,7 @@ const strikeData = [
       "details": "fire na facilityakh oil refinery posle pryamykh direct hits.",
       "source": "OSINT Astra"
     },
-    "id": 213
+    "id": 214
   },
   {
     "date": "03.06.2026",
@@ -6666,7 +6697,7 @@ const strikeData = [
       "details": "was struckie krupneyshego perevalochnogo kompleksa na Baltike (31 storage tank, emkost 324 tys. m³).",
       "source": "Prezident Ukrainy, SOF"
     },
-    "id": 214
+    "id": 215
   },
   {
     "date": "03.06.2026",
@@ -6697,7 +6728,7 @@ const strikeData = [
       "details": "fire on the plant's territory, vypuskayushchego giromotory i avtopiloty dlya raket Kh-101 i Kh-59.",
       "source": "Prezident Ukrainy"
     },
-    "id": 215
+    "id": 216
   },
   {
     "date": "03.06.2026",
@@ -6728,7 +6759,7 @@ const strikeData = [
       "details": "Tochnoe was struckie radiotekhnicheskoy sistemy blizhney navigatsii RBSN-4N na territory aviabazy.",
       "source": "AFU General Staff"
     },
-    "id": 216
+    "id": 217
   },
   {
     "date": "03.06.2026",
@@ -6759,7 +6790,7 @@ const strikeData = [
       "details": "was struckie stantsii, privevshee k ostanovke perekachki syroy oil po truboprovodu.",
       "source": "AFU General Staff"
     },
-    "id": 217
+    "id": 218
   },
   {
     "date": "03.06.2026",
@@ -6790,7 +6821,7 @@ const strikeData = [
       "details": "Prilety po facilityam khraneniya fuel v cherte city (district zh/d stantsii), voznik major fire.",
       "source": "OSINT, AFU General Staff"
     },
-    "id": 218
+    "id": 219
   },
   {
     "date": "05.06.2026",
@@ -6821,7 +6852,7 @@ const strikeData = [
       "details": "confirmed was destroyedie vosmi i was damagedie devyati storage tankov dlya khraneniya topliva v portu.",
       "source": "AFU General Staff"
     },
-    "id": 219
+    "id": 220
   },
   {
     "date": "06.06.2026",
@@ -6852,7 +6883,7 @@ const strikeData = [
       "details": "Seriya explosionov; large-scale fire na ploshchadi 5000 kv. m, okhvativshiy ne menee trekh storage tankov.",
       "source": "SBU, AFU, HUR, OSINT"
     },
-    "id": 220
+    "id": 221
   },
   {
     "date": "06.06.2026",
@@ -6883,7 +6914,7 @@ const strikeData = [
       "details": "fire i vtorichnye detonation boepripasov na warehousee arsenala posle preodoleniya droneami ~1000 km.",
       "source": "SOF, SBS, SBU, HUR"
     },
-    "id": 221
+    "id": 222
   },
   {
     "date": "06.06.2026",
@@ -6914,7 +6945,7 @@ const strikeData = [
       "details": "Uspeshnaya planovaya drone strike HUR. Proizoshel explosion, za kotorym posledovalo fire outbreak at least odnogo toplivnogo storage tanka. Zdanie okhrany bylo was damagedo explosionnoy volnoy.",
       "source": "HUR, mestnye vlasti"
     },
-    "id": 222
+    "id": 223
   },
   {
     "date": "06.06.2026",
@@ -6945,7 +6976,7 @@ const strikeData = [
       "details": "powerful strike (presumably kombinirovannyy, missilemi \"Neptun\" i droneami), vyzvavshiy large-scale fire. Serezno was damagedy ustanovki pervichnoy pererabotki oil.",
       "source": "VMS AFU"
     },
-    "id": 223
+    "id": 224
   },
   {
     "date": "07.06.2026",
@@ -6976,7 +7007,7 @@ const strikeData = [
       "details": "Fuel tanks were struck bazy, obespechivayushchey fuelm vostochnuyu gruppirovku RF.",
       "source": "SOF, SBS"
     },
-    "id": 224
+    "id": 225
   },
   {
     "date": "08.06.2026",
@@ -7007,7 +7038,7 @@ const strikeData = [
       "details": "Tochnoe was struckie peredovogo warehousea, masshtabnaya vtorichnaya detonation boepripasov.",
       "source": "AFU General Staff"
     },
-    "id": 225
+    "id": 226
   },
   {
     "date": "08.06.2026",
@@ -7038,7 +7069,7 @@ const strikeData = [
       "details": "explosion i fire v angare khimreagentov, nanesen ushcherb oboronnomu proizvodstvu VMF.",
       "source": "OSINT, sluzhby spaseniya"
     },
-    "id": 226
+    "id": 227
   },
   {
     "date": "08.06.2026",
@@ -7069,7 +7100,7 @@ const strikeData = [
       "details": "Ofitsialno podtverzhdennyy Genshtabom AFU strike. large-scale explosion (shleyf v vide \"griba\" byl viden iz Belcity) s dlitelnoy vtorichnoy detonatsiey na warehouseakh v districte n.p. Novosadovyy i Belovskoe.",
       "source": "AFU General Staff"
     },
-    "id": 227
+    "id": 228
   },
   {
     "date": "08.06.2026",
@@ -7100,7 +7131,7 @@ const strikeData = [
       "details": "Istoricheskaya spetsoperation HUR. Ukrainian drones For the first time since the start of the full-scale war preodoleli okolo 1000 km i strikesovali aerodrom bazirovaniya strategicallykh bombardirovshchikov Tu-22M3 i nositeley \"Kinzhalov\" MiG-31K.",
       "source": "HUR"
     },
-    "id": 228
+    "id": 229
   },
   {
     "date": "08.06.2026",
@@ -7131,69 +7162,7 @@ const strikeData = [
       "details": "Vydayushchayasya operation HUR MoD (Astrakhan Oblast geograficheski primykaet k severokavkazskomu uzlu). For the first time v istorii zafiksirovano was struckie noveyshikh Russian istrebiteley pyatogo pokoleniya Su-57. satellite images podtverdili was damagedie at least odnogo (po utochnennym dannym — dvukh) bortov.",
       "source": "HUR"
     },
-    "id": 229
-  },
-  {
-    "date": "09-10.06.2026",
-    "lat": 56.12,
-    "lng": 47.26,
-    "distance": 1002,
-    "ru": {
-      "region": "Чувашия, Чебоксары",
-      "target": "Оборонный завод АО «ВНИИР-Прогресс»",
-      "category": "ВПК (НИИ)",
-      "weapon": "Ракета",
-      "details": "Повторный результативный удар дальнобойной крылатой ракетой FP-5 «Фламинго»; пожар, повреждены объекты навигации.",
-      "source": "Генштаб ВСУ, Президент"
-    },
-    "uk": {
-      "region": "Чувашія, Чебоксари",
-      "target": "Оборонний завод АТ «ВНДІР-Прогрес»",
-      "category": "ВПК (НДІ)",
-      "weapon": "Ракета",
-      "details": "Повторний результативний удар далекобійною крилатою ракетою FP-5 \"Фламінго\"; пожежа, пошкоджені навігаційні об'єкти.",
-      "source": "Генштаб ЗСУ, Президент"
-    },
-    "en": {
-      "region": "Чувашия, Cheboksary",
-      "target": "Oboronnyy Plant AO \"VNIIR-Progress\"",
-      "category": "Defense Industry",
-      "weapon": "Missile",
-      "details": "Povtornyy rezultativnyy strike dalnoboynoy krylatoy missile FP-5 \"Flamingo\"; fire, was damagedy facilityy navigatsii.",
-      "source": "AFU General Staff, Prezident"
-    },
     "id": 230
-  },
-  {
-    "date": "09-10.06.2026",
-    "lat": 53.1,
-    "lng": 50.08,
-    "distance": 999,
-    "ru": {
-      "region": "Самарская обл., Самара",
-      "target": "Куйбышевский НПЗ",
-      "category": "Нефтегаз",
-      "weapon": "Дрон",
-      "details": "Остановлены две критические установки первичной переработки нефти (CDU-4, CDU-5) на Куйбышевском НПЗ.",
-      "source": "Reuters, Telegram Astra"
-    },
-    "uk": {
-      "region": "Самарська обл., Самара",
-      "target": "Куйбишевський НПЗ",
-      "category": "Нафтогаз",
-      "weapon": "Дрон",
-      "details": "Зупинено дві критичні установки первинної переробки нафти (CDU-4, CDU-5) на Куйбишевському НПЗ.",
-      "source": "Reuters, Telegram Astra"
-    },
-    "en": {
-      "region": "Самарская обл., Samara",
-      "target": "Kuybyshevskiy Oil Refinery",
-      "category": "Oil & Gas",
-      "weapon": "Drone",
-      "details": "Ostanovleny dve kriticheskie ustanovki pervichnoy pererabotki oil (CDU-4, CDU-5) na Kuybyshevskom oil refinery.",
-      "source": "Reuters, Telegram Astra"
-    },
-    "id": 231
   },
   {
     "date": "10.06.2026",
@@ -7224,7 +7193,7 @@ const strikeData = [
       "details": "Zafiksirovany firey na territory kriticheski vazhnykh nefteperekachivayushchikh stantsiy.",
       "source": "Meduza, Supernova+"
     },
-    "id": 232
+    "id": 231
   },
   {
     "date": "11.06.2026",
@@ -7255,7 +7224,7 @@ const strikeData = [
       "details": "Povtornoe masshtabnoe fire outbreak na plante, pererabatyvayushchem okolo 2% vsey syroy oil RF.",
       "source": "AFU General Staff, Exilenova+"
     },
-    "id": 233
+    "id": 232
   },
   {
     "date": "12.06.2026",
@@ -7286,7 +7255,7 @@ const strikeData = [
       "details": "Na territory khimicheskogo planta, proizvodyashchego komponenty dlya tverdogo raketnogo topliva i dobavki k benzinu, a fire broke out.",
       "source": "AFU General Staff, OSINT"
     },
-    "id": 234
+    "id": 233
   },
   {
     "date": "12.06.2026",
@@ -7317,7 +7286,7 @@ const strikeData = [
       "details": "AFU General Staff podtverdil was struckie khimicheskogo kombinata i svyazannykh logisticheskikh facilityov.",
       "source": "AFU General Staff"
     },
-    "id": 235
+    "id": 234
   },
   {
     "date": "12.06.2026",
@@ -7348,7 +7317,7 @@ const strikeData = [
       "details": "explosions were recorded i strelba v districte military airfield vo vremya nochnoy strikes.",
       "source": "Monitoringovye pabliki"
     },
-    "id": 236
+    "id": 235
   },
   {
     "date": "12.06.2026",
@@ -7379,7 +7348,7 @@ const strikeData = [
       "details": "confirmed was struckie neftepererabatyvayushchego kompleksa TANEKO. a fire was recorded on the facility's territory.",
       "source": "AFU General Staff"
     },
-    "id": 237
+    "id": 236
   },
   {
     "date": "12.06.2026",
@@ -7410,7 +7379,7 @@ const strikeData = [
       "details": "confirmed was struckie oil refinery TAIF-NK. Na facilitye voznik fire posle of the strike.",
       "source": "AFU General Staff"
     },
-    "id": 238
+    "id": 237
   },
   {
     "date": "13.06.2026",
@@ -7441,7 +7410,7 @@ const strikeData = [
       "details": "Voznik large-scale fire vozle warehouseskoy infrastructure i stoyanki, takzhe were struck sistemy air defense, prikryvavshie facility.",
       "source": "SBU, SOF, HUR MoD"
     },
-    "id": 239
+    "id": 238
   },
   {
     "date": "13.06.2026",
@@ -7472,7 +7441,7 @@ const strikeData = [
       "details": "confirmed was struckie facilitya obrabotki, transportirovki i perekachki oil. Voznik fire na predpriyatii, obespechivayushchem transportirovku po magistralnym truboprovodam.",
       "source": "AFU General Staff, Reuters"
     },
-    "id": 240
+    "id": 239
   },
   {
     "date": "13.06.2026",
@@ -7503,7 +7472,7 @@ const strikeData = [
       "details": "Zafiksirovano 23 direct hits, postradali vse tsekha facility, proizvodyashchego syre dlya porokha i explosionchatki. production ostanovleno.",
       "source": "SBS"
     },
-    "id": 241
+    "id": 240
   },
   {
     "date": "14.06.2026",
@@ -7534,7 +7503,7 @@ const strikeData = [
       "details": "Porazhyon facility Rosrezerva, ispolzuemyy dlya khraneniya strategicallykh zapasov topliva i petroleum products. Posle direct hits a fire was recorded na territory fuel depot.",
       "source": "Prezident Ukrainy, SBU, Exilenova+"
     },
-    "id": 242
+    "id": 241
   },
   {
     "date": "14.06.2026",
@@ -7565,7 +7534,7 @@ const strikeData = [
       "details": "Zafiksirovany mnogochislennye direct hits po territory khimicheskogo facility. Voznik fire. plant produces ammiak, ammiachnuyu selitru i khimicheskie komponenty, ispolzuemye v proizvodstve explosionchatykh veshchestv.",
       "source": "Exilenova+, Obozrevatel, mestnye vlasti"
     },
-    "id": 243
+    "id": 242
   },
   {
     "date": "14.06.2026",
@@ -7596,7 +7565,7 @@ const strikeData = [
       "details": "massive nochnoy nalet (HUR ispolzovalo okolo 70 droneov). confirmed was struckie infrastructure bazy i aviatsionnoy tekhniki.",
       "source": "HUR"
     },
-    "id": 244
+    "id": 243
   },
   {
     "date": "14.06.2026",
@@ -7627,7 +7596,7 @@ const strikeData = [
       "details": "Nochnaya strikesa strikenykh droneov. V rezultate prileta i detonation debris byl was damaged storage tank krupneyshey v districte fuel depot.",
       "source": "Russian Media, OSINT"
     },
-    "id": 245
+    "id": 244
   },
   {
     "date": "14.06.2026",
@@ -7658,7 +7627,7 @@ const strikeData = [
       "details": "Ofitsialno podtverzhdennyy v utrenney svodke Genshtaba AFU strike on klyuchevomu komandnomu punktu, koordinirovavshemu deystviya prigranichnoy gruppirovki Russian voysk na Bryanskom napravlenii.",
       "source": "AFU General Staff"
     },
-    "id": 246
+    "id": 245
   },
   {
     "date": "14.06.2026",
@@ -7689,7 +7658,7 @@ const strikeData = [
       "details": "massive strike UAV na klyuchevoe khimicheskoe facility RF, proizvodyashchee ammiachnuyu selitru, ammiak i uksusnuyu kislotu (ispolzuyutsya pri sozdanii explosionchatki i raketnogo topliva). was damagedy tsekha, production vremenno ostanavlivalos.",
       "source": "AFU General Staff, OSINT"
     },
-    "id": 247
+    "id": 246
   },
   {
     "date": "15.06.2026",
@@ -7720,7 +7689,7 @@ const strikeData = [
       "details": "Nochnaya drone strike na odno iz krupneyshikh khimicheskikh facilities yuga RF, gde producessya tverdoe fuel dlya mezhkontinentalnykh ballisticheskikh raket. Zafiksirovano padenie debris na territory promploshchadki.",
       "source": "OSINT, Russian Media"
     },
-    "id": 248
+    "id": 247
   },
   {
     "date": "16.06.2026",
@@ -7751,7 +7720,7 @@ const strikeData = [
       "details": "strikenye UAV successfully strikesovali perevalochnuyu bazu fuel, obespechivayushchuyu seti zapravok kompanii \"Lukoyl\". Na territory vspykhnul large-scale fire (confirmed sputnikami NASA FIRMS), byla perekryta trassa.",
       "source": "OSINT, Operativnyy shtab Krasnodarskogo kraya"
     },
-    "id": 249
+    "id": 248
   },
   {
     "date": "16.06.2026",
@@ -7782,7 +7751,7 @@ const strikeData = [
       "details": "Spetsoperation HUR MoDU. massive strike na promyshlennuyu territory Lipetska. explosions were recorded i zadymleniya nad kombinatom i traktornym plantom, produktsiya kotorykh napryamuyu ispolzuetsya rossiyskim OPK.",
       "source": "HUR, OSINT (Astra)"
     },
-    "id": 250
+    "id": 249
   },
   {
     "date": "15.06.2026",
@@ -7813,7 +7782,7 @@ const strikeData = [
       "details": "V Podmoskove drones nanesli strike v 600 metrakh ot facility, razrabatyvayushchego giperzvukovye missiles \"Tsirkon\" i strategicallyy missile kompleks \"Avangard\". Nad cityom podnimalsya stolb dyma.",
       "source": "OSINT, Telegram-kanaly"
     },
-    "id": 251
+    "id": 250
   },
   {
     "date": "16.06.2026",
@@ -7844,7 +7813,7 @@ const strikeData = [
       "details": "drones nanesli strike on krupneyshemu neftepererabatyvayushchemu plantu Moskvy, pokryvayushchemu okolo 40% potrebnostey stolitsy v benzine. V rezultate direct hits na facilitye voznik large-scale fire, v nebo podnyalsya chernyy stolb dyma.",
       "source": "TsPD pri SNBO Ukrainy, OSINT"
     },
-    "id": 252
+    "id": 251
   },
   {
     "date": "17.06.2026",
@@ -7875,7 +7844,7 @@ const strikeData = [
       "details": "strike droneov po warehouseskim pomeshcheniyam v promyshlennoy zone na granitse syol Rzhevka i Voznesenka. Voznik silnyy fire; according to OSINT-analiza, warehouse mog ispolzovatsya dlya khraneniya voennykh gruzov.",
       "source": "OSINT, mestnyy gubernator"
     },
-    "id": 253
+    "id": 252
   },
   {
     "date": "18.06.2026",
@@ -7906,7 +7875,7 @@ const strikeData = [
       "details": "drones strikesovali fuel depot v Gukovo na ulitse Karla Marksa. Voznik major fire, was damaged teplovoz i kommercheskie facilityy. Po informatsii Genshtaba AFU, baza ispolzovalas dlya obespecheniya Russian voysk goryuche-smazochnymi materialami.",
       "source": "OSINT, AFU General Staff, mestnyy gubernator"
     },
-    "id": 254
+    "id": 253
   },
   {
     "date": "18.06.2026",
@@ -7943,7 +7912,7 @@ const strikeData = [
       "images/mnpz_explosion2.jpg",
       "images/mnpz_explosion3.jpg"
     ],
-    "id": 255
+    "id": 254
   },
   {
     "date": "20.06.2026",
@@ -7974,7 +7943,7 @@ const strikeData = [
       "details": "V khode nochnoy strikes zafiksirovany ochagi vozgoraniya na gasoraspredelitelnoy stantsii i neftegasovom storage facility, podtverzhdennye sputnikami NASA FIRMS.",
       "source": "NASA FIRMS, OSINT"
     },
-    "id": 256
+    "id": 255
   },
   {
     "date": "20.06.2026",
@@ -8005,7 +7974,7 @@ const strikeData = [
       "details": "Zafiksirovano 5 direct hits droneov v gas pipeline. S tretey popytki truba byla razorvana, voznik large-scale fire na prilegayushchey territory.",
       "source": "Krymskiy veter, OSINT"
     },
-    "id": 257
+    "id": 256
   },
   {
     "date": "20.06.2026",
@@ -8036,7 +8005,7 @@ const strikeData = [
       "details": "V khode strikes direct hits were recorded i kratkovremennaya detonation na pozitsiyakh mobilnoy ognevoy gruppy, prikryvavshey military airfield.",
       "source": "Krymskiy veter, OSINT"
     },
-    "id": 258
+    "id": 257
   },
   {
     "date": "20.06.2026",
@@ -8067,7 +8036,7 @@ const strikeData = [
       "details": "Obestochena podstantsiya, pitayushchaya oboronnyy plant, sobirayushchiy drones \"Molniya\" i komponenty k UAV \"Orion\". Iz-za otsutstviya elektrichestva production polnostyu ostanovleno.",
       "source": "ATESh"
     },
-    "id": 259
+    "id": 258
   },
   {
     "date": "20.06.2026",
@@ -8098,7 +8067,7 @@ const strikeData = [
       "details": "strikesa ukrainskikh strikenykh UAV na rekordnom rasstoyanii (okolo 2000 km ot granitsy). explosions were recorded i gustoe zadymlenie nad territoriey oil refinery, priostanavlivalas rabota mestnogo aeroporta \"Roshchino\".",
       "source": "OSINT (Astra), Russian Media"
     },
-    "id": 260
+    "id": 259
   },
   {
     "date": "21.06.2026",
@@ -8129,7 +8098,7 @@ const strikeData = [
       "details": "Massirovannaya nochnaya strikesa ukrainskikh UAV. satellite images NASA FIRMS i data OSINT-analitikov confirm neskolko silnykh ochagov firea v districte zdaniy u vostochnoy hourti vzletno-posadochnoy polosy aerodroma bazirovaniya takticheskoy aviatsii RF.",
       "source": "AFU General Staff, OSINT"
     },
-    "id": 261
+    "id": 260
   },
   {
     "date": "21.06.2026",
@@ -8160,7 +8129,7 @@ const strikeData = [
       "details": "Uspeshnaya sovmestnaya operation Sil oborony. was struck kompleks perevalki petroleum products, obespechivayushchiy fuelm voennuyu gruppirovku RF v Krymu. Podtverzhden large-scale fire, paromnaya pereprava byla polnostyu ostanovlena.",
       "source": "SBS, AFU General Staff"
     },
-    "id": 262
+    "id": 261
   },
   {
     "date": "21.06.2026",
@@ -8197,7 +8166,7 @@ const strikeData = [
       "images/26_21-06_kerch2.jpg",
       "images/26_21-06_kerch3.jpg"
     ],
-    "id": 263
+    "id": 262
   },
   {
     "date": "21.06.2026",
@@ -8228,7 +8197,7 @@ const strikeData = [
       "details": "Ofitsialno podtverzhdennyy Genshtabom AFU nochnoy nalet na infrastrukturu oil refinery. Zafiksirovany padeniya droneov, was damagediya i vozgoraniya on the facility's territory.",
       "source": "AFU General Staff"
     },
-    "id": 264
+    "id": 263
   },
   {
     "date": "21.06.2026",
@@ -8259,7 +8228,7 @@ const strikeData = [
       "details": "Nochnaya strikesa strikenykh droneov v ramkakh masshtabnoy kombinirovannoy operation Sil oborony Ukrainy po vyzhiganiyu toplivnoy bazy VS RF na yuge. strike ondtverzhden ofitsialnoy svodkoy Genshtaba.",
       "source": "AFU General Staff"
     },
-    "id": 265
+    "id": 264
   },
   {
     "date": "21.06.2026",
@@ -8290,7 +8259,7 @@ const strikeData = [
       "details": "drone strike na gasopererabatyvayushchiy kompleks (\"gasprom dobycha Astrakhan\"). information ob successfullym strikee vklyuchena v ofitsialnuyu utrennyuyu svodku Genshtaba AFU.",
       "source": "AFU General Staff"
     },
-    "id": 266
+    "id": 265
   },
   {
     "date": "22.06.2026",
@@ -8328,7 +8297,7 @@ const strikeData = [
       "images/26-2206-voronezh3.jpg",
       "images/26-2206-voronezh4.jpg"
     ],
-    "id": 267
+    "id": 266
   },
   {
     "date": "22.06.2026",
@@ -8359,7 +8328,7 @@ const strikeData = [
       "details": "successful strike strikenykh UAV na krupneyshuyu stantsiyu kosmicheskoy svyazi v RF, obespechivayushchuyu obmen voennoy informatsiey i svyaz s orbitalnoy sputnikovoy gruppirovkoy. AFU General Staff i Russian press-sluzhba facility podtverdili massive nalet, na facilitye bylo zafiksirovano masshtabnoe zadymlenie.",
       "source": "AFU General Staff, Russian Media"
     },
-    "id": 268
+    "id": 267
   },
   {
     "date": "23.06.2026",
@@ -8390,7 +8359,7 @@ const strikeData = [
       "details": "massive strike na strategicallye gasopererabatyvayushchie facility PAO \"gasprom\". V promyshlennoy zone zafiksirovano neskolko krupnykh tochek goreniya. Informatsiyu ob strikese podtverdili mestnye vlasti i OSINT-resursy.",
       "source": "OSINT, Russian Media"
     },
-    "id": 269
+    "id": 268
   },
   {
     "date": "23.06.2026",
@@ -8421,7 +8390,7 @@ const strikeData = [
       "details": "Povtornyy i rezultativnyy strike ukrainskikh UAV po morskomu portu Kerchi. was struck major logisticheskiy kompleks, prednaznachennyy dlya khraneniya i perevalki petroleum products i szhizhennogo gasa.",
       "source": "SBS, OSINT (Krymskiy veter)"
     },
-    "id": 270
+    "id": 269
   },
   {
     "date": "23.06.2026",
@@ -8452,7 +8421,7 @@ const strikeData = [
       "details": "Tochnoe direct hit strikenogo drone v neftyanoy storage tank mazutostorage facility. Voznik large-scale fire, shleyf chernogo dyma rastyanulsya nad poluostrovom pochti na 50 kilometers.",
       "source": "OSINT, monitoringovye kanaly"
     },
-    "id": 271
+    "id": 270
   },
   {
     "date": "23.06.2026",
@@ -8483,7 +8452,7 @@ const strikeData = [
       "details": "Povtornaya strikesa na toplivnuyu infrastrukturu kubanskogo porta, kotoryy obespechivaet perevalku fuel dlya Russian okkupatsionnykh sil v Krymu. a fire outbreak was recorded na territory terminala.",
       "source": "SBS, OSINT"
     },
-    "id": 272
+    "id": 271
   },
   {
     "date": "24.06.2026",
@@ -8514,7 +8483,7 @@ const strikeData = [
       "details": "Po zayavleniyu komandovaniya Sil bespilotnykh sistem Ukrainy, by a strike byla was strucka glavnaya raspredelitelnaya podstantsiya, obespechivayushchaya peredachu elektroenergii ot Balaklavskoy thermal power station. Posle strikes v citye proizoshli masshtabnye otklyucheniya elektroenergii.",
       "source": "Sily bespilotnykh sistem AFU, Reuters"
     },
-    "id": 273
+    "id": 272
   },
   {
     "date": "24.06.2026",
@@ -8545,7 +8514,7 @@ const strikeData = [
       "details": "SBU soobshchila ob strikee po infrastrukture aerodroma. Po predvaritelnym dannym were struck chetyre angara dlya khraneniya aviatsionnoy tekhniki.",
       "source": "SBU"
     },
-    "id": 274
+    "id": 273
   },
   {
     "date": "24.06.2026",
@@ -8576,7 +8545,7 @@ const strikeData = [
       "details": "SBU ofitsialno podtverdila strike on infrastrukture military airfield v ramkakh kompleksnoy operation protiv Russian voennykh facilityov v Krymu.",
       "source": "SBU"
     },
-    "id": 275
+    "id": 274
   },
   {
     "date": "24.06.2026",
@@ -8607,7 +8576,7 @@ const strikeData = [
       "details": "V khode nochnoy strikes neskolko strikenykh droneov strikesovali promyshlennuyu zonu na levom beregu Dona (ul. 1-ya Lugovaya). Mestnye vlasti podtverdili proryv air defense i padenie debris UAV aircraftnogo tipa na territory promyshlennogo facility, yavlyayushchegosya filialom krupneyshego oil refinery region.",
       "source": "OSINT (Astra), zayavleniya rukovodstva regiona"
     },
-    "id": 276
+    "id": 275
   },
   {
     "date": "25.06.2026",
@@ -8643,7 +8612,7 @@ const strikeData = [
       "images/26_25-06_bashneft2.jpg",
       "images/26_25-06_bashneft3.jpg"
     ],
-    "id": 277
+    "id": 276
   },
   {
     "date": "25.06.2026",
@@ -8674,7 +8643,7 @@ const strikeData = [
       "details": "massive strike UAV na odnogo iz krupneyshikh produceseley ammiaka i azotnoy kisloty v RF. Produktsiya facility ispolzuetsya v tsepochkakh production explosionchatykh veshchestv i postavlyaetsya na smezhnye facility oboronno-promyshlennogo kompleksa. Mestnye residents soobshchali o serii explosionov i zapakhe ammiaka.",
       "source": "OSINT (ASTRA, Exilenova+), rossiyskie Media i mestnye vlasti"
     },
-    "id": 278
+    "id": 277
   },
   {
     "date": "25.06.2026",
@@ -8705,7 +8674,7 @@ const strikeData = [
       "details": "Povtornaya strikesa na klyuchevuyu fuel depot yuga Rossii. Posle of the strike vozniklo masshtabnoe fire outbreak kak at least trekh storage tankov s fuelm. facility ispolzuetsya dlya khraneniya i raspredeleniya petroleum products, imeyushchikh znachenie dlya voennoy i grazhdanskoy logistiki.",
       "source": "OSINT (ASTRA, Exilenova+), Operativnyy shtab Krasnodarskogo kraya, Russian Media"
     },
-    "id": 279
+    "id": 278
   },
   {
     "date": "26.06.2026",
@@ -8736,7 +8705,7 @@ const strikeData = [
       "details": "During a super-massive drone raid, one of the largest oil refineries in Russia, ranking in the top 4 in terms of capacity, was hit. Reuters agency, citing sources, reported that the successful strike caused damage and a forced shutdown of the strategically important primary oil refining unit (CDU-5).",
       "source": "Reuters, OSINT"
     },
-    "id": 280
+    "id": 279
   },
   {
     "date": "26.06.2026",
@@ -8767,7 +8736,7 @@ const strikeData = [
       "details": "Drones attacked the largest chemical enterprise in the region. Explosions and a large-scale fire were recorded on the territory. This experimental plant is closely integrated into the military-industrial complex of Russia, as it produces a wide range of specialty chemicals and components of specialized aviation fuel for the needs of the Russian Aerospace Forces.",
       "source": "OSINT (Astra, Baza)"
     },
-    "id": 281
+    "id": 280
   },
   {
     "date": "27.06.2026",
@@ -8798,7 +8767,7 @@ const strikeData = [
       "source": "OSINT (ASTRA, Baza, Militarnyi), local residents' reports"
     },
     "distance": 644,
-    "id": 282
+    "id": 281
   },
   {
     "date": "27.06.2026",
@@ -8829,7 +8798,7 @@ const strikeData = [
       "source": "SBU, OSINT (ASTRA), Russian regional sources"
     },
     "distance": 699,
-    "id": 283
+    "id": 282
   },
   {
     "date": "27.06.2026",
@@ -8866,7 +8835,7 @@ const strikeData = [
       "images/26_27-06_titan1.jpg",
       "images/26_27-06_titan2.jpg"
     ],
-    "id": 284
+    "id": 283
   },
   {
     "date": "28.06.2026",
@@ -8905,7 +8874,7 @@ const strikeData = [
       "images/26-2806-na-kubani4.jpg",
       "images/26-2806-na-kubani5.jpg"
     ],
-    "id": 285
+    "id": 284
   },
   {
     "date": "28.06.2026",
@@ -8936,7 +8905,7 @@ const strikeData = [
       "details": "Synchronously with Slavyansk, long-range Ukrainian drones attacked one of the largest oil refineries in central Russia, located in Yaroslavl (strike depth about 800 km from the border). Due to the UAV breakthrough, Russian authorities urgently halted transport logistics and completely blocked road traffic within the refinery's radius.",
       "source": "SBU, General Staff of the Armed Forces of Ukraine, monitoring channels, local Russian media"
     },
-    "id": 286
+    "id": 285
   },
   {
     "date": "29.06.2026",
@@ -8966,7 +8935,7 @@ const strikeData = [
       "details": "In the early morning, a kamikaze drone successfully struck the territory of a strategic oil pumping station integrated into the Druzhba oil pipeline network. A fire outbreak in a storage tank was recorded. This facility plays a critical role in the distribution of fuel and lubricants across the Central Federal District of the Russian Federation and in the uninterrupted supply of logistics chains for Russian troops.",
       "source": "OSINT (ASTRA), confirmed by the governor of Tambov Oblast"
     },
-    "id": 287,
+    "id": 286,
     "distance": 436
   },
   {
@@ -8997,7 +8966,7 @@ const strikeData = [
       "details": "Another successful raid on one of Russia's largest microelectronics enterprises (part of state-owned defense holdings), which manufactures military radio-electronic components, microchips for air defense radars, Iskander missile systems, and Russian strike drones. Local residents recorded powerful explosions, a bright flash, and a subsequent fire in one of the production and administrative workshops.",
       "source": "OSINT (reports from Bryansk residents, arrival footage)"
     },
-    "id": 288,
+    "id": 287,
     "distance": 262
   },
   {
@@ -9028,7 +8997,7 @@ const strikeData = [
       "details": "Repeated massive drone attack. In his address, the President of Ukraine confirmed a systematic strike on the largest satellite space communications hub of the Russian Armed Forces. Also, OSINT resources, confirming the words of local residents, reported hits and a fire in the immediate vicinity of the city's defense production facilities: the Raduga State Machine-Building Design Bureau (manufacturers of Kh-101/Kh-69) and the Kronshtadt UAV assembly plant.",
       "source": "President of Ukraine, OSINT (Astra, Exilenova+)"
     },
-    "id": 289,
+    "id": 288,
     "distance": 668
   },
   {
@@ -9059,7 +9028,7 @@ const strikeData = [
       "details": "A group of kamikaze UAVs (more than seven units) bypassed Russian air defense and once again struck the production areas of the NLMK steel plant, which plays a significant role in the production of raw materials for the military-industrial complex. Powerful explosions and a direct hit on the oxygen separation station were recorded, causing a severe fire.",
       "source": "OSINT (Baza), monitoring groups"
     },
-    "id": 290,
+    "id": 289,
     "distance": 372
   },
   {
@@ -9090,7 +9059,7 @@ const strikeData = [
       "details": "An extremely effective strike by the Defense Forces simultaneously on several enterprises of the military-industrial complex and \"Roscosmos\" structures. The Research Institute of Physical Measurements (engaged in onboard components and sensors for the latest Su-57 aircraft and strategic missiles) and OJSC \"Mayak\" (development of communication systems and radio electronics for military equipment) were attacked. Information about a successful strike on this strategic electronics hub was confirmed by the President of Ukraine, as well as the summary of the General Staff of the Armed Forces of Ukraine. Locals recorded a thick cloud of black smoke and secondary detonation.",
       "source": "President of Ukraine, AFU General Staff, OSINT (Astra, Supernova+)"
     },
-    "id": 291,
+    "id": 290,
     "distance": 702
   },
   {
@@ -9121,7 +9090,7 @@ const strikeData = [
       "details": "An ultra-long-range and synchronous (along with Penza) night attack on enemy fuel system facilities. For the second time, the Defense Forces inflicted pinpoint hits on the infrastructure of one of the largest oil producers and fuel processing plants in the Urals in the Russian Federation (\"Bashneft\"). Temperature anomalies from the fires were identified by the NASA FIRMS service, and the strike was officially added to the list of long-range weapons achievements in the president's speech.",
       "source": "President of Ukraine, NASA FIRMS satellite data, monitoring channels"
     },
-    "id": 292,
+    "id": 291,
     "distance": 1436
   },
   {
@@ -9152,7 +9121,7 @@ const strikeData = [
       "details": "A devastating UAV raid by the Security Service of Ukraine. As a result of 5 recorded direct hits, hangars with aviation equipment of the Russian Aerospace Forces were destroyed/severely damaged. It was reported that valuable Su-30 fighters, estimated at hundreds of millions of dollars, were located there. A large-scale fire and explosions continued over the airfield for several hours, as massively reported by Crimeans.",
       "source": "SBU, OSINT (Crimean Wind), AFU General Staff"
     },
-    "id": 293,
+    "id": 292,
     "distance": 188
   },
   {
@@ -9190,7 +9159,7 @@ const strikeData = [
       "images/kstovo3.jpg",
       "video/kstovo.mp4"
     ],
-    "id": 294
+    "id": 293
   },
   {
     "date": "03.07.2026",
@@ -9222,7 +9191,7 @@ const strikeData = [
       "source": "NASA FIRMS, OSINT (Crimean Wind)"
     },
     "images": [],
-    "id": 295
+    "id": 294
   },
   {
     "date": "04.07.2026",
@@ -9257,7 +9226,7 @@ const strikeData = [
       "images/piter-4iyulya.jpg",
       "video/piter-4iyulya.mp4"
     ],
-    "id": 296
+    "id": 295
   },
   {
     "date": "04.07.2026",
@@ -9289,7 +9258,7 @@ const strikeData = [
       "source": "HUR MOU, Defense Forces of Ukraine"
     },
     "images": [],
-    "id": 297
+    "id": 296
   },
   {
     "date": "05.07.2026",
@@ -9321,7 +9290,7 @@ const strikeData = [
       "source": "General Staff of the Armed Forces of Ukraine, OSINT (Crimean Wind)"
     },
     "images": [],
-    "id": 298
+    "id": 297
   },
   {
     "date": "06.07.2026",
@@ -9352,7 +9321,7 @@ const strikeData = [
       "source": "OSINT",
       "details": "The Yaroslavl Oil Refinery (Slavneft-YANOS) is one of Russia's largest petroleum product manufacturers, playing a key role in supplying fuel to central regions and the Russian military-industrial complex. The plant processes millions of tons of oil annually, producing gasoline, diesel, and aviation fuel. A successful drone attack on the refinery's facilities caused damage to critical processing infrastructure, significantly reducing the plant's production capacity. This event was a major logistical and economic blow, as the plant is directly involved in supplying the Russian military."
     },
-    "id": 299,
+    "id": 298,
     "images": []
   },
   {
@@ -9384,7 +9353,7 @@ const strikeData = [
       "source": "OSINT, local media",
       "details": "The seaport in occupied Kerch is one of the main logistical hubs for the transfer of military equipment, ammunition, and fuel to the Crimean peninsula. The port's infrastructure is actively used by the Russian army to supply its forces in southern Ukraine. A targeted strike hit port facilities and warehouses. Disabling these facilities complicates the occupiers' maritime logistics and weakens their ability to quickly replenish reserves through the Kerch Strait."
     },
-    "id": 300,
+    "id": 299,
     "images": []
   },
   {
@@ -9416,7 +9385,7 @@ const strikeData = [
       "source": "OSINT",
       "details": "The Azovkabel factory in temporarily occupied Berdyansk was turned into a fortified military base and repair zone for army equipment by Russian troops. The vast production areas were used by the occupiers to covertly house personnel, store ammunition, and restore battle-damaged vehicles. A powerful strike on the factory territory led to the detonation of ammunition and the destruction of a significant amount of military equipment. This successful hit deprived the enemy of an important rear repair base in the Zaporizhzhia direction."
     },
-    "id": 301,
+    "id": 300,
     "images": []
   },
   {
@@ -9448,7 +9417,7 @@ const strikeData = [
       "source": "SBU / HUR MO, OSINT",
       "details": "The Ust-Luga port in the Leningrad Oblast is the largest seaport on the Baltic and Russia's most important transport hub for hydrocarbon exports. The port houses large gas and oil terminals that bring billions in revenue to the aggressor state's budget. The strike by attack UAVs led to the shutdown of key terminals and a severe fire at fuel and energy complex facilities. This joint operation by the SBU and HUR MO was not only an economic blow but also demonstrated the vulnerability of Russia's strategic ports deep in the rear."
     },
-    "id": 302,
+    "id": 301,
     "images": []
   },
   {
@@ -9480,7 +9449,7 @@ const strikeData = [
       "source": "OSINT",
       "details": "The Luzhsky artillery range (33rd range) is one of the main combat training centers for the forces of Russia's Western Military District. It is here that artillery and missile units undergo combat coordination before being sent to the front, and new types of weapons are tested. A precise drone strike on the range hit a concentration of enemy personnel and equipment. The destruction of this facility disrupts the training schedules of reserves and inflicts significant damage on the combat readiness of units preparing for deployment to Ukraine."
     },
-    "id": 303,
+    "id": 302,
     "images": []
   },
   {
@@ -9512,7 +9481,7 @@ const strikeData = [
       "source": "Ukrainian Defense Forces, OSINT",
       "details": "The city of Luga in the Leningrad Oblast houses the permanent deployment point of the 26th Missile Brigade (Military Unit 54006) of the Russian Ground Forces. This brigade is armed with Iskander operational-tactical missile systems, which are regularly used for terrorist strikes on peaceful cities and infrastructure in Ukraine. The Defense Forces' attack on the brigade's base was aimed at destroying launchers, missile depots, and maintenance personnel. This operation is of vital strategic importance in reducing the enemy's missile potential and protecting Ukrainian settlements."
     },
-    "id": 304,
+    "id": 303,
     "images": []
   },
   {
@@ -9544,7 +9513,7 @@ const strikeData = [
       "source": "Ukrainian Defense Forces",
       "details": "The Omsk Oil Refinery is a massive enterprise, being the largest oil refinery in Russia by refining volume (over 21 million tons per year). The plant acts as a critical link in the production of gasoline, aviation kerosene, and diesel fuel, supplying both the civilian sector and a huge portion of the Russian military machine. A precise and long-range strike by Ukrainian forces (at a distance of over 2200 km) on the Omsk Refinery caused a large-scale fire at primary processing technological units. Striking such an important and deeply located target in Siberia inflicts colossal damage on the Russian economy and significantly complicates the supply of fuel to the occupying forces."
     },
-    "id": 305,
+    "id": 304,
     "images": [
       "video/070626 omsk.MP4",
       "video/070626 omsk1.mp4",
@@ -9581,7 +9550,7 @@ const strikeData = [
       "details": "The Belgorod linear production department of main gas pipelines is a crucial node in the region's gas transmission system. It is responsible for the distribution and uninterrupted supply of gas to both civilian and industrial consumers, including military-industrial complex enterprises. Striking such a facility disrupts energy logistics, complicating the operation of local industry. Furthermore, fires at gas infrastructure facilities require significant resources to extinguish and cause substantial economic damage to the aggressor state.",
       "source": "Media, OSINT"
     },
-    "id": 306,
+    "id": 305,
     "images": []
   },
   {
@@ -9613,7 +9582,7 @@ const strikeData = [
       "details": "The waters north of Kerch are critically important for Russian military logistics. Supply routes for the occupying forces in Crimea and southern Ukraine pass through this area. Striking naval targets in this zone limits the capabilities of the Russian Black Sea Fleet and complicates the transportation of fuel and ammunition. Such incidents also create additional strain on Russian air defense and coast guard forces, forcing them to divert resources to protect sea lanes.",
       "source": "Media, OSINT"
     },
-    "id": 307,
+    "id": 306,
     "images": []
   },
   {
@@ -9645,7 +9614,7 @@ const strikeData = [
       "details": "\"Perviy Zavod\" is the largest oil refinery in the Kaluga region. The plant specializes in processing commercial oil and gas condensate, producing diesel fuel, fuel oil, and other petroleum products. The enterprise's output is actively used to meet the needs of the Russian army, including fueling military equipment. Regular strikes on such mini-refineries reduce overall refining capacity in the Russian Federation, creating a fuel shortage in the domestic market and disrupting the rhythm of military supplies. The successful attack caused a large-scale fire, halting the technological process for a long time.",
       "source": "SBS, AFU General Staff, GUR"
     },
-    "id": 308,
+    "id": 307,
     "images": [
       "images/miniNPZ-070726.jpg"
     ]
@@ -9679,7 +9648,7 @@ const strikeData = [
       "details": "The Krasnozavodsk Chemical Plant (KhZ) is one of the oldest and most important enterprises of Russia's military-industrial complex. The plant specializes in the production of ammunition, signal and illumination devices, as well as components for rocket armaments. KhZ products are supplied directly to the front for use by the occupying forces. Striking the plant's production workshops disrupts the supply chains for explosives and ammunition. This reduces the firepower of Russian artillery and aviation, directly impacting the combat capability of the Russian army.",
       "source": "Media, OSINT"
     },
-    "id": 309,
+    "id": 308,
     "images": [
       "images/photo1.jpg"
     ]
@@ -9713,7 +9682,7 @@ const strikeData = [
       "details": "The Central Research Institute of Precision Machine Building (TsNIITochMash) in Klimovsk is a key center for the development and testing of small arms, equipment (including the \"Ratnik\" combat gear), and artillery systems. It is here that new types of weapons are designed, which are then used en masse by the Russian army in the war against Ukraine. The institute has a unique testing base and scientific and technical potential. A strike on TsNIITochMash not only causes physical damage to laboratories and workshops but also slows down advanced developments in the military-industrial complex, depriving Russian infantry of modern technological solutions.",
       "source": "Media, OSINT"
     },
-    "id": 310,
+    "id": 309,
     "images": [
       "video/video2_opt.mp4"
     ]
@@ -9747,7 +9716,7 @@ const strikeData = [
       "details": "The Central Research Institute of Special Machine Building (TsNIISM) in Khotkovo is a leading Russian developer of structures made of advanced composite materials for aerospace equipment and armored vehicles. The institute participates in the creation of components for missile systems, including intercontinental ballistic missiles and air defense systems. This enterprise is critically important for the high-tech segment of the Russian military-industrial complex, as composite materials determine the weight, strength, and flight range of modern missiles. A successful drone attack on this facility slows down the production of modern weapon systems and causes irreparable damage to Russia's strategic military programs.",
       "source": "Media, OSINT"
     },
-    "id": 311,
+    "id": 310,
     "images": [
       "video/video3_opt.mp4"
     ]
@@ -9781,7 +9750,7 @@ const strikeData = [
       "details": "The Russian shadow fleet is the main tool for bypassing international sanctions, allowing Moscow to continue exporting oil and petroleum products, thereby financing its aggressive war. The identification and targeting of 8 tankers simultaneously (including \"Venera-3\", \"Sanar-1\", \"Sanar-17\", \"Klimena\", \"Teti\", \"Aleksey Savrasov\", and \"Penelopa\"), each with a deadweight of 7,000 tons, is a colossal blow to this shadow logistics network. The operation in the Sea of Azov not only destroys expensive vessels and cargo but also sends a clear signal to buyers of Russian oil about the high risks involved. The loss of such vessels significantly complicates hydrocarbon exports from the ports of the Azov-Black Sea basin, reducing foreign currency inflows into the Russian military budget.",
       "source": "Ukrainian Navy, Media, OSINT"
     },
-    "id": 312,
+    "id": 311,
     "images": [
       "video/tenevoy_flot2_opt.mp4",
       "video/tenevoy flot1-070726.mp4"
@@ -9816,7 +9785,7 @@ const strikeData = [
       "details": "The \"Krasnodar\" compressor station is a strategically important infrastructure facility of the gas transmission network in southern Russia. The station ensures pressure maintenance in main gas pipelines, including routes used for gas exports (such as the Blue Stream). Taking compressor units out of service leads to a pressure drop in the system, supply disruptions, and massive financial losses. Drone strikes on such facilities demonstrate the vulnerability of Russian oil and gas infrastructure deep in the rear and the ability of the Ukrainian Defense Forces to systematically destroy the aggressor's economic base.",
       "source": "Media, OSINT"
     },
-    "id": 313,
+    "id": 312,
     "images": [
       "video/krasnodar_opt.mp4"
     ]
@@ -9850,7 +9819,7 @@ const strikeData = [
       "details": "The Borisoglebsk military airfield is actively used by the Russian Aerospace Forces to launch bomb strikes on Ukrainian territory. Su-34 fighter-bombers, multirole Su-35s, and Su-30SMs are stationed at the base. As a result of a drone attack, explosions rocked the airbase territory. Striking such targets significantly reduces the combat capabilities of Russian aviation and the intensity of glide bomb attacks.",
       "source": "SSO, OSINT"
     },
-    "id": 314,
+    "id": 313,
     "images": [
       "images/borisoglebsk1.jpg"
     ]
@@ -9884,7 +9853,7 @@ const strikeData = [
       "details": "The Saratov Oil Refinery is among the most important enterprises in Russia's oil and gas sector. The target of the strike was the pentane-hexane fraction isomerization unit. Successfully hitting such high-tech units disables the plant's capacities for a long time, causing significant damage and reducing fuel production volumes for the needs of the Russian army.",
       "source": "GUR, OSINT"
     },
-    "id": 315,
+    "id": 314,
     "images": [
       "images/saratov-1.jpg",
       "images/saratov-2.jpg",
@@ -9922,7 +9891,7 @@ const strikeData = [
       "details": "The Nizhnekamsk oil refining and petrochemical cluster (TAIF-NK and Nizhnekamskneftekhim) is one of the largest specialized enterprises in Russia, located in the Republic of Tatarstan more than 1,000 km from the Ukrainian border. The plant plays a critical role in the production of base oils, gasoline, and raw materials for the Russian military industry. The drone attack targeted the crucial ELOU-AVT-7 primary oil refining unit. Disabling this high-tech and difficult-to-replace component can paralyze a significant part of the enterprise's entire production cycle. This inflicts severe economic damage, reduces the aggressor state's export revenues, and once again clearly demonstrates the constantly growing capabilities of Ukrainian long-range systems to strike the enemy's strategic rear.",
       "source": "GUR, SBU, OSINT"
     },
-    "id": 316,
+    "id": 315,
     "images": [
       "images/nizhnekamsk-1.jpg",
       "images/nizhnekamsk-2.jpg",
@@ -9967,7 +9936,7 @@ const strikeData = [
       "details": "Local authorities reported an attack on two tankers. Strikes on enemy liquid cargo vessels are aimed at destroying the logistical chains of petroleum product delivery. The Russian tanker fleet is actively used both for export circumventing sanctions and for supplying fuel to the southern group of occupying forces.",
       "source": "Russian Media, OSINT"
     },
-    "id": 317,
+    "id": 316,
     "images": [
       "images/tanker-rosnjv.jpg",
       "video/tankerr1_opt.mp4",
@@ -10003,7 +9972,7 @@ const strikeData = [
       "details": "LPDS \"Cherkassy-PP\" is a crucial pipeline transport hub and a large storage facility for petroleum products in the Ufa area. A record strike at a distance of over 1400 km hit the tank farm, causing a large-scale fire. The destruction of such storage bases disrupts the stability of fuel distribution within Russia.",
       "source": "SBU, OSINT"
     },
-    "id": 318,
+    "id": 317,
     "images": [
       "images/ufa1.jpg",
       "images/ufa2.jpg",
@@ -10040,7 +10009,7 @@ const strikeData = [
       "details": "A large-scale operation on July 8-9 to eliminate the Russian shadow fleet in the Sea of Azov. Ukrainian attack drones targeted a concentration of vessels, and the NASA FIRMS service recorded powerful thermal anomalies. As a result, 14 vessels were hit: 12 tankers (including \"Chelsea-6\", \"Aura\", \"Sonar-1\", \"Ilya Repin\"), one dry cargo ship, and a tugboat. Systematic strikes on maritime logistics deprive the occupiers of the ability to safely supply their southern groupings with fuel.",
       "source": "OSINT, NASA FIRMS"
     },
-    "id": 319
+    "id": 318
   },
   {
     "date": "09.07.2026",
@@ -10071,7 +10040,7 @@ const strikeData = [
       "details": "The city of Azov plays an important role in the transshipment of petroleum products from the internal regions of the Russian Federation to the Black Sea. The attack on local facilities is aimed at paralyzing the port infrastructure through which the occupiers provide logistical support to their troops on the southern front.",
       "source": "Russian Media, OSINT"
     },
-    "id": 320,
+    "id": 319,
     "images": [
       "images/azov1.jpg"
     ]
@@ -10105,7 +10074,7 @@ const strikeData = [
       "details": "In the city of Mikhaylovsk, attack drones hit a large local oil depot. The strike led to a massive fire in fuel and lubricant tanks. The destruction of fuel reserves in this region complicates the supply of Russian military equipment at the front and forces the aggressor to stretch its logistical lines.",
       "source": "OSINT"
     },
-    "id": 321,
+    "id": 320,
     "images": [
       "video/miha1.mp4",
       "video/miha2.mp4"
@@ -10140,7 +10109,7 @@ const strikeData = [
       "details": "In Tver, attack drones targeted the strategically important Tvernefteprodukt oil depot. As a result of a series of precise hits, a massive fire broke out on the facility's territory, engulfing several large fuel and lubricant tanks at once. Part of the fuel infrastructure burned to the ground. This oil depot plays a key role in supplying fuel to the central and northwestern regions of the Russian Federation, as well as local military units. The destruction of such large storage facilities inflicts serious damage on the aggressor's fuel logistics, forcing it to rebuild supply chains and spend additional resources on restoration.",
       "source": "Media, OSINT"
     },
-    "id": 322,
+    "id": 321,
     "images": [
       "images/tver1.jpg",
       "images/tver2.jpg",
@@ -10187,7 +10156,7 @@ const strikeData = [
       "details": "The Ilsky Oil Refinery (KNGK-INPZ) is one of the largest refineries in Southern Russia, with a capacity of 6.6 million tonnes of oil per year. The facility holds a strategic position near the Black Sea and Azov ports of Novorossiysk, Tuapse, and Temryuk, through which petroleum product exports are conducted. On the night of July 10, attack drones struck the refinery, with the AVT-6 unit — the largest primary oil distillation unit with a capacity of 3.6 million tonnes per year, accounting for 56% of total refinery output — falling within the fire zone. Pipeline damage and fires near the AT-2 and AT-3 units were also recorded. Ukraine's GUR and AFU General Staff confirmed the successful strike, emphasizing the facility's key role in supplying fuel to Russian forces in the south.",
       "source": "GUR MoD, AFU General Staff, OSINT"
     },
-    "id": 323
+    "id": 322
   },
   {
     "date": "10.07.2026",
@@ -10218,7 +10187,7 @@ const strikeData = [
       "details": "The port terminal of KurganNefteprodukt LLC (formerly JSC Yugtransitservis) is located in the sea port of Taganrog and specializes in the transshipment of petroleum products onto sea vessels. The terminal is a key link in the export chain for petroleum products from Russia's interior regions through the Sea of Azov. On the night of July 10, a prolonged drone attack was recorded in the port area of Taganrog — local residents reported explosions and fires throughout the night. As a result, a large-scale fire broke out on the terminal's territory. The Governor of Rostov Oblast confirmed the attack and the fire in the sea port. Authorities announced the evacuation of residents of neighboring blocks due to the ongoing threat.",
       "source": "OSINT, Russian Media, Governor of Rostov Oblast"
     },
-    "id": 324
+    "id": 323
   },
   {
     "date": "10.07.2026",
@@ -10249,7 +10218,7 @@ const strikeData = [
       "details": "JSC 'Azov Optical-Mechanical Plant' (AOMZ) is a key enterprise of Russia's defense-industrial complex, specializing in the development and production of optoelectronic, radar, and precision systems. The plant produces thermal imaging sights, optical instruments for armored vehicles and aircraft, as well as targeting systems for weapons — products directly used at the front. On the night of July 10, a fire was recorded in the industrial zone of Azov where AOMZ is located. According to OSINT geolocation analysis of video footage from the scene, the fire occurred in the area of the plant. No official confirmation was received from Russian authorities, however OSINT communities (Exilenova+) confirmed identification by geolocation.",
       "source": "OSINT (Exilenova+), Media"
     },
-    "id": 325
+    "id": 324
   },
   {
     "date": "10.07.2026",
@@ -10287,7 +10256,7 @@ const strikeData = [
       "details": "The 'Port' oil depot (also known as Decal Azov) is located directly on the territory of the Azov sea port — one of the key transshipment points for petroleum products on the Sea of Azov. The tank farm provides storage and subsequent loading of fuel onto shadow fleet vessels that export petroleum products in circumvention of sanctions. On the night of July 10, coordinated drone strikes were conducted against all five oil depots in the city of Azov. The fire at the port oil depot was confirmed by geolocated photo and video evidence. The destruction of the port tanks directly paralyzes the export transshipment of petroleum products.",
       "source": "OSINT, Russian Media"
     },
-    "id": 326
+    "id": 325
   },
   {
     "date": "10.07.2026",
@@ -10318,7 +10287,7 @@ const strikeData = [
       "details": "The DonTerminal LLC oil depot is part of Azov's port oil export infrastructure, located 2 km from the port. The enterprise specializes in the storage and transshipment of large volumes of petroleum products, forming part of the integrated logistics chain supplying fuel from Russia's interior regions to international markets and for the needs of the occupying forces. On the night of July 10, the depot was attacked along with four other petroleum storage facilities in Azov. Geolocated photo and video evidence confirmed fires in the area of the facility. The coordinated destruction of all city oil depots dismantles the local fuel logistics hub.",
       "source": "OSINT, Russian Media"
     },
-    "id": 327
+    "id": 326
   },
   {
     "date": "10.07.2026",
@@ -10349,7 +10318,7 @@ const strikeData = [
       "details": "The oil depot at Azov railway station handles the reception, storage, and transshipment of petroleum products from rail transport. It is a key node in the 'land leg' of the fuel supply chain, through which fuel from Russia's oil regions reaches Azov and subsequently the fleet. On the night of July 10, the facility was struck by drones as part of a large-scale operation targeting the city's oil infrastructure. Fires were confirmed by satellite data and photo and video evidence. Striking this hub cuts the railway supply route for petroleum products to Azov's port terminals.",
       "source": "OSINT, Russian Media"
     },
-    "id": 328
+    "id": 327
   },
   {
     "date": "10.07.2026",
@@ -10380,7 +10349,7 @@ const strikeData = [
       "details": "Two petroleum storage facilities are located in the southern industrial zone of Azov, forming part of the city's extensive fuel tank infrastructure. On the night of July 10, both facilities were simultaneously struck as part of a large-scale coordinated operation — all five oil depots in Azov were hit. Fires were confirmed by geolocated photo and video evidence. The simultaneous destruction of all the city's tank storage facilities severely damaged the oil transit capacity of the Port of Azov, which is an important link in the supply chain of fuel for the occupying forces.",
       "source": "OSINT, Russian Media"
     },
-    "id": 329
+    "id": 328
   },
   {
     "date": "10.07.2026",
@@ -10411,7 +10380,7 @@ const strikeData = [
       "details": "The Moscow Oil Refinery in Kapotnya (MNPZ, Gazprom Neft) is the largest refinery in the Moscow region with a processing capacity of approximately 12 million tonnes per year. On the night of July 10, amid a massive drone attack on Moscow (at least 14 UAVs), monitoring channels and Telegram reported videos showing thick smoke in the area of the MNPZ. Russia's EMERCOM officially denied information about a fire on the plant's territory. The refinery had previously been struck in June 2026, when damage to primary oil processing units was confirmed. Information about the July 10 fire remains unconfirmed by official sources.",
       "source": "Monitoring channels, Telegram (unconfirmed by Russian EMERCOM)"
     },
-    "id": 330
+    "id": 329
   },
   {
     "date": "10.07.2026",
@@ -10442,7 +10411,7 @@ const strikeData = [
       "details": "A burning tanker was recorded in the waters near the port of Kerch — a result of the large-scale series of strikes by Ukrainian Unmanned Systems Forces (SBS) against Russia's 'shadow fleet' in the Sea of Azov on July 9-10. The NASA FIRMS satellite service recorded thermal anomalies, and the 'Skhemy' project published images of a burning vessel in the Kerch Strait area. The shadow fleet is actively used by Russia to transport petroleum products in circumvention of sanctions — primarily from the oil depots of Azov and Rostov to Black Sea buyers. After the series of strikes, Russia temporarily halted shipping on the Azov-Don Canal and introduced restrictions on passage through the Kerch Strait.",
       "source": "NASA FIRMS, OSINT (Skhemy), SBS"
     },
-    "id": 331
+    "id": 330
   },
   {
     "date": "01.08.2026",
@@ -10473,7 +10442,7 @@ const strikeData = [
       "details": "On August 1, 2026, long-range strike drones operated by the SBU launched a successful precision attack on the Bashneft oil refining cluster in Ufa. Strikes targeted production facilities across the UNPZ, Novoil, and Ufaneftekhim refineries in the northern industrial district. Multiple kamikaze UAVs breached local air defenses and impacted primary refining equipment. Thick plumes of black smoke and several fires over the site were confirmed by eyewitness photos and ASTRA monitoring reports. Regional Governor Radik Khabirov acknowledged the drone raid but attributed the heavy smoke to falling debris from intercepted UAVs. Air traffic authorities briefly suspended flights at Ufa International Airport for safety reasons. With a total capacity exceeding 23 million metric tons of crude oil per year, this refinery complex supplies essential fuel to Russian military forces. Striking over 1,400 km from the Ukrainian border, the operation marked one of the deepest raids into Russian territory.",
       "source": "SBU, AFU General Staff, OSINT (Astra), Head of Bashkortostan Khabirov, Media"
     },
-    "id": 332
+    "id": 331
   },
   {
     "date": "01.08.2026",
@@ -10504,7 +10473,7 @@ const strikeData = [
       "details": "On August 1, 2026, the Ukrainian Defense Forces and Ukrainian Navy conducted a joint precision drone strike on a military installation in occupied Chornomorske, Crimea. The raid targeted a secured depot complex used by Russian forces to store and service uncrewed surface vessels (USVs). Multiple strike UAVs hit assembly hangars and equipment preparation bays inside the coastal site. Impacting drones ignited a major fire accompanied by secondary explosions of stored munitions and fuel cells. Local residents and Telegram channels reported heavy blasts originating from the Narrow Bay area throughout the night. Russian naval forces utilized the Chornomorske base to launch kamikaze boats and conduct coastal patrols. Located roughly 140 km from the frontline, the strike significantly disrupted Russia's naval drone operations in the western Black Sea.",
       "source": "AFU General Staff, Ukrainian Navy, OSINT (Astra), Crimean media"
     },
-    "id": 333
+    "id": 332
   },
   {
     "date": "01.08.2026",
@@ -10535,7 +10504,7 @@ const strikeData = [
       "details": "On August 1, 2026, specialized SBU units executed a long-range drone strike targetting Russian air defense radar systems in Krasnodar Krai. Ukrainian attack UAVs hit four key radar stations: three low-altitude 'Podlet-K1' units and one 'Kasta-2E2' radar site. Direct impacts destroyed antenna arrays and operational command vehicles across the target positions. These radar systems played a critical role in detecting low-flying aerial targets and providing target acquisition for S-300 and S-400 missile batteries around the Taman Peninsula. The destruction of these radar units created a blind spot in Russian early-warning coverage over the Kerch Strait and southern Krasnodar Krai. Military analysts noted that neutralizing these valuable sensors significantly enhances the effectiveness of future Ukrainian drone and missile operations. Positioned 240 km from the border, the raid inflicted severe damage on regional air defense networks.",
       "source": "SBU, AFU General Staff, OSINT (Astra), Russian media"
     },
-    "id": 334
+    "id": 333
   },
   {
     "date": "02.08.2026",
@@ -10566,7 +10535,7 @@ const strikeData = [
       "details": "On the night of August 2, 2026, Ukrainian Defense Forces and GUR units executed a long-range drone attack targeting the Saratov Oil Refinery. Multiple kamikaze UAVs penetrated local air defenses, striking primary oil processing infrastructure. The raid ignited a large fire inside the industrial complex, causing significant structural damage to the ELOU-AVT-6 crude distillation unit. Saratov Regional Governor Roman Busargin acknowledged the drone raid and confirmed damages at the industrial facility. Owned by Rosneft, the refinery has an annual processing capacity of up to 7 million metric tons of crude oil. The plant manufactures motor gasoline, diesel, and fuel oil, serving as a critical fuel supply hub for Russian forces. Striking roughly 540 km from the border, the raid noticeably reduced the facility's production capabilities.",
       "source": "AFU General Staff, GUR, OSINT (Astra), Governor Busargin, Media"
     },
-    "id": 335
+    "id": 334
   },
   {
     "date": "02.08.2026",
@@ -10597,7 +10566,7 @@ const strikeData = [
       "details": "On the night of August 2, 2026, the Unmanned Systems Forces of Ukraine and GUR launched a joint drone strike on the Engels-2 airbase in Saratov Oblast. Multiple long-range strike UAVs breached air defense layers, triggering secondary explosions and fires across the military airfield. Satellite imagery and local reports confirmed damages to support infrastructure and flight line maintenance areas. Engels-2 serves as the primary base for Russia's Long-Range Aviation, hosting Tu-95MS and Tu-160 strategic bombers used for missile raids against Ukrainian cities. The attack disrupted scheduled bomber sorties and forced military command to order aircraft dispersal to northern airfields. Positioned roughly 560 km from the border, the raid highlighted severe vulnerabilities at Russia's strategic nuclear triad hub.",
       "source": "AFU General Staff, SBS, GUR, OSINT (Astra), Russian media"
     },
-    "id": 336
+    "id": 335
   },
   {
     "date": "02.08.2026",
@@ -10628,7 +10597,7 @@ const strikeData = [
       "details": "On August 2, 2026, Ukrainian strike drones successfully targeted the Lyudinovskaya oil depot in Kaluga Oblast. Several kamikaze UAVs hit the facility's tank farm, setting multiple diesel storage containers ablaze. Kaluga Regional Governor Vladislav Shapsha confirmed the drone strike and subsequent fires inside the fuel depot property. Firefighting crews spent several hours suppressing the flames across the industrial site. Operated by Kaluganefteprodukt, the facility serves as a vital logistics storage hub supplying fuels and lubricants to Russian troops in the Central Military District. Located roughly 260 km from the border, the operation severely disrupted military fuel logistics along the Bryansk and Kursk front sectors.",
       "source": "AFU General Staff, SBS, OSINT (Astra), Governor Shapsha, Media"
     },
-    "id": 337
+    "id": 336
   },
   {
     "date": "02.08.2026",
@@ -10659,7 +10628,7 @@ const strikeData = [
       "details": "On the night of August 2, 2026, Ukrainian Defense Forces carried out a precision drone attack on a concealed military facility near Navlya, Bryansk Oblast. The target was a forward deployment base used by Russian forces for storing, assembling, and launching kamikaze UAVs against Ukrainian targets. Striking drones hit storage hangars and launch positions, causing secondary ammunition explosions and fires. The General Staff of the AFU officially confirmed the destruction of the drone storage site and operator crew quarters. Local residents reported a series of heavy explosions that shattered windows near the industrial zone. Neutralizing this hub, located roughly 160 km from the border, significantly reduced enemy drone launch capabilities against northern Ukrainian border regions.",
       "source": "AFU General Staff, SBS, OSINT (Astra), Bryansk media"
     },
-    "id": 338
+    "id": 337
   },
   {
     "date": "02.08.2026",
@@ -10690,7 +10659,7 @@ const strikeData = [
       "details": "On August 2, 2026, a long-range Ukrainian drone attack hit the Wildberries major logistics distribution center in Novosemeykino, Samara Oblast. Multiple strike UAVs impacted warehouse modules, triggering secondary explosions and a large-scale fire spanning several thousand square meters. Samara Regional Governor Vyacheslav Fedorishev and Wildberries representatives confirmed the drone strike and worker evacuations, reporting no fatalities. EMERCOM firefighting teams spent hours extinguishing the blazes across the facility. The Novosemeykino distribution node played a significant role in sorting 3PL tactical goods, dual-use electronics, and supply gear for military units across the Volga region. Positioned roughly 950 km from the border, the raid severely disrupted regional logistics flows.",
       "source": "AFU General Staff, OSINT (Astra), Wildberries, Governor Fedorishev, Media"
     },
-    "id": 339
+    "id": 338
   },
   {
     "date": "03.08.2026",
@@ -10721,7 +10690,7 @@ const strikeData = [
       "details": "On the night of August 3, 2026, Ukrainian Defense Forces struck a building at Belgorod State Technological University named after V. G. Shukhov. According to Ukrainian and OSINT sources, the facility was used to design automated UAV control systems based on the Milandr processor, and served as a training ground for FPV drone operators — complete with nets and flight obstacles. The drone strike ignited a large fire that destroyed a substantial portion of the building. Acting Governor Alexander Shuvaev only confirmed an attack by three UAVs and damage to a \"social facility,\" without elaborating on its military use. The university itself had advertised UAV engineering programs in summer 2026, including courses for schoolchildren. Located just 40 km from the front line, the strike knocked out a key personnel training hub for Russia's drone program.",
       "source": "OSINT (Astra, Exilenova+), Media, Acting Governor Shuvaev"
     },
-    "id": 340
+    "id": 339
   },
   {
     "date": "03.08.2026",
@@ -10752,7 +10721,7 @@ const strikeData = [
       "details": "On the morning of August 3, 2026, Ukrainian strike UAVs hit the major Wildberries logistics hub in Khryastovo village, Sobinsky District, Vladimir Oblast. The drone impacts ignited a large-scale fire visible from a considerable distance, documented by eyewitnesses and OSINT analysts. Vladimir Oblast Governor Alexander Avdeev confirmed the attack and reported one employee with minor injuries. The Khryastovo warehouse complex, spanning approximately 171,900 square meters, is among Wildberries' largest facilities and plays a strategic logistics role linking the Moscow region with Russia's north and northwest. Ukrainian sources indicate that Wildberries warehouses were used to supply dual-use goods and military equipment to Russian forces. Located about 840 km from the front line, the strike was part of a systematic campaign targeting Russian logistics infrastructure.",
       "source": "OSINT (Astra), Governor Avdeev, Wildberries, Media"
     },
-    "id": 341
+    "id": 340
   },
   {
     "date": "03.08.2026",
@@ -10783,6 +10752,6 @@ const strikeData = [
       "details": "On the night of August 3, 2026, Ukrainian Defense Forces executed a drone strike on a fuel and lubricants depot in Belgorod Oblast. The strike on the fuel storage facility was officially confirmed in the General Staff of the Armed Forces of Ukraine summary. The depot supplied fuel to Russian military units stationed in Belgorod Oblast and operating along the Kharkiv axis. The attack caused fires and secondary detonations of stored petroleum products. As the facility is located approximately 40–60 km from the front line, its destruction directly disrupted operational fuel supply chains for Russian forward deployed units. The strike was part of a coordinated overnight wave of attacks against Russian military-logistics infrastructure conducted on the night of August 2–3.",
       "source": "AFU General Staff, OSINT (Astra)"
     },
-    "id": 342
+    "id": 341
   }
 ];
