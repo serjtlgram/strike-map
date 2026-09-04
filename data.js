@@ -1,5 +1,36 @@
 const strikeData = [
   {
+    "date": "03.09.2026",
+    "lat": 56.8291,
+    "lng": 35.7564,
+    "distance": 660,
+    "ru": {
+      "region": "Тверская область, Тверь (мкр-н Мигалово)",
+      "target": "Военный аэродром «Мигалово» (12-я военно-транспортная авиационная дивизия ВКС РФ)",
+      "category": "Военный аэродром",
+      "weapon": "Дрон",
+      "details": "В ночь на 3 сентября 2026 года дальнобойные украинские беспилотники атаковали военный аэродром «Мигалово» на окраине Твери. Этот стратегический объект служит главной базой 12-й военно-транспортной авиадивизии и 196-го военно-транспортного авиаполка ВКС РФ, где дислоцируются тяжелые транспортные самолеты Ил-76МД, Ан-22 и Ан-12. Борты из Мигалово регулярно задействуют для переброски на фронт десантных подразделений, техники, тяжелого вооружения и боекомплекта. Местные жители зафиксировали звуки пролета групп низколетящих дронов и непрекращающуюся плотную стрельбу зенитных расчетов прямо над взлетно-посадочной полосой. В микрорайоне прогремело несколько мощных взрывов от прилетов и работы систем противовоздушной обороны. Из-за атаки в воздушном пространстве Тверской и Московской областей вводили план «Ковер», что привело к задержке десятков пассажирских рейсов в столичных аэропортах. Факт налета подтвердили очевидцы и данные мониторинга.",
+      "source": "OSINT (Astra, Exilenova+), очевидцы, росСМИ"
+    },
+    "uk": {
+      "region": "Тверська область, Твер (мкр-н Мігалово)",
+      "target": "Військовий аеродром «Мігалово» (12-та військово-транспортна авіаційна дивізія ВКС РФ)",
+      "category": "Військовий аеродром",
+      "weapon": "Дрон",
+      "details": "У ніч на 3 вересня 2026 року далекобійні українські безпілотники атакували військовий аеродром «Мігалово» на околиці Твері. Цей стратегічний об'єкт слугує основною базою 12-ї військово-транспортної авіадивізії та 196-го військово-транспортного авіаполку ВКС РФ, де дислокуються важкі літаки Іл-76МД, Ан-22 та Ан-12. Борти з Мігалово постійно задіюють для оперативного перекидання на фронт штурмових підрозділів, бронетехніки, озброєння та боєприпасів. Місцеві жителі зафіксували гул дронів і безперервну щільну стрілянину зенітних розрахунків над злітно-посадковою смугою летовища. У мікрорайоні пролунала серія потужних вибухів від влучань та роботи ворожої протиповітряної оборони. Через наліт у повітряному просторі Тверської та Московської областей оголошували план «Килим», що призвело до затримки десятків рейсів у столичних аеропортах. Факт удару підтвердили очевидці та моніторингові канали.",
+      "source": "OSINT (Astra, Exilenova+), очевидці, росЗМІ"
+    },
+    "en": {
+      "region": "Tver Oblast, Tver (Migalovo District)",
+      "target": "Migalovo Military Airbase (12th Military Transport Aviation Division)",
+      "category": "Military Airbase",
+      "weapon": "Drone",
+      "details": "Overnight into September 3, 2026, Ukrainian long-range strike drones attacked the Migalovo military airbase on the outskirts of Tver. The strategic airfield is home to the 12th Military Transport Aviation Division and the 196th Military Transport Aviation Regiment of the Russian Aerospace Forces, hosting heavy Il-76MD, An-22, and An-12 transport aircraft. Aircraft stationed at Migalovo play an essential role in airlifting troops, armored vehicles, heavy weaponry, and ammunition to forward deployment areas. Local residents documented the approach of drone waves accompanied by intense anti-aircraft and small-arms fire directly over the airfield runways. Multiple loud explosions echoed across the district from drone impacts and active air defenses. The attack triggered emergency airspace closures under the Kovyor plan across Tver and Moscow oblasts, grounding dozens of civilian flights. The strike was cross-verified by local eyewitness video and satellite monitoring.",
+      "source": "OSINT (Astra, Exilenova+), Local Media"
+    },
+    "id": 435
+  },
+  {
     "date": "01.09.2026",
     "lat": 59.6917,
     "lng": 28.4083,
