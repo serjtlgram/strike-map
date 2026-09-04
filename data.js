@@ -1,284 +1,5 @@
 const strikeData = [
   {
-    "date": "02.09.2026",
-    "lat": 52.8913,
-    "lng": 33.4707,
-    "distance": 215,
-    "ru": {
-      "region": "Брянская область, Почепский район, пос. Речица",
-      "target": "Район сосредоточения вооружения и военной техники подразделений ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 2 сентября 2026 года подразделения Сил обороны Украины нанесли прицельный огневой удар по району сосредоточения вооружения и военной техники противника в поселке Речица Почепского района Брянской области. Населенный пункт расположен возле крупного транспортного узла Почепа и длительное время использовался российским командованием как передовая база распределения тяжелой бронетехники и артиллерии. Украинские ударные беспилотники точно поразили площадки открытого хранения и замаскированные ангары, где происходило обслуживание техники перед отправкой в зону боевых действий. На месте прилетов зафиксированы мощные взрывы и вторичная детонация хранившихся боекомплектов, за которыми последовал сильный пожар. В результате результативной атаки оккупанты потеряли несколько единиц бронетехники и грузового транспорта. Поражение вражеского логистического узла официально подтвердил Генеральный штаб ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Брянська область, Почепський район, сел. Речиця",
-      "target": "Район зосередження озброєння та військової техніки підрозділів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч на 2 вересня 2026 року підрозділи Сил оборони України завдали прицільного вогневого удару по району зосередження озброєння та військової техніки противника в селищі Речиця Почепського району Брянської області. Населений пункт розташований поблизу великого транспортного вузла Почепа й тривалий час використовувався командуванням РФ як передова база розподілу важкої бронетехніки та артилерії. Українські ударні безпілотники точно уразили майданчики відкритого зберігання та замасковані ангари, де відбувалося обслуговування техніки перед відправленням у зону бойових дій. На місці влучань зафіксовано потужні вибухи та вторинну детонацію збережених боєкомплектів, за якими спалахнула сильна пожежа. Унаслідок результативної атаки окупанти втратили кілька одиниць бронетехніки та вантажного транспорту. Ураження ворожого логістичного вузла офіційно підтвердив Генеральний штаб ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Pochepsky District, Rechitsa",
-      "target": "Concentration Area of Russian Military Equipment and Heavy Weapons",
-      "category": "Defense Industry",
-      "weapon": "Drone",
-      "details": "Overnight into September 2, 2026, Ukrainian defense forces delivered a precision strike against a concentration area of Russian military hardware in Rechitsa, Pochepsky District of Bryansk Oblast. Situated near the major logistical junction of Pochep, the site served as an advance transit staging facility for heavy armor and artillery prior to frontline deployment. Long-range Ukrainian attack drones successfully penetrated regional air defenses to strike open-air vehicle storage parks and maintenance hangars. The direct impacts triggered secondary detonations of stored munitions and ignited a fierce fire across the compound. The Russian military sustained documented losses of several armored vehicles and specialized transport trucks. The successful destruction of this equipment hub was officially confirmed by the General Staff of the Armed Forces of Ukraine.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 439
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 44.6015,
-    "lng": 33.4842,
-    "distance": 236,
-    "ru": {
-      "region": "АР Крым, Севастополь (Стрелецкая бухта)",
-      "target": "Скоростной транспортно-десантный катер БК-16 (проект 02510) Черноморского флота РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 сентября 2026 года Силы обороны Украины провели успешную операцию по поражению скоростного транспортно-десантного катера БК-16 проекта 02510 Черноморского флота в Севастополе. Катера этого проекта предназначены для переброски спецподразделений морской пехоты, высадки десанта на необорудованное побережье, патрулирования прибрежной зоны и огневой поддержки. Точный удар украинского средства поражения пришелся непосредственно по борту корабля во время его стоянки в бухте. Катер получил критические пробоины корпуса, повреждения ходовой рубки и бортовых систем управления, что привело к частичному затоплению отсеков. Российские аварийные службы попытались оперативно локализовать пробоины и спасти судно от полного ухода под воду. Успешный удар снизил мобильность российских сил специальных операций в акватории Крыма и был подтвержден в сводке Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Севастополь (Стрілецька бухта)",
-      "target": "Швидкісний транспортно-десантний катер БК-16 (проєкт 02510) Чорноморського флоту РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 вересня 2026 року Сили оборони України провели успішну операцію з ураження швидкісного транспортно-десантного катера БК-16 проєкту 02510 Чорноморського флоту в Севастополі. Катери цього проєкту призначені для перекидання спецпідрозділів морської піхоти, висадки десанту на необладнане узбережжя, патрулювання прибережної зони та вогневої підтримки. Точний удар українського засобу ураження припав безпосередньо по борту судна під час його стоянки в бухті. Катер зазнав критичних пробоїн корпусу, пошкоджень ходової рубки та бортових систем управління, що спричинило часткове затоплення відсіків. Російські аварійні служби намагалися оперативно локалізувати пробоїни та врятувати судно від повного затоплення. Успішний удар суттєво обмежив мобільність російських спецпризначенців у прибережній зоні Криму й був підтверджений Генштабом ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Sevastopol (Streletskaya Bay)",
-      "target": "High-Speed Amphibious Landing Craft BK-16 (Project 02510) of Black Sea Fleet",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 2, 2026, the Ukrainian Defense Forces conducted a successful precision strike against a Russian Project 02510 BK-16 high-speed assault and landing boat moored in Sevastopol. These advanced tactical vessels are built for rapid amphibious troop transport, special forces insertions along contested shores, and coastal patrol missions. A direct hit by Ukrainian strike assets tore through the hull and heavily damaged the pilot house and onboard navigation suites. The catastrophic hull breaches resulted in significant water ingress and severe flooding of internal compartments. Russian harbor emergency crews scrambled salvage tugs in an effort to stabilize the vessel and prevent total capsizing. Knocking out this high-speed craft diminishes Russian special forces operational mobility around occupied Crimea, as verified by the General Staff of AFU.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 440
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 44.536,
-    "lng": 33.518,
-    "distance": 244,
-    "ru": {
-      "region": "АР Крым, район Севастополя",
-      "target": "Мобильная станция радиоэлектронной борьбы (РЭБ) 1Л269 «Красуха-4» ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 сентября 2026 года в ходе точечного удара в районе оккупированного Севастополя украинские военные поразили новейшую российскую мобильную станцию радиоэлектронной борьбы 1Л269 «Красуха-4». Данный комплекс является одним из самых ценных элементов российской системы РЭБ и предназначен для подавления радаров ударной авиации, бортовых локаторов БПЛА и спутников радиолокационной разведки на дистанциях до трехсот километров. Развернутая на господствующей высоте машина прикрывала военные базы Черноморского флота и позиции зенитных комплексов. Прямое попадание боеприпаса привело к полному разрушению антенно-фидерного модуля и выгоранию сложной аппаратной части станции. Ликвидация дорогостоящего комплекса создала брешь в куполе радиоэлектронного подавления над юго-западной частью Крыма. Успешное поражение подтверждено Генеральным штабом ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, район Севастополя",
-      "target": "Мобільна станція радіоелектронної боротьби (РЕБ) 1Л269 «Красуха-4» ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 вересня 2026 року під час точкового удару в районі окупованого Севастополя українські військові уразили новітню російську мобільну станцію радіоелектронної боротьби 1Л269 «Красуха-4». Цей комплекс належить до найцінніших елементів російської системи РЕБ і призначений для придушення радарів ударної авіації, бортових локаторів БпЛА та супутників радіолокаційної розвідки на відстанях до трьохсот кілометрів. Розгорнута на панівній висоті машина прикривала військові бази Чорноморського флоту й позиції зенітних комплексів. Пряме влучання боєприпаса призвело до повного руйнування антенно-фідерного модуля та вигорання складної апаратної частини станції. Знищення високовартісного комплексу створило відчутний пролом у системі радіоелектронного прикриття над південно-західною частиною Криму. Успішне ураження підтвердив Генеральний штаб ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Sevastopol area",
-      "target": "Russian Mobile Electronic Warfare Complex 1L269 Krasukha-4",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 2, 2026, Ukrainian forces executed a precision strike targeting an advanced Russian 1L269 Krasukha-4 mobile electronic warfare station deployed near occupied Sevastopol. The high-value EW system is specifically engineered to neutralize airborne radar systems, jam satellite reconnaissance links, and blind long-range strike drones across an operational radius of up to three hundred kilometers. Operating from an elevated tactical staging ground, the unit shielded Black Sea Fleet installations and air defense sites. Direct precision weapon impact detonated on the antenna assembly, totally gutting the sophisticated signal-processing receiver cabin. Eliminating this multi-million dollar asset punched a substantial hole into Russian electromagnetic defenses covering southwestern Crimea. The successful neutralization was officially confirmed by the General Staff of AFU.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 441
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 45.289,
-    "lng": 31.987,
-    "distance": 157,
-    "ru": {
-      "region": "АР Крым, Черноморский район, с. Марьино (мыс Тарханкут)",
-      "target": "Пункт управления и стартовая позиция операторов ударных БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 сентября 2026 года украинские защитники нанесли результативный комбинированный удар по российскому пункту управления беспилотниками в районе села Марьино на Тарханкутском полуострове в Крыму. Эта позиция на западной оконечности полуострова активно применялась российскими войсками для координации разведывательных и ударных дронов над акваторией Черного моря и южными регионами Украины. В результате точного попадания уничтожен полевой командный пункт вместе со средствами защищенной спутниковой связи, антенными ретрансляторами и терминалами управления. Также на площадке сгорели подготовленные к вылету разведывательные дроны и пусковые катапульты. Вражеский расчет операторов понес потери в личном составе, управление беспилотными операциями на этом направлении было сорвано. Факт разгрома пункта управления зафиксирован официальным сообщением Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Чорноморський район, с. Мар'їне (мис Тарханкут)",
-      "target": "Пункт управління та стартова позиція операторів ударних БпЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 вересня 2026 року українські захисники завдали результативного комбінованого удару по російському пункту управління безпілотниками в районі села Мар'їне на Тарханкутському півострові в Криму. Ця позиція на західному узбережжі півострова активно застосовувалася російськими військами для координації розвідувальних і ударних дронів над акваторією Чорного моря та південними областями України. Унаслідок точного влучання знищено польовий командний пункт разом із засобами захищеного супутникового зв'язку, антенними ретрансляторами й терміналами керування. Також на майданчику згоріли підготовлені до вильоту розвідувальні дрони та пускові установки. Ворожий розрахунок операторів зазнав втрат в особовому складі, управління безпілотними місіями на цьому напрямку було зірвано. Розгром пункту управління зафіксовано офіційним зведенням Генштабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske District, Maryino (Cape Tarkhankut)",
-      "target": "Russian UAV Command Post and Drone Launch Site",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 2, 2026, Ukrainian forces launched a precision strike destroying a Russian drone operations command post near the village of Maryino on Cape Tarkhankut in western Crimea. This coastal facility played a vital role in directing long-range reconnaissance and strike UAV missions across the Black Sea basin and coastal sectors of southern Ukraine. The strike scored direct hits on the mobile field operations bunker, destroying hardened satellite data uplinks, antenna arrays, and specialized pilot control terminals. Multiple ready-to-launch reconnaissance drones and catapult systems parked nearby were completely consumed by fire. Russian drone crew personnel sustained confirmed casualties, paralyzing tactical aerial surveillance operations across the western sector. The AFU General Staff officially documented the destruction of this vital drone command post.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 442
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 47.9275,
-    "lng": 38.1965,
-    "distance": 101,
-    "ru": {
-      "region": "Донецкая область, г. Иловайск",
-      "target": "Крупный склад боеприпасов и железнодорожный узел снабжения ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 сентября 2026 года Силы обороны Украины нанесли мощный дальнобойный удар по крупному складу боеприпасов оккупантов в районе города Иловайск в Донецкой области. Иловайск является стратегически важным железнодорожным узлом, через который непрерывно идут эшелоны с военными грузами и боеприпасами из Ростовской области на донецкий и запорожский фронты. Украинские средства поражения накрыли складской ангар в непосредственной близости от сортировочных путей. После попадания началась вторичная детонация сотен артиллерийских снарядов и реактивных выстрелов, серия взрывов продолжалась на протяжении нескольких часов. Осколками было повреждено железнодорожное полотно, погрузочная рампа и контактная электросеть. Разрушение арсенала сорвало запланированные поставки боекомплекта на передовую, что подтвердил Генеральный штаб ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, м. Іловайськ",
-      "target": "Великий склад боєприпасів та залізничний вузол постачання ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 вересня 2026 року Сили оборони України завдали потужного далекобійного удару по великому складу боєприпасів окупантів у районі міста Іловайськ на Донеччині. Іловайськ виступає стратегічно важливим залізничним вузлом, крізь який безперервно прямують ешелони з військовими вантажами та боєприпасами з Ростовської області на донецький та запорізький напрямки фронту. Українські засоби ураження накрили складський ангар безпосередньо біля сортувальних колій. Після прильоту розпочалася потужна вторинна детонація сотень артилерійських снарядів і реактивних зарядів, яка тривала кілька годин поспіль. Уламками було пошкоджено залізничне полотно, навантажувальні платформи та контактну електромережу станції. Знищення великого арсеналу зірвало постачання боєприпасів ворога, про що заявив Генеральний штаб ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Ilovaisk",
-      "target": "Major Ammunition Depot and Rail Logistics Hub of Russian Forces",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 2, 2026, Ukrainian forces carried out a high-impact long-range strike against a major Russian ammunition depot located in the railway city of Ilovaisk, Donetsk Oblast. Ilovaisk represents a critical rail marshalling hub routing trains laden with heavy weaponry and artillery shells directly from Russia's Rostov region toward southern and eastern combat sectors. The strike penetrated a storage hangar situated right beside the rail classification yard, triggering massive secondary explosions. Intense chain detonations of hundreds of artillery rounds and rocket munitions rocked the district for hours, shattering infrastructure. Shrapnel tore through parallel track lines, loading ramps, and overhead electrical traction grids, bringing logistics to a dead halt. The destruction of this major ammunition stockpile was officially confirmed by the AFU General Staff.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 443
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 48.2125,
-    "lng": 37.4935,
-    "distance": 59,
-    "ru": {
-      "region": "Донецкая область, Покровский район, пос. Желанное",
-      "target": "Склад хранения, снаряжения и подготовки ударных БПЛА подразделений ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 сентября 2026 года украинские военные нанесли точечный удар по тыловому складу ударных беспилотников подразделений ВС РФ возле поселка Желанное в Покровском районе Донецкой области. Данный объект использовался российскими войсками как передовой центр комплектования и подготовки дронов-камикадзе для поддержки наступательных действий. В здании хранились готовые FPV-дроны, тепловизионные модули, блоки управления и боевые части различного типа. В результате прилета боеприпаса произошел объемный взрыв с детонацией взрывчатых веществ и сильным пожаром, уничтожившим запасы оборудования. Потеря этих комплектующих заметно снизила плотность применения вражеских дронов на прилегающем участке фронта. Успешное огневое поражение вражеского объекта подтверждено официальным сообщением Генерального штаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, Покровський район, сел. Желанне",
-      "target": "Склад зберігання, спорядження та підготовки ударних БпЛА підрозділів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 вересня 2026 року українські військові завдали точкового удару по тиловому складу ударних безпілотників підрозділів ЗС РФ поблизу селища Желанне в Покровському районі Донецької області. Цей об'єкт використовувався російськими військами як передовий центр комплектування та спорядження дронів-камікадзе для підтримки штурмових дій. У будівлі зберігалися готові FPV-дрони, тепловізійні модулі, блоки керування та бойові частини різного типу. Унаслідок влучання боєприпаса стався об'ємний вибух із детонацією вибухових речовин і сильною пожежею, яка знищила запаси технологічного обладнання. Втрата цих комплектуючих помітно знизила щільність застосування ворожих дронів на цій ділянці фронту. Успішне вогневе ураження ворожого об'єкта підтверджено офіційним зведенням Генерального штабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Pokrovsk District, Zhelanne",
-      "target": "UAV Storage, Assembly, and Preparation Depot of Russian Forces",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 2, 2026, Ukrainian forces struck a rear tactical depot utilized for storing and assembling strike drones near Zhelanne in the Pokrovsk district of Donetsk Oblast. Russian occupation troops relied heavily on this facility as a forward depot for configuring and arming FPV kamikaze drones supporting infantry offensives. The warehouse sheltered hundreds of assembled FPV airframes, thermal imaging camera suites, frequency transmitters, and pre-packaged explosive charges. A precision munition strike triggered a powerful volumetric explosion that set off stored warheads, leveling the main facility in an all-consuming fire. Destroying these drone reserves immediately degraded the intensity of enemy tactical drone sorties across the adjacent sector. The operation was officially verified by the General Staff of AFU.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 444
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 46.8285,
-    "lng": 36.9855,
-    "distance": 179,
-    "ru": {
-      "region": "Запорожская область, Бердянский район, с. Новопетровка",
-      "target": "Военные объекты и база тылового обеспечения ВС РФ на полигоне «Восточный»",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 сентября 2026 года Силы обороны Украины нанесли серию ударов по российским военным объектам на территории военного полигона «Восточный» в районе села Новопетровка Бердянского района Запорожской области. Расположенный на побережье Азовского моря полигон служил важным центром боевой подготовки штурмовых групп и накопительной базой материально-технического обеспечения группировки оккупационных войск. Высокоточные удары поразили полевые склады хранения материальных ресурсов, стоянки военной техники и пункт временной дислокации личного состава. На территории полигона возникли масштабные очаги возгорания, сопровождавшиеся детонацией боеприпасов и задымлением прибрежной полосы. Атака нанесла существенный урон логистике противника в Приазовье, что официально зафиксировано в сводке Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Запорізька область, Бердянський район, с. Новопетрівка",
-      "target": "Військові об'єкти та база тилового забезпечення ЗС РФ на полігоні «Восточный»",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "2 вересня 2026 року Сили оборони України завдали серії ударів по російських військових об'єктах на території військового полігону «Восточный» у районі села Новопетрівка Бердянського району Запорізької області. Розташований на узбережжі Азовського моря полігон слугував важливим центром бойової підготовки штурмових груп і накопичувальною базою матеріально-технічного забезпечення угруповання окупаційних військ. Високоточні удари уразили польові склади зберігання матеріальних ресурсів, майданчики зберігання військової техніки та пункт тимчасової дислокації особового складу. На території полігону виникли масштабні осередки займання, що супроводжувалися вторинною детонацією боєприпасів. Атака завдала істотної шкоди тиловій логістиці ворога в Приазов'ї, про що заявив Генштаб ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast, Berdyansk District, Novopetrivka",
-      "target": "Military Infrastructure and Supply Base at Vostochny Training Ground",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 2, 2026, the Armed Forces of Ukraine launched a coordinated strike on Russian military infrastructure at the Vostochny training grounds near Novopetrivka in the Berdyansk district of Zaporizhzhia Oblast. Situated along the Sea of Azov coast, the military proving ground operated as an essential combat training camp and regional staging reservoir for motorized formations. Precision strikes slammed directly into field supply storehouses, heavy equipment staging yards, and temporary barracks housing personnel. Raging fires swiftly engulfed multiple facilities across the proving ground, causing secondary munitions detonations that sent smoke rising over the shoreline. The successful raid dealt a severe blow to Russian logistic readiness across the Azov littoral sector, as verified in official briefings by the General Staff of AFU.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 445
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 47.7485,
-    "lng": 37.3825,
-    "distance": 111,
-    "ru": {
-      "region": "Донецкая область, Волновахский район, пос. Владимировка",
-      "target": "Склад боеприпасов передового артиллерийского снабжения подразделений ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "В ночь на 2 сентября 2026 года украинские военные нанесли точный огневой удар по крупному складу боеприпасов российских оккупантов в поселке Владимировка Волновахского района Донецкой области. Складской комплекс был обустроен на базе защищенных ангаров и использовался для постоянного снабжения артиллерийских расчетов и танковых подразделений на Южно-Донецком направлении. Прилет тяжелого средства поражения вызвал мгновенную детонацию артиллерийских выстрелов и пороховых зарядов, ударная волна разрушила несущие конструкции зданий склада. Последовавший сильнейший пожар уничтожил сотни тонн боеприпасов и специальную грузовую технику для их подвоза. Уничтожение этого арсенала сорвало запланированную артиллерийскую подготовку российских войск на данном участке фронта, что подтвердил Генштаб ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, Волноваський район, сел. Володимирівка",
-      "target": "Склад боєприпасів передового артилерійського постачання підрозділів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "У ніч на 2 вересня 2026 року українські військові завдали точного вогневого удару по великому складу боєприпасів російських окупантів у селищі Володимирівка Волноваського району Донецької області. Складський комплекс було облаштовано на базі захищених ангарів і використовувався для постійного забезпечення артилерійських розрахунків і танкових підрозділів на Південно-Донецькому напрямку. Влучання важкого засобу ураження спричинило миттєву детонацію артилерійських пострілів і порохових зарядів, ударна хвиля зруйнувала опорні конструкції складських приміщень. Сильна подальша пожежа знищила сотні тонн боєприпасів та спеціальну вантажну техніку для їх підвезення. Знищення цього арсеналу зірвало заплановану артилерійську підготовку військ РФ на вказаній ділянці, що підтвердив Генштаб ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Volnovakha District, Volodymyrivka",
-      "target": "Forward Artillery Ammunition Depot of Russian Forces",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "Overnight into September 2, 2026, Ukrainian forces struck a high-priority Russian ammunition depot located in Volodymyrivka, Volnovakha District of Donetsk Oblast. Established inside reinforced hangars, the forward depot maintained artillery shells, propellant charges, and tank rounds destined for combat formations across the southern Donetsk front. Heavy munition impact ignited an instantaneous detonation of high-explosive ordnance, ripping apart structural walls and collapsing storage bays. A fast-spreading inferno consumed hundreds of tons of stored artillery munitions along with specialized cargo replenishment trucks parked on site. Obliterating this key ammo supply point disrupted scheduled Russian artillery barrages across the tactical axis, as officially reported by the AFU General Staff.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 446
-  },
-  {
-    "date": "02.09.2026",
-    "lat": 48.2415,
-    "lng": 37.6185,
-    "distance": 55,
-    "ru": {
-      "region": "Донецкая область, Покровский район, пос. Очеретино",
-      "target": "Склад материально-технических средств и снабжения мотострелковых подразделений ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "В ночь на 2 сентября 2026 года Силы обороны Украины поразили важный склад материально-технических средств оккупационной группировки в поселке Очеретино Покровского района Донецкой области. Объект был развернут на узловой железнодорожной станции и выполнял роль центрального перевалочного пункта для снабжения наступающих мотострелковых подразделений армии РФ. В складских помещениях хранились запчасти для бронетехники, полевое ремонтное имущество, комплекты связи, маскировочные сети и обмундирование. В результате прилета нескольких ударных дронов на территории базы возник интенсивный пожар, уничтоживший основные запасы материального имущества. Ликвидация склада существенно осложнила восстановление поврежденной боевой техники противника. Успешный удар был официально зафиксирован в сводке Генерального штаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, Покровський район, сел. Очеретине",
-      "target": "Склад матеріально-технічних засобів і постачання мотострілецьких підрозділів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "У ніч на 2 вересня 2026 року Сили оборони України уразили важливий склад матеріально-технічних засобів окупаційного угруповання в селищі Очеретине Покровського району Донецької області. Об'єкт було розгорнуто на вузловій залізничній станції, він виконував роль центрального перевалочного пункту для постачання наступальних мотострілецьких підрозділів армії РФ. У складських приміщеннях зберігалися запасні частини для бронетехніки, польове ремонтне майно, засоби зв'язку, маскувальні сітки та обмундирування. Унаслідок прильоту ударних дронів на території бази виникла інтенсивна пожежа, яка знищила основні запаси матеріального майна. Ліквідація складу суттєво ускладнила ремонт пошкодженої бойової техніки противника. Успішний удар було офіційно зафіксовано у зведенні Генерального штабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Pokrovsk District, Ocheretyne",
-      "target": "Logistics and Materiel Supply Depot of Russian Motorized Rifle Units",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "Overnight into September 2, 2026, Ukrainian defense forces struck a major logistics and materiel warehouse belonging to Russian forces in Ocheretyne, Pokrovsk District of Donetsk Oblast. Established around a key railway hub, the site acted as a central intermediate supply station supporting frontline Russian motorized rifle units. The facility housed armored vehicle replacement components, field repair toolkits, field radios, camouflage netting, and military gear. Direct impacts by Ukrainian strike drones sparked an intense blaze that consumed warehouse bays and gutted critical spare parts inventories. The destruction of this materiel base substantially impaired the repair and maintenance cycle of damaged Russian combat vehicles. The successful action was officially confirmed in the operational update by the AFU General Staff.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 447
-  },
-  {
     "date": "01.09.2026",
     "lat": 59.6917,
     "lng": 28.4083,
@@ -558,347 +279,6 @@ const strikeData = [
     "id": 434
   },
   {
-    "date": "01.09.2026",
-    "lat": 44.975,
-    "lng": 34.062,
-    "distance": 216,
-    "ru": {
-      "region": "АР Крым, Симферопольский район, с. Мирное",
-      "target": "Защищенный узел военной связи группировки ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 сентября 2026 года Силы обороны Украины успешно поразили защищенный узел военной связи оккупационных войск в районе села Мирное Симферопольского района Крыма. Данный объект обеспечивал закрытую радиорелейную, проводную и спутниковую связь между штабом группировки войск и подчиненными подразделениями ПВО и авиации на полуострове. Прямое попадание боеприпасов разрушило аппаратный модуль управления, антенные вышки и серверные стойки криптографической защиты. Вывод узла из строя привел к частичной потере управления и нарушению координации противовоздушной обороны в центральной части Крыма. Успешное выполнение боевой задачи официально зафиксировано в сводке Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Сімферопольський район, с. Мирне",
-      "target": "Захищений вузол військового зв'язку угруповання ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 вересня 2026 року Сили оборони України успішно уразили захищений вузол військового зв'язку окупаційних військ у районі села Мирне Сімферопольського району Криму. Цей об'єкт забезпечував закритий радіорелейний, дротовий та супутниковий зв'язок між штабом угруповання військ і підпорядкованими підрозділами ППО та авіації на півострові. Пряме влучання боєприпасів зруйнувало апаратний модуль управління, антенні вежі та серверні стійки криптографічного захисту. Виведення вузла з ладу призвело до часткової втрати управління й порушення координації протиповітряної оборони в центральній частині Криму. Успішне виконання бойового завдання офіційно зафіксовано у зведенні Генштабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Simferopol District, Myrne",
-      "target": "Russian Armed Forces Hardened Military Communications Node",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 1, 2026, Ukrainian forces delivered a precision strike disabling a fortified Russian military communications node near the village of Myrne in Crimea's Simferopol district. The facility served as a central hub routing encrypted radio-relay, landline, and satellite communications between Russian regional command headquarters and subordinated anti-aircraft units. Precision impacts destroyed the main equipment shelter, transmitter antenna towers, and cryptographic server racks. The loss of this node degraded command-and-control integrity and disrupted coordinated air defense operations across central Crimea. The operation was officially confirmed in the AFU General Staff operational bulletin.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 435
-  },
-  {
-    "date": "01.09.2026",
-    "lat": 48.0159,
-    "lng": 37.8028,
-    "distance": 82,
-    "ru": {
-      "region": "Донецкая область, г. Донецк (временно оккупированная территория)",
-      "target": "База хранения, предполетной подготовки и запуска ударных БПЛА оккупантов",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 сентября 2026 года Генеральный штаб ВСУ подтвердил уничтожение крупного пункта хранения, технической подготовки и пуска ударных дронов российских войск в оккупированном Донецке. На закрытой промышленной территории противник развернул цеха досборки FPV-дронов, склады барражирующих боеприпасов и стартовые позиции операторов беспилотников. В результате высокоточного огневого налета произошла серия детонаций боевых частей БПЛА, сопровождавшаяся сильным пожаром и обрушением производственных ангаров. Были ликвидированы накопленные запасы дронов и выведено из строя оборудование радиоуправления. Поражение базы существенно ослабило интенсивность атак беспилотников на донецком направлении фронта.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, м. Донецьк (тимчасово окупована територія)",
-      "target": "База зберігання, передпольотної підготовки та запуску ударних БпЛА окупантів",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 вересня 2026 року Генеральний штаб ЗСУ підтвердив знищення великого пункту зберігання, технічної підготовки та пуску ударних дронів російських військ в окупованому Донецьку. На закритій промисловій території противник розгорнув цехи дозбирання FPV-дронів, склади баражуючих боєприпасів та стартові позиції операторів безпілотників. У результаті високоточного вогневого нальоту сталася серія детонацій бойових частин БпЛА, що супроводжувалася сильною пожежею та обваленням виробничих ангарів. Було ліквідовано накопичені запаси дронів і виведено з ладу обладнання радіокерування. Ураження бази суттєво послабило інтенсивність атак безпілотників на донецькому напрямку фронту.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Donetsk (Temporarily Occupied Territory)",
-      "target": "Russian Military Drone Storage, Assembly, and Launch Base",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 1, 2026, the General Staff of the AFU confirmed the destruction of a major Russian military drone storage, assembly, and launch base in occupied Donetsk. Operating from a secured industrial facility, the enemy maintained FPV drone assembly workshops, loitering munition depots, and crew launch positions. Precision strikes triggered violent chain-reaction detonations of stored warheads, causing the structural collapse of assembly hangars and a massive blaze. The strike wiped out significant stockpiles of attack drones and wrecked specialized radio control equipment. Neutralizing this facility curtailed enemy drone strike intensity across the active Donetsk front.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 436
-  },
-  {
-    "date": "01.09.2026",
-    "lat": 47.481,
-    "lng": 36.262,
-    "distance": 93,
-    "ru": {
-      "region": "Запорожская область, Пологовский район, г. Пологи",
-      "target": "Передовой командно-наблюдательный пункт (КНП) подразделения ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 сентября 2026 года Силы обороны Украины нанесли точечный удар по передовому командно-наблюдательному пункту российских оккупационных войск в городе Пологи Запорожской области. Объект размещался в капитальном укрепленном здании и использовался офицерами штаба для управления обороной рубежей, корректировки артиллерийского огня и распределения резервов. Прямое попадание высокоточного средства поражения пробило перекрытия и вызвало детонацию аппаратуры связи и средств радиоэлектронной борьбы. В результате удара пункт управления был полностью разрушен, среди командного состава зафиксированы потери. Разгром штабного пункта дезорганизовал управление российскими передовыми подразделениями на пологовском направлении.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Запорізька область, Пологівський район, м. Пологи",
-      "target": "Передовий командно-спостережний пункт (КСП) підрозділу ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 вересня 2026 року Сили оборони України завдали точкового удару по передовому командно-спостережному пункту російських окупаційних військ у місті Пологи Запорізької області. Об'єкт розміщувався в капітальній укріпленій будівлі та використовувався офіцерами штабу для управління обороною рубежів, коригування артилерійського вогню й розподілу резервів. Пряме влучання високоточного засобу ураження пробило перекриття та спричинило детонацію апаратури зв'язку й засобів радіоелектронної боротьби. Унаслідок удару пункт управління було повністю зруйновано, серед командного складу зафіксовано втрати. Розгром штабного пункту дезорганізував управління російськими передовими підрозділами на пологівському напрямку.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast, Polohy District, Polohy",
-      "target": "Russian Forward Command and Observation Post (COP)",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 1, 2026, Ukrainian defense forces delivered a precision strike against a forward Russian military command and observation post located in Polohy, Zaporizhzhia Oblast. Fortified inside a reinforced facility, the post was used by staff officers to coordinate tactical defenses, adjust artillery fire missions, and maneuver reserve units. Direct impacts by precision-guided munitions breached structural roofs, destroying tactical communication consoles and electronic warfare equipment. The command post was pulverized, inflicting casualties on duty personnel and staff officers. Neutralizing this nerve center disrupted tactical command cohesion and slowed enemy responses in the Polohy sector.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 437
-  },
-  {
-    "date": "01.09.2026",
-    "lat": 48.8683,
-    "lng": 38.3189,
-    "distance": 56,
-    "ru": {
-      "region": "Луганская область, Северодонецкий район, с. Верхнекаменка",
-      "target": "Район сосредоточения вооружения и тяжелой военной техники подразделений ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 сентября 2026 года украинские войска нанесли массированный огневой удар по району сосредоточения вооружения и военной техники противника возле села Верхнекаменка в районе Лисичанска. Российское командование использовало данную площадку для ремонта бронемашин, накопления танков и подготовки механизированных подразделений к штурмовым действиям на северском направлении. В результате серии точных попаданий на объекте загорелась стоянка бронетехники и сдетонировали боекомплекты нескольких боевых машин. Противник понес ощутимые потери в танках и боевых машинах пехоты, восстановительные работы в ремзоне были сорваны. Успешное поражение базы подтверждено официальным сообщением Генерального штаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Луганська область, Сєвєродонецький район, с. Верхньокам’янка",
-      "target": "Район зосередження озброєння та важкої військової техніки підрозділів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "1 вересня 2026 року українські війська завдали масованого вогневого удару по району зосередження озброєння та військової техніки противника поблизу села Верхньокам’янка в районі Лисичанська. Російське командування використовувало цей майданчик для ремонту бронемашин, накопичення танків та підготовки механізованих підрозділів до штурмових дій на сіверському напрямку. Унаслідок серії влучних влучань на об'єкті спалахнула стоянка бронетехніки та здетонували боєкомплекти кількох бойових машин. Противник зазнав відчутних втрат у танках і бойових машинах піхоти, відновлювальні роботи в ремзоні було зірвано. Успішне ураження бази підтверджено офіційним повідомленням Генерального штабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Sievierodonetsk District, Verkhniokam'yanka",
-      "target": "Russian Armed Forces Heavy Armor and Military Equipment Staging Area",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On September 1, 2026, Ukrainian forces launched a concentrated strike targeting a Russian armored staging area and field maintenance yard near Verkhniokam'yanka in the Lysychansk sector. The installation was actively utilized by Russian forces to repair damaged armor, assemble armored spearheads, and stage mechanized assault units heading toward Siversk. Multiple precision strikes ignited combat vehicles in staging bays and set off violent ammunition detonations inside several armored platforms. The strike inflicted significant losses on Russian tanks and infantry fighting vehicles, shutting down local depot repair operations. The successful hit was officially verified in the AFU General Staff operational dispatch.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 438
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 52.4842,
-    "lng": 33.6828,
-    "distance": 191,
-    "ru": {
-      "region": "Брянская область, Трубчевский район, с. Деснянское",
-      "target": "Радиолокационная станция (РЛС) обнаружения воздушных целей ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "31 августа 2026 года Силы обороны Украины нанесли результативный удар беспилотниками по российской радиолокационной станции возле села Деснянское в Брянской области. Развернутая в приграничной полосе РЛС вела непрерывное круговое наблюдение за воздушным пространством, фиксируя перемещение украинских БПЛА и авиации на северном операционном направлении. В результате прямого попадания ударного дрона антенна радиолокатора и сопутствующий аппаратный кунг получили критические разрушения с последующим возгоранием электроники. Вывод станции из строя лишил подразделения ПВО противника оперативной информации о низколетящих целях и пробил коридор для дальнейших дальнобойных ударов. Поражение радиолокатора официально подтверждено в сводке Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Брянська область, Трубчевський район, с. Деснянське",
-      "target": "Радіолокаційна станція (РЛС) виявлення повітряних цілей ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "31 серпня 2026 року Сили оборони України завдали результативного удару безпілотниками по російській радіолокаційній станції поблизу села Деснянське в Брянській області. Розгорнута у прикордонній смузі РЛС вела безперервний круговий моніторинг повітряного простору, фіксуючи переміщення українських БПЛА та авіації на північному операційному напрямку. Унаслідок прямого влучання ударного дрона антена радіолокатора та супутній апаратний кунг зазнали критичних руйнувань із подальшим займанням електроніки. Виведення станції з ладу позбавило підрозділи ППО противника оперативної інформації про низьколітні цілі та пробило коридор для подальших далекобійних ударів. Ураження радіолокатора офіційно підтверджено у зведенні Генштабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Trubchevsk District, Desnyanskoye",
-      "target": "Russian Armed Forces Air Surveillance Radar Station",
-      "category": "Defense Industry",
-      "weapon": "Drone",
-      "details": "On August 31, 2026, Ukrainian defense forces conducted a successful drone strike targeting a Russian air surveillance radar station near the village of Desnyanskoye in Bryansk Oblast. Deployed along the border zone, this radar provided continuous round-the-clock airspace monitoring, tracking incoming Ukrainian UAVs and aviation assets across the northern operational sector. Direct drone hits caused catastrophic structural damage to the phased array antenna and incinerated the onboard electronic equipment module. Neutralizing this radar station created a critical detection blind spot for Russian regional air defenses and opened safe transit lanes for subsequent deep strike sorties. The strike was officially verified in the AFU General Staff operational bulletin.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 419
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 52.052,
-    "lng": 34.253,
-    "distance": 133,
-    "ru": {
-      "region": "Брянская область, Севский район, район с. Плоскобукреевка",
-      "target": "Командно-штабная машина (КШМ) из состава ЗРК С-400 «Триумф»",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 августа 2026 года Генеральный штаб ВСУ подтвердил уничтожение командно-штабной машины из состава новейшего зенитного ракетного комплекса С-400 «Триумф» в районе села Плоскобукреевка Брянской области. Данная специализированная машина являлась мозговым центром зенитного дивизиона, отвечая за интеграцию РЛС обнаружения, распределение воздушных целей и наведение зенитных управляемых ракет на дальних дистанциях. Точное огневое поражение привело к детонации аппаратуры и полному выгоранию командного модуля управления вместе со средствами закрытой спутниковой связи. Ликвидация КШМ полностью парализовала боевую работу всего дивизиона С-400 на данном участке приграничья, лишив противника возможности эффективно отражать воздушные атаки.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Брянська область, Севський район, район с. Плоскобукреївка",
-      "target": "Командно-штабна машина (КШМ) зі складу ЗРК С-400 «Тріумф»",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 серпня 2026 року Генеральний штаб ЗСУ підтвердив знищення командно-штабної машини зі складу новітнього зенітного ракетного комплексу С-400 «Тріумф» у районі села Плоскобукреївка Брянської області. Ця спеціалізована машина була мозковим центром зенітного дивізіону, відповідаючи за інтеграцію РЛС виявлення, розподіл повітряних цілей та наведення зенітних керованих ракет на дальніх дистанціях. Влучне вогневе ураження призвело до детонації апаратури та повного вигорання командного модуля управління разом із засобами закритого супутникового зв'язку. Ліквідація КШМ повністю паралізувала бойову роботу всього дивізіону С-400 на цьому відтинку прикордоння, позбавивши ворога можливості ефективно відбивати повітряні атаки.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Sevsk District, Ploskobukreevka",
-      "target": "Command and Control Vehicle of S-400 'Triumf' SAM System",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 31, 2026, the General Staff of the AFU confirmed the destruction of a specialized command and control post vehicle belonging to an advanced Russian S-400 Triumf surface-to-air missile battalion near Ploskobukreevka in Bryansk Oblast. The command vehicle served as the automated nerve center of the SAM battery, orchestrating radar data processing, threat evaluation, target assignment, and missile guidance algorithms. Precision strike munitions directly struck the vehicle, triggering severe internal explosions and incinerating secure satellite communication terminals. Neutralizing the command post effectively crippled the entire S-400 air defense battery along the border sector, degrading layered Russian anti-aircraft capabilities.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 420
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 50.4578,
-    "lng": 36.985,
-    "distance": 74,
-    "ru": {
-      "region": "Белгородская область, Шебекинский район, с. Зимовное",
-      "target": "Защищенный узел военной связи подразделения ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "31 августа 2026 года Силы обороны Украины нанесли точечный удар дальнобойным дроном по замаскированному узлу военной связи российских войск возле села Зимовное в Белгородской области. На территории этого объекта противник развернул приемо-передающие антенные комплексы, ретрансляторы тактической радиосвязи и криптографическое оборудование для управления приграничной группировкой войск. Прямое попадание ударного беспилотника разрушило аппаратный пункт, вызвало пожар и срезало антенные мачты. В результате поражения была нарушена устойчивая связь между командными пунктами и передовыми подразделениями противника на шебекинском направлении. Результаты огневого поражения подтверждены оперативным отчетом Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Бєлгородська область, Шебекінський район, с. Зімовне",
-      "target": "Захищений вузол військового зв'язку підрозділу ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "31 серпня 2026 року Сили оборони України завдали точкового удару далекобійним дроном по замаскованому вузлу військового зв'язку російських військ поблизу села Зімовне в Бєлгородській області. На території цього об'єкта противник розгорнув приймально-передавальні антенні комплекси, ретранслятори тактичного радіозв'язку та криптографічне обладнання для управління прикордонним угрупованням військ. Пряме влучання ударного безпілотника зруйнувало апаратний пункт, спричинило пожежу та зрізало антенні щогли. Унаслідок ураження було порушено стійкий зв'язок між командними пунктами та передовими підрозділами противника на шебекінському напрямку. Результати вогневого ураження підтверджено оперативним звітом Генштабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Belgorod Oblast, Shebekino District, Zimovnoye",
-      "target": "Russian Armed Forces Tactical Military Communications Node",
-      "category": "Defense Industry",
-      "weapon": "Drone",
-      "details": "On August 31, 2026, Ukrainian forces executed a precision strike using an attack drone against a concealed Russian military communications and relay station near the village of Zimovnoye in Belgorod Oblast. The site housed multichannel transceivers, tactical radio relay masts, and secure cryptographic equipment routing command directives to frontline Russian combat units. A direct hit pulverized the primary hardware shelter, ignited a fierce localized blaze, and toppled main transmitting towers. The elimination of this hub disrupted tactical communications and compromised coordination between higher command headquarters and tactical border battalions. The strike was officially verified by the AFU General Staff.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 421
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 51.2725,
-    "lng": 34.4697,
-    "distance": 47,
-    "ru": {
-      "region": "Курская область, Глушковский район, с. Попово-Лежачи",
-      "target": "Склад материально-технических средств и база снабжения ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 августа 2026 года подразделения Сил обороны Украины поразили крупный полевой склад материально-технических средств оккупантов в районе села Попово-Лежачи Глушковского района Курской области. Объект использовался российским военным командованием для накопления горюче-смазочных материалов, запасных частей к бронетехнике, фортификационного оборудования и снаряжения для снабжения приграничной группировки. В результате серии точных ударов на территории базы вспыхнул масштабный пожар с последующей детонацией хранившихся емкостей с топливом и инженерных боеприпасов. Уничтожение складских запасов сорвало график тылового обеспечения российских войск на глушковском участке фронта. Генштаб ВСУ подтвердил успешное выполнение боевой задачи.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Курська область, Глушковський район, с. Попово-Лежачі",
-      "target": "Склад матеріально-технічних засобів та база постачання ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 серпня 2026 року підрозділи Сил оборони України уразили великий польовий склад матеріально-технічних засобів окупантів у районі села Попово-Лежачі Глушковського району Курської області. Об'єкт використовувався російським військовим командуванням для накопичення пально-мастильних матеріалів, запасних частин до бронетехніки, фортифікаційного майна та спорядження для постачання прикордонного угруповання. Унаслідок серії влучних ударів на території бази спалахнула масштабна пожежа з подальшою детонацією накопичених ємностей із пальним та інженерних боєприпасів. Знищення складських запасів зірвало графік тилового забезпечення російських військ на глушковському відтинку фронту. Генштаб ЗСУ підтвердив успішне виконання бойового завдання.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Kursk Oblast, Glushkovo District, Popovo-Lezhachi",
-      "target": "Russian Armed Forces Logistical and Materiel Storage Depot",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 31, 2026, Ukrainian defense forces delivered a strike against a vital field logistics and materiel supply depot located near Popovo-Lezhachi in the Glushkovo district of Kursk Oblast. The depot functioned as an operational staging post storing fuels and lubricants, armored vehicle spare parts, field engineering materials, and logistical gear supplying combat units along the border. Multiple precision hits sparked a widespread fire accompanied by secondary explosions of fuel containers and specialized ordnance. The destruction of this logistical stockpile disrupted enemy resupply schedules and hampered defensive maintenance across the Glushkovo sector. The hit was officially reported in the AFU General Staff bulletin.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 422
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 45.3956,
-    "lng": 34.7303,
-    "distance": 214,
-    "ru": {
-      "region": "АР Крым, Нижнегорский район, с. Жемчужина (Кир-Байлар)",
-      "target": "Складской комплекс материально-технических средств и боеприпасов ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "В ночь на 31 августа 2026 года Силы обороны Украины нанесли комбинированный огневой удар по тыловому складскому комплексу оккупантов в районе села Жемчужина (историческое название Кир-Байлар) в Нижнегорском районе Крыма. На этом объекте противник сосредоточил запасы материально-технического имущества, комплектующих к военной технике и партии боеприпасов для снабжения группировки войск на южном направлении. Точные попадания средств поражения вызвали сильные взрывы с вторичной детонацией и интенсивное возгорание ангаров. В результате удара уничтожена значительная часть накопленных резервов материально-технического снабжения. Успешное поражение военного объекта подтверждено сводкой Генерального штаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Нижньогірський район, с. Жемчужина (Кир-Байлар)",
-      "target": "Складський комплекс матеріально-технічних засобів та боєприпасів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "У ніч на 31 серпня 2026 року Сили оборони України завдали комбінованого вогневого удару по тиловому складському комплексу окупантів у районі села Жемчужина (історична назва Кир-Байлар) у Нижньогірському районі Криму. На цьому об'єкті противник зосередив запаси матеріально-технічного майна, комплектуючих до військової техніки та партії боєприпасів для забезпечення угруповання військ на південному напрямку. Точні влучання засобів ураження спричинили сильні вибухи із вторинною детонацією та інтенсивне займання ангарів. Унаслідок удару знищено значну частину накопичених резервів матеріально-технічного постачання. Успішне ураження військового об'єкта підтверджено зведенням Генерального штабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Nyzhnohirskyi District, Zhemchuzhyna (Qır Baylar)",
-      "target": "Russian Military Logistics and Ammunition Supply Warehouse",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "In the early hours of August 31, 2026, Ukrainian forces conducted a precision strike on a Russian rear logistics and ammunition storage compound situated near Zhemchuzhyna (historically known as Qır Baylar) in Crimea's Nyzhnohirskyi district. The installation held stockpiles of technical materiel, vehicle repair components, and artillery ammunition intended to reinforce Russian front-line units across southern operational sectors. Precision impacts triggered powerful secondary detonations, setting ablaze multiple storage facilities and maintenance hangars. The strike wiped out substantial logistics reserves, depriving regional forces of critical equipment replenishment. The AFU General Staff verified the destruction of the site in its daily dispatch.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 423
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 48.8683,
-    "lng": 38.3189,
-    "distance": 56,
-    "ru": {
-      "region": "Луганская область, Северодонецкий район, с. Верхнекаменка",
-      "target": "Складской комплекс материально-технических средств оккупационных войск",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 августа 2026 года украинские военные нанесли огневой удар по крупному тыловому складу материально-технических средств противника возле села Верхнекаменка в районе Лисичанска. На территории складского комплекса и прилегающей инфраструктуры базировались подразделения обеспечения, хранились запасы топлива, смазочных материалов, комплекты бронезащиты и расходные запчасти для бронетанковых частей. В результате серии точных попаданий произошла детонация цистерн и ангаров с техническим имуществом, над позицией поднялся столб густого чёрного дыма. Уничтожение узла снабжения существенно осложнило логистику российских подразделений на северском направлении. Успешное поражение цели зафиксировано в сводке Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Луганська область, Сєвєродонецький район, с. Верхньокам’янка",
-      "target": "Складський комплекс матеріально-технічних засобів окупаційних військ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 серпня 2026 року українські військові завдали вогневого удару по великому тиловому складу матеріально-технічних засобів противника поблизу села Верхньокам’янка в районі Лисичанська. На території складського комплексу та прилеглої інфраструктури базувалися підрозділи забезпечення, зберігалися запаси пального, мастил, комплекти бронезахисту та витратні запчастини для бронетанкових частин. Унаслідок серії влучних влучань сталася детонація цистерн та ангарів із технічним майном, над позицією піднявся стовп густого чорного диму. Знищення вузла постачання суттєво ускладнило логістику російських підрозділів на сіверському напрямку. Успішне ураження цілі зафіксовано у зведенні Генштабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Sievierodonetsk District, Verkhniokam'yanka",
-      "target": "Russian Occupying Forces Materiel and Logistics Depot",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 31, 2026, Ukrainian forces struck a substantial Russian rear materiel and technical support compound near the village of Verkhniokam'yanka in the vicinity of Lysychansk. The logistics depot served as an essential support staging point housing stored fuel reserves, lubricants, body armor kits, and spare components for armored battalions. Coordinated precision strikes ignited fuel reservoirs and wrecked technical maintenance buildings, throwing up thick plumes of black smoke visible across the sector. Destroying this supply hub severely impeded logistical resupply for Russian forces attempting offensive drives on the Siversk axis. The AFU General Staff officially confirmed the successful hit in its operational report.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 424
-  },
-  {
-    "date": "31.08.2026",
-    "lat": 47.62,
-    "lng": 36.32,
-    "distance": 92,
-    "ru": {
-      "region": "Запорожская область, Пологовский район, район г. Гуляйполе",
-      "target": "Командный пункт управления подразделениями ударных и разведывательных БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 августа 2026 года Силы обороны Украины нанесли высокоточный удар по замаскированному командно-штабному пункту управления БПЛА противника на временно оккупированной территории Запорожской области в районе Гуляйполя. На данном объекте размещались рабочие места операторов, мобильные станции спутниковой связи и антенные ретрансляторы, координировавшие вылеты разведывательных дронов и удары FPV-беспилотников по украинским оборонительным позициям. В результате прямого попадания пункт управления и антенное оборудование были полностью уничтожены, дежурная смена операторов понесла потери. Ликвидация координационного центра позволила снизить плотность вражеских атак дронами на данном участке фронта. Генштаб ВСУ подтвердил уничтожение объекта.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Запорізька область, Пологівський район, район м. Гуляйполе",
-      "target": "Командний пункт управління підрозділами ударних та розвідувальних БПЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "31 серпня 2026 року Сили оборони України завдали високоточного удару по замаскованому командно-штабному пункту управління БПЛА противника на тимчасово окупованій території Запорізької області в районі Гуляйполя. На цьому об'єкті розміщувалися робочі місця операторів, мобільні станції супутникового зв'язку та антенні ретранслятори, які координували вильоти розвідувальних дронів та удари FPV-безпілотників по українських оборонних позиціях. Унаслідок прямого влучання пункт управління та антенне обладнання були повністю знищені, чергова зміна операторів зазнала втрат. Ліквідація координаційного центру дозволила знизити щільність ворожих атак дронами на цьому відтинку фронту. Генштаб ЗСУ підтвердив знищення об'єкта.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast, Polohy District, Huliaipole sector",
-      "target": "Russian Armed Forces UAV Command and Control Center",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 31, 2026, Ukrainian defense forces delivered a precision strike against a fortified and concealed Russian UAV command and control node in the occupied sector near Huliaipole, Zaporizhzhia Oblast. The facility accommodated drone flight control suites, mobile satellite communication links, and relay antennae directing tactical reconnaissance UAV missions and FPV strike operations against Ukrainian defensive lines. Direct precision hits pulverized the command post, wrecked specialized antenna masts, and inflicted casualties on on-duty operators. The destruction of this control post degraded Russian drone integration and curtailed drone strikes across the tactical sector. The hit was verified by the AFU General Staff.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 425
-  },
-  {
     "date": "30.08.2026",
     "lat": 59.4894,
     "lng": 32.0625,
@@ -992,99 +372,6 @@ const strikeData = [
     "id": 415
   },
   {
-    "date": "30.08.2026",
-    "lat": 53.076,
-    "lng": 35.684,
-    "distance": 249,
-    "ru": {
-      "region": "Орловская область, Знаменский район, с. Цымбулова",
-      "target": "Дронопорт «Цымбулова» — пусковые позиции реактивных БПЛА и склад дронов",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 30 августа 2026 года украинские ударные беспилотники атаковали специализированный российский дронопорт «Цымбулова» в Знаменском районе Орловской области. Объект расположен примерно в 180 км от границы и летом 2026 года был масштабно переоборудован для массированных пусков реактивных дронов: на базе развернули 16 пусковых установок для скоростных БПЛА «Герань-5» и «Герань-4», а также позиции для моделей «Герань-2» и «Герань-3». В ходе налёта прямое попадание пришлось по одной из реактивных пусковых установок и ангару хранения готовых беспилотников. На территории дронопорта возник сильный пожар, следы которого вместе с разрушениями зафиксировали спутниковые снимки Exilenova+ и Supernova+. Удар сорвал подготовку к очередному залповому пуску реактивных БПЛА.",
-      "source": "Генштаб ВСУ, Exilenova+, Supernova+, Милитарный, OSINT"
-    },
-    "uk": {
-      "region": "Орловська область, Знам'янський район, с. Цимбулова",
-      "target": "Дронопорт «Цимбулова» — пускові позиції реактивних БПЛА та склад дронів",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч на 30 серпня 2026 року українські ударні безпілотники атакували спеціалізований російський дронопорт «Цимбулова» у Знам'янському районі Орловської області. Об'єкт розташований приблизно за 180 км від кордону і влітку 2026 року був масштабно переобладнаний для масованих запусків реактивних дронів: на базі розгорнули 16 пускових установок для швидкісних БПЛА «Герань-5» і «Герань-4», а також позиції для моделей «Герань-2» і «Герань-3». Під час нальоту пряме влучання припало по одній із реактивних пускових установок та ангару зберігання готових безпілотників. На території дронопорту спалахнула сильна пожежа, сліди якої разом із руйнуваннями зафіксували супутникові знімки Exilenova+ та Supernova+. Удар зірвав підготовку до чергового залпового пуску реактивних БПЛА.",
-      "source": "Генштаб ЗСУ, Exilenova+, Supernova+, Мілітарний, OSINT"
-    },
-    "en": {
-      "region": "Oryol Oblast, Znamensky District, Tsymbulova",
-      "target": "Tsymbulova Droneport — Jet UAV Launch Positions and Drone Storage Facility",
-      "category": "Defense Industry",
-      "weapon": "Drone",
-      "details": "On the night of August 30, 2026, Ukrainian attack drones struck the Tsymbulova droneport in the Znamensky district of Oryol Oblast, located 180 km from the border. During July and August 2026, Russian forces had expanded this site into a dedicated launch hub, erecting 16 specialized launch ramps for Geran-5 and Geran-4 jet-powered strike UAVs alongside positions for Geran-2 and Geran-3 models. Precision drone strikes scored direct hits on a jet UAV launcher and an adjacent drone storage hangar. Satellite imagery released by Exilenova+ and Supernova+ verified extensive structural destruction and severe burn scars across the facility. The successful strike disrupted scheduled mass launches of jet-powered kamikaze drones.",
-      "source": "General Staff of AFU, Exilenova+, Supernova+, Militarnyi, OSINT"
-    },
-    "id": 416
-  },
-  {
-    "date": "30.08.2026",
-    "lat": 48.0436,
-    "lng": 38.1425,
-    "distance": 88,
-    "ru": {
-      "region": "Донецкая область, г. Харцызск",
-      "target": "Складской комплекс и база хранения БПЛА Центра передовых беспилотных технологий «Рубикон»",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "30 августа 2026 года Силы обороны Украины нанесли результативный высокоточный удар по тыловой базе материально-технического обеспечения оккупантов в городе Харцызск. Целью стал крупный складской комплекс Центра передовых беспилотных технологий МО РФ «Рубикон» — специализированного формирования, отвечающего за применение разведывательных и ударных дронов на восточном фронте. На объекте хранились готовые партии барражирующих боеприпасов, оптико-электронные модули, комплекты спутниковой связи и запасные блоки управления. Прямые попадания вызвали цепную детонацию боевых частей и сильный пожар в ангарах. Уничтожение материальной базы нанесло серьезный удар по возможностям подразделения «Рубикон» координировать наступательные операции на покровском направлении.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, м. Харцизьк",
-      "target": "Складський комплекс та база зберігання БПЛА Центру передових безпілотних технологій «Рубікон»",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "30 серпня 2026 року Сили оборони України завдали результативного високоточного удару по тиловій базі матеріально-технічного забезпечення окупантів у місті Харцизьк. Ціллю став великий складський комплекс Центру передових безпілотних технологій МО РФ «Рубікон» — спеціалізованого формування, що відповідає за застосування розвідувальних та ударних дронів на східному фронті. На об'єкті зберігалися готові партії баражуючих боєприпасів, оптико-електронні модулі, комплекти супутникового зв'язку та запасні блоки управління. Прямі влучання спричинили ланцюгову детонацію бойових частин і сильну пожежу в ангарах. Знищення матеріальної бази завдало серйозного удару по можливостях підрозділу «Рубікон» координувати наступальні операції на покровському напрямку.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Khartsyzk",
-      "target": "Rubikon Advanced Drone Center Storage Complex and Drone Logistics Depot",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 30, 2026, Ukrainian defense forces delivered a precision strike against a rear logistical base of the Russian occupying forces in Khartsyzk. The strike targeted a primary warehouse facility belonging to the Rubikon Center for Advanced Unmanned Technologies — an elite unit managing reconnaissance and combat drone operations across the eastern theater. The compound housed stockpiles of loitering munitions, optical-electronic sensor payloads, satellite communications suites, and drone electronics. Direct hits ignited a chain-reaction explosion of warheads and completely engulfed the storage buildings in flames. The destruction of this asset severely degraded Rubikon's operational capabilities to support offensive drives in the Pokrovsk sector.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 417
-  },
-  {
-    "date": "30.08.2026",
-    "lat": 47.452,
-    "lng": 36.851,
-    "distance": 135,
-    "ru": {
-      "region": "Запорожская область, Пологовский район, с. Чумацкое",
-      "target": "Командно-штабной пункт управления подразделениями ударных БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "30 августа 2026 года Силы обороны Украины нанесли огневой удар по защищенному командно-штабному пункту управления БПЛА российских войск в районе села Чумацкое. Данный пункт выполнял функции координационного узла тактической беспилотной разведки, корректировки артиллерийских ударов и управления расчетами FPV-дронов на южном участке фронта. В результате прямого попадания высокоточного боеприпаса пункт управления, ретрансляционные антенные мачты и терминалы связи были полностью разрушены, а находившаяся на дежурстве смена операторов понесла потери. Ликвидация командного центра нарушила координацию тактических подразделений и снизила интенсивность применения дронов противником на данном рубеже. Успешный удар подтвержден в сводке Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Запорізька область, Пологівський район, с. Чумацьке",
-      "target": "Командно-штабний пункт управління підрозділами ударних БПЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "30 серпня 2026 року Сили оборони України завдали вогневого удару по захищеному командно-штабному пункту управління БПЛА російських військ у районі села Чумацьке. Цей пункт виконував функції координаційного вузла тактичної безпілотної розвідки, коригування артилерійських ударів та управління розрахунками FPV-дронів на південній ділянці фронту. Унаслідок прямого влучання високоточного боєприпасу пункт управління, ретрансляційні антенні щогли та термінали зв'язку були повністю зруйновані, а чергова зміна операторів зазнала втрат. Ліквідація командного центру порушила координацію тактичних підрозділів і знизила інтенсивність застосування дронів противником на цьому рубежі. Успішний удар підтверджено у зведенні Генштабу ЗСУ.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast, Polohy District, Chumatske",
-      "target": "Russian Armed Forces Strike Drone Unit Command and Control Center",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 30, 2026, Ukrainian forces delivered a precision strike against a fortified Russian drone command and control post near Chumatske. The facility functioned as a regional tactical coordination hub for reconnaissance UAVs, artillery spotting, and FPV drone strikes across the southern front. A direct missile or drone impact demolished the command structure, telecommunication relay masts, and flight control stations, inflicting severe personnel casualties on the operating staff. The destruction of this coordination node crippled tactical UAV guidance and significantly reduced enemy loitering munition activity along the sector. The strike was officially verified in the AFU General Staff daily operational update.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 418
-  },
-  {
     "date": "29.08.2026",
     "lat": 45.1162,
     "lng": 33.9766,
@@ -1148,37 +435,6 @@ const strikeData = [
   },
   {
     "date": "29.08.2026",
-    "lat": 52.7533,
-    "lng": 32.2435,
-    "distance": 154,
-    "ru": {
-      "region": "Брянская область, г. Клинцы",
-      "target": "Зенитный ракетный комплекс 9К317М «Бук-М3»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "29 августа 2026 года Генеральный штаб ВСУ официально подтвердил уничтожение новейшего российского зенитного ракетного комплекса 9К317М «Бук-М3» в районе города Клинцы Брянской области. Стоимость одного такого дивизионного комплекса превышает 40 миллионов долларов. «Бук-М3» считался передовым средством войсковой ПВО среднего радиуса, прикрывавшим военные базы, логистические узлы и коридоры переброски техники в российском приграничье. В результате прицельного удара ударного дрона на огневой позиции сдетонировал готовый к пуску боекомплект зенитных управляемых ракет, превратив установку в груду горящего металла. Уничтожение данного ЗРК существенно ослабило эшелонированную систему ПВО российской армии на брянском направлении.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Брянська область, м. Клинці",
-      "target": "Зенітний ракетний комплекс 9К317М «Бук-М3»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "29 серпня 2026 року Генеральний штаб ЗСУ офіційно підтвердив знищення новітнього російського зенітного ракетного комплексу 9К317М «Бук-М3» у районі міста Клинці Брянської області. Вартість одного такого дивізіонного комплексу перевищує 40 мільйонів доларів. «Бук-М3» вважався передовим засобом військової ППО середнього радіуса, який прикривав військові бази, логістичні вузли та коридори перекидання техніки у російському прикордонні. Внаслідок прицільного удару ударного дрона на вогневій позиції здетонував готовий до пуску боєкомплект зенітних керованих ракет, перетворивши установку на палаючий брухт. Знищення цього ЗРК суттєво послабило ешелоновану систему ППО російської армії на брянському напрямку.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Klintsy",
-      "target": "9K317M 'Buk-M3' Surface-to-Air Missile System",
-      "category": "Defense Industry",
-      "weapon": "Drone",
-      "details": "On August 29, 2026, the General Staff of the AFU officially confirmed the destruction of a modern Russian 9K317M Buk-M3 medium-range anti-aircraft missile system near Klintsy in Bryansk Oblast. A single Buk-M3 battery carries an estimated price tag exceeding 40 million dollars. The system formed the backbone of regional tactical air defense, shielding military bases, logistical choke points, and transit corridors along the border. A precision strike by a Ukrainian attack drone triggered a catastrophic detonation of ready-to-launch surface-to-air missiles, incinerating the launcher and radar equipment. The destruction of this advanced SAM asset significantly compromised layered air defense coverage across the Bryansk operational sector.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 410
-  },
-  {
-    "date": "29.08.2026",
     "lat": 47.9868,
     "lng": 37.7816,
     "distance": 85,
@@ -1207,37 +463,6 @@ const strikeData = [
       "source": "General Staff of AFU, OSINT"
     },
     "id": 411
-  },
-  {
-    "date": "29.08.2026",
-    "lat": 48.0053,
-    "lng": 37.2886,
-    "distance": 84,
-    "ru": {
-      "region": "Донецкая область, Покровский район, с. Берестки",
-      "target": "Пункт управления подразделениями ударных БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "29 августа 2026 года украинские военные нанесли точный огневой удар по замаскированному командно-штабному пункту управления БПЛА в районе села Берестки. В этом укрепленном пункте размещались станции дистанционного управления дронами, ретрансляторы связи и терминалы операторов, координировавших атаки на украинские оборонительные рубежи. В результате прямого попадания полностью разрушены пункт управления и сопутствующая антенна спутниковой связи, а находившаяся на дежурстве смена операторов понесла потери в живой силе и технике. Ликвидация координационного центра сорвала запланированные разведывательные и ударные вылеты противника на прилегающем участке фронта. Генштаб ВСУ подтвердил успешное поражение цели.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, Покровський район, с. Берестки",
-      "target": "Пункт управління підрозділами ударних БПЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "29 серпня 2026 року українські військові завдали влучного вогневого удару по замаскованому командно-штабному пункту управління БПЛА в районі села Берестки. У цьому укріпленому пункті розміщувалися станції дистанційного керування безпілотниками, ретранслятори зв'язку й термінали операторів, які координували атаки на українські оборонні рубежі. Внаслідок прямого влучання повністю зруйновано пункт управління та супутникову антену зв'язку, а чергова зміна операторів зазнала втрат у живій силі й техніці. Ліквідація координаційного центру зірвала заплановані розвідувальні та ударні вильоти противника на прилеглому відтинку фронту. Генштаб ЗСУ підтвердив успішне ураження цілі.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Pokrovsk District, Berestky",
-      "target": "Russian Armed Forces Attack Drone Unit Command Post",
-      "category": "Defense Industry",
-      "weapon": "Drone / Missile",
-      "details": "On August 29, 2026, Ukrainian forces struck a concealed Russian drone command and control post situated near the village of Berestky. The fortified position housed remote UAV flight stations, telecommunication relay masts, and terminal suites used by drone pilots directing frontline assault missions. Direct precision impacts pulverized the command module, obliterated satellite uplink equipment, and inflicted casualties on on-duty operators. The destruction of this command node paralyzed coordinated reconnaissance and loitering munition sorties across adjacent tactical sectors. The successful neutralization of the target was officially confirmed in the AFU General Staff operational bulletin.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 412
   },
   {
     "date": "28.08.2026",
@@ -1488,99 +713,6 @@ const strikeData = [
     "id": 4
   },
   {
-    "date": "27.08.2026",
-    "lat": 45.378,
-    "lng": 32.534,
-    "distance": 140,
-    "ru": {
-      "region": "АР Крым, Черноморский район, с. Оленевка",
-      "target": "Позиция радиолокационных станций «Небо-СВ» и «П-18» ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "27 августа 2026 года Силы обороны Украины нанесли высокоточный удар по позиционному району российской противовоздушной обороны в районе Оленевки на мысе Тарханкут. На этой позиции размещались современная трехкоординатная РЛС «Небо-СВ», модернизированная станция «П-18» и мобильный узел военной связи. Данный комплекс обеспечивал контроль воздушного пространства над западным Крымом и акваторией Черного моря на дальностях до сотен километров. Прямые попадания боеприпасов уничтожили радиолокационные антенны, аппаратные машины управления и расчетную аппаратуру связи. Поражение РЛС образовало существенную брешь в радиолокационном поле противника на юго-западном направлении.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Чорноморський район, с. Оленівка",
-      "target": "Позиція радіолокаційних станцій «Небо-СВ» та «П-18» ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "27 серпня 2026 року Сили оборони України завдали високоточного комбінованого удару по позиційному району ППО окупантів поблизу села Оленівка на мисі Тарханкут. На замаскованій позиції розгорталися трикоординатна РЛС метрового діапазону «Небо-СВ», станція дальнього виявлення «П-18» та пересувний вузол спецзв'язку. Ці засоби вели цілодобову радіолокаційну розвідку повітряного простору над морем та прибережними районами півдня. Влучні удари повністю знищили антенні пости, апаратні кабіни та допоміжне енергетичне обладнання станцій. Знищення комплексу РЛС утворило значний пролом у системі спостереження та раннього попередження ППО РФ у Криму.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske District, Olenivka",
-      "target": "Russian Radar Complex (Nebo-SV and P-18 Radars) at Cape Tarkhankut",
-      "category": "Military",
-      "weapon": "Drone / Missile",
-      "details": "On August 27, 2026, the Ukrainian Defense Forces executed a precision strike against a Russian radar and air surveillance position near Olenivka on Cape Tarkhankut. The site hosted advanced Nebo-SV 3D VHF surveillance radar arrays, modernized P-18 mobile early-warning radar systems, and command communication vehicles. These radar systems provided continuous airspace tracking and early warning coverage across the western Crimean coastline and Black Sea maritime zones. Precision strikes destroyed the antenna arrays, transmitter control vans, and auxiliary power units. Neutralizing this radar complex created a critical radar blind spot in Russia's regional air defense network.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 5
-  },
-  {
-    "date": "27.08.2026",
-    "lat": 45.021,
-    "lng": 33.633,
-    "distance": 196,
-    "ru": {
-      "region": "АР Крым, Сакский район, с. Фрунзе",
-      "target": "Радиорелейная станция связи «Николаевка» ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "27 августа 2026 года подразделения ВСУ нанесли результативный удар по стационарной радиорелейной станции военной связи «Николаевка» возле села Фрунзе в Сакском районе Крыма. Объект входил в опорную систему закрытой радиорелейной и тропосферной связи Черноморского флота и подразделений береговой обороны. Попадание высокоточного средства поражения разрушило антенно-мачтовые сооружения, аппаратный модуль и распределительный узел связи. Детонация оборудования и последующий пожар вывели станцию из строя, оборвав основные каналы передачи данных между командными пунктами. Удар нарушил централизованное управление подразделениями ПВО и авиацией в центральной части Крыма.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Сакський район, с. Фрунзе",
-      "target": "Радіорелейна станція зв'язку «Миколаївка» ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "27 серпня 2026 року підрозділи ЗСУ завдали результативного удару по стаціонарній радіорелейній станції військового зв'язку «Миколаївка» поблизу села Фрунзе у Сакському районі Криму. Об'єкт забезпечував стійке функціонування захищених каналів зв'язку Чорноморського флоту РФ та частин берегової оборони півострова. Точне влучання українського засобу ураження знищило антенно-щоглові конструкції, апаратний блок та кабельне комутаційне обладнання. Внаслідок детонації та пожежі станція була повністю зруйнована, що спричинило обрив ключових ліній передачі даних. Успішний удар суттєво порушив управління військами противника у західній частині Криму.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Saky District, Frunze",
-      "target": "Russian Military Radio Relay Station 'Nikolaevka'",
-      "category": "Military",
-      "weapon": "Drone / Missile",
-      "details": "On August 27, 2026, Ukrainian forces conducted an effective precision strike against the Russian Nikolaevka military radio relay communication station near Frunze in the Saky district of Crimea. The communications hub was an integral part of the secure tropospheric and radio relay networks utilized by the Black Sea Fleet and coastal defense units. The precision munition hit and dismantled primary antenna masts, transmission equipment containers, and switching gear. Detonations and subsequent blazes knocked out the station, cutting secure data transmission links between command posts. The strike severely degraded centralized command-and-control over air defense units across Crimea.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 6
-  },
-  {
-    "date": "27.08.2026",
-    "lat": 44.59,
-    "lng": 33.52,
-    "distance": 238,
-    "ru": {
-      "region": "АР Крым, г. Севастополь",
-      "target": "Учебный центр подготовки личного состава ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "27 августа 2026 года Силы обороны Украины нанесли точечный удар по военному учебному центру подготовки личного состава ВС РФ в Севастополе. На базе этого центра осуществлялась интенсивная огневая подготовка, слаживание штурмовых групп и обучение операторов беспилотных систем перед отправкой на линию фронта. Украинские средства поражения точно накрыли казарменные корпуса, учебные классы и прилегающую инфраструктуру полигона. На объекте прогремели взрывы и начался сильный пожар, к месту происшествия стянулись бригады скорой помощи и МЧС. В результате удара разрушены ключевые тренировочные корпуса и ликвидирована материальная база подготовки. Процесс комплектования штурмовых отрядов был сорван.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, м. Севастополь",
-      "target": "Навчальний центр підготовки особового складу ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "27 серпня 2026 року Сили оборони України завдали точкового удару по військовому навчальному центру підготовки особового складу ЗС РФ у Севастополі. На базі цього центру здійснювалася вогнева підготовка, бойове злагодження штурмових підрозділів та навчання операторів БПЛА перед перекиданням на передову. Засоби ураження поцілили в казармені будівлі, навчальні класи тренажерних комплексів та споруди полігона. На території об'єкта пролунали вибухи й спалахнула пожежа, фіксувалося прибуття значної кількості карет швидкої допомоги. Удар зруйнував навчально-матеріальну базу та вивів комплекс із ладу. Знищення центру завадило плановій підготовці та ротації штурмових груп окупантів.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Sevastopol",
-      "target": "Russian Military Personnel Training Center",
-      "category": "Military",
-      "weapon": "Drone / Missile",
-      "details": "On August 27, 2026, Ukrainian defense forces delivered a targeted strike against a Russian military training center for combat personnel located in Sevastopol. The facility was actively used for tactical combat training, assault troop drills, and drone operator certification prior to battlefield deployment. Ukrainian strike assets accurately hit barracks blocks, specialized simulation classrooms, and support range structures. Secondary detonations ignited widespread blazes across the compound, prompting heavy emergency service responses. The precision strike demolished key instructional buildings and devastated the training infrastructure. This operation effectively paralyzed the ongoing training cycle of assault units.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 7
-  },
-  {
     "date": "26.08.2026",
     "lat": 56.1072,
     "lng": 44.1549,
@@ -1672,99 +804,6 @@ const strikeData = [
       "source": "General Staff of AFU, ASTRA, OSINT, Media"
     },
     "id": 10
-  },
-  {
-    "date": "26.08.2026",
-    "lat": 45.378,
-    "lng": 32.534,
-    "distance": 140,
-    "ru": {
-      "region": "АР Крым, Черноморский район, с. Оленевка",
-      "target": "Пункт управления и стартовая позиция БПЛА ВС РФ в районе мыса Тарханкут",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "26 августа 2026 года Силы обороны Украины нанесли прицельный удар ударными беспилотниками по замаскированному пункту управления и позиционному району запуска БПЛА ВС РФ возле Оленевки на мысе Тарханкут. Этот объект в западном Крыму использовался российскими подразделениями для координации разведывательных полетов над Черным морем и запуска ударных беспилотников по Одесской и Николаевской областям. Точным попаданием украинских средств поражения были уничтожены передвижные командно-штабные модули, антенные системы спутникового наведения и подготовленные к старту аппараты. Поражение пункта управления лишило противника возможности вести оперативную разведку морского побережья и сорвало очередную волну пусков дронов-камикадзе.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, Чорноморський район, с. Оленівка",
-      "target": "Пункт управління та стартова позиція БПЛА ЗС РФ у районі мису Тарханкут",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "26 серпня 2026 року Сили оборони України завдали прицільного удару безпілотниками по замаскованому пункту управління та позиційному району запуску БПЛА ЗС РФ поблизу Оленівки на мисі Тарханкут. Цей військовий об'єкт на заході Криму забезпечував управління розвідувальними польотами над Чорним морем та координував пуски ударних дронів по Одеській та Миколаївській областях. Точними ударами українських засобів ураження було знищено пересувні апаратні пункти, супутникові комплекси зв'язку та споряджені до польоту безпілотники. Успішна операція вивела з ладу критичний пункт управління окупантів і позбавила їх можливості відстежувати морську обстановку вздовж південного узбережжя.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske District, Olenivka",
-      "target": "Russian UAV Command Post and Launch Site at Cape Tarkhankut",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 26, 2026, Ukrainian forces conducted a surgical drone strike on a concealed Russian UAV command post and launch site near Olenivka on Cape Tarkhankut in western Crimea. The military installation handled coordination for naval reconnaissance flights over the Black Sea and directed long-range strike UAV missions targeting southern Ukraine. The direct precision strikes eliminated mobile command containers, satellite data uplink arrays, and ready-to-launch unmanned aircraft stationed on site. Neutralizing this specialized operations center severely degraded Russian maritime surveillance capabilities along coastal corridors and disrupted impending waves of kamikaze drone deployments across the southern theater.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 11
-  },
-  {
-    "date": "26.08.2026",
-    "lat": 45.986,
-    "lng": 34.548,
-    "distance": 165,
-    "ru": {
-      "region": "Херсонская область, Генический район, с. Чонгар",
-      "target": "Ремонтно-восстановительное подразделение и пункт техобслуживания техники ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "26 августа 2026 года украинские войска нанесли высокоточный комбинированный удар по ремонтно-восстановительному подразделению и базе техобслуживания ВС РФ в районе Чонгара на административной границе с Крымом. Данный передовой технический узел выполнял оперативный ремонт и восстановление поврежденных бронетранспортеров, танков и артиллерийских орудий, перебрасываемых на Запорожское и Херсонское направления. В результате серии точных попаданий были поражены ремонтные мастерские, передвижные мобильные комплексы и стоянка техники, ожидавшей эвакуации. Детонация хранилищ запчастей и ГСМ вызвала сильный пожар, полностью выведя подразделение из строя. Удар существенно затормозил возврат боеспособной тяжелой техники на передовые позиции.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Херсонська область, Генічеський район, с. Чонгар",
-      "target": "Ремонтно-відновлювальний підрозділ і пункт техобслуговування техніки ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракета",
-      "details": "26 серпня 2026 року українські війська завдали високоточного комбінованого удару по ремонтно-відновлювальному підрозділу та базі технічного обслуговування окупантів у районі Чонгара на адмінкордоні з Кримом. Цей польовий ремонтний вузол здійснював відновлення та регламентний ремонт пошкоджених бронемашин, танків і тягачів для угруповань на Запорізькому та Херсонському напрямках. Серія влучних ударів уразила майстерні техобслуговування, мобільні ремонтні станції та відкритий майданчик зосередження техніки. Пожежа та вторинні детонації знищили запаси вузлів і пально-мастильних матеріалів, паралізувавши роботу пункту. Удар зірвав плани ворога щодо швидкого повернення відремонтованої бронетехніки на фронт.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Kherson Oblast, Henichesk District, Chongar",
-      "target": "Russian Armored Vehicle Repair and Technical Maintenance Unit",
-      "category": "Military",
-      "weapon": "Drone / Missile",
-      "details": "On August 26, 2026, Ukrainian forces launched a precision combined strike on a Russian frontline vehicle repair and maintenance base near Chongar on the administrative boundary with Crimea. This critical maintenance node provided urgent repairs, component replacements, and field overhauls for damaged armored vehicles and heavy artillery supplying the Zaporizhzhia and Kherson fronts. Precision munitions struck engineering maintenance bays, mobile workshop trucks, and outdoor holding pens holding battle-damaged equipment. Secondary explosions of lubricants and spare parts stockpiles ignited widespread blazes that paralyzed operations. Destroying this facility significantly crippled the Russian logistics chain responsible for recycling damaged armor back to the front.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 12
-  },
-  {
-    "date": "26.08.2026",
-    "lat": 48.0158,
-    "lng": 37.8028,
-    "distance": 82,
-    "ru": {
-      "region": "Донецкая область, г. Донецк",
-      "target": "Запасной пункт управления (ЗПУ) 8-й общевойсковой армии ВС РФ",
-      "category": "ВПК",
-      "weapon": "Ракета",
-      "details": "26 августа 2026 года Воздушные силы Украины нанесли прицельный ракетный удар воздушного базирования по защищенному запасному пункту управления 8-й общевойсковой армии ВС РФ в оккупированном Донецке. С данного защищенного штабного узла российское высшее командование осуществляло оперативное управление наступательными группировками на Кураховском и Покровском направлениях. Высокоточные авиационные ракеты пробили железобетонные перекрытия бункера, вызвав обрушение подземных конструкций, сильный пожар и детонацию аппаратуры спецсвязи. В результате успешной операции пункт управления был полностью выведен из строя, что привело к потере устойчивого оперативного руководства частями армии противника на ключевом участке фронта.",
-      "source": "Генштаб ВСУ, Воздушные силы ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "Донецька область, м. Донецьк",
-      "target": "Запасний пункт управління (ЗПУ) 8-ї загальновійськової армії ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Ракета",
-      "details": "26 серпня 2026 року Повітряні сили ЗСУ завдали прицільного удару високоточними ракетами повітряного базування по захищеному запасному пункту управління 8-ї загальновійськової армії РФ в окупованому Донецьку. З цього підземного штабного об'єкта командування окупантів координувало дії ударних підрозділів на Покровському та Курахівському напрямках. Авіаційні ракети пробили залізобетонні перекриття комплексу, спричинивши масштабні руйнування, пожежу та знищення обладнання закритого військового зв'язку. Внаслідок результативного ураження пункт управління зазнав критичних ушкоджень, що спричинило суттєву дезорганізацію системи оперативного керівництва військами агресора на лінії зіткнення.",
-      "source": "Генштаб ЗСУ, Повітряні сили ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Donetsk",
-      "target": "Alternate Command Post of the Russian 8th Combined Arms Army",
-      "category": "Military",
-      "weapon": "Missile",
-      "details": "On August 26, 2026, the Ukrainian Air Force conducted a high-precision air-launched missile strike against a fortified alternate command post of the Russian 8th Combined Arms Army in occupied Donetsk. From this fortified headquarters facility, senior commanders coordinated tactical operations and offensive pushes along the Pokrovsk and Kurakhove axes. Precision-guided air munitions penetrated reinforced concrete bunker ceilings, causing structural collapses, severe fires, and destroying encrypted communications hardware. The strike completely knocked out the command hub, causing acute disruptions in operational command-and-control capabilities for Russian units across this contested front.",
-      "source": "General Staff of AFU, Ukrainian Air Force, OSINT"
-    },
-    "id": 13
   },
   {
     "date": "25.08.2026",
@@ -1861,68 +900,6 @@ const strikeData = [
   },
   {
     "date": "25.08.2026",
-    "lat": 45.7144,
-    "lng": 33.8596,
-    "distance": 140,
-    "ru": {
-      "region": "АР Крым, пгт Первомайское",
-      "target": "Ремонтно-восстановительная база бронетанковой и автомобильной техники ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "25 августа 2026 года Силы обороны Украины нанесли результативный удар ударными дронами по крупной ремонтно-восстановительной базе оккупационных войск в пгт Первомайское на севере Крыма. Данный специализированный объект ВПК использовался российским военным командованием для капитального ремонта, восстановления и регламентного обслуживания подбитой бронетехники, самоходных артиллерийских установок и армейских тягачей группировки войск «Днепр». Несколько ударных БПЛА поразили основные ремонтные ангары, механические цеха и открытую стоянку военной техники, ожидавшей запчастей. В результате серии детонаций и сильного пожара было уничтожено и повреждено оборудование для техобслуживания и находившиеся в боксах бронемашины, что сорвало темпы восстановления техники для передовой.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, смт Первомайське",
-      "target": "Ремонтно-відновлювальна база бронетанкової та автомобільної техніки ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "25 серпня 2026 року Сили оборони України здійснили результативну атаку ударними дронами по великій ремонтно-відновлювальній базі окупаційних військ у смт Первомайське на півночі Криму. Цей спеціалізований об'єкт ВПК використовувався командуванням РФ для відновлення, капітального ремонту та обслуговування пошкодженої бронетехніки, артилерійських систем і військового автотранспорту угруповання «Днєпр». Українські безпілотники влучили у головні ремонтні цехи, склад запчастин та майданчик із зосередженням бойових машин. Серія вибухів та масштабна пожежа знищили високотехнологічне ремонтне обладнання й пошкодили відновлювану техніку, що суттєво загальмувало процес поповнення бронепарку російських військ на південному фронті.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Pervomayskoye",
-      "target": "Russian Military Armored Vehicle Repair and Maintenance Base",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 25, 2026, Ukrainian forces conducted an effective drone strike targeting a major military repair and recovery base in Pervomayskoye in northern Crimea. Operating as a critical maintenance hub, the facility was utilized by Russian forces to overhaul, repair, and maintain battle-damaged tanks, armored personnel carriers, artillery pieces, and heavy military trucks for the 'Dnepr' grouping of forces. Strike UAVs successfully hit primary maintenance bays, engineering workshops, and open-air holding areas containing hardware awaiting spare parts. The resulting explosions and extensive blazes severely damaged maintenance rigs, specialized repair tools, and armored vehicles inside the workshops, significantly disrupting armored fleet replenishment for frontline Russian units.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 17
-  },
-  {
-    "date": "25.08.2026",
-    "lat": 45.508,
-    "lng": 32.7,
-    "distance": 126,
-    "ru": {
-      "region": "АР Крым, пгт Черноморское",
-      "target": "Узел связи и ретранслятор командного управления БПЛА «Герань» и «Гербера»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "25 августа 2026 года подразделения Сил обороны Украины поразили защищенный узел связи и специализированный ретрансляционный комплекс ВС РФ в районе Черноморского на западе Крыма. Оккупанты использовали эту позицию для ретрансляции команд управления, телеметрии и координации маршрутов ударных дронов типа «Герань-2» и ложных целей «Гербера», запускаемых по южным областям Украины. Точечный удар беспилотника привел к поражению аппаратных контейнеров, мачт спутниковой связи и антенных решеток наведения. В результате уничтожения ключевого связного узла противник потерял возможность стабильного низковысотного управления беспилотниками в прибрежной полосе Черного моря, что существенно снизило эффективность их последующих ночных налетов.",
-      "source": "Генштаб ВСУ, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, смт Чорноморське",
-      "target": "Вузол зв'язку та ретранслятор командного управління БПЛА «Герань» і «Гербера»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "25 серпня 2026 року Сили оборони України успішно уразили захищений вузол зв'язку та спеціалізований ретрансляційний комплекс окупантів у районі Чорноморського на заході Криму. Російські війська використовували цю позицію для передачі сигналів телеметрії, навігації та корекції траєкторій польоту ударних дронів «Герань-2» і дронів-пасток «Гербера» під час атак на південь України. Точний удар українського дрона знищив апаратні модулі зв'язку, супутникове обладнання та антенно-фідерні системи наведення. Внаслідок ліквідації цього ретранслятора окупанти втратили надійний канал управління безпілотниками у прибережній зоні Чорного моря, що суттєво послабило координацію ворожих повітряних операцій.",
-      "source": "Генштаб ЗСУ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske",
-      "target": "Communications and Relay Hub for 'Geran' and 'Gerbera' UAVs",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 25, 2026, Ukrainian strike forces carried out a precision strike on a specialized military communications and drone relay station near Chornomorske in western Crimea. The Russian military utilized this coastal relay post to transmit guidance commands, telemetry, and low-altitude flight adjustments for 'Geran-2' kamikaze drones and 'Gerbera' decoy UAVs targeting southern Ukrainian regions. The drone strike destroyed modular communication containers, satellite uplink receivers, and directional antenna arrays on site. Neutralizing this critical relay infrastructure stripped Russian operators of reliable real-time command channels over coastal Black Sea airspace, substantially reducing the coordination and operational precision of subsequent drone sorties.",
-      "source": "General Staff of AFU, OSINT"
-    },
-    "id": 18
-  },
-  {
-    "date": "25.08.2026",
     "lat": 48.574,
     "lng": 39.3078,
     "distance": 128,
@@ -1951,37 +928,6 @@ const strikeData = [
       "source": "General Staff of AFU, OSINT"
     },
     "id": 19
-  },
-  {
-    "date": "24.08.2026",
-    "lat": 50.858,
-    "lng": 39.062,
-    "distance": 222,
-    "ru": {
-      "region": "Воронежская область, г. Острогожск",
-      "target": "Полевой склад боеприпасов группировки войск «Запад» ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 24 августа 2026 года Главное управление разведки МО Украины успешно атаковало ударными беспилотниками крупный полевой склад боеприпасов в районе Острогожска Воронежской области. На объекте группировки войск «Запад» противник складировал свыше пяти тысяч тонн боеприпасов: артиллерийские снаряды различных калибров, танковые выстрелы, зенитные управляемые ракеты и патроны. Точные прилеты украинских БПЛА вызвали масштабный пожар с непрерывной вторичной детонацией, продолжавшейся почти двое суток. Власти региона ввели режим чрезвычайной ситуации на территории трех поселений и эвакуировали свыше двухсот жителей. Было нарушено электроснабжение прилегающих районов, повреждена инфраструктура военного полигона. Уничтожение арсенала сорвало запланированное снабжение подразделений ВС РФ на передовой.",
-      "source": "ГУР МО Украины, губернатор Воронежской области, ASTRA, OSINT"
-    },
-    "uk": {
-      "region": "Воронезька область, м. Острогозьк",
-      "target": "Польовий склад боєприпасів угруповання військ «Запад» ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч на 24 серпня 2026 року Головне управління розвідки МО України успішно атакувало ударними безпілотниками великий польовий склад боєприпасів біля міста Острогозьк Воронезької області. На об'єкті угруповання військ «Запад» противник накопичив понад п'ять тисяч тонн боєприпасів: артилерійські снаряди, танкові постріли, зенітні керовані ракети та набої. Точні влучання українських дронів спричинили масштабну пожежу з безперервною вторинною детонацією, що тривала майже дві доби. Влада регіону оголосила режим надзвичайної ситуації на території трьох поселень та екстрено евакуювала понад двісті жителів. Було знеструмлено прилеглі селища та пошкоджено інфраструктуру військового полігону. Знищення цього арсеналу зірвало постачання снарядів окупаційним військам на передовій.",
-      "source": "ГУР МО України, губернатор Воронезької області, ASTRA, OSINT"
-    },
-    "en": {
-      "region": "Voronezh Oblast, Ostrogozhsk",
-      "target": "Field Ammunition Depot of the Russian 'West' Group of Forces",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On the night of August 24, 2026, the Main Directorate of Intelligence (HUR) of Ukraine executed a targeted drone strike against a major forward ammunition depot near Ostrogozhsk, Voronezh Oblast. The targeted facility of Russia's 'West' military group stockpiled over five thousand tons of munitions, including artillery shells, tank rounds, surface-to-air missiles, and small arms ammunition. Precision drone impacts ignited a massive fire triggering non-stop secondary detonations lasting nearly two full days. Local authorities declared a state of emergency across three settlements and evacuated over two hundred residents from danger zones. Power lines and military test range infrastructure suffered extensive damage. The complete destruction of this depot severely disrupted munitions replenishment for frontline Russian units.",
-      "source": "HUR MOU, Voronezh Oblast Governor, ASTRA, OSINT"
-    },
-    "id": 20
   },
   {
     "date": "24.08.2026",
@@ -2139,130 +1085,6 @@ const strikeData = [
     "id": 25
   },
   {
-    "date": "23.08.2026",
-    "lat": 45.5085,
-    "lng": 32.7052,
-    "distance": 125,
-    "ru": {
-      "region": "АР Крым, пгт Черноморское (бухта Узкая)",
-      "target": "Пункт базирования морских дронов и наземный ретранслятор БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракетный удар",
-      "details": "В ночь на 23 августа 2026 года Силы обороны Украины нанесли комбинированный удар по пункту базирования морских дронов и объектам связи ВС РФ в поселке Черноморское на западе Крыма. В ходе операции были успешно поражены защищенные ангары для хранения и подготовки морских безэкипажных катеров (МБЭК), использовавшихся противником для патрулирования и атак в Черном море. Также точным попаданием уничтожен наземный ретрансляторный узел связи, обеспечивавший управление ударными беспилотниками типов «Герань-2» и «Гербера» при налетах на южные регионы Украины. Местные жители сообщали о серии мощных детонаций со стороны бухты Узкая и сильном задымлении прибрежной зоны. Вывод из строя ретранслятора и катеров существенно ослабил возможности российских войск по координации воздушных налетов и морскому контролю у крымского побережья.",
-      "source": "Генштаб ВСУ, ВМС ВСУ / Силы обороны, OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, смт Чорноморське (бухта Вузька)",
-      "target": "Пункт базування морських дронів та наземний ретранслятор БпЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракетний удар",
-      "details": "У ніч на 23 серпня 2026 року Сили оборони України завдали комбінованого удару по пункту базування морських дронів та об'єктах зв'язку ЗС РФ у селищі Чорноморське на заході Криму. Під час операції було успішно уражено захищені ангари зберігання та підготовки морських безекіпажних катерів (МБеК), які противник використовував для патрулювання в Чорному морі. Також точним влучанням знищено наземний ретрансляторний вузол зв'язку, що забезпечував управління польотами ударних безпілотників «Герань-2» та «Гербера» по півдню України. Місцеві жителі зафіксували серію потужних вторинних детонацій з боку бухти Вузька та сильне задимлення узбережжя. Виведення з ладу ретранслятора та катерів суттєво послабило здатність російських військ координувати повітряні нальоти і контролювати морські підходи до Криму.",
-      "source": "Генштаб ЗСУ, ВМС ЗСУ / Сили оборони, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske (Vuzka Bay)",
-      "target": "Russian USV Staging Base and Ground UAV Relay Station",
-      "category": "Military",
-      "weapon": "Drone / Missile Strike",
-      "details": "On the night of August 23, 2026, the Ukrainian Defense Forces executed a combined strike against a Russian naval drone staging facility and communications hub in Chornomorske, western Crimea. The precision operation hit hardened shelters used for the storage, maintenance, and deployment of unmanned surface vessels (USVs) patrolling Black Sea waters. In addition, Ukrainian strikes destroyed a vital ground-based radio relay communications station utilized by Russian forces to control Geran-2 and Gerber strike drones targeting southern Ukraine. Local residents reported a succession of powerful secondary explosions across Vuzka Bay accompanied by thick plumes of smoke along the coast. Disabling this communications relay station and the naval drone base severely compromised Russia's ability to coordinate swarm drone attacks and maintain maritime patrols around the Crimean peninsula.",
-      "source": "General Staff of AFU, Ukrainian Navy / Defense Forces, OSINT"
-    },
-    "id": 26
-  },
-  {
-    "date": "23.08.2026",
-    "lat": 45.195,
-    "lng": 33.305,
-    "distance": 169,
-    "ru": {
-      "region": "АР Крым, г. Евпатория (район п. Уютное)",
-      "target": "Радиолокационная станция «СТ-68» (36Д6М) 3-го радиотехнического полка",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "23 августа 2026 года подразделения Сил беспилотных систем ВСУ во взаимодействии с другими силами нанесли точный удар по позициям 3-го радиотехнического полка в районе Евпатории и села Уютное в Крыму. В результате атаки дронов-камикадзе была поражена и выведена из строя трехкоординатная радиолокационная станция обнаружения маловысотных целей «СТ-68» (36Д6М). Данная РЛС являлась ключевым элементом эшелонированной системы ПВО оккупантов, обеспечивая целеуказание для зенитно-ракетных комплексов С-300 и С-400 и контролируя воздушное пространство над Черным морем. После попадания на позиции РЛС возник пожар с уничтожением аппаратной машины и антенного поста. Оккупационные паблики заявляли о работе систем противовоздушной обороны, однако спутниковые снимки и OSINT-аналитики зафиксировали очаги возгорания на боевой позиции. Уничтожение радара создало коридор для дальнейших ударов украинской авиации и дронов.",
-      "source": "Генштаб ВСУ, Силы беспилотных систем (СБС), OSINT"
-    },
-    "uk": {
-      "region": "АР Крим, м. Євпаторія (район с. Затишне)",
-      "target": "Радіолокаційна станція «СТ-68» (36Д6М) 3-го радіотехнічного полку",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "23 серпня 2026 року підрозділи Сил безпілотних систем ЗСУ у взаємодії з іншими формуваннями завдали влучного удару по позиціях 3-го радіотехнічного полку в районі Євпаторії та села Затишне в Криму. Внаслідок атаки дронів-камікадзе було уражено та виведено з ладу трикоординатну радіолокаційну станцію виявлення маловисотних цілей «СТ-68» (36Д6М). Ця РЛС була ключовим елементом ешелонованої системи ППО окупантів, забезпечуючи цілевказання для комплексів С-300 та С-400 і контроль повітряного простору над морем. Після прильоту на радіотехнічній позиції спалахнула пожежа, яка знищила апаратну машину й антенний пост. Окупаційні джерела заявляли про відбиття нальоту, однак супутникові знімки та OSINT-аналітики зафіксували термоточки на бойовій позиції. Знищення радара створило пролом у системі виявлення цілей для подальших атак українських дронів та ракет.",
-      "source": "Генштаб ЗСУ, Сили безпілотних систем (СБС), OSINT"
-    },
-    "en": {
-      "region": "Crimea, Yevpatoriya (Zatyshne area)",
-      "target": "ST-68 (36D6M) Low-Altitude Radar Station of the 3rd Radio-Technical Regiment",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 23, 2026, the Ukrainian Unmanned Systems Forces, in coordination with other defense units, carried out a precision strike against positions of the 3rd Radio-Technical Regiment near Yevpatoriya and Zatyshne in Crimea. The kamikaze drone strike neutralized an ST-68 (36D6M) three-dimensional low-altitude air surveillance radar system. This radar was an essential component of Russia's integrated air defense network in western Crimea, providing early warning and targeting data for S-300 and S-400 missile batteries while monitoring the Black Sea airspace. The impact triggered an intense fire that engulfed the operations cabin and the antenna post. While Russian occupation authorities claimed the drones were intercepted, satellite imagery and OSINT analysts confirmed heat signatures and severe damage at the site. The loss of this radar opened a critical blind spot in regional air defenses.",
-      "source": "General Staff of AFU, SBS, OSINT"
-    },
-    "id": 27
-  },
-  {
-    "date": "23.08.2026",
-    "lat": 45.7032,
-    "lng": 34.3916,
-    "distance": 172,
-    "ru": {
-      "region": "АР Крым, г. Джанкой",
-      "target": "Склады материально-технического обеспечения и ремонтная база ВС РФ",
-      "category": "Логистика / ВПК",
-      "weapon": "Дрон / Ракетный удар",
-      "details": "В ночь на 23 августа 2026 года Силы обороны Украины нанесли массированный огневой удар по военным объектам в Джанкое на севере временно оккупированного Крыма. Точными попаданиями были поражены крупные склады материально-технических средств (МТС) и ремонтные подразделения ВС РФ. Этот объект выполнял функцию главного железнодорожного и автомобильного распределительного узла снабжения группировки российских войск на Херсонском и Запорожском направлениях. На складах хранились запчасти для бронетехники, ремонтные комплекты и боеприпасы. Местные жители и агенты партизанского движения «АТЕШ» зафиксировали многочисленные взрывы и детонацию боекомплекта, сопровождавшиеся сильным пожаром. Поражение тылового узла сорвало графики восстановления поврежденной тяжелой техники и затруднило поставки материальных ресурсов для передовых частей оккупантов.",
-      "source": "Генштаб ВСУ, партизанское движение «АТЕШ», СМИ"
-    },
-    "uk": {
-      "region": "АР Крим, м. Джанкой",
-      "target": "Склади матеріально-технічного забезпечення та ремонтна база ЗС РФ",
-      "category": "Логістика / ВПК",
-      "weapon": "Дрон / Ракетний удар",
-      "details": "У ніч на 23 серпня 2026 року Сили оборони України завдали масованого вогневого удару по військових об'єктах у Джанкої на півночі тимчасово окупованого Криму. Точними влучаннями було уражено великі склади матеріально-технічних засобів (МТЗ) та ремонтні підрозділи ЗС РФ. Цей об'єкт виконував функцію головного залізничного й автомобільного розподільчого вузла забезпечення угруповання російських військ на Херсонському та Запорізькому напрямках. На території зберігалися запчастини до бронетехніки, ремонтне обладнання та боєприпаси. Місцеві жителі та агенти партизанського руху «АТЕШ» зафіксували численні вибухи та тривалу детонацію, що супроводжувалися потужною пожежею. Ураження тилового вузла зірвало графіки відновлення пошкодженої важкої техніки та суттєво ускладнило постачання ресурсів на лінію фронту.",
-      "source": "Генштаб ЗСУ, партизанський рух «АТЕШ», ЗМІ"
-    },
-    "en": {
-      "region": "Crimea, Dzhankoy",
-      "target": "Russian Military Logistics Depots and Equipment Repair Base",
-      "category": "Logistics / Military-Industrial Complex",
-      "weapon": "Drone / Missile Strike",
-      "details": "On the night of August 23, 2026, the Ukrainian Defense Forces carried out a concentrated strike against Russian military logistics assets in Dzhankoy, northern Crimea. Ukrainian strikes successfully hit extensive material-technical supply depots (MTS) and equipment repair facilities operated by the Russian Armed Forces. The targeted base functioned as a central rail and highway distribution node supporting Russian military formations deployed across the Kherson and Zaporizhzhia fronts. The complex housed essential vehicle spare parts, specialized repair kits, and ammunition stocks. Local residents and partisan scouts from the ATESH movement reported secondary explosions and a massive blaze at the site. The disruption of this primary logistical and repair hub hampered Russian field maintenance operations and stalled critical supply flows to frontline units.",
-      "source": "General Staff of AFU, ATESH Movement, Media"
-    },
-    "id": 28
-  },
-  {
-    "date": "23.08.2026",
-    "lat": 44.59,
-    "lng": 33.52,
-    "distance": 238,
-    "ru": {
-      "region": "АР Крым, г. Севастополь",
-      "target": "Радиолокационная станция метрового диапазона «Небо-У» 31-й дивизии ПВО",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 23 августа 2026 года Силы беспилотных систем ВСУ нанесли результативный удар дронами по объектам противовоздушной обороны в Севастополе. В результате прилета была поражена радиолокационная станция метрового диапазона «Небо-У» из состава 31-й дивизии ПВО РФ. Этот дорогостоящий комплекс стоимостью около 100 миллионов долларов способен обнаруживать воздушные цели, включая малозаметные самолеты и крылатые ракеты, на дистанциях до 600 км. Губернатор Севастополя подтвердил отражение налета и падение многочисленных обломков на Северной стороне и в районе Гончарного. Тем не менее украинские средства поражения пробили купол ПВО и нанесли критические повреждения антенной решетке и командному пункту РЛС. Потеря станции существенно снизила возможности российской противовоздушной обороны по контролю крымского сектора и своевременному отражению ракетных ударов.",
-      "source": "Силы беспилотных систем (СБС), Генштаб ВСУ, ASTRA, СМИ"
-    },
-    "uk": {
-      "region": "АР Крим, м. Севастополь",
-      "target": "Радіолокаційна станція метрового діапазону «Небо-У» 31-ї дивізії ППО",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч на 23 серпня 2026 року Сили безпілотних систем ЗСУ завдали результативного удару дронами по об'єктах протиповітряної оборони в Севастополі. Внаслідок влучання було уражено радіолокаційну станцію метрового діапазону «Небо-У» зі складу 31-ї дивізії ППО РФ. Цей високовартісний комплекс ціною близько 100 мільйонів доларів здатний виявляти повітряні цілі, зокрема малопомітні літаки та крилаті ракети, на відстані до 600 км. Губернатор Севастополя підтвердив відбиття нальоту та падіння численних уламків на Північній стороні й біля Гончарного. Проте українські дрони пробили систему ППО та завдали критичних пошкоджень антенній решітці й командному пункту РЛС. Втрата цієї станції суттєво знизила можливості російської протиповітряної оборони щодо раннього виявлення повітряних цілей над акваторією Чорного моря.",
-      "source": "Сили безпілотних систем (СБС), Генштаб ЗСУ, ASTRA, ЗМІ"
-    },
-    "en": {
-      "region": "Crimea, Sevastopol",
-      "target": "Nebo-U VHF Radar System of the 31st Air Defense Division",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On the night of August 23, 2026, the Ukrainian Unmanned Systems Forces executed a targeted drone strike against air defense infrastructure in Sevastopol, Crimea. The strike successfully hit a high-value Nebo-U VHF-band mobile surveillance radar operated by Russia's 31st Air Defense Division. Estimated at roughly 100 million dollars, the Nebo-U system provides long-range air surveillance capable of detecting stealth aircraft, drones, and cruise missiles at ranges up to 600 km. Sevastopol's Russian-installed governor reported extensive anti-air fire and debris falling across the Northern Bay and Goncharne districts. However, Ukrainian strike drones penetrated the defensive perimeter, inflicting critical damage on the radar's phased antenna array and command module. The loss of this radar degraded early warning capabilities across the Crimean air operational zone.",
-      "source": "Unmanned Systems Forces (SBS), General Staff of AFU, ASTRA, Media"
-    },
-    "id": 29
-  },
-  {
     "date": "22.08.2026",
     "lat": 52.9664,
     "lng": 49.7335,
@@ -2416,37 +1238,6 @@ const strikeData = [
       "source": "President of Ukraine, General Staff of AFU, SSO/SBU, OSINT (Astra), Media"
     },
     "id": 34
-  },
-  {
-    "date": "21.08.2026",
-    "lat": 45.5085,
-    "lng": 32.73,
-    "distance": 126,
-    "ru": {
-      "region": "АР Крым, Черноморский район (с. Новосельское / пос. Черноморское)",
-      "target": "Склад материально-технического обеспечения и пункт управления БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "21 августа 2026 года Силы обороны Украины нанесли точный удар по военным объектам ВС РФ на западе временно оккупированного Крыма в районе поселка Новосельское и поселка Черноморское. В ходе скоординированной атаки ударных дронов был полностью уничтожен крупный склад материально-технического обеспечения (МТО), снабжавший береговые подразделения и расчеты противовоздушной обороны оккупантов. Также украинские силы вывели из строя наземные ретрансляционные станции связи и пункт оперативного управления ударными БПЛА типа «Герань-2» и «Гербера» на мысе Тарханкут. На территории пораженного объекта прогремели взрывы и начался сильный пожар. Поражение логистического узла и узла ретрансляции нарушило координацию и дальность запусков российских дронов-камикадзе в акватории Черного моря и прибрежных районах юга Украины.",
-      "source": "Генштаб ВСУ, OSINT (Крымский ветер), СМИ"
-    },
-    "uk": {
-      "region": "АР Крим, Чорноморський район (сел. Новосільське / смт Чорноморське)",
-      "target": "Склад матеріально-технічного забезпечення та пункт управління БпЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "21 серпня 2026 року Сили оборони України завдали точного удару по військових об'єктах ЗС РФ на заході тимчасово окупованого Криму в районі селища Новосільське та смт Чорноморське. Під час скоординованої атаки ударних дронів було знищено великий склад матеріально-технічного забезпечення (МТЗ), що постачав ресурси береговим підрозділам та розрахункам ППО загарбників. Також українські захисники вивели з ладу наземні ретрансляційні станції зв'язку та пункт оперативного управління ударними БпЛА типу «Герань-2» і «Гербера» на мисі Тарханкут. На території уражених об'єктів пролунали потужні вибухи та здійнялася сильна пожежа. Знищення логістичного пункту і ретрансляторів підірвало координацію та ускладнило польоти російських дронів-камікадзе над Чорним морем та півднем України.",
-      "source": "Генштаб ЗСУ, OSINT (Кримський вітер), ЗМІ"
-    },
-    "en": {
-      "region": "Autonomous Republic of Crimea, Chornomorskyi District (Novosilske / Chornomorske)",
-      "target": "Russian Military Logistics Depot and UAV Command/Relay Post",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 21, 2026, the Ukrainian Defense Forces carried out a precision drone strike against Russian military logistics and control installations near Novoselske and Chornomorske in western occupied Crimea. The coordinated UAV attack struck and destroyed a major material and technical logistics depot that supplied coastal defense garrisons and anti-aircraft missile units. Furthermore, the strikes neutralized ground-based control antennas and command relay posts on Cape Tarkhankut used for directing Geran-2 and Gerber strike UAV operations. The impacts ignited large blazes accompanied by explosive detonations of stockpiled equipment. Destroying this logistical node and communication relay equipment disrupted Russian UAV piloting capabilities and coordination across the Black Sea operational theater.",
-      "source": "General Staff of AFU, OSINT (Crimean Wind), Media"
-    },
-    "id": 35
   },
   {
     "date": "20.08.2026",
@@ -2604,254 +1395,6 @@ const strikeData = [
     "id": 40
   },
   {
-    "date": "18.08.2026",
-    "lat": 48.5683,
-    "lng": 38.6436,
-    "distance": 80,
-    "ru": {
-      "region": "Луганская область, г. Кадиевка (оккупированная территория)",
-      "target": "Склад материально-технического обеспечения и вооружения ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Высокоточный удар",
-      "details": "18 августа 2026 года Силы обороны Украины осуществили результативный огневой налет на крупный склад материально-технического обеспечения российских войск в городе Кадиевка на оккупированной части Луганской области. Данный логистический объект в промышленной зоне использовался оккупантами для накопления инженерного имущества, запасных частей к тяжелой бронетехнике, партий стрелкового вооружения и боеприпасов для снабжения передовых частей. В результате серии точных прилетов украинских ударных средств на складе произошла масштабная детонация хранящегося боекомплекта и начался сильный пожар. В сводке Генштаба ВСУ подтверждено успешное поражение объекта и уничтожение значительных объемов военных запасов. Ликвидация этого хаба вызвала логистический сбой в обеспечении группировки противника на данном оперативном направлении.",
-      "source": "Генштаб ВСУ, ОСГВ «Хортица», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Луганська область, м. Кадіївка (окупована територія)",
-      "target": "Склад матеріально-технічного забезпечення та озброєння ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Високоточний удар",
-      "details": "18 серпня 2026 року Сили оборони України здійснили результативний вогневий наліт на великий склад матеріально-технічного забезпечення російських військ у місті Кадіївка на окупованій частині Луганської області. Цей логістичний об'єкт у промисловій зоні використовувався окупантами для накопичення інженерного майна, запасних частин до важкої бронетехніки, партій стрілецької зброї та боєприпасів для забезпечення передових підрозділів. У результаті серії влучних прильотів українських ударних засобів на складі сталася масштабна детонація накопиченого боєкомплекту та спалахнула сильна пожежа. У зведенні Генштабу ЗСУ підтверджено успішне ураження об'єкта та знищення значних обсягів військових запасів. Ліквідація цього хабу спричинила логістичний збій у забезпеченні угруповання ворога на цьому напрямку.",
-      "source": "Генштаб ЗСУ, ОСУВ «Хортиця», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Kadiivka (Occupied Territory)",
-      "target": "Material-Technical Logistics Support and Arms Depot of Russian Army",
-      "category": "Military",
-      "weapon": "Drone / Precision Strike",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces conducted an effective precision strike against a major material-technical logistics supply depot of Russian forces in Kadiivka in occupied Luhansk Oblast. Located within an industrial district, the logistical facility was heavily utilized by Russian forces for warehousing engineering equipment, heavy armor spare parts, small arms caches, and artillery munitions intended for frontline units. Direct hits from Ukrainian strike assets triggered intense secondary detonations of stockpiled munitions and extensive fires across the compound. The General Staff of the Armed Forces of Ukraine verified the successful neutralization of the facility and the destruction of large military stockpiles. Disabling this logistics hub caused significant supply disruptions for enemy combat detachments operating on this axis.",
-      "source": "General Staff of AFU, OSGT Khortytsia, OSINT, Media"
-    },
-    "id": 41
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 48.8986,
-    "lng": 38.4311,
-    "distance": 64,
-    "ru": {
-      "region": "Луганская область, г. Лисичанск (оккупированная территория)",
-      "target": "Район сосредоточения вооружения и военной техники (ВВТ) ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракетное вооружение",
-      "details": "18 августа 2026 года подразделения Сил обороны Украины нанесли массированный огневой удар по выявленному району сосредоточения вооружения и военной техники российских оккупационных войск в Лисичанске Луганской области. На территории промышленной площадки противник организовал ремонтную базу и пункт стоянки танков, боевых бронированных машин и самоходной артиллерии, готовившихся к переброске на передовую. Украинские средства дальнего поражения точно накрыли ангары и открытые стоянки с техникой, вызвав повторные взрывы боекомплекта и топлива. По официальным данным Генштаба ВСУ, в результате налета выведено из строя значительное количество бронетехники и уничтожена живая сила подразделений техобслуживания. Удар сорвал оперативное усиление бронегрупп противника на восточном участке фронта.",
-      "source": "Генштаб ВСУ, ОСГВ «Хортица», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Луганська область, м. Лисичанськ (окупована територія)",
-      "target": "Район зосередження озброєння та військової техніки (ОВТ) ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракетне озброєння",
-      "details": "18 серпня 2026 року підрозділи Сил оборони України завдали масованого вогневого удару по виявленому району зосередження озброєння та військової техніки російських окупаційних військ у Лисичанську Луганської області. На території промислового майданчика противник облаштував ремонтну базу та пункт стоянки танків, бойових броньованих машин і самохідної артилерії, що готувалися до перекидання на передову. Українські далекобійні засоби ураження влучно накрили ангари та відкриті майданчики з технікою, спричинивши повторні вибухи боєкомплекту і пального. За офіційними даними Генштабу ЗСУ, у результаті нальоту виведено з ладу значну кількість бронетехніки та знищено особовий склад ремонтних підрозділів. Удар зірвав оперативне підсилення бронегруп ворога на східній ділянці фронту.",
-      "source": "Генштаб ЗСУ, ОСУВ «Хортиця», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Lysychansk (Occupied Territory)",
-      "target": "Concentration Area of Russian Military Equipment and Armored Vehicles",
-      "category": "Military",
-      "weapon": "Drone / Strike Missiles",
-      "details": "On August 18, 2026, Ukrainian Defense Forces delivered a concentrated precision strike on an identified staging area for Russian military weaponry and armored combat vehicles in Lysychansk, Luhansk Oblast. Set up within an industrial plant, the site served as an armored repair base and forward staging area for main battle tanks, infantry fighting vehicles, and self-propelled artillery earmarked for front-line deployment. Long-range Ukrainian strike assets accurately blanketed vehicle workshops and open staging yards, triggering secondary cook-offs of loaded ammunition and fuel reserves. According to the General Staff of the AFU, the strike successfully disabled numerous heavy combat vehicles and eliminated maintenance personnel. The attack effectively prevented the timely armored reinforcement of enemy assault units on the eastern front.",
-      "source": "General Staff of AFU, OSGT Khortytsia, OSINT, Media"
-    },
-    "id": 42
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 48.6989,
-    "lng": 39.0622,
-    "distance": 109,
-    "ru": {
-      "region": "Луганская область, Северодонецкий район, с. Лобачево (оккупированная территория)",
-      "target": "Склад хранения и комплектации ударных БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 августа 2026 года Силы обороны Украины нанесли результативный точечный удар по тыловому складу хранения и комплектации беспилотных летательных аппаратов ВС РФ в районе села Лобачево на Луганщине. На объекте противник сосредоточил запасы ударных дронов тактического звена, модули управления, оптико-электронные блоки и партии боевых частей для БПЛА, использовавшихся для налетов на позиции украинских защитников. Прямое попадание украинского ударного дрона вызвало воспламенение помещений склада и детонацию хранившихся зарядов взрывчатки. Сводка Генштаба ВСУ подтвердила полное поражение объекта и уничтожение значительного арсенала беспилотников. Потеря склада парализовала работу расчетов операторов вражеских дронов на прилегающем участке фронта и снизила интенсивность воздушных атак противника.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Луганська область, Сєвєродонецький район, с. Лобачеве (окупована територія)",
-      "target": "Склад зберігання та комплектації ударних БпЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 серпня 2026 року Сили оборони України завдали результативного точкового удару по тиловому складу зберігання та комплектації безпілотних літальних апаратів ЗС РФ у районі села Лобачеве на Луганщині. На об'єкті противник зосередив запаси ударних дронів тактичної ланки, модулі управління, оптико-електронні блоки та партії бойових частин для БпЛА, які застосовувалися для нальотів на позиції українських захисників. Пряме влучання українського ударного дрона спричинило займання приміщень складу та детонацію збережених зарядів вибухівки. Зведення Генштабу ЗСУ підтвердило повне ураження об'єкта та знищення значного арсеналу безпілотників. Втрата складу паралізувала роботу розрахунків операторів ворожих дронів на прилеглій ділянці фронту та знизила інтенсивність повітряних атак ворога.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Sievierodonetsk District, Lobacheve (Occupied Territory)",
-      "target": "Strike UAV Storage and Assembly Depot of Russian Army",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces launched a precision strike against a rear storage and staging depot for Russian tactical unmanned aerial vehicles near the village of Lobacheve in Luhansk Oblast. The Russian military utilized the facility to stockpile tactical strike drones, ground control datalinks, optical payload units, and high-explosive warheads utilized for combat sorties against Ukrainian lines. A direct hit from a Ukrainian strike UAV ignited the main storage buildings and set off powerful secondary blasts of stored explosive components. The General Staff of the Armed Forces of Ukraine verified the destruction of the drone facility and its specialized inventories. Neutralizing this depot crippled the operational readiness of Russian UAV crews and lessened aerial bombardment pressure across the sector.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 43
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 47.6781,
-    "lng": 36.9856,
-    "distance": 126,
-    "ru": {
-      "region": "Донецкая область, Волновахский район, с. Новопетриковка (оккупированная территория)",
-      "target": "Склад хранения и предполетной подготовки ударных дронов ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 августа 2026 года Силы обороны Украины провели успешную операцию по уничтожению склада хранения и предполетной подготовки ударных дронов противника в районе села Новопетриковка в Волновахском районе Донецкой области. Данная база служила узловым пунктом снабжения для подразделений операторов БПЛА, обеспечивая снаряжение дронов боевыми частями, замену аккумуляторов и программирование полетных заданий. Точный прилет средств поражения привел к разрушению складских конструкций, пожару и детонации находившихся внутри боеприпасов и дронов-камикадзе. По официальной информации Генштаба ВСУ, складской пункт был полностью ликвидирован. Уничтожение объекта лишило российские штурмовые группы оперативной воздушной поддержки и предотвратило массированные дроновые налеты на оборонительные рубежи ВСУ.",
-      "source": "Генштаб ВСУ, ОСГВ «Хортица», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Донецька область, Волноваський район, с. Новопетриківка (окупована територія)",
-      "target": "Склад зберігання та передпольотної підготовки ударних дронів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 серпня 2026 року Сили оборони України провели успішну операцію зі знищення складу зберігання та передпольотної підготовки ударних дронів противника в районі села Новопетриківка у Волноваському районі Донецької області. Ця база слугувала вузловим пунктом забезпечення для підрозділів операторів БпЛА, забезпечуючи спорядження дронів бойовими частинами, заміну акумуляторів та програмування польотних завдань. Влучний приліт засобів ураження призвів до руйнування складських конструкцій, пожежі та детонації боєприпасів і дронів-камікадзе всередині. За офіційною інформацією Генштабу ЗСУ, складський пункт був повністю ліквідований. Знищення об'єкта позбавило російські штурмові групи оперативної повітряної підтримки та запобігло масованим дроновим нальотам на рубежі ЗСУ.",
-      "source": "Генштаб ЗСУ, ОСУВ «Хортиця», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Volnovakha District, Novopetrykivka (Occupied Territory)",
-      "target": "Strike Drone Storage and Pre-flight Staging Facility of Russian Army",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces conducted an effective operation destroying an operational storage and pre-flight staging base for Russian strike drones near Novopetrykivka in the Volnovakha District of Donetsk Oblast. The site operated as a dedicated logistics facility for enemy drone units, facilitating warhead arming, high-capacity battery fitting, and mission flight path programming. Direct hits from Ukrainian precision strike weapons collapsed storage shelters, igniting rapid fires and secondary explosions of stockpiled kamikaze drones and demolition munitions. The General Staff of the Armed Forces of Ukraine officially verified the total destruction of the compound. The strike stripped advancing enemy assault detachments of crucial tactical air support and thwarted planned drone swarm attacks.",
-      "source": "General Staff of AFU, OSGT Khortytsia, OSINT, Media"
-    },
-    "id": 44
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 47.7183,
-    "lng": 37.5758,
-    "distance": 113,
-    "ru": {
-      "region": "Донецкая область, Волновахский район, пгт Новотроицкое (оккупированная территория)",
-      "target": "Склад и пункт сборки ударных беспилотников ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 августа 2026 года Силы обороны Украины нанесли точный огневой удар по складу и пункту сборки ударных беспилотников российских войск в районе пгт Новотроицкое в Донецкой области. На территории объекта размещались запасы готовых к пуску FPV-дронов, БПЛА-камикадзе самолетного типа, а также ретрансляционное оборудование и станции зарядки. В результате попадания украинского средства поражения произошел мощный взрыв, вызвавший разрушение технологических помещений и полное уничтожение хранившихся аппаратов. Сводка Генерального штаба ВСУ подтвердила успешное выполнение боевой задачи и ликвидацию склада. Уничтожение данного хаба сорвало планы противника по проведению массированных дроновых атак и существенно снизило разведывательную активность оккупантов на угледарском и кураховском направлениях.",
-      "source": "Генштаб ВСУ, ОСГВ «Хортица», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Донецька область, Волноваський район, смт Новотроїцьке (окупована територія)",
-      "target": "Склад та пункт збирання ударних безпілотників ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 серпня 2026 року Сили оборони України завдали точного вогневого удару по складу та пункту збирання ударних безпілотників російських військ у районі смт Новотроїцьке в Донецькій області. На території об'єкта розміщувалися запаси готових до пуску FPV-дронів, БпЛА-камікадзе літакового типу, а також ретрансляційне обладнання та станції заряджання. У результаті влучання українського засобу ураження стався потужний вибух, що спричинив руйнування технологічних приміщень та повне знищення збережених апаратів. Зведення Генерального штабу ЗСУ підтвердило успішне виконання бойового завдання та ліквідацію складу. Знищення цього хабу зірвало плани противника щодо проведення масованих дронових атак та суттєво знизило розвідувальну активність ворога на напрямку.",
-      "source": "Генштаб ЗСУ, ОСУВ «Хортиця», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Volnovakha District, Novotroitske (Occupied Territory)",
-      "target": "Strike Drone Warehouse and Assembly Facility of Russian Army",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces carried out a precision strike targeting a Russian warehouse and forward drone assembly facility near Novotroitske in Donetsk Oblast. The site housed large quantities of ready-to-launch FPV drones, fixed-wing kamikaze UAVs, repeater hardware, and multi-channel charging stations supporting frontline Russian formations. A direct precision hit ignited an explosive chain reaction, demolishing the fabrication workshops and destroying the stored drone inventory. The General Staff of the Armed Forces of Ukraine verified the successful strike and elimination of the depot. The loss of this assembly facility disrupted scheduled enemy drone saturation attacks and severely constrained Russian reconnaissance capabilities across the frontline sector.",
-      "source": "General Staff of AFU, OSGT Khortytsia, OSINT, Media"
-    },
-    "id": 45
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 47.2436,
-    "lng": 34.3589,
-    "distance": 88,
-    "ru": {
-      "region": "Херсонская область, Каховский район, пгт Верхний Рогачик (оккупированная территория)",
-      "target": "Пункт управления и координации БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 августа 2026 года Силы обороны Украины нанесли результативный удар по передовому пункту управления и координации беспилотной авиации ВС РФ в районе пгт Верхний Рогачик на оккупированной части Херсонской области. Командный узел был оснащен аппаратурой защищенной спутниковой связи, антенными ретрансляторами и рабочими станциями операторов для координации налетов дронов-камикадзе и ведения аэроразведки в нижнем течении Днепра. В ходе атаки украинский ударный дрон точно поразил аппаратный модуль и антенный пост, уничтожив радиоэлектронное оборудование и вспомогательную технику связи. По данным сводки Генштаба ВСУ, пункт управления был полностью выведен из строя. Удар лишил российские войска возможности оперативно управлять дроновыми группами и сорвал наведение артиллерийского огня по правому берегу.",
-      "source": "Генштаб ВСУ, ОСГВ «Таврия», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Херсонська область, Каховський район, смт Верхній Рогачик (окупована територія)",
-      "target": "Пункт управління та координації БпЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 серпня 2026 року Сили оборони України завдали результативного удару по передовому пункту управління та координації безпілотної авіації ЗС РФ у районі смт Верхній Рогачик на окупованій частині Херсонської області. Командний вузол був оснащений апаратурою захищеного супутникового зв'язку, антенними ретрансляторами та робочими станціями операторів для координації нальотів дронів-камікадзе та ведення аеророзвідки в нижній течії Дніпра. Під час атаки український ударний дрон влучно уразив апаратний модуль та антенний пост, знищивши радіоелектронне обладнання й допоміжну техніку зв'язку. За даними зведення Генштабу ЗСУ, пункт управління був повністю виведений з ладу. Удар позбавив війська РФ можливості оперативно керувати дронами та зірвав наведення артилерійського вогню.",
-      "source": "Генштаб ЗСУ, ОСУВ «Таврія», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Kherson Oblast, Kakhovka District, Verkhnii Rohachyk (Occupied Territory)",
-      "target": "Drone Operations Command and Telemetry Post of Russian Forces",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces carried out a precision strike destroying an advanced command and telemetry post for Russian unmanned aviation near Verkhnii Rohachyk in occupied Kherson Oblast. The military command facility contained secure satellite datalink arrays, antenna relay masts, and multi-display operator terminals used to plan kamikaze drone strikes and conduct aerial reconnaissance along the lower Dnipro. Ukrainian strike drones hit the primary equipment shelter and communication masts directly, demolishing core electronic components and auxiliary control vehicles. The General Staff of the Armed Forces of Ukraine verified the neutralization of the command facility. The strike severed real-time drone coordination networks and hindered enemy artillery spotting against liberated coastal settlements.",
-      "source": "General Staff of AFU, OSGT Tavria, OSINT, Media"
-    },
-    "id": 46
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 47.2042,
-    "lng": 35.5978,
-    "distance": 79,
-    "ru": {
-      "region": "Запорожская область, Пологовский район, г. Молочанск (оккупированная территория)",
-      "target": "Автомобильный мост через реку Молочная на маршруте снабжения ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Высокоточный удар",
-      "details": "18 августа 2026 года Силы обороны Украины нанесли высокоточный удар по стратегическому автомобильному мосту через реку Молочная в районе города Молочанск в Запорожской области. Данный мостовой переход являлся ключевой логистической артерией на оккупированной территории, по которой осуществлялось непрерывное снабжение и переброска боевой техники, боеприпасов и подкреплений для российских войск на Токмакском и Запорожском направлениях. В результате точного попадания средств поражения были серьезно повреждены несущие пролетные конструкции и дорожное полотно моста, что сделало невозможным движение тяжелого грузового транспорта и бронетехники. Генштаб ВСУ подтвердил успешное огневое поражение объекта. Выведение моста из строя перерезало критический логистический маршрут и существенно усложнило снабжение передовых позиций врага.",
-      "source": "Генштаб ВСУ, СБС ВСУ, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Запорізька область, Пологівський район, м. Молочанськ (окупована територія)",
-      "target": "Автомобільний міст через річку Молочна на маршруті постачання ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Високоточний удар",
-      "details": "18 серпня 2026 року Сили оборони України завдали високоточного удару по стратегічному автомобільному мосту через річку Молочна в районі міста Молочанськ у Запорізькій області. Цей мостовий перехід був ключовою логістичною артерією на окупованій території, якою здійснювалося безперервне постачання та перекидання бойової техніки, боєприпасів і підкріплень для російських військ на Токмацькому та Запорізькому напрямках. У результаті влучного удару засобів ураження було серйозно пошкоджено опорні прогонові конструкції та дорожнє полотно мосту, що унеможливило рух важкого вантажного транспорту й бронетехніки. Генштаб ЗСУ підтвердив успішне вогневе ураження об'єкта. Виведення мосту з ладу перерізало критичний логістичний маршрут та ускладнило постачання ворога.",
-      "source": "Генштаб ЗСУ, СБС ЗСУ, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast, Polohy District, Molochansk (Occupied Territory)",
-      "target": "Strategic Military Road Bridge over Molochna River on Russian Supply Route",
-      "category": "Military",
-      "weapon": "Drone / Precision Strike",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces delivered a precision strike against a strategic military road bridge spanning the Molochna River near the town of Molochansk in occupied Zaporizhzhia Oblast. The bridge served as a critical vehicular artery for the Russian military, facilitating continuous transports of combat vehicles, heavy munitions, and tactical troop reinforcements toward the Tokmak and southern frontline sectors. Precision-guided munitions punched directly through the main load-bearing spans and collapsed sections of the road deck, halting heavy military transports and armor movements. The General Staff of the Armed Forces of Ukraine officially verified the successful strike. Severing this crossing crippled a major logistics corridor and complicated forward supply lines for Russian frontline forces.",
-      "source": "General Staff of AFU, SBS of AFU, OSINT, Media"
-    },
-    "id": 47
-  },
-  {
-    "date": "18.08.2026",
-    "lat": 50.3853,
-    "lng": 36.3242,
-    "distance": 44,
-    "ru": {
-      "region": "Белгородская область, Белгородский район, с. Устинка / с. Журавлевка",
-      "target": "Пункты управления беспилотной авиацией ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 августа 2026 года Силы обороны Украины нанесли серию скоординированных ударов по передовым пунктам управления беспилотной авиацией российской армии в приграничной зоне Белгородской области в районе населенных пунктов Устинка и Журавлевка. С этих замаскированных позиций расчеты операторов противника осуществляли запуск и управление разведывательными дронами и ударными FPV-беспилотниками, наносившими удары по приграничным районам Харьковской области. Точными прилетами украинских ударных БПЛА были уничтожены полевые аппаратные станции, антенно-мачтовые комплексы ретрансляции и пункты размещения операторов. По официальным данным сводки Генштаба ВСУ, поражение данных объектов сорвало координацию дроновых налетов врага. Уничтожение пунктов управления снизило интенсивность воздушной разведки и атак в приграничной полосе.",
-      "source": "Генштаб ВСУ, ОСГВ «Хортица», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Бєлгородська область, Бєлгородський район, с. Устинка / с. Журавлівка",
-      "target": "Пункти управління безпілотною авіацією ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "18 серпня 2026 року Сили оборони України завдали серії скоординованих ударів по передових пунктах управління безпілотною авіацією російської армії у прикордонній зоні Бєлгородської області в районі населених пунктів Устинка та Журавлівка. З цих замаскованих позицій розрахунки операторів противника здійснювали запуск та управління розвідувальними дронами й ударними FPV-безпілотниками, які атакували прикордонні райони Харківщини. Влучними прильотами українських ударних БпЛА було знищено польові апаратні станції, антенно-щоглові комплекси ретрансляції та пункти розміщення операторів. За офіційними даними зведення Генштабу ЗСУ, ураження цих об'єктів зірвало координацію дронових нальотів ворога. Знищення пунктів управління знизило інтенсивність розвідки й атак у прикордонні.",
-      "source": "Генштаб ЗСУ, ОСУВ «Хортиця», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Belgorod Oblast, Belgorod District, Ustinka / Zhuravlevka",
-      "target": "Forward Drone Command and Telemetry Posts of Russian Army",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 18, 2026, the Ukrainian Defense Forces executed coordinated strikes destroying forward drone command and telemetry posts of the Russian military in the Belgorod border area near Ustinka and Zhuravlevka. Operating from concealed staging positions, enemy drone crews launched and piloted tactical reconnaissance UAVs and strike FPV swarms targeting border communities in Kharkiv Oblast. Direct hits by Ukrainian strike drones demolished field processing units, antenna telemetry masts, and crew shelters. The General Staff of the Armed Forces of Ukraine officially verified the neutralisation of the command locations. Eliminating these operational posts disrupted Russian drone coordination networks and considerably curtailed aerial surveillance and cross-border drone strikes along the northern frontier.",
-      "source": "General Staff of AFU, OSGT Khortytsia, OSINT, Media"
-    },
-    "id": 48
-  },
-  {
     "date": "17.08.2026",
     "lat": 45.1162,
     "lng": 33.9766,
@@ -2915,68 +1458,6 @@ const strikeData = [
   },
   {
     "date": "17.08.2026",
-    "lat": 45.3789,
-    "lng": 32.5338,
-    "distance": 140,
-    "ru": {
-      "region": "АР Крым, Черноморский район, с. Оленевка, мыс Тарханкут (оккупированная территория)",
-      "target": "Наземный ретранслятор управления ударными БПЛА типа «Герань» и «Гербера»",
-      "category": "ВПК",
-      "weapon": "Дрон / Высокоточный удар",
-      "details": "В ночь на 17 августа 2026 года Силы обороны Украины нанесли точечный удар по военному объекту связи на Тарханкутском полуострове в районе села Оленевка в Крыму. На объекте располагался мощный наземный автоматизированный ретранслятор, который российские военные развернули для расширения радиуса действия и онлайн-корректировки траекторий ударных БПЛА типа «Герань-2» и дронов «Гербера». Этот узел связи позволял операторам перенаправлять беспилотники в обход позиций украинской ПВО во время атак на Одесскую, Николаевскую и Херсонскую области. В результате попадания украинского средства поражения антенно-мачтовые сооружения и ретрансляционные блоки были уничтожены. Генштаб ВСУ подтвердил ликвидацию объекта. Уничтожение ретранслятора существенно снизило эффективность российских дроновых налетов через Черноморский коридор.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "АР Крим, Чорноморський район, с. Оленівка, мис Тарханкут (окупована територія)",
-      "target": "Наземний ретранслятор управління ударними БпЛА типу «Герань» та «Гербера»",
-      "category": "ВПК",
-      "weapon": "Дрон / Високоточний удар",
-      "details": "У ніч проти 17 серпня 2026 року Сили оборони України завдали точкового удару по військовому об'єкту зв'язку на Тарханкутському півострові в районі села Оленівка в Криму. На об'єкті розміщувався потужний наземний автоматизований ретранслятор, розгорнутий російськими військовими для розширення радіуса дії та онлайн-коригування траєкторій польоту ударних БпЛА типу «Герань-2» і дронів «Гербера». Цей вузол зв'язку дозволяв операторам перенаправляти безпілотники в обхід позицій української ППО під час атак на Одеську, Миколаївську та Херсонську області. Унаслідок влучання українського засобу ураження антенно-щоглові споруди та апаратні блоки ретранслятора були повністю знищені. Генштаб ЗСУ підтвердив ліквідацію об'єкта, що суттєво послабило координацію ворожих дронових нальотів через Чорноморський коридор.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske District, Olenivka, Cape Tarkhankut (Occupied Territory)",
-      "target": "Ground Relay Station for Geran and Gerbera Strike UAV Guidance",
-      "category": "Military",
-      "weapon": "Drone / Precision Strike",
-      "details": "On the night of August 17, 2026, the Ukrainian Defense Forces launched a precision strike against a Russian military communications node near Olenivka on Cape Tarkhankut in western Crimea. The facility hosted an automated high-frequency ground relay and booster terminal deployed to extend operational control ranges and provide in-flight trajectory adjustments for Geran-2 kamikaze drones and Gerbera decoy/strike UAVs. The relay was crucial for rerouting swarms around Ukrainian air defense sectors during raids on Odesa, Mykolaiv, and Kherson Oblasts. Direct precision hits pulverized the antenna mast structures and fried the transmission electronics. The General Staff of the Armed Forces of Ukraine officially verified the total neutralisation of the post, degrading Russian drone guidance networks across the northern Black Sea littoral.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 51
-  },
-  {
-    "date": "17.08.2026",
-    "lat": 46.3197,
-    "lng": 31.6375,
-    "distance": 83,
-    "ru": {
-      "region": "Херсонская область, Скадовский район, Тендровская коса (оккупированная территория)",
-      "target": "Пункт коммуникации и электропитания ретранслятора БПЛА ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 17 августа 2026 года подразделения Сил обороны Украины нанесли результативный удар по передовой военной позиции российских войск на Тендровской косе в Херсонской области на расстоянии около 75 км от Херсона. Данная изолированная точка использовалась оккупантами для размещения автономного пункта коммуникации, защищенной связи и дизель-генераторного энергоснабжения морского ретранслятора БПЛА. С его помощью обеспечивалось управление разведывательными и ударными дронами, действовавшими в устье Днепра и северо-западной части Черного моря. Точный удар украинских ударных дронов уничтожил генераторную станцию, силовые кабели и оборудование коммутации, вызвав возгорание и полное обесточивание ретрансляционного комплекса. Сводка Генштаба ВСУ подтвердила ликвидацию узла, что ослепило передовую радиоэлектронную сеть врага на побережье.",
-      "source": "Генштаб ВСУ, ВМС ВСУ, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Херсонська область, Скадовський район, Тендрівська коса (окупована територія)",
-      "target": "Пункт комунікації та електроживлення ретранслятора БпЛА ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 17 серпня 2026 року підрозділи Сил оборони України завдали результативного удару по передовій військовій позиції російських військ на Тендрівській косі в Херсонській області на відстані близько 75 км від Херсона. Ця ізольована точка використовувалася окупантами для розміщення автономного пункту комунікації, захищеного зв'язку та дизель-генераторного енергоживлення морського ретранслятора БпЛА. За його допомогою забезпечувалося управління розвідувальними та ударними дронами у гирлі Дніпра та північно-західній частині Чорного моря. Влучний удар українських дронів знищив генераторну станцію, силові кабелі та комутаційну апаратуру, спричинивши пожежу і повне знеструмлення комплексу. Зведення Генштабу ЗСУ підтвердило ліквідацію вузла, що суттєво порушило радіоелектронний контроль ворога над прибережним районом.",
-      "source": "Генштаб ЗСУ, ВМС ЗСУ, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Kherson Oblast, Skadovsk District, Tendra Spit (Occupied Territory)",
-      "target": "Forward Communications and Power Node for Drone Relay Station of Russian Forces",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On the night of August 17, 2026, Ukrainian Defense Forces delivered a precision strike against an isolated Russian military staging post on the Tendra Spit in Kherson Oblast, roughly 75 km from Kherson. The coastal outpost hosted an autonomous communications node, secure radio routing hardware, and heavy diesel generation units supplying continuous power to a maritime UAV repeater station. The site served to maintain constant datalinks with Russian reconnaissance and strike drones operating across the Dnipro estuary and the northwestern Black Sea corridor. Direct drone hits blew up the generator shelters and burned out the power switching panels, cutting all electrical supply and taking the relay offline. The General Staff of the Armed Forces of Ukraine verified the destruction of the node, crippling Russian tactical drone communications along the coastline.",
-      "source": "General Staff of AFU, Ukrainian Navy, OSINT, Media"
-    },
-    "id": 52
-  },
-  {
-    "date": "17.08.2026",
     "lat": 55.8365,
     "lng": 38.3564,
     "distance": 597,
@@ -3036,99 +1517,6 @@ const strikeData = [
       "source": "General Staff of AFU, GUR MO, OSINT (Astra), Media"
     },
     "id": 54
-  },
-  {
-    "date": "16.08.2026",
-    "lat": 44.4697,
-    "lng": 33.6825,
-    "distance": 255,
-    "ru": {
-      "region": "г. Севастополь, Балаклавский район, с. Резервное (оккупированный Крым)",
-      "target": "Стартовые позиции и пункт базирования БРК «Бастион» (15-я ОБРАБР ЧФ РФ)",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракетное вооружение",
-      "details": "В ночь на 16 августа 2026 года подразделения ВМС Украины во взаимодействии с Силами обороны нанесли результативный удар по стартовым позициям и району дислокации берегового ракетного комплекса «Бастион» в районе села Резервное в Балаклавском районе Севастополя. Данная позиция использовалась 15-й отдельной береговой ракетной бригадой ЧФ РФ для регулярных пусков сверхзвуковых противокорабельных ракет П-800 «Оникс» и гиперзвуковых ракет «Циркон» по украинским портам и объектам инфраструктуры. В ходе ночного налета ударные средства точно поразили площадки развертывания мобильных пусковых установок и вспомогательную командно-штабную технику. На объекте прогремели взрывы и начался пожар. По официальным сообщениям ВМС и Генштаба ВСУ, технике и личному составу ракетного дивизиона нанесен существенный урон. Удар сорвал готовящиеся залпы крылатых ракет по городам юга Украины.",
-      "source": "ВМС ВСУ, Генштаб ВСУ, OSINT (Крымский ветер), СМИ"
-    },
-    "uk": {
-      "region": "м. Севастополь, Балаклавський район, с. Резервне (окупований Крим)",
-      "target": "Стартові позиції та пункт базування БРК «Бастіон» (15-та ОБРАБР ЧФ РФ)",
-      "category": "ВПК",
-      "weapon": "Дрон / Ракетне озброєння",
-      "details": "У ніч проти 16 серпня 2026 року підрозділи ВМС України у взаємодії з Силами оборони завдали результативного удару по стартових позиціях та району дислокації берегового ракетного комплексу «Бастіон» у районі села Резервне в Балаклавському районі Севастополя. Ця позиція використовувалася 15-ю окремою береговою ракетною бригадою ЧФ РФ для регулярних пусків надзвукових протикорабельних ракет П-800 «Онікс» та гіперзвукових ракет «Циркон» по українських портах та об'єктах інфраструктури. Під час нічного нальоту ударні засоби влучно уразили майданчики розгортання мобільних пускових установок та допоміжну командно-штабну техніку. На об'єкті пролунали вибухи та почалася пожежа. За офіційними повідомленнями ВМС і Генштабу ЗСУ, техніці та особовому складу ракетного дивізіону завдано відчутних втрат. Удар зірвав підготовку чергових залпів по містах півдня України.",
-      "source": "ВМС ЗСУ, Генштаб ЗСУ, OSINT (Кримський вітер), ЗМІ"
-    },
-    "en": {
-      "region": "Sevastopol, Balaklava District, Rezervne (Occupied Crimea)",
-      "target": "Bastion Coastal Defense Missile Launch and Staging Site (15th Missile Brigade)",
-      "category": "Military",
-      "weapon": "Drone / Strike Missiles",
-      "details": "On the night of August 16, 2026, Ukrainian Navy units operating alongside the Defense Forces conducted a precision strike against the launch sites and staging positions of a Russian Bastion coastal defense missile system near Rezervne in the Balaklava District of Sevastopol. The staging area was operated by the 15th Coastal Missile Brigade of the Russian Black Sea Fleet for regular launches of supersonic P-800 Oniks and hypersonic 3M22 Zircon missiles against Ukrainian ports and coastal cities. Precision strike munitions slammed into launcher dispersal points and command-and-control support vehicles, causing secondary explosions and intense fires. The Ukrainian Navy and General Staff confirmed significant damage to combat vehicles and crew casualties. The strike severely degraded Russian coastal missile capabilities and disrupted planned missile salvos against southern Ukraine.",
-      "source": "Ukrainian Navy, General Staff of AFU, OSINT, Media"
-    },
-    "id": 55
-  },
-  {
-    "date": "16.08.2026",
-    "lat": 48.1139,
-    "lng": 37.4967,
-    "distance": 70,
-    "ru": {
-      "region": "Донецкая область, Покровский район, с. Карловка (оккупированная территория)",
-      "target": "Склад боеприпасов и материально-технических средств ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "16 августа 2026 года Силы обороны Украины осуществили успешный огневой налет на крупный передовой полевой склад материально-технических средств и боеприпасов российских войск в районе села Карловка в Покровском районе Донецкой области. Данный тыловой узел играл важнейшую роль в материальном обеспечении наступающих российских подразделений, осуществляя накопление и распределение артиллерийских снарядов, выстрелов к минометам, стрелкового вооружения и экипировки. Точный прилет украинских средств поражения вызвал возгорание основных хранилищ и мощную вторичную детонацию складированного боекомплекта, продолжавшуюся несколько часов. По данным официальной сводки Генштаба ВСУ, складские объекты были полностью ликвидированы. Потеря данного логистического хаба вызвала снарядный голод у передовых подразделений оккупантов и сорвала их наступательные действия.",
-      "source": "Генштаб ВСУ, ОСГВ «Хортица», OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Донецька область, Покровський район, с. Карлівка (окупована територія)",
-      "target": "Склад боєприпасів та матеріально-технічних засобів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "16 серпня 2026 року Сили оборони України здійснили успішний вогневий наліт на великий передовий польовий склад матеріально-технічних засобів та боєприпасів російських військ у районі села Карлівка в Покровському районі Донецької області. Цей тиловий вузол відігравав надважливу роль у матеріальному забезпеченні наступальних російських підрозділів, здійснюючи накопичення та розподіл артилерійських снарядів, мінометних пострілів, стрілецької зброї та екіпірування. Влучний приліт українських засобів ураження спричинив займання основних сховищ і потужну вторинну детонацію накопиченого боєкомплекту, що тривала кілька годин. За даними офіційного зведення Генштабу ЗСУ, складські об'єкти були повністю ліквідовані. Втрата цього логістичного хабу спричинила снарядний голод у передових підрозділів окупантів і зірвала їхні наступальні дії.",
-      "source": "Генштаб ЗСУ, ОСУВ «Хортиця», OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Pokrovsk District, Karlivka (Occupied Territory)",
-      "target": "Forward Ammunition and Material-Technical Logistics Supply Depot of Russian Army",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 16, 2026, the Ukrainian Defense Forces carried out an effective precision strike against a major forward ammunition and material-technical logistics depot of Russian forces located near Karlivka in the Pokrovsk District of Donetsk Oblast. The logistical node served as a pivotal replenishment staging base for Russian assault groups, stockpiling artillery shells, mortar rounds, small arms ammunition, and field equipment. A direct hit by Ukrainian strike assets ignited main storage shelters, triggering massive secondary detonations that echoed for hours and leveled the compound. The General Staff of the Armed Forces of Ukraine officially verified the total destruction of the supply base. The loss of this critical ammunition depot created acute supply shortages across enemy assault detachments and stalled their localized offensive operations.",
-      "source": "General Staff of AFU, OSGT Khortytsia, OSINT, Media"
-    },
-    "id": 56
-  },
-  {
-    "date": "16.08.2026",
-    "lat": 47.0783,
-    "lng": 35.4858,
-    "distance": 88,
-    "ru": {
-      "region": "Запорожская область, Мелитопольский район, с. Светлодолинское (оккупированная территория)",
-      "target": "Логистический железнодорожный мост и транспортный узел ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Высокоточный удар",
-      "details": "16 августа 2026 года Силы обороны Украины нанесли высокоточный удар по железнодорожному мосту в районе села Светлодолинское в Мелитопольском районе Запорожской области. Данный мостовой переход через реку Молочная являлся стратегической железнодорожной артерией снабжения группировки войск РФ, по которой непрерывно шли эшелоны с тяжелой бронетехникой, боеприпасами, топливом и подкреплениями из Крыма на Запорожское направление. В результате точного попадания средств поражения повреждены несущие пролетные конструкции и ж/д полотно, что вызвало полную остановку железнодорожного трафика. Генштаб ВСУ официально подтвердил успешное поражение объекта. Выведение моста из строя перерезало основной маршрут снабжения передовых частей оккупантов и значительно ослабило их оперативную логистику.",
-      "source": "Генштаб ВСУ, СБС ВСУ, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Запорізька область, Мелітопольський район, с. Світлодолинське (окупована територія)",
-      "target": "Логістичний залізничний міст та транспортний вузол ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон / Високоточний удар",
-      "details": "16 серпня 2026 року Сили оборони України завдали високоточного удару по залізничному мосту в районі села Світлодолинське в Мелітопольському районі Запорізької області. Цей мостовий перехід через річку Молочна був стратегічною залізничною артерією постачання угруповання військ РФ, якою безперервно рухалися ешелони з важкою бронетехнікою, боєприпасами, пальним та підкріпленнями з Криму на Запорізький напрямок. У результаті влучного удару засобів ураження пошкоджено опорні прогонові конструкції та залізничне полотно, що спричинило повну зупинку руху потягів. Генштаб ЗСУ офіційно підтвердив успішне ураження об'єкта. Виведення мосту з ладу перерізало основний маршрут забезпечення передових частин окупантів і суттєво послабило їхню оперативну логістику.",
-      "source": "Генштаб ЗСУ, СБС ЗСУ, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast, Melitopol District, Svitlodolynske (Occupied Territory)",
-      "target": "Strategic Military Railway Bridge and Logistics Transit Hub of Russian Army",
-      "category": "Military",
-      "weapon": "Drone / Precision Strike",
-      "details": "On August 16, 2026, the Ukrainian Defense Forces executed a precision strike against a strategic railway bridge near the village of Svitlodolynske in the Melitopol District of Zaporizhzhia Oblast. The bridge spanning the Molochna River served as a vital logistics rail artery for Russian occupying forces, facilitating heavy train traffic carrying armored vehicles, ammunition, fuel, and fresh reinforcements from Crimea to the Zaporizhzhia frontline. Direct precision hits severed the railway tracks and inflicted severe structural damage on the bridge spans, forcing an immediate shutdown of rail logistics. The General Staff of the Armed Forces of Ukraine officially verified the strike. Disabling this railway link cut a primary supply corridor for front-line Russian forces and degraded their theater-level logistics.",
-      "source": "General Staff of AFU, SBS of AFU, OSINT, Media"
-    },
-    "id": 57
   },
   {
     "date": "15.08.2026",
@@ -3222,37 +1610,6 @@ const strikeData = [
       "source": "OSINT (Astra), EMERCOM of Russia, Wildberries PR, Media"
     },
     "id": 60
-  },
-  {
-    "date": "15.08.2026",
-    "lat": 48.905,
-    "lng": 38.43,
-    "distance": 65,
-    "ru": {
-      "region": "Луганская область, г. Лисичанск (оккупированная территория)",
-      "target": "Склад материально-технических средств и ЗРК «Стрела-10» ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "15 августа 2026 года Силы обороны Украины нанесли высокоточный удар ударными дронами по передовой военной базе подразделений ВС РФ в городе Лисичанске на временно оккупированной территории Луганской области. На объекте размещался крупный полевой склад материально-технического обеспечения, питавший российские штурмовые подразделения снаряжением, запасными частями и топливом, а прикрытие позиций обеспечивал зенитно-ракетный комплекс «Стрела-10». Точными попаданиями БПЛА складские строения были охвачены огнем с детонацией хранимого имущества, а пусковая установка ЗРК «Стрела-10» получила прямое попадание и была полностью уничтожена. Генеральный штаб ВСУ официально подтвердил ликвидацию ЗРК и склада МТС. Уничтожение объекта лишило подразделения оккупантов прикрытия от средств воздушного нападения и сорвало тыловое снабжение.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Луганська область, м. Лисичанськ (окупована територія)",
-      "target": "Склад матеріально-технічних засобів та ЗРК «Стріла-10» ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "15 серпня 2026 року Сили оборони України завдали високоточного удару ударними дронами по передовій військовій базі підрозділів ЗС РФ у місті Лисичанськ на тимчасово окупованій території Луганської області. На об'єкті розміщувався великий польовий склад матеріально-технічного забезпечення, що живив російські штурмові підрозділи спорядженням, запасними частинами та пальним, а прикриття позицій забезпечував зенітно-ракетний комплекс «Стріла-10». Точними влучаннями БПЛА складські споруди були охоплені вогнем із детонацією накопиченого майна, а пускова установка ЗРК «Стріла-10» зазнала прямого влучання і була повністю знищена. Генеральний штаб ЗСУ офіційно підтвердив ліквідацію ЗРК та складу МТЗ. Знищення об'єкта позбавило підрозділи окупантів прикриття від засобів повітряного нападу і зірвало тилове постачання.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Lysychansk (Occupied Territory)",
-      "target": "Military Material-Technical Supply Depot and Strela-10 Air Defense System",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 15, 2026, the Ukrainian Defense Forces executed a precision UAV strike on a forward Russian military base in the occupied city of Lysychansk, Luhansk Oblast. The site hosted a large field material and technical logistics supply depot supporting Russian frontline assault units with gear, vehicle spare parts, and fuel, protected locally by a Strela-10 short-range air defense missile system. Precision drone impacts engulfed warehouse storage facilities in flames, causing secondary explosions, while a direct hit annihilated the Strela-10 SAM launcher vehicle. The General Staff of the Armed Forces of Ukraine officially verified the destruction of both the air defense system and the supply depot. The strike stripped local Russian units of low-altitude air defense cover and crippled tactical replenishment.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 61
   },
   {
     "date": "15.08.2026",
@@ -3379,68 +1736,6 @@ const strikeData = [
     "id": 65
   },
   {
-    "date": "14.08.2026",
-    "lat": 46.124,
-    "lng": 32.298,
-    "distance": 62,
-    "ru": {
-      "region": "Херсонская область, Скадовский район, с. Железный Порт (оккупированная территория)",
-      "target": "Узел ретрансляции и пункт управления ударными БПЛА («Герань-2» / «Гербера»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "14 августа 2026 года Силы обороны Украины провели результативную операцию по разгрому ключевого приморского узла управления беспилотной авиацией противника в районе Железного Порта на временно оккупированном побережье Херсонской области. Точными ударами дальнобойных дронов были поражены два наземных высотных ретранслятора связи, а также стационарный пункт управления БПЛА. Объект использовался российскими войсками для обеспечения устойчивой телеметрии, спутниковой коррекции и прямого наведения ударных дронов типов «Герань-2» и «Гербера», запускаемых по объектам в Николаевской и Одесской областях. В результате детонации аппаратуры связи командный пункт был полностью разрушен. Генеральный штаб ВСУ официально подтвердил ликвидацию ретрансляторов и пункта управления, что существенно снизило эффективность российских налетов на юге Украины.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Херсонська область, Скадовський район, с. Залізний Порт (окупована територія)",
-      "target": "Вузол ретрансляції та пункт управління ударними БПЛА («Герань-2» / «Гербера»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "14 серпня 2026 року Сили оборони України провели результативну операцію з розгрому ключового приморського вузла управління безпілотною авіацією противника в районі Залізного Порту на тимчасово окупованому узбережжі Херсонської області. Точними ударами далекобійних дронів було уражено два наземні висотні ретранслятори зв'язку, а також стаціонарний пункт управління БПЛА. Об'єкт використовувався російськими військами для забезпечення стійкої телеметрії, супутникової корекції та прямого наведення ударних дронів типів «Герань-2» та «Гербера», що запускалися по об'єктах у Миколаївській та Одеській областях. У результаті детонації апаратури зв'язку командний пункт було повністю зруйновано. Генеральний штаб ЗСУ офіційно підтвердив ліквідацію ретрансляторів та пункту управління, що суттєво знизило ефективність російських нальотів на півдні України.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Kherson Oblast, Skadovsk District, Zaliznyi Port (Occupied Territory)",
-      "target": "UAV Guidance Relay Hub and Drone Command Post (Geran-2 / Gerber Systems)",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 14, 2026, the Ukrainian Defense Forces conducted an operation neutralizing a vital coastal UAV command and relay installation near Zaliznyi Port in occupied Kherson Oblast. Precision strike drones scored direct hits on two high-altitude ground communication relay towers and an associated UAV command post. The facility was utilized by Russian forces to maintain encrypted telemetry, satellite correction, and guidance links for Shahed/Geran-2 and Gerber kamikaze drones targeting southern Ukraine. The strikes caused violent secondary detonations of radio equipment and communication modems, totally disabling the installation. The General Staff of the Armed Forces of Ukraine officially verified the destruction of both relay masts and the command facility, significantly curbing Russian precision UAV capabilities across the Black Sea littoral.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 66
-  },
-  {
-    "date": "14.08.2026",
-    "lat": 51.272,
-    "lng": 34.908,
-    "distance": 41,
-    "ru": {
-      "region": "Курская область, Кореневский район, с. Гордеевка",
-      "target": "Передовые пункты управления и база операторов БПЛА подразделений ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "14 августа 2026 года Силы беспилотных систем и подразделения ВСУ нанесли серию скоординированных ударов по передовым пунктам управления и базам расчетов БПЛА российских войск в районах Гордеевки и Волфинского в Курской области. Эти полевые командные узлы осуществляли координацию тактических разведывательных и ударных дронов, корректировку артиллерийского огня и радиоэлектронное подавление приграничной полосы. В результате точных попаданий ударных БПЛА уничтожены антенные посты связи, полевые аппаратные комплексы управления и специализированный транспорт расчетов операторов дронов. По данным Генштаба ВСУ, поражение данных объектов сорвало планируемые контратаки противника на курском направлении и лишило передовые подразделения ВС РФ оперативной воздушной разведки и наведения высокоточного вооружения.",
-      "source": "Генштаб ВСУ, СБС ВСУ, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Курська область, Кореневський район, с. Гордіївка",
-      "target": "Передові пункти управління та база операторів БПЛА підрозділів ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "14 серпня 2026 року Сили безпілотних систем та підрозділи ЗСУ завдали серії скоординованих ударів по передових пунктах управління та базах розрахунків БПЛА російських військ у районах Гордіївки та Волфинського в Курській області. Ці польові командні вузли здійснювали координацію тактичних розвідувальних і ударних дронів, коригування артилерійського вогню та радіоелектронне придушення прикордонної смуги. У результаті точних влучань ударних БПЛА знищено антенні пости зв'язку, польові апаратні комплекси управління та спеціалізований транспорт розрахунків операторів дронів. За даними Генштабу ЗСУ, ураження цих об'єктів зірвало заплановані контратаки противника на курському напрямку та позбавило передові підрозділи ЗС РФ оперативної повітряної розвідки і наведення високоточної зброї.",
-      "source": "Генштаб ЗСУ, СБС ЗСУ, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Kursk Oblast, Korenevsky District, Gordeevka",
-      "target": "Forward UAV Operator Deployment Bases and Drone Command Nodes",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 14, 2026, the Unmanned Systems Forces and Ukrainian Defense Forces launched coordinated drone strikes against forward command posts and UAV operator bases of the Russian Armed Forces near Gordeevka and Volfino in Kursk Oblast. These tactical command installations coordinated reconnaissance and strike UAVs, directed artillery fire, and operated electronic warfare systems along the border sector. Precision drone strikes destroyed tactical antenna arrays, field communication hardware, and specialized mobile operator vehicles. According to the General Staff of the Armed Forces of Ukraine, destroying these command nodes disrupted planned enemy counterattacks in the Kursk direction and severely curtailed Russian tactical reconnaissance and precision fire coordination capabilities.",
-      "source": "General Staff of AFU, SBS of AFU, OSINT, Media"
-    },
-    "id": 67
-  },
-  {
     "date": "13.08.2026",
     "lat": 53.3986,
     "lng": 55.9388,
@@ -3504,37 +1799,6 @@ const strikeData = [
   },
   {
     "date": "13.08.2026",
-    "lat": 44.525,
-    "lng": 33.505,
-    "distance": 245,
-    "ru": {
-      "region": "г. Севастополь, Балаклавский район / мыс Фиолент",
-      "target": "Радиолокационная станция дальнего обнаружения 55Ж6У «Небо-У» войск ПВО РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 13 августа 2026 года Силы обороны Украины провели высокоточную операцию по уничтожению дорогостоящей российской радиолокационной станции дальнего обнаружения 55Ж6У «Небо-У» в районе Севастополя. Эта трехкоординатная РЛС метрового диапазона стоимостью около 100 млн долларов являлась ключевым элементом системы ПВО и радиотехнических войск РФ в Крыму, контролируя воздушное пространство на глубину до 600 км и сопровождая аэродинамические и баллистические цели. В результате точного удара ударных дронов антенна и аппаратный командный пункт РЛС получили критические повреждения с последующей детонацией радиоэлектронных блоков. Генеральный штаб ВСУ официально подтвердил уничтожение радиолокационной станции. Потеря данного радара создала существенную брешь в противовоздушном прикрытии Черноморского флота и военных баз на Крымском полуострове.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT (Crimeanwind, Astra), СМИ"
-    },
-    "uk": {
-      "region": "м. Севастополь, Балаклавський район / мис Фіолент",
-      "target": "Радіолокаційна станція далекого виявлення 55Ж6У «Небо-У» військ ППО РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 13 серпня 2026 року Сили оборони України провели високоточну операцію зі знищення дороговартісної російської радіолокаційної станції далекого виявлення 55Ж6У «Небо-У» в районі Севастополя. Ця трикоординатна РЛС метрового діапазону вартістю близько 100 млн доларів була ключовим елементом системи ППО та радіотехнічних військ РФ у Криму, контролюючи повітряний простір на глибину до 600 км і супроводжуючи аеродинамічні та балістичні цілі. У результаті точного удару ударних дронів антена та апаратний командний пункт РЛС зазнали критичних пошкоджень із подальшою детонацією радіоелектронних блоків. Генеральний штаб ЗСУ офіційно підтвердив знищення радіолокаційної станції. Втрата цього радара створила суттєву прогалину в протиповітряному прикритті Чорноморського флоту та військових баз на Кримському півострові.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT (Crimeanwind, Astra), ЗМІ"
-    },
-    "en": {
-      "region": "Sevastopol, Balaklava District / Cape Fiolent",
-      "target": "55Zh6U Nebo-U Early Warning Long-Range Radar Station",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On the night of August 13, 2026, the Ukrainian Defense Forces conducted a precision operation destroying a high-value Russian 55Zh6U Nebo-U long-range radar station deployed near Sevastopol in occupied Crimea. Valued at approximately $100 million, this 3D VHF-band early warning radar formed a cornerstone of Russian air defense architecture across the Black Sea, detecting and tracking aerodynamic and ballistic targets at ranges up to 600 km. Precision strike UAVs scored direct hits on the radar antenna array and operational command cabins, causing secondary detonations of sensitive radar circuitry. The General Staff of the Armed Forces of Ukraine officially confirmed the destruction of the Nebo-U installation. Neutralizing this strategic radar opened significant blind spots in Russian air surveillance protecting naval assets in Crimea.",
-      "source": "General Staff of AFU, GUR MO, OSINT (Crimeanwind, Astra), Media"
-    },
-    "id": 70
-  },
-  {
-    "date": "13.08.2026",
     "lat": 48.075,
     "lng": 39.65,
     "distance": 169,
@@ -3566,37 +1830,6 @@ const strikeData = [
   },
   {
     "date": "12.08.2026",
-    "lat": 44.724,
-    "lng": 37.785,
-    "distance": 402,
-    "ru": {
-      "region": "Краснодарский край, г. Новороссийск (Цемесская бухта)",
-      "target": "Новороссийская военно-морская база ЧФ РФ и инфраструктура морского порта Новороссийск",
-      "category": "ВПК",
-      "weapon": "Дроны-камикадзе, ракеты «Нептун», морские дроны",
-      "details": "В ночь на 12 августа 2026 года Силы обороны Украины провели масштабную комбинированную операцию по ключевым военным и логистическим объектам в Новороссийске на расстоянии свыше 350 километров от фронта. В налете одновременно применялись реактивные беспилотники «Паляниця», крылатые ракеты «Нептун» и морские надводные дроны СБУ и ВМС. Главными целями стали причальные сооружения Новороссийской военно-морской базы Черноморского флота РФ, позиции береговых комплексов ПВО и портовая инфраструктура в Цемесской бухте. В результате скоординированных ударов зафиксированы взрывы на территории базы и портовых терминалов, повреждения получили вспомогательные причалы и оборудование перевалки грузов. Местные власти ввели в Новороссийске режим чрезвычайной ситуации из-за повреждений инфраструктуры и аварий на водопроводе. Атака существенно нарушила морскую логистику и боеготовность флота.",
-      "source": "Генштаб ВСУ, ВМС ВСУ, оперативный штаб Краснодарского края, OSINT (Astra), СМИ"
-    },
-    "uk": {
-      "region": "Краснодарський край, м. Новоросійськ (Цемеська бухта)",
-      "target": "Новоросійська військово-морська база ЧФ РФ та інфраструктура морського порту Новоросійськ",
-      "category": "ВПК",
-      "weapon": "Дрони-камікадзе, ракети «Нептун», морські дрони",
-      "details": "У ніч проти 12 серпня 2026 року Сили оборони України провели масштабну комбіновану операцію по ключових військових та логістичних об'єктах у Новоросійську на відстані понад 350 кілометрів від фронту. У нальоті одночасно застосовувалися реактивні безпілотники «Паляниця», крилаті ракети «Нептун» та морські надводні дрони СБУ і ВМС. Головними цілями стали причальні споруди Новоросійської військово-морської бази Чорноморського флоту РФ, позиції берегових комплексів ППО та портова інфраструктура в Цемеській бухті. У результаті скоординованих ударів зафіксовано вибухи на території бази та портових терміналів, пошкоджень зазнали допоміжні причали та обладнання перевалки вантажів. Місцева влада ввела в Новоросійську режим надзвичайної ситуації через пошкодження інфраструктури та аварії на водогоні. Атака суттєво порушила морську логістику і боєздатність флоту.",
-      "source": "Генштаб ЗСУ, ВМС ЗСУ, оперативний штаб Краснодарського краю, OSINT (Astra), ЗМІ"
-    },
-    "en": {
-      "region": "Krasnodar Krai, Novorossiysk (Tsemes Bay)",
-      "target": "Novorossiysk Naval Base of the Black Sea Fleet and Seaport Infrastructure",
-      "category": "Military",
-      "weapon": "Kamikaze drones, Neptune missiles, USVs",
-      "details": "On the night of August 12, 2026, the Ukrainian Defense Forces executed a synchronized multi-domain strike targeting strategic military and port facilities in Novorossiysk, over 350 kilometers from the frontline. The combined operation utilized Palianytsia jet-powered drones, Neptune cruise missiles, and sea surface attack drones operated by the SBU and Ukrainian Navy. Primary targets included mooring facilities at the Novorossiysk Naval Base of the Black Sea Fleet, air defense batteries, and seaport shipping infrastructure across Tsemes Bay. The coordinated impacts triggered heavy explosions and fires inside the naval perimeter and port terminals, damaging auxiliary berths and cargo handling units. Local authorities declared a state of emergency across Novorossiysk due to infrastructure damage and disrupted municipal water networks. The strike severely degraded fleet logistics and naval readiness.",
-      "source": "General Staff of AFU, Ukrainian Navy, Krasnodar HQ, OSINT (Astra), Media"
-    },
-    "id": 72
-  },
-  {
-    "date": "12.08.2026",
     "lat": 45.0933,
     "lng": 33.5986,
     "distance": 188,
@@ -3625,68 +1858,6 @@ const strikeData = [
       "source": "General Staff of AFU, GUR MO, OSINT (Astra, Crimeanwind), Media"
     },
     "id": 73
-  },
-  {
-    "date": "12.08.2026",
-    "lat": 45.5103,
-    "lng": 32.7005,
-    "distance": 125,
-    "ru": {
-      "region": "АР Крым, Черноморский район, пгт Черноморское",
-      "target": "Узел ретрансляции и боевого управления ударными БПЛА («Герань-2» / «Гербера»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "12 августа 2026 года подразделения Сил обороны Украины провели результативную операцию по ликвидации важного узла управления беспилотной авиацией ВС РФ в районе Черноморского на западе Крымского полуострова. Высокоточными ударными БПЛА был атакован наземный высотный ретранслятор и стационарный пункт наведения, использовавшийся российскими военными для координации и телеметрии дальнобойных дронов-камикадзе типов «Герань-2», «Гербера» и разведывательных комплексов. Прямой удар привел к детонации аппаратуры связи, обрушению антенно-мачтовых конструкций и уничтожению командного модуля. Генштаб ВСУ официально подтвердил уничтожение этого ретранслятора. Ликвидация объекта существенно нарушила каналы передачи данных и устойчивость навигационных маршрутов российских ударных БПЛА, направляемых в сторону Одесской и Николаевской областей.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT (Astra, Crimeanwind), СМИ"
-    },
-    "uk": {
-      "region": "АР Крим, Чорноморський район, смт Чорноморське",
-      "target": "Вузол ретрансляції та бойового управління ударними БПЛА («Герань-2» / «Гербера»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "12 серпня 2026 року підрозділи Сил оборони України провели результативну операцію з ліквідації важливого вузла управління безпілотною авіацією ЗС РФ у районі Чорноморського на заході Кримського півострова. Високоточними ударними БПЛА було атаковано наземний висотний ретранслятор та стаціонарний пункт наведення, який російські військові використовували для координації та телеметрії далекобійних дронів-камікадзе типів «Герань-2», «Гербера» та розвідувальних комплексів. Прямий удар призвів до детонації апаратури зв'язку, обвалення антенно-щоглових конструкцій та знищення командного модуля. Генштаб ЗСУ офіційно підтвердив знищення цього ретранслятора. Ліквідація об'єкта суттєво порушила канали передачі даних і стійкість навігаційних маршрутів російських ударних БПЛА, спрямованих у бік Одеської та Миколаївської областей.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT (Astra, Crimeanwind), ЗМІ"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske District, Chornomorske",
-      "target": "UAV Guidance and Signal Relay Hub (Geran-2 / Gerber UAV Systems)",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 12, 2026, Ukrainian Defense Forces conducted an operation to eliminate an operational drone communication and control hub near the coastal town of Chornomorske in western Crimea. Precision strike UAVs targeted a high-altitude radio relay station and ground command post utilized by Russian forces for guiding and maintaining telemetry links with long-range Shahed/Geran-2 and Gerber strike drones. The direct hit ignited electronic control equipment, collapsed antenna masts, and destroyed the command guidance module. The General Staff of the Armed Forces of Ukraine officially confirmed the destruction of this vital relay installation. The elimination of this hub significantly degraded data transmission channels and compromised routing consistency for Russian attack UAV swarms launched toward Odesa and Mykolaiv regions.",
-      "source": "General Staff of AFU, GUR MO, OSINT (Astra, Crimeanwind), Media"
-    },
-    "id": 74
-  },
-  {
-    "date": "12.08.2026",
-    "lat": 44.542,
-    "lng": 33.606,
-    "distance": 245,
-    "ru": {
-      "region": "г. Севастополь, Балаклавский район (Севастопольская ТЭС)",
-      "target": "Энергетический комплекс Балаклавской ТЭС (ПГУ-ТЭС «Таврическая») и ПС 330 кВ «Севастополь»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 12 августа 2026 года рой украинских дальнобойных БПЛА совершил массированный налет на узловые объекты энергетической инфраструктуры Севастополя в Балаклавском районе. Балаклавская ПГУ-ТЭС («Таврическая») установленной мощностью 470 МВт и узловая подстанция 330 кВ являются критически важными объектами, снабжающими электроэнергией главную военно-морскую базу ЧФ РФ, судоремонтные заводы и комплексы ПВО. Несмотря на плотный заградительный огонь ПВО, часть ударных дронов пробилась к энергообъектам, вызвав взрывы, повреждения распределительных устройств и сильные пожары на прилегающей территории. В результате атаки в Севастополе, Саках и Евпатории произошли масштабные аварийные отключения электричества, вводились графики ограничений, а на объектах жизнеобеспечения был объявлен особый режим.",
-      "source": "Генштаб ВСУ, оккупационная администрация Севастополя, OSINT (Astra), СМИ"
-    },
-    "uk": {
-      "region": "м. Севастополь, Балаклавський район (Севастопольська ТЕС)",
-      "target": "Енергетичний комплекс Балаклавської ТЕС (ПГУ-ТЕС «Таврійська») та ПС 330 кВ «Севастополь»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 12 серпня 2026 року рій українських далекобійних БПЛА здійснив масований наліт на вузлові об'єкти енергетичної інфраструктури Севастополя в Балаклавському районі. Балаклавська ПГУ-ТЕС («Таврійська») встановленою потужністю 470 МВт та вузлова підстанція 330 кВ є критично важливими об'єктами, що живлять головну військово-морську базу ЧФ РФ, судноремонтні заводи та комплекси ППО. Попри щільний загороджувальний вогонь ППО, частина ударних дронів пробилася до енергооб'єктів, спричинивши вибухи, пошкодження розподільчих пристроїв та великі пожежі на прилеглій території. У результаті атаки в Севастополі, Саках та Євпаторії сталися масштабні аварійні відключення електрики, вводилися графіки обмежень, а на об'єктах життєзабезпечення було оголошено особливий режим.",
-      "source": "Генштаб ЗСУ, окупаційна адміністрація Севастополя, OSINT (Astra), ЗМІ"
-    },
-    "en": {
-      "region": "Sevastopol, Balaklava District (Sevastopol TPP)",
-      "target": "Balaklava Thermal Power Plant Complex (Tavricheskaya TPP) and 330 kV Substation",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On the night of August 12, 2026, a swarm of Ukrainian long-range strike drones carried out a raid against strategic power facilities in the Balaklava district of Sevastopol. The 470 MW Balaklava Combined Cycle Power Plant (Tavricheskaya TPP) and the 330 kV Sevastopol central substation provide base-load electricity to Russian Black Sea Fleet naval facilities, ship repair yards, and air defense radar networks. Despite defensive barrages from local air defense batteries, several strike UAVs reached the power complex, triggering explosions, damaging distribution switchgear, and starting extensive fires. The attack caused widespread blackouts across Sevastopol, Saky, and Yevpatoria, compelling regional authorities to implement rolling power cuts and activate emergency protocols across essential infrastructure.",
-      "source": "General Staff of AFU, Sevastopol Administration, OSINT (Astra), Media"
-    },
-    "id": 75
   },
   {
     "date": "11.08.2026",
@@ -3842,99 +2013,6 @@ const strikeData = [
       "source": "General Staff of AFU, GUR MO, Head of Tatarstan Minnikhanov, OSINT (Astra), Media"
     },
     "id": 80
-  },
-  {
-    "date": "10.08.2026",
-    "lat": 48.1294,
-    "lng": 38.9328,
-    "distance": 120,
-    "ru": {
-      "region": "Луганская область, г. Хрустальный (оккупированная территория)",
-      "target": "Ремонтно-восстановительная база и стоянка поврежденной бронетехники ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "10 августа 2026 года Силы обороны Украины нанесли точный удар беспилотными авиационными комплексами по ремонтно-восстановительной базе подразделений ВС РФ в городе Хрустальном на временно оккупированной территории Луганской области. Данный промышленно-ремонтный комплекс использовался российским военным командованием для оперативного ремонта тяжелой бронетехники, танков, артиллерийских систем и двигателей перед их повторной отправкой на линию фронта. В результате серии точных прилетов ударных БПЛА произошло обрушение кровли ремонтных цехов, возник сильный пожар и детонация хранившихся запчастей и боекомплекта. Генеральный штаб ВСУ официально подтвердил результативное поражение ремонтного подразделения. Уничтожение ремонтной инфраструктуры сорвало график восстановления боеспособности поврежденной бронетехники противника.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Луганська область, м. Хрустальний (окупована територія)",
-      "target": "Ремонтно-відновлювальна база та стоянка пошкодженої бронетехніки ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "10 серпня 2026 року Сили оборони України завдали точного удару безпілотними авіаційними комплексами по ремонтно-відновлювальній базі підрозділів ЗС РФ у місті Хрустальний на тимчасово окупованій території Луганської області. Цей промислово-ремонтний комплекс використовувався російським військовим командуванням для оперативного ремонту важкої бронетехніки, танків, артилерійських систем та двигунів перед їх повторним відправленням на лінію фронту. У результаті серії точних влучань ударних БПЛА сталося обвалення покрівлі ремонтних цехів, виникла сильна пожежа та детонація накопичених запчастин і боєкомплекту. Генеральний штаб ЗСУ офіційно підтвердив результативне ураження ремонтного підрозділу. Знищення ремонтної інфраструктури зірвало графік відновлення боєздатності пошкодженої бронетехніки противника.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Luhansk Oblast, Khrustalnyi (Occupied Territory)",
-      "target": "Military Armored Vehicle Repair and Maintenance Facility",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 10, 2026, the Ukrainian Defense Forces carried out a precision strike using unmanned aerial systems against a Russian military repair and maintenance base located in the occupied city of Khrustalnyi, Luhansk Oblast. This industrial repair facility was heavily utilized by the Russian military command for the overhaul, welding, and refitting of battle-damaged armored fighting vehicles, tanks, and artillery systems before redeployment to the front line. Multiple strike drones directly penetrated the main maintenance workshops, triggering severe structural fires and secondary explosions of ammunition and spare part stores. The General Staff of the Armed Forces of Ukraine officially confirmed the destruction of this repair unit. The strike severely degraded Russian capabilities to rapidly return heavy armored combat vehicles to operational status.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 81
-  },
-  {
-    "date": "10.08.2026",
-    "lat": 47.165,
-    "lng": 37.285,
-    "distance": 176,
-    "ru": {
-      "region": "Донецкая область, Мариупольский район, с. Боевое (оккупированная территория)",
-      "target": "Полевой артиллерийский склад боеприпасов группировки войск ВС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "10 августа 2026 года подразделения Сил обороны Украины провели успешную операцию по уничтожению крупного полевого артиллерийского склада боеприпасов ВС РФ в районе села Боевое на временно оккупированной территории Донецкой области. Складской узел выполнял критически важную функцию промежуточного накопления снарядов ствольной артиллерии, реактивных выстрелов для РСЗО и мин для снабжения наступающих российских частей на южном направлении. В результате попадания дальнобойных дронов-камикадзе на объекте началась масштабная вторичная детонация артиллерийских боеприпасов, продолжавшаяся несколько часов и сопровождавшаяся сильными пожарами. Генеральный штаб ВСУ подтвердил уничтожение склада. Ликвидация артиллерийского арсенала существенно снизила плотность вражеских обстрелов на данном участке фронта.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Донецька область, Маріупольський район, с. Бойове (окупована територія)",
-      "target": "Польовий артилерійський склад боєприпасів угруповання військ ЗС РФ",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "10 серпня 2026 року підрозділи Сил оборони України провели успішну операцію зі знищення великого польового артилерійського складу боєприпасів ЗС РФ у районі села Бойове на тимчасово окупованій території Донецької області. Складський вузол виконував критично важливу функцію проміжного накопичення снарядів ствольної артилерії, реактивних пострілів для РСЗВ та мін для постачання наступальних російських частин на південному напрямку. У результаті влучання далекобійних дронів-камікадзе на об'єкті почалася масштабна вторинна детонація артилерійських боєприпасів, яка тривала кілька годин і супроводжувалася сильними пожежами. Генеральний штаб ЗСУ підтвердив знищення складу. Ліквідація артилерійського арсеналу суттєво знизила щільність ворожих обстрілів на цій ділянці фронту.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Mariupol District, Boyove (Occupied Territory)",
-      "target": "Forward Field Artillery Ammunition Supply Depot",
-      "category": "Military",
-      "weapon": "Drone",
-      "details": "On August 10, 2026, units of the Ukrainian Defense Forces carried out a precision operation destroying a large forward field artillery ammunition depot of the Russian Armed Forces near the village of Boyove in occupied Donetsk Oblast. This ammunition depot served as a critical forward transshipment hub storing tube artillery shells, MLRS rockets, and heavy mortar rounds allocated to Russian operational formations on the southern axis. Direct impacts by Ukrainian strike drones triggered extensive secondary detonations of stored ordnance that continued for several hours, completely razing the depot storage area. The General Staff of the Armed Forces of Ukraine officially verified the total destruction of the field depot. The loss of these stockpiles significantly curtailed Russian artillery fire intensity along the front sector.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 82
-  },
-  {
-    "date": "10.08.2026",
-    "lat": 47.985,
-    "lng": 37.33,
-    "distance": 86,
-    "ru": {
-      "region": "Донецкая область, Покровский район, с. Новоселидовка (оккупированная территория)",
-      "target": "Склад материально-технических средств и войскового снабжения ВС РФ",
-      "category": "Логистический центр",
-      "weapon": "Дрон",
-      "details": "10 августа 2026 года Силы обороны Украины нанесли результативный удар ударными БПЛА по крупному складу материально-технических средств российских войск в районе Новоселидовки в Донецкой области. Объект служил ключевым передовым распределительным узлом для снабжения российских подразделений инженерным имуществом, полевым снаряжением, средствами связи, маскировочными сетями и горюче-смазочными материалами. В результате точного налета дронов загорелись основные ангары и складские площадки открытого хранения, что привело к полному выгоранию имущества и детонации хранившихся емкостей с ГСМ. Генеральный штаб ВСУ официально подтвердил успешное поражение склада. Уничтожение распределительного хаба сорвало тыловое обеспечение группировки противника на покровско-кураховском направлении.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Донецька область, Покровський район, с. Новоселідівка (окупована територія)",
-      "target": "Склад матеріально-технічних засобів та військового забезпечення ЗС РФ",
-      "category": "Логістичний центр",
-      "weapon": "Дрон",
-      "details": "10 серпня 2026 року Сили оборони України завдали результативного удару ударними БПЛА по великому складу матеріально-технічних засобів російських військ у районі Новоселідівки в Донецькій області. Об'єкт слугував ключовим передовим розподільчим вузлом для забезпечення російських підрозділів інженерним майном, польовим спорядженням, засобами зв'язку, маскувальними сітками та пально-мастильними матеріалами. У результаті точного нальоту дронів зайнялися основні ангари та складські майданчики відкритого зберігання, що призвело до повного вигорання майна та детонації ємностей із ПММ. Генеральний штаб ЗСУ офіційно підтвердив успішне ураження складу. Знищення розподільчого хабу зірвало тилове забезпечення угруповання противника на покровсько-курахівському напрямку.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Donetsk Oblast, Pokrovsk District, Novoselydivka (Occupied Territory)",
-      "target": "Material and Technical Military Supply Depot",
-      "category": "Logistics Hub",
-      "weapon": "Drone",
-      "details": "On August 10, 2026, the Ukrainian Defense Forces executed a successful UAV strike targeting a major material-technical storage and logistics depot of Russian forces near Novoselydivka in Donetsk Oblast. The installation functioned as an essential forward logistics distribution node supplying Russian assault units with combat engineering equipment, field gear, tactical radios, camouflage supplies, and technical lubricants. Precision drone strikes set ablaze the primary warehouse hangars and outdoor staging sectors, leading to complete destruction of stored equipment and secondary combustions of fuel containers. The General Staff of the Armed Forces of Ukraine officially confirmed the destruction of the logistics facility. The elimination of this depot severely disrupted rear logistics for Russian combat units on the Pokrovsk-Kurakhove axis.",
-      "source": "General Staff of AFU, GUR MO, OSINT, Media"
-    },
-    "id": 83
   },
   {
     "date": "09.08.2026",
@@ -4155,37 +2233,6 @@ const strikeData = [
   },
   {
     "date": "08.08.2026",
-    "lat": 44.5611,
-    "lng": 38.0772,
-    "distance": 429,
-    "ru": {
-      "region": "Краснодарский край, г. Геленджик",
-      "target": "Позиция зенитно-ракетного комплекса С-400 «Триумф»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 августа 2026 года Силы беспилотных систем (СБС) ВСУ нанесли высокоточный удар дронами-камикадзе по позиции зенитно-ракетного комплекса С-400 «Триумф» в районе Геленджика Краснодарского края. По данным командующего СБС Роберта Бровди («Мадяра»), именно эта батарея ПВО в течение утра с 09:25 до 12:51 совершила шесть ракетных пусков по украинской территории. В ответ украинские операторы БПЛА выследили позиционный район и отправили груу ударных дронов. В результате прямого попадания на позиции ЗРК загорелись пусковые установки и радиолокационная станция подсвета и наведения. Мощный пожар на объекте продолжался более трех часов, сопровождаясь детонацией зенитных ракет. Уничтожение дорогостоящего комплекса С-400 существенно ослабило прикрытие Черноморского побережья РФ и логистических путей в Крым.",
-      "source": "События СБС ВСУ, Роберт Бровди («Мадяр»), OSINT, ЗМІ"
-    },
-    "uk": {
-      "region": "Краснодарський край, м. Геленджик",
-      "target": "Позиція зенітно-ракетного комплексу С-400 «Тріумф»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 серпня 2026 року Сили безпілотних систем (СБС) ЗСУ завдали високоточного удару дронами-камікадзе по позиції зенітно-ракетного комплексу С-400 «Тріумф» у районі Геленджика Краснодарського краю. За даними командувача СБС Роберта Бровді («Мадяра»), саме ця батарея ППО протягом ранку з 09:25 до 12:51 здійснила шість ракетних пусків по українській території. У відповідь українські оператори БПЛА вистежили позиційний район та відправили групу ударних дронів. У результаті прямого влучання на позиціях ЗРК спалахнули пускові установки та радіолокаційна станція підсвічування й наведення. Потужна пожежа на об'єкті тривала понад три години, супроводжуючись детонацією зенітних ракет. Знищення дороговартісного комплексу С-400 суттєво послабило прикриття Чорноморського узбережжя РФ та логістичних шляхів до Криму.",
-      "source": "Сили безпілотних систем ЗСУ, Роберт Бровді («Мадяр»), OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Krasnodar Krai, Gelendzhik",
-      "target": "S-400 Triumf Air Defense Missile Battery Position",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 8, 2026, the Unmanned Systems Forces (SBS) of Ukraine executed a precision loitering munition strike against an S-400 \"Triumf\" air defense missile battery positioned near Gelendzhik in Krasnodar Krai. According to SBS Commander Robert Brovdi (\"Madyar\"), this specific battery carried out six anti-aircraft missile launches targeting Ukrainian territory between 09:25 and 12:51 AM that same day. Ukrainian UAV operators pinpointed the active battery coordinates and deployed a swarm of strike drones. Direct hits ignited the TEL launchers and the target engagement radar station. The resulting fire blazed for over three hours, accompanied by secondary missile cook-offs. The destruction of this high-tier S-400 system significantly compromised Russian air defense coverage over the Black Sea coastline and supply lines heading into Crimea.",
-      "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
-    },
-    "id": 91
-  },
-  {
-    "date": "08.08.2026",
     "lat": 45.38,
     "lng": 31.87,
     "distance": 151,
@@ -4214,130 +2261,6 @@ const strikeData = [
       "source": "General Staff of AFU, GUR MO, OSINT, Media"
     },
     "id": 92
-  },
-  {
-    "date": "08.08.2026",
-    "lat": 47.0142,
-    "lng": 39.0658,
-    "distance": 221,
-    "ru": {
-      "region": "Ростовская область, Азовский район, с. Головатовка",
-      "target": "Маловысотная радиолокационная станция «Подлёт-К1»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 августа 2026 года Силы беспилотных систем ВСУ нанесли точечный удар по позиции маловысотной радиолокационной станции «Подлёт-К1» возле села Головатовка Азовского района Ростовской области. Данная трехкоординатная РЛС кругового обзора предназначена для обнаружения низколетящих воздушных целей, включая крылатые ракеты и беспилотники, и выдачи целеуказания системам ПВО С-300 и С-400. Ударный БПЛА ВСУ поразил антенный пост и кунг управления станции, вызвав возгорание и полное выведение техники из строя. Операция спецподразделений ВСУ позволила пробить брешь в радиолокационном поле противника на прикрытии Азовского побережья и ростовского логистического узла, обеспечив проход других ударных средств к военным объектам.",
-      "source": "Сили беспилотных систем ВСУ, Роберт Бровди («Мадяр»), OSINT, ЗМІ"
-    },
-    "uk": {
-      "region": "Ростовська область, Азовський район, с. Головатовка",
-      "target": "Маловисотна радіолокаційна станція «Подлёт-К1»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 серпня 2026 року Сили безпілотних систем ЗСУ завдали точкового удару по позиції маловисотної радіолокаційної станції «Подлёт-К1» поблизу села Головатовка Азовського району Ростовської області. Ця трикоординатна РЛС кругового огляду призначена для виявлення низьколетячих повітряних цілей, включаючи крилаті ракети та безпілотники, і видачі цілевказування системам ППО С-300 та С-400. Ударний БПЛА ЗСУ уразив антенний пост та кунг управління станції, спричинивши займання та повне виведення техніки з ладу. Операція спецпідрозділів ЗСУ дозволила пробити прогалину в радіолокаційному полі противника на прикритті Азовського узбережжя та ростовського логістичного вузла, забезпечивши прохід інших ударних засобів до військових об'єктів.",
-      "source": "Сили безпілотних систем ЗСУ, Роберт Бровді («Мадяр»), OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Rostov Oblast, Azovsky District, Golovatovka",
-      "target": "Podlet-K1 Low-Altitude Radar Station",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 8, 2026, Ukrainian Unmanned Systems Forces executed a targeted strike on a Podlet-K1 low-altitude surveillance radar station located near Golovatovka in Rostov Oblast. This mobile 3D radar system is designed to detect low-flying targets, including cruise missiles and strike drones, feeding real-time targeting data to S-300 and S-400 air defense batteries. A precision attack drone struck the primary radar antenna array and the command module, triggering a fire that completely put the system out of operation. The destruction of this radar created a vital blind spot in Russian radar coverage along the Sea of Azov coastline and the Rostov logistics hub, facilitating subsequent deep strikes against military targets.",
-      "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
-    },
-    "id": 93
-  },
-  {
-    "date": "08.08.2026",
-    "lat": 47.5333,
-    "lng": 38.8333,
-    "distance": 163,
-    "ru": {
-      "region": "Ростовская область, Матвеево-Курганский район, с. Латоново",
-      "target": "Мобильная радиолокационная станция «Каста-2Е2» (39Н6Е)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 августа 2026 года украинские Силы беспилотных систем успешно ликвидировали мобильную радиолокационную станцию «Каста-2Е2» (39Н6Е) в районе села Латоново Матвеево-Курганского района Ростовской области. Этот радиолокационный комплекс развертывается для обнаружения предельно низколетящих целей в условиях сильных отражений от местностей и пассивных помех, выступая глазами российской армейской ПВО. Ударный дрон ВСУ точно поразил антенную мачту и машину управления станций. В результате прилета объект был уничтожен, загорелось спецоборудование. Поражение РЛС «Каста-2Е2» существенным образом снизило способности ВС РФ контролировать воздушное пространство над приграничными районами Ростовской области и отслеживать движение беспилотников.",
-      "source": "Сили беспилотных систем ВСУ, Роберт Бровди («Мадяр»), OSINT, ЗМІ"
-    },
-    "uk": {
-      "region": "Ростовська область, Матвієво-Курганський район, с. Латоново",
-      "target": "Мобільна радіолокаційна станція «Каста-2Е2» (39Н6Е)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 серпня 2026 року українські Сили безпілотних систем успішно ліквідували мобільну радіолокаційну станцію «Каста-2Е2» (39Н6Е) у районі села Латоново Матвієво-Курганського району Ростовської області. Цей радіолокаційний комплекс розгортається для виявлення гранично низьколетячих цілей в умовах сильних відбитків від місцевості та пасивних перешкод, виступаючи очима російської армійської ППО. Ударний дрон ЗСУ точно уразив антенну щоглу та машину управління станцією. У результаті влучання об'єкт було знищено, спалахнуло спецобладнання. Ураження РЛС «Каста-2Е2» суттєвим чином знизило спроможності ЗС РФ контролювати повітряний простір над прикордонними районами Ростовської області та відстежувати рух безпілотників.",
-      "source": "Сили безпілотних систем ЗСУ, Роберт Бровді («Мадяр»), OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Rostov Oblast, Matveyevo-Kurgansky District, Latonovo",
-      "target": "Kasta-2E2 Low-Altitude Radar Station (39N6E)",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 8, 2026, Ukrainian Unmanned Systems Forces successfully hit and neutralized a mobile Kasta-2E2 (39N6E) low-altitude radar station operating near Latonovo in Rostov Oblast. Designed to detect extremely low-flying targets amid heavy ground clutter and electronic countermeasures, the Kasta radar serves as an essential sensor for Russian tactical air defense network. A kamikaze strike drone scored a direct hit on the elevated antenna vehicle and command module, setting the specialized electronics ablaze. The loss of this radar node severely blinded Russian frontline air defenses in western Rostov Oblast, disrupting their ability to detect incoming low-altitude strike drones heading toward rear supply lines.",
-      "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
-    },
-    "id": 94
-  },
-  {
-    "date": "08.08.2026",
-    "lat": 47.45,
-    "lng": 39.9,
-    "distance": 224,
-    "ru": {
-      "region": "Ростовская область, Аксайский район, х. Пудовый",
-      "target": "Зенитно-ракетный комплекс «Тор»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 августа 2026 года в ходе спланированной операции Сил беспилотных систем ВСУ был уничтожен зенитно-ракетный комплекс малого радиуса действия «Тор» в районе хутора Пудовый Ростовской области. Данная боевая машина ПВО обеспечивала непосредственное прикрытие транспортных узлов и позиций войск от атак беспилотников и высокоточного оружия. Украинский ударный БПЛА смог обнаружить и атаковать ЗРК во время смены позиции. Прямой прилет привел к взрыву боекомплекта зенитных ракет и полному уничтожению комплекса вместе с расчетом. Ликвидация ЗРК «Тор» нанесла ощутимый урон системам войсковой ПВО РФ на ростовском операционном направлении, упростив проведение дальнейших операций украинских дальнобойных дронов.",
-      "source": "Сили беспилотных систем ВСУ, Роберт Бровди («Мадяр»), OSINT, ЗМІ"
-    },
-    "uk": {
-      "region": "Ростовська область, Аксайський район, х. Пудовий",
-      "target": "Зенітно-ракетний комплекс «Тор»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 серпня 2026 року в ході спланованої операції Сил безпілотних систем ЗСУ було знищено зенітно-ракетний комплекс малого радіуса дії «Тор» у районі хутора Пудовий Ростовської області. Ця бойова машина ППО забезпечувала безпосереднє прикриття транспортних вузлів та позицій військ від атак безпілотників та високоточної зброї. Український ударний БПЛА виявив та атакував ЗРК під час зміни позиції. Пряме влучання призвело до вибуху боєкомплекту зенітних ракет та повного знищення комплексу разом із розрахунком. Ліквідація ЗРК «Тор» завдала відчутної шкоди системам військовій ППО РФ на ростовському операційному напрямку, спростивши проведення подальших операцій українських далекобійних дронів.",
-      "source": "Сили безпілотних систем ЗСУ, Роберт Бровді («Мадяр»), OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Rostov Oblast, Aksaysky District, Pudovy",
-      "target": "Tor Air Defense Missile System",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 8, 2026, a coordinated drone strike by the Unmanned Systems Forces of Ukraine destroyed a short-range Tor air defense system near Pudovy in Rostov Oblast. The Tor vehicle was deployed to provide point defense for military logistics corridors and troop concentrations against incoming drones and precision munitions. Ukrainian drone reconnaissance spotted the air defense vehicle while it was maneuvering into position. A direct kamikaze drone impact triggered a secondary explosion of the onboard surface-to-air missiles, completely destroying the unit. The destruction of this tactical air defense system degraded Russian force protection along the critical Rostov logistics corridor.",
-      "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
-    },
-    "id": 95
-  },
-  {
-    "date": "08.08.2026",
-    "lat": 46.7083,
-    "lng": 38.2731,
-    "distance": 232,
-    "ru": {
-      "region": "Краснодарский край, г. Ейск",
-      "target": "Зенитный ракетно-пушечный комплекс «Панцирь-С1»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 августа 2026 года подразделения Силы беспилотных систем ВСУ нанесли успешный удар ударным дроном по зенитному ракетно-пушечному комплексу «Панцирь-С1» в районе города Ейск Краснодарского края. Данный ЗРПК размещался на побережье для защиты местной военно-морской базы, военного аэродрома и воздушных подступов к Таманскому полуострову. В результате попадания украинского БПЛА загорелась пусковая установка и радиолокатор сопровождения целей. Детонация зенитных боеприпасов вывела комплекс из строя. Уничтожение «Панциря-С1» ослабило эшелонированную оборону Ейского военного узла и упростило поражение важных объектов военной инфраструктуры РФ на побережье Азовского моря.",
-      "source": "Сили беспилотных систем ВСУ, Роберт Бровди («Мадяр»), OSINT, ЗМІ"
-    },
-    "uk": {
-      "region": "Краснодарський край, м. Єйськ",
-      "target": "Зенітний ракетно-гарматний комплекс «Панцир-С1»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "8 серпня 2026 року підрозділи Сил безпілотних систем ЗСУ завдали успішного удару ударним дроном по зенітному ракетно-гарматному комплексу «Панцир-С1» у районі міста Єйськ Краснодарського краю. Цей ЗРГК розміщувався на узбережжі для захисту місцевої військово-морської бази, військового аеродрому та повітряних підходів до Таманського півострова. У результаті влучання українського БПЛА спалахнула пускова установка та радіолокатор супроводу цілей. Детонація зенітних боєприпасів вивела комплекс із ладу. Знищення «Панциря-С1» послабило ешелоновану оборону Єйського військового вузла та спростило ураження важливих об'єктів військової інфраструктури РФ на узбережжі Азовського моря.",
-      "source": "Сили безпілотних систем ЗСУ, Роберт Бровді («Мадяр»), OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Krasnodar Krai, Yeysk",
-      "target": "Pantsir-S1 Air Defense Missile-Gun System",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 8, 2026, Ukrainian Unmanned Systems Forces launched a successful kamikaze drone strike against a Pantsir-S1 air defense system positioned near Yeysk in Krasnodar Krai. The Pantsir-S1 unit was stationed on the coast to guard the local naval airbase and strategic airspace approaches near the Sea of Azov. A direct drone hit detonated the missile tubes and severely damaged the tracking radar. Secondary cook-offs completely neutralized the weapon system. The loss of this air defense platform compromised the point defenses around the Yeysk military airfield and naval facilities, opening up pathways for subsequent long-range drone strikes.",
-      "source": "Unmanned Systems Forces of AFU, Robert Brovdi (Madyar), OSINT, Media"
-    },
-    "id": 96
   },
   {
     "date": "07.08.2026",
@@ -4369,37 +2292,6 @@ const strikeData = [
       "source": "General Staff of AFU, GUR MO, OSINT (Astra, Crimean Wind), Media"
     },
     "id": 97
-  },
-  {
-    "date": "07.08.2026",
-    "lat": 45.3789,
-    "lng": 32.5292,
-    "distance": 140,
-    "ru": {
-      "region": "АР Крым (оккупирована РФ), Черноморский район, с. Оленевка (мыс Тарханкут)",
-      "target": "Радиолокационная станция раннего обнаружения и ретранслятор БПЛА",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 7 августа 2026 года подразделения Сил обороны Украины и спецслужбы нанесли точечный удар по объектам военной инфраструктуры связи и наблюдения на Тарханкутском полуострове возле села Оленевка в Крыму. На данном направлении базировалась радиолокационная станция раннего обнаружения и наземный ретранслятор управления ударными беспилотниками типа «Герань». Эти технические комплексы обеспечивали наведение БПЛА и контроль воздушного пространства в западной части Черноморского региона. В результате успешного прилета высокоточных средств поражения зафиксировано уничтожение антенных систем и оборудования управления. Генштаб ВСУ официально подтвердил поражение ключевых узлов связи противника. Спутниковые снимки зафиксировали повреждения радиолокационного купола и пожар на позиции ретранслятора, что существенно снизило возможности РФ по координации налетов дронов.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT (Astra, Крымский ветер), ЗМІ"
-    },
-    "uk": {
-      "region": "АР Крим (окупована РФ), Чорноморський район, с. Оленівка (мис Тарханкут)",
-      "target": "Радіолокаційна станція раннього виявлення та ретранслятор БПЛА",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 7 серпня 2026 року підрозділи Сил оборони України та спецслужби завдали точкового удару по об'єктах військової інфраструктури зв'язку та спостереження на Тарханкутському півострові поблизу села Оленівка в Криму. На цьому напрямку базувалася радіолокаційна станція раннього виявлення та наземний ретранслятор управління ударними безпілотниками типу «Герань». Ці технічні комплекси забезпечували наведення БПЛА та контроль повітряного простору у західній частині Чорноморського регіону. У результаті успішного влучання високоточних засобів ураження зафіксовано знищення антенних систем та обладнання управління. Генштаб ЗСУ офіційно підтвердив ураження ключових вузлів зв'язку противника. Супутникові знімки зафіксували пошкодження радіолокаційного купола та пожежу на позиції ретранслятора, що суттєво знизило можливості РФ щодо координації нальотів дронів.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT (Astra, Кримський вітер), ЗМІ"
-    },
-    "en": {
-      "region": "Autonomous Republic of Crimea (occupied by RF), Chornomorske District, Olenevka (Cape Tarkhankut)",
-      "target": "Early Warning Radar Station & UAV Control Repeater",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On the night of August 7, 2026, Ukrainian Defense Forces and intelligence units conducted a precision strike targeting military surveillance and communications infrastructure near Olenevka on the Tarkhankut Peninsula in Crimea. The targeted site contained an early warning radar station and a key ground relay control node for Shahed and Geran attack UAVs. These high-tech installations maintained airspace monitoring and long-range drone control over the western Black Sea region. Direct impacts destroyed critical antenna systems and operational control equipment, as officially confirmed by the General Staff of the AFU. Satellite imagery confirmed structural damage to the radar dome and a localized fire at the repeater station, significantly undermining Russian capabilities to coordinate drone flight paths toward southern Ukraine.",
-      "source": "General Staff of AFU, GUR MO, OSINT (Astra, Crimean Wind), Media"
-    },
-    "id": 98
   },
   {
     "date": "07.08.2026",
@@ -4682,37 +2574,6 @@ const strikeData = [
   },
   {
     "date": "31.07.2026",
-    "lat": 45.311,
-    "lng": 33.639,
-    "distance": 167,
-    "ru": {
-      "region": "АР Крым (временно оккупированная), Сакский район (с. Наумовка)",
-      "target": "Склад боеприпасов ВС РФ (с. Наумовка, Крым)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 31 июля 2026 года Генеральный штаб ВСУ и подразделения ГУР МО официально подтвердили проведение успешной спецоперации по уничтожению крупного склада боеприпасов противника возле села Наумовка в Сакском районе оккупированного Крыма. Серия высокоточных ударов дальнобойных дронов-камикадзе привела к поражению складских площадок и временных хранилищ снарядов. На месте прилёта начался сильнейший пожар с продолжительной вторичной детонацией артиллерийских боеприпасов и ракет. Местные жители сообщали о серии мощных взрывов, которые ощущались на расстоянии нескольких десятков километров. Объект служил ключевым перевалочным пунктом снабжения боекомплектом группировки войск РФ в Херсонской и Запорожской областях. Удар на расстоянии 175 км от линии фронта существенно ослабил артиллерийский потенциал врага.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT (Astra), СМИ"
-    },
-    "uk": {
-      "region": "АР Крим (тимчасово окупована), Сакський район (с. Наумовка)",
-      "target": "Склад боєприпасів ЗС РФ (с. Наумовка, Крим)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 31 липня 2026 року Генеральний штаб ЗСУ та підрозділи ГУР МО офіційно підтвердили проведення успішної спецоперації зі знищення великого складу боєприпасів противника біля села Наумовка в Сакському районі окупованого Криму. Серія високоточних ударів далекобійних дронів-камікадзе призвела до ураження складських майданчиків і тимчасових сховищ снарядів. На місці прильоту сталася найсильніша пожежа з тривалою вторинною детонацією артилерійських боєприпасів і ракет. Місцеві жителі повідомляли про серію потужних вибухів, які відчувалися на відстані кількох десятків кілометрів. Об'єкт слугував ключовим перевалювальним пунктом забезпечення боєкомплектом угруповання військ РФ у Херсонській та Запорізькій областях. Удар на відстані 175 км від лінії фронту суттєво послабив артилерійський потенціал ворога.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT (Astra), ЗМІ"
-    },
-    "en": {
-      "region": "Autonomous Republic of Crimea (occupied), Saksky District (Naumovka village)",
-      "target": "Russian Ammunition Depot (Naumovka, Crimea)",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On the night of July 31, 2026, the AFU General Staff and GUR confirmed a joint long-range drone operation destroying a major Russian ammunition depot near Naumovka in occupied Crimea's Saksky District. Multiple precision strike UAVs hit storage sites and field ordnance bunkers across the military facility. The impact detonated stored artillery shells and rockets, initiating a massive fire and hours of secondary explosions. Local residents across the Saky region reported heavy shockwaves felt tens of kilometers away. The depot operated as a primary logistics staging area supplying artillery ammunition to Russian forces in the Kherson and Zaporizhzhia sectors. Positioned 175 km from the active frontline, the strike severely undermined Russian frontline artillery sustainment.",
-      "source": "AFU General Staff, GUR, OSINT (Astra), Media"
-    },
-    "id": 108
-  },
-  {
-    "date": "31.07.2026",
     "lat": 55.8483,
     "lng": 48.5444,
     "distance": 1049,
@@ -4865,37 +2726,6 @@ const strikeData = [
       "source": "AFU General Staff, GUR, OSINT (Astra), Governor Bocharov, Media"
     },
     "id": 113
-  },
-  {
-    "date": "30.07.2026",
-    "lat": 46.6139,
-    "lng": 35.7359,
-    "distance": 143,
-    "ru": {
-      "region": "Запорожская область (временно оккупированная), Приморский Посад",
-      "target": "Военный полигон ВС РФ «Приморский Посад»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "30 июля 2026 года Генеральный штаб ВСУ официально подтвердил успешное поражение крупного военного полигона ВС РФ «Приморский Посад» на прибрежной территории оккупированной части Запорожской области. Высокоточный удар дальнобойных БПЛА и средств поражения пришёлся по местам скопления личного состава, учебным площадкам и складам боеприпасов. В результате атаки на территории полигона возникла вторичная детонация боекомплекта и масштабный пожар. Объект активно использовался командованием оккупационных войск для слаживания подразделений и подготовки операторов БПЛА перед отправкой на фронт. Удар на расстоянии 140 км от линии боевого соприкосновения привёл к уничтожению техники и нарушил процесс подготовки резервов армии РФ.",
-      "source": "Генштаб ВСУ, ГУР МО, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Запорізька область (тимчасово окупована), Приморський Посад",
-      "target": "Військовий полігон ЗС РФ «Приморський Посад»",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "30 липня 2026 року Генеральний штаб ЗСУ офіційно підтвердив успішне ураження великого військового полігону ЗС РФ «Приморський Посад» на прибережній території окупованої частини Запорізької області. Високоточний удар далекобійних БПЛА та засобів ураження припав по місцях скупчення особового складу, навчальних майданчиках і складах боєприпасів. Унаслідок атаки на території полігону виникла вторинна детонація боєкомплекту та масштабна пожежа. Об'єкт активно використовувався командуванням окупаційних військ для злагодження підрозділів і підготовки операторів БПЛА перед відправкою на фронт. Удар на відстані 140 км від лінії бойового зіткнення призвів до знищення техніки та порушив процес підготовки резервів армії РФ.",
-      "source": "Генштаб ЗСУ, ГУР МО, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Zaporizhzhia Oblast (occupied territory), Primorsky Posad",
-      "target": "Russian Army Military Training Ground 'Primorsky Posad'",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On July 30, 2026, the AFU General Staff officially confirmed a successful long-range precision strike on the Russian military training facility 'Primorsky Posad' in occupied Zaporizhzhia Oblast. Long-range UAVs hit troop staging sectors, equipment firing ranges, and temporary ammunition storage points near the coast. The attack triggered secondary detonations of stored munitions and a widespread fire across the military ground. Russian forces utilized this coastal site for training assault units and qualifying drone operators prior to frontline deployment. Striking 140 km from the active frontline, the strike destroyed military hardware and severely disrupted Russian reserve troop preparation.",
-      "source": "AFU General Staff, GUR MO, OSINT, Media"
-    },
-    "id": 114
   },
   {
     "date": "30.07.2026",
@@ -5054,37 +2884,6 @@ const strikeData = [
   },
   {
     "date": "29.07.2026",
-    "lat": 52.858,
-    "lng": 33.456,
-    "distance": 211,
-    "ru": {
-      "region": "Брянская область, Почепский район (г. Почеп)",
-      "target": "Радиолокационная станция (РЛС) ПВО/ПРО в районе Почепа",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 29 июля 2026 года Силы обороны Украины нанесли высокоточный удар по радиолокационной станции (РЛС) противовоздушной и противоракетной обороны в районе города Почеп Брянской области. Генштаб ВСУ официально подтвердил успешное поражение объекта. В результате детонации боевых частей ударных дронов антенна и радиоэлектронное оборудование станции получили критические повреждения, на позиции зафиксирован пожар. Почепская РЛС обеспечивала мониторинг воздушного пространства и целеуказание для комплексов ПВО, прикрывающих западный фланг группировки войск РФ. Удар на расстоянии 160 км от линии фронта ослепил ключевой участок ПВО противника в Брянской области, облегчив пролёт украинских БПЛА вглубь территории РФ.",
-      "source": "Генштаб ВСУ, OSINT (Astra), СМИ РФ"
-    },
-    "uk": {
-      "region": "Брянська область, Почепський район (м. Почеп)",
-      "target": "Радіолокаційна станція (РЛС) ППО/ПРО в районі Почепа",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 29 липня 2026 року Сили оборони України завдали високоточного удару по радіолокаційній станції (РЛС) протиповітряної та протиракетної оборони в районі міста Почеп Брянської області. Генштаб ЗСУ офіційно підтвердив успішне ураження об'єкта. Унаслідок детонації бойових частин ударних дронів антена та радіоелектронне обладнання станції зазнали критичних пошкоджень, на позиції зафіксовано пожежу. Почепська РЛС забезпечувала моніторинг повітряного простору та цілевказання для комплексів ППО, що прикривають західний фланг угруповання військ РФ. Удар на відстані 160 км від лінії фронту засліпив ключову ділянку ППО противника в Брянській області, полегшивши проліт українських БПЛА вглиб території РФ.",
-      "source": "Генштаб ЗСУ, OSINT (Astra), ЗМІ РФ"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Pochep District (Pochep)",
-      "target": "Air Defense Radar Station (Pochep, Bryansk Oblast)",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On the night of July 29, 2026, the Ukrainian Defense Forces carried out a precision strike on an air defense radar station (Radar) near Pochep, Bryansk Oblast. The AFU General Staff officially confirmed the successful hit on the military radar installation. Explosions caused by attacking drones inflicted critical damage on the radar antenna array and electronic systems, triggering a fire at the position. The Pochep radar site provided airspace monitoring and target tracking for Russian SAM systems defending the western border region. Positioned 160 km from the frontline, destroying this radar node blinded a vital sector of Russian air defense coverage in Bryansk Oblast, facilitating further deep UAV penetrations into Russian airspace.",
-      "source": "AFU General Staff, OSINT (Astra), Russian media"
-    },
-    "id": 120
-  },
-  {
-    "date": "29.07.2026",
     "lat": 54.675,
     "lng": 39.587,
     "distance": 528,
@@ -5209,37 +3008,6 @@ const strikeData = [
   },
   {
     "date": "27.07.2026",
-    "lat": 47.1787,
-    "lng": 39.6419,
-    "distance": 231,
-    "ru": {
-      "region": "Ростовская область, Ростов-на-Дону (мкр-н Заречная)",
-      "target": "Экспортный терминал Ростовского морского торгового порта (4-й грузовой район)",
-      "category": "Логистика",
-      "weapon": "Дрон",
-      "details": "В ночь на 27 июля 2026 года украинские БПЛА атаковали 4-й грузовой район Ростовского морского торгового порта — универсальный перегрузочный комплекс в микрорайоне Заречная на левом берегу Дона, ниже разводного железнодорожного моста. Объект специализируется на перевалке экспортных грузов и является ключевым звеном в системе доходов бюджета РФ. Генштаб ВСУ подтвердил поражение цели: на территории терминала зафиксированы пожар и задымление. По данным губернатора Ростовской области Юрия Слюсаря, в ходе ночной атаки погибли 5 человек, ещё 8 получили ранения — среди жертв оказался ребёнок. Повреждения получили жилые дома в Железнодорожном, Пролетарском и Ленинском районах города. Президент Зеленский назвал порт целью на расстоянии ~250 км от фронта.",
-      "source": "Генштаб ВСУ, Президент Зеленский, губернатор Слюсарь, OSINT (hromadske), СМИ"
-    },
-    "uk": {
-      "region": "Ростовська область, Ростов-на-Дону (мкр-н Заріччя)",
-      "target": "Експортний термінал Ростовського морського торгового порту (4-й вантажний район)",
-      "category": "Логістика",
-      "weapon": "Дрон",
-      "details": "У ніч проти 27 липня 2026 року українські БПЛА атакували 4-й вантажний район Ростовського морського торгового порту — універсальний перевантажувальний комплекс у мікрорайоні Заріччя на лівому березі Дону, нижче розвідного залізничного мосту. Об'єкт спеціалізується на перевалці експортних вантажів і є ключовою ланкою в системі доходів бюджету РФ. Генштаб ЗСУ підтвердив ураження цілі: на території терміналу зафіксовані пожежа та задимлення. За даними губернатора Ростовської області Юрія Слюсаря, під час нічної атаки загинули 5 осіб, ще 8 отримали поранення — серед жертв опинилася дитина. Пошкоджень зазнали житлові будинки в Залізничному, Пролетарському та Ленінському районах міста. Президент Зеленський назвав порт ціллю на відстані ~250 км від фронту.",
-      "source": "Генштаб ЗСУ, Президент Зеленський, губернатор Слюсар, OSINT (hromadske), ЗМІ"
-    },
-    "en": {
-      "region": "Rostov Oblast, Rostov-on-Don (Zarechnaya district)",
-      "target": "Rostov-on-Don Export Port Terminal (4th Cargo District)",
-      "category": "Logistics",
-      "weapon": "Drone",
-      "details": "On the night of July 27, 2026, Ukrainian UAVs struck the 4th cargo district of the Rostov-on-Don Sea Trade Port — a general-cargo terminal in the Zarechnaya district on the left bank of the Don River, just downstream from the railway swing bridge. The facility handles export cargo and serves as a key revenue-generating node for the Russian state budget. The AFU General Staff confirmed the hit, with fire and smoke observed at the terminal. Rostov Oblast Governor Yury Slyusar reported that 5 people were killed, including a child, and 8 others injured during the overnight strike. Residential buildings in the Zheleznodorozhny, Proletarsky, and Leninsky districts also sustained damage. President Zelensky cited the port as a target located approximately 250 km from the front line.",
-      "source": "AFU General Staff, President Zelensky, Governor Slyusar, OSINT (hromadske), Media"
-    },
-    "id": 125
-  },
-  {
-    "date": "27.07.2026",
     "lat": 57.612,
     "lng": 39.874,
     "distance": 815,
@@ -5333,99 +3101,6 @@ const strikeData = [
   },
   {
     "date": "26.07.2026",
-    "lat": 47.2145,
-    "lng": 39.6812,
-    "distance": 230,
-    "ru": {
-      "region": "Ростовская область, Ростов-на-Дону",
-      "target": "Экспортный портовый терминал (Ростов-на-Дону)",
-      "category": "Логистика",
-      "weapon": "Дрон",
-      "details": "26 июля 2026 года Служба безопасности Украины и ВСУ нанесли совместный удар беспилотными летательными аппаратами по экспортному портовому терминалу в Ростове-на-Дону. В ходе атаки несколько БПЛА самолетного типа преодолели эшелонированную ПВО и поразили портовую инфраструктуру, складские терминалы и погрузочные площадки. Ударом вызвана детонация с последующим выгоранием складов временного хранения и транспортной техники. Портовый комплекс активно использовался для логистического обеспечения войск и экспорта подсанкционной продукции. На месте происшествия работали усиленные отряды МЧС, пожар локализован на значительной площади. Поражение терминала привело к остановке погрузочно-разгрузочных работ и нарушению снабжения.",
-      "source": "СБУ, Генштаб ВСУ, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Ростовська область, Ростов-на-Дону",
-      "target": "Експортний портовий термінал (Ростов-на-Дону)",
-      "category": "Логістика",
-      "weapon": "Дрон",
-      "details": "26 липня 2026 року Служба безпеки України та ЗСУ завдали спільного удару безпілотними літальними апаратами по експортному портовому терміналу в Ростові-на-Дону. Під час атаки кілька БПЛА літакового типу подолали ешелоновану ППО та уразили портову інфраструктуру, складські термінали та навантажувальні майданчики. Ударом спричинено детонацію з подальшим вигорянням складів тимчасового зберігання та транспортної техніки. Портовий комплекс активно використовувався для логістичного забезпечення військ та експорту підсанкційної продукції. На місці події працювали посилені загони МНС, пожежу локалізовано на значній площі. Ураження термінала призвело до зупинки навантажувально-розвантажувальних робіт та порушення постачання.",
-      "source": "СБУ, Генштаб ЗСУ, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Rostov Oblast, Rostov-on-Don",
-      "target": "Export Port Terminal (Rostov-on-Don)",
-      "category": "Logistics",
-      "weapon": "Drone",
-      "details": "On July 26, 2026, the Security Service of Ukraine and the AFU launched a joint long-range drone attack against an export port terminal in Rostov-on-Don. Fixed-wing UAVs penetrated local air defense systems to strike dockside infrastructure, storage facilities, and cargo loading zones. The strikes triggered immediate explosions and heavy fires across temporary storage warehouses and transport trucks. The port facility functions as a strategic logistics hub for supplying Russian military formations and handling sanctioned cargo exports. Emergency response crews fought the spreading industrial fire across hundreds of square meters. The destruction at the terminal forced a shutdown of loading operations and severely disrupted regional supply chains.",
-      "source": "SBU, AFU General Staff, OSINT, Media"
-    },
-    "id": 129
-  },
-  {
-    "date": "26.07.2026",
-    "lat": 45.3354,
-    "lng": 32.9512,
-    "distance": 147,
-    "ru": {
-      "region": "Крым, Сакский район (пгт Новофёдоровка / Евпатория)",
-      "target": "Элементы ЗРК «С-400 Триумф» (Пусковая установка и РЛС)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 26 июля 2026 года Департамент беспилотных систем ГУР МО Украины провел успешную спецоперацию по уничтожению компонентов зенитно-ракетного комплекса С-400 Триумф в западной части Крыма. В ходе ночного налета группа дальнобойных дронов поразила многофункциональную радиолокационную станцию и пусковую установку 5P85С. Прицельный удар привел к взрыву зенитных ракет на пусковой платформе и разрушению антенной системы РЛС. На позиции комплекса возник мощный пожар, сопровождавшийся повторной детонацией боекомплекта. Батарея С-400 обеспечивала прикрытие ключевых военных аэродромов и логистических путей на крымском побережье. Потеря РЛС и пусковой установки существенно ослабила противовоздушную оборону войск РФ в данном секторе.",
-      "source": "ГУР МО Украины, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Крим, Сакський район (смт Новофедорівка / Євпаторія)",
-      "target": "Елементи ЗРК «С-400 Тріумф» (Пускова установка та РЛС)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 26 липня 2026 року Департамент безпілотних систем ГУР МО України провів успішну спецоперацію зі знищення компонентів зенітно-ракетного комплексу С-400 Тріумф у західній частині Криму. Під час нічного нальоту група далекобійних дронів уразила багатофункціональну радіолокаційну станцію та пускову установку 5П85С. Прицільний удар призвів до вибуху зенітних ракет на пусковій платформі та руйнування антенної системи РЛС. На позиції комплексу виникла потужна пожежа, що супроводжувалася повторною детонацією боєкомплекту. Батарея С-400 забезпечувала прикриття військових аеродромів та логістичних шляхів на кримському узбережжі. Втрата РЛС і пускової установки суттєво послабила ППО окупантів у цьому секторі.",
-      "source": "ГУР МО України, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Crimea, Saky District (Novofedorivka / Yevpatoria)",
-      "target": "S-400 Triumf Components (Launcher & Radar)",
-      "category": "Military-Industrial Complex",
-      "weapon": "Drone",
-      "details": "On the night of July 26, 2026, the Unmanned Systems Department of Ukrainian Military Intelligence (GUR) conducted a successful strike against S-400 Triumf air defense components in western Crimea. During the night operation, long-range attack UAVs destroyed a 5P85S TEL launcher unit and a key engagement radar. The direct strike detonated surface-to-air missiles mounted on the launcher and smashed the radar scanner array. A fierce fire broke out at the firing position, triggering secondary cook-offs of ready-to-launch missiles. The S-400 battery provided air defense coverage over vital military airfields and coastal supply hubs. Losing these key elements significantly degraded Russian air defense capabilities across western Crimea.",
-      "source": "GUR MO Ukraine, OSINT, Media"
-    },
-    "id": 130
-  },
-  {
-    "date": "26.07.2026",
-    "lat": 45.5022,
-    "lng": 32.7056,
-    "distance": 126,
-    "ru": {
-      "region": "Крым, Черноморский район (пгт Черноморское)",
-      "target": "Наземный ретранслятор БПЛА «Герань/Гербера» (Черноморское)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "26 июля 2026 года Силы обороны Украины нанесли точечный удар беспилотниками по наземному узловому ретранслятору российских ударных БПЛА в районе пгт Черноморское. Данный радиоэлектронный комплекс использовался военными РФ для расширения радиуса действия и повышения точности управления дронами типа Герань и Гербера. В результате прямого попадания украинского БПЛА были полностью уничтожены антенно-мачтовые конструкции и аппаратный контейнер с телеметрическим оборудованием. Детонация боевой части привела к возгоранию локального дизель-генераторного узла питания. Уничтожение данного ретранслятора существенным образом усложнило навигацию и управление российскими дронами-камикадзе в акватории Черного моря. Данные о поражении подтверждены официальной сводкой Генштаба ВСУ.",
-      "source": "Генштаб ВСУ, ГУР, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Крим, Чорноморський район (смт Чорноморське)",
-      "target": "Наземний ретранслятор БПЛА «Герань/Гербера» (Чорноморське)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "26 липня 2026 року Сили оборони України завдали точкового удару безпілотниками по наземному вузловому ретранслятору російських ударних БПЛА у районі смт Чорноморське. Цей радіоелектронний комплекс використовувався військовими РФ для розширення радіуса дії та підвищення точності керування дронами типу Герань і Гербера. Внаслідок прямого влучання українського БПЛА було повністю знищено антенно-щоглові конструкції та апаратний контейнер із телеметричним обладнанням. Детонація бойової частини призвела до займання локального дизель-генераторного вузла живлення. Знищення цього ретранслятора суттєво ускладнило навігацію та керування російськими дронами-камікадзе в акваторії Чорного моря. Дані підтверджено Генштабом ЗСУ.",
-      "source": "Генштаб ЗСУ, ГУР, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Crimea, Chornomorske District (Chornomorske)",
-      "target": "UAV Ground Relay & Control Node (Chornomorske)",
-      "category": "Military-Industrial Complex",
-      "weapon": "Drone",
-      "details": "On July 26, 2026, the Ukrainian Defense Forces executed a precision strike against a Russian ground-based drone relay station near Chornomorske. The specialized electronic installation was operated by Russian military units to extend the range and targeting guidance of Geran and Gerbera strike UAVs. A direct hit by a long-range Ukrainian drone completely destroyed the main antenna mast assembly and the telemetry container. The warhead detonation ignited an adjacent power generation shed supplying the installation. Neutralizing this key relay complex compromised Russian drone control networks operating across the western Black Sea theater. The successful engagement was formally validated in the AFU General Staff operational report.",
-      "source": "AFU General Staff, GUR, OSINT, Media"
-    },
-    "id": 131
-  },
-  {
-    "date": "26.07.2026",
     "lat": 45.4912,
     "lng": 32.7483,
     "distance": 128,
@@ -5454,37 +3129,6 @@ const strikeData = [
       "source": "AFU General Staff, OSINT, Media"
     },
     "id": 132
-  },
-  {
-    "date": "25.07.2026",
-    "lat": 50.5512,
-    "lng": 36.5647,
-    "distance": 66,
-    "ru": {
-      "region": "Белгородская область, Белгород",
-      "target": "ПС «Южная» 330 кВ и военный логистический узел",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "25 июля 2026 года Силы обороны Украины нанесли серийный удар беспилотниками по объектам энергоснабжения и военной логистики в Белгороде. Основними целями атаки стали узловая подстанция Южная 330 кВ и прилегающие складские помещения снабжения группировки войск Север. Несколько дронов-камикадзе поразили силовые трансформаторы подстанции, вызвав сильную дугу и пожар с массовым отключением электричества в промышленном секторе. Одновременно зафиксированы попадания по складам хранения снаряжения и автотехники, где началось вторичное горение. Объект питает ключевые предприятия ремонтно-восстановительной базы ВПК в приграничной зоне. В результате атаки энергоснабжение оборонных цехов было нарушено, а на складах уничтожены запасы имущества.",
-      "source": "СБС, ГУР, OSINT, СМИ"
-    },
-    "uk": {
-      "region": "Бєлгородська область, Бєлгород",
-      "target": "ПС «Південна» 330 кВ та військовий логістичний вузол",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "25 липня 2026 року Сили оборони України завдали серійного удару безпілотниками по об'єктах енергопостачання та військової логістики у Бєлгороді. Основними цілями атаки стали вузлова підстанція Південна 330 кВ та прилеглі складські приміщення постачання угруповання військ Північ. Кілька дронів-камікадзе уразили силові трансформатори підстанції, спричинивши сильну дугу та пожежу з масовим відключенням електрики у промисловому секторі. Одночасно зафіксовано влучання по складах зберігання спорядження та автотехніки, де розпочалося вторинне горіння. Об'єкт живить ключові підприємства ремонтно-відновлювальної бази ВПК у прикордонній зоні. Внаслідок атаки енергопостачання оборонних цехів було порушено, а на складах знищено запаси майна.",
-      "source": "СБС, ГУР, OSINT, ЗМІ"
-    },
-    "en": {
-      "region": "Belgorod Oblast, Belgorod",
-      "target": "Yuzhnaya 330 kV Substation & Military Logistics Node",
-      "category": "Military-Industrial Complex",
-      "weapon": "Drone",
-      "details": "On July 25, 2026, the Ukrainian Defense Forces launched a coordinated strike using attack drones against power infrastructure and military logistics hubs in Belgorod. The primary targets were the Yuzhnaya 330 kV main substation and adjacent supply storage facilities supporting the Russian North Group of Forces. Multiple strike drones struck power transformers, inducing severe electrical arcs and fires that caused widespread blackouts in the industrial sector. Concurrently, direct hits were recorded at supply warehouses storing military vehicle parts and tactical equipment, sparking secondary fires. The Yuzhnaya substation supplies electricity to critical repair plants and military workshops operating near the border. The strike disrupted power feeds to defense facilities and destroyed stored military supplies.",
-      "source": "SBS, GUR, OSINT, Media"
-    },
-    "id": 133
   },
   {
     "date": "25.07.2026",
@@ -5578,37 +3222,6 @@ const strikeData = [
       "source": "SBU, OSINT, Media"
     },
     "id": 136
-  },
-  {
-    "date": "25.07.2026",
-    "lat": 47.2357,
-    "lng": 39.7015,
-    "distance": 230,
-    "ru": {
-      "region": "Ростовская область, Ростов-на-Дону",
-      "target": "Военные объекты ВС РФ (РЛС 92Н6Е ЗРК «С-400», ЗРК «Тор-М2», РЭБ «Поле-21»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 25 июля 2026 года Служба безопасности Украины провела комплексную спецоперацию с применением ударных БПЛА по ключевым объектам ПВО и ВПК в Ростове-на-Дону. В ходе атаки прицельным ударом была уничтожена многофункциональная радиолокационная станция 92Н6Е вместе с вышкой для ЗРК С-400 Триумф. Также украинские дроны успешно поразили пусковую установку зенитно-ракетного комплекса Тор-М2 и станцию радиоэлектронной борьбы Поле-21. Дополнительно зафиксированы точные прилеты по двум складским помещениям, использовавшимся для сборки и хранения FPV-дронов. В городе гремели взрывы, работали расчеты ПВО, а от падающих обломков получили повреждения складские здания и несколько домов. Уничтожение РЛС 92Н6Е существенно ослабило возможности обнаружения воздушных целей и наведения ракет С-400 на южном направлении.",
-      "source": "СБУ, OSINT, МО РФ, СМИ"
-    },
-    "uk": {
-      "region": "Ростовська область, Ростов-на-Дону",
-      "target": "Військові об'єкти ЗС РФ (РЛС 92Н6Е ЗРК «С-400», ЗРК «Тор-М2», РЕБ «Поле-21»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 25 липня 2026 року Служба безпеки України провела комплексну спецоперацію із застосуванням ударних БПЛА по ключових об'єктах ППО та ВПК у Ростові-на-Дону. Під час атаки прицільним ударом було знищено багатофункціональну радіолокаційну станцію 92Н6Е разом із вежою для ЗРК С-400 Тріумф. Також українські дрони успішно уразили пускову установку зенітно-ракетного комплексу Тор-М2 та станцію радіоелектронної боротьби Поле-21. Додатково зафіксовано влучні прильоти по двох складських приміщеннях, що використовувалися для збирання та зберігання FPV-дронів. У місті лунали вибухи, працювала ППО, а від падаючих уламків зазнали пошкоджень склади та будинки. Знищення РЛС 92Н6Е суттєво послабило можливості виявлення повітряних цілей та наведення ракет С-400 на південному напрямку.",
-      "source": "СБУ, OSINT, МО РФ, ЗМІ"
-    },
-    "en": {
-      "region": "Rostov Oblast, Rostov-on-Don",
-      "target": "Russian Military Assets (92N6E S-400 Radar, Tor-M2, Pole-21 EW, FPV Warehouses)",
-      "category": "Military-Industrial Complex",
-      "weapon": "Drone",
-      "details": "On the night of July 25, 2026, the Security Service of Ukraine executed a targeted long-range drone operation against critical air defense and military assets in Rostov-on-Don. Precision strikes hit and destroyed a vital 92N6E multi-function radar along with its mobile antenna tower, vital for the S-400 Triumf air defense network. Secondary strikes neutralized a Tor-M2 surface-to-air missile launcher and a Pole-21 electronic warfare station. Furthermore, Ukrainian UAVs struck two warehouse facilities utilized for storing and assembling military FPV strike drones. Multiple explosions shook the city while falling debris inflicted damage on nearby commercial warehouses and residential buildings. Eliminating the 92N6E radar severely degraded Russian early warning capabilities and S-400 targeting across the southern theater.",
-      "source": "SBU, OSINT, Russian MoD, Media"
-    },
-    "id": 137
   },
   {
     "date": "25.07.2026",
@@ -6510,77 +4123,10 @@ const strikeData = [
     "id": 166
   },
   {
-    "date": "16.07.2026",
-    "lat": 45.3,
-    "lng": 36.8,
-    "distance": 310,
-    "ru": {
-      "region": "Азовское море / Чёрное море (акватория)",
-      "target": "Операция «МоЛоЧКа» — 11 судов теневого флота РФ (5 нефтетанкеров, 1 газовоз, 3 сухогруза, 2 буксира)",
-      "category": "Флот / Топливная логистика",
-      "weapon": "Дрон / БЭК",
-      "details": "16 июля 2026 года в рамках продолжающейся операции «МоЛоЧКа» Силы беспилотных систем (СБС) ВСУ под командованием Роберта «Мадяра» Бровди нанесли удары ещё по 11 судам российского теневого флота в акваториях Чёрного и Азовского морей. В числе поражённых — пять нефтяных танкеров, один танкер-газовоз, три сухогруза и два буксира. К исходу 16 июля суммарное число судов, поражённых в ходе операции «МоЛоЧКа», достигло 147 единиц — 117 в Азовском море и 30 в Чёрном. Концепция операции предусматривает «неизлечимый паралич логистики»: украинские безэкипажные катера выводят суда из строя, поражая ходовую часть, рулевое управление и навигационное оборудование, не пробивая при этом корпус и не создавая угрозы экологической катастрофы. Теневой флот является главным инструментом России для экспорта нефти в обход западных санкций — именно нефтяные доходы финансируют военную машину Кремля. Ударами по этим судам Украина системно перекрывает финансовые артерии войны и превращает Азовское море во враждебную для российского судоходства акваторию.",
-      "source": "СБС ВСУ (Роберт «Мадяр» Бровді), pravda.com.ua, Ukrinform, Armyinform"
-    },
-    "uk": {
-      "region": "Азовське море / Чорне море (акваторія)",
-      "target": "Операція «МоЛоЧКа» — 11 суден тіньового флоту РФ (5 нафтотанкерів, 1 газовоз, 3 суховантажі, 2 буксири)",
-      "category": "Флот / Паливна логістика",
-      "weapon": "Дрон / БЕК",
-      "details": "16 липня 2026 року в рамках операції «МоЛоЧКа», що продовжується, Сили безпілотних систем (СБС) ЗСУ під командуванням Роберта «Мадяра» Бровді завдали ударів ще по 11 суднах тіньового флоту РФ в акваторіях Чорного та Азовського морів. Серед уражених — п'ять нафтових танкерів, один танкер-газовоз, три суховантажні судна та два буксири. До кінця 16 липня загальна кількість суден, уражених у ході операції «МоЛоЧКа», досягла 147 одиниць — 117 в Азовському морі та 30 у Чорному. Концепція операції передбачає «невиліковний параліч логістики»: українські безекіпажні катери виводять судна з ладу, уражаючи ходову частину, рульове управління та навігаційне обладнання, не пробиваючи при цьому корпус і не створюючи загрози екологічної катастрофи. Тіньовий флот є головним інструментом Росії для експорту нафти в обхід західних санкцій — саме нафтові доходи фінансують військову машину Кремля. Ударами по цих суднах Україна системно перекриває фінансові артерії війни та перетворює Азовське море на ворожу для російського судноплавства акваторію.",
-      "source": "СБС ЗСУ (Роберт «Мадяр» Бровді), pravda.com.ua, Ukrinform, Armyinform"
-    },
-    "en": {
-      "region": "Sea of Azov / Black Sea (open waters)",
-      "target": "Operation 'MoLoChKa' — 11 Russian Shadow Fleet Vessels (5 oil tankers, 1 LNG tanker, 3 dry cargo ships, 2 tugboats)",
-      "category": "Fleet / Fuel Logistics",
-      "weapon": "Drone / USV",
-      "details": "On July 16, 2026, as part of the ongoing Operation 'MoLoChKa', Ukraine's Unmanned Systems Forces (USF) under commander Robert 'Madyar' Brovdi struck 11 more vessels of the Russian shadow fleet in the Black Sea and Sea of Azov. Among those hit were five oil tankers, one LNG tanker, three dry cargo vessels, and two tugboats. By the end of July 16, the total number of vessels struck during Operation MoLoChKa reached 147 — 117 in the Sea of Azov and 30 in the Black Sea. The operation's concept envisions 'incurable logistical paralysis': Ukrainian unmanned surface vessels disable ships by targeting their propulsion, steering, and navigation systems without breaching hulls, thus avoiding environmental catastrophe. Russia's shadow fleet is its primary tool for exporting oil in circumvention of Western sanctions — and it is oil revenues that fund the Kremlin's war machine. By systematically striking these vessels, Ukraine is cutting off the financial lifelines of the war and turning the Sea of Azov into hostile waters for Russian shipping.",
-      "source": "USF of the AFU (Robert 'Madyar' Brovdi), pravda.com.ua, Ukrinform, Armyinform"
-    },
-    "id": 167
-  },
-  {
-    "date": "15.07.2026",
-    "lat": 44.5,
-    "lng": 34.5,
-    "distance": 279,
-    "ru": {
-      "region": "Чёрное море (акватория)",
-      "target": "Операция «МоЛоЧКа» — 20 судов теневого флота РФ (17 нефтетанкеров, 2 газовоза, 1 буксир)",
-      "category": "Флот / Топливная логистика",
-      "weapon": "Дрон / БЭК",
-      "details": "В ночь на 15 июля 2026 года Силы беспилотных систем (СБС) ВСУ провели масштабную операцию под кодовым названием «МоЛоЧКа» в акватории Чёрного моря. Символично, что старт черноморского кластера операции был приурочен ко Дню Украинской Государственности. Командующий СБС Роберт «Мадяр» Бровди лично объявил о результатах: за ночь поражены 20 судов российского «теневого флота» — 17 нефтяных танкеров, два газовоза и один буксир. Теневой флот — это ключевой инструмент России для обхода западных санкций и экспорта нефти нелегальными каналами, снабжая войну сотнями миллионов долларов. Ранее в рамках первого этапа той же операции «МоЛоЧКа» в Азовском море за предыдущие дни были поражены 116 судов — итого общее число жертв операции достигло 136 единиц за девять дней. Систематическое уничтожение российского теневого флота в обоих морях наносит колоссальный ущерб нефтяному экспорту Москвы и подрывает финансирование агрессии против Украины.",
-      "source": "СБС ВСУ (командующий Роберт «Мадяр» Бровді), Armyinform, Укрправда, NV.ua, Meduza"
-    },
-    "uk": {
-      "region": "Чорне море (акваторія)",
-      "target": "Операція «МоЛоЧКа» — 20 суден тіньового флоту РФ (17 нафтотанкерів, 2 газовози, 1 буксир)",
-      "category": "Флот / Паливна логістика",
-      "weapon": "Дрон / БЕК",
-      "details": "У ніч на 15 липня 2026 року Сили безпілотних систем (СБС) ЗСУ провели масштабну операцію під кодовою назвою «МоЛоЧКа» в акваторії Чорного моря. Символічно, що старт чорноморського кластера операції було приурочено до Дня Державності України. Командувач СБС Роберт «Мадяр» Бровді особисто оголосив про результати: за ніч уражено 20 суден російського «тіньового флоту» — 17 нафтових танкерів, два газовози та один буксир. Тіньовий флот — це ключовий інструмент Росії для обходу західних санкцій та нелегального експорту нафти, що фінансує війну сотнями мільйонів доларів. Раніше в рамках першого етапу тієї ж операції «МоЛоЧКа» в Азовському морі за попередні дні було уражено 116 суден — загалом кількість жертв операції сягнула 136 одиниць за дев'ять днів. Систематичне знищення тіньового флоту в обох морях завдає колосальних збитків нафтовому експорту Москви та підриває фінансування агресії проти України.",
-      "source": "СБС ЗСУ (командувач Роберт «Мадяр» Бровді), Armyinform, Укрправда, NV.ua, Meduza"
-    },
-    "en": {
-      "region": "Black Sea (open waters)",
-      "target": "Operation 'MoLoChKa' — 20 Russian Shadow Fleet Vessels (17 oil tankers, 2 LNG tankers, 1 tugboat)",
-      "category": "Fleet / Fuel Logistics",
-      "weapon": "Drone / USV",
-      "details": "On the night of July 15, 2026, Ukraine's Unmanned Systems Forces (USF) conducted a large-scale operation codenamed 'MoLoChKa' in the Black Sea. Symbolically, the launch of the Black Sea cluster of the operation was timed to coincide with Ukrainian Statehood Day. USF Commander Robert 'Madyar' Brovdi personally announced the results: 20 vessels of Russia's 'shadow fleet' were struck overnight — 17 oil tankers, two LNG tankers, and one tugboat. The shadow fleet is Russia's key tool for circumventing Western sanctions and illegally exporting oil, generating hundreds of millions of dollars to fund the war. Previously, in the first stage of the same 'MoLoChKa' operation in the Sea of Azov, 116 vessels had been struck in the preceding days — bringing the operation's total to 136 vessels over nine days. The systematic destruction of Russia's shadow fleet in both seas is causing colossal damage to Moscow's oil export capacity and undermining the financing of its aggression against Ukraine.",
-      "source": "USF of the AFU (Commander Robert 'Madyar' Brovdi), Armyinform, Ukrpravda, NV.ua, Meduza"
-    },
-    "id": 168
-  },
-  {
     "date": "14.07.2026",
     "lat": 53.4073,
     "lng": 55.8817,
     "distance": 1375,
-    "images": [
-      "images/salavat1.jpg",
-      "images/salavat2.jpg",
-      "video/salavat.mp4"
-    ],
     "ru": {
       "region": "Республика Башкортостан, Салават",
       "target": "«Газпром нефтехим Салават» — НПЗ и нефтехимический комплекс",
@@ -6612,11 +4158,6 @@ const strikeData = [
     "lat": 44.884,
     "lng": 38.829,
     "distance": 434,
-    "images": [
-      "images/afipsky1.jpg",
-      "images/afipsky2.jpg",
-      "video/afipsky.mp4"
-    ],
     "ru": {
       "region": "Краснодарский край, пгт Афипский, Северский район",
       "target": "Афипский нефтеперерабатывающий завод (ООО «Афипский НПЗ»)",
@@ -6648,11 +4189,6 @@ const strikeData = [
     "lat": 46.473,
     "lng": 41.5519,
     "distance": 390,
-    "images": [
-      "images/tsim1.jpg",
-      "images/tsim2.jpg",
-      "video/tsim.mp4"
-    ],
     "ru": {
       "region": "Ростовская область, Цимлянск",
       "target": "Цимлянская нефтебаза (АО «РН-Ростовнефтепродукт»)",
@@ -6684,11 +4220,6 @@ const strikeData = [
     "lat": 45.148,
     "lng": 42.062,
     "distance": 524,
-    "images": [
-      "images/vyazniki1.jpg",
-      "images/vyazniki2.jpg",
-      "video/vyazniki.mp4"
-    ],
     "ru": {
       "region": "Ставропольский край, Михайловск (х. Вязники)",
       "target": "Нефтебаза ООО «Корона»",
@@ -6720,11 +4251,6 @@ const strikeData = [
     "lat": 53.0854,
     "lng": 48.3971,
     "distance": 898,
-    "images": [
-      "images/syzran_2026_1.jpg",
-      "images/syzran_2026_2.jpg",
-      "video/syzran_2026_comp.mp4"
-    ],
     "ru": {
       "region": "Самарская область, Сызрань",
       "target": "Сызранский НПЗ (Роснефть)",
@@ -6756,11 +4282,6 @@ const strikeData = [
     "lat": 47.115,
     "lng": 39.418,
     "distance": 226,
-    "images": [
-      "images/azov-1-2026-07-11_opt.jpg",
-      "images/azov-2-2026-07-11_opt.jpg",
-      "video/azov-1-2026-07-11_opt.mp4"
-    ],
     "ru": {
       "region": "Ростовская область, Азов",
       "target": "Азовская нефтебаза (ЗАО «Азовпродукт» и ООО «Донтерминал»)",
@@ -6792,11 +4313,6 @@ const strikeData = [
     "lat": 44.85,
     "lng": 38.5769,
     "distance": 424,
-    "images": [
-      "images/ilsk1_2026-07-11_opt.jpg",
-      "images/ilsk2_2026-07-11.jpg",
-      "video/ilsk-1-2026-07-11.mp4"
-    ],
     "ru": {
       "region": "Краснодарский край, Ильский",
       "target": "Ильский НПЗ (ООО «КНГК-ИНПЗ»)",
@@ -8374,37 +5890,6 @@ const strikeData = [
     "id": 225
   },
   {
-    "date": "11.04.2026",
-    "lat": 48.5833,
-    "lng": 45.8,
-    "distance": 603,
-    "ru": {
-      "region": "Астраханская область, Знаменск",
-      "target": "Полигон «Капустин Яр»",
-      "category": "Военная инфраструктура / ВПК",
-      "weapon": "Дрон",
-      "details": "Массированная атака беспилотников на 4-й государственный центральный межвидовой полигон РФ, где испытываются ракетные комплексы. Из-за налета временно закрывали воздушное пространство и аэропорт в Астрахани.",
-      "source": "OSINT, СМИ РФ"
-    },
-    "uk": {
-      "region": "Астраханська область, Знаменськ",
-      "target": "Полігон «Капустін Яр»",
-      "category": "Військова інфраструктура / ВПК",
-      "weapon": "Дрон",
-      "details": "Масова атака безпілотників на 4-й державний центральний межвидовий полігон РФ, де випробовуються ракетні комплекси. Через наліт тимчасово закривали повітряний простір та аеропорт в Астрахані.",
-      "source": "OSINT, ЗМІ РФ"
-    },
-    "en": {
-      "region": "Astrakhan Oblast, Знаменск",
-      "target": "Poligon \"Kapustin Yar\"",
-      "category": "Military Infrastructure",
-      "weapon": "Drone",
-      "details": "massive strike droneov na 4-y gosstrikestvennyy tsentralnyy mezhvidovoy poligon RF, gde ispytyvayutsya raketnye kompleksy. Iz-za naleta vremenno zakryvali vozdushnoe prostranstvo i aeroport v Astrakhani.",
-      "source": "OSINT, Russian Media"
-    },
-    "id": 226
-  },
-  {
     "date": "12.04.2026",
     "lat": 50.6433,
     "lng": 36.59,
@@ -9335,37 +6820,6 @@ const strikeData = [
     "id": 256
   },
   {
-    "date": "16.05.2026",
-    "lat": 53.4,
-    "lng": 34,
-    "distance": 280,
-    "ru": {
-      "region": "Брянская обл., Лесное",
-      "target": "Станция контроля воздушного пространства",
-      "category": "ВПК",
-      "weapon": "Неизвестно",
-      "details": "Точное поражение и выведение из строя радиолокационной станции слежения.",
-      "source": "Генштаб ВСУ"
-    },
-    "uk": {
-      "region": "Брянська обл., Лісове",
-      "target": "Станція контролю повітряного простору",
-      "category": "ВПК",
-      "weapon": "Невідомо",
-      "details": "Точне ураження та виведення з ладу радіолокаційної станції стеження.",
-      "source": "Генштаб ЗСУ"
-    },
-    "en": {
-      "region": "Bryanskая обл., Лесное",
-      "target": "Stantsiya kontrolya vozdushnogo prostranstva",
-      "category": "Defense Industry",
-      "weapon": "Unknown",
-      "details": "Tochnoe was struckie i vyvedenie iz stroya radiolokatsionnoy stantsii slezheniya.",
-      "source": "AFU General Staff"
-    },
-    "id": 257
-  },
-  {
     "date": "17.05.2026",
     "lat": 55.638,
     "lng": 37.794,
@@ -9490,37 +6944,6 @@ const strikeData = [
     "id": 261
   },
   {
-    "date": "20.05.2026",
-    "lat": 45.0428,
-    "lng": 41.9734,
-    "distance": 529,
-    "ru": {
-      "region": "Ставропольский край, Ставрополь",
-      "target": "Военно-инфраструктурные объекты",
-      "category": "Военная инфраструктура",
-      "weapon": "Дрон",
-      "details": "Украинский беспилотник прорвался непосредственно к краевому центру. После падения и детонации его обломки были обнаружены в черте Ставрополя.",
-      "source": "СМИ РФ"
-    },
-    "uk": {
-      "region": "Ставропольський край, Ставрополь",
-      "target": "Військово-інфраструктурні об'єкти",
-      "category": "Військова інфраструктура",
-      "weapon": "Дрон",
-      "details": "Український безпілотник прорвався безпосередньо до крайового центру. Після падіння та детонації його уламки були виявлені в межах Ставрополя.",
-      "source": "ЗМІ РФ"
-    },
-    "en": {
-      "region": "Stavropol Krai, Stavropol",
-      "target": "Voenno-infrastrukturnye obekty",
-      "category": "Military Infrastructure",
-      "weapon": "Drone",
-      "details": "Ukrainian drone prorvalsya neposredstvenno k kraevomu tsentru. Posle padeniya i detonation ego debris byli obnaruzheny v cherte Stavropolya.",
-      "source": "Russian Media"
-    },
-    "id": 262
-  },
-  {
     "date": "21.05.2026",
     "lat": 53.0854,
     "lng": 48.3971,
@@ -9550,37 +6973,6 @@ const strikeData = [
       "source": "MoD Ukrainy, Reuters"
     },
     "id": 263
-  },
-  {
-    "date": "22.05.2026",
-    "lat": 49.2786,
-    "lng": 38.9105,
-    "distance": 114,
-    "ru": {
-      "region": "Луганская обл., Старобельск",
-      "target": "Склад боеприпасов / база БПЛА",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "Поражение складов боеприпасов, средств ПВО и штаба отряда БПЛА «Рубикон».",
-      "source": "Генштаб ВСУ"
-    },
-    "uk": {
-      "region": "Луганська обл., Старобільськ",
-      "target": "Склад боєприпасів / база БПЛА",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "Поразка складів боєприпасів, засобів ППО та штабу загону БПЛА «Рубікон».",
-      "source": "Генштаб ЗСУ"
-    },
-    "en": {
-      "region": "Luhanskая обл., Старобельск",
-      "target": "Warehouse boepripasov / baza BPLA",
-      "category": "Defense Industry",
-      "weapon": "Drone",
-      "details": "was struckie warehouseov boepripasov, sredstv air defense i shtaba otryada UAV \"Rubikon\".",
-      "source": "AFU General Staff"
-    },
-    "id": 264
   },
   {
     "date": "23.05.2026",
@@ -10297,37 +7689,6 @@ const strikeData = [
   },
   {
     "date": "08.06.2026",
-    "lat": 51.03,
-    "lng": 36.73,
-    "distance": 121,
-    "ru": {
-      "region": "Белгородская обл., Прохоровка",
-      "target": "Склад боеприпасов",
-      "category": "ВПК",
-      "weapon": "Неизвестно",
-      "details": "Точное поражение передового склада, масштабная вторичная детонация боеприпасов.",
-      "source": "Генштаб ВСУ"
-    },
-    "uk": {
-      "region": "Білгородська обл., Прохорівка",
-      "target": "Склад боєприпасів",
-      "category": "ВПК",
-      "weapon": "Невідомо",
-      "details": "Точна поразка передового складу, масштабна вторинна детонація боєприпасів.",
-      "source": "Генштаб ЗСУ"
-    },
-    "en": {
-      "region": "Belgorodская обл., Prokhorovka",
-      "target": "Warehouse boepripasov",
-      "category": "Defense Industry",
-      "weapon": "Unknown",
-      "details": "Tochnoe was struckie peredovogo warehousea, masshtabnaya vtorichnaya detonation boepripasov.",
-      "source": "AFU General Staff"
-    },
-    "id": 288
-  },
-  {
-    "date": "08.06.2026",
     "lat": 59.95,
     "lng": 30.37,
     "distance": 942,
@@ -10356,37 +7717,6 @@ const strikeData = [
       "source": "OSINT, sluzhby spaseniya"
     },
     "id": 289
-  },
-  {
-    "date": "08.06.2026",
-    "lat": 50.605,
-    "lng": 36.65,
-    "distance": 74,
-    "ru": {
-      "region": "Белгородская область, Белгородский район",
-      "target": "Логистический хаб / Склад боеприпасов",
-      "category": "Военная инфраструктура",
-      "weapon": "Дрон / Ракета",
-      "details": "Официально подтвержденный Генштабом ВСУ удар. Масштабный взрыв (шлейф в виде «гриба» был виден из Белгорода) с длительной вторичной детонацией на складах в районе н.п. Новосадовый и Беловское.",
-      "source": "Генштаб ВСУ"
-    },
-    "uk": {
-      "region": "Бєлгородська область, Бєлгородський район",
-      "target": "Логістичний хаб / Склад боєприпасів",
-      "category": "Військова інфраструктура",
-      "weapon": "Дрон / Ракета",
-      "details": "Офіційно підтверджений Генштабом ЗСУ удар. Масштабний вибух (шлейф у вигляді «гриба» було видно з Бєлгорода) з тривалою вторинною детонацією на складах у районі н.п. Новосадовий та Білівське.",
-      "source": "Генштаб ЗСУ"
-    },
-    "en": {
-      "region": "Belgorod Oblast, Belgorodский район",
-      "target": "Logisticheskiy khab / Warehouse boepripasov",
-      "category": "Military Infrastructure",
-      "weapon": "Drone / Missile",
-      "details": "Ofitsialno podtverzhdennyy Genshtabom AFU strike. large-scale explosion (shleyf v vide \"griba\" byl viden iz Belcity) s dlitelnoy vtorichnoy detonatsiey na warehouseakh v districte n.p. Novosadovyy i Belovskoe.",
-      "source": "AFU General Staff"
-    },
-    "id": 290
   },
   {
     "date": "08.06.2026",
@@ -10886,37 +8216,6 @@ const strikeData = [
   },
   {
     "date": "14.06.2026",
-    "lat": 52.184,
-    "lng": 34.382,
-    "distance": 145,
-    "ru": {
-      "region": "Брянская область, Севский район (д. Некислица)",
-      "target": "Командно-наблюдательный пункт ВС РФ",
-      "category": "Воненая инфраструктура",
-      "weapon": "Ракета / Дрон",
-      "details": "Официально подтвержденный в утренней сводке Генштаба ВСУ удар по ключевому командному пункту, координировавшему действия приграничной группировки российских войск на Брянском направлении.",
-      "source": "Генштаб ВСУ"
-    },
-    "uk": {
-      "region": "Брянська область, Севський район (s. Некислиця)",
-      "target": "Командно-спостережний пункт ЗС РФ",
-      "category": "Військова інфраструктура",
-      "weapon": "Ракета / Дрон",
-      "details": "Офіційно підтверджений у ранковій зведенні Генштабу ЗСУ удар по ключовому командному пункту, який координував дії прикордонного угруповання російських військ на Брянському напрямку.",
-      "source": "Генштаб ЗСУ"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Sevskий район (д. Некислица)",
-      "target": "Komandno-nablyudatelnyy punkt VS RF",
-      "category": "Vonenaya infrastruktura",
-      "weapon": "Missile / Drone",
-      "details": "Ofitsialno podtverzhdennyy v utrenney svodke Genshtaba AFU strike on klyuchevomu komandnomu punktu, koordinirovavshemu deystviya prigranichnoy gruppirovki Russian voysk na Bryanskom napravlenii.",
-      "source": "AFU General Staff"
-    },
-    "id": 307
-  },
-  {
-    "date": "14.06.2026",
     "lat": 44.666,
     "lng": 41.936,
     "distance": 561,
@@ -11102,37 +8401,6 @@ const strikeData = [
     "id": 313
   },
   {
-    "date": "17.06.2026",
-    "lat": 50.4369,
-    "lng": 36.9875,
-    "distance": 73,
-    "ru": {
-      "region": "Белгородская область, Шебекинский район, с. Ржевка",
-      "target": "Военный склад",
-      "category": "Военная инфраструктура",
-      "weapon": "Дрон",
-      "details": "Удар беспилотников по складским помещениям в промышленной зоне на границе сёл Ржевка и Вознесенка. Возник сильный пожар; по данным OSINT-анализа, склад мог использоваться для хранения военных грузов.",
-      "source": "OSINT, местный губернатор"
-    },
-    "uk": {
-      "region": "Бєлгородська область, Шебекинський район, с. Ржівка",
-      "target": "Військовий склад",
-      "category": "Військова інфраструктура",
-      "weapon": "Дрон",
-      "details": "Удар безпілотників по складських приміщеннях у промисловій зоні на межі сіл Ржевка та Вознесенка. Виникла сильна пожежа; за даними OSINT-аналізу, склад міг використовуватися для зберігання військових вантажів.",
-      "source": "OSINT, місцевий губернатор"
-    },
-    "en": {
-      "region": "Belgorod Oblast, Шебекинский район, с. Ржевка",
-      "target": "Voennyy Warehouse",
-      "category": "Military Infrastructure",
-      "weapon": "Drone",
-      "details": "strike droneov po warehouseskim pomeshcheniyam v promyshlennoy zone na granitse syol Rzhevka i Voznesenka. Voznik silnyy fire; according to OSINT-analiza, warehouse mog ispolzovatsya dlya khraneniya voennykh gruzov.",
-      "source": "OSINT, mestnyy gubernator"
-    },
-    "id": 314
-  },
-  {
     "date": "18.06.2026",
     "lat": 48.0612,
     "lng": 39.9345,
@@ -11192,12 +8460,6 @@ const strikeData = [
       "details": "Povtornaya massive strike droneov na krupneyshiy oil refinery Moskvy. V rezultate direct hits na facilitye voznik silnyy fire s neskolkimi ochagami vozgoraniya, postradali ustanovki pererabotki oil i storage tanknyy park.",
       "source": "SBU, SOF, HUR, Sily bespilotnykh sistem, mer Moskvy"
     },
-    "images": [
-      "images/mnpz_explosion.jpg",
-      "images/mnpz_explosion1.jpg",
-      "images/mnpz_explosion2.jpg",
-      "images/mnpz_explosion3.jpg"
-    ],
     "id": 316
   },
   {
@@ -11446,12 +8708,6 @@ const strikeData = [
       "details": "strikes strikenykh UAV Sil bespilotnykh sistem (SBS) po facilityam perevalki petroleum products i szhizhennogo gasa (\"AEgas-Terminal\" i \"thermal power station\"). Zafiksirovano znachitelnoe kolichestvo teplovykh anomaliy i fireov.",
       "source": "SBS, AFU General Staff"
     },
-    "images": [
-      "images/26_21-06_kerch.jpg",
-      "images/26_21-06_kerch1.jpg",
-      "images/26_21-06_kerch2.jpg",
-      "images/26_21-06_kerch3.jpg"
-    ],
     "id": 324
   },
   {
@@ -11576,45 +8832,7 @@ const strikeData = [
       "details": "massive dnevnoy missile strike on predpriyatiyu, nakhodyashchemusya pod zapadnymi sanktsiyami. plant yavlyaetsya vedushchim produceselem elektroniki (matrits i tranzistorov) dlya Russian raket \"Iskander-K\", Kh-101 i zenitnykh kompleksov \"Pantsir-S1\". Zafiksirovano 4 tochnykh direct hits, obrushenie kryshi glavnogo korpusa i silnyy fire. strikesa ofitsialno podtverzhdena Genshtabom AFU.",
       "source": "AFU General Staff, OSINT"
     },
-    "images": [
-      "images/26-2206-voronezh.jpg",
-      "images/26-2206-voronezh1.jpg",
-      "images/26-2206-voronezh2.jpg",
-      "images/26-2206-voronezh3.jpg",
-      "images/26-2206-voronezh4.jpg"
-    ],
     "id": 328
-  },
-  {
-    "date": "22.06.2026",
-    "lat": 56.7378,
-    "lng": 37.2511,
-    "distance": 668,
-    "ru": {
-      "region": "Московская область, Дубна",
-      "target": "Центр космической связи (ЦКС) «Дубна»",
-      "category": "Военная инфраструктура / ВПК",
-      "weapon": "Дрон",
-      "details": "Успешная атака ударных БПЛА на крупнейшую станцию космической связи в РФ, обеспечивающую обмен военной информацией и связь с орбитальной спутниковой группировкой. Генштаб ВСУ и российская пресс-служба предприятия подтвердили массированный налет, на объекте было зафиксировано масштабное задымление.",
-      "source": "Генштаб ВСУ, СМИ РФ"
-    },
-    "uk": {
-      "region": "Московська область, Дубна",
-      "target": "Центр космічного зв'язку (ЦКЗ) «Дубна»",
-      "category": "Військова інфраструктура / ВПК",
-      "weapon": "Дрон",
-      "details": "Успішна атака ударних БПЛА на найбільшу станцію космічного зв'язку в РФ, що забезпечує обмін військовою інформацією та зв'язок з орбітальним супутниковим угрупованням. Генштаб ЗСУ та російська пресслужба підприємства підтвердили масований наліт, на об'єкті було зафіксовано масштабне задимлення.",
-      "source": "Генштаб ЗСУ, ЗМІ РФ"
-    },
-    "en": {
-      "region": "Moscow Oblast, Дубна",
-      "target": "Tsentr kosmicheskoy svyazi (TsKS) \"Dubna\"",
-      "category": "Military Infrastructure",
-      "weapon": "Drone",
-      "details": "successful strike strikenykh UAV na krupneyshuyu stantsiyu kosmicheskoy svyazi v RF, obespechivayushchuyu obmen voennoy informatsiey i svyaz s orbitalnoy sputnikovoy gruppirovkoy. AFU General Staff i Russian press-sluzhba facility podtverdili massive nalet, na facilitye bylo zafiksirovano masshtabnoe zadymlenie.",
-      "source": "AFU General Staff, Russian Media"
-    },
-    "id": 329
   },
   {
     "date": "23.06.2026",
@@ -11742,37 +8960,6 @@ const strikeData = [
   },
   {
     "date": "24.06.2026",
-    "lat": 44.6167,
-    "lng": 33.5254,
-    "distance": 235,
-    "ru": {
-      "region": "г. Севастополь (временно оккупированный Крым)",
-      "target": "Главная электрическая подстанция «Севастополь» (330/220/110/35 кВ)",
-      "category": "Энергетическая инфраструктура",
-      "weapon": "Дрон",
-      "details": "По заявлению командования Сил беспилотных систем Украины, ударом была поражена главная распределительная подстанция, обеспечивающая передачу электроэнергии от Балаклавской ТЭС. После атаки в городе произошли масштабные отключения электроэнергии.",
-      "source": "Силы беспилотных систем ВСУ, Reuters"
-    },
-    "uk": {
-      "region": "м. Севастополь (тимчасово окупований Крим)",
-      "target": "Головна електропідстанція «Севастополь» (330/220/110/35 кВ)",
-      "category": "Енергетична інфраструктура",
-      "weapon": "Дрон",
-      "details": "За повідомленням Сил безпілотних систем України, уражено головну розподільчу підстанцію, яка передає електроенергію від Балаклавської ТЕС. Після удару в місті відбулися масштабні відключення електропостачання.",
-      "source": "Сили безпілотних систем ЗСУ, Reuters"
-    },
-    "en": {
-      "region": "г. Sevastopol (временно оккупированный Крым)",
-      "target": "Glavnaya elektricheskaya podstantsiya \"Sevastopol\" (330/220/110/35 kV)",
-      "category": "Energeticheskaya infrastruktura",
-      "weapon": "Drone",
-      "details": "Po zayavleniyu komandovaniya Sil bespilotnykh sistem Ukrainy, by a strike byla was strucka glavnaya raspredelitelnaya podstantsiya, obespechivayushchaya peredachu elektroenergii ot Balaklavskoy thermal power station. Posle strikes v citye proizoshli masshtabnye otklyucheniya elektroenergii.",
-      "source": "Sily bespilotnykh sistem AFU, Reuters"
-    },
-    "id": 334
-  },
-  {
-    "date": "24.06.2026",
     "lat": 45.0925,
     "lng": 33.5958,
     "distance": 188,
@@ -11893,11 +9080,6 @@ const strikeData = [
       "details": "Ukrainian dalnoboynye UAV strikesovali krupneyshiy neftepererabatyvayushchiy uzel Rossii na rasstoyanii okolo 1400-1500 km ot granitsy Ukrainy. Zafiksirovany prilety, firey i gustoy chernyy dym nad territorymi facilities \"Bashoil-Novoyl\" i \"Bashoil-Ufaneftekhim\". Ukrainian sources soobshchali o was struckii ustanovok pervichnoy pererabotki oil.",
       "source": "Prezident Ukrainy, SBU, Exilenova+, ASTRA, ukrainskie i rossiyskie Media"
     },
-    "images": [
-      "images/26_25-06_bashneft1.jpg",
-      "images/26_25-06_bashneft2.jpg",
-      "images/26_25-06_bashneft3.jpg"
-    ],
     "id": 338
   },
   {
@@ -12028,6 +9210,7 @@ const strikeData = [
     "date": "27.06.2026",
     "lat": 56.634,
     "lng": 36.311,
+    "distance": 644,
     "ru": {
       "region": "Тверская область, пгт Редкино",
       "target": "ОАО «Редкинский опытный завод» (РОЗ)",
@@ -12052,13 +9235,13 @@ const strikeData = [
       "details": "At night, the enterprise's territory was attacked by several kamikaze drones (experts identified the use of long-range Lyutyi UAVs). A hit on the roof of one of the key workshops (No. 4) was recorded, as well as damage to a pipeline in the zone with flammable liquids, causing a powerful fire and explosions. The plant produces critically important specialized missile and aviation fuel (decilin) for the Russian Air Force.",
       "source": "OSINT (ASTRA, Baza, Militarnyi), local residents' reports"
     },
-    "distance": 644,
     "id": 343
   },
   {
     "date": "27.06.2026",
     "lat": 56.1778,
     "lng": 40.5748,
+    "distance": 699,
     "ru": {
       "region": "Владимирская область, Камешковский район (район села Второво)",
       "target": "Промежуточная нефтеперекачивающая станция (ППС) «Второво» (АО «Транснефть – Верхняя Волга»)",
@@ -12083,13 +9266,13 @@ const strikeData = [
       "details": "The SBU announced a repeated strike on the Vtorovo oil pumping station, which supplies fuel to the Moscow region. According to preliminary Ukrainian data, the station's technical building was hit, followed by an explosion. Russian regional sources and OSINT communities reported a fire and air defense activity near the facility.",
       "source": "SBU, OSINT (ASTRA), Russian regional sources"
     },
-    "distance": 699,
     "id": 344
   },
   {
     "date": "27.06.2026",
     "lat": 48.7845,
     "lng": 44.5912,
+    "distance": 513,
     "ru": {
       "region": "Волгоградская область, Волгоград",
       "target": "ФНПЦ «Титан-Баррикады»",
@@ -12114,13 +9297,6 @@ const strikeData = [
       "details": "An unprecedented and historic strike by the newest long-range FP-5 Flamingo missile on a strategic Russian defense enterprise that manufactures components and launchers for the Iskander missile systems and nuclear complexes (Topol-M, Yars). The precise hit on the workshops caused massive destruction of the production infrastructure and secondary detonations. The operation was confirmed by the Ukrainian military command and caused serious damage to Russian missile production.",
       "source": "General Staff of the Armed Forces of Ukraine, GUR, OSINT, local authorities"
     },
-    "distance": 513,
-    "images": [
-      "video/26-2706-titan-barikady.MP4",
-      "images/26_27-06_titan0.jpg",
-      "images/26_27-06_titan1.jpg",
-      "images/26_27-06_titan2.jpg"
-    ],
     "id": 345
   },
   {
@@ -12152,14 +9328,6 @@ const strikeData = [
       "details": "As a result of an unprecedentedly massive combined attack by the Defense Forces, the strategic Slavyansk Oil Refinery was successfully struck. A series of powerful explosions rang out, after which a large-scale fire broke out in the tank farm at the facility. The local operational headquarters and the governor acknowledged the direct ignition of several oil storage tanks, as well as damage to the adjacent gas pipeline and accompanying infrastructure.",
       "source": "President of Ukraine, General Staff of the Armed Forces of Ukraine, OSINT (Exilenova+, Supernova+), Operational Headquarters of Kuban"
     },
-    "images": [
-      "video/26-2806-NPZ_slavansk-na-kubani.mp4",
-      "images/26-2806-na-kubani1.jpg",
-      "images/26-2806-na-kubani2.jpg",
-      "images/26-2806-na-kubani3.jpg",
-      "images/26-2806-na-kubani4.jpg",
-      "images/26-2806-na-kubani5.jpg"
-    ],
     "id": 346
   },
   {
@@ -12197,6 +9365,7 @@ const strikeData = [
     "date": "29.06.2026",
     "lat": 52.8832,
     "lng": 40.4851,
+    "distance": 436,
     "ru": {
       "region": "Тамбовская область, Мичуринский муниципальный округ (с. Новоникольское)",
       "target": "Линейно-производственная диспетчерская станция (ЛПДС) «Никольское» / Нефтебаза (АО «Транснефть-Дружба»)",
@@ -12221,13 +9390,13 @@ const strikeData = [
       "details": "In the early morning, a kamikaze drone successfully struck the territory of a strategic oil pumping station integrated into the Druzhba oil pipeline network. A fire outbreak in a storage tank was recorded. This facility plays a critical role in the distribution of fuel and lubricants across the Central Federal District of the Russian Federation and in the uninterrupted supply of logistics chains for Russian troops.",
       "source": "OSINT (ASTRA), confirmed by the governor of Tambov Oblast"
     },
-    "id": 348,
-    "distance": 436
+    "id": 348
   },
   {
     "date": "29.06.2026",
     "lat": 53.2458,
     "lng": 34.3302,
+    "distance": 262,
     "ru": {
       "region": "Брянская область, Брянск",
       "target": "Завод микроэлектроники «Кремний Эл» (АО «ГРУППА КРЕМНИЙ ЭЛ»)",
@@ -12252,13 +9421,13 @@ const strikeData = [
       "details": "Another successful raid on one of Russia's largest microelectronics enterprises (part of state-owned defense holdings), which manufactures military radio-electronic components, microchips for air defense radars, Iskander missile systems, and Russian strike drones. Local residents recorded powerful explosions, a bright flash, and a subsequent fire in one of the production and administrative workshops.",
       "source": "OSINT (reports from Bryansk residents, arrival footage)"
     },
-    "id": 349,
-    "distance": 262
+    "id": 349
   },
   {
     "date": "30.06.2026",
     "lat": 56.7378,
     "lng": 37.2511,
+    "distance": 668,
     "ru": {
       "region": "Московская область, Дубна",
       "target": "ЦКС «Дубна» / Оборонные заводы «Радуга» и «Кронштадт»",
@@ -12283,13 +9452,13 @@ const strikeData = [
       "details": "Repeated massive drone attack. In his address, the President of Ukraine confirmed a systematic strike on the largest satellite space communications hub of the Russian Armed Forces. Also, OSINT resources, confirming the words of local residents, reported hits and a fire in the immediate vicinity of the city's defense production facilities: the Raduga State Machine-Building Design Bureau (manufacturers of Kh-101/Kh-69) and the Kronshtadt UAV assembly plant.",
       "source": "President of Ukraine, OSINT (Astra, Exilenova+)"
     },
-    "id": 350,
-    "distance": 668
+    "id": 350
   },
   {
     "date": "30.06.2026",
     "lat": 52.57,
     "lng": 39.638,
+    "distance": 372,
     "ru": {
       "region": "Липецкая область, Липецк",
       "target": "Новолипецкий металлургический комбинат (НЛМК)",
@@ -12314,13 +9483,13 @@ const strikeData = [
       "details": "A group of kamikaze UAVs (more than seven units) bypassed Russian air defense and once again struck the production areas of the NLMK steel plant, which plays a significant role in the production of raw materials for the military-industrial complex. Powerful explosions and a direct hit on the oxygen separation station were recorded, causing a severe fire.",
       "source": "OSINT (Baza), monitoring groups"
     },
-    "id": 351,
-    "distance": 372
+    "id": 351
   },
   {
     "date": "01.07.2026",
     "lat": 53.1812,
     "lng": 45.021,
+    "distance": 702,
     "ru": {
       "region": "Пензенская область, Пенза",
       "target": "Завод АО «Маяк» / АО «НИИФИ» / Государственный подшипниковый завод",
@@ -12345,13 +9514,13 @@ const strikeData = [
       "details": "An extremely effective strike by the Defense Forces simultaneously on several enterprises of the military-industrial complex and \"Roscosmos\" structures. The Research Institute of Physical Measurements (engaged in onboard components and sensors for the latest Su-57 aircraft and strategic missiles) and OJSC \"Mayak\" (development of communication systems and radio electronics for military equipment) were attacked. Information about a successful strike on this strategic electronics hub was confirmed by the President of Ukraine, as well as the summary of the General Staff of the Armed Forces of Ukraine. Locals recorded a thick cloud of black smoke and secondary detonation.",
       "source": "President of Ukraine, AFU General Staff, OSINT (Astra, Supernova+)"
     },
-    "id": 352,
-    "distance": 702
+    "id": 352
   },
   {
     "date": "01.07.2026",
     "lat": 54.843,
     "lng": 56.079,
+    "distance": 1436,
     "ru": {
       "region": "Республика Башкортостан, Уфа",
       "target": "НПЗ «Башнефть» (маслопромышленный и перерабатывающий узел)",
@@ -12376,13 +9545,13 @@ const strikeData = [
       "details": "An ultra-long-range and synchronous (along with Penza) night attack on enemy fuel system facilities. For the second time, the Defense Forces inflicted pinpoint hits on the infrastructure of one of the largest oil producers and fuel processing plants in the Urals in the Russian Federation (\"Bashneft\"). Temperature anomalies from the fires were identified by the NASA FIRMS service, and the strike was officially added to the list of long-range weapons achievements in the president's speech.",
       "source": "President of Ukraine, NASA FIRMS satellite data, monitoring channels"
     },
-    "id": 353,
-    "distance": 1436
+    "id": 353
   },
   {
     "date": "01.07.2026",
     "lat": 45.093,
     "lng": 33.599,
+    "distance": 188,
     "ru": {
       "region": "АР Крым, Новофедоровка",
       "target": "Военный аэродром «Саки»",
@@ -12407,8 +9576,7 @@ const strikeData = [
       "details": "A devastating UAV raid by the Security Service of Ukraine. As a result of 5 recorded direct hits, hangars with aviation equipment of the Russian Aerospace Forces were destroyed/severely damaged. It was reported that valuable Su-30 fighters, estimated at hundreds of millions of dollars, were located there. A large-scale fire and explosions continued over the airfield for several hours, as massively reported by Crimeans.",
       "source": "SBU, OSINT (Crimean Wind), AFU General Staff"
     },
-    "id": 354,
-    "distance": 188
+    "id": 354
   },
   {
     "date": "02.07.2026",
@@ -12439,12 +9607,6 @@ const strikeData = [
       "details": "Successful long-range attack by strike UAVs. A precise hit was recorded on the refinery's infrastructure, causing a fire at a critically important primary oil refining unit AVT-6. This is a very powerful strike against one of the leading enterprises of the Russian oil refining industry.",
       "source": "OSINT, local residents' reports, satellite monitoring"
     },
-    "images": [
-      "images/kstovo1.jpg",
-      "images/kstovo2.jpg",
-      "images/kstovo3.jpg",
-      "video/kstovo.mp4"
-    ],
     "id": 355
   },
   {
@@ -12476,7 +9638,6 @@ const strikeData = [
       "details": "During a massive night attack on the peninsula's energy infrastructure, the NASA FIRMS satellite system recorded additional temperature anomalies and fire outbreaks directly on the territory of the Dzhankoi military airfield (base of the 39th Helicopter Regiment of the Russian Federation).",
       "source": "NASA FIRMS, OSINT (Crimean Wind)"
     },
-    "images": [],
     "id": 356
   },
   {
@@ -12508,10 +9669,6 @@ const strikeData = [
       "details": "On the night of July 4, long-range Ukrainian drones attacked the largest Russian oil products transshipment complex in the Baltic region (distance about 900-1000 km from the border). A massive fire broke out at the infrastructure facility as a result of the hit. The fact of hitting the logistics terminal was officially confirmed by the General Staff of the Armed Forces of Ukraine and the President of Ukraine in his address.",
       "source": "President of Ukraine, General Staff of the Armed Forces of Ukraine, OSINT resources, Russian mass media"
     },
-    "images": [
-      "images/piter-4iyulya.jpg",
-      "video/piter-4iyulya.mp4"
-    ],
     "id": 357
   },
   {
@@ -12543,7 +9700,6 @@ const strikeData = [
       "details": "The Main Intelligence Directorate (HUR) of the Ministry of Defense of Ukraine published an official confirmation of the success of the Unmanned Systems Department operation. With one precise strike on the airfield, a Russian MiG-29 fighter was completely burned, and an airfield launcher, which was servicing aviation equipment at the time of the attack, was also hit. The damage is estimated at tens of millions of dollars.",
       "source": "HUR MOU, Defense Forces of Ukraine"
     },
-    "images": [],
     "id": 358
   },
   {
@@ -12575,7 +9731,6 @@ const strikeData = [
       "details": "On the night of July 5, units of the Defense Forces of Ukraine launched a massive strike on the military airfield of the Russian Aerospace Forces. This airbase is used by the enemy as one of the main logistics hubs of the peninsula to ensure combat sorties of operational-tactical aviation aircraft, as well as a maintenance point for attack aircraft. The attack was confirmed by the morning report of the General Staff.",
       "source": "General Staff of the Armed Forces of Ukraine, OSINT (Crimean Wind)"
     },
-    "images": [],
     "id": 359
   },
   {
@@ -12607,40 +9762,7 @@ const strikeData = [
       "source": "OSINT",
       "details": "The Yaroslavl Oil Refinery (Slavneft-YANOS) is one of Russia's largest petroleum product manufacturers, playing a key role in supplying fuel to central regions and the Russian military-industrial complex. The plant processes millions of tons of oil annually, producing gasoline, diesel, and aviation fuel. A successful drone attack on the refinery's facilities caused damage to critical processing infrastructure, significantly reducing the plant's production capacity. This event was a major logistical and economic blow, as the plant is directly involved in supplying the Russian military."
     },
-    "id": 360,
-    "images": []
-  },
-  {
-    "date": "06.07.2026",
-    "lat": 45.3586,
-    "lng": 36.4839,
-    "distance": 294,
-    "ru": {
-      "region": "АР Крым, Керчь",
-      "target": "Морской порт Керчь",
-      "category": "ВПК / Логистика",
-      "weapon": "Неизвестно",
-      "source": "OSINT, местные СМИ",
-      "details": "Морской порт в оккупированной Керчи является одним из главных логистических узлов для переброски военной техники, боеприпасов и топлива на Крымский полуостров. Инфраструктура порта активно используется российской армией для снабжения своей группировки на юге Украины. В результате точечного удара были поражены портовые сооружения и складские помещения. Выведение из строя этих объектов усложняет оккупантам морскую логистику и ослабляет их возможности по быстрому восполнению резервов через Керченский пролив."
-    },
-    "uk": {
-      "region": "АР Крим, Керч",
-      "target": "Морський порт Керч",
-      "category": "ВПК / Логістика",
-      "weapon": "Невідомо",
-      "source": "OSINT, місцеві ЗМІ",
-      "details": "Морський порт в окупованій Керчі є одним із головних логістичних вузлів для перекидання військової техніки, боєприпасів і палива на Кримський півострів. Інфраструктура порту активно використовується російською армією для постачання свого угруповання на півдні України. Внаслідок точкового удару було уражено портові споруди та складські приміщення. Виведення з ладу цих об'єктів ускладнює окупантам морську логістику та послаблює їхні можливості щодо швидкого поповнення резервів через Керченську протоку."
-    },
-    "en": {
-      "region": "AR Crimea, Kerch",
-      "target": "Kerch Sea Port",
-      "category": "Military-Industrial Complex / Logistics",
-      "weapon": "Unknown",
-      "source": "OSINT, local media",
-      "details": "The seaport in occupied Kerch is one of the main logistical hubs for the transfer of military equipment, ammunition, and fuel to the Crimean peninsula. The port's infrastructure is actively used by the Russian army to supply its forces in southern Ukraine. A targeted strike hit port facilities and warehouses. Disabling these facilities complicates the occupiers' maritime logistics and weakens their ability to quickly replenish reserves through the Kerch Strait."
-    },
-    "id": 361,
-    "images": []
+    "id": 360
   },
   {
     "date": "06.07.2026",
@@ -12671,8 +9793,7 @@ const strikeData = [
       "source": "OSINT",
       "details": "The Azovkabel factory in temporarily occupied Berdyansk was turned into a fortified military base and repair zone for army equipment by Russian troops. The vast production areas were used by the occupiers to covertly house personnel, store ammunition, and restore battle-damaged vehicles. A powerful strike on the factory territory led to the detonation of ammunition and the destruction of a significant amount of military equipment. This successful hit deprived the enemy of an important rear repair base in the Zaporizhzhia direction."
     },
-    "id": 362,
-    "images": []
+    "id": 362
   },
   {
     "date": "06.07.2026",
@@ -12703,72 +9824,7 @@ const strikeData = [
       "source": "SBU / HUR MO, OSINT",
       "details": "The Ust-Luga port in the Leningrad Oblast is the largest seaport on the Baltic and Russia's most important transport hub for hydrocarbon exports. The port houses large gas and oil terminals that bring billions in revenue to the aggressor state's budget. The strike by attack UAVs led to the shutdown of key terminals and a severe fire at fuel and energy complex facilities. This joint operation by the SBU and HUR MO was not only an economic blow but also demonstrated the vulnerability of Russia's strategic ports deep in the rear."
     },
-    "id": 363,
-    "images": []
-  },
-  {
-    "date": "06.07.2026",
-    "lat": 58.7539,
-    "lng": 29.5662,
-    "distance": 814,
-    "ru": {
-      "region": "Ленинградская область, Лужский район",
-      "target": "Лужский артиллерийский полигон",
-      "category": "Военный объект",
-      "weapon": "Дрон",
-      "source": "OSINT",
-      "details": "Лужский артиллерийский полигон (33-й полигон) является одним из главных центров боевой подготовки войск Западного военного округа РФ. Здесь проходят слаживание артиллерийские и ракетные подразделения перед отправкой на фронт, а также тестируются новые образцы вооружений. Точный удар беспилотников по территории полигона пришелся по скоплению личного состава и техники противника. Поражение этого объекта нарушает графики подготовки резервов и наносит существенный урон боеспособности подразделений, готовящихся к переброске в Украину."
-    },
-    "uk": {
-      "region": "Ленінградська область, Лузький район",
-      "target": "Лузький артилерійський полігон",
-      "category": "Військовий об'єкт",
-      "weapon": "Дрон",
-      "source": "OSINT",
-      "details": "Лузький артилерійський полігон (33-й полігон) є одним із головних центрів бойової підготовки військ Західного військового округу РФ. Тут проходять злагодження артилерійські та ракетні підрозділи перед відправкою на фронт, а також тестуються нові зразки озброєнь. Точний удар безпілотників по території полігону припав на скупчення особового складу та техніки противника. Ураження цього об'єкта порушує графіки підготовки резервів і завдає суттєвої шкоди боєздатності підрозділів, що готуються до перекидання в Україну."
-    },
-    "en": {
-      "region": "Leningrad Oblast, Luzhsky District",
-      "target": "Luzhsky Artillery Range",
-      "category": "Military Facility",
-      "weapon": "Drone",
-      "source": "OSINT",
-      "details": "The Luzhsky artillery range (33rd range) is one of the main combat training centers for the forces of Russia's Western Military District. It is here that artillery and missile units undergo combat coordination before being sent to the front, and new types of weapons are tested. A precise drone strike on the range hit a concentration of enemy personnel and equipment. The destruction of this facility disrupts the training schedules of reserves and inflicts significant damage on the combat readiness of units preparing for deployment to Ukraine."
-    },
-    "id": 364,
-    "images": []
-  },
-  {
-    "date": "06.07.2026",
-    "lat": 58.73,
-    "lng": 29.84,
-    "distance": 809,
-    "ru": {
-      "region": "Ленинградская область, Луга",
-      "target": "ППД 26-й ракетной бригады",
-      "category": "Военный объект",
-      "weapon": "Дрон",
-      "source": "Силы Обороны Украины, OSINT",
-      "details": "В городе Луга Ленинградской области располагается пункт постоянной дислокации 26-й ракетной бригады (в/ч 54006) сухопутных войск РФ. На вооружении этой бригады стоят оперативно-тактические ракетные комплексы «Искандер», которые регулярно используются для террористических ударов по мирным городам и инфраструктуре Украины. Атака Сил Обороны по месту базирования бригады была направлена на уничтожение пусковых установок, складов с ракетами и обслуживающего персонала. Данная операция имеет важнейшее стратегическое значение для снижения ракетного потенциала врага и защиты украинских населенных пунктов."
-    },
-    "uk": {
-      "region": "Ленінградська область, Луга",
-      "target": "ППД 26-ї ракетної бригади",
-      "category": "Військовий об'єкт",
-      "weapon": "Дрон",
-      "source": "Сили Оборони України, OSINT",
-      "details": "У місті Луга Ленінградської області розташований пункт постійної дислокації 26-ї ракетної бригади (в/ч 54006) сухопутних військ РФ. На озброєнні цієї бригади стоять оперативно-тактичні ракетні комплекси «Іскандер», які регулярно використовуються для терористичних ударів по мирних містах та інфраструктурі України. Атака Сил Оборони по місцю базування бригади була спрямована на знищення пускових установок, складів із ракетами та обслуговуючого персоналу. Ця операція має найважливіше стратегічне значення для зниження ракетного потенціалу ворога та захисту українських населених пунктів."
-    },
-    "en": {
-      "region": "Leningrad Oblast, Luga",
-      "target": "Base of the 26th Missile Brigade",
-      "category": "Military Facility",
-      "weapon": "Drone",
-      "source": "Ukrainian Defense Forces, OSINT",
-      "details": "The city of Luga in the Leningrad Oblast houses the permanent deployment point of the 26th Missile Brigade (Military Unit 54006) of the Russian Ground Forces. This brigade is armed with Iskander operational-tactical missile systems, which are regularly used for terrorist strikes on peaceful cities and infrastructure in Ukraine. The Defense Forces' attack on the brigade's base was aimed at destroying launchers, missile depots, and maintenance personnel. This operation is of vital strategic importance in reducing the enemy's missile potential and protecting Ukrainian settlements."
-    },
-    "id": 365,
-    "images": []
+    "id": 363
   },
   {
     "date": "06.07.2026",
@@ -12799,13 +9855,7 @@ const strikeData = [
       "source": "Ukrainian Defense Forces",
       "details": "The Omsk Oil Refinery is a massive enterprise, being the largest oil refinery in Russia by refining volume (over 21 million tons per year). The plant acts as a critical link in the production of gasoline, aviation kerosene, and diesel fuel, supplying both the civilian sector and a huge portion of the Russian military machine. A precise and long-range strike by Ukrainian forces (at a distance of over 2200 km) on the Omsk Refinery caused a large-scale fire at primary processing technological units. Striking such an important and deeply located target in Siberia inflicts colossal damage on the Russian economy and significantly complicates the supply of fuel to the occupying forces."
     },
-    "id": 366,
-    "images": [
-      "video/070626 omsk.MP4",
-      "video/070626 omsk1.mp4",
-      "video/070626 omsk2.mp4",
-      "video/omsk-60726.MP4"
-    ]
+    "id": 366
   },
   {
     "date": "07.07.2026",
@@ -12836,40 +9886,7 @@ const strikeData = [
       "details": "The Belgorod linear production department of main gas pipelines is a crucial node in the region's gas transmission system. It is responsible for the distribution and uninterrupted supply of gas to both civilian and industrial consumers, including military-industrial complex enterprises. Striking such a facility disrupts energy logistics, complicating the operation of local industry. Furthermore, fires at gas infrastructure facilities require significant resources to extinguish and cause substantial economic damage to the aggressor state.",
       "source": "Media, OSINT"
     },
-    "id": 367,
-    "images": []
-  },
-  {
-    "date": "07.07.2026",
-    "lat": 45.45,
-    "lng": 36.5,
-    "distance": 285,
-    "ru": {
-      "region": "Крым, Керчь (акватория)",
-      "target": "Судно / Морская цель",
-      "category": "Флот",
-      "weapon": "БЭК/Дрон",
-      "details": "Акватория севернее Керчи является критически важной для российской военной логистики. Через этот район проходят маршруты снабжения оккупационной группировки в Крыму и на юге Украины. Поражение морских целей в этой зоне ограничивает возможности Черноморского флота РФ и усложняет транспортировку топлива и боеприпасов. Подобные инциденты также создают дополнительное напряжение для российских сил ПВО и береговой охраны, вынуждая их отвлекать ресурсы на защиту морских путей.",
-      "source": "СМИ, OSINT"
-    },
-    "uk": {
-      "region": "Крим, Керч (акваторія)",
-      "target": "Судно / Морська ціль",
-      "category": "Флот",
-      "weapon": "БЕК/Дрон",
-      "details": "Акваторія на північ від Керчі є критично важливою для російської військової логістики. Через цей район проходять маршрути постачання окупаційного угруповання в Криму та на півдні України. Ураження морських цілей у цій зоні обмежує можливості Чорноморського флоту РФ та ускладнює транспортування палива й боєприпасів. Подібні інциденти також створюють додаткову напругу для російських сил ППО та берегової охорони, змушуючи їх відволікати ресурси на захист морських шляхів.",
-      "source": "ЗМІ, OSINT"
-    },
-    "en": {
-      "region": "Crimea, Kerch (waters)",
-      "target": "Vessel / Naval Target",
-      "category": "Fleet",
-      "weapon": "USV/Drone",
-      "details": "The waters north of Kerch are critically important for Russian military logistics. Supply routes for the occupying forces in Crimea and southern Ukraine pass through this area. Striking naval targets in this zone limits the capabilities of the Russian Black Sea Fleet and complicates the transportation of fuel and ammunition. Such incidents also create additional strain on Russian air defense and coast guard forces, forcing them to divert resources to protect sea lanes.",
-      "source": "Media, OSINT"
-    },
-    "id": 368,
-    "images": []
+    "id": 367
   },
   {
     "date": "07.07.2026",
@@ -12900,10 +9917,7 @@ const strikeData = [
       "details": "\"Perviy Zavod\" is the largest oil refinery in the Kaluga region. The plant specializes in processing commercial oil and gas condensate, producing diesel fuel, fuel oil, and other petroleum products. The enterprise's output is actively used to meet the needs of the Russian army, including fueling military equipment. Regular strikes on such mini-refineries reduce overall refining capacity in the Russian Federation, creating a fuel shortage in the domestic market and disrupting the rhythm of military supplies. The successful attack caused a large-scale fire, halting the technological process for a long time.",
       "source": "SBS, AFU General Staff, GUR"
     },
-    "id": 369,
-    "images": [
-      "images/miniNPZ-070726.jpg"
-    ]
+    "id": 369
   },
   {
     "date": "07.07.2026",
@@ -12934,10 +9948,7 @@ const strikeData = [
       "details": "The Krasnozavodsk Chemical Plant (KhZ) is one of the oldest and most important enterprises of Russia's military-industrial complex. The plant specializes in the production of ammunition, signal and illumination devices, as well as components for rocket armaments. KhZ products are supplied directly to the front for use by the occupying forces. Striking the plant's production workshops disrupts the supply chains for explosives and ammunition. This reduces the firepower of Russian artillery and aviation, directly impacting the combat capability of the Russian army.",
       "source": "Media, OSINT"
     },
-    "id": 370,
-    "images": [
-      "images/photo1.jpg"
-    ]
+    "id": 370
   },
   {
     "date": "07.07.2026",
@@ -12968,10 +9979,7 @@ const strikeData = [
       "details": "The Central Research Institute of Precision Machine Building (TsNIITochMash) in Klimovsk is a key center for the development and testing of small arms, equipment (including the \"Ratnik\" combat gear), and artillery systems. It is here that new types of weapons are designed, which are then used en masse by the Russian army in the war against Ukraine. The institute has a unique testing base and scientific and technical potential. A strike on TsNIITochMash not only causes physical damage to laboratories and workshops but also slows down advanced developments in the military-industrial complex, depriving Russian infantry of modern technological solutions.",
       "source": "Media, OSINT"
     },
-    "id": 371,
-    "images": [
-      "video/video2_opt.mp4"
-    ]
+    "id": 371
   },
   {
     "date": "07.07.2026",
@@ -13002,45 +10010,7 @@ const strikeData = [
       "details": "The Central Research Institute of Special Machine Building (TsNIISM) in Khotkovo is a leading Russian developer of structures made of advanced composite materials for aerospace equipment and armored vehicles. The institute participates in the creation of components for missile systems, including intercontinental ballistic missiles and air defense systems. This enterprise is critically important for the high-tech segment of the Russian military-industrial complex, as composite materials determine the weight, strength, and flight range of modern missiles. A successful drone attack on this facility slows down the production of modern weapon systems and causes irreparable damage to Russia's strategic military programs.",
       "source": "Media, OSINT"
     },
-    "id": 372,
-    "images": [
-      "video/video3_opt.mp4"
-    ]
-  },
-  {
-    "date": "07.07.2026",
-    "lat": 46,
-    "lng": 37,
-    "distance": 249,
-    "ru": {
-      "region": "Азовское море (акватория)",
-      "target": "8 танкеров теневого флота РФ",
-      "category": "Флот / Топливная логистика",
-      "weapon": "Дрон",
-      "details": "Теневой флот РФ является главным инструментом обхода международных санкций, позволяющим Москве продолжать экспортировать нефть и нефтепродукты, финансируя тем самым ведение агрессивной войны. Выявление и поражение сразу 8 танкеров (среди которых «Венера-3», «Санар-1», «Санар-17», «Климена», «Тети», «Алексей Саврасов», «Пенелопа») дедвейтом по 7000 тонн каждый — это колоссальный удар по теневой логистике. Операция в Азовском море не только уничтожает дорогостоящие суда и грузы, но и посылает четкий сигнал покупателям российской нефти о высоких рисках. Потеря таких судов существенно усложняет экспорт углеводородов из портов Азово-Черноморского бассейна, снижая приток валюты в военный бюджет РФ.",
-      "source": "ВМС ВСУ, СМИ, OSINT"
-    },
-    "uk": {
-      "region": "Азовське море (акваторія)",
-      "target": "8 танкерів тіньового флоту РФ",
-      "category": "Флот / Паливна логістика",
-      "weapon": "Дрон",
-      "details": "Тіньовий флот РФ є головним інструментом обходу міжнародних санкцій, що дозволяє Москві продовжувати експортувати нафту й нафтопродукти, фінансуючи тим самим ведення агресивної війни. Виявлення та ураження відразу 8 танкерів (серед яких «Венера-3», «Санар-1», «Санар-17», «Климена», «Теті», «Алексей Саврасов», «Пенелопа») дедвейтом по 7000 тонн кожен — це колосальний удар по тіньовій логістиці. Операція в Азовському морі не лише знищує дорогі судна і вантажі, а й надсилає чіткий сигнал покупцям російської нафти про високі ризики. Втрата таких суден суттєво ускладнює експорт вуглеводнів з портів Азово-Чорноморського басейну, знижуючи приплив валюти у військовий бюджет РФ.",
-      "source": "ВМС ЗСУ, ЗМІ, OSINT"
-    },
-    "en": {
-      "region": "Sea of Azov (waters)",
-      "target": "8 Shadow Fleet Tankers",
-      "category": "Fleet / Fuel Logistics",
-      "weapon": "Drone",
-      "details": "The Russian shadow fleet is the main tool for bypassing international sanctions, allowing Moscow to continue exporting oil and petroleum products, thereby financing its aggressive war. The identification and targeting of 8 tankers simultaneously (including \"Venera-3\", \"Sanar-1\", \"Sanar-17\", \"Klimena\", \"Teti\", \"Aleksey Savrasov\", and \"Penelopa\"), each with a deadweight of 7,000 tons, is a colossal blow to this shadow logistics network. The operation in the Sea of Azov not only destroys expensive vessels and cargo but also sends a clear signal to buyers of Russian oil about the high risks involved. The loss of such vessels significantly complicates hydrocarbon exports from the ports of the Azov-Black Sea basin, reducing foreign currency inflows into the Russian military budget.",
-      "source": "Ukrainian Navy, Media, OSINT"
-    },
-    "id": 373,
-    "images": [
-      "video/tenevoy_flot2_opt.mp4",
-      "video/tenevoy flot1-070726.mp4"
-    ]
+    "id": 372
   },
   {
     "date": "07.07.2026",
@@ -13071,10 +10041,7 @@ const strikeData = [
       "details": "The \"Krasnodar\" compressor station is a strategically important infrastructure facility of the gas transmission network in southern Russia. The station ensures pressure maintenance in main gas pipelines, including routes used for gas exports (such as the Blue Stream). Taking compressor units out of service leads to a pressure drop in the system, supply disruptions, and massive financial losses. Drone strikes on such facilities demonstrate the vulnerability of Russian oil and gas infrastructure deep in the rear and the ability of the Ukrainian Defense Forces to systematically destroy the aggressor's economic base.",
       "source": "Media, OSINT"
     },
-    "id": 374,
-    "images": [
-      "video/krasnodar_opt.mp4"
-    ]
+    "id": 374
   },
   {
     "date": "08.07.2026",
@@ -13105,10 +10072,7 @@ const strikeData = [
       "details": "The Borisoglebsk military airfield is actively used by the Russian Aerospace Forces to launch bomb strikes on Ukrainian territory. Su-34 fighter-bombers, multirole Su-35s, and Su-30SMs are stationed at the base. As a result of a drone attack, explosions rocked the airbase territory. Striking such targets significantly reduces the combat capabilities of Russian aviation and the intensity of glide bomb attacks.",
       "source": "SSO, OSINT"
     },
-    "id": 375,
-    "images": [
-      "images/borisoglebsk1.jpg"
-    ]
+    "id": 375
   },
   {
     "date": "08.07.2026",
@@ -13139,14 +10103,7 @@ const strikeData = [
       "details": "The Saratov Oil Refinery is among the most important enterprises in Russia's oil and gas sector. The target of the strike was the pentane-hexane fraction isomerization unit. Successfully hitting such high-tech units disables the plant's capacities for a long time, causing significant damage and reducing fuel production volumes for the needs of the Russian army.",
       "source": "GUR, OSINT"
     },
-    "id": 376,
-    "images": [
-      "images/saratov-1.jpg",
-      "images/saratov-2.jpg",
-      "video/saratov-1 080726.MOV",
-      "video/saratov-2.MP4",
-      "video/saratov-3.MP4"
-    ]
+    "id": 376
   },
   {
     "date": "08.07.2026",
@@ -13177,57 +10134,7 @@ const strikeData = [
       "details": "The Nizhnekamsk oil refining and petrochemical cluster (TAIF-NK and Nizhnekamskneftekhim) is one of the largest specialized enterprises in Russia, located in the Republic of Tatarstan more than 1,000 km from the Ukrainian border. The plant plays a critical role in the production of base oils, gasoline, and raw materials for the Russian military industry. The drone attack targeted the crucial ELOU-AVT-7 primary oil refining unit. Disabling this high-tech and difficult-to-replace component can paralyze a significant part of the enterprise's entire production cycle. This inflicts severe economic damage, reduces the aggressor state's export revenues, and once again clearly demonstrates the constantly growing capabilities of Ukrainian long-range systems to strike the enemy's strategic rear.",
       "source": "GUR, SBU, OSINT"
     },
-    "id": 377,
-    "images": [
-      "images/nizhnekamsk-1.jpg",
-      "images/nizhnekamsk-2.jpg",
-      "images/nizhnekamsk-3.jpg",
-      "images/nizhnekamsk-4.jpg",
-      "images/nizhnekamsk-5.jpg",
-      "images/nizhnekamsk-6.jpg",
-      "video/nizhnekamsk-1.mp4",
-      "video/nizhnekamsk-2.mp4",
-      "video/nizhnekamsk-3.mp4",
-      "video/nizhnekamsk-4_opt.mp4",
-      "video/nizhnekamsk-5.mp4",
-      "video/nizhnekamsk-6.mp4"
-    ]
-  },
-  {
-    "date": "08.07.2026",
-    "lat": 47.05,
-    "lng": 38.85,
-    "distance": 210,
-    "ru": {
-      "region": "Ростовская область",
-      "target": "2 танкера в Ростовской области",
-      "category": "Флот / Логистика",
-      "weapon": "Дрон",
-      "details": "Местные власти сообщили об атаке на два танкера. Удары по наливным судам противника направлены на разрушение логистических цепочек доставки нефтепродуктов. Танкерный флот РФ активно используется как для экспорта в обход санкций, так и для обеспечения топливом южной группировки оккупационных войск.",
-      "source": "СМИ РФ, OSINT"
-    },
-    "uk": {
-      "region": "Ростовська область",
-      "target": "2 танкери в Ростовській області",
-      "category": "Флот / Логістика",
-      "weapon": "Дрон",
-      "details": "Місцева влада повідомила про атаку на два танкери. Удари по наливних суднах противника спрямовані на руйнування логістичних ланцюжків доставки нафтопродуктів. Танкерний флот РФ активно використовується як для експорту в обхід санкцій, так і для забезпечення паливом південного угруповання окупаційних військ.",
-      "source": "ЗМІ РФ, OSINT"
-    },
-    "en": {
-      "region": "Rostov Oblast",
-      "target": "2 tankers in Rostov Oblast",
-      "category": "Fleet / Logistics",
-      "weapon": "Drone",
-      "details": "Local authorities reported an attack on two tankers. Strikes on enemy liquid cargo vessels are aimed at destroying the logistical chains of petroleum product delivery. The Russian tanker fleet is actively used both for export circumventing sanctions and for supplying fuel to the southern group of occupying forces.",
-      "source": "Russian Media, OSINT"
-    },
-    "id": 378,
-    "images": [
-      "images/tanker-rosnjv.jpg",
-      "video/tankerr1_opt.mp4",
-      "video/tankerr2_opt.mp4"
-    ]
+    "id": 377
   },
   {
     "date": "08.07.2026",
@@ -13258,44 +10165,7 @@ const strikeData = [
       "details": "LPDS \"Cherkassy-PP\" is a crucial pipeline transport hub and a large storage facility for petroleum products in the Ufa area. A record strike at a distance of over 1400 km hit the tank farm, causing a large-scale fire. The destruction of such storage bases disrupts the stability of fuel distribution within Russia.",
       "source": "SBU, OSINT"
     },
-    "id": 379,
-    "images": [
-      "images/ufa1.jpg",
-      "images/ufa2.jpg",
-      "images/ufa3.jpg",
-      "video/ufa1.mp4"
-    ]
-  },
-  {
-    "date": "09.07.2026",
-    "lat": 45.4625,
-    "lng": 36.64018,
-    "distance": 288,
-    "ru": {
-      "region": "Азовское море (акватория)",
-      "target": "14 судов обеспечения (в т.ч. 12 танкеров)",
-      "category": "Флот / Логистика",
-      "weapon": "Дрон / БЭК",
-      "details": "Масштабная операция 8-9 июля по ликвидации теневого флота РФ в акватории Азовского моря. Украинские ударные дроны атаковали скопление судов, а сервис NASA FIRMS зафиксировал мощные термические аномалии. В результате поражены 14 судов: 12 танкеров (включая «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один сухогруз и буксир. Систематические удары по морской логистике лишают оккупантов возможности безопасно снабжать свои южные группировки топливом.",
-      "source": "OSINT, NASA FIRMS"
-    },
-    "uk": {
-      "region": "Азовське море (акваторія)",
-      "target": "14 суден забезпечення (в т.ч. 12 танкерів)",
-      "category": "Флот / Логістика",
-      "weapon": "Дрон / БЕК",
-      "details": "Масштабна операція 8-9 липня з ліквідації тіньового флоту РФ в акваторії Азовського моря. Українські ударні дрони атакували скупчення суден, а сервіс NASA FIRMS зафіксував потужні термічні аномалії. В результаті уражено 14 суден: 12 танкерів (включно з «Челси-6», «Аура», «Сонар-1», «Илья Репин»), один суховантаж та буксир. Систематичні удари по морській логістиці позбавляють окупантів можливості безпечно постачати свої південні угруповання паливом.",
-      "source": "OSINT, NASA FIRMS"
-    },
-    "en": {
-      "region": "Sea of Azov (waters)",
-      "target": "14 supply vessels (incl. 12 tankers)",
-      "category": "Fleet / Logistics",
-      "weapon": "Drone / USV",
-      "details": "A large-scale operation on July 8-9 to eliminate the Russian shadow fleet in the Sea of Azov. Ukrainian attack drones targeted a concentration of vessels, and the NASA FIRMS service recorded powerful thermal anomalies. As a result, 14 vessels were hit: 12 tankers (including \"Chelsea-6\", \"Aura\", \"Sonar-1\", \"Ilya Repin\"), one dry cargo ship, and a tugboat. Systematic strikes on maritime logistics deprive the occupiers of the ability to safely supply their southern groupings with fuel.",
-      "source": "OSINT, NASA FIRMS"
-    },
-    "id": 380
+    "id": 379
   },
   {
     "date": "09.07.2026",
@@ -13326,10 +10196,7 @@ const strikeData = [
       "details": "The city of Azov plays an important role in the transshipment of petroleum products from the internal regions of the Russian Federation to the Black Sea. The attack on local facilities is aimed at paralyzing the port infrastructure through which the occupiers provide logistical support to their troops on the southern front.",
       "source": "Russian Media, OSINT"
     },
-    "id": 381,
-    "images": [
-      "images/azov1.jpg"
-    ]
+    "id": 381
   },
   {
     "date": "09.07.2026",
@@ -13360,11 +10227,7 @@ const strikeData = [
       "details": "In the city of Mikhaylovsk, attack drones hit a large local oil depot. The strike led to a massive fire in fuel and lubricant tanks. The destruction of fuel reserves in this region complicates the supply of Russian military equipment at the front and forces the aggressor to stretch its logistical lines.",
       "source": "OSINT"
     },
-    "id": 382,
-    "images": [
-      "video/miha1.mp4",
-      "video/miha2.mp4"
-    ]
+    "id": 382
   },
   {
     "date": "09.07.2026",
@@ -13395,29 +10258,13 @@ const strikeData = [
       "details": "In Tver, attack drones targeted the strategically important Tvernefteprodukt oil depot. As a result of a series of precise hits, a massive fire broke out on the facility's territory, engulfing several large fuel and lubricant tanks at once. Part of the fuel infrastructure burned to the ground. This oil depot plays a key role in supplying fuel to the central and northwestern regions of the Russian Federation, as well as local military units. The destruction of such large storage facilities inflicts serious damage on the aggressor's fuel logistics, forcing it to rebuild supply chains and spend additional resources on restoration.",
       "source": "Media, OSINT"
     },
-    "id": 383,
-    "images": [
-      "images/tver1.jpg",
-      "images/tver2.jpg",
-      "images/tver3.jpg",
-      "video/tver1.mp4",
-      "video/tver2.mp4",
-      "video/tver3.mp4",
-      "video/tver4.mp4",
-      "video/tver5.mp4"
-    ]
+    "id": 383
   },
   {
     "date": "10.07.2026",
     "lat": 44.860573,
     "lng": 38.614943,
     "distance": 425,
-    "images": [
-      "video/ilsk-2026-07-11.mp4",
-      "video/ilsk-1-2026-07-11.mp4",
-      "video/ilsk-2-2026-07-11.mp4",
-      "images/ilsk1_2026-07-11_opt.jpg"
-    ],
     "ru": {
       "region": "Краснодарский край, Ильский (Северский район)",
       "target": "Ильский НПЗ — установка АВТ-6",
@@ -13511,13 +10358,6 @@ const strikeData = [
     "lat": 47.111246,
     "lng": 39.38205,
     "distance": 225,
-    "images": [
-      "video/azov-1-2026-07-11_opt.mp4",
-      "images/azov-1-2026-07-11_opt.jpg",
-      "images/azov-2-2026-07-11_opt.jpg",
-      "images/azov-3-2026-07-11.jpg",
-      "images/azov-4-2026-07-11_opt.jpg"
-    ],
     "ru": {
       "region": "Ростовская область, Азов (территория порта)",
       "target": "Нефтебаза «Порт» (Decal Azov) — портовый резервуарный парк",
@@ -13669,37 +10509,6 @@ const strikeData = [
     "id": 391
   },
   {
-    "date": "10.07.2026",
-    "lat": 45.37,
-    "lng": 36.47,
-    "distance": 293,
-    "ru": {
-      "region": "Краснодарский край, акватория у Керченского порта",
-      "target": "Горящий танкер теневого флота РФ",
-      "category": "Флот / Логистика",
-      "weapon": "Дрон / БЭК",
-      "details": "В акватории у Керченского порта был зафиксирован горящий танкер — последствие масштабной серии атак украинских Сил беспилотных систем (СБС) по «теневому флоту» РФ в Азовском море 9-10 июля. Спутниковый сервис NASA FIRMS зафиксировал термические аномалии, а проект «Схемы» опубликовал снимки горящего судна в районе Керченского пролива. Теневой флот активно используется Россией для транспортировки нефтепродуктов в обход санкций — прежде всего с нефтебаз Азова и Ростова к черноморским покупателям. После серии ударов Россия временно остановила судоходство по Азово-Донскому каналу и ввела ограничения на проход через Керченский пролив.",
-      "source": "NASA FIRMS, OSINT (Схемы), СБС"
-    },
-    "uk": {
-      "region": "Краснодарський край, акваторія біля Керченського порту",
-      "target": "Палаючий танкер тіньового флоту РФ",
-      "category": "Флот / Логістика",
-      "weapon": "Дрон / БЕК",
-      "details": "В акваторії біля Керченського порту було зафіксовано палаючий танкер — наслідок масштабної серії атак українських Сил безпілотних систем (СБС) по «тіньовому флоту» РФ в Азовському морі 9-10 липня. Супутниковий сервіс NASA FIRMS зафіксував теплові аномалії, а проект «Схеми» опублікував знімки палаючого судна в районі Керченської протоки. Тіньовий флот активно використовується Росією для транспортування нафтопродуктів в обхід санкцій — передусім з нафтобаз Азова і Ростова до чорноморських покупців. Після серії ударів Росія тимчасово зупинила судноплавство по Азово-Донському каналу та ввела обмеження на прохід через Керченську протоку.",
-      "source": "NASA FIRMS, OSINT (Схеми), СБС"
-    },
-    "en": {
-      "region": "Krasnodar Krai, waters near Kerch port",
-      "target": "Burning shadow fleet tanker of the Russian Federation",
-      "category": "Fleet / Logistics",
-      "weapon": "Drone / USV",
-      "details": "A burning tanker was recorded in the waters near the port of Kerch — a result of the large-scale series of strikes by Ukrainian Unmanned Systems Forces (SBS) against Russia's 'shadow fleet' in the Sea of Azov on July 9-10. The NASA FIRMS satellite service recorded thermal anomalies, and the 'Skhemy' project published images of a burning vessel in the Kerch Strait area. The shadow fleet is actively used by Russia to transport petroleum products in circumvention of sanctions — primarily from the oil depots of Azov and Rostov to Black Sea buyers. After the series of strikes, Russia temporarily halted shipping on the Azov-Don Canal and introduced restrictions on passage through the Kerch Strait.",
-      "source": "NASA FIRMS, OSINT (Skhemy), SBS"
-    },
-    "id": 392
-  },
-  {
     "date": "01.08.2026",
     "lat": 54.843,
     "lng": 56.079,
@@ -13729,68 +10538,6 @@ const strikeData = [
       "source": "SBU, AFU General Staff, OSINT (Astra), Head of Bashkortostan Khabirov, Media"
     },
     "id": 393
-  },
-  {
-    "date": "01.08.2026",
-    "lat": 45.5081,
-    "lng": 32.7003,
-    "distance": 126,
-    "ru": {
-      "region": "АР Крым (временно оккупированная), Черноморский район (пгт Черноморское)",
-      "target": "Склад и база подготовки морских беспилотных катеров (БЭК)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "1 августа 2026 года Силы обороны Украины совместно с ВМС нанесли высокоточный удар по военной базе в пгт Черноморское в оккупированном Крыму. Основной целью атаки стал защищенный складской комплекс, где противник размещал и обслуживал безэкипажные катера. Несколько ударных БПЛА успешно поразили ангары с техникой и цеха предрейсовой подготовки морских дронов. На прибрежном объекте вспыхнул сильный пожар, сопровождавшийся детонацией хранившихся боеприпасов и топливных емкостей. Местные жители и крымские Telegram-каналы сообщали о серии мощных взрывов со стороны бухты Узкая. Эта база в Черноморском активно использовалась ВМФ РФ для запуска катеров-камикадзе и патрулирования прибрежной зоны. Удар на расстоянии около 140 км от линии фронта существенно снизил угрозу применения морских БПЛА противником в западной части Черного моря.",
-      "source": "Генштаб ВСУ, ВМС ВСУ, OSINT (Astra), крымские паблики, СМИ"
-    },
-    "uk": {
-      "region": "АР Крим (тимчасово окупована), Чорноморський район (смт Чорноморське)",
-      "target": "Склад та база підготовки морських безпілотних катерів (БЕК)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "1 серпня 2026 року Сили оборони України спільно з ВМС завдали високоточного удару по військовій базі в смт Чорноморське в окупованому Криму. Основною ціллю атаки став захищений складський комплекс, де противник розміщував та обслуговував безекіпажні катери. Кілька ударних БПЛА успішно уразили ангари з технікою та цехи передрейсової підготовки морських дронів. На прибережному об'єкті спалахнула сильна пожежа, що супроводжувалася детонацією боєприпасів та паливних ємностей. Місцеві жителі та кримські Telegram-канали повідомляли про серію потужних вибухів з боку бухти Вузька. Ця база в Чорноморському активно використовувалася ВМФ РФ для запуску катерів-камікадзе та патрулювання прибережної зони. Удар на відстані близько 140 км від лінії фронту суттєво знизив загрозу застосування морських БПЛА противником у західній частині Чорного моря.",
-      "source": "Генштаб ЗСУ, ВМС ЗСУ, OSINT (Astra), кримські пабліки, ЗМІ"
-    },
-    "en": {
-      "region": "Autonomous Republic of Crimea (occupied), Chornomorske",
-      "target": "Naval Drone Base and Storage Facility (Chornomorske)",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 1, 2026, the Ukrainian Defense Forces and Ukrainian Navy conducted a joint precision drone strike on a military installation in occupied Chornomorske, Crimea. The raid targeted a secured depot complex used by Russian forces to store and service uncrewed surface vessels (USVs). Multiple strike UAVs hit assembly hangars and equipment preparation bays inside the coastal site. Impacting drones ignited a major fire accompanied by secondary explosions of stored munitions and fuel cells. Local residents and Telegram channels reported heavy blasts originating from the Narrow Bay area throughout the night. Russian naval forces utilized the Chornomorske base to launch kamikaze boats and conduct coastal patrols. Located roughly 140 km from the frontline, the strike significantly disrupted Russia's naval drone operations in the western Black Sea.",
-      "source": "AFU General Staff, Ukrainian Navy, OSINT (Astra), Crimean media"
-    },
-    "id": 394
-  },
-  {
-    "date": "01.08.2026",
-    "lat": 45.125,
-    "lng": 36.85,
-    "distance": 329,
-    "ru": {
-      "region": "Краснодарский край, Темрюкский район",
-      "target": "Позиция радиолокационных станций ПВО («Подлет-К1» и «Каста-2Е2»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "1 августа 2026 года спецподразделения СБУ провели успешную воздушно-ударную операцию по уничтожению средств ПВО противника в Краснодарском крае. В ходе атаки дальнобойных дронов были поражены четыре радиолокационные станции: три комплекса «Подлет-К1» и одна РЛС «Каста-2Е2». Высокоточные прилеты вызвали уничтожение антенных постов и машинных залов радиолокационных комплексов. Данные станции обеспечивали обнаружение маловысотных целей и выдавали целеуказание для зенитных ракетных систем С-300 и С-400 на таманском направлении. Потеря этих радаров образовала брешь в системе радиолокационного контроля над Керченским проливом и югом России. Военные обозреватели отметили, что выведение из строя ценных РЛС существенно облегчит последующие операции украинской авиации и беспилотников. Удар на расстоянии около 240 км от линии фронта нанес ощутимый урон противовоздушной обороне региона.",
-      "source": "СБУ, Генштаб ВСУ, OSINT (Astra), российские паблики, СМИ"
-    },
-    "uk": {
-      "region": "Краснодарський край, Темрюцький район",
-      "target": "Позиція радіолокаційних станцій ППО («Подлет-К1» та «Каста-2Е2»)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "1 серпня 2026 року спецпідрозділи СБУ провели успішну повітряно-ударну операцію з знищення засобів ППО противника у Краснодарському краї. Під час атаки далекобійних дронів було уражено чотири радіолокаційні станції: три комплекси «Подлет-К1» та одну РЛС «Каста-2Е2». Високоточні прильоти спричинили знищення антенних постів і машинних залів радіолокаційних комплексів. Ці станції забезпечували виявлення маловисотних цілей та видавали цілевказування для зенітних ракетних систем С-300 і С-400 на таманському напрямку. Втрата цих радарів утворила прогалину в системі радіолокаційного контролю над Керченською протокою та півднем Росії. Військові оглядачі зазначили, що виведення з ладу цінних РЛС суттєво полегшить подальші операції української авіації та безпілотників. Удар на відстані близько 240 км від лінії фронту завдав відчутної шкоди протиповітряній обороні регіону.",
-      "source": "СБУ, Генштаб ЗСУ, OSINT (Astra), російські пабліки, ЗМІ"
-    },
-    "en": {
-      "region": "Krasnodar Krai, Temryuksky District",
-      "target": "Air Defense Radar Station Positions (Podlet-K1 and Kasta-2E2)",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On August 1, 2026, specialized SBU units executed a long-range drone strike targetting Russian air defense radar systems in Krasnodar Krai. Ukrainian attack UAVs hit four key radar stations: three low-altitude 'Podlet-K1' units and one 'Kasta-2E2' radar site. Direct impacts destroyed antenna arrays and operational command vehicles across the target positions. These radar systems played a critical role in detecting low-flying aerial targets and providing target acquisition for S-300 and S-400 missile batteries around the Taman Peninsula. The destruction of these radar units created a blind spot in Russian early-warning coverage over the Kerch Strait and southern Krasnodar Krai. Military analysts noted that neutralizing these valuable sensors significantly enhances the effectiveness of future Ukrainian drone and missile operations. Positioned 240 km from the border, the raid inflicted severe damage on regional air defense networks.",
-      "source": "SBU, AFU General Staff, OSINT (Astra), Russian media"
-    },
-    "id": 395
   },
   {
     "date": "02.08.2026",
@@ -13887,37 +10634,6 @@ const strikeData = [
   },
   {
     "date": "02.08.2026",
-    "lat": 52.825,
-    "lng": 34.498,
-    "distance": 214,
-    "ru": {
-      "region": "Брянская область, Навлинский район (пгт Навля)",
-      "target": "База хранения, подготовки и запуска ударных БПЛА (пгт Навля)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 2 августа 2026 года подразделения Сил обороны Украины нанесли высокоточный удар БПЛА по замаскированному военному объекту в районе пгт Навля Брянской области. Целью атаки стала передовая база противника, использовавшаяся для хранения, сборки и запуска ударных дронов по территории Украины. Беспилотники поразили складские ангары и пусковые площадки, вызвав вторичную детонацию боеприпасов и сильный пожар. В сводке Генштаба ВСУ официально подтверждено уничтожение места дислокации и подготовки операторов БПЛА противника. Местные жители сообщали о серии громких взрывов и выбитых окнах в зданиях неподалеку от промзоны. Ликвидация этого пункта на расстоянии около 160 км от линии фронта снизила интенсивность налётов вражеских дронов на приграничные украинские регионы.",
-      "source": "Генштаб ВСУ, СБС, OSINT (Astra), брянские паблики, СМИ"
-    },
-    "uk": {
-      "region": "Брянська область, Навлинський район (смт Навля)",
-      "target": "База зберігання, підготовки та запуску ударних БПЛА (смт Навля)",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 2 серпня 2026 року підрозділи Сил оборони України завдали високоточного удару БПЛА по замаскованому військовому об'єкту в районі смт Навля Брянської області. Ціллю атаки стала передова база противника, яка використовувалася для зберігання, складання та запуску ударних дронів по території України. Безпілотники уразили складські ангари та пускові майданчики, спричинивши вторинну детонацію боєприпасів і сильну пожежу. У зведенні Генштабу ЗСУ офіційно підтверджено знищення місця дислокації та підготовки операторів БПЛА противника. Місцеві жителі повідомляли про серію гучних вибухів та вибиті шибки в будівлях неподалік промзони. Ліквідація цього пункту на відстані близько 160 км від лінії фронту знизила інтенсивність нальотів ворожих дронів на прикордонні українські регіони.",
-      "source": "Генштаб ЗСУ, СБС, OSINT (Astra), брянські пабліки, ЗМІ"
-    },
-    "en": {
-      "region": "Bryansk Oblast, Navlya District (Navlya)",
-      "target": "Strike UAV Depot and Launch Base (Navlya)",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On the night of August 2, 2026, Ukrainian Defense Forces carried out a precision drone attack on a concealed military facility near Navlya, Bryansk Oblast. The target was a forward deployment base used by Russian forces for storing, assembling, and launching kamikaze UAVs against Ukrainian targets. Striking drones hit storage hangars and launch positions, causing secondary ammunition explosions and fires. The General Staff of the AFU officially confirmed the destruction of the drone storage site and operator crew quarters. Local residents reported a series of heavy explosions that shattered windows near the industrial zone. Neutralizing this hub, located roughly 160 km from the border, significantly reduced enemy drone launch capabilities against northern Ukrainian border regions.",
-      "source": "AFU General Staff, SBS, OSINT (Astra), Bryansk media"
-    },
-    "id": 399
-  },
-  {
-    "date": "02.08.2026",
     "lat": 53.3644,
     "lng": 50.3472,
     "distance": 1028,
@@ -13946,37 +10662,6 @@ const strikeData = [
       "source": "AFU General Staff, OSINT (Astra), Wildberries, Governor Fedorishev, Media"
     },
     "id": 400
-  },
-  {
-    "date": "03.08.2026",
-    "lat": 50.5906,
-    "lng": 36.5747,
-    "distance": 71,
-    "ru": {
-      "region": "Белгородская область, г. Белгород",
-      "target": "БГТУ им. В. Г. Шухова — корпус разработки и подготовки операторов БПЛА",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "В ночь на 3 августа 2026 года Силы обороны Украины нанесли удар по корпусу БГТУ им. Шухова в Белгороде. По данным OSINT-источников, здание использовалось для разработки автоматизированных систем управления БПЛА на базе процессора «Миландр», а также как тренировочная площадка для операторов FPV-дронов — с сетками и полётными препятствиями. Беспилотники вызвали крупный пожар, уничтоживший значительную часть корпуса; врио губернатора Шуваев подтвердил атаку тремя БПЛА и повреждение «социального объекта», не раскрывая военного назначения здания. БГТУ летом 2026 года открыто рекламировал программы по проектированию беспилотников, в том числе для школьников. Удар на расстоянии около 40 км от линии фронта вывел из строя ключевую точку подготовки кадров для российской дроновой программы.",
-      "source": "OSINT (Astra, Exilenova+), ЗМІ, врио губернатора Шуваев"
-    },
-    "uk": {
-      "region": "Бєлгородська область, м. Бєлгород",
-      "target": "БДТУ ім. В. Г. Шухова — корпус розробки та підготовки операторів БПЛА",
-      "category": "ВПК",
-      "weapon": "Дрон",
-      "details": "У ніч проти 3 серпня 2026 року Сили оборони України завдали удару по корпусу БДТУ ім. Шухова в Бєлгороді. За даними OSINT-джерел, будівля використовувалася для розробки автоматизованих систем управління БПЛА на базі процесора «Міландр» та як тренувальний майданчик для операторів FPV-дронів — із сітками й польотними перешкодами. Дрони спричинили велику пожежу, що знищила значну частину корпусу; в. о. губернатора Шуваєв підтвердив атаку трьома БПЛА та пошкодження «соціального об'єкта», не розкриваючи військового призначення будівлі. БДТУ влітку 2026 року відкрито рекламував програми з проектування безпілотників, зокрема курси для школярів. Удар на відстані близько 40 км від лінії фронту вивів з ладу ключову точку підготовки кадрів для російської дронової програми.",
-      "source": "OSINT (Astra, Exilenova+), ЗМІ, в. о. губернатора Шуваєв"
-    },
-    "en": {
-      "region": "Belgorod Oblast, Belgorod",
-      "target": "BSTU (Shukhov University) — UAV Development and Operator Training Facility",
-      "category": "Military-Industrial",
-      "weapon": "Drone",
-      "details": "On the night of August 3, 2026, Ukrainian Defense Forces struck a building at Belgorod State Technological University named after V. G. Shukhov. According to Ukrainian and OSINT sources, the facility was used to design automated UAV control systems based on the Milandr processor, and served as a training ground for FPV drone operators — complete with nets and flight obstacles. The drone strike ignited a large fire that destroyed a substantial portion of the building. Acting Governor Alexander Shuvaev only confirmed an attack by three UAVs and damage to a \"social facility,\" without elaborating on its military use. The university itself had advertised UAV engineering programs in summer 2026, including courses for schoolchildren. Located just 40 km from the front line, the strike knocked out a key personnel training hub for Russia's drone program.",
-      "source": "OSINT (Astra, Exilenova+), Media, Acting Governor Shuvaev"
-    },
-    "id": 401
   },
   {
     "date": "03.08.2026",
