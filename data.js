@@ -1,5 +1,36 @@
 const strikeData = [
   {
+    "date": "05.09.2026",
+    "lat": 44.7214,
+    "lng": 37.8286,
+    "distance": 404,
+    "ru": {
+      "region": "Краснодарский край, Новороссийск (Цемесская бухта)",
+      "target": "Военно-морская база «Новороссийск» (НВМБ ЧФ РФ) и портовая инфраструктура",
+      "category": "ВПК",
+      "weapon": "БЭК / Дрон",
+      "details": "В ночь на 5 сентября 2026 года украинские силы атаковали Новороссийскую военно-морскую базу и морской порт с применением безэкипажных катеров и ударных БПЛА. После ухода из Севастополя Новороссийск стал главным пунктом базирования Черноморского флота РФ, где укрываются носители крылатых ракет «Калибр» и десантные корабли. Тревогу в городе объявили в 01:23, после чего сирены выли несколько часов подряд, а жителей просили не подходить к окнам с видом на море. В Цемесской бухте гремели пушечные залпы и пулеметная стрельба по приближающимся морским дронам. Власти перекрыли набережную от улицы Исаева до Мысхако и закрыли городские пляжи. Минобороны РФ отчиталось об уничтожении двух безэкипажных катеров в акватории Черного моря, а отбой опасности дали только к восьми часам утра.",
+      "source": "ВМС ВСУ, оперативный штаб Краснодарского края, мэр Новороссийска, росСМИ"
+    },
+    "uk": {
+      "region": "Краснодарський край, Новоросійськ (Цемеська бухта)",
+      "target": "Військово-морська база «Новоросійськ» (НВМБ ЧФ РФ) та портова інфраструктура",
+      "category": "ВПК",
+      "weapon": "БЕК / Дрон",
+      "details": "У ніч проти 5 вересня 2026 року українські сили атакували Новоросійську військово-морську базу та морський порт за допомогою безекіпажних катерів і ударних БПЛА. Після вимушеного виведення сил із Севастополя Новоросійськ став основним пунктом базування Чорноморського флоту РФ, де розміщуються носії крилатих ракет «Калібр» та десантні кораблі. Тривогу в місті оголосили о 01:23 ночі, після чого сирени лунали кілька годин поспіль, а мешканців закликали не підходити до вікон із видом на море. У Цемеській бухті вели щільну стрілянину з корабельних гармат та кулеметів по морських дронах, що наближалися до стоянок суден. Влада екстрено перекрила рух набережною від вулиці Ісаєва до Мисхако та закрила всі пляжі. Міноборони РФ заявило про знищення двох безекіпажних катерів у Чорному морі, а відбій небезпеки дали лише близько восьмої ранку.",
+      "source": "ВМС ЗСУ, оперативний штаб Краснодарського краю, мер Новоросійська, росЗМІ"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Novorossiysk (Tsemes Bay)",
+      "target": "Novorossiysk Naval Base (Novorossiysk Naval Base of the Black Sea Fleet) & Port Infrastructure",
+      "category": "Military-Industrial Complex",
+      "weapon": "USV / Drone",
+      "details": "Overnight into September 5, 2026, Ukrainian forces attacked the Novorossiysk Naval Base and seaport infrastructure using unmanned surface vessels and strike UAVs. Following the retreat from Sevastopol, Novorossiysk became the primary operating base for the Russian Black Sea Fleet, sheltering Kalibr cruise missile carriers and landing ships. Air raid sirens sounded in the city at 01:23 local time, with alarms wailing for several hours while authorities urged residents to avoid seaward-facing windows. Inside Tsemes Bay, naval crews engaged approaching maritime drones with intense gunfire and rapid-fire naval cannons. Local authorities blocked traffic along the waterfront from Isaeva Street to Myskhako and closed city beaches. The Russian Defense Ministry reported destroying two unmanned surface vessels in the Black Sea, and the threat alert was cleared around eight in the morning.",
+      "source": "Navy of AFU, Krasnodar Operational HQ, Mayor of Novorossiysk, Russian Media"
+    },
+    "id": 436
+  },
+  {
     "date": "03.09.2026",
     "lat": 56.8291,
     "lng": 35.7564,
