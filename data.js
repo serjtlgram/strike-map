@@ -1,5 +1,67 @@
 const strikeData = [
   {
+    "date": "06.09.2026",
+    "lat": 54.5422,
+    "lng": 39.7719,
+    "distance": 525,
+    "ru": {
+      "region": "Рязанская область, Рязань (Южный промузел)",
+      "target": "Рязанский НПЗ (АО «Рязанская нефтеперерабатывающая компания» — Роснефть)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 6 сентября 2026 года дальнобойные украинские беспилотники атаковали Рязанский нефтеперерабатывающий завод в Южном промышленном узле города. Предприятие входит в структуру «Роснефти» и является одним из крупнейших в стране с годовой мощностью переработки более 17 млн тонн нефти, снабжая горючим столичный регион и подразделения армии РФ. По подтвержденным данным Генштаба ВСУ и компании Fire Point, дроны FP-1 поразили ректификационные колонны установок первичной переработки ЭЛОУ-АВТ-6 и АВТ-3, дававших свыше 75% всей переработки завода, а также установку изомеризации. На объекте вспыхнул масштабный пожар, в результате чего работу предприятия пришлось полностью остановить на экстренный ремонт. Губернатор области признал прилет и пожар на промышленной площадке, списав инцидент на падение обломков сбитых БПЛА. Минобороны заявило о перехвате беспилотников над регионом, а местные власти сообщили об отсутствии жертв среди персонала завода.",
+      "source": "Генштаб ВСУ, Fire Point, ASTRA, губернатор Рязанской области, росСМИ"
+    },
+    "uk": {
+      "region": "Рязанська область, Рязань (Південний промвузол)",
+      "target": "Рязанський НПЗ (АТ «Рязанська нафтопереробна компанія» — Роснефть)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч проти 6 вересня 2026 року далекобійні українські безпілотники атакували Рязанський нафтопереробний завод у Південному промвузлі міста. Підприємство належить корпорації «Роснефть» і входить до п’ятірки найбільших у РФ із річною потужністю понад 17 млн тонн нафти, забезпечуючи паливом як столичний регіон, так і війська загарбників. За підтвердженими даними Генштабу ЗСУ та компанії Fire Point, дрони FP-1 влучили в ректифікаційні колони установок первинної переробки ЕЛОУ-АВТ-6 та АВТ-3, які забезпечували понад 75% потужності, а також установку ізомеризації. На території НПЗ спалахнула масштабна пожежа, через що роботу всього підприємства довелося екстрено зупинити на тривалий ремонт. Губернатор регіону підтвердив атаку та загоряння на промисловому об’єкті, заявивши про падіння уламків дронів. Міноборони РФ традиційно відзвітувало про відбиття нальоту, а місцева влада заявила про відсутність загиблих серед працівників.",
+      "source": "Генштаб ЗСУ, Fire Point, ASTRA, губернатор Рязанської області, росЗМІ"
+    },
+    "en": {
+      "region": "Ryazan Oblast, Ryazan (Southern Industrial Zone)",
+      "target": "Ryazan Oil Refinery (JSC Ryazan Oil Refining Company — Rosneft)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Overnight into September 6, 2026, Ukrainian long-range strike drones attacked the Ryazan Oil Refinery in the Southern Industrial Zone. Owned by Rosneft, the facility is among Russia's five largest refineries with an annual capacity exceeding 17 million tons, supplying fuel to the capital region and Russian military forces. According to the AFU General Staff and defense firm Fire Point, FP-1 strike UAVs hit distillation columns of primary refining units ELOU-AVT-6 and AVT-3, which accounted for over 75% of plant capacity, along with an isomerization unit. A massive fire broke out across the refinery, forcing management to halt operations for emergency repairs. The regional governor acknowledged the strike and industrial blaze, claiming it resulted from falling drone debris. Russia's Defense Ministry reported intercepting drones over the region, while authorities claimed no casualties among plant personnel.",
+      "source": "General Staff of AFU, Fire Point, ASTRA, Ryazan Oblast Governor, Russian Media"
+    },
+    "id": 437
+  },
+  {
+    "date": "06.09.2026",
+    "lat": 47.2872,
+    "lng": 39.6356,
+    "distance": 222,
+    "ru": {
+      "region": "Ростовская область, Ростов-на-Дону (мкр-н Военвед)",
+      "target": "Военный аэродром «Ростов-на-Дону (Центральный)» (4-я армия ВВС и ПВО ВКС РФ)",
+      "category": "Военный аэродром",
+      "weapon": "Дрон",
+      "details": "В ночь на 6 сентября 2026 года Силы обороны Украины нанесли удар беспилотниками по военному аэродрому «Ростов-на-Дону (Центральный)». Этот аэродром служит главной базой 4-й армии ВВС и ПВО и 30-го отдельного транспортного авиаполка ВКС РФ, обеспечивая управление авиацией и переброску военных грузов в зону боевых действий. В сводке Генштаба ВСУ подтвердили успешное поражение аэродрома, где после серии взрывов начался пожар и пострадала наземная инфраструктура. Для прорыва обороны украинские силы также уничтожили РЛС «Подлет» и два прикрывавших район комплекса «Панцирь-С1». В Ростове беспилотники кружили над городом более четырех часов под непрерывный грохот зенитных установок. Из-за падения обломков сбитых дронов получили повреждения многоэтажные дома в Советском и Ленинском районах, а четверо горожан, включая ребенка, были ранены. Городские власти ввели режим чрезвычайной ситуации в районе пострадавших жилых кварталов.",
+      "source": "Генштаб ВСУ, ASTRA, губернатор Ростовской области, очевидцы, росСМИ"
+    },
+    "uk": {
+      "region": "Ростовська область, Ростов-на-Дону (мкр-н Воєнвед)",
+      "target": "Військовий аеродром «Ростов-на-Дону (Центральний)» (4-та армія ВПС і ППО ВКС РФ)",
+      "category": "Військовий аеродром",
+      "weapon": "Дрон",
+      "details": "У ніч проти 6 вересня 2026 року Сили оборони України завдали комбінованого удару безпілотниками по військовому аеродрому «Ростов-на-Дону (Центральний)». Цей летовище є ключовою штабною базою 4-ї армії ВПС і ППО та 30-го окремого змішаного авіаполку ВКС РФ, звідки координуються вильоти бойової авіації та доставляються вантажі на фронт. У зведенні Генштабу ЗСУ підтвердили ураження аеродрому, де після вибухів спалахнула пожежа й зазнала пошкоджень інфраструктура обслуговування бортів. Для ослаблення ворожого захисту українські бійці також ліквідували РЛС «Подльот» і два зенітні комплекси «Панцир-С1» у Ростовській області. У самому Ростові дрони кружляли понад чотири години під безперервну стрілянину ворожої ППО. Уламки збитих апаратів пошкодили багатоповерхівки в Радянському та Ленінському районах міста, поранення дістали четверо жителів, зокрема дитина. Влада міста оголосила локальний режим надзвичайного стану біля постраждалих будинків.",
+      "source": "Генштаб ЗСУ, ASTRA, губернатор Ростовської області, очевидці, росЗМІ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Rostov-on-Don (Voenved District)",
+      "target": "Rostov-on-Don (Centralny) Military Airfield (4th Air and Air Defence Forces Army)",
+      "category": "Military Airbase",
+      "weapon": "Drone",
+      "details": "Overnight into September 6, 2026, Ukrainian defense forces launched a drone strike against the Rostov-on-Don (Centralny) military airfield. The airbase serves as headquarters for the 4th Air and Air Defence Forces Army and the 30th Independent Composite Transport Aviation Regiment, managing flights and military cargo logistics. The AFU General Staff officially confirmed hitting the airfield, where explosions ignited fires and damaged ground support infrastructure. To clear the flight path, Ukrainian strikes also destroyed a Podlyot radar and two Pantsir-S1 air defense missile systems protecting the sector. Drones circled over Rostov-on-Don for more than four hours amid heavy anti-aircraft gunfire. Debris from intercepted drones damaged apartment buildings in the Sovetsky and Leninsky districts, injuring four civilians including a child. City authorities declared a local state of emergency around the damaged apartment buildings.",
+      "source": "General Staff of AFU, ASTRA, Rostov Oblast Governor, Eyewitnesses, Russian Media"
+    },
+    "id": 438
+  },
+  {
     "date": "05.09.2026",
     "lat": 44.7214,
     "lng": 37.8286,

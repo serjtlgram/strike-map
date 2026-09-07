@@ -258,9 +258,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function getCategoryType(category) {
         if (!category) return 'other';
         const cat = category.toLowerCase();
-        if (cat.includes('нефтегаз') || cat.includes('нафтогаз') || cat.includes('oil & gas') || cat.includes('oil and gas')) return 'oilgas';
-        if (cat.includes('логистика') || cat.includes('логістика') || cat.includes('logistics') || cat.includes('fuel logistics')) return 'logistics';
-        if (cat.includes('впк') || cat.includes('авиабаза') || cat.includes('авіабаза') || cat.includes('defense') || cat.includes('airbase') || cat.includes('military')) return 'military';
+        if (cat.includes('нефтегаз') || cat.includes('нафтогаз') || cat.includes('нпз') || cat.includes('oil & gas') || cat.includes('oil and gas') || cat.includes('refinery')) return 'oilgas';
+        if (cat.includes('логист') || cat.includes('logistics') || cat.includes('fuel logistics')) return 'logistics';
+        if (cat.includes('впк') || cat.includes('авиабаза') || cat.includes('авіабаза') || cat.includes('аэродром') || cat.includes('аеродром') || cat.includes('военн') || cat.includes('військ') || cat.includes('defense') || cat.includes('airbase') || cat.includes('airfield') || cat.includes('military')) return 'military';
         return 'other';
     }
 
