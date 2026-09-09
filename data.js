@@ -28,6 +28,11 @@ const strikeData = [
       "details": "On September 9, 2026, long-range strike drones operated by the Deep Strike unit of the Ukrainian Special Operations Forces attacked the Novy Urengoy Condensate Treatment Plant in the Yamalo-Nenets Autonomous Okrug. The Gazprom Pererabotka facility processes up to 19.5 million tons of raw hydrocarbons annually, stabilizing unstable gas condensate for transport through the Urengoy–Surgut pipeline. Flying roughly 2,875 kilometers, the drones delivered the deepest confirmed strike inside Russian territory since the outbreak of the war. Multiple detonations rocked the industrial complex, igniting a heavy fire across the condensate de-ethanization unit with dense plumes of smoke. Factory staff were immediately evacuated into shelters while production lines underwent emergency shutdowns. The regional governor acknowledged the fire at the industrial site, while airports in Novy Urengoy and Nadym enforced emergency airspace closures.",
       "source": "SOF of AFU, General Staff of AFU, Governor of YNAO, ASTRA, Russian Media"
     },
+    "images": [
+      "video/urengoy_zpkt_2026-09-09.mp4",
+      "images/urengoy_zpkt_1.jpg",
+      "images/urengoy_zpkt_2.jpg"
+    ],
     "id": 444
   },
   {
@@ -121,6 +126,10 @@ const strikeData = [
       "details": "Overnight into September 9, 2026, a swarm of Ukrainian strike drones targeted the fuel oil terminal within the commercial seaport of Novorossiysk. The facility, operated by Novorossiysk Fuel Oil Terminal LLC under the NCSP Group, handles up to five million tons of heavy petroleum products and fuel oil annually, serving as a critical bunkering supply hub for naval vessels in the Black Sea. Multiple drone impacts across the storage tank farm triggered a series of loud blasts, followed by a raging blaze. Enormous fireballs and thick black smoke columns rose over the eastern shores of Tsemes Bay, visible across numerous residential quarters of the city. Shrapnel and secondary fire damaged fuel-pumping pipelines and loading racks. City authorities sounded air raid sirens for several hours and sealed off portside streets, ultimately acknowledging fires across local industrial premises.",
       "source": "General Staff of AFU, Navy of AFU, ASTRA, Mayor of Novorossiysk, Russian Media"
     },
+    "images": [
+      "video/novorossiysk_nmt_2026-09-09.mp4",
+      "images/novorossiysk_nmt_1.jpg"
+    ],
     "id": 447
   },
   {
@@ -183,6 +192,10 @@ const strikeData = [
       "details": "On the evening of September 9, 2026, a Ukrainian unmanned surface vessel conducted a daring strike on the Sea Port of Sochi in Krasnodar Krai. This marked the first successful penetration of a maritime strike drone into Greater Sochi's harbor, located roughly six hundred kilometers across the Black Sea from Ukrainian shores. Around 18:50 local time, the high-speed drone approached the central promenade and struck near the main pier of the marine passenger terminal. The detonation ignited an immediate fire across the berthing structures, sending shockwaves across nearby waterfront areas. Fragmentation and blast energy damaged port moorings, promenade infrastructure, and nearby seaside pavilions. Krasnodar Krai's emergency operational headquarters confirmed the naval drone raid, reporting eight casualties, with five individuals requiring hospitalization. Authorities temporarily cordoned off the central embankment and elevated security measures throughout the port area.",
       "source": "OSINT (Exilenova+, Supernova+), Krasnodar Krai Operational HQ, TASS, Russian Media"
     },
+    "images": [
+      "video/sochi_port_2026-09-09.mp4",
+      "images/sochi_port_1.jpg"
+    ],
     "id": 449
   },
   {
