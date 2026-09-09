@@ -1,5 +1,36 @@
 const strikeData = [
   {
+    "date": "08.09.2026",
+    "lat": 51.4506,
+    "lng": 45.9439,
+    "distance": 668,
+    "ru": {
+      "region": "Саратовская область, Саратов (Заводской район)",
+      "target": "Саратовский НПЗ (ПАО «Саратовский нефтеперерабатывающий завод» — ПАО «НК «Роснефть»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 8 сентября 2026 года дальнобойные украинские беспилотники атаковали Саратовский нефтеперерабатывающий завод в Заводском районе Саратова. Предприятие входит в структуру «Роснефти» и является одним из старейших в стране, ежегодно перерабатывая до 7 миллионов тонн сырья и снабжая топливом военные подразделения на юго-восточном направлении. Около половины четвертого утра над промышленной зоной раздалась серия мощных взрывов, после чего на технологической площадке завода вспыхнул сильный пожар с густым столбом дыма. Примечательно, что удар пришелся всего через пять дней после окончания планового капитального ремонта производственных установок. Из-за воздушной тревоги в международном аэропорту Гагарин временно вводили план «Ковер» с задержкой авиарейсов. Губернатор региона подтвердил повреждение заводской инфраструктуры и ранение 10 человек, а Минобороны заявило о перехвате беспилотников дежурными расчетами ПВО.",
+      "source": "ASTRA, губернатор Саратовской области, Росавиация, очевидцы, росСМИ"
+    },
+    "uk": {
+      "region": "Саратовська область, Саратов (Заводський район)",
+      "target": "Саратовський НПЗ (ПАТ «Саратовський нафтопереробний завод» — ПАТ «НК «Роснефть»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч проти 8 вересня 2026 року далекобійні українські безпілотники завдали удару по Саратовському нафтопереробному заводу в Заводському районі Саратова. Підприємство належить корпорації «Роснефть» і є одним із найстаріших у галузі, щорічно переробляючи до 7 мільйонів тонн нафти та забезпечуючи пальним військові з'єднання загарбників. Близько пів на четверту ранку над промисловою зоною пролунала серія вибухів, після чого на виробничих майданчиках заводу спалахнула сильна пожежа із задимленням. Важливо, що атака відбулася всього через п'ять днів після завершення капітального ремонту технологічного обладнання. Через загрозу БПЛА в міжнародному аеропорту Гагарін екстрено вводили план «Килим» із призупиненням рейсів. Губернатор Саратовської області підтвердив ураження інфраструктури підприємства та поранення 10 осіб, тоді як Міноборони РФ заявило про відбиття нальоту черговими засобами ППО.",
+      "source": "ASTRA, губернатор Саратовської області, Росавіація, очевидці, росЗМІ"
+    },
+    "en": {
+      "region": "Saratov Oblast, Saratov (Zavodskoy District)",
+      "target": "Saratov Oil Refinery (PJSC Saratov Refinery — Rosneft)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Overnight into September 8, 2026, Ukrainian long-range strike drones attacked the Saratov Oil Refinery in the city's Zavodskoy District. Operating under Rosneft, the facility is among Russia's historic refineries, processing up to 7 million tons of crude annually and supplying fuel to military forces deployed across the southern theater. Around 03:30 local time, explosions shook the industrial area, followed by a fire and thick smoke billowing from the plant's production premises. Notably, the strike occurred merely five days after the facility completed scheduled capital overhaul operations. Due to the incoming drone threat, Saratov's Gagarin International Airport enacted the 'Kover' emergency protocol, delaying multiple scheduled flights. The regional governor acknowledged damage to refinery infrastructure and reported ten casualties, while the Russian Defense Ministry claimed its air defense units shot down incoming drones.",
+      "source": "ASTRA, Saratov Oblast Governor, Rosaviatsiya, Eyewitnesses, Russian Media"
+    },
+    "id": 443
+  },
+  {
     "date": "07.09.2026",
     "lat": 47.2461,
     "lng": 38.84,
