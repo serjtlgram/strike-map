@@ -155,6 +155,37 @@ const strikeData = [
     "id": 448
   },
   {
+    "date": "09.09.2026",
+    "lat": 43.5786,
+    "lng": 39.7186,
+    "distance": 592,
+    "ru": {
+      "region": "Краснодарский край, Сочи (Центральный район)",
+      "target": "Морской порт Сочи (пирс и причальная инфраструктура Морпорта)",
+      "category": "ВПК",
+      "weapon": "БЭК",
+      "details": "Вечером 9 сентября 2026 года украинский безэкипажный катер совершил дерзкую атаку на морской порт Сочи в Краснодарском крае. Это первое успешное проникновение ударного морского дрона в курортную гавань Большого Сочи, расположенную почти в шестистах километрах от украинского побережья. Около 18:50 по местному времени скоростной дрон прорвался к центральной набережной и нанес мощный удар в районе главного пирса морского вокзала. В результате подрыва произошла сильная детонация, вызвавшая возгорание причальных сооружений и панику среди отдыхающих. Взрывная волна и осколки повредили портовую инфраструктуру, прилегающие пляжные строения и витрины ресторанов. Оперативный штаб Краснодарского края подтвердил налет морского беспилотника, заявив о восьми пострадавших, пять из которых были экстренно госпитализированы. В порту и на побережье временно перекрывали набережную и вводили особый режим безопасности.",
+      "source": "OSINT (Exilenova+, Supernova+), оперштаб Краснодарского края, ТАСС, росСМИ"
+    },
+    "uk": {
+      "region": "Краснодарський край, Сочі (Центральний район)",
+      "target": "Морський порт Сочі (пірс та причальна інфраструктура Морпорту)",
+      "category": "ВПК",
+      "weapon": "БЕК",
+      "details": "Увечері 9 вересня 2026 року український безекіпажний катер здійснив результативну атаку на морський порт Сочі в Краснодарському краї. Це перший зафіксований прорив ударного морського дрона до курортної гавані Великого Сочі, віддаленої майже на шістсот кілометрів від українського узбережжя. Близько 18:50 за місцевим часом швидкісний катер-камікадзе наблизився до центральної набережної та влучив у районі головного пірса морського вокзалу. Внаслідок потужного вибуху спалахнула пожежа на причальних спорудах, а гучний гуркіт спричинив паніку на міських пляжах. Вибухова хвиля пошкодила інфраструктуру портових пірсів, прилеглі торговельні павільйони та фасади закладів відпочинку. Оперативний штаб Краснодарського краю підтвердив атаку морського дрона та повідомив про вісьмох постраждалих, з яких п'ятьох госпіталізували. Російські силовики екстрено перекрили набережну та посилили охорону чорноморського порту.",
+      "source": "OSINT (Exilenova+, Supernova+), оперштаб Краснодарського краю, ТАРС, росЗМІ"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Sochi (Central District)",
+      "target": "Sea Port of Sochi (Pier and Port Berthing Infrastructure)",
+      "category": "Military-Industrial Complex",
+      "weapon": "USV",
+      "details": "On the evening of September 9, 2026, a Ukrainian unmanned surface vessel conducted a daring strike on the Sea Port of Sochi in Krasnodar Krai. This marked the first successful penetration of a maritime strike drone into Greater Sochi's harbor, located roughly six hundred kilometers across the Black Sea from Ukrainian shores. Around 18:50 local time, the high-speed drone approached the central promenade and struck near the main pier of the marine passenger terminal. The detonation ignited an immediate fire across the berthing structures, sending shockwaves across nearby waterfront areas. Fragmentation and blast energy damaged port moorings, promenade infrastructure, and nearby seaside pavilions. Krasnodar Krai's emergency operational headquarters confirmed the naval drone raid, reporting eight casualties, with five individuals requiring hospitalization. Authorities temporarily cordoned off the central embankment and elevated security measures throughout the port area.",
+      "source": "OSINT (Exilenova+, Supernova+), Krasnodar Krai Operational HQ, TASS, Russian Media"
+    },
+    "id": 449
+  },
+  {
     "date": "08.09.2026",
     "lat": 51.4506,
     "lng": 45.9439,
