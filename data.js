@@ -227,7 +227,10 @@ const strikeData = [
       "details": "Overnight into September 8, 2026, Ukrainian long-range strike drones attacked the Saratov Oil Refinery in the city's Zavodskoy District. Operating under Rosneft, the facility is among Russia's historic refineries, processing up to 7 million tons of crude annually and supplying fuel to military forces deployed across the southern theater. Around 03:30 local time, explosions shook the industrial area, followed by a fire and thick smoke billowing from the plant's production premises. Notably, the strike occurred merely five days after the facility completed scheduled capital overhaul operations. Due to the incoming drone threat, Saratov's Gagarin International Airport enacted the 'Kover' emergency protocol, delaying multiple scheduled flights. The regional governor acknowledged damage to refinery infrastructure and reported ten casualties, while the Russian Defense Ministry claimed its air defense units shot down incoming drones.",
       "source": "ASTRA, Saratov Oblast Governor, Rosaviatsiya, Eyewitnesses, Russian Media"
     },
-    "id": 443
+    "id": 443,
+    "images": [
+      "images/saratov_refinery_1.jpg"
+    ]
   },
   {
     "date": "07.09.2026",
@@ -258,7 +261,10 @@ const strikeData = [
       "details": "Overnight into September 7, 2026, Ukrainian strike drones hit the Taganrog-Centralny military airfield in Rostov Oblast. The airbase serves as an important logistical hub for troop deployment and hosts the 325th Aircraft Repair Plant, which overhauls Il-76 transport planes. Explosions rattled the airfield around 02:44 local time, followed by satellite thermal sensors detecting a prominent fire across the aircraft parking apron. Independent OSINT analysis of post-strike satellite imagery confirmed that a Mi-8 multipurpose helicopter was completely destroyed, while an adjacent Mi-35 attack helicopter sustained severe shrapnel damage. Rostov Oblast Governor confirmed a large-scale drone raid across seven districts, claiming defense systems intercepted the incoming targets. Russian military officials withheld any confirmation regarding damaged or destroyed helicopters on the secured airfield tarmac.",
       "source": "OSINT (Absolutely Reliable), Satellite Imagery, Rostov Oblast Governor, Russian Media"
     },
-    "id": 439
+    "id": 439,
+    "images": [
+      "images/taganrog_airbase_1.jpg"
+    ]
   },
   {
     "date": "07.09.2026",
@@ -382,7 +388,11 @@ const strikeData = [
       "details": "Overnight into September 6, 2026, Ukrainian long-range strike drones attacked the Ryazan Oil Refinery in the Southern Industrial Zone. Owned by Rosneft, the facility is among Russia's five largest refineries with an annual capacity exceeding 17 million tons, supplying fuel to the capital region and Russian military forces. According to the AFU General Staff and defense firm Fire Point, FP-1 strike UAVs hit distillation columns of primary refining units ELOU-AVT-6 and AVT-3, which accounted for over 75% of plant capacity, along with an isomerization unit. A massive fire broke out across the refinery, forcing management to halt operations for emergency repairs. The regional governor acknowledged the strike and industrial blaze, claiming it resulted from falling drone debris. Russia's Defense Ministry reported intercepting drones over the region, while authorities claimed no casualties among plant personnel.",
       "source": "General Staff of AFU, Fire Point, ASTRA, Ryazan Oblast Governor, Russian Media"
     },
-    "id": 437
+    "id": 437,
+    "images": [
+      "video/ryazan_rnpk_2026-09-06.mp4",
+      "images/ryazan_rnpk_1.jpg"
+    ]
   },
   {
     "date": "06.09.2026",
@@ -506,7 +516,11 @@ const strikeData = [
       "details": "On the night of September 1, 2026, the Main Intelligence Directorate of Ukraine alongside defense forces struck the Novatek-Ust-Luga industrial facility in Leningrad Oblast during a Deepstrike operation. Ukrainian drones covered over 900 kilometers to target primary technological equipment at the processing terminal. Direct hits damaged stable gas condensate fractionation units and adjacent pipeline infrastructure, igniting a large-scale fire. The plant refines condensate into naphtha, jet fuel, fuel oil, and diesel, supporting both energy exports and Baltic fleet logistics. Regional Governor Alexander Drozdenko confirmed a mass drone assault and an active blaze in the port area. The attack triggered emergency airspace shutdowns under the Kovyor plan and forced a halt in maritime loading operations.",
       "source": "DIU, Ukrainian Defense Forces, Governor Drozdenko, OSINT"
     },
-    "id": 426
+    "id": 426,
+    "images": [
+      "video/ust_luga_novatek_2026-09-01.mp4",
+      "images/ust_luga_novatek_1.jpg"
+    ]
   },
   {
     "date": "01.09.2026",
