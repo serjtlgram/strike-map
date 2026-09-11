@@ -1,5 +1,36 @@
 const strikeData = [
   {
+    "date": "10.09.2026",
+    "lat": 42.9885,
+    "lng": 47.5055,
+    "distance": 998,
+    "ru": {
+      "region": "Республика Дагестан, Махачкала",
+      "target": "Махачкалинский морской торговый порт (Нефтяная гавань и причальная инфраструктура базирования)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 10 сентября 2026 года дальнобойные украинские дроны атаковали Махачкалинский морской торговый порт в Дагестане. Это единственный незамерзающий глубоководный порт России на Каспии с нефтеналивной гаванью мощностью перевалки почти восемь миллионов тонн сырья в год. Через эти причалы также снабжается база Каспийской флотилии и действует ключевой маршрут поставок военных грузов и компонентов беспилотников из Ирана. Беспилотники преодолели около тысячи километров и нанесли серию точных ударов по портовой инфраструктуре. На территории терминала прогремели взрывы, после чего вспыхнул пожар в складской зоне и возле причалов. Взрывная волна и осколки сбитых ПВО дронов повредили кровлю расположенного неподалеку Аварского театра. Генштаб ВСУ, ССО и президент Украины Владимир Зеленский официально подтвердили поражение объектов порта, а власти Дагестана признали пожар и ликвидацию последствий налета.",
+      "source": "Генштаб ВСУ, ССО ВСУ, Президент Украины, ASTRA, росСМИ"
+    },
+    "uk": {
+      "region": "Республіка Дагестан, Махачкала",
+      "target": "Махачкалінський морський торговельний порт (Нафтова гавань та причальна інфраструктура базування)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч проти 10 вересня 2026 року далекобійні українські безпілотники атакували Махачкалінський морський торговельний порт у Дагестані. Це єдиний незамерзаючий глибоководний порт Росії на Каспії з нафтоналивною гаванню проєктною потужністю майже вісім мільйонів тонн на рік. Через місцеві причали забезпечується база Каспійської флотилії та пролягає головний морський маршрут військових поставок і компонентів дронів з Ірану. Подолавши близько тисячі кілометрів, ударні БПЛА успішно уразили портову інфраструктуру противника. На майданчиках порту пролунали вибухи, після чого спалахнула пожежа у зоні складів та на причальних спорудах. Вибухова хвиля та уламки перехоплених апаратів пошкодили дах розташованого поруч театру на міській набережній. Генштаб ЗСУ, ССО та президент України Володимир Зеленський підтвердили влучне ураження об'єкта, а влада Дагестану визнала пожежу на портових спорудах.",
+      "source": "Генштаб ЗСУ, ССО ЗСУ, Президент України, ASTRA, росЗМІ"
+    },
+    "en": {
+      "region": "Republic of Dagestan, Makhachkala",
+      "target": "Makhachkala Commercial Sea Port (Oil Harbor & Fleet Berthing Infrastructure)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Overnight into September 10, 2026, Ukrainian long-range strike drones attacked the Makhachkala Commercial Sea Port in Dagestan. As Russia's only ice-free deep-water port on the Caspian Sea, it features an oil harbor capable of transshipping nearly eight million tons of crude and fuel annually. The harbor also berths Caspian Flotilla warships and serves as a vital logistics corridor for military hardware and drone components shipped from Iran. Ukrainian drones traveled approximately 1,000 kilometers before striking facilities across the port complex. Multiple explosions sparked a fire across storage premises and portside mooring berths. Blast waves and debris from intercepted drones damaged the roof of the nearby Avar Theater along the embankment. Ukraine's General Staff, Special Operations Forces, and President Volodymyr Zelensky confirmed the strike, while local authorities acknowledged fires across the port.",
+      "source": "General Staff of AFU, SOF of AFU, President of Ukraine, ASTRA, Russian Media"
+    },
+    "id": 450
+  },
+  {
     "date": "09.09.2026",
     "lat": 66.0842,
     "lng": 76.6631,
