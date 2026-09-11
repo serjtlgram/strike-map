@@ -58,7 +58,15 @@ const newItems = [
       "weapon": "Drone",
       "details": "Overnight into September 10, 2026, Ukrainian long-range strike drones attacked the Makhachkala Commercial Sea Port in Dagestan. As Russia's only ice-free deep-water port on the Caspian Sea, it features an oil harbor capable of transshipping nearly eight million tons of crude and fuel annually. The harbor also berths Caspian Flotilla warships and serves as a vital logistics corridor for military hardware and drone components shipped from Iran. Ukrainian drones traveled approximately 1,000 kilometers before striking facilities across the port complex. Multiple explosions sparked a fire across storage premises and portside mooring berths. Blast waves and debris from intercepted drones damaged the roof of the nearby Avar Theater along the embankment. Ukraine's General Staff, Special Operations Forces, and President Volodymyr Zelensky confirmed the strike, while local authorities acknowledged fires across the port.",
       "source": "General Staff of AFU, SOF of AFU, President of Ukraine, ASTRA, Russian Media"
-    }
+    },
+    "images": [
+      "video/makhachkala_port_2026-09-10_1.mp4",
+      "video/makhachkala_port_2026-09-10_2.mp4",
+      "images/makhachkala_port_1.jpg",
+      "images/makhachkala_port_2.jpg",
+      "images/makhachkala_port_3.jpg",
+      "images/makhachkala_port_4.jpg"
+    ]
   }
 ];
 
