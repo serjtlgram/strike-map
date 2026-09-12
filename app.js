@@ -43,7 +43,30 @@ document.addEventListener('DOMContentLoaded', () => {
         npz_struck_count_short: { ru: 'Поражено', uk: 'Уражено', en: 'Struck' },
         npz_intact_count_short: { ru: 'В строю', uk: 'У строю', en: 'Intact' },
         npz_capacity_struck_short: { ru: 'Под ударом', uk: 'Під ударом', en: 'Damaged' },
-        npz_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' }
+        npz_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' },
+        // WB Warehouses
+        wb_title: { ru: 'Крупнейшие склады Wildberries', uk: 'Найбільші склади Wildberries', en: 'Largest Wildberries Warehouses' },
+        wb_subtitle: { ru: 'Склады от 50 000 м² — ранжированы по площади, статус ударов и вывод из строя', uk: 'Склади від 50 000 м² — ранжовані за площею, статус ударів та виведення з ладу', en: 'Warehouses 50,000+ m² — ranked by area, strike status and operational impact' },
+        wb_total_count: { ru: 'Всего складов', uk: 'Всього складів', en: 'Total Warehouses' },
+        wb_total_count_short: { ru: 'Всего', uk: 'Всього', en: 'Total' },
+        wb_struck_count: { ru: 'Поражено / выведено', uk: 'Уражено / виведено', en: 'Struck / Disabled' },
+        wb_struck_count_short: { ru: 'Поражено', uk: 'Уражено', en: 'Struck' },
+        wb_intact_count: { ru: 'Без ударов', uk: 'Без ударів', en: 'No Strikes' },
+        wb_intact_count_short: { ru: 'В строю', uk: 'У строю', en: 'Intact' },
+        wb_area_struck: { ru: 'Поражённая площадь', uk: 'Уражена площа', en: 'Struck Area' },
+        wb_area_short: { ru: 'Площадь', uk: 'Площа', en: 'Area' },
+        wb_area_unit: { ru: 'тыс. м²', uk: 'тис. м²', en: 'K sqm' },
+        wb_area_total_desc: { ru: 'Общая площадь топ-складов Wildberries', uk: 'Загальна площа топ-складів Wildberries', en: 'Total area of tracked Wildberries warehouses' },
+        wb_area_total_desc_short: { ru: 'Площадь WB-складов', uk: 'Площа WB-складів', en: 'WB area' },
+        wb_legend_struck: { ru: 'Атакован / поврежден', uk: 'Атаковано / пошкоджено', en: 'Struck / Damaged' },
+        wb_legend_intact: { ru: 'Без ударов', uk: 'Без ударів', en: 'No recorded strikes' },
+        wb_legend_hint: { ru: 'Нажмите на карточку атакованного склада, чтобы открыть его на карте', uk: 'Натисніть на картку атакованого складу, щоб відкрити його на карті', en: 'Click any struck warehouse card to open it on the map' },
+        wb_status_struck: { ru: 'Атакован / поврежден', uk: 'Атаковано / пошкоджено', en: 'Struck / Damaged' },
+        wb_status_intact: { ru: 'Без ударов (в работе)', uk: 'Без ударів (у роботі)', en: 'Operational (No strikes)' },
+        wb_tooltip_strike_date: { ru: 'Первый удар:', uk: 'Перший удар:', en: 'First strike:' },
+        wb_tooltip_strike_count: { ru: 'Зафиксировано ударов:', uk: 'Зафіксовано ударів:', en: 'Recorded strikes:' },
+        wb_tooltip_not_struck: { ru: 'Ударов не зафиксировано', uk: 'Ударів не зафіксовано', en: 'No recorded strikes' },
+        wb_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' }
     };
 
     const supportedLangs = ['uk', 'ru', 'en'];
@@ -96,6 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update NPZ drawer language dynamically
         if (typeof renderNpzDrawer === 'function') renderNpzDrawer();
+
+        // Update WB drawer language dynamically
+        if (typeof window.renderWbDrawer === 'function') {
+            const wbDrawer = document.getElementById('wbDrawer');
+            if (wbDrawer && wbDrawer.classList.contains('open')) window.renderWbDrawer();
+        }
     }
 
     document.querySelectorAll('.lang-selector').forEach(btn => {
@@ -1439,6 +1468,361 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose renderNpzDrawer globally for setLang call
     window.renderNpzDrawer = renderNpzDrawer;
     window.openRefineryOnMap = openRefineryOnMap;
+
+    // ╔══════════════════════════════════════════════════════════════╗
+    // ║               WB — Wildberries Warehouses                    ║
+    // ╚══════════════════════════════════════════════════════════════╝
+
+    const warehousesList = [
+        // Sorted by area desc (sq m). queryTerms: search patterns in strikeData en.target
+        { id: 'wb_koledino', ru: { name: 'Коледино', region: 'Москов. обл., Подольский р-н', desc: 'Флагманский мегахаб. Крупнейший РЦ Wildberries' }, uk: { name: 'Коледіно', region: 'Моск. обл., Подільський р-н', desc: 'Флагманський мегахаб' }, en: { name: 'Koledino', region: 'Moscow Oblast, Podolsk District', desc: 'Flagship mega-hub. Largest WB DC' }, area: 200000, lat: 55.378, lng: 37.585, queryTerms: ['koledino'] },
+        { id: 'wb_khryastovo', ru: { name: 'Хрястово', region: 'Владимирская обл., Собинский р-н', desc: 'Крупнейший логистический хаб Сев.-Запада' }, uk: { name: 'Хрястово', region: 'Владимирська обл., Собинський р-н', desc: 'Великий логістичний хаб Пн.-Зх.' }, en: { name: 'Khryastovo', region: 'Vladimir Oblast, Sobinsky District', desc: 'Major logistics hub, NW Russia' }, area: 171900, lat: 56.0183, lng: 40.1375, queryTerms: ['khryastovo'] },
+        { id: 'wb_atlant', ru: { name: 'Атлант-Парк (Ногинск)', region: 'Москов. обл., Богородский р-н', desc: 'Центральный логистический комплекс МО' }, uk: { name: 'Атлант-Парк (Ногінськ)', region: 'Моск. обл., Богородський р-н', desc: 'Центральний логістичний комплекс МО' }, en: { name: 'Atlant-Park (Noginsk)', region: 'Moscow Oblast, Bogorodsky District', desc: 'Central logistics complex' }, area: 160000, lat: 55.8365, lng: 38.3564, queryTerms: ['atlant-park', 'noginsk'] },
+        { id: 'wb_ekaterinburg', ru: { name: 'Екатеринбург', region: 'Свердловская обл., Чкаловский р-н', desc: 'Крупнейший РЦ Урала' }, uk: { name: 'Єкатеринбург', region: 'Свердловська обл., Чкаловський р-н', desc: 'Найбільший РЦ Уралу' }, en: { name: 'Yekaterinburg', region: 'Sverdlovsk Oblast, Chkalovsky District', desc: 'Largest Ural distribution center' }, area: 150000, lat: 56.7412, lng: 60.7583, queryTerms: ['yekaterinburg'] },
+        { id: 'wb_elektrostal', ru: { name: 'Электросталь', region: 'Москов. обл., Электросталь', desc: 'Крупный логистический центр МО' }, uk: { name: 'Електросталь', region: 'Моск. обл., Електросталь', desc: 'Великий логістичний центр МО' }, en: { name: 'Elektrostal', region: 'Moscow Oblast, Elektrostal', desc: 'Major logistics center' }, area: 120000, lat: 55.792, lng: 38.446, queryTerms: ['elektrostal'] },
+        { id: 'wb_krasnodar', ru: { name: 'Краснодар', region: 'Краснодарский кр., Индустриальный пос.', desc: 'Ключевой хаб Юга России' }, uk: { name: 'Краснодар', region: 'Краснодарський кр., Індустріальний пос.', desc: 'Ключовий хаб Півдня Росії' }, en: { name: 'Krasnodar', region: 'Krasnodar Krai, Industrialny', desc: 'Key southern Russia hub' }, area: 130000, lat: 45.095, lng: 39.115, queryTerms: ['krasnodar'] },
+        { id: 'wb_shushary', ru: { name: 'Шушары (СПб)', region: 'Санкт-Петербург, Пушкинский р-н', desc: 'Главный РЦ Северо-Запада' }, uk: { name: 'Шушари (СПб)', region: 'Санкт-Петербург, Пушкінський р-н', desc: 'Головний РЦ Північно-Заходу' }, en: { name: 'Shushary (St. Petersburg)', region: 'Saint Petersburg, Pushkinsky District', desc: 'Main NW Russia distribution hub' }, area: 120000, lat: 59.7915, lng: 30.4072, queryTerms: ['shushary'] },
+        { id: 'wb_tver_emmaus', ru: { name: 'Тверь / Эммаус', region: 'Тверская обл., Калининский р-н', desc: 'Крупный логистический хаб Центра' }, uk: { name: 'Твер / Еммаус', region: 'Тверська обл., Калінінський р-н', desc: 'Великий логістичний хаб Центру' }, en: { name: 'Tver / Emmaus', region: 'Tver Oblast, Kalininsky District', desc: 'Major central logistics hub' }, area: 110000, lat: 56.7867, lng: 36.1158, queryTerms: ['emmaus', 'tver'] },
+        { id: 'wb_kotovsk', ru: { name: 'Котовск (Тамбов)', region: 'Тамбовская обл., Котовск', desc: 'РЦ Поволжья' }, uk: { name: 'Котовськ (Тамбов)', region: 'Тамбовська обл., Котовськ', desc: 'РЦ Поволжжя' }, en: { name: 'Kotovsk (Tambov)', region: 'Tambov Oblast, Kotovsk', desc: 'Volga region distribution center' }, area: 90000, lat: 52.585, lng: 41.51, queryTerms: ['kotovsk'] },
+        { id: 'wb_aleksin', ru: { name: 'Алексин (Тула)', region: 'Тульская обл., Алексин', desc: 'РЦ Центральной России' }, uk: { name: 'Алексин (Тула)', region: 'Тульська обл., Алексин', desc: 'РЦ Центральної Росії' }, en: { name: 'Aleksin (Tula)', region: 'Tula Oblast, Aleksin', desc: 'Central Russia distribution hub' }, area: 85000, lat: 54.5126, lng: 37.1729, queryTerms: ['aleksin'] },
+        { id: 'wb_voronezh', ru: { name: 'Воронеж / Нечаевка', region: 'Воронежская обл., Новоусманский р-н', desc: 'РЦ Черноземья' }, uk: { name: 'Воронеж / Нечаєвка', region: 'Воронезька обл., Новоусманський р-н', desc: 'РЦ Чорнозем\'я' }, en: { name: 'Voronezh / Nechayevka', region: 'Voronezh Oblast, Novousmansky District', desc: 'Black Earth region DC' }, area: 80000, lat: 51.6142, lng: 39.3416, queryTerms: ['voronezh', 'nechayevka', 'aleksandrovka'] },
+        { id: 'wb_chishmy', ru: { name: 'Чишмы (Башкирия)', region: 'Респ. Башкортостан, Чишминский р-н', desc: 'РЦ Башкирии и Поволжья' }, uk: { name: 'Чишми (Башкирія)', region: 'Респ. Башкортостан, Чишминський р-н', desc: 'РЦ Башкирії та Поволжжя' }, en: { name: 'Chishmy (Bashkortostan)', region: 'Republic of Bashkortostan, Chishminsky District', desc: 'Bashkortostan distribution center' }, area: 80000, lat: 54.5947, lng: 55.3942, queryTerms: ['chishmy', 'chishminsky', 'bashkortostan'] },
+        { id: 'wb_novosemeykino', ru: { name: 'Новосемейкино (Самара)', region: 'Самарская обл., Красноярский р-н', desc: 'РЦ Самарской области' }, uk: { name: 'Новосімейкіно (Самара)', region: 'Самарська обл., Красноярський р-н', desc: 'РЦ Самарської обл.' }, en: { name: 'Novosemeykino (Samara)', region: 'Samara Oblast, Krasnoyarsky District', desc: 'Samara region distribution center' }, area: 75000, lat: 53.3644, lng: 50.3472, queryTerms: ['novosemeykino', 'samara'] },
+        { id: 'wb_volgograd', ru: { name: 'Волгоград', region: 'Волгоградская обл., Дзержинский р-н', desc: 'РЦ Нижнего Поволжья' }, uk: { name: 'Волгоград', region: 'Волгоградська обл., Дзержинський р-н', desc: 'РЦ Нижнього Поволжжя' }, en: { name: 'Volgograd', region: 'Volgograd Oblast, Dzerzhinsky District', desc: 'Lower Volga distribution center' }, area: 70000, lat: 48.749, lng: 44.4645, queryTerms: ['volgograd'] },
+        { id: 'wb_krasny_bor', ru: { name: 'Красный Бор (Ленобл.)', region: 'Ленинградская обл., Тосненский р-н', desc: 'РЦ Ленинградской обл.' }, uk: { name: 'Красний Бор (Ленобл.)', region: 'Ленінградська обл., Тосненський р-н', desc: 'РЦ Ленінградської обл.' }, en: { name: 'Krasny Bor (Leningrad Oblast)', region: 'Leningrad Oblast, Tosnensky District', desc: 'Leningrad Oblast distribution center' }, area: 70000, lat: 59.6975, lng: 30.8711, queryTerms: ['krasny bor'] },
+        { id: 'wb_chekhov', ru: { name: 'Чехов / Новосёлки', region: 'Москов. обл., Чеховский р-н', desc: 'Дополнительный РЦ Подмосковья' }, uk: { name: 'Чехов / Новосьолки', region: 'Моск. обл., Чехівський р-н', desc: 'Додатковий РЦ Підмосков\'я' }, en: { name: 'Chekhov / Novoselki', region: 'Moscow Oblast, Chekhov District', desc: 'Moscow Oblast supplemental DC' }, area: 65000, lat: 55.1053, lng: 37.5147, queryTerms: ['novoselki', 'chekhov'] },
+        { id: 'wb_ryazan', ru: { name: 'Рязань (Тюшево)', region: 'Рязанская обл., Рязанский р-н', desc: 'РЦ Рязанской обл.' }, uk: { name: 'Рязань (Тюшево)', region: 'Рязанська обл., Рязанський р-н', desc: 'РЦ Рязанської обл.' }, en: { name: 'Ryazan (Tyushevo)', region: 'Ryazan Oblast, Ryazan District', desc: 'Ryazan distribution center' }, area: 65000, lat: 54.675, lng: 39.587, queryTerms: ['tyushevo', 'ryazan'] },
+        { id: 'wb_nevinnomyssk', ru: { name: 'Невинномысск', region: 'Ставропольский кр., Невинномысск', desc: 'РЦ Северного Кавказа' }, uk: { name: 'Невинномиськ', region: 'Ставропольський кр., Невинномиськ', desc: 'РЦ Північного Кавказу' }, en: { name: 'Nevinnomyssk', region: 'Stavropol Krai, Nevinnomyssk', desc: 'North Caucasus distribution center' }, area: 60000, lat: 44.642, lng: 41.925, queryTerms: ['nevinnomyssk'] },
+        { id: 'wb_sarapul', ru: { name: 'Сарапул (Удмуртия)', region: 'Удмуртская Респ., Сарапул', desc: 'РЦ Удмуртии' }, uk: { name: 'Сарапул (Удмуртія)', region: 'Удмуртська Респ., Сарапул', desc: 'РЦ Удмуртії' }, en: { name: 'Sarapul (Udmurtia)', region: 'Udmurt Republic, Sarapul', desc: 'Udmurtia distribution center' }, area: 55000, lat: 56.4811, lng: 53.6918, queryTerms: ['sarapul', 'udmurtia'] },
+        { id: 'wb_mastinovka', ru: { name: 'Мастиновка (Пенза)', region: 'Пензенская обл., Бессоновский р-н', desc: 'РЦ Пензенской обл.' }, uk: { name: 'Мастиновка (Пенза)', region: 'Пензенська обл., Бессонівський р-н', desc: 'РЦ Пензенської обл.' }, en: { name: 'Mastinovka (Penza Oblast)', region: 'Penza Oblast, Bessonovsky District', desc: 'Penza distribution center' }, area: 55000, lat: 53.2887, lng: 44.8342, queryTerms: ['mastinovka', 'penza'] },
+        { id: 'wb_perm', ru: { name: 'Пермь (Замулянка)', region: 'Пермский кр., Пермский р-н', desc: 'РЦ Прикамья' }, uk: { name: 'Перм (Замулянка)', region: 'Пермський кр., Пермський р-н', desc: 'РЦ Прикам\'я' }, en: { name: 'Perm (Zamulyanka)', region: 'Perm Krai, Perm District', desc: 'Perm Krai distribution center' }, area: 55000, lat: 57.9094, lng: 56.27, queryTerms: ['zamulyanka', 'perm'] },
+        { id: 'wb_simferopol', ru: { name: 'Симферополь (Крым)', region: 'Крым, Симферополь', desc: 'Сортировочный центр Крыма' }, uk: { name: 'Сімферополь (Крим)', region: 'Крим, Сімферополь', desc: 'Сортувальний центр Криму' }, en: { name: 'Simferopol (Crimea)', region: 'Crimea, Simferopol', desc: 'Crimea sorting center' }, area: 50000, lat: 44.9521, lng: 34.1024, queryTerms: ['simferopol'] }
+    ];
+
+    // Warehouse SVG icon
+    const wbWarehouseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+        <defs>
+            <linearGradient id="wbWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#c084fc;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#818cf8;stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="wbRoofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <!-- Roof -->
+        <polygon points="4,30 32,10 60,30" fill="url(#wbRoofGrad)" stroke="#6d28d9" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- Building walls -->
+        <rect x="8" y="30" width="48" height="26" rx="2" fill="url(#wbWallGrad)" stroke="#7c3aed" stroke-width="1.5"/>
+        <!-- Door -->
+        <rect x="24" y="42" width="16" height="14" rx="2" fill="#1e1b4b" opacity="0.85"/>
+        <!-- Left window -->
+        <rect x="12" y="35" width="8" height="7" rx="1.5" fill="#1e1b4b" opacity="0.6"/>
+        <!-- Right window -->
+        <rect x="44" y="35" width="8" height="7" rx="1.5" fill="#1e1b4b" opacity="0.6"/>
+        <!-- WB text -->
+        <text x="32" y="27" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="6.5" fill="white" letter-spacing="0.5" opacity="0.95">WB</text>
+    </svg>`;
+
+    // Fire overlay SVG (same approach as NPZ)
+    const wbFlameSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+        <ellipse cx="32" cy="58" rx="18" ry="5" fill="rgba(220,38,38,0.3)"/>
+        <path d="M32 4 C28 14 18 18 22 28 C18 24 14 26 16 34 C10 30 12 42 20 46 C16 44 14 50 20 54 C24 56 28 57 32 57 C36 57 40 56 44 54 C50 50 48 44 44 46 C52 42 54 30 48 34 C50 26 46 24 42 28 C46 18 36 14 32 4Z" fill="url(#wbFireGrad)" filter="url(#wbGlow)"/>
+        <defs>
+            <linearGradient id="wbFireGrad" x1="0%" y1="100%" x2="30%" y2="0%">
+                <stop offset="0%" style="stop-color:#dc2626"/>
+                <stop offset="40%" style="stop-color:#f97316"/>
+                <stop offset="75%" style="stop-color:#fbbf24"/>
+                <stop offset="100%" style="stop-color:#fef08a"/>
+            </linearGradient>
+            <filter id="wbGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+        </defs>
+        <path d="M32 28 C30 33 25 35 27 40 C25 38 23 39 24 43 C22 41 23 46 27 48 C25 47 24 50 27 51 C29 52 30.5 52.5 32 52.5 C33.5 52.5 35 52 37 51 C40 50 39 47 37 48 C41 46 42 41 40 43 C41 39 39 38 37 40 C39 35 34 33 32 28Z" fill="rgba(254,240,138,0.7)"/>
+    </svg>`;
+
+    function computeWarehousesStatus() {
+        return warehousesList.map(wh => {
+            const matches = strikeData.filter(s => {
+                if (!s.en || !s.en.target) return false;
+                const t = s.en.target.toLowerCase();
+                if (!t.includes('wildberries')) return false;
+                return wh.queryTerms.some(q => t.includes(q.toLowerCase()));
+            });
+            const struck = matches.length > 0;
+            // Sort strikes by date to get earliest
+            const sorted = matches.slice().sort((a, b) => {
+                const parseDate = d => { const [dd,mm,yy] = d.split('.'); return new Date(+yy, +mm-1, +dd); };
+                return parseDate(a.date) - parseDate(b.date);
+            });
+            return {
+                ...wh,
+                struck,
+                strikeCount: matches.length,
+                firstStrike: struck ? sorted[0].date : null,
+                strikeIds: matches.map(s => s.id),
+                firstStrikeId: struck ? sorted[0].id : null
+            };
+        });
+    }
+
+    function renderWbDrawer() {
+        const grid = document.getElementById('wbGrid');
+        if (!grid) return;
+
+        const warehouses = computeWarehousesStatus();
+        const totalCount = warehouses.length;
+        const struckList = warehouses.filter(w => w.struck);
+        const struckCount = struckList.length;
+        const intactCount = totalCount - struckCount;
+        const totalArea = warehouses.reduce((acc, w) => acc + w.area, 0);
+        const struckArea = struckList.reduce((acc, w) => acc + w.area, 0);
+        const struckAreaPct = totalArea > 0 ? Math.round(struckArea / totalArea * 100) : 0;
+        const struckAreaK = Math.round(struckArea / 1000);
+
+        // Update stats
+        const el = id => document.getElementById(id);
+        if (el('wbTotalCountText')) el('wbTotalCountText').textContent = totalCount;
+        if (el('wbStruckCountText')) el('wbStruckCountText').textContent = struckCount;
+        if (el('wbStruckPercentText')) el('wbStruckPercentText').textContent = totalCount > 0 ? `/ ${Math.round(struckCount/totalCount*100)}%` : '';
+        if (el('wbIntactCountText')) el('wbIntactCountText').textContent = intactCount;
+        if (el('wbIntactPercentText')) el('wbIntactPercentText').textContent = totalCount > 0 ? `/ ${Math.round(intactCount/totalCount*100)}%` : '';
+        if (el('wbStruckAreaText')) el('wbStruckAreaText').textContent = struckAreaK;
+        if (el('wbStruckAreaPercentText')) el('wbStruckAreaPercentText').textContent = ` (${struckAreaPct}%)`;
+        if (el('wbDamageRatioText')) el('wbDamageRatioText').textContent = `${struckAreaPct}% ${currentLang === 'ru' ? 'под ударом' : currentLang === 'uk' ? 'під ударом' : 'damaged'}`;
+        if (el('wbAreaProgressBar')) {
+            setTimeout(() => { el('wbAreaProgressBar').style.width = struckAreaPct + '%'; }, 80);
+        }
+        if (el('wbTotalBadge')) {
+            el('wbTotalBadge').textContent = totalCount + ' ' + (currentLang === 'ru' ? 'складов' : currentLang === 'uk' ? 'складів' : 'warehouses');
+        }
+        if (el('wbTabBadge')) el('wbTabBadge').textContent = struckCount;
+
+        // Render cards
+        grid.innerHTML = '';
+        warehouses.forEach(wh => {
+            const areaK = (wh.area / 1000).toFixed(0);
+            const cardEl = document.createElement('div');
+            cardEl.className = `wb-card rounded-xl border cursor-pointer select-none flex flex-col items-center text-center p-2 gap-1 relative
+                ${wh.struck
+                    ? 'bg-red-500/10 border-red-500/40 hover:border-red-400 hover:shadow-[0_0_16px_rgba(239,68,68,0.25)]'
+                    : 'theme-bg-item border-emerald-500/25 hover:border-emerald-400/60 hover:shadow-[0_0_16px_rgba(52,211,153,0.15)]'}`;
+
+            const icon = `<div class="relative w-10 h-10 md:w-12 md:h-12 shrink-0 mx-auto">
+                ${wbWarehouseSvg}
+                ${wh.struck ? `<div class="fire-overlay-icon absolute inset-0 flex items-center justify-center">${wbFlameSvg}</div>` : ''}
+            </div>`;
+
+            const statusBadge = wh.struck
+                ? `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 leading-none whitespace-nowrap">${i18n.wb_status_struck[currentLang]}</span>`
+                : `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/25 leading-none whitespace-nowrap">${i18n.wb_status_intact[currentLang]}</span>`;
+
+            const mapBtn = wh.struck
+                ? `<button class="wb-open-map-btn mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg bg-purple-500/15 hover:bg-purple-500/35 text-purple-400 border border-purple-500/30 font-semibold transition cursor-pointer" data-whid="${wh.id}">${i18n.wb_btn_on_map[currentLang]}</button>`
+                : '';
+
+            cardEl.innerHTML = `
+                ${icon}
+                <div class="w-full flex flex-col items-center gap-0.5 min-w-0">
+                    <span class="text-[11px] md:text-xs font-bold theme-text-main leading-tight line-clamp-2">${wh[currentLang].name}</span>
+                    <span class="text-[9px] md:text-[10px] theme-text-muted leading-tight line-clamp-2">${wh[currentLang].region}</span>
+                </div>
+                <div class="text-[10px] md:text-[11px] theme-text-muted font-medium">${areaK} ${currentLang === 'ru' || currentLang === 'uk' ? 'тыс. м²' : 'K sqm'}</div>
+                ${statusBadge}
+                ${mapBtn}
+            `;
+
+            cardEl.dataset.whid = wh.id;
+            grid.appendChild(cardEl);
+        });
+
+        attachWbCardEvents();
+    }
+
+    let wbTooltipTarget = null;
+    let wbTooltipHideTimer = null;
+
+    function attachWbCardEvents() {
+        const cards = document.querySelectorAll('#wbGrid .wb-card');
+        const whs = computeWarehousesStatus();
+        cards.forEach(card => {
+            const whId = card.dataset.whid;
+            const wh = whs.find(w => w.id === whId);
+            if (!wh) return;
+
+            // Map button click
+            const mapBtn = card.querySelector('.wb-open-map-btn');
+            if (mapBtn) {
+                mapBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    openWarehouseOnMap(wh);
+                });
+            }
+
+            // Card click — open map for struck, or just highlight
+            card.addEventListener('click', () => {
+                if (wh.struck) openWarehouseOnMap(wh);
+            });
+
+            // Desktop tooltip
+            if (window.innerWidth >= 768) {
+                card.addEventListener('mouseenter', (e) => {
+                    if (wbTooltipHideTimer) { clearTimeout(wbTooltipHideTimer); wbTooltipHideTimer = null; }
+                    wbTooltipTarget = card;
+                    showWbTooltip(wh, e);
+                });
+                card.addEventListener('mousemove', (e) => updateWbTooltipPosition(e));
+                card.addEventListener('mouseleave', () => {
+                    wbTooltipHideTimer = setTimeout(hideWbTooltip, 120);
+                });
+            }
+        });
+    }
+
+    function showWbTooltip(wh, e) {
+        const tt = document.getElementById('wbFloatingTooltip');
+        if (!tt) return;
+        const areaK = (wh.area / 1000).toFixed(0);
+        let html = '';
+        if (wh.struck) {
+            html = `<div class="flex flex-col gap-1">
+                <div class="font-bold theme-text-main text-[13px] flex items-center gap-1.5">
+                    <span>🔥</span><span>${wh[currentLang].name}</span>
+                </div>
+                <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
+                <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.wb_area_unit[currentLang]}</div>
+                <hr class="border-slate-600/50 my-0.5">
+                <div class="text-red-400 text-[11px] flex items-center gap-1"><span>📅</span><span>${i18n.wb_tooltip_strike_date[currentLang]}</span> <span class="font-bold">${wh.firstStrike}</span></div>
+                <div class="text-red-400 text-[11px] flex items-center gap-1"><span>💥</span><span>${i18n.wb_tooltip_strike_count[currentLang]}</span> <span class="font-bold">${wh.strikeCount}</span></div>
+                <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
+            </div>`;
+        } else {
+            html = `<div class="flex flex-col gap-1">
+                <div class="font-bold theme-text-main text-[13px] flex items-center gap-1.5">
+                    <span>📦</span><span>${wh[currentLang].name}</span>
+                </div>
+                <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
+                <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.wb_area_unit[currentLang]}</div>
+                <div class="text-emerald-400 text-[11px] font-semibold">${i18n.wb_tooltip_not_struck[currentLang]}</div>
+                <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
+            </div>`;
+        }
+        tt.innerHTML = html;
+        tt.classList.remove('opacity-0', 'invisible');
+        tt.classList.add('opacity-100');
+        updateWbTooltipPosition(e);
+    }
+
+    function updateWbTooltipPosition(e) {
+        const tt = document.getElementById('wbFloatingTooltip');
+        if (!tt) return;
+        const x = e.clientX;
+        const y = e.clientY;
+        const ttW = tt.offsetWidth;
+        const ttH = tt.offsetHeight;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        let left = x + 16;
+        let top = y + 16;
+        if (left + ttW > vw - 8) left = x - ttW - 12;
+        if (top + ttH > vh - 8) top = y - ttH - 12;
+        tt.style.left = left + 'px';
+        tt.style.top = top + 'px';
+    }
+
+    function hideWbTooltip() {
+        const tt = document.getElementById('wbFloatingTooltip');
+        if (!tt) return;
+        tt.classList.add('opacity-0', 'invisible');
+        tt.classList.remove('opacity-100');
+        wbTooltipTarget = null;
+    }
+
+    function openWarehouseOnMap(wh) {
+        if (!wh.struck || !wh.firstStrikeId) return;
+        closeWbDrawer();
+        // Reset any active category filter to show all
+        const activeFilterBtn = document.querySelector('.cat-filter-btn.active, [data-cat].active');
+        if (activeFilterBtn && activeFilterBtn.dataset.cat && activeFilterBtn.dataset.cat !== 'all') {
+            const allBtn = document.querySelector('[data-cat="all"]');
+            if (allBtn) allBtn.click();
+        }
+        setTimeout(() => {
+            const targetMarkerObj = activeMarkers.find(m => m && m.data && m.data.id && m.data.id === wh.firstStrikeId);
+            if (targetMarkerObj && targetMarkerObj.marker && typeof targetMarkerObj.marker.getLatLng === 'function') {
+                map.setView(targetMarkerObj.marker.getLatLng(), 13, { animate: true });
+                targetMarkerObj.marker.openPopup();
+                if (window.innerWidth < 768 && document.getElementById('sidebar')) {
+                    document.getElementById('sidebar').classList.remove('open');
+                }
+            } else {
+                // Fallback: fly to warehouse coords
+                map.setView([wh.lat, wh.lng], 13, { animate: true });
+            }
+        }, 350);
+    }
+
+    function openWbDrawer() {
+        const drawer = document.getElementById('wbDrawer');
+        const backdrop = document.getElementById('wbDrawerBackdrop');
+        if (!drawer) return;
+        // Close NPZ drawer if open
+        const npzDrawer = document.getElementById('npzDrawer');
+        if (npzDrawer && npzDrawer.classList.contains('open')) closeNpzDrawer();
+        drawer.classList.add('open');
+        if (backdrop) {
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100');
+        }
+        renderWbDrawer();
+    }
+
+    function closeWbDrawer() {
+        const drawer = document.getElementById('wbDrawer');
+        const backdrop = document.getElementById('wbDrawerBackdrop');
+        if (!drawer) return;
+        drawer.classList.remove('open');
+        if (backdrop) {
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            backdrop.classList.remove('opacity-100');
+        }
+        hideWbTooltip();
+    }
+
+    function toggleWbDrawer() {
+        const drawer = document.getElementById('wbDrawer');
+        if (drawer && drawer.classList.contains('open')) {
+            closeWbDrawer();
+        } else {
+            openWbDrawer();
+        }
+    }
+
+    // WB event listeners
+    const wbTabBtn = document.getElementById('wbTabBtn');
+    if (wbTabBtn) wbTabBtn.addEventListener('click', toggleWbDrawer);
+
+    const closeWbDrawerBtn = document.getElementById('closeWbDrawerBtn');
+    if (closeWbDrawerBtn) closeWbDrawerBtn.addEventListener('click', closeWbDrawer);
+
+    const wbDrawerCloseTab = document.getElementById('wbDrawerCloseTab');
+    if (wbDrawerCloseTab) wbDrawerCloseTab.addEventListener('click', closeWbDrawer);
+
+    const wbDrawerBackdrop = document.getElementById('wbDrawerBackdrop');
+    if (wbDrawerBackdrop) wbDrawerBackdrop.addEventListener('click', closeWbDrawer);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const wbDrawer = document.getElementById('wbDrawer');
+            if (wbDrawer && wbDrawer.classList.contains('open')) closeWbDrawer();
+        }
+    });
+
+    // Expose globally for setLang
+    window.renderWbDrawer = renderWbDrawer;
 
     setLang(currentLang);
 

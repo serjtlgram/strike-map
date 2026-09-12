@@ -423,6 +423,116 @@
             top: 75px !important;
             z-index: 2601 !important;
         }
+
+        /* === WB Bookmark Tab === */
+        .wb-bookmark-tab {
+            position: absolute;
+            left: 100%;
+            top: 75px;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 12px 8px 10px 6px;
+            background: var(--bg-panel);
+            border: 2px solid #9333ea;
+            border-left: none;
+            border-radius: 0 16px 16px 0;
+            box-shadow: 4px 4px 20px rgba(147, 51, 234, 0.25), 0 0 10px rgba(147, 51, 234, 0.15);
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .wb-bookmark-tab:hover {
+            transform: translateX(4px);
+            box-shadow: 6px 6px 25px rgba(147, 51, 234, 0.45), 0 0 15px rgba(147, 51, 234, 0.3);
+            border-color: #a855f7;
+        }
+        .wb-tab-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-weight: 900;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: #a855f7;
+            line-height: 1;
+        }
+        .wb-tab-icon {
+            font-size: 15px;
+            line-height: 1;
+            animation: wbPulse 2.5s infinite alternate ease-in-out;
+        }
+        .wb-tab-badge {
+            font-size: 10px;
+            font-weight: 800;
+            padding: 2px 4px;
+            border-radius: 6px;
+            background: rgba(147, 51, 234, 0.2);
+            color: #a855f7;
+            border: 1px solid rgba(147, 51, 234, 0.3);
+        }
+        @keyframes wbPulse {
+            0% { transform: scale(1); filter: drop-shadow(0 0 2px rgba(147, 51, 234, 0.4)); }
+            100% { transform: scale(1.18); filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.8)); }
+        }
+        .wb-card {
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s, border-color 0.2s;
+        }
+        .wb-card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* === WB Drawer Container === */
+        .wb-drawer-container {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            z-index: 2600 !important;
+            transform: translateX(calc(-100% - 100px)) !important;
+            transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            pointer-events: none;
+            will-change: transform;
+            display: block !important;
+        }
+        @media (min-width: 768px) {
+            .wb-drawer-container {
+                max-width: calc(100vw - 60px) !important;
+            }
+        }
+        @media (min-width: 1280px) {
+            .wb-drawer-container {
+                max-width: 1200px !important;
+            }
+        }
+        .wb-drawer-container.open {
+            transform: translateX(0) !important;
+            pointer-events: auto !important;
+        }
+        .wb-drawer-panel {
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-body) !important;
+            border-right: 1px solid var(--border-color);
+            box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            pointer-events: auto;
+        }
+        .wb-drawer-close-tab {
+            position: absolute !important;
+            left: 100% !important;
+            top: 75px !important;
+            z-index: 2601 !important;
+        }
     </style>
 </head>
 <body>
@@ -438,6 +548,13 @@
                 <span class="npz-tab-icon">🔥</span>
                 <span class="npz-tab-text">НПЗ</span>
                 <span class="npz-tab-badge">35</span>
+            </button>
+
+            <!-- WB Bookmark Tab below NPZ -->
+            <button id="wbTabBtn" class="wb-bookmark-tab pointer-events-auto" style="top: 205px;" title="Крупнейшие склады Wildberries" aria-label="Крупнейшие склады Wildberries">
+                <span class="wb-tab-icon">📦</span>
+                <span class="wb-tab-text">WB</span>
+                <span class="wb-tab-badge" id="wbTabBadge">28</span>
             </button>
 
             <!-- Header -->
@@ -683,6 +800,123 @@
         <!-- Content inserted dynamically -->
     </div>
 
+    <!-- WB Slide-out Drawer Backdrop -->
+    <div id="wbDrawerBackdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[2500] transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+
+    <!-- WB Slide-out Drawer -->
+    <div id="wbDrawer" class="wb-drawer-container">
+        <!-- Main Drawer Panel -->
+        <div class="wb-drawer-panel">
+            <!-- Drawer Header -->
+            <div class="p-2.5 md:p-5 md:pb-3 border-b theme-border shrink-0 relative bg-[var(--bg-panel)]">
+                <div class="flex items-center justify-between gap-2 md:gap-4">
+                    <div class="flex items-center gap-2 min-w-0">
+                        <span class="text-lg md:text-2xl shrink-0">📦</span>
+                        <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 tracking-tight truncate" data-i18n="wb_title">Крупнейшие склады Wildberries</h2>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 whitespace-nowrap shrink-0" id="wbTotalBadge">28 складов</span>
+                    </div>
+                    <button id="closeWbDrawerBtn" class="p-1.5 md:p-2 rounded-lg md:rounded-xl theme-bg-input border theme-border theme-text-muted hover:theme-text-main hover:bg-red-500/20 hover:text-red-400 transition cursor-pointer shrink-0" title="Закрыть" aria-label="Закрыть">
+                        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="hidden md:block text-xs md:text-sm theme-text-muted mt-1" data-i18n="wb_subtitle">Склады от 50 000 м² — ранжированы по площади, статус ударов и вывод из строя</p>
+
+                <!-- Stats row -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 md:gap-3 mt-2 md:mt-3.5">
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl theme-bg-item border theme-border flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] theme-text-muted font-medium">
+                            <span class="md:hidden" data-i18n="wb_total_count_short">Всего</span>
+                            <span class="hidden md:inline" data-i18n="wb_total_count">Всего складов</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="wbTotalCountText" class="text-sm md:text-xl font-extrabold theme-text-main">28</span>
+                            <span class="text-[10px] md:text-[11px] theme-text-muted font-semibold">/ 100%</span>
+                        </div>
+                    </div>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-red-400 font-medium flex items-center gap-1">
+                            <span>🔥</span>
+                            <span class="md:hidden" data-i18n="wb_struck_count_short">Поражено</span>
+                            <span class="hidden md:inline" data-i18n="wb_struck_count">Поражено / выведено</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="wbStruckCountText" class="text-sm md:text-xl font-extrabold text-red-400">—</span>
+                            <span id="wbStruckPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold"></span>
+                        </div>
+                    </div>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-emerald-400 font-medium flex items-center gap-1">
+                            <span>🛡️</span>
+                            <span class="md:hidden" data-i18n="wb_intact_count_short">В строю</span>
+                            <span class="hidden md:inline" data-i18n="wb_intact_count">Без ударов</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="wbIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">—</span>
+                            <span id="wbIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold"></span>
+                        </div>
+                    </div>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-purple-500/10 border border-purple-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-purple-400 font-medium flex items-center gap-1">
+                            <span>📐</span>
+                            <span class="md:hidden" data-i18n="wb_area_short">Площадь</span>
+                            <span class="hidden md:inline" data-i18n="wb_area_struck">Поражённая площадь</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5 flex-wrap">
+                            <span id="wbStruckAreaText" class="text-sm md:text-xl font-extrabold text-purple-400">—</span>
+                            <span class="text-[10px] md:text-[11px] text-purple-400/90 font-bold whitespace-nowrap">
+                                <span class="hidden sm:inline" data-i18n="wb_area_unit">тыс. м²</span>
+                                <span class="sm:hidden">тм²</span>
+                                <span id="wbStruckAreaPercentText"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress bar -->
+                <div class="mt-2 md:mt-3">
+                    <div class="flex justify-between items-center text-[10px] md:text-[11px] theme-text-muted mb-1 font-medium">
+                        <span class="hidden sm:inline" data-i18n="wb_area_total_desc">Общая площадь топ-складов Wildberries</span>
+                        <span class="sm:hidden text-[10px] theme-text-muted" data-i18n="wb_area_total_desc_short">Площадь WB-складов</span>
+                        <span id="wbDamageRatioText" class="text-purple-500 font-bold">— под ударом</span>
+                    </div>
+                    <div class="w-full h-1.5 md:h-2 rounded-full bg-slate-700/30 overflow-hidden flex p-0.5 border theme-border">
+                        <div id="wbAreaProgressBar" class="h-full rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-600 transition-all duration-1000 shadow-sm" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drawer Body -->
+            <div class="flex-1 overflow-y-auto custom-scrollbar p-2 md:p-5">
+                <div id="wbGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2 md:gap-3 pb-8">
+                    <!-- Cards dynamically rendered here -->
+                </div>
+            </div>
+
+            <!-- Drawer Footer -->
+            <div class="p-2 md:p-3 px-3 md:px-6 border-t theme-border text-[11px] md:text-xs theme-text-muted flex flex-wrap justify-between items-center gap-1.5 md:gap-2 shrink-0 bg-[var(--bg-panel)]">
+                <div class="flex items-center gap-3 md:gap-4">
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="wb_legend_struck">Атакован / поврежден</span></span>
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="wb_legend_intact">Без ударов</span></span>
+                </div>
+                <span class="hidden md:inline text-[11px] theme-text-muted italic" data-i18n="wb_legend_hint">Нажмите на карточку атакованного склада, чтобы открыть его на карте</span>
+            </div>
+        </div>
+
+        <!-- Sticky Bookmark Tab on drawer right edge -->
+        <button id="wbDrawerCloseTab" class="wb-bookmark-tab wb-drawer-close-tab hidden md:flex pointer-events-auto" title="Свернуть панель WB" aria-label="Свернуть панель WB">
+            <span class="wb-tab-icon font-bold text-sm">◀</span>
+            <span class="wb-tab-text">WB</span>
+            <span class="wb-tab-badge">✕</span>
+        </button>
+    </div>
+
+    <!-- Floating Tooltip for WB cards -->
+    <div id="wbFloatingTooltip" class="fixed z-[3500] pointer-events-none opacity-0 invisible transition-opacity duration-150 border theme-border rounded-xl shadow-2xl p-3 max-w-xs text-xs font-sans" style="background: var(--leaflet-popup-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);">
+        <!-- Content inserted dynamically -->
+    </div>
+
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     
@@ -694,6 +928,6 @@
     <!-- Data Source -->
     <script src="data.js?v=43"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=46"></script>
+    <script src="app.js?v=47"></script>
 </body>
 </html>
