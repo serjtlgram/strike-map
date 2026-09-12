@@ -1369,8 +1369,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const drawer = document.getElementById('npzDrawer');
         const backdrop = document.getElementById('npzDrawerBackdrop');
         if (drawer) {
-            drawer.classList.remove('-translate-x-full');
-            drawer.classList.add('translate-x-0');
+            drawer.classList.add('open');
         }
         if (backdrop) {
             backdrop.classList.remove('opacity-0', 'pointer-events-none');
@@ -1385,8 +1384,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const drawer = document.getElementById('npzDrawer');
         const backdrop = document.getElementById('npzDrawerBackdrop');
         if (drawer) {
-            drawer.classList.remove('translate-x-0');
-            drawer.classList.add('-translate-x-full');
+            drawer.classList.remove('open');
         }
         if (backdrop) {
             backdrop.classList.add('opacity-0', 'pointer-events-none');

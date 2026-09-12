@@ -375,6 +375,54 @@
         .npz-card:hover {
             transform: translateY(-2px);
         }
+
+        /* === NPZ Drawer Container & Panel === */
+        .npz-drawer-container {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            z-index: 2600 !important;
+            transform: translateX(calc(-100% - 100px)) !important;
+            transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            pointer-events: none;
+            will-change: transform;
+            display: block !important;
+        }
+        @media (min-width: 768px) {
+            .npz-drawer-container {
+                max-width: calc(100vw - 60px) !important;
+            }
+        }
+        @media (min-width: 1280px) {
+            .npz-drawer-container {
+                max-width: 1340px !important;
+            }
+        }
+        .npz-drawer-container.open {
+            transform: translateX(0) !important;
+            pointer-events: auto !important;
+        }
+        .npz-drawer-panel {
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-body) !important;
+            border-right: 1px solid var(--border-color);
+            box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            pointer-events: auto;
+        }
+        .npz-drawer-close-tab {
+            position: absolute !important;
+            left: 100% !important;
+            top: 75px !important;
+            z-index: 2601 !important;
+        }
     </style>
 </head>
 <body>
@@ -519,9 +567,9 @@
     <div id="npzDrawerBackdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[2500] transition-opacity duration-300 opacity-0 pointer-events-none"></div>
 
     <!-- NPZ Slide-out Drawer -->
-    <div id="npzDrawer" class="fixed top-0 left-0 h-full w-full max-w-full md:max-w-[calc(100vw-50px)] xl:max-w-[1340px] z-[2501] pointer-events-none transition-transform duration-500 ease-out transform -translate-x-full relative flex">
+    <div id="npzDrawer" class="npz-drawer-container">
         <!-- Main Drawer Panel -->
-        <div class="glass-panel h-full w-full pointer-events-auto flex flex-col shadow-2xl overflow-hidden relative border-r theme-border">
+        <div class="npz-drawer-panel">
             <!-- Drawer Header -->
             <div class="p-4 md:p-5 pb-3 border-b theme-border shrink-0 relative bg-[var(--bg-panel)]">
                 <div class="flex items-start justify-between gap-4">
@@ -612,7 +660,7 @@
         </div>
 
         <!-- Sticky Bookmark Tab on drawer right edge (to fold it back) -->
-        <button id="npzDrawerCloseTab" class="npz-bookmark-tab hidden md:flex pointer-events-auto shrink-0 self-start mt-20 -ml-[2px]" title="Свернуть панель НПЗ" aria-label="Свернуть панель НПЗ">
+        <button id="npzDrawerCloseTab" class="npz-bookmark-tab npz-drawer-close-tab hidden md:flex pointer-events-auto" title="Свернуть панель НПЗ" aria-label="Свернуть панель НПЗ">
             <span class="npz-tab-icon font-bold text-sm">◀</span>
             <span class="npz-tab-text">НПЗ</span>
             <span class="npz-tab-badge">✕</span>
@@ -620,7 +668,7 @@
     </div>
 
     <!-- Floating Tooltip for NPZ cards -->
-    <div id="npzFloatingTooltip" class="fixed z-[3500] pointer-events-none opacity-0 invisible transition-opacity duration-150 glass-panel border theme-border rounded-xl shadow-2xl p-3 max-w-xs text-xs font-sans">
+    <div id="npzFloatingTooltip" class="fixed z-[3500] pointer-events-none opacity-0 invisible transition-opacity duration-150 border theme-border rounded-xl shadow-2xl p-3 max-w-xs text-xs font-sans" style="background: var(--leaflet-popup-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);">
         <!-- Content inserted dynamically -->
     </div>
 
@@ -635,6 +683,6 @@
     <!-- Data Source -->
     <script src="data.js?v=43"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=44"></script>
+    <script src="app.js?v=45"></script>
 </body>
 </html>
