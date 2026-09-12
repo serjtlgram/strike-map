@@ -38,7 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
         npz_tooltip_strike_date: { ru: 'Дата поражения:', uk: 'Дата ураження:', en: 'Strike date:' },
         npz_tooltip_strike_count: { ru: 'Зафиксировано ударов:', uk: 'Зафіксовано ударів:', en: 'Recorded strikes:' },
         npz_tooltip_view_card: { ru: 'Смотреть карточку на карте →', uk: 'Дивитися картку на карті →', en: 'View card on map →' },
-        npz_tooltip_not_struck: { ru: 'Удары не зафиксированы', uk: 'Ударів не зафіксовано', en: 'No recorded strikes' }
+        npz_tooltip_not_struck: { ru: 'Удары не зафиксированы', uk: 'Ударів не зафіксовано', en: 'No recorded strikes' },
+        npz_total_count_short: { ru: 'Всего', uk: 'Всього', en: 'Total' },
+        npz_struck_count_short: { ru: 'Поражено', uk: 'Уражено', en: 'Struck' },
+        npz_intact_count_short: { ru: 'В строю', uk: 'У строю', en: 'Intact' },
+        npz_capacity_struck_short: { ru: 'Под ударом', uk: 'Під ударом', en: 'Damaged' },
+        npz_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' }
     };
 
     const supportedLangs = ['uk', 'ru', 'en'];
@@ -1160,7 +1165,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const refRegion = ref.region[currentLang] || ref.region.ru;
 
             const card = document.createElement('div');
-            card.className = `npz-card relative flex flex-col justify-between p-3 rounded-2xl border select-none group transition-all duration-200 cursor-pointer ${
+            card.className = `npz-card relative flex flex-col justify-between p-2.5 md:p-3 rounded-xl md:rounded-2xl border select-none group transition-all duration-200 cursor-pointer ${
                 ref.isHit 
                     ? 'bg-gradient-to-b from-orange-500/10 via-amber-500/5 to-transparent border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20' 
                     : 'theme-bg-item border-slate-700/30 dark:border-slate-800/60 hover:border-slate-500/50 hover:shadow-md'
@@ -1174,13 +1179,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Top row: Status Badge & Company -->
                 <div class="flex justify-between items-start gap-1 mb-1">
                     ${statusBadge}
-                    <span class="text-[10px] font-semibold theme-text-muted truncate max-w-[85px]" title="${ref.company}">
+                    <span class="text-[10px] font-semibold theme-text-muted truncate max-w-[85px]">
                         ${ref.company}
                     </span>
                 </div>
 
                 <!-- Icon area -->
-                <div class="relative h-12 flex items-center justify-center my-1.5">
+                <div class="relative h-10 md:h-12 flex items-center justify-center my-1 md:my-1.5">
                     <div class="relative flex items-center justify-center">
                         ${npzRefinerySvg}
                         ${ref.isHit ? `<div class="absolute inset-0 flex items-center justify-center pointer-events-none">${npzFlameSvg}</div>` : ''}
@@ -1188,21 +1193,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <!-- Info area -->
-                <div class="text-center mt-1">
-                    <h4 class="text-xs font-bold theme-text-main leading-snug line-clamp-2 h-8 flex items-center justify-center" title="${refName}">
+                <div class="text-center mt-0.5 md:mt-1">
+                    <h4 class="text-[11px] md:text-xs font-bold theme-text-main leading-snug line-clamp-2 h-7 md:h-8 flex items-center justify-center">
                         ${refName}
                     </h4>
-                    <div class="text-[11px] theme-text-muted mt-0.5 truncate" title="${refRegion}">
+                    <div class="text-[10px] md:text-[11px] theme-text-muted mt-0.5 truncate">
                         ${refRegion}
                     </div>
-                    <div class="mt-2 pt-1.5 border-t theme-border flex items-baseline justify-center gap-1">
-                        <span class="text-sm font-black tracking-tight ${ref.isHit ? 'text-amber-500' : 'theme-text-main'}">
+                    <div class="mt-1.5 pt-1 md:mt-2 md:pt-1.5 border-t theme-border flex items-baseline justify-center gap-1">
+                        <span class="text-xs md:text-sm font-black tracking-tight ${ref.isHit ? 'text-amber-500' : 'theme-text-main'}">
                             ${ref.capacity.toFixed(1)}
                         </span>
-                        <span class="text-[10px] font-medium theme-text-muted">
+                        <span class="text-[9px] md:text-[10px] font-medium theme-text-muted">
                             ${i18n.npz_capacity_unit[currentLang]}
                         </span>
                     </div>
+                </div>
+
+                <!-- Action Button on Card -->
+                <div class="mt-1.5 pt-1 border-t ${ref.isHit ? 'border-orange-500/20' : 'theme-border'}">
+                    ${ref.isHit ? `
+                    <div class="py-1 px-1.5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-blue-500 dark:text-blue-400 text-[10px] md:text-[11px] font-bold flex items-center justify-center gap-1 transition-all group-hover:bg-blue-600 group-hover:text-white shadow-sm">
+                        <span>${i18n.npz_btn_on_map[currentLang]}</span>
+                    </div>
+                    ` : `
+                    <div class="py-1 px-1.5 rounded-lg bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 text-[10px] md:text-[11px] font-medium flex items-center justify-center gap-1">
+                        <span>🛡️ ${i18n.npz_legend_intact[currentLang]}</span>
+                    </div>
+                    `}
                 </div>
             `;
 
@@ -1214,8 +1232,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function attachCardEvents(card, ref) {
-        card.addEventListener('mouseenter', (e) => showNpzTooltip(e, ref));
-        card.addEventListener('mousemove', (e) => updateNpzTooltipPosition(e));
+        card.addEventListener('mouseenter', (e) => {
+            if (window.innerWidth >= 768) showNpzTooltip(e, ref);
+        });
+        card.addEventListener('mousemove', (e) => {
+            if (window.innerWidth >= 768) updateNpzTooltipPosition(e);
+        });
         card.addEventListener('mouseleave', hideNpzTooltip);
         card.addEventListener('click', () => {
             hideNpzTooltip();
@@ -1230,44 +1252,41 @@ document.addEventListener('DOMContentLoaded', () => {
         const refRegion = ref.region[currentLang] || ref.region.ru;
 
         let content = `
-            <div class="font-bold text-sm theme-text-main flex items-center gap-1.5 mb-1">
+            <div class="font-bold text-sm theme-text-main flex items-center gap-1.5 mb-0.5">
                 <span>${ref.isHit ? '🔥' : '🛡️'}</span>
                 <span>${refName}</span>
             </div>
-            <div class="text-[11px] theme-text-muted mb-2">${refRegion}</div>
+            <div class="text-[11px] theme-text-muted mb-1.5">${refRegion}</div>
         `;
 
         if (ref.isHit) {
             content += `
-                <div class="space-y-1.5 py-2 border-y theme-border my-2">
+                <div class="space-y-1.5 py-2 border-t theme-border mt-1">
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_tooltip_strike_date[currentLang]}</span>
-                        <span class="font-extrabold text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded border border-red-500/20">${ref.latestDate || '—'}</span>
+                        <span class="font-extrabold text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded border border-red-500/20 text-[11px]">${ref.latestDate || '—'}</span>
                     </div>
                     ${ref.strikeCount > 1 ? `
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_tooltip_strike_count[currentLang]}</span>
-                        <span class="font-bold text-amber-400">${ref.strikeCount}</span>
+                        <span class="font-bold text-amber-400 text-[11px]">${ref.strikeCount}</span>
                     </div>` : ''}
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_capacity_total[currentLang]}:</span>
-                        <span class="font-bold text-amber-500">${ref.capacity.toFixed(1)} ${i18n.npz_capacity_unit[currentLang]}</span>
+                        <span class="font-bold text-amber-500 text-[11px]">${ref.capacity.toFixed(1)} ${i18n.npz_capacity_unit[currentLang]}</span>
                     </div>
-                </div>
-                <div class="mt-2 text-blue-400 font-bold text-[11px] flex items-center gap-1 group-hover:underline">
-                    <span>${i18n.npz_tooltip_view_card[currentLang]}</span>
                 </div>
             `;
         } else {
             content += `
-                <div class="space-y-1.5 py-2 border-y theme-border my-2">
+                <div class="space-y-1.5 py-2 border-t theme-border mt-1">
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">Статус:</span>
-                        <span class="font-semibold text-emerald-400">${i18n.npz_status_intact[currentLang]}</span>
+                        <span class="font-semibold text-emerald-400 text-[11px]">${i18n.npz_status_intact[currentLang]}</span>
                     </div>
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_capacity_total[currentLang]}:</span>
-                        <span class="font-bold theme-text-main">${ref.capacity.toFixed(1)} ${i18n.npz_capacity_unit[currentLang]}</span>
+                        <span class="font-bold theme-text-main text-[11px]">${ref.capacity.toFixed(1)} ${i18n.npz_capacity_unit[currentLang]}</span>
                     </div>
                 </div>
             `;

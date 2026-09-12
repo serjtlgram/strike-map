@@ -571,91 +571,102 @@
         <!-- Main Drawer Panel -->
         <div class="npz-drawer-panel">
             <!-- Drawer Header -->
-            <div class="p-4 md:p-5 pb-3 border-b theme-border shrink-0 relative bg-[var(--bg-panel)]">
-                <div class="flex items-start justify-between gap-4">
-                    <div>
-                        <div class="flex items-center gap-2.5">
-                            <span class="text-2xl">🔥</span>
-                            <h2 class="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 tracking-tight" data-i18n="npz_title">Крупнейшие НПЗ России</h2>
-                            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-500 border border-amber-500/30">35 заводов</span>
-                        </div>
-                        <p class="text-xs md:text-sm theme-text-muted mt-1" data-i18n="npz_subtitle">Рейтинг по мощности переработки, статус поражения и вывод из строя</p>
+            <div class="p-2.5 md:p-5 md:pb-3 border-b theme-border shrink-0 relative bg-[var(--bg-panel)]">
+                <div class="flex items-center justify-between gap-2 md:gap-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg md:text-2xl">🔥</span>
+                        <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 tracking-tight" data-i18n="npz_title">Крупнейшие НПЗ России</h2>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-amber-500/20 text-amber-500 border border-amber-500/30 whitespace-nowrap">35 заводов</span>
                     </div>
 
                     <!-- Close Button -->
-                    <button id="closeNpzDrawerBtn" class="p-2 rounded-xl theme-bg-input border theme-border theme-text-muted hover:theme-text-main hover:bg-red-500/20 hover:text-red-400 transition cursor-pointer shrink-0" title="Закрыть" aria-label="Закрыть">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button id="closeNpzDrawerBtn" class="p-1.5 md:p-2 rounded-lg md:rounded-xl theme-bg-input border theme-border theme-text-muted hover:theme-text-main hover:bg-red-500/20 hover:text-red-400 transition cursor-pointer shrink-0" title="Закрыть" aria-label="Закрыть">
+                        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
+                <p class="hidden md:block text-xs md:text-sm theme-text-muted mt-1" data-i18n="npz_subtitle">Рейтинг по мощности переработки, статус поражения и вывод из строя</p>
 
                 <!-- Stats summary row -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 md:gap-3 mt-3.5">
-                    <div class="p-2.5 rounded-xl theme-bg-item border theme-border flex flex-col justify-between">
-                        <span class="text-[11px] theme-text-muted font-medium" data-i18n="npz_total_count">Всего заводов</span>
-                        <div class="flex items-baseline gap-1.5 mt-0.5">
-                            <span class="text-lg md:text-xl font-extrabold theme-text-main">35</span>
-                            <span class="text-[11px] theme-text-muted font-semibold">/ 100%</span>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 md:gap-3 mt-2 md:mt-3.5">
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl theme-bg-item border theme-border flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] theme-text-muted font-medium">
+                            <span class="md:hidden" data-i18n="npz_total_count_short">Всего</span>
+                            <span class="hidden md:inline" data-i18n="npz_total_count">Всего заводов</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span class="text-sm md:text-xl font-extrabold theme-text-main">35</span>
+                            <span class="text-[10px] md:text-[11px] theme-text-muted font-semibold">/ 100%</span>
                         </div>
                     </div>
-                    <div class="p-2.5 rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
-                        <span class="text-[11px] text-red-400 font-medium flex items-center gap-1">
-                            <span>🔥</span> <span data-i18n="npz_struck_count">Поражено / выведено</span>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-red-400 font-medium flex items-center gap-1">
+                            <span>🔥</span>
+                            <span class="md:hidden" data-i18n="npz_struck_count_short">Поражено</span>
+                            <span class="hidden md:inline" data-i18n="npz_struck_count">Поражено / выведено</span>
                         </span>
-                        <div class="flex items-baseline gap-1.5 mt-0.5">
-                            <span id="npzStruckCountText" class="text-lg md:text-xl font-extrabold text-red-400">27</span>
-                            <span id="npzStruckPercentText" class="text-[11px] text-red-400 font-bold">(77.1%)</span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="npzStruckCountText" class="text-sm md:text-xl font-extrabold text-red-400">27</span>
+                            <span id="npzStruckPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold">(77.1%)</span>
                         </div>
                     </div>
-                    <div class="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
-                        <span class="text-[11px] text-emerald-400 font-medium flex items-center gap-1">
-                            <span>🛡️</span> <span data-i18n="npz_intact_count">В строю / целые</span>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-emerald-400 font-medium flex items-center gap-1">
+                            <span>🛡️</span>
+                            <span class="md:hidden" data-i18n="npz_intact_count_short">В строю</span>
+                            <span class="hidden md:inline" data-i18n="npz_intact_count">В строю / целые</span>
                         </span>
-                        <div class="flex items-baseline gap-1.5 mt-0.5">
-                            <span id="npzIntactCountText" class="text-lg md:text-xl font-extrabold text-emerald-400">8</span>
-                            <span id="npzIntactPercentText" class="text-[11px] text-emerald-400 font-bold">(22.9%)</span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="npzIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">8</span>
+                            <span id="npzIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold">(22.9%)</span>
                         </div>
                     </div>
-                    <div class="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
-                        <span class="text-[11px] text-amber-400 font-medium flex items-center gap-1">
-                            <span>⚙️</span> <span data-i18n="npz_capacity_struck">Пораженная мощность</span>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-amber-400 font-medium flex items-center gap-1">
+                            <span>⚙️</span>
+                            <span class="md:hidden" data-i18n="npz_capacity_struck_short">Под ударом</span>
+                            <span class="hidden md:inline" data-i18n="npz_capacity_struck">Пораженная мощность</span>
                         </span>
-                        <div class="flex items-baseline gap-1.5 mt-0.5">
-                            <span id="npzStruckCapacityText" class="text-lg md:text-xl font-extrabold text-amber-400">275.8</span>
-                            <span class="text-[11px] text-amber-400/80 font-semibold" data-i18n="npz_capacity_unit">млн т/год</span>
-                            <span id="npzStruckCapacityPercentText" class="text-[11px] text-amber-400 font-bold">(86.8%)</span>
+                        <div class="flex items-baseline gap-1 mt-0.5 flex-wrap">
+                            <span id="npzStruckCapacityText" class="text-sm md:text-xl font-extrabold text-amber-400">275.8</span>
+                            <span class="text-[10px] md:text-[11px] text-amber-400/90 font-bold whitespace-nowrap">
+                                <span class="hidden sm:inline" data-i18n="npz_capacity_unit">млн т/год</span>
+                                <span class="sm:hidden">млн т</span>
+                                <span id="npzStruckCapacityPercentText">(86.8%)</span>
+                            </span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Progress meter bar -->
-                <div class="mt-3">
-                    <div class="flex justify-between items-center text-[11px] theme-text-muted mb-1 font-medium">
-                        <span data-i18n="npz_capacity_total_desc">Совокупная мощность переработки: ~317.7 млн т/год</span>
+                <div class="mt-2 md:mt-3">
+                    <div class="flex justify-between items-center text-[10px] md:text-[11px] theme-text-muted mb-1 font-medium">
+                        <span class="hidden sm:inline" data-i18n="npz_capacity_total_desc">Совокупная мощность переработки: ~317.7 млн т/год</span>
+                        <span class="sm:hidden text-[10px] theme-text-muted">Мощность РФ: ~317.7 млн т/г</span>
                         <span id="npzDamageRatioText" class="text-amber-500 font-bold">86.8% под ударом</span>
                     </div>
-                    <div class="w-full h-2 rounded-full bg-slate-700/30 overflow-hidden flex p-0.5 border theme-border">
+                    <div class="w-full h-1.5 md:h-2 rounded-full bg-slate-700/30 overflow-hidden flex p-0.5 border theme-border">
                         <div id="npzCapacityProgressBar" class="h-full rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-600 transition-all duration-1000 shadow-sm" style="width: 86.8%;"></div>
                     </div>
                 </div>
             </div>
 
             <!-- Drawer Body: Grid Container -->
-            <div class="flex-1 overflow-y-auto custom-scrollbar p-3 md:p-5">
+            <div class="flex-1 overflow-y-auto custom-scrollbar p-2 md:p-5">
                 <!-- 7x5 Responsive Grid on Desktop -->
-                <div id="npzGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2.5 md:gap-3 pb-8">
+                <div id="npzGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2 md:gap-3 pb-8">
                     <!-- Cards dynamically rendered here -->
                 </div>
             </div>
 
             <!-- Drawer Footer / Legend -->
-            <div class="p-3 px-4 md:px-6 border-t theme-border text-xs theme-text-muted flex flex-wrap justify-between items-center gap-2 shrink-0 bg-[var(--bg-panel)]">
-                <div class="flex items-center gap-4">
+            <div class="p-2 md:p-3 px-3 md:px-6 border-t theme-border text-[11px] md:text-xs theme-text-muted flex flex-wrap justify-between items-center gap-1.5 md:gap-2 shrink-0 bg-[var(--bg-panel)]">
+                <div class="flex items-center gap-3 md:gap-4">
                     <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="npz_legend_struck">Поражен / остановлен</span></span>
                     <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="npz_legend_intact">В строю</span></span>
                 </div>
-                <span class="text-[11px] theme-text-muted italic" data-i18n="npz_legend_hint">Нажмите на карточку поврежденного НПЗ, чтобы открыть объект на карте</span>
+                <span class="hidden md:inline text-[11px] theme-text-muted italic" data-i18n="npz_legend_hint">Нажмите на карточку поврежденного НПЗ, чтобы открыть объект на карте</span>
             </div>
         </div>
 
@@ -683,6 +694,6 @@
     <!-- Data Source -->
     <script src="data.js?v=43"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=45"></script>
+    <script src="app.js?v=46"></script>
 </body>
 </html>
