@@ -720,38 +720,34 @@
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
                         <span class="text-[10px] md:text-[11px] text-red-400 font-medium flex items-center gap-1">
                             <span>🔥</span>
-                            <span class="md:hidden" data-i18n="npz_struck_count_short">Поражено</span>
-                            <span class="hidden md:inline" data-i18n="npz_struck_count">Поражено / выведено</span>
+                            <span class="md:hidden" data-i18n="npz_halted_count_short">Остановлено</span>
+                            <span class="hidden md:inline" data-i18n="npz_halted_count">Остановлено / авария</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="npzStruckCountText" class="text-sm md:text-xl font-extrabold text-red-400">27</span>
-                            <span id="npzStruckPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold">(77.1%)</span>
+                            <span id="npzHaltedCountText" class="text-sm md:text-xl font-extrabold text-red-400">15</span>
+                            <span id="npzHaltedPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold"></span>
+                        </div>
+                    </div>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-amber-400 font-medium flex items-center gap-1">
+                            <span>🛠️</span>
+                            <span class="md:hidden" data-i18n="npz_restored_count_short">В работе</span>
+                            <span class="hidden md:inline" data-i18n="npz_restored_count">Восстановлено / работает</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="npzRestoredCountText" class="text-sm md:text-xl font-extrabold text-amber-400">12</span>
+                            <span id="npzRestoredPercentText" class="text-[10px] md:text-[11px] text-amber-400 font-bold"></span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
                         <span class="text-[10px] md:text-[11px] text-emerald-400 font-medium flex items-center gap-1">
                             <span>🛡️</span>
                             <span class="md:hidden" data-i18n="npz_intact_count_short">В строю</span>
-                            <span class="hidden md:inline" data-i18n="npz_intact_count">В строю / целые</span>
+                            <span class="hidden md:inline" data-i18n="npz_intact_count">В строю / без ударов</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
                             <span id="npzIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">8</span>
-                            <span id="npzIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold">(22.9%)</span>
-                        </div>
-                    </div>
-                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-amber-400 font-medium flex items-center gap-1">
-                            <span>⚙️</span>
-                            <span class="md:hidden" data-i18n="npz_capacity_struck_short">Под ударом</span>
-                            <span class="hidden md:inline" data-i18n="npz_capacity_struck">Пораженная мощность</span>
-                        </span>
-                        <div class="flex items-baseline gap-1 mt-0.5 flex-wrap">
-                            <span id="npzStruckCapacityText" class="text-sm md:text-xl font-extrabold text-amber-400">275.8</span>
-                            <span class="text-[10px] md:text-[11px] text-amber-400/90 font-bold whitespace-nowrap">
-                                <span class="hidden sm:inline" data-i18n="npz_capacity_unit">млн т/год</span>
-                                <span class="sm:hidden">млн т</span>
-                                <span id="npzStruckCapacityPercentText">(86.8%)</span>
-                            </span>
+                            <span id="npzIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold"></span>
                         </div>
                     </div>
                 </div>
@@ -780,7 +776,8 @@
             <!-- Drawer Footer / Legend -->
             <div class="p-2 md:p-3 px-3 md:px-6 border-t theme-border text-[11px] md:text-xs theme-text-muted flex flex-wrap justify-between items-center gap-1.5 md:gap-2 shrink-0 bg-[var(--bg-panel)]">
                 <div class="flex items-center gap-3 md:gap-4">
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="npz_legend_struck">Поражен / остановлен</span></span>
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="npz_legend_halted">Остановлен</span></span>
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span> <span data-i18n="npz_legend_restored">Восстановлен / в работе</span></span>
                     <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="npz_legend_intact">В строю</span></span>
                 </div>
                 <span class="hidden md:inline text-[11px] theme-text-muted italic" data-i18n="npz_legend_hint">Нажмите на карточку поврежденного НПЗ, чтобы открыть объект на карте</span>
@@ -813,7 +810,7 @@
                     <div class="flex items-center gap-2 min-w-0">
                         <span class="text-lg md:text-2xl shrink-0">📦</span>
                         <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 tracking-tight truncate" data-i18n="wb_title">Крупнейшие склады Wildberries</h2>
-                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 whitespace-nowrap shrink-0" id="wbTotalBadge">28 складов</span>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 whitespace-nowrap shrink-0" id="wbTotalBadge">30 складов</span>
                     </div>
                     <button id="closeWbDrawerBtn" class="p-1.5 md:p-2 rounded-lg md:rounded-xl theme-bg-input border theme-border theme-text-muted hover:theme-text-main hover:bg-red-500/20 hover:text-red-400 transition cursor-pointer shrink-0" title="Закрыть" aria-label="Закрыть">
                         <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -821,7 +818,7 @@
                         </svg>
                     </button>
                 </div>
-                <p class="hidden md:block text-xs md:text-sm theme-text-muted mt-1" data-i18n="wb_subtitle">Склады от 50 000 м² — ранжированы по площади, статус ударов и вывод из строя</p>
+                <p class="hidden md:block text-xs md:text-sm theme-text-muted mt-1" data-i18n="wb_subtitle">Склады от 45 000 м² — ранжированы по площади, статус ударов и вывод из строя</p>
 
                 <!-- Stats row -->
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 md:gap-3 mt-2 md:mt-3.5">
@@ -831,45 +828,41 @@
                             <span class="hidden md:inline" data-i18n="wb_total_count">Всего складов</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="wbTotalCountText" class="text-sm md:text-xl font-extrabold theme-text-main">28</span>
+                            <span id="wbTotalCountText" class="text-sm md:text-xl font-extrabold theme-text-main">30</span>
                             <span class="text-[10px] md:text-[11px] theme-text-muted font-semibold">/ 100%</span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
                         <span class="text-[10px] md:text-[11px] text-red-400 font-medium flex items-center gap-1">
                             <span>🔥</span>
-                            <span class="md:hidden" data-i18n="wb_struck_count_short">Поражено</span>
-                            <span class="hidden md:inline" data-i18n="wb_struck_count">Поражено / выведено</span>
+                            <span class="md:hidden" data-i18n="wb_halted_count_short">Остановлено</span>
+                            <span class="hidden md:inline" data-i18n="wb_halted_count">Остановлено / пожар</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="wbStruckCountText" class="text-sm md:text-xl font-extrabold text-red-400">—</span>
-                            <span id="wbStruckPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold"></span>
+                            <span id="wbHaltedCountText" class="text-sm md:text-xl font-extrabold text-red-400">12</span>
+                            <span id="wbHaltedPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold"></span>
+                        </div>
+                    </div>
+                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
+                        <span class="text-[10px] md:text-[11px] text-amber-400 font-medium flex items-center gap-1">
+                            <span>🛠️</span>
+                            <span class="md:hidden" data-i18n="wb_restored_count_short">В работе</span>
+                            <span class="hidden md:inline" data-i18n="wb_restored_count">Восстановлено / работает</span>
+                        </span>
+                        <div class="flex items-baseline gap-1 mt-0.5">
+                            <span id="wbRestoredCountText" class="text-sm md:text-xl font-extrabold text-amber-400">10</span>
+                            <span id="wbRestoredPercentText" class="text-[10px] md:text-[11px] text-amber-400 font-bold"></span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
                         <span class="text-[10px] md:text-[11px] text-emerald-400 font-medium flex items-center gap-1">
                             <span>🛡️</span>
                             <span class="md:hidden" data-i18n="wb_intact_count_short">В строю</span>
-                            <span class="hidden md:inline" data-i18n="wb_intact_count">Без ударов</span>
+                            <span class="hidden md:inline" data-i18n="wb_intact_count">В строю / без ударов</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="wbIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">—</span>
+                            <span id="wbIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">8</span>
                             <span id="wbIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold"></span>
-                        </div>
-                    </div>
-                    <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-purple-500/10 border border-purple-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-purple-400 font-medium flex items-center gap-1">
-                            <span>📐</span>
-                            <span class="md:hidden" data-i18n="wb_area_short">Площадь</span>
-                            <span class="hidden md:inline" data-i18n="wb_area_struck">Поражённая площадь</span>
-                        </span>
-                        <div class="flex items-baseline gap-1 mt-0.5 flex-wrap">
-                            <span id="wbStruckAreaText" class="text-sm md:text-xl font-extrabold text-purple-400">—</span>
-                            <span class="text-[10px] md:text-[11px] text-purple-400/90 font-bold whitespace-nowrap">
-                                <span class="hidden sm:inline" data-i18n="wb_area_unit">тыс. м²</span>
-                                <span class="sm:hidden">тм²</span>
-                                <span id="wbStruckAreaPercentText"></span>
-                            </span>
                         </div>
                     </div>
                 </div>
@@ -897,8 +890,9 @@
             <!-- Drawer Footer -->
             <div class="p-2 md:p-3 px-3 md:px-6 border-t theme-border text-[11px] md:text-xs theme-text-muted flex flex-wrap justify-between items-center gap-1.5 md:gap-2 shrink-0 bg-[var(--bg-panel)]">
                 <div class="flex items-center gap-3 md:gap-4">
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="wb_legend_struck">Атакован / поврежден</span></span>
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="wb_legend_intact">Без ударов</span></span>
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="wb_legend_halted">Остановлен / уничтожен</span></span>
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span> <span data-i18n="wb_legend_restored">Восстановлен / в работе</span></span>
+                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="wb_legend_intact">В строю</span></span>
                 </div>
                 <span class="hidden md:inline text-[11px] theme-text-muted italic" data-i18n="wb_legend_hint">Нажмите на карточку атакованного склада, чтобы открыть его на карте</span>
             </div>
@@ -928,6 +922,6 @@
     <!-- Data Source -->
     <script src="data.js?v=43"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=47"></script>
+    <script src="app.js?v=48"></script>
 </body>
 </html>

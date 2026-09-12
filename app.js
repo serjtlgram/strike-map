@@ -25,15 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
         npz_subtitle: { ru: 'Рейтинг по мощности переработки, статус поражения и вывод из строя', uk: 'Рейтинг за потужністю переробки, статус ураження та виведення з ладу', en: 'Refining capacity ranking, strike status, and operational impact' },
         npz_total_count: { ru: 'Всего заводов', uk: 'Всього заводів', en: 'Total Refineries' },
         npz_struck_count: { ru: 'Поражено / выведено', uk: 'Уражено / виведено', en: 'Struck / Disabled' },
-        npz_intact_count: { ru: 'В строю / целые', uk: 'У строю / цілі', en: 'Operating / Intact' },
+        npz_halted_count: { ru: 'Остановлено / авария', uk: 'Зупинено / аварія', en: 'Halted / Disabled' },
+        npz_halted_count_short: { ru: 'Остановлено', uk: 'Зупинено', en: 'Halted' },
+        npz_restored_count: { ru: 'Восстановлено / работает', uk: 'Відновлено / працює', en: 'Restored / Operating' },
+        npz_restored_count_short: { ru: 'В работе', uk: 'В роботі', en: 'Operating' },
+        npz_intact_count: { ru: 'В строю / без ударов', uk: 'У строю / без ударів', en: 'Operating / Intact' },
         npz_capacity_struck: { ru: 'Пораженная мощность', uk: 'Уражена потужність', en: 'Damaged Capacity' },
         npz_capacity_unit: { ru: 'млн т/год', uk: 'млн т/рік', en: 'M tons/yr' },
         npz_capacity_total: { ru: 'Мощность', uk: 'Потужність', en: 'Capacity' },
         npz_capacity_total_desc: { ru: 'Совокупная мощность переработки: ~317.7 млн т/год', uk: 'Сукупна потужність переробки: ~317.7 млн т/рік', en: 'Total refining capacity: ~317.7M tons/yr' },
         npz_legend_struck: { ru: 'Поражен / остановлен', uk: 'Уражений / зупинений', en: 'Struck / Disabled' },
+        npz_legend_halted: { ru: 'Остановлен', uk: 'Зупинений', en: 'Halted' },
+        npz_legend_restored: { ru: 'Восстановлен / в работе', uk: 'Відновлений / працює', en: 'Restored / Operating' },
         npz_legend_intact: { ru: 'В строю', uk: 'У строю', en: 'Operating' },
         npz_legend_hint: { ru: 'Нажмите на карточку поврежденного НПЗ, чтобы открыть объект на карте', uk: 'Натисніть на картку пошкодженого НПЗ, щоб відкрити об\'єкт на карті', en: 'Click any damaged refinery card to open it on the map' },
         npz_status_struck: { ru: 'Поражен / выведен из строя', uk: 'Уражений / виведений з ладу', en: 'Struck / Disabled' },
+        npz_status_halted: { ru: 'Остановлен', uk: 'Зупинений', en: 'Halted' },
+        npz_status_restored: { ru: 'Восстановлен', uk: 'Відновлений', en: 'Restored' },
         npz_status_intact: { ru: 'В строю (без повреждений)', uk: 'У строю (без ушкоджень)', en: 'Operating (Intact)' },
         npz_tooltip_strike_date: { ru: 'Дата поражения:', uk: 'Дата ураження:', en: 'Strike date:' },
         npz_tooltip_strike_count: { ru: 'Зафиксировано ударов:', uk: 'Зафіксовано ударів:', en: 'Recorded strikes:' },
@@ -46,12 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
         npz_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' },
         // WB Warehouses
         wb_title: { ru: 'Крупнейшие склады Wildberries', uk: 'Найбільші склади Wildberries', en: 'Largest Wildberries Warehouses' },
-        wb_subtitle: { ru: 'Склады от 50 000 м² — ранжированы по площади, статус ударов и вывод из строя', uk: 'Склади від 50 000 м² — ранжовані за площею, статус ударів та виведення з ладу', en: 'Warehouses 50,000+ m² — ranked by area, strike status and operational impact' },
+        wb_subtitle: { ru: 'Склады от 45 000 м² — ранжированы по площади, статус ударов и вывод из строя', uk: 'Склади від 45 000 м² — ранжовані за площею, статус ударів та виведення з ладу', en: 'Warehouses 45,000+ m² — ranked by area, strike status and operational impact' },
         wb_total_count: { ru: 'Всего складов', uk: 'Всього складів', en: 'Total Warehouses' },
         wb_total_count_short: { ru: 'Всего', uk: 'Всього', en: 'Total' },
         wb_struck_count: { ru: 'Поражено / выведено', uk: 'Уражено / виведено', en: 'Struck / Disabled' },
         wb_struck_count_short: { ru: 'Поражено', uk: 'Уражено', en: 'Struck' },
-        wb_intact_count: { ru: 'Без ударов', uk: 'Без ударів', en: 'No Strikes' },
+        wb_halted_count: { ru: 'Остановлено / пожар', uk: 'Зупинено / пожежа', en: 'Halted / Destroyed' },
+        wb_halted_count_short: { ru: 'Остановлено', uk: 'Зупинено', en: 'Halted' },
+        wb_restored_count: { ru: 'Восстановлено / работает', uk: 'Відновлено / працює', en: 'Restored / Operating' },
+        wb_restored_count_short: { ru: 'В работе', uk: 'В роботі', en: 'Operating' },
+        wb_intact_count: { ru: 'В строю / без ударов', uk: 'У строю / без ударів', en: 'No Strikes' },
         wb_intact_count_short: { ru: 'В строю', uk: 'У строю', en: 'Intact' },
         wb_area_struck: { ru: 'Поражённая площадь', uk: 'Уражена площа', en: 'Struck Area' },
         wb_area_short: { ru: 'Площадь', uk: 'Площа', en: 'Area' },
@@ -59,10 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
         wb_area_total_desc: { ru: 'Общая площадь топ-складов Wildberries', uk: 'Загальна площа топ-складів Wildberries', en: 'Total area of tracked Wildberries warehouses' },
         wb_area_total_desc_short: { ru: 'Площадь WB-складов', uk: 'Площа WB-складів', en: 'WB area' },
         wb_legend_struck: { ru: 'Атакован / поврежден', uk: 'Атаковано / пошкоджено', en: 'Struck / Damaged' },
-        wb_legend_intact: { ru: 'Без ударов', uk: 'Без ударів', en: 'No recorded strikes' },
+        wb_legend_halted: { ru: 'Остановлен / уничтожен', uk: 'Зупинений / знищений', en: 'Halted / Destroyed' },
+        wb_legend_restored: { ru: 'Восстановлен / в работе', uk: 'Відновлений / працює', en: 'Restored / Operating' },
+        wb_legend_intact: { ru: 'В строю', uk: 'Без ударів', en: 'No recorded strikes' },
         wb_legend_hint: { ru: 'Нажмите на карточку атакованного склада, чтобы открыть его на карте', uk: 'Натисніть на картку атакованого складу, щоб відкрити його на карті', en: 'Click any struck warehouse card to open it on the map' },
         wb_status_struck: { ru: 'Атакован / поврежден', uk: 'Атаковано / пошкоджено', en: 'Struck / Damaged' },
-        wb_status_intact: { ru: 'Без ударов (в работе)', uk: 'Без ударів (у роботі)', en: 'Operational (No strikes)' },
+        wb_status_halted: { ru: 'Остановлен', uk: 'Зупинений', en: 'Halted' },
+        wb_status_restored: { ru: 'Восстановлен', uk: 'Відновлений', en: 'Restored' },
+        wb_status_intact: { ru: 'В строю (без повреждений)', uk: 'У строю (без пошкоджень)', en: 'Operational (No strikes)' },
         wb_tooltip_strike_date: { ru: 'Первый удар:', uk: 'Перший удар:', en: 'First strike:' },
         wb_tooltip_strike_count: { ru: 'Зафиксировано ударов:', uk: 'Зафіксовано ударів:', en: 'Recorded strikes:' },
         wb_tooltip_not_struck: { ru: 'Ударов не зафиксировано', uk: 'Ударів не зафіксовано', en: 'No recorded strikes' },
@@ -1033,41 +1049,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // 35 LARGEST RUSSIAN OIL REFINERIES (НПЗ)
     // ==========================================
     const refineriesList = [
-        { id: 'omsk', name: { ru: 'Омский НПЗ', uk: 'Омський НПЗ', en: 'Omsk Refinery' }, company: 'Газпромнефть', region: { ru: 'Омская обл., Омск', uk: 'Омська обл., Омськ', en: 'Omsk Oblast, Omsk' }, capacity: 21.0, query: 'омский', lat: 55.0417, lng: 73.3056 },
-        { id: 'kinef', name: { ru: 'Киришский НПЗ (КИНЕФ)', uk: 'Кіриський НПЗ (КІНЕФ)', en: 'Kirishi Refinery (KINEF)' }, company: 'Сургутнефтегаз', region: { ru: 'Ленинградская обл., Кириши', uk: 'Ленінградська обл., Кіриші', en: 'Leningrad Oblast, Kirishi' }, capacity: 20.1, query: 'кириш', lat: 59.4894, lng: 32.0625 },
-        { id: 'ryazan', name: { ru: 'Рязанская НПК', uk: 'Рязанська НПК', en: 'Ryazan Refinery (RNPC)' }, company: 'Роснефть', region: { ru: 'Рязанская обл., Рязань', uk: 'Рязанська обл., Рязань', en: 'Ryazan Oblast, Ryazan' }, capacity: 17.1, query: 'рязан', lat: 54.5422, lng: 39.7719 },
-        { id: 'norsi', name: { ru: 'Нижегороднефтеоргсинтез (НОРСИ)', uk: 'Нижньогороднафтооргсинтез (НОРСІ)', en: 'NORSI Refinery' }, company: 'Лукойл', region: { ru: 'Нижегородская обл., Кстово', uk: 'Нижньогородська обл., Кстово', en: 'Nizhny Novgorod Oblast, Kstovo' }, capacity: 17.0, query: 'нижегород', lat: 56.1072, lng: 44.1549 },
-        { id: 'taneko', name: { ru: 'ТАНЕКО', uk: 'ТАНЕКО', en: 'TANECO Refinery' }, company: 'Татнефть', region: { ru: 'Татарстан, Нижнекамск', uk: 'Татарстан, Нижньокамськ', en: 'Tatarstan, Nizhnekamsk' }, capacity: 16.2, query: 'танеко', lat: 55.5786, lng: 51.9365 },
-        { id: 'yanos', name: { ru: 'Славнефть-ЯНОС', uk: 'Славнафта-ЯНОС', en: 'Slavneft-YANOS' }, company: 'Славнефть', region: { ru: 'Ярославская обл., Ярославль', uk: 'Ярославська обл., Ярославль', en: 'Yaroslavl Oblast, Yaroslavl' }, capacity: 15.0, query: 'янос', lat: 57.6012, lng: 39.8745 },
-        { id: 'volgograd', name: { ru: 'Волгоградский НПЗ', uk: 'Волгоградський НПЗ', en: 'Volgograd Refinery' }, company: 'Лукойл', region: { ru: 'Волгоградская обл., Волгоград', uk: 'Волгоградська обл., Волгоград', en: 'Volgograd Oblast, Volgograd' }, capacity: 14.8, query: 'волгоград', lat: 48.4909, lng: 44.6101 },
-        { id: 'perm', name: { ru: 'Пермнефтеоргсинтез', uk: 'Пермнафтооргсинтез', en: 'Perm Refinery' }, company: 'Лукойл', region: { ru: 'Пермский край, Пермь', uk: 'Пермський край, Перм', en: 'Perm Krai, Perm' }, capacity: 13.1, query: 'пермнефте', lat: 57.915, lng: 56.175 },
-        { id: 'moscow', name: { ru: 'Московский НПЗ (МНПЗ)', uk: 'Московський НПЗ (МНПЗ)', en: 'Moscow Refinery' }, company: 'Газпромнефть', region: { ru: 'Москва, Капотня', uk: 'Москва, Капотня', en: 'Moscow, Kapotnya' }, capacity: 12.1, query: 'московский нпз', lat: 55.6536, lng: 37.8078 },
-        { id: 'ufaneftekhim', name: { ru: 'Башнефть-Уфанефтехим', uk: 'Башнафта-Уфанафтохім', en: 'Bashneft-Ufaneftekhim' }, company: 'Башнефть / Роснефть', region: { ru: 'Башкортостан, Уфа', uk: 'Башкортостан, Уфа', en: 'Bashkortostan, Uфа' }, capacity: 12.0, query: 'уфанефтехим', lat: 54.9333, lng: 56.0667 },
-        { id: 'tuapse', name: { ru: 'Туапсинский НПЗ', uk: 'Туапсинський НПЗ', en: 'Tuapse Refinery' }, company: 'Роснефть', region: { ru: 'Краснодарский край, Туапсе', uk: 'Краснодарський край, Туапсе', en: 'Krasnodar Krai, Tuapse' }, capacity: 12.0, query: 'туапсинский', lat: 44.05, lng: 39.18 },
-        { id: 'angarsk', name: { ru: 'Ангарская НХК', uk: 'Ангарська НХК', en: 'Angarsk Petrochemical' }, company: 'Роснефть', region: { ru: 'Иркутская обл., Ангарск', uk: 'Іркутська обл., Ангарськ', en: 'Irkutsk Oblast, Angarsk' }, capacity: 10.2, lat: 52.544, lng: 103.888 },
-        { id: 'salavat', name: { ru: 'Газпром нефтехим Салават', uk: 'Газпром нафтохім Салават', en: 'Gazprom Salavat' }, company: 'Газпром', region: { ru: 'Башкортостан, Салават', uk: 'Башкортостан, Салават', en: 'Bashkortostan, Salavat' }, capacity: 10.0, query: 'салават', lat: 53.4073, lng: 55.8817 },
-        { id: 'syzran', name: { ru: 'Сызранский НПЗ', uk: 'Сизранський НПЗ', en: 'Syzran Refinery' }, company: 'Роснефть', region: { ru: 'Самарская обл., Сызрань', uk: 'Самарська обл., Сизрань', en: 'Samara Oblast, Syzran' }, capacity: 8.5, query: 'сызран', lat: 53.0854, lng: 48.3971 },
-        { id: 'novokuib', name: { ru: 'Новокуйбышевский НПЗ', uk: 'Новокуйбишевський НПЗ', en: 'Novokuibyshevsk Refinery' }, company: 'Роснефть', region: { ru: 'Самарская обл., Новокуйбышевск', uk: 'Самарська обл., Новокуйбишевськ', en: 'Samara Oblast, Novokuibyshevsk' }, capacity: 8.3, query: 'новокуйбышев', lat: 53.1258, lng: 49.9086 },
-        { id: 'taif', name: { ru: 'ТАИФ-НК', uk: 'ТАЇФ-НК', en: 'TAIF-NK Refinery' }, company: 'ТАИФ', region: { ru: 'Татарстан, Нижнекамск', uk: 'Татарстан, Нижньокамськ', en: 'Tatarstan, Nizhnekamsk' }, capacity: 8.3, query: 'таиф', lat: 55.6049, lng: 51.9557 },
-        { id: 'komsomolsk', name: { ru: 'Комсомольский НПЗ', uk: 'Комсомольський НПЗ', en: 'Komsomolsk Refinery' }, company: 'Роснефть', region: { ru: 'Хабаровский край, Комсомольск-на-Амуре', uk: 'Хабаровський край, Комсомольськ-на-Амурі', en: 'Khabarovsk Krai, Komsomolsk-on-Amur' }, capacity: 8.3, query: 'комсомольский нпз', lat: 50.6141, lng: 137.064 },
-        { id: 'unpz', name: { ru: 'Башнефть-УНПЗ (Уфимский НПЗ)', uk: 'Башнафта-УНПЗ (Уфимський НПЗ)', en: 'Bashneft-UNPZ' }, company: 'Башнефть / Роснефть', region: { ru: 'Башкортостан, Уфа', uk: 'Башкортостан, Уфа', en: 'Bashkortostan, Ufa' }, capacity: 7.5, query: 'унпз', lat: 54.8872, lng: 56.1264 },
-        { id: 'tyumen', name: { ru: 'Тюменский НПЗ (Антипинский)', uk: 'Тюменський НПЗ (Антипінський)', en: 'Tyumen Refinery' }, company: 'Русинвест', region: { ru: 'Тюменская обл., Тюмень', uk: 'Тюменська обл., Тюмень', en: 'Tyumen Oblast, Tyumen' }, capacity: 7.5, query: 'тюмен', lat: 57.1086, lng: 65.6583 },
-        { id: 'achinsk', name: { ru: 'Ачинский НПЗ', uk: 'Ачинський НПЗ', en: 'Achinsk Refinery' }, company: 'Роснефть', region: { ru: 'Красноярский край, Ачинск', uk: 'Красноярський край, Ачинськ', en: 'Krasnoyarsk Krai, Achinsk' }, capacity: 7.5, lat: 56.444, lng: 90.548 },
-        { id: 'novoil', name: { ru: 'Башнефть-Новойл', uk: 'Башнафта-Новойл', en: 'Bashneft-Novoil' }, company: 'Башнефть / Роснефть', region: { ru: 'Башкортостан, Уфа', uk: 'Башкортостан, Уфа', en: 'Bashkortostan, Ufa' }, capacity: 7.1, query: 'новойл', lat: 54.83, lng: 56.12 },
-        { id: 'saratov', name: { ru: 'Саратовский НПЗ', uk: 'Саратовський НПЗ', en: 'Saratov Refinery' }, company: 'Роснефть', region: { ru: 'Саратовская обл., Саратов', uk: 'Саратовська обл., Саратов', en: 'Saratov Oblast, Saratov' }, capacity: 7.0, query: 'саратовский нпз', lat: 51.4506, lng: 45.9439 },
-        { id: 'kuibyshev', name: { ru: 'Куйбышевский НПЗ', uk: 'Куйбишевський НПЗ', en: 'Kuibyshev Refinery' }, company: 'Роснефть', region: { ru: 'Самарская обл., Самара', uk: 'Самарська обл., Самара', en: 'Samara Oblast, Samara' }, capacity: 7.0, lat: 53.111, lng: 50.052 },
-        { id: 'ilsky', name: { ru: 'Ильский НПЗ', uk: 'Ільський НПЗ', en: 'Ilsky Refinery' }, company: 'КНГК-ИНПЗ', region: { ru: 'Краснодарский край, Ильский', uk: 'Краснодарський край, Ільський', en: 'Krasnodar Krai, Ilsky' }, capacity: 6.6, query: 'ильск', lat: 44.8533, lng: 38.5684 },
-        { id: 'afipsky', name: { ru: 'Афипский НПЗ', uk: 'Афіпський НПЗ', en: 'Afipsky Refinery' }, company: 'ФортеИнвест', region: { ru: 'Краснодарский край, Афипский', uk: 'Краснодарський край, Афіпський', en: 'Krasnodar Krai, Afipsky' }, capacity: 6.0, query: 'афип', lat: 44.8717, lng: 38.8336 },
-        { id: 'orsk', name: { ru: 'Орскнефтеоргсинтез (Орский НПЗ)', uk: 'Орськнафтооргсинтез (Орський НПЗ)', en: 'Orsk Refinery' }, company: 'ФортеИнвест', region: { ru: 'Оренбургская обл., Орск', uk: 'Оренбурзька обл., Орськ', en: 'Orenburg Oblast, Orsk' }, capacity: 6.0, query: 'орск', lat: 51.2506, lng: 58.5233 },
-        { id: 'novoshakht', name: { ru: 'Новошахтинский ЗНП', uk: 'Новошахтинський ЗНП', en: 'Novoshakhtinsk Refinery' }, company: 'Петон', region: { ru: 'Ростовская обл., Новошахтинск', uk: 'Ростовська обл., Новошахтинськ', en: 'Rostov Oblast, Novoshakhtinsk' }, capacity: 5.6, query: 'новошахтин', lat: 47.78, lng: 39.9 },
-        { id: 'khabarovsk', name: { ru: 'Хабаровский НПЗ', uk: 'Хабаровський НПЗ', en: 'Khabarovsk Refinery' }, company: 'ННК', region: { ru: 'Хабаровский край, Хабаровск', uk: 'Хабаровський край, Хабаровськ', en: 'Khabarovsk Krai, Khabarovsk' }, capacity: 5.0, lat: 48.513, lng: 135.082 },
-        { id: 'slavyansk', name: { ru: 'Славянский НПЗ (Славянск ЭКО)', uk: 'Слов\'янський НПЗ (Слов\'янськ ЕКО)', en: 'Slavyansk Refinery' }, company: 'Славянск ЭКО', region: { ru: 'Краснодарский край, Славянск-на-Кубани', uk: 'Краснодарський край, Слов\'янськ-на-Кубані', en: 'Krasnodar Krai, Slavyansk-on-Kuban' }, capacity: 4.5, query: 'славянск', lat: 45.242, lng: 38.106 },
-        { id: 'ukhta', name: { ru: 'Ухтинский НПЗ', uk: 'Ухтинський НПЗ', en: 'Ukhta Refinery' }, company: 'Лукойл', region: { ru: 'Республика Коми, Ухта', uk: 'Республіка Комі, Ухта', en: 'Komi Republic, Ukhta' }, capacity: 4.2, lat: 63.567, lng: 53.683 },
-        { id: 'yaya', name: { ru: 'Яйский НПЗ', uk: 'Яйський НПЗ', en: 'Yaya Refinery' }, company: 'НефтеХимСервис', region: { ru: 'Кемеровская обл., Яя', uk: 'Кемеровська обл., Яя', en: 'Kemerovo Oblast, Yaya' }, capacity: 3.3, lat: 56.208, lng: 86.417 },
-        { id: 'krasnodar', name: { ru: 'Краснодарский НПЗ', uk: 'Краснодарський НПЗ', en: 'Krasnodar Refinery' }, company: 'КНГК', region: { ru: 'Краснодарский край, Краснодар', uk: 'Краснодарський край, Краснодар', en: 'Krasnodar Krai, Krasnodar' }, capacity: 3.1, lat: 45.011, lng: 38.992 },
-        { id: 'astrakhan', name: { ru: 'Астраханский ГПЗ / НПЗ', uk: 'Астраханський ГПЗ / НПЗ', en: 'Astrakhan Gas/Oil Processing' }, company: 'Газпром', region: { ru: 'Астраханская обл., Аксарайский', uk: 'Астраханська обл., Аксарайський', en: 'Astrakhan Oblast, Aksaraysky' }, capacity: 3.0, query: 'астраханский нпз', lat: 46.7736, lng: 48.1139 },
-        { id: 'mari', name: { ru: 'Марийский НПЗ', uk: 'Марійський НПЗ', en: 'Mariy Refinery' }, company: 'Нефтебитум', region: { ru: 'Марий Эл, с. Табашино', uk: 'Марій Ел, с. Табашино', en: 'Mari El, Tabashino' }, capacity: 1.6, lat: 56.967, lng: 48.433 },
-        { id: 'firstplant', name: { ru: 'Первый Завод', uk: 'Перший Завод', en: 'Pervy Zavod' }, company: 'Первый Завод', region: { ru: 'Калужская обл., Полотняный Завод', uk: 'Калузька обл., Полотняний Завод', en: 'Kaluga Oblast, Polotnyany Zavod' }, capacity: 1.2, query: 'первый завод', lat: 54.7312, lng: 35.9719 }
+        { id: 'omsk', name: { ru: 'Омский НПЗ', uk: 'Омський НПЗ', en: 'Omsk Refinery' }, company: 'Газпромнефть', region: { ru: 'Омская обл., Омск', uk: 'Омська обл., Омськ', en: 'Omsk Oblast, Omsk' }, capacity: 21.0, query: ['омский нпз'], opStatus: 'restored', lat: 55.0417, lng: 73.3056 },
+        { id: 'kinef', name: { ru: 'Киришский НПЗ (КИНЕФ)', uk: 'Кіриський НПЗ (КІНЕФ)', en: 'Kirishi Refinery (KINEF)' }, company: 'Сургутнефтегаз', region: { ru: 'Ленинградская обл., Кириши', uk: 'Ленінградська обл., Кіриші', en: 'Leningrad Oblast, Kirishi' }, capacity: 20.1, query: ['кириш', 'кинеф'], opStatus: 'restored', lat: 59.4894, lng: 32.0625 },
+        { id: 'ryazan', name: { ru: 'Рязанская НПК', uk: 'Рязанська НПК', en: 'Ryazan Refinery (RNPC)' }, company: 'Роснефть', region: { ru: 'Рязанская обл., Рязань', uk: 'Рязанська обл., Рязань', en: 'Ryazan Oblast, Ryazan' }, capacity: 17.1, query: ['рязанский нпз', 'рязанская нпк', 'рязанская нефтеперерабатывающая', 'рнпк'], opStatus: 'halted', lat: 54.5422, lng: 39.7719 },
+        { id: 'norsi', name: { ru: 'Нижегороднефтеоргсинтез (НОРСИ)', uk: 'Нижньогороднафтооргсинтез (НОРСІ)', en: 'NORSI Refinery' }, company: 'Лукойл', region: { ru: 'Нижегородская обл., Кстово', uk: 'Нижньогородська обл., Кстово', en: 'Nizhny Novgorod Oblast, Kstovo' }, capacity: 17.0, query: ['нижегороднефтеоргсинтез', 'норси'], opStatus: 'halted', lat: 56.1072, lng: 44.1549 },
+        { id: 'taneko', name: { ru: 'ТАНЕКО', uk: 'ТАНЕКО', en: 'TANECO Refinery' }, company: 'Татнефть', region: { ru: 'Татарстан, Нижнекамск', uk: 'Татарстан, Нижньокамськ', en: 'Tatarstan, Nizhnekamsk' }, capacity: 16.2, query: ['танеко'], opStatus: 'restored', lat: 55.5786, lng: 51.9365 },
+        { id: 'yanos', name: { ru: 'Славнефть-ЯНОС', uk: 'Славнафта-ЯНОС', en: 'Slavneft-YANOS' }, company: 'Славнефть', region: { ru: 'Ярославская обл., Ярославль', uk: 'Ярославська обл., Ярославль', en: 'Yaroslavl Oblast, Yaroslavl' }, capacity: 15.0, query: ['янос', 'ново-ярославский', 'ярославский нпз'], opStatus: 'restored', lat: 57.6012, lng: 39.8745 },
+        { id: 'volgograd', name: { ru: 'Волгоградский НПЗ', uk: 'Волгоградський НПЗ', en: 'Volgograd Refinery' }, company: 'Лукойл', region: { ru: 'Волгоградская обл., Волгоград', uk: 'Волгоградська обл., Волгоград', en: 'Volgograd Oblast, Волгоград' }, capacity: 14.8, query: ['волгоградский нпз', 'лукойл-волгограднефтепереработка'], opStatus: 'halted', lat: 48.4909, lng: 44.6101 },
+        { id: 'perm', name: { ru: 'Пермнефтеоргсинтез', uk: 'Пермнафтооргсинтез', en: 'Perm Refinery' }, company: 'Лукойл', region: { ru: 'Пермский край, Пермь', uk: 'Пермський край, Перм', en: 'Perm Krai, Perm' }, capacity: 13.1, query: ['пермнефтеоргсинтез', 'лукойл-пермнефте'], opStatus: 'restored', lat: 57.915, lng: 56.175 },
+        { id: 'moscow', name: { ru: 'Московский НПЗ (МНПЗ)', uk: 'Московський НПЗ (МНПЗ)', en: 'Moscow Refinery' }, company: 'Газпромнефть', region: { ru: 'Москва, Капотня', uk: 'Москва, Капотня', en: 'Moscow, Kapotnya' }, capacity: 12.1, query: ['московский нпз', 'мнпз'], opStatus: 'restored', lat: 55.6536, lng: 37.8078 },
+        { id: 'ufaneftekhim', name: { ru: 'Башнефть-Уфанефтехим', uk: 'Башнафта-Уфанафтохім', en: 'Bashneft-Ufaneftekhim' }, company: 'Башнефть / Роснефть', region: { ru: 'Башкортостан, Уфа', uk: 'Башкортостан, Уфа', en: 'Bashkortostan, Ufa' }, capacity: 12.0, query: ['уфанефтехим'], opStatus: 'halted', lat: 54.9333, lng: 56.0667 },
+        { id: 'tuapse', name: { ru: 'Туапсинский НПЗ', uk: 'Туапсинський НПЗ', en: 'Tuapse Refinery' }, company: 'Роснефть', region: { ru: 'Краснодарский край, Туапсе', uk: 'Краснодарський край, Туапсе', en: 'Krasnodar Krai, Tuapse' }, capacity: 12.0, query: ['туапсинский'], opStatus: 'halted', lat: 44.05, lng: 39.18 },
+        { id: 'angarsk', name: { ru: 'Ангарская НХК', uk: 'Ангарська НХК', en: 'Angarsk Petrochemical' }, company: 'Роснефть', region: { ru: 'Иркутская обл., Ангарск', uk: 'Іркутська обл., Ангарськ', en: 'Irkutsk Oblast, Angarsk' }, capacity: 10.2, opStatus: 'intact', lat: 52.544, lng: 103.888 },
+        { id: 'salavat', name: { ru: 'Газпром нефтехим Салават', uk: 'Газпром нафтохім Салават', en: 'Gazprom Salavat' }, company: 'Газпром', region: { ru: 'Башкортостан, Салават', uk: 'Башкортостан, Салават', en: 'Bashkortostan, Salavat' }, capacity: 10.0, query: ['салават'], opStatus: 'restored', lat: 53.4073, lng: 55.8817 },
+        { id: 'syzran', name: { ru: 'Сызранский НПЗ', uk: 'Сизранський НПЗ', en: 'Syzran Refinery' }, company: 'Роснефть', region: { ru: 'Самарская обл., Сызрань', uk: 'Самарська обл., Сизрань', en: 'Samara Oblast, Syzran' }, capacity: 8.5, query: ['сызран'], opStatus: 'halted', lat: 53.0854, lng: 48.3971 },
+        { id: 'novokuib', name: { ru: 'Новокуйбышевский НПЗ', uk: 'Новокуйбишевський НПЗ', en: 'Novokuibyshevsk Refinery' }, company: 'Роснефть', region: { ru: 'Самарская обл., Новокуйбышевск', uk: 'Самарська обл., Новокуйбишевськ', en: 'Samara Oblast, Novokuibyshevsk' }, capacity: 8.3, query: ['новокуйбышев'], opStatus: 'halted', lat: 53.1258, lng: 49.9086 },
+        { id: 'taif', name: { ru: 'ТАИФ-НК', uk: 'ТАЇФ-НК', en: 'TAIF-NK Refinery' }, company: 'ТАИФ', region: { ru: 'Татарстан, Нижнекамск', uk: 'Татарстан, Нижньокамськ', en: 'Tatarstan, Nizhnekamsk' }, capacity: 8.3, query: ['таиф-нк', 'нижнекамский нпз (таиф-нк)'], opStatus: 'restored', lat: 55.6049, lng: 51.9557 },
+        { id: 'komsomolsk', name: { ru: 'Комсомольский НПЗ', uk: 'Комсомольський НПЗ', en: 'Komsomolsk Refinery' }, company: 'Роснефть', region: { ru: 'Хабаровский край, Комсомольск-на-Амуре', uk: 'Хабаровський край, Комсомольськ-на-Амурі', en: 'Khabarovsk Krai, Komsomolsk-on-Amur' }, capacity: 8.3, query: ['комсомольский нефтеперерабатывающий', 'комсомольский нпз'], opStatus: 'restored', lat: 50.6141, lng: 137.064 },
+        { id: 'unpz', name: { ru: 'Башнефть-УНПЗ (Уфимский НПЗ)', uk: 'Башнафта-УНПЗ (Уфимський НПЗ)', en: 'Bashneft-UNPZ' }, company: 'Башнефть / Роснефть', region: { ru: 'Башкортостан, Уфа', uk: 'Башкортостан, Уфа', en: 'Bashkortostan, Ufa' }, capacity: 7.5, query: ['башнефть-унпз', 'унпз', 'ново-уфимский'], opStatus: 'halted', lat: 54.8872, lng: 56.1264 },
+        { id: 'tyumen', name: { ru: 'Тюменский НПЗ (Антипинский)', uk: 'Тюменський НПЗ (Антипінський)', en: 'Tyumen Refinery' }, company: 'Русинвест', region: { ru: 'Тюменская обл., Тюмень', uk: 'Тюменська обл., Тюмень', en: 'Tyumen Oblast, Tyumen' }, capacity: 7.5, query: ['тюменский нпз', 'антипинский'], opStatus: 'restored', lat: 57.1086, lng: 65.6583 },
+        { id: 'achinsk', name: { ru: 'Ачинский НПЗ', uk: 'Ачинський НПЗ', en: 'Achinsk Refinery' }, company: 'Роснефть', region: { ru: 'Красноярский край, Ачинск', uk: 'Красноярський край, Ачинськ', en: 'Krasnoyarsk Krai, Achinsk' }, capacity: 7.5, opStatus: 'intact', lat: 56.444, lng: 90.548 },
+        { id: 'novoil', name: { ru: 'Башнефть-Новойл', uk: 'Башнафта-Новойл', en: 'Bashneft-Novoil' }, company: 'Башнефть / Роснефть', region: { ru: 'Башкортостан, Уфа', uk: 'Башкортостан, Уфа', en: 'Bashkortostan, Ufa' }, capacity: 7.1, query: ['новойл'], opStatus: 'halted', lat: 54.83, lng: 56.12 },
+        { id: 'saratov', name: { ru: 'Саратовский НПЗ', uk: 'Саратовський НПЗ', en: 'Saratov Refinery' }, company: 'Роснефть', region: { ru: 'Саратовская обл., Саратов', uk: 'Саратовська обл., Саратов', en: 'Saratov Oblast, Saratov' }, capacity: 7.0, query: ['саратовский нпз', 'саратовский нефтеперерабатывающий'], opStatus: 'halted', lat: 51.4506, lng: 45.9439 },
+        { id: 'kuibyshev', name: { ru: 'Куйбышевский НПЗ', uk: 'Куйбишевський НПЗ', en: 'Kuibyshev Refinery' }, company: 'Роснефть', region: { ru: 'Самарская обл., Самара', uk: 'Самарська обл., Самара', en: 'Samara Oblast, Samara' }, capacity: 7.0, opStatus: 'intact', lat: 53.111, lng: 50.052 },
+        { id: 'ilsky', name: { ru: 'Ильский НПЗ', uk: 'Ільський НПЗ', en: 'Ilsky Refinery' }, company: 'КНГК-ИНПЗ', region: { ru: 'Краснодарский край, Ильский', uk: 'Краснодарський край, Ільський', en: 'Krasnodar Krai, Ilsky' }, capacity: 6.6, query: ['ильск'], opStatus: 'halted', lat: 44.8533, lng: 38.5684 },
+        { id: 'afipsky', name: { ru: 'Афипский НПЗ', uk: 'Афіпський НПЗ', en: 'Afipsky Refinery' }, company: 'ФортеИнвест', region: { ru: 'Краснодарский край, Афипский', uk: 'Краснодарський край, Афіпський', en: 'Krasnodar Krai, Afipsky' }, capacity: 6.0, query: ['афип'], opStatus: 'halted', lat: 44.8717, lng: 38.8336 },
+        { id: 'orsk', name: { ru: 'Орскнефтеоргсинтез (Орский НПЗ)', uk: 'Орськнафтооргсинтез (Орський НПЗ)', en: 'Orsk Refinery' }, company: 'ФортеИнвест', region: { ru: 'Оренбургская обл., Орск', uk: 'Оренбурзька обл., Орськ', en: 'Orenburg Oblast, Orsk' }, capacity: 6.0, query: ['орскнефтеоргсинтез', 'орский нпз'], opStatus: 'restored', lat: 51.2506, lng: 58.5233 },
+        { id: 'novoshakht', name: { ru: 'Новошахтинский ЗНП', uk: 'Новошахтинський ЗНП', en: 'Novoshakhtinsk Refinery' }, company: 'Петон', region: { ru: 'Ростовская обл., Новошахтинск', uk: 'Ростовська обл., Новошахтинськ', en: 'Rostov Oblast, Novoshakhtinsk' }, capacity: 5.6, query: ['новошахтин'], opStatus: 'halted', lat: 47.78, lng: 39.9 },
+        { id: 'khabarovsk', name: { ru: 'Хабаровский НПЗ', uk: 'Хабаровський НПЗ', en: 'Khabarovsk Refinery' }, company: 'ННК', region: { ru: 'Хабаровский край, Хабаровск', uk: 'Хабаровський край, Хабаровськ', en: 'Khabarovsk Krai, Khabarovsk' }, capacity: 5.0, opStatus: 'intact', lat: 48.513, lng: 135.082 },
+        { id: 'slavyansk', name: { ru: 'Славянский НПЗ (Славянск ЭКО)', uk: 'Слов\'янський НПЗ (Слов\'янськ ЕКО)', en: 'Slavyansk Refinery' }, company: 'Славянск ЭКО', region: { ru: 'Краснодарский край, Славянск-на-Кубани', uk: 'Краснодарський край, Слов\'янськ-на-Кубані', en: 'Krasnodar Krai, Slavyansk-on-Kuban' }, capacity: 4.5, query: ['славянск'], opStatus: 'halted', lat: 45.242, lng: 38.106 },
+        { id: 'ukhta', name: { ru: 'Ухтинский НПЗ', uk: 'Ухтинський НПЗ', en: 'Ukhta Refinery' }, company: 'Лукойл', region: { ru: 'Республика Коми, Ухта', uk: 'Республіка Комі, Ухта', en: 'Komi Republic, Ukhta' }, capacity: 4.2, opStatus: 'intact', lat: 63.567, lng: 53.683 },
+        { id: 'yaya', name: { ru: 'Яйский НПЗ', uk: 'Яйський НПЗ', en: 'Yaya Refinery' }, company: 'НефтеХимСервис', region: { ru: 'Кемеровская обл., Яя', uk: 'Кемеровська обл., Яя', en: 'Kemerovo Oblast, Yaya' }, capacity: 3.3, opStatus: 'intact', lat: 56.208, lng: 86.417 },
+        { id: 'krasnodar', name: { ru: 'Краснодарский НПЗ', uk: 'Краснодарський НПЗ', en: 'Krasnodar Refinery' }, company: 'КНГК', region: { ru: 'Краснодарский край, Краснодар', uk: 'Краснодарський край, Краснодар', en: 'Krasnodar Krai, Krasnodar' }, capacity: 3.1, opStatus: 'intact', lat: 45.011, lng: 38.992 },
+        { id: 'astrakhan', name: { ru: 'Астраханский ГПЗ / НПЗ', uk: 'Астраханський ГПЗ / НПЗ', en: 'Astrakhan Gas/Oil Processing' }, company: 'Газпром', region: { ru: 'Астраханская обл., Аксарайский', uk: 'Астраханська обл., Аксарайський', en: 'Astrakhan Oblast, Aksaraysky' }, capacity: 3.0, query: ['астраханский нпз', 'астраханский гпз'], opStatus: 'restored', lat: 46.7736, lng: 48.1139 },
+        { id: 'mari', name: { ru: 'Марийский НПЗ', uk: 'Марійський НПЗ', en: 'Mariy Refinery' }, company: 'Нефтебитум', region: { ru: 'Марий Эл, с. Табашино', uk: 'Марій Ел, с. Табашино', en: 'Mari El, Tabashino' }, capacity: 1.6, opStatus: 'intact', lat: 56.967, lng: 48.433 },
+        { id: 'firstplant', name: { ru: 'Первый Завод', uk: 'Перший Завод', en: 'Pervy Zavod' }, company: 'Первый Завод', region: { ru: 'Калужская обл., Полотняный Завод', uk: 'Калузька обл., Полотняний Завод', en: 'Kaluga Oblast, Polotnyany Zavod' }, capacity: 1.2, query: ['первый завод'], opStatus: 'halted', lat: 54.7312, lng: 35.9719 }
     ];
 
     // Icons
@@ -1111,25 +1127,32 @@ document.addEventListener('DOMContentLoaded', () => {
     function computeRefineriesStatus() {
         refineriesList.forEach(ref => {
             if (ref.query) {
-                const q = ref.query.toLowerCase();
+                const queries = Array.isArray(ref.query) ? ref.query : [ref.query];
                 const matched = strikeData.filter(s => {
-                    const t = (s.ru?.target || '').toLowerCase();
-                    return t.includes(q);
+                    const fullText = [s.ru?.target, s.ru?.region, s.en?.target, s.en?.region].filter(Boolean).join(' ').toLowerCase();
+                    return queries.some(q => fullText.includes(q.toLowerCase()));
                 });
                 if (matched.length > 0) {
                     ref.isHit = true;
                     ref.strikeCount = matched.length;
-                    ref.latestDate = matched[0].date;
-                    ref.strikeId = matched[0].id;
-                    ref.lat = matched[0].lat;
-                    ref.lng = matched[0].lng;
+                    const sorted = matched.slice().sort((a, b) => {
+                        const parseDate = d => { const [dd,mm,yy] = (d||'').split('.'); return new Date(+yy, +mm-1, +dd); };
+                        return parseDate(b.date) - parseDate(a.date);
+                    });
+                    ref.latestDate = sorted[0].date;
+                    ref.strikeId = sorted[0].id;
+                    ref.lat = sorted[0].lat;
+                    ref.lng = sorted[0].lng;
+                    ref.status = ref.opStatus || 'halted';
                 } else {
                     ref.isHit = false;
                     ref.strikeCount = 0;
+                    ref.status = 'intact';
                 }
             } else {
                 ref.isHit = false;
                 ref.strikeCount = 0;
+                ref.status = 'intact';
             }
         });
     }
@@ -1146,44 +1169,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let totalCap = 0;
         let struckCap = 0;
-        let struckCount = 0;
+        let haltedCount = 0;
+        let restoredCount = 0;
+        let intactCount = 0;
 
         refineriesList.forEach(r => {
             totalCap += r.capacity;
-            if (r.isHit) {
+            if (r.status === 'halted') {
                 struckCap += r.capacity;
-                struckCount++;
+                haltedCount++;
+            } else if (r.status === 'restored') {
+                struckCap += r.capacity;
+                restoredCount++;
+            } else {
+                intactCount++;
             }
         });
 
         const totalRefineries = refineriesList.length;
-        const intactCount = totalRefineries - struckCount;
-        const struckPercent = ((struckCount / totalRefineries) * 100).toFixed(1);
-        const intactPercent = ((intactCount / totalRefineries) * 100).toFixed(1);
         const struckCapPercent = ((struckCap / totalCap) * 100).toFixed(1);
 
-        const countText = document.getElementById('npzStruckCountText');
-        if (countText) countText.textContent = struckCount;
-        const struckPercentText = document.getElementById('npzStruckPercentText');
-        if (struckPercentText) struckPercentText.textContent = `(${struckPercent}%)`;
+        const el = id => document.getElementById(id);
+        if (el('npzHaltedCountText')) el('npzHaltedCountText').textContent = haltedCount;
+        if (el('npzHaltedPercentText')) el('npzHaltedPercentText').textContent = `(${((haltedCount / totalRefineries) * 100).toFixed(1)}%)`;
+        if (el('npzRestoredCountText')) el('npzRestoredCountText').textContent = restoredCount;
+        if (el('npzRestoredPercentText')) el('npzRestoredPercentText').textContent = `(${((restoredCount / totalRefineries) * 100).toFixed(1)}%)`;
+        if (el('npzIntactCountText')) el('npzIntactCountText').textContent = intactCount;
+        if (el('npzIntactPercentText')) el('npzIntactPercentText').textContent = `(${((intactCount / totalRefineries) * 100).toFixed(1)}%)`;
 
-        const intactCountText = document.getElementById('npzIntactCountText');
-        if (intactCountText) intactCountText.textContent = intactCount;
-        const intactPercentText = document.getElementById('npzIntactPercentText');
-        if (intactPercentText) intactPercentText.textContent = `(${intactPercent}%)`;
-
-        const struckCapText = document.getElementById('npzStruckCapacityText');
-        if (struckCapText) struckCapText.textContent = struckCap.toFixed(1);
-        const struckCapPercentText = document.getElementById('npzStruckCapacityPercentText');
-        if (struckCapPercentText) struckCapPercentText.textContent = `(${struckCapPercent}%)`;
-
-        const damageRatioText = document.getElementById('npzDamageRatioText');
+        const damageRatioText = el('npzDamageRatioText');
         if (damageRatioText) {
             const ratioSuffix = currentLang === 'en' ? 'under strike' : (currentLang === 'uk' ? 'під ударом' : 'под ударом');
             damageRatioText.textContent = `${struckCapPercent}% ${ratioSuffix}`;
         }
 
-        const progressBar = document.getElementById('npzCapacityProgressBar');
+        const progressBar = el('npzCapacityProgressBar');
         if (progressBar) progressBar.style.width = `${struckCapPercent}%`;
 
         // Render cards
@@ -1193,15 +1213,23 @@ document.addEventListener('DOMContentLoaded', () => {
             const refName = ref.name[currentLang] || ref.name.ru;
             const refRegion = ref.region[currentLang] || ref.region.ru;
 
+            const isHalted = ref.status === 'halted';
+            const isRestored = ref.status === 'restored';
+            const isIntact = ref.status === 'intact';
+
             const card = document.createElement('div');
             card.className = `npz-card relative flex flex-col justify-between p-2.5 md:p-3 rounded-xl md:rounded-2xl border select-none group transition-all duration-200 cursor-pointer ${
-                ref.isHit 
-                    ? 'bg-gradient-to-b from-orange-500/10 via-amber-500/5 to-transparent border-orange-500/30 hover:border-orange-500 hover:shadow-lg hover:shadow-orange-500/20' 
-                    : 'theme-bg-item border-slate-700/30 dark:border-slate-800/60 hover:border-slate-500/50 hover:shadow-md'
+                isHalted 
+                    ? 'bg-red-500/10 border-red-500/35 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/20' 
+                    : isRestored
+                    ? 'bg-amber-500/10 border-amber-500/35 hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20'
+                    : 'theme-bg-item border-slate-700/30 dark:border-slate-800/60 hover:border-emerald-500/50 hover:shadow-md'
             }`;
 
-            const statusBadge = ref.isHit 
-                ? `<span class="px-1.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider rounded bg-red-500/20 text-red-400 border border-red-500/30 flex items-center gap-1"><span class="animate-pulse">🔥</span> ${i18n.npz_status_struck[currentLang].split('/')[0].trim()}</span>`
+            const statusBadge = isHalted
+                ? `<span class="px-1.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider rounded bg-red-500/20 text-red-400 border border-red-500/30 flex items-center gap-1"><span class="animate-pulse">🔥</span> ${i18n.npz_status_halted[currentLang]}</span>`
+                : isRestored
+                ? `<span class="px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center gap-1"><span>🛠️</span> ${i18n.npz_status_restored[currentLang]}</span>`
                 : `<span class="px-1.5 py-0.5 text-[10px] font-semibold tracking-wider rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">🛡️ ${i18n.npz_legend_intact[currentLang]}</span>`;
 
             card.innerHTML = `
@@ -1217,7 +1245,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="relative h-10 md:h-12 flex items-center justify-center my-1 md:my-1.5">
                     <div class="relative flex items-center justify-center">
                         ${npzRefinerySvg}
-                        ${ref.isHit ? `<div class="absolute inset-0 flex items-center justify-center pointer-events-none">${npzFlameSvg}</div>` : ''}
+                        ${isHalted ? `<div class="absolute inset-0 flex items-center justify-center pointer-events-none">${npzFlameSvg}</div>` : ''}
                     </div>
                 </div>
 
@@ -1230,7 +1258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${refRegion}
                     </div>
                     <div class="mt-1.5 pt-1 md:mt-2 md:pt-1.5 border-t theme-border flex items-baseline justify-center gap-1">
-                        <span class="text-xs md:text-sm font-black tracking-tight ${ref.isHit ? 'text-amber-500' : 'theme-text-main'}">
+                        <span class="text-xs md:text-sm font-black tracking-tight ${isHalted ? 'text-red-400' : isRestored ? 'text-amber-400' : 'theme-text-main'}">
                             ${ref.capacity.toFixed(1)}
                         </span>
                         <span class="text-[9px] md:text-[10px] font-medium theme-text-muted">
@@ -1240,9 +1268,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <!-- Action Button on Card -->
-                <div class="mt-1.5 pt-1 border-t ${ref.isHit ? 'border-orange-500/20' : 'theme-border'}">
+                <div class="mt-1.5 pt-1 border-t ${ref.isHit ? (isHalted ? 'border-red-500/20' : 'border-amber-500/20') : 'theme-border'}">
                     ${ref.isHit ? `
-                    <div class="py-1 px-1.5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-blue-500 dark:text-blue-400 text-[10px] md:text-[11px] font-bold flex items-center justify-center gap-1 transition-all group-hover:bg-blue-600 group-hover:text-white shadow-sm">
+                    <div class="py-1 px-1.5 rounded-lg ${isHalted ? 'bg-red-500/15 hover:bg-red-500/30 text-red-400 border border-red-500/30' : 'bg-amber-500/15 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30'} text-[10px] md:text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-sm">
                         <span>${i18n.npz_btn_on_map[currentLang]}</span>
                     </div>
                     ` : `
@@ -1282,15 +1310,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let content = `
             <div class="font-bold text-sm theme-text-main flex items-center gap-1.5 mb-0.5">
-                <span>${ref.isHit ? '🔥' : '🛡️'}</span>
+                <span>${ref.status === 'halted' ? '🔥' : ref.status === 'restored' ? '🛠️' : '🛡️'}</span>
                 <span>${refName}</span>
             </div>
             <div class="text-[11px] theme-text-muted mb-1.5">${refRegion}</div>
         `;
 
         if (ref.isHit) {
+            const statusLabel = ref.status === 'halted' ? i18n.npz_status_halted[currentLang] : i18n.npz_status_restored[currentLang];
+            const statusColor = ref.status === 'halted' ? 'text-red-400' : 'text-amber-400';
             content += `
                 <div class="space-y-1.5 py-2 border-t theme-border mt-1">
+                    <div class="flex justify-between gap-3 items-center">
+                        <span class="theme-text-muted text-[11px]">Статус:</span>
+                        <span class="font-bold ${statusColor} text-[11px]">${statusLabel}</span>
+                    </div>
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_tooltip_strike_date[currentLang]}</span>
                         <span class="font-extrabold text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded border border-red-500/20 text-[11px]">${ref.latestDate || '—'}</span>
@@ -1474,29 +1508,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // ╚══════════════════════════════════════════════════════════════╝
 
     const warehousesList = [
-        // Sorted by area desc (sq m). queryTerms: search patterns in strikeData en.target
-        { id: 'wb_koledino', ru: { name: 'Коледино', region: 'Москов. обл., Подольский р-н', desc: 'Флагманский мегахаб. Крупнейший РЦ Wildberries' }, uk: { name: 'Коледіно', region: 'Моск. обл., Подільський р-н', desc: 'Флагманський мегахаб' }, en: { name: 'Koledino', region: 'Moscow Oblast, Podolsk District', desc: 'Flagship mega-hub. Largest WB DC' }, area: 200000, lat: 55.378, lng: 37.585, queryTerms: ['koledino'] },
-        { id: 'wb_khryastovo', ru: { name: 'Хрястово', region: 'Владимирская обл., Собинский р-н', desc: 'Крупнейший логистический хаб Сев.-Запада' }, uk: { name: 'Хрястово', region: 'Владимирська обл., Собинський р-н', desc: 'Великий логістичний хаб Пн.-Зх.' }, en: { name: 'Khryastovo', region: 'Vladimir Oblast, Sobinsky District', desc: 'Major logistics hub, NW Russia' }, area: 171900, lat: 56.0183, lng: 40.1375, queryTerms: ['khryastovo'] },
-        { id: 'wb_atlant', ru: { name: 'Атлант-Парк (Ногинск)', region: 'Москов. обл., Богородский р-н', desc: 'Центральный логистический комплекс МО' }, uk: { name: 'Атлант-Парк (Ногінськ)', region: 'Моск. обл., Богородський р-н', desc: 'Центральний логістичний комплекс МО' }, en: { name: 'Atlant-Park (Noginsk)', region: 'Moscow Oblast, Bogorodsky District', desc: 'Central logistics complex' }, area: 160000, lat: 55.8365, lng: 38.3564, queryTerms: ['atlant-park', 'noginsk'] },
-        { id: 'wb_ekaterinburg', ru: { name: 'Екатеринбург', region: 'Свердловская обл., Чкаловский р-н', desc: 'Крупнейший РЦ Урала' }, uk: { name: 'Єкатеринбург', region: 'Свердловська обл., Чкаловський р-н', desc: 'Найбільший РЦ Уралу' }, en: { name: 'Yekaterinburg', region: 'Sverdlovsk Oblast, Chkalovsky District', desc: 'Largest Ural distribution center' }, area: 150000, lat: 56.7412, lng: 60.7583, queryTerms: ['yekaterinburg'] },
-        { id: 'wb_elektrostal', ru: { name: 'Электросталь', region: 'Москов. обл., Электросталь', desc: 'Крупный логистический центр МО' }, uk: { name: 'Електросталь', region: 'Моск. обл., Електросталь', desc: 'Великий логістичний центр МО' }, en: { name: 'Elektrostal', region: 'Moscow Oblast, Elektrostal', desc: 'Major logistics center' }, area: 120000, lat: 55.792, lng: 38.446, queryTerms: ['elektrostal'] },
-        { id: 'wb_krasnodar', ru: { name: 'Краснодар', region: 'Краснодарский кр., Индустриальный пос.', desc: 'Ключевой хаб Юга России' }, uk: { name: 'Краснодар', region: 'Краснодарський кр., Індустріальний пос.', desc: 'Ключовий хаб Півдня Росії' }, en: { name: 'Krasnodar', region: 'Krasnodar Krai, Industrialny', desc: 'Key southern Russia hub' }, area: 130000, lat: 45.095, lng: 39.115, queryTerms: ['krasnodar'] },
-        { id: 'wb_shushary', ru: { name: 'Шушары (СПб)', region: 'Санкт-Петербург, Пушкинский р-н', desc: 'Главный РЦ Северо-Запада' }, uk: { name: 'Шушари (СПб)', region: 'Санкт-Петербург, Пушкінський р-н', desc: 'Головний РЦ Північно-Заходу' }, en: { name: 'Shushary (St. Petersburg)', region: 'Saint Petersburg, Pushkinsky District', desc: 'Main NW Russia distribution hub' }, area: 120000, lat: 59.7915, lng: 30.4072, queryTerms: ['shushary'] },
-        { id: 'wb_tver_emmaus', ru: { name: 'Тверь / Эммаус', region: 'Тверская обл., Калининский р-н', desc: 'Крупный логистический хаб Центра' }, uk: { name: 'Твер / Еммаус', region: 'Тверська обл., Калінінський р-н', desc: 'Великий логістичний хаб Центру' }, en: { name: 'Tver / Emmaus', region: 'Tver Oblast, Kalininsky District', desc: 'Major central logistics hub' }, area: 110000, lat: 56.7867, lng: 36.1158, queryTerms: ['emmaus', 'tver'] },
-        { id: 'wb_kotovsk', ru: { name: 'Котовск (Тамбов)', region: 'Тамбовская обл., Котовск', desc: 'РЦ Поволжья' }, uk: { name: 'Котовськ (Тамбов)', region: 'Тамбовська обл., Котовськ', desc: 'РЦ Поволжжя' }, en: { name: 'Kotovsk (Tambov)', region: 'Tambov Oblast, Kotovsk', desc: 'Volga region distribution center' }, area: 90000, lat: 52.585, lng: 41.51, queryTerms: ['kotovsk'] },
-        { id: 'wb_aleksin', ru: { name: 'Алексин (Тула)', region: 'Тульская обл., Алексин', desc: 'РЦ Центральной России' }, uk: { name: 'Алексин (Тула)', region: 'Тульська обл., Алексин', desc: 'РЦ Центральної Росії' }, en: { name: 'Aleksin (Tula)', region: 'Tula Oblast, Aleksin', desc: 'Central Russia distribution hub' }, area: 85000, lat: 54.5126, lng: 37.1729, queryTerms: ['aleksin'] },
-        { id: 'wb_voronezh', ru: { name: 'Воронеж / Нечаевка', region: 'Воронежская обл., Новоусманский р-н', desc: 'РЦ Черноземья' }, uk: { name: 'Воронеж / Нечаєвка', region: 'Воронезька обл., Новоусманський р-н', desc: 'РЦ Чорнозем\'я' }, en: { name: 'Voronezh / Nechayevka', region: 'Voronezh Oblast, Novousmansky District', desc: 'Black Earth region DC' }, area: 80000, lat: 51.6142, lng: 39.3416, queryTerms: ['voronezh', 'nechayevka', 'aleksandrovka'] },
-        { id: 'wb_chishmy', ru: { name: 'Чишмы (Башкирия)', region: 'Респ. Башкортостан, Чишминский р-н', desc: 'РЦ Башкирии и Поволжья' }, uk: { name: 'Чишми (Башкирія)', region: 'Респ. Башкортостан, Чишминський р-н', desc: 'РЦ Башкирії та Поволжжя' }, en: { name: 'Chishmy (Bashkortostan)', region: 'Republic of Bashkortostan, Chishminsky District', desc: 'Bashkortostan distribution center' }, area: 80000, lat: 54.5947, lng: 55.3942, queryTerms: ['chishmy', 'chishminsky', 'bashkortostan'] },
-        { id: 'wb_novosemeykino', ru: { name: 'Новосемейкино (Самара)', region: 'Самарская обл., Красноярский р-н', desc: 'РЦ Самарской области' }, uk: { name: 'Новосімейкіно (Самара)', region: 'Самарська обл., Красноярський р-н', desc: 'РЦ Самарської обл.' }, en: { name: 'Novosemeykino (Samara)', region: 'Samara Oblast, Krasnoyarsky District', desc: 'Samara region distribution center' }, area: 75000, lat: 53.3644, lng: 50.3472, queryTerms: ['novosemeykino', 'samara'] },
-        { id: 'wb_volgograd', ru: { name: 'Волгоград', region: 'Волгоградская обл., Дзержинский р-н', desc: 'РЦ Нижнего Поволжья' }, uk: { name: 'Волгоград', region: 'Волгоградська обл., Дзержинський р-н', desc: 'РЦ Нижнього Поволжжя' }, en: { name: 'Volgograd', region: 'Volgograd Oblast, Dzerzhinsky District', desc: 'Lower Volga distribution center' }, area: 70000, lat: 48.749, lng: 44.4645, queryTerms: ['volgograd'] },
-        { id: 'wb_krasny_bor', ru: { name: 'Красный Бор (Ленобл.)', region: 'Ленинградская обл., Тосненский р-н', desc: 'РЦ Ленинградской обл.' }, uk: { name: 'Красний Бор (Ленобл.)', region: 'Ленінградська обл., Тосненський р-н', desc: 'РЦ Ленінградської обл.' }, en: { name: 'Krasny Bor (Leningrad Oblast)', region: 'Leningrad Oblast, Tosnensky District', desc: 'Leningrad Oblast distribution center' }, area: 70000, lat: 59.6975, lng: 30.8711, queryTerms: ['krasny bor'] },
-        { id: 'wb_chekhov', ru: { name: 'Чехов / Новосёлки', region: 'Москов. обл., Чеховский р-н', desc: 'Дополнительный РЦ Подмосковья' }, uk: { name: 'Чехов / Новосьолки', region: 'Моск. обл., Чехівський р-н', desc: 'Додатковий РЦ Підмосков\'я' }, en: { name: 'Chekhov / Novoselki', region: 'Moscow Oblast, Chekhov District', desc: 'Moscow Oblast supplemental DC' }, area: 65000, lat: 55.1053, lng: 37.5147, queryTerms: ['novoselki', 'chekhov'] },
-        { id: 'wb_ryazan', ru: { name: 'Рязань (Тюшево)', region: 'Рязанская обл., Рязанский р-н', desc: 'РЦ Рязанской обл.' }, uk: { name: 'Рязань (Тюшево)', region: 'Рязанська обл., Рязанський р-н', desc: 'РЦ Рязанської обл.' }, en: { name: 'Ryazan (Tyushevo)', region: 'Ryazan Oblast, Ryazan District', desc: 'Ryazan distribution center' }, area: 65000, lat: 54.675, lng: 39.587, queryTerms: ['tyushevo', 'ryazan'] },
-        { id: 'wb_nevinnomyssk', ru: { name: 'Невинномысск', region: 'Ставропольский кр., Невинномысск', desc: 'РЦ Северного Кавказа' }, uk: { name: 'Невинномиськ', region: 'Ставропольський кр., Невинномиськ', desc: 'РЦ Північного Кавказу' }, en: { name: 'Nevinnomyssk', region: 'Stavropol Krai, Nevinnomyssk', desc: 'North Caucasus distribution center' }, area: 60000, lat: 44.642, lng: 41.925, queryTerms: ['nevinnomyssk'] },
-        { id: 'wb_sarapul', ru: { name: 'Сарапул (Удмуртия)', region: 'Удмуртская Респ., Сарапул', desc: 'РЦ Удмуртии' }, uk: { name: 'Сарапул (Удмуртія)', region: 'Удмуртська Респ., Сарапул', desc: 'РЦ Удмуртії' }, en: { name: 'Sarapul (Udmurtia)', region: 'Udmurt Republic, Sarapul', desc: 'Udmurtia distribution center' }, area: 55000, lat: 56.4811, lng: 53.6918, queryTerms: ['sarapul', 'udmurtia'] },
-        { id: 'wb_mastinovka', ru: { name: 'Мастиновка (Пенза)', region: 'Пензенская обл., Бессоновский р-н', desc: 'РЦ Пензенской обл.' }, uk: { name: 'Мастиновка (Пенза)', region: 'Пензенська обл., Бессонівський р-н', desc: 'РЦ Пензенської обл.' }, en: { name: 'Mastinovka (Penza Oblast)', region: 'Penza Oblast, Bessonovsky District', desc: 'Penza distribution center' }, area: 55000, lat: 53.2887, lng: 44.8342, queryTerms: ['mastinovka', 'penza'] },
-        { id: 'wb_perm', ru: { name: 'Пермь (Замулянка)', region: 'Пермский кр., Пермский р-н', desc: 'РЦ Прикамья' }, uk: { name: 'Перм (Замулянка)', region: 'Пермський кр., Пермський р-н', desc: 'РЦ Прикам\'я' }, en: { name: 'Perm (Zamulyanka)', region: 'Perm Krai, Perm District', desc: 'Perm Krai distribution center' }, area: 55000, lat: 57.9094, lng: 56.27, queryTerms: ['zamulyanka', 'perm'] },
-        { id: 'wb_simferopol', ru: { name: 'Симферополь (Крым)', region: 'Крым, Симферополь', desc: 'Сортировочный центр Крыма' }, uk: { name: 'Сімферополь (Крим)', region: 'Крим, Сімферополь', desc: 'Сортувальний центр Криму' }, en: { name: 'Simferopol (Crimea)', region: 'Crimea, Simferopol', desc: 'Crimea sorting center' }, area: 50000, lat: 44.9521, lng: 34.1024, queryTerms: ['simferopol'] }
+        // Sorted by area desc (sq m). opStatus: 'halted' | 'restored' | 'intact'
+        { id: 'wb_koledino', ru: { name: 'Коледино', region: 'Москов. обл., Подольский р-н', desc: 'Флагманский мегахаб. Крупнейший РЦ Wildberries' }, uk: { name: 'Коледіно', region: 'Моск. обл., Подільський р-н', desc: 'Флагманський мегахаб. Найбільший РЦ Wildberries' }, en: { name: 'Koledino', region: 'Moscow Oblast, Podolsk District', desc: 'Flagship mega-hub. Largest WB DC' }, area: 200000, lat: 55.378, lng: 37.585, queryTerms: ['koledino', 'коледино'], opStatus: 'halted' },
+        { id: 'wb_aksay', ru: { name: 'Ростов / Аксай', region: 'Ростовская обл., Аксайский р-н', desc: 'Крупнейший логистический комплекс Юга' }, uk: { name: 'Ростов / Аксай', region: 'Ростовська обл., Аксайський р-н', desc: 'Найбільший логістичний комплекс Півдня' }, en: { name: 'Rostov / Aksay', region: 'Rostov Oblast, Aksaysky District', desc: 'Major Southern logistics center' }, area: 180000, lat: 47.330, lng: 39.870, queryTerms: ['aksay', 'аксай'], opStatus: 'intact' },
+        { id: 'wb_khryastovo', ru: { name: 'Хрястово', region: 'Владимирская обл., Собинский р-н', desc: 'Крупнейший логистический хаб Сев.-Запада' }, uk: { name: 'Хрястово', region: 'Владимирська обл., Собинський р-н', desc: 'Великий логістичний хаб Пн.-Зх.' }, en: { name: 'Khryastovo', region: 'Vladimir Oblast, Sobinsky District', desc: 'Major logistics hub, NW Russia' }, area: 171900, lat: 56.0183, lng: 40.1375, queryTerms: ['khryastovo', 'хрястово'], opStatus: 'halted' },
+        { id: 'wb_atlant', ru: { name: 'Атлант-Парк (Ногинск)', region: 'Москов. обл., Богородский р-н', desc: 'Центральный логистический комплекс МО' }, uk: { name: 'Атлант-Парк (Ногінськ)', region: 'Моск. обл., Богородський р-н', desc: 'Центральний логістичний комплекс МО' }, en: { name: 'Atlant-Park (Noginsk)', region: 'Moscow Oblast, Bogorodsky District', desc: 'Central logistics complex' }, area: 160000, lat: 55.8365, lng: 38.3564, queryTerms: ['atlant-park', 'атлант-парк', 'ногинск'], opStatus: 'halted' },
+        { id: 'wb_kazan', ru: { name: 'Казань / Зеленодольск', region: 'Татарстан, Зеленодольский р-н', desc: 'Крупнейший логистический хаб Поволжья' }, uk: { name: 'Казань / Зеленодольськ', region: 'Татарстан, Зеленодольський р-н', desc: 'Найбільший хаб Поволжя' }, en: { name: 'Kazan / Zelenodolsk', region: 'Tatarstan, Zelenodolsky District', desc: 'Major Volga logistics hub' }, area: 150000, lat: 55.850, lng: 48.600, queryTerms: ['зеленодольск', 'zelenodolsk'], opStatus: 'intact' },
+        { id: 'wb_novosibirsk', ru: { name: 'Новосибирск (ПЛП)', region: 'Новосибирская обл., Толмачево', desc: 'Крупнейший логистический хаб Сибири' }, uk: { name: 'Новосибірськ (ПЛП)', region: 'Новосибірська обл., Толмачево', desc: 'Найбільший логістичний хаб Сибіру' }, en: { name: 'Novosibirsk (PLP)', region: 'Novosibirsk Oblast, Tolmachevo', desc: 'Main Siberian logistics hub' }, area: 150000, lat: 55.010, lng: 82.600, queryTerms: ['новосибирск', 'novosibirsk'], opStatus: 'intact' },
+        { id: 'wb_ekaterinburg', ru: { name: 'Екатеринбург', region: 'Свердловская обл., Чкаловский р-н', desc: 'Крупнейший РЦ Урала (частично восстановлен)' }, uk: { name: 'Єкатеринбург', region: 'Свердловська обл., Чкаловський р-н', desc: 'Найбільший РЦ Уралу (частково відновлений)' }, en: { name: 'Yekaterinburg', region: 'Sverdlovsk Oblast, Chkalovsky District', desc: 'Largest Ural DC (partially restored)' }, area: 150000, lat: 56.7412, lng: 60.7583, queryTerms: ['yekaterinburg', 'екатеринбург'], opStatus: 'restored' },
+        { id: 'wb_krasnodar', ru: { name: 'Краснодар', region: 'Краснодарский кр., Индустриальный пос.', desc: 'Ключевой хаб Юга России' }, uk: { name: 'Краснодар', region: 'Краснодарський кр., Індустріальний пос.', desc: 'Ключовий хаб Півдня Росії' }, en: { name: 'Krasnodar', region: 'Krasnodar Krai, Industrialny', desc: 'Key southern Russia hub' }, area: 130000, lat: 45.095, lng: 39.115, queryTerms: ['krasnodar', 'краснодар'], opStatus: 'halted' },
+        { id: 'wb_elektrostal', ru: { name: 'Электросталь', region: 'Москов. обл., пос. Случайный', desc: 'Крупный логистический центр (уничтожен пожаром)' }, uk: { name: 'Електросталь', region: 'Моск. обл., сел. Випадковий', desc: 'Великий логістичний центр (знищений пожежею)' }, en: { name: 'Elektrostal', region: 'Moscow Oblast, Sluchaynyy', desc: 'Major logistics center (destroyed by fire)' }, area: 120000, lat: 55.792, lng: 38.446, queryTerms: ['elektrostal', 'электростал'], opStatus: 'halted' },
+        { id: 'wb_shushary', ru: { name: 'Шушары (СПб)', region: 'Санкт-Петербург, Пушкинский р-н', desc: 'Главный РЦ Северо-Запада (работа возобновлена)' }, uk: { name: 'Шушари (СПб)', region: 'Санкт-Петербург, Пушкінський р-н', desc: 'Головний РЦ Північно-Заходу (роботу відновлено)' }, en: { name: 'Shushary (St. Petersburg)', region: 'Saint Petersburg, Pushkinsky District', desc: 'Main NW Russia hub (operations resumed)' }, area: 120000, lat: 59.7915, lng: 30.4072, queryTerms: ['shushary', 'шушар'], opStatus: 'restored' },
+        { id: 'wb_tver_emmaus', ru: { name: 'Тверь / Эммаус', region: 'Тверская обл., Калининский р-н', desc: 'Крупный хаб Центра (линии частично восстановлены)' }, uk: { name: 'Твер / Еммаус', region: 'Тверська обл., Калінінський р-н', desc: 'Великий хаб Центру (лінії частково відновлені)' }, en: { name: 'Tver / Emmaus', region: 'Tver Oblast, Kalininsky District', desc: 'Central hub (lines partially restored)' }, area: 110000, lat: 56.7867, lng: 36.1158, queryTerms: ['emmaus', 'эммаус', 'тверская область, калининский'], opStatus: 'restored' },
+        { id: 'wb_omsk', ru: { name: 'Омск', region: 'Омская обл., Омск', desc: 'РЦ Западной Сибири' }, uk: { name: 'Омськ', region: 'Омська обл., Омськ', desc: 'РЦ Західного Сибіру' }, en: { name: 'Omsk', region: 'Omsk Oblast, Omsk', desc: 'Western Siberia distribution center' }, area: 100000, lat: 54.980, lng: 73.360, queryTerms: ['омск', 'omsk'], opStatus: 'intact' },
+        { id: 'wb_kotovsk', ru: { name: 'Котовск (Тамбов)', region: 'Тамбовская обл., Котовск', desc: 'РЦ Поволжья (разрушен)' }, uk: { name: 'Котовськ (Тамбов)', region: 'Тамбовська обл., Котовськ', desc: 'РЦ Поволжжя (зруйнований)' }, en: { name: 'Kotovsk (Tambov)', region: 'Tambov Oblast, Kotovsk', desc: 'Volga region DC (destroyed)' }, area: 90000, lat: 52.585, lng: 41.51, queryTerms: ['kotovsk', 'котовск'], opStatus: 'halted' },
+        { id: 'wb_aleksin', ru: { name: 'Алексин (Тула)', region: 'Тульская обл., Алексин', desc: 'РЦ Центральной России' }, uk: { name: 'Алексин (Тула)', region: 'Тульська обл., Алексин', desc: 'РЦ Центральної Росії' }, en: { name: 'Aleksin (Tula)', region: 'Tula Oblast, Aleksin', desc: 'Central Russia distribution hub' }, area: 85000, lat: 54.5126, lng: 37.1729, queryTerms: ['aleksin', 'алексин'], opStatus: 'halted' },
+        { id: 'wb_voronezh', ru: { name: 'Воронеж / Нечаевка', region: 'Воронежская обл., Новоусманский р-н', desc: 'РЦ Черноземья (крупный пожар)' }, uk: { name: 'Воронеж / Нечаєвка', region: 'Воронезька обл., Новоусманський р-н', desc: 'РЦ Чорнозем\'я (велика пожежа)' }, en: { name: 'Voronezh / Nechayevka', region: 'Voronezh Oblast, Novousmansky District', desc: 'Black Earth DC (major fire)' }, area: 80000, lat: 51.6142, lng: 39.3416, queryTerms: ['voronezh', 'воронеж', 'нечаевка', 'александровка'], opStatus: 'halted' },
+        { id: 'wb_chishmy', ru: { name: 'Чишмы (Башкирия)', region: 'Респ. Башкортостан, Чишминский р-н', desc: 'РЦ Башкирии (пожар потушен, работает)' }, uk: { name: 'Чишми (Башкирія)', region: 'Респ. Башкортостан, Чишминський р-н', desc: 'РЦ Башкирії (пожежу ліквідовано, працює)' }, en: { name: 'Chishmy (Bashkortostan)', region: 'Republic of Bashkortostan, Chishminsky District', desc: 'Bashkortostan DC (fire extinguished, operating)' }, area: 80000, lat: 54.5947, lng: 55.3942, queryTerms: ['chishmy', 'чишм'], opStatus: 'restored' },
+        { id: 'wb_novosemeykino', ru: { name: 'Новосемейкино (Самара)', region: 'Самарская обл., Красноярский р-н', desc: 'РЦ Самарской области (в работе)' }, uk: { name: 'Новосімейкіно (Самара)', region: 'Самарська обл., Красноярський р-н', desc: 'РЦ Самарської обл. (в роботі)' }, en: { name: 'Novosemeykino (Samara)', region: 'Samara Oblast, Krasnoyarsky District', desc: 'Samara region DC (operational)' }, area: 75000, lat: 53.3644, lng: 50.3472, queryTerms: ['novosemeykino', 'новосемейкино'], opStatus: 'restored' },
+        { id: 'wb_volgograd', ru: { name: 'Волгоград', region: 'Волгоградская обл., Дзержинский р-н', desc: 'РЦ Нижнего Поволжья (повреждения устранены)' }, uk: { name: 'Волгоград', region: 'Волгоградська обл., Дзержинський р-н', desc: 'РЦ Нижнього Поволжжя (пошкодження усунуто)' }, en: { name: 'Volgograd', region: 'Volgograd Oblast, Dzerzhinsky District', desc: 'Lower Volga DC (damage repaired)' }, area: 70000, lat: 48.749, lng: 44.4645, queryTerms: ['volgograd', 'волгоград'], opStatus: 'restored' },
+        { id: 'wb_krasny_bor', ru: { name: 'Красный Бор (Ленобл.)', region: 'Ленинградская обл., Тосненский р-н', desc: 'РЦ Ленинградской обл.' }, uk: { name: 'Красний Бор (Ленобл.)', region: 'Ленінградська обл., Тосненський р-н', desc: 'РЦ Ленінградської обл.' }, en: { name: 'Krasny Bor (Leningrad Oblast)', region: 'Leningrad Oblast, Tosnensky District', desc: 'Leningrad Oblast DC' }, area: 70000, lat: 59.6975, lng: 30.8711, queryTerms: ['krasny bor', 'красный бор'], opStatus: 'halted' },
+        { id: 'wb_chekhov', ru: { name: 'Чехов / Новосёлки', region: 'Москов. обл., Чеховский р-н', desc: 'Дополнительный РЦ Подмосковья' }, uk: { name: 'Чехов / Новосьолки', region: 'Моск. обл., Чехівський р-н', desc: 'Додатковий РЦ Підмосков\'я' }, en: { name: 'Chekhov / Novoselki', region: 'Moscow Oblast, Chekhov District', desc: 'Moscow Oblast DC' }, area: 65000, lat: 55.1053, lng: 37.5147, queryTerms: ['novoselki', 'новоселки', 'чехов'], opStatus: 'halted' },
+        { id: 'wb_ryazan', ru: { name: 'Рязань (Тюшево)', region: 'Рязанская обл., Рязанский р-н', desc: 'РЦ Рязанской обл. (работает)' }, uk: { name: 'Рязань (Тюшево)', region: 'Рязанська обл., Рязанський р-н', desc: 'РЦ Рязанської обл. (працює)' }, en: { name: 'Ryazan (Tyushevo)', region: 'Ryazan Oblast, Ryazan District', desc: 'Ryazan DC (operating)' }, area: 65000, lat: 54.675, lng: 39.587, queryTerms: ['tyushevo', 'тюшево', 'рязанский'], opStatus: 'restored' },
+        { id: 'wb_domodedovo', ru: { name: 'Домодедово / Белые Столбы', region: 'Московская обл., Домодедово', desc: 'РЦ Подмосковья' }, uk: { name: 'Домодєдово / Білі Стовпи', region: 'Московська обл., Домодєдово', desc: 'РЦ Підмосков\'я' }, en: { name: 'Domodedovo / Belye Stolby', region: 'Moscow Oblast, Domodedovo', desc: 'Moscow Oblast distribution center' }, area: 60000, lat: 55.330, lng: 37.820, queryTerms: ['белые столбы', 'домодедово'], opStatus: 'intact' },
+        { id: 'wb_nevinnomyssk', ru: { name: 'Невинномысск', region: 'Ставропольский кр., Невинномысск', desc: 'РЦ Северного Кавказа (работа восстановлена)' }, uk: { name: 'Невинномиськ', region: 'Ставропольський кр., Невинномиськ', desc: 'РЦ Північного Кавказу (роботу відновлено)' }, en: { name: 'Nevinnomyssk', region: 'Stavropol Krai, Nevinnomyssk', desc: 'North Caucasus DC (operations resumed)' }, area: 60000, lat: 44.642, lng: 41.925, queryTerms: ['nevinnomyssk', 'невинномысск'], opStatus: 'restored' },
+        { id: 'wb_sarapul', ru: { name: 'Сарапул (Удмуртия)', region: 'Удмуртская Респ., Сарапул', desc: 'РЦ Удмуртии (приёмка возобновлена)' }, uk: { name: 'Сарапул (Удмуртія)', region: 'Удмуртська Респ., Сарапул', desc: 'РЦ Удмуртії (прийом відновлено)' }, en: { name: 'Sarapul (Udmurtia)', region: 'Udmurt Republic, Sarapul', desc: 'Udmurtia DC (intake resumed)' }, area: 55000, lat: 56.4811, lng: 53.6918, queryTerms: ['sarapul', 'сарапул'], opStatus: 'restored' },
+        { id: 'wb_mastinovka', ru: { name: 'Мастиновка (Пенза)', region: 'Пензенская обл., Бессоновский р-н', desc: 'РЦ Пензенской обл.' }, uk: { name: 'Мастиновка (Пенза)', region: 'Пензенська обл., Бессонівський р-н', desc: 'РЦ Пензенської обл.' }, en: { name: 'Mastinovka (Penza Oblast)', region: 'Penza Oblast, Bessonovsky District', desc: 'Penza DC' }, area: 55000, lat: 53.2887, lng: 44.8342, queryTerms: ['mastinovka', 'мастиновка'], opStatus: 'halted' },
+        { id: 'wb_perm', ru: { name: 'Пермь (Замулянка)', region: 'Пермский кр., Пермский р-н', desc: 'РЦ Прикамья (в работе)' }, uk: { name: 'Перм (Замулянка)', region: 'Пермський кр., Пермський р-н', desc: 'РЦ Прикам\'я (в роботі)' }, en: { name: 'Perm (Zamulyanka)', region: 'Perm Krai, Perm District', desc: 'Perm Krai DC (operating)' }, area: 55000, lat: 57.9094, lng: 56.27, queryTerms: ['zamulyanka', 'замулянка'], opStatus: 'restored' },
+        { id: 'wb_simferopol', ru: { name: 'Симферополь (Крым)', region: 'Крым, Симферополь', desc: 'Сортировочный центр Крыма (поврежден)' }, uk: { name: 'Сімферополь (Крим)', region: 'Крим, Сімферополь', desc: 'Сортувальний центр Криму (пошкоджений)' }, en: { name: 'Simferopol (Crimea)', region: 'Crimea, Simferopol', desc: 'Crimea sorting center (damaged)' }, area: 50000, lat: 44.9521, lng: 34.1024, queryTerms: ['simferopol', 'симферополь'], opStatus: 'halted' },
+        { id: 'wb_barnaul', ru: { name: 'Барнаул', region: 'Алтайский край, Барнаул', desc: 'РЦ Алтайского края' }, uk: { name: 'Барнаул', region: 'Алтайський край, Барнаул', desc: 'РЦ Алтайського краю' }, en: { name: 'Barnaul', region: 'Altai Krai, Barnaul', desc: 'Altai Krai distribution center' }, area: 50000, lat: 53.350, lng: 83.760, queryTerms: ['барнаул', 'barnaul'], opStatus: 'intact' },
+        { id: 'wb_tyumen', ru: { name: 'Тюмень', region: 'Тюменская обл., Тюмень', desc: 'РЦ Тюменской области' }, uk: { name: 'Тюмень', region: 'Тюменська обл., Тюмень', desc: 'РЦ Тюменської області' }, en: { name: 'Tyumen', region: 'Tyumen Oblast, Tyumen', desc: 'Tyumen distribution center' }, area: 45000, lat: 57.150, lng: 65.530, queryTerms: ['тюмень', 'tyumen'], opStatus: 'intact' },
+        { id: 'wb_saratov', ru: { name: 'Саратов', region: 'Саратовская обл., Саратов', desc: 'РЦ Саратовской области' }, uk: { name: 'Саратов', region: 'Саратовська обл., Саратов', desc: 'РЦ Саратовської області' }, en: { name: 'Saratov', region: 'Saratov Oblast, Saratov', desc: 'Saratov distribution center' }, area: 45000, lat: 51.530, lng: 46.000, queryTerms: ['саратов', 'saratov'], opStatus: 'intact' }
     ];
 
     // Warehouse SVG icon
@@ -1547,22 +1589,23 @@ document.addEventListener('DOMContentLoaded', () => {
     function computeWarehousesStatus() {
         return warehousesList.map(wh => {
             const matches = strikeData.filter(s => {
-                if (!s.en || !s.en.target) return false;
-                const t = s.en.target.toLowerCase();
-                if (!t.includes('wildberries')) return false;
-                return wh.queryTerms.some(q => t.includes(q.toLowerCase()));
+                const fullText = [s.ru?.target, s.ru?.region, s.en?.target, s.en?.region, s.uk?.target, s.uk?.region].filter(Boolean).join(' ').toLowerCase();
+                if (!fullText.includes('wildberries') && !fullText.includes('вайлдбер')) return false;
+                return wh.queryTerms.some(q => fullText.includes(q.toLowerCase()));
             });
             const struck = matches.length > 0;
-            // Sort strikes by date to get earliest
             const sorted = matches.slice().sort((a, b) => {
-                const parseDate = d => { const [dd,mm,yy] = d.split('.'); return new Date(+yy, +mm-1, +dd); };
+                const parseDate = d => { const [dd,mm,yy] = (d||'').split('.'); return new Date(+yy, +mm-1, +dd); };
                 return parseDate(a.date) - parseDate(b.date);
             });
+            const status = struck ? (wh.opStatus || 'halted') : 'intact';
             return {
                 ...wh,
                 struck,
+                status,
                 strikeCount: matches.length,
                 firstStrike: struck ? sorted[0].date : null,
+                latestDate: struck ? sorted[sorted.length - 1].date : null,
                 strikeIds: matches.map(s => s.id),
                 firstStrikeId: struck ? sorted[0].id : null
             };
@@ -1575,9 +1618,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const warehouses = computeWarehousesStatus();
         const totalCount = warehouses.length;
+        const haltedList = warehouses.filter(w => w.status === 'halted');
+        const restoredList = warehouses.filter(w => w.status === 'restored');
+        const intactList = warehouses.filter(w => w.status === 'intact');
         const struckList = warehouses.filter(w => w.struck);
         const struckCount = struckList.length;
-        const intactCount = totalCount - struckCount;
+
         const totalArea = warehouses.reduce((acc, w) => acc + w.area, 0);
         const struckArea = struckList.reduce((acc, w) => acc + w.area, 0);
         const struckAreaPct = totalArea > 0 ? Math.round(struckArea / totalArea * 100) : 0;
@@ -1586,13 +1632,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update stats
         const el = id => document.getElementById(id);
         if (el('wbTotalCountText')) el('wbTotalCountText').textContent = totalCount;
-        if (el('wbStruckCountText')) el('wbStruckCountText').textContent = struckCount;
-        if (el('wbStruckPercentText')) el('wbStruckPercentText').textContent = totalCount > 0 ? `/ ${Math.round(struckCount/totalCount*100)}%` : '';
-        if (el('wbIntactCountText')) el('wbIntactCountText').textContent = intactCount;
-        if (el('wbIntactPercentText')) el('wbIntactPercentText').textContent = totalCount > 0 ? `/ ${Math.round(intactCount/totalCount*100)}%` : '';
-        if (el('wbStruckAreaText')) el('wbStruckAreaText').textContent = struckAreaK;
-        if (el('wbStruckAreaPercentText')) el('wbStruckAreaPercentText').textContent = ` (${struckAreaPct}%)`;
-        if (el('wbDamageRatioText')) el('wbDamageRatioText').textContent = `${struckAreaPct}% ${currentLang === 'ru' ? 'под ударом' : currentLang === 'uk' ? 'під ударом' : 'damaged'}`;
+        if (el('wbHaltedCountText')) el('wbHaltedCountText').textContent = haltedList.length;
+        if (el('wbHaltedPercentText')) el('wbHaltedPercentText').textContent = totalCount > 0 ? `(${Math.round(haltedList.length/totalCount*100)}%)` : '';
+        if (el('wbRestoredCountText')) el('wbRestoredCountText').textContent = restoredList.length;
+        if (el('wbRestoredPercentText')) el('wbRestoredPercentText').textContent = totalCount > 0 ? `(${Math.round(restoredList.length/totalCount*100)}%)` : '';
+        if (el('wbIntactCountText')) el('wbIntactCountText').textContent = intactList.length;
+        if (el('wbIntactPercentText')) el('wbIntactPercentText').textContent = totalCount > 0 ? `(${Math.round(intactList.length/totalCount*100)}%)` : '';
+
+        if (el('wbDamageRatioText')) {
+            const ratioSuffix = currentLang === 'en' ? 'under strike' : (currentLang === 'uk' ? 'під ударом' : 'под ударом');
+            el('wbDamageRatioText').textContent = `${struckAreaK} ${i18n.wb_area_unit[currentLang]} (${struckAreaPct}%) ${ratioSuffix}`;
+        }
         if (el('wbAreaProgressBar')) {
             setTimeout(() => { el('wbAreaProgressBar').style.width = struckAreaPct + '%'; }, 80);
         }
@@ -1605,24 +1655,32 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.innerHTML = '';
         warehouses.forEach(wh => {
             const areaK = (wh.area / 1000).toFixed(0);
+            const isHalted = wh.status === 'halted';
+            const isRestored = wh.status === 'restored';
+            const isIntact = wh.status === 'intact';
+
             const cardEl = document.createElement('div');
             cardEl.className = `wb-card rounded-xl border cursor-pointer select-none flex flex-col items-center text-center p-2 gap-1 relative
-                ${wh.struck
+                ${isHalted
                     ? 'bg-red-500/10 border-red-500/40 hover:border-red-400 hover:shadow-[0_0_16px_rgba(239,68,68,0.25)]'
+                    : isRestored
+                    ? 'bg-amber-500/10 border-amber-500/40 hover:border-amber-400 hover:shadow-[0_0_16px_rgba(245,158,11,0.25)]'
                     : 'theme-bg-item border-emerald-500/25 hover:border-emerald-400/60 hover:shadow-[0_0_16px_rgba(52,211,153,0.15)]'}`;
 
             const icon = `<div class="relative w-10 h-10 md:w-12 md:h-12 shrink-0 mx-auto">
                 ${wbWarehouseSvg}
-                ${wh.struck ? `<div class="fire-overlay-icon absolute inset-0 flex items-center justify-center">${wbFlameSvg}</div>` : ''}
+                ${isHalted ? `<div class="fire-overlay-icon absolute inset-0 flex items-center justify-center">${wbFlameSvg}</div>` : ''}
             </div>`;
 
-            const statusBadge = wh.struck
-                ? `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 leading-none whitespace-nowrap">${i18n.wb_status_struck[currentLang]}</span>`
-                : `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/25 leading-none whitespace-nowrap">${i18n.wb_status_intact[currentLang]}</span>`;
+            const statusBadge = isHalted
+                ? `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 leading-none whitespace-nowrap">🔥 ${i18n.wb_status_halted[currentLang]}</span>`
+                : isRestored
+                ? `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 leading-none whitespace-nowrap">🛠️ ${i18n.wb_status_restored[currentLang]}</span>`
+                : `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/25 leading-none whitespace-nowrap">🛡️ ${i18n.wb_legend_intact[currentLang]}</span>`;
 
             const mapBtn = wh.struck
-                ? `<button class="wb-open-map-btn mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg bg-purple-500/15 hover:bg-purple-500/35 text-purple-400 border border-purple-500/30 font-semibold transition cursor-pointer" data-whid="${wh.id}">${i18n.wb_btn_on_map[currentLang]}</button>`
-                : '';
+                ? `<button class="wb-open-map-btn mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg ${isHalted ? 'bg-red-500/15 hover:bg-red-500/35 text-red-400 border border-red-500/30' : 'bg-amber-500/15 hover:bg-amber-500/35 text-amber-400 border border-amber-500/30'} font-semibold transition cursor-pointer" data-whid="${wh.id}">${i18n.wb_btn_on_map[currentLang]}</button>`
+                : `<div class="mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 text-emerald-500/80 font-medium">🛡️ ${i18n.wb_legend_intact[currentLang]}</div>`;
 
             cardEl.innerHTML = `
                 ${icon}
@@ -1630,7 +1688,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="text-[11px] md:text-xs font-bold theme-text-main leading-tight line-clamp-2">${wh[currentLang].name}</span>
                     <span class="text-[9px] md:text-[10px] theme-text-muted leading-tight line-clamp-2">${wh[currentLang].region}</span>
                 </div>
-                <div class="text-[10px] md:text-[11px] theme-text-muted font-medium">${areaK} ${currentLang === 'ru' || currentLang === 'uk' ? 'тыс. м²' : 'K sqm'}</div>
+                <div class="text-[10px] md:text-[11px] font-medium ${isHalted ? 'text-red-400' : isRestored ? 'text-amber-400' : 'theme-text-muted'}">${areaK} ${currentLang === 'ru' || currentLang === 'uk' ? 'тыс. м²' : 'K sqm'}</div>
                 ${statusBadge}
                 ${mapBtn}
             `;
@@ -1688,15 +1746,29 @@ document.addEventListener('DOMContentLoaded', () => {
         const areaK = (wh.area / 1000).toFixed(0);
         let html = '';
         if (wh.struck) {
+            const statusLabel = wh.status === 'halted' ? i18n.wb_status_halted[currentLang] : i18n.wb_status_restored[currentLang];
+            const statusColor = wh.status === 'halted' ? 'text-red-400' : 'text-amber-400';
+            const statusIcon = wh.status === 'halted' ? '🔥' : '🛠️';
             html = `<div class="flex flex-col gap-1">
                 <div class="font-bold theme-text-main text-[13px] flex items-center gap-1.5">
-                    <span>🔥</span><span>${wh[currentLang].name}</span>
+                    <span>${statusIcon}</span><span>${wh[currentLang].name}</span>
                 </div>
                 <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
                 <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.wb_area_unit[currentLang]}</div>
                 <hr class="border-slate-600/50 my-0.5">
-                <div class="text-red-400 text-[11px] flex items-center gap-1"><span>📅</span><span>${i18n.wb_tooltip_strike_date[currentLang]}</span> <span class="font-bold">${wh.firstStrike}</span></div>
-                <div class="text-red-400 text-[11px] flex items-center gap-1"><span>💥</span><span>${i18n.wb_tooltip_strike_count[currentLang]}</span> <span class="font-bold">${wh.strikeCount}</span></div>
+                <div class="flex justify-between gap-3 items-center text-[11px]">
+                    <span class="theme-text-muted">Статус:</span>
+                    <span class="font-bold ${statusColor}">${statusLabel}</span>
+                </div>
+                <div class="${statusColor} text-[11px] flex justify-between items-center gap-1">
+                    <span class="theme-text-muted">${i18n.wb_tooltip_strike_date[currentLang]}</span>
+                    <span class="font-bold">${wh.firstStrike}</span>
+                </div>
+                ${wh.strikeCount > 1 ? `
+                <div class="${statusColor} text-[11px] flex justify-between items-center gap-1">
+                    <span class="theme-text-muted">${i18n.wb_tooltip_strike_count[currentLang]}</span>
+                    <span class="font-bold">${wh.strikeCount}</span>
+                </div>` : ''}
                 <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
             </div>`;
         } else {
@@ -1706,7 +1778,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
                 <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.wb_area_unit[currentLang]}</div>
-                <div class="text-emerald-400 text-[11px] font-semibold">${i18n.wb_tooltip_not_struck[currentLang]}</div>
+                <hr class="border-slate-600/50 my-0.5">
+                <div class="text-emerald-400 text-[11px] font-semibold flex items-center gap-1"><span>🛡️</span><span>${i18n.wb_tooltip_not_struck[currentLang]}</span></div>
                 <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
             </div>`;
         }
