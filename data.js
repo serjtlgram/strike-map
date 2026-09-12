@@ -28,6 +28,14 @@ const strikeData = [
       "details": "Overnight on September 11, 2026, Ukrainian long-range strike drones hit the Saratov Oil Refinery in southwestern Russia. The successful joint mission was carried out by the 1st Separate Center of the Unmanned Systems Forces alongside the SBU and military intelligence. Owned by Rosneft, the facility processes roughly seven million tons of crude annually, supplying gasoline and diesel to Russian invasion forces. Fresh satellite imagery confirmed direct strikes on the main ELOU-AVT-6 crude distillation unit, showing fire damage and extinguishing foam. The impact sparked a massive fire across the refinery sector, creating heavy black plumes visible across the city until morning. Local governor Roman Busargin confirmed infrastructure damage following air defense sirens, while Russia's defense ministry reported drone interceptions over the oblast.",
       "source": "General Staff of AFU, SBS of AFU, SBU, DIU, ASTRA, Russian Media"
     },
+    "images": [
+      "video/saratov_refinery_2026-09-11_1.mp4",
+      "video/saratov_refinery_2026-09-11_2.mp4",
+      "images/saratov_refinery_1.jpg",
+      "images/saratov_refinery_2.jpg",
+      "images/saratov_refinery_3.jpg",
+      "images/saratov_refinery_4.jpg"
+    ],
     "id": 451
   },
   {
@@ -59,6 +67,14 @@ const strikeData = [
       "details": "Overnight on September 11, 2026, Ukrainian FP-1 strike drones destroyed the major Ozon distribution hub in the suburbs of Saratov. Ukrainian drone manufacturer Fire Point publicly verified the successful deep strike against the newly built fulfillment center on Moskovskoye Highway. Spanning nearly 100,000 square meters, the warehouse opened two years ago and held more than 30 million consumer goods and logistics shipments. Direct drone hits triggered an inferno that gutted almost the entire facility, as confirmed by afternoon commercial satellite imagery. Ozon immediately halted all pickup, sorting, and delivery operations across Saratov Oblast, with damages estimated in the hundreds of millions of dollars. Regional governor Roman Busargin acknowledged the destruction of the warehouse and ordered tax relief packages for the affected logistics hub.",
       "source": "Fire Point, Radio Free Europe/Radio Liberty, ASTRA, Russian Media, Regional Authorities"
     },
+    "images": [
+      "video/ozon_saratov_2026-09-11_1.mp4",
+      "video/ozon_saratov_2026-09-11_2.mp4",
+      "images/ozon_saratov_1.jpg",
+      "images/ozon_saratov_2.jpg",
+      "images/ozon_saratov_3.jpg",
+      "images/ozon_saratov_4.jpg"
+    ],
     "id": 452
   },
   {
@@ -90,6 +106,14 @@ const strikeData = [
       "details": "On the morning of September 11, 2026, Ukrainian An-196 Liutyi strike drones attacked the Azot chemical production complex in Berezniki, Perm Krai. The drones traveled more than 1,600 kilometers deep into the Russian rear, evading regional radar networks and mobile air defenses. Spanning 140 hectares, Azot is Russia's critical supplier of concentrated nitric acid and ammonium nitrate used to manufacture military explosives and gunpowder. Satellite and visual triangulation revealed an impact on the chemical water treatment workshop that feeds demineralized water to ammonia synthesis reform units. The destruction forced an emergency shutdown of the production cycle, disabling one of the two primary ammonia synthesizers now undergoing crane repairs. Governor Dmitry Makhonin acknowledged a mass swarm of 36 drones hitting industrial targets in northern Perm Krai while air raid sirens blared across town.",
       "source": "OSINT (CyberBoroshno, ASTRA), Exilenova+, Russian Media, Regional Governor"
     },
+    "images": [
+      "video/berezniki_azot_2026-09-11_1.mp4",
+      "video/berezniki_azot_2026-09-11_2.mp4",
+      "images/berezniki_azot_1.jpg",
+      "images/berezniki_azot_2.jpg",
+      "images/berezniki_azot_3.jpg",
+      "images/berezniki_azot_4.jpg"
+    ],
     "id": 453
   },
   {
@@ -121,6 +145,12 @@ const strikeData = [
       "details": "On the morning of September 11, 2026, long-range Ukrainian drones attacked the production facilities of Metafrax Chemicals in the city of Gubakha, Perm Krai. Metafrax became the second major industrial plant targeted during the coordinated deep-strike drone raid across the Urals, nearly 1,700 km from Ukraine. Strikes targeted the modern AKM chemical complex, which specializes in large-scale output of synthetic ammonia, urea, and melamine. The plant is Russia's foremost producer of methanol, urotropine, and pentaerythritol, foundational components used by the defense sector to synthesize RDX and PETN explosives. Multiple explosions rocked the chemical sector, sending plumes of smoke overhead and prompting emergency air traffic shutdowns at Perm's Bolshoye Savino Airport. Regional governor Dmitry Makhonin officially verified strikes against two northern industrial plants and reported emergency teams working on-site.",
       "source": "Exilenova+, ASTRA, Russian Media, Governor of Perm Krai"
     },
+    "images": [
+      "video/gubakha_metafrax_2026-09-11_1.mp4",
+      "video/gubakha_metafrax_2026-09-11_2.mp4",
+      "images/gubakha_metafrax_1.jpg",
+      "images/gubakha_metafrax_2.jpg"
+    ],
     "id": 454
   },
   {
@@ -152,6 +182,14 @@ const strikeData = [
       "details": "Overnight on September 11, 2026, Ukrainian defense forces struck the Volgogradpromproekt chemical plant in Volgograd with FP-5 Flamingo cruise missiles. Ukrainian defense contractor Fire Point publicly confirmed that its high-precision cruise missiles successfully penetrated defenses and hit the facility. The company is sanctioned by the United States for assisting the Russian military-industrial complex, manufacturing organophosphorus compounds and ferrocene-based combustion catalysts. The missile impact ignited a sizable blaze across the southern industrial district, producing heavy damage to technical structures and workshop buildings. The supersonic shockwave shattered windows in nearby residential apartments along Geroyev Maloy Zemli Street, wounding two civilians who required hospitalization. Regional governor Andrey Bocharov acknowledged the Ukrainian missile attack, confirming direct strikes and falling wreckage across the southern industrial facility.",
       "source": "Fire Point, Exilenova+, ASTRA, Regional Governor, Russian Media"
     },
+    "images": [
+      "video/volgogradpromproekt_2026-09-11_1.mp4",
+      "video/volgogradpromproekt_2026-09-11_2.mp4",
+      "images/volgogradpromproekt_1.jpg",
+      "images/volgogradpromproekt_2.jpg",
+      "images/volgogradpromproekt_3.jpg",
+      "images/volgogradpromproekt_4.jpg"
+    ],
     "id": 455
   },
   {
