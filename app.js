@@ -1088,7 +1088,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Icons
     const npzRefinerySvg = `
-        <svg class="w-8 h-8 text-slate-400 dark:text-slate-500 group-hover:text-slate-200 transition-colors" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="w-8 h-8 text-slate-500 dark:text-slate-400 group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="7" y="10" width="10" height="34" rx="2"/>
             <line x1="7" y1="18" x2="17" y2="18"/>
             <line x1="7" y1="26" x2="17" y2="26"/>
@@ -1220,17 +1220,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = `npz-card relative flex flex-col justify-between p-2.5 md:p-3 rounded-xl md:rounded-2xl border select-none group transition-all duration-200 cursor-pointer ${
                 isHalted 
-                    ? 'bg-red-500/10 border-red-500/35 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/20' 
+                    ? 'bg-red-500/10 border-red-500/40 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/20' 
                     : isRestored
-                    ? 'bg-amber-500/10 border-amber-500/35 hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20'
-                    : 'theme-bg-item border-slate-700/30 dark:border-slate-800/60 hover:border-emerald-500/50 hover:shadow-md'
+                    ? 'bg-amber-500/10 border-amber-500/40 hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/20'
+                    : 'theme-bg-item border-emerald-500/25 hover:border-emerald-400/60 hover:shadow-md'
             }`;
 
             const statusBadge = isHalted
-                ? `<span class="px-1.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider rounded bg-red-500/20 text-red-400 border border-red-500/30 flex items-center gap-1"><span class="animate-pulse">🔥</span> ${i18n.npz_status_halted[currentLang]}</span>`
+                ? `<span class="status-badge-halted px-1.5 py-0.5 text-[9px] md:text-[10px] font-bold tracking-wide rounded bg-red-500/15 dark:bg-red-500/20 text-red-700 dark:text-red-400 border border-red-500/35 dark:border-red-500/30 flex items-center gap-1"><span class="animate-pulse">🔥</span> ${i18n.npz_status_halted[currentLang]}</span>`
                 : isRestored
-                ? `<span class="px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center gap-1"><span>🛠️</span> ${i18n.npz_status_restored[currentLang]}</span>`
-                : `<span class="px-1.5 py-0.5 text-[10px] font-semibold tracking-wider rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">🛡️ ${i18n.npz_legend_intact[currentLang]}</span>`;
+                ? `<span class="status-badge-restored px-1.5 py-0.5 text-[9px] md:text-[10px] font-bold tracking-wide rounded bg-amber-500/20 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-600/35 dark:border-amber-500/30 flex items-center gap-1"><span>🛠️</span> ${i18n.npz_status_restored[currentLang]}</span>`
+                : `<span class="status-badge-intact px-1.5 py-0.5 text-[9px] md:text-[10px] font-bold tracking-wide rounded bg-emerald-500/15 dark:bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 border border-emerald-600/35 dark:border-emerald-500/25 flex items-center gap-1">🛡️ ${i18n.npz_legend_intact[currentLang]}</span>`;
 
             card.innerHTML = `
                 <!-- Top row: Status Badge & Company -->
@@ -1258,7 +1258,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${refRegion}
                     </div>
                     <div class="mt-1.5 pt-1 md:mt-2 md:pt-1.5 border-t theme-border flex items-baseline justify-center gap-1">
-                        <span class="text-xs md:text-sm font-black tracking-tight ${isHalted ? 'text-red-400' : isRestored ? 'text-amber-400' : 'theme-text-main'}">
+                        <span class="text-xs md:text-sm font-black tracking-tight ${isHalted ? 'text-red-700 dark:text-red-400' : isRestored ? 'text-amber-800 dark:text-amber-300' : 'theme-text-main'}">
                             ${ref.capacity.toFixed(1)}
                         </span>
                         <span class="text-[9px] md:text-[10px] font-medium theme-text-muted">
@@ -1268,13 +1268,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <!-- Action Button on Card -->
-                <div class="mt-1.5 pt-1 border-t ${ref.isHit ? (isHalted ? 'border-red-500/20' : 'border-amber-500/20') : 'theme-border'}">
+                <div class="mt-1.5 pt-1 border-t ${ref.isHit ? (isHalted ? 'border-red-500/25' : 'border-amber-500/25') : 'theme-border'}">
                     ${ref.isHit ? `
-                    <div class="py-1 px-1.5 rounded-lg ${isHalted ? 'bg-red-500/15 hover:bg-red-500/30 text-red-400 border border-red-500/30' : 'bg-amber-500/15 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30'} text-[10px] md:text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-sm">
+                    <div class="${isHalted ? 'status-btn-halted bg-red-500/15 hover:bg-red-500/30 text-red-700 dark:text-red-400 border border-red-500/35' : 'status-btn-restored bg-amber-500/20 hover:bg-amber-500/35 text-amber-900 dark:text-amber-300 border border-amber-600/35 dark:border-amber-500/30'} py-1 px-1.5 rounded-lg text-[10px] md:text-[11px] font-bold flex items-center justify-center gap-1 transition-all shadow-sm">
                         <span>${i18n.npz_btn_on_map[currentLang]}</span>
                     </div>
                     ` : `
-                    <div class="py-1 px-1.5 rounded-lg bg-emerald-500/10 text-emerald-500 dark:text-emerald-400 text-[10px] md:text-[11px] font-medium flex items-center justify-center gap-1">
+                    <div class="status-btn-intact py-1 px-1.5 rounded-lg bg-emerald-500/15 dark:bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 border border-emerald-600/25 dark:border-emerald-500/20 text-[10px] md:text-[11px] font-semibold flex items-center justify-center gap-1">
                         <span>🛡️ ${i18n.npz_legend_intact[currentLang]}</span>
                     </div>
                     `}
@@ -1318,7 +1318,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (ref.isHit) {
             const statusLabel = ref.status === 'halted' ? i18n.npz_status_halted[currentLang] : i18n.npz_status_restored[currentLang];
-            const statusColor = ref.status === 'halted' ? 'text-red-400' : 'text-amber-400';
+            const statusColor = ref.status === 'halted' ? 'text-red-700 dark:text-red-400' : 'text-amber-800 dark:text-amber-300';
             content += `
                 <div class="space-y-1.5 py-2 border-t theme-border mt-1">
                     <div class="flex justify-between gap-3 items-center">
@@ -1327,16 +1327,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_tooltip_strike_date[currentLang]}</span>
-                        <span class="font-extrabold text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded border border-red-500/20 text-[11px]">${ref.latestDate || '—'}</span>
+                        <span class="font-extrabold text-red-700 dark:text-red-400 bg-red-500/15 dark:bg-red-500/20 px-1.5 py-0.5 rounded border border-red-500/30 text-[11px]">${ref.latestDate || '—'}</span>
                     </div>
                     ${ref.strikeCount > 1 ? `
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_tooltip_strike_count[currentLang]}</span>
-                        <span class="font-bold text-amber-400 text-[11px]">${ref.strikeCount}</span>
+                        <span class="font-bold text-amber-800 dark:text-amber-300 text-[11px]">${ref.strikeCount}</span>
                     </div>` : ''}
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_capacity_total[currentLang]}:</span>
-                        <span class="font-bold text-amber-500 text-[11px]">${ref.capacity.toFixed(1)} ${i18n.npz_capacity_unit[currentLang]}</span>
+                        <span class="font-bold text-amber-800 dark:text-amber-300 text-[11px]">${ref.capacity.toFixed(1)} ${i18n.npz_capacity_unit[currentLang]}</span>
                     </div>
                 </div>
             `;
@@ -1345,7 +1345,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="space-y-1.5 py-2 border-t theme-border mt-1">
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">Статус:</span>
-                        <span class="font-semibold text-emerald-400 text-[11px]">${i18n.npz_status_intact[currentLang]}</span>
+                        <span class="font-bold text-emerald-800 dark:text-emerald-400 text-[11px]">${i18n.npz_status_intact[currentLang]}</span>
                     </div>
                     <div class="flex justify-between gap-3 items-center">
                         <span class="theme-text-muted text-[11px]">${i18n.npz_capacity_total[currentLang]}:</span>
@@ -1673,14 +1673,14 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>`;
 
             const statusBadge = isHalted
-                ? `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-red-500/20 text-red-400 border border-red-500/30 leading-none whitespace-nowrap">🔥 ${i18n.wb_status_halted[currentLang]}</span>`
+                ? `<span class="status-badge-halted inline-block px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-red-500/15 dark:bg-red-500/20 text-red-700 dark:text-red-400 border border-red-500/35 dark:border-red-500/30 leading-none whitespace-nowrap">🔥 ${i18n.wb_status_halted[currentLang]}</span>`
                 : isRestored
-                ? `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30 leading-none whitespace-nowrap">🛠️ ${i18n.wb_status_restored[currentLang]}</span>`
-                : `<span class="inline-block px-1 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/25 leading-none whitespace-nowrap">🛡️ ${i18n.wb_legend_intact[currentLang]}</span>`;
+                ? `<span class="status-badge-restored inline-block px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-amber-500/20 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-600/35 dark:border-amber-500/30 leading-none whitespace-nowrap">🛠️ ${i18n.wb_status_restored[currentLang]}</span>`
+                : `<span class="status-badge-intact inline-block px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-emerald-500/15 dark:bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 border border-emerald-600/35 dark:border-emerald-500/25 leading-none whitespace-nowrap">🛡️ ${i18n.wb_legend_intact[currentLang]}</span>`;
 
             const mapBtn = wh.struck
-                ? `<button class="wb-open-map-btn mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg ${isHalted ? 'bg-red-500/15 hover:bg-red-500/35 text-red-400 border border-red-500/30' : 'bg-amber-500/15 hover:bg-amber-500/35 text-amber-400 border border-amber-500/30'} font-semibold transition cursor-pointer" data-whid="${wh.id}">${i18n.wb_btn_on_map[currentLang]}</button>`
-                : `<div class="mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 text-emerald-500/80 font-medium">🛡️ ${i18n.wb_legend_intact[currentLang]}</div>`;
+                ? `<button class="wb-open-map-btn ${isHalted ? 'status-btn-halted bg-red-500/15 hover:bg-red-500/30 text-red-700 dark:text-red-400 border border-red-500/35' : 'status-btn-restored bg-amber-500/20 hover:bg-amber-500/35 text-amber-900 dark:text-amber-300 border border-amber-600/35 dark:border-amber-500/30'} mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg font-bold transition cursor-pointer" data-whid="${wh.id}">${i18n.wb_btn_on_map[currentLang]}</button>`
+                : `<div class="status-btn-intact mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg bg-emerald-500/15 dark:bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 border border-emerald-600/25 dark:border-emerald-500/20 font-semibold">🛡️ ${i18n.wb_legend_intact[currentLang]}</div>`;
 
             cardEl.innerHTML = `
                 ${icon}
@@ -1688,7 +1688,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="text-[11px] md:text-xs font-bold theme-text-main leading-tight line-clamp-2">${wh[currentLang].name}</span>
                     <span class="text-[9px] md:text-[10px] theme-text-muted leading-tight line-clamp-2">${wh[currentLang].region}</span>
                 </div>
-                <div class="text-[10px] md:text-[11px] font-medium ${isHalted ? 'text-red-400' : isRestored ? 'text-amber-400' : 'theme-text-muted'}">${areaK} ${currentLang === 'ru' || currentLang === 'uk' ? 'тыс. м²' : 'K sqm'}</div>
+                <div class="text-[10px] md:text-[11px] font-bold ${isHalted ? 'text-red-700 dark:text-red-400' : isRestored ? 'text-amber-800 dark:text-amber-300' : 'theme-text-muted'}">${areaK} ${currentLang === 'ru' || currentLang === 'uk' ? 'тыс. м²' : 'K sqm'}</div>
                 ${statusBadge}
                 ${mapBtn}
             `;
@@ -1716,27 +1716,33 @@ document.addEventListener('DOMContentLoaded', () => {
             if (mapBtn) {
                 mapBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
+                    hideWbTooltip();
                     openWarehouseOnMap(wh);
                 });
             }
 
             // Card click — open map for struck, or just highlight
-            card.addEventListener('click', () => {
-                if (wh.struck) openWarehouseOnMap(wh);
+            card.addEventListener('click', (e) => {
+                if (wh.struck) {
+                    hideWbTooltip();
+                    openWarehouseOnMap(wh);
+                } else {
+                    showToast(`${wh[currentLang].name}: ${i18n.wb_tooltip_not_struck[currentLang]}`);
+                }
             });
 
-            // Desktop tooltip
-            if (window.innerWidth >= 768) {
-                card.addEventListener('mouseenter', (e) => {
-                    if (wbTooltipHideTimer) { clearTimeout(wbTooltipHideTimer); wbTooltipHideTimer = null; }
-                    wbTooltipTarget = card;
-                    showWbTooltip(wh, e);
-                });
-                card.addEventListener('mousemove', (e) => updateWbTooltipPosition(e));
-                card.addEventListener('mouseleave', () => {
-                    wbTooltipHideTimer = setTimeout(hideWbTooltip, 120);
-                });
-            }
+            // Hover tooltip for desktop
+            card.addEventListener('mouseenter', (e) => {
+                clearTimeout(wbTooltipHideTimer);
+                wbTooltipTarget = card;
+                showWbTooltip(wh, e);
+            });
+            card.addEventListener('mousemove', (e) => {
+                if (wbTooltipTarget === card) updateWbTooltipPosition(e);
+            });
+            card.addEventListener('mouseleave', () => {
+                wbTooltipHideTimer = setTimeout(hideWbTooltip, 80);
+            });
         });
     }
 
@@ -1747,7 +1753,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let html = '';
         if (wh.struck) {
             const statusLabel = wh.status === 'halted' ? i18n.wb_status_halted[currentLang] : i18n.wb_status_restored[currentLang];
-            const statusColor = wh.status === 'halted' ? 'text-red-400' : 'text-amber-400';
+            const statusColor = wh.status === 'halted' ? 'text-red-700 dark:text-red-400' : 'text-amber-800 dark:text-amber-300';
             const statusIcon = wh.status === 'halted' ? '🔥' : '🛠️';
             html = `<div class="flex flex-col gap-1">
                 <div class="font-bold theme-text-main text-[13px] flex items-center gap-1.5">
@@ -1779,7 +1785,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
                 <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.wb_area_unit[currentLang]}</div>
                 <hr class="border-slate-600/50 my-0.5">
-                <div class="text-emerald-400 text-[11px] font-semibold flex items-center gap-1"><span>🛡️</span><span>${i18n.wb_tooltip_not_struck[currentLang]}</span></div>
+                <div class="text-emerald-800 dark:text-emerald-400 text-[11px] font-bold flex items-center gap-1"><span>🛡️</span><span>${i18n.wb_tooltip_not_struck[currentLang]}</span></div>
                 <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
             </div>`;
         }

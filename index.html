@@ -89,6 +89,24 @@
             --leaflet-popup-border: rgba(255, 255, 255, 0.15);
             --filter-bg: rgba(51, 65, 85, 0.5);
             --filter-border: rgba(71, 85, 105, 0.5);
+
+            --status-halted-text: #f87171;
+            --status-halted-bg: rgba(239, 68, 68, 0.15);
+            --status-halted-border: rgba(239, 68, 68, 0.35);
+            --status-halted-btn-bg: rgba(239, 68, 68, 0.18);
+            --status-halted-btn-hover: rgba(239, 68, 68, 0.32);
+
+            --status-restored-text: #fcd34d;
+            --status-restored-bg: rgba(245, 158, 11, 0.15);
+            --status-restored-border: rgba(245, 158, 11, 0.35);
+            --status-restored-btn-bg: rgba(245, 158, 11, 0.18);
+            --status-restored-btn-hover: rgba(245, 158, 11, 0.32);
+
+            --status-intact-text: #34d399;
+            --status-intact-bg: rgba(16, 185, 129, 0.15);
+            --status-intact-border: rgba(16, 185, 129, 0.35);
+            --status-intact-btn-bg: rgba(16, 185, 129, 0.18);
+            --status-intact-btn-hover: rgba(16, 185, 129, 0.32);
         }
 
         [data-theme="light"] {
@@ -104,6 +122,24 @@
             --leaflet-popup-border: rgba(0, 0, 0, 0.1);
             --filter-bg: rgba(241, 245, 249, 0.8);
             --filter-border: rgba(203, 213, 225, 0.8);
+
+            --status-halted-text: #b91c1c;
+            --status-halted-bg: rgba(239, 68, 68, 0.12);
+            --status-halted-border: rgba(220, 38, 38, 0.38);
+            --status-halted-btn-bg: rgba(239, 68, 68, 0.15);
+            --status-halted-btn-hover: rgba(239, 68, 68, 0.28);
+
+            --status-restored-text: #854d0e;
+            --status-restored-bg: rgba(245, 158, 11, 0.15);
+            --status-restored-border: rgba(217, 119, 6, 0.40);
+            --status-restored-btn-bg: rgba(245, 158, 11, 0.18);
+            --status-restored-btn-hover: rgba(245, 158, 11, 0.30);
+
+            --status-intact-text: #065f46;
+            --status-intact-bg: rgba(16, 185, 129, 0.12);
+            --status-intact-border: rgba(5, 150, 105, 0.38);
+            --status-intact-btn-bg: rgba(16, 185, 129, 0.16);
+            --status-intact-btn-hover: rgba(16, 185, 129, 0.28);
         }
 
         [data-theme="beige"] {
@@ -119,6 +155,24 @@
             --leaflet-popup-border: rgba(139, 90, 43, 0.3);
             --filter-bg: rgba(215, 204, 184, 0.7);
             --filter-border: rgba(188, 170, 164, 0.8);
+
+            --status-halted-text: #991b1b;
+            --status-halted-bg: rgba(220, 38, 38, 0.14);
+            --status-halted-border: rgba(185, 28, 28, 0.40);
+            --status-halted-btn-bg: rgba(220, 38, 38, 0.18);
+            --status-halted-btn-hover: rgba(220, 38, 38, 0.30);
+
+            --status-restored-text: #78350f;
+            --status-restored-bg: rgba(217, 119, 6, 0.18);
+            --status-restored-border: rgba(180, 83, 9, 0.45);
+            --status-restored-btn-bg: rgba(217, 119, 6, 0.22);
+            --status-restored-btn-hover: rgba(217, 119, 6, 0.34);
+
+            --status-intact-text: #064e3b;
+            --status-intact-bg: rgba(5, 150, 105, 0.14);
+            --status-intact-border: rgba(4, 120, 87, 0.40);
+            --status-intact-btn-bg: rgba(5, 150, 105, 0.18);
+            --status-intact-btn-hover: rgba(5, 150, 105, 0.30);
         }
 
         body, html {
@@ -239,6 +293,81 @@
         .theme-active-item { background-color: var(--bg-item-hover) !important; box-shadow: inset 0 0 0 1px var(--border-color); }
         .theme-filter-bg { background-color: var(--filter-bg); border-color: var(--filter-border); color: var(--text-main); }
         .theme-filter-bg:hover { background-color: var(--bg-item-hover); }
+
+        /* Semantic status utility classes for cards & drawers */
+        .status-text-halted { color: var(--status-halted-text) !important; }
+        .status-text-restored { color: var(--status-restored-text) !important; }
+        .status-text-intact { color: var(--status-intact-text) !important; }
+
+        .status-badge-halted {
+            background-color: var(--status-halted-bg) !important;
+            border-color: var(--status-halted-border) !important;
+            color: var(--status-halted-text) !important;
+        }
+        .status-badge-restored {
+            background-color: var(--status-restored-bg) !important;
+            border-color: var(--status-restored-border) !important;
+            color: var(--status-restored-text) !important;
+        }
+        .status-badge-intact {
+            background-color: var(--status-intact-bg) !important;
+            border-color: var(--status-intact-border) !important;
+            color: var(--status-intact-text) !important;
+        }
+
+        .status-btn-halted {
+            background-color: var(--status-halted-btn-bg) !important;
+            border-color: var(--status-halted-border) !important;
+            color: var(--status-halted-text) !important;
+        }
+        .status-btn-halted:hover {
+            background-color: var(--status-halted-btn-hover) !important;
+        }
+
+        .status-btn-restored {
+            background-color: var(--status-restored-btn-bg) !important;
+            border-color: var(--status-restored-border) !important;
+            color: var(--status-restored-text) !important;
+        }
+        .status-btn-restored:hover {
+            background-color: var(--status-restored-btn-hover) !important;
+        }
+
+        .status-btn-intact {
+            background-color: var(--status-intact-btn-bg) !important;
+            border-color: var(--status-intact-border) !important;
+            color: var(--status-intact-text) !important;
+        }
+
+        /* High contrast bookmark tab text & badges in light and beige themes */
+        [data-theme="light"] .npz-tab-text,
+        [data-theme="beige"] .npz-tab-text {
+            color: #c2410c !important;
+        }
+        [data-theme="light"] .npz-tab-badge,
+        [data-theme="beige"] .npz-tab-badge {
+            color: #c2410c !important;
+            background: rgba(234, 88, 12, 0.15) !important;
+            border-color: rgba(234, 88, 12, 0.4) !important;
+        }
+        [data-theme="light"] .wb-tab-text,
+        [data-theme="beige"] .wb-tab-text {
+            color: #7e22ce !important;
+        }
+        [data-theme="light"] .wb-tab-badge,
+        [data-theme="beige"] .wb-tab-badge {
+            color: #7e22ce !important;
+            background: rgba(126, 34, 206, 0.15) !important;
+            border-color: rgba(126, 34, 206, 0.4) !important;
+        }
+
+        /* Enhanced card styling for light and beige themes */
+        [data-theme="light"] .npz-card,
+        [data-theme="beige"] .npz-card,
+        [data-theme="light"] .wb-card,
+        [data-theme="beige"] .wb-card {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+        }
 
         /* Custom Lang Selector */
         .lang-active {
@@ -692,8 +821,8 @@
                 <div class="flex items-center justify-between gap-2 md:gap-4">
                     <div class="flex items-center gap-2">
                         <span class="text-lg md:text-2xl">🔥</span>
-                        <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 tracking-tight" data-i18n="npz_title">Крупнейшие НПЗ России</h2>
-                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-amber-500/20 text-amber-500 border border-amber-500/30 whitespace-nowrap">35 заводов</span>
+                        <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r dark:from-amber-400 dark:via-orange-500 dark:to-red-500 from-amber-700 via-orange-600 to-red-700 tracking-tight" data-i18n="npz_title">Крупнейшие НПЗ России</h2>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-amber-500/15 text-amber-800 dark:text-amber-400 border border-amber-600/30 dark:border-amber-500/30 whitespace-nowrap">35 заводов</span>
                     </div>
 
                     <!-- Close Button -->
@@ -718,36 +847,36 @@
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-red-400 font-medium flex items-center gap-1">
+                        <span class="text-[10px] md:text-[11px] text-red-700 dark:text-red-400 font-bold flex items-center gap-1">
                             <span>🔥</span>
                             <span class="md:hidden" data-i18n="npz_halted_count_short">Остановлено</span>
                             <span class="hidden md:inline" data-i18n="npz_halted_count">Остановлено / авария</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="npzHaltedCountText" class="text-sm md:text-xl font-extrabold text-red-400">15</span>
-                            <span id="npzHaltedPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold"></span>
+                            <span id="npzHaltedCountText" class="text-sm md:text-xl font-extrabold text-red-700 dark:text-red-400">15</span>
+                            <span id="npzHaltedPercentText" class="text-[10px] md:text-[11px] text-red-700/80 dark:text-red-400 font-bold"></span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-amber-400 font-medium flex items-center gap-1">
+                        <span class="text-[10px] md:text-[11px] text-amber-800 dark:text-amber-400 font-bold flex items-center gap-1">
                             <span>🛠️</span>
                             <span class="md:hidden" data-i18n="npz_restored_count_short">В работе</span>
                             <span class="hidden md:inline" data-i18n="npz_restored_count">Восстановлено / работает</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="npzRestoredCountText" class="text-sm md:text-xl font-extrabold text-amber-400">12</span>
-                            <span id="npzRestoredPercentText" class="text-[10px] md:text-[11px] text-amber-400 font-bold"></span>
+                            <span id="npzRestoredCountText" class="text-sm md:text-xl font-extrabold text-amber-800 dark:text-amber-400">12</span>
+                            <span id="npzRestoredPercentText" class="text-[10px] md:text-[11px] text-amber-800/80 dark:text-amber-400 font-bold"></span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-emerald-400 font-medium flex items-center gap-1">
+                        <span class="text-[10px] md:text-[11px] text-emerald-800 dark:text-emerald-400 font-bold flex items-center gap-1">
                             <span>🛡️</span>
                             <span class="md:hidden" data-i18n="npz_intact_count_short">В строю</span>
                             <span class="hidden md:inline" data-i18n="npz_intact_count">В строю / без ударов</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="npzIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">8</span>
-                            <span id="npzIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold"></span>
+                            <span id="npzIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-800 dark:text-emerald-400">8</span>
+                            <span id="npzIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-800/80 dark:text-emerald-400 font-bold"></span>
                         </div>
                     </div>
                 </div>
@@ -757,7 +886,7 @@
                     <div class="flex justify-between items-center text-[10px] md:text-[11px] theme-text-muted mb-1 font-medium">
                         <span class="hidden sm:inline" data-i18n="npz_capacity_total_desc">Совокупная мощность переработки: ~317.7 млн т/год</span>
                         <span class="sm:hidden text-[10px] theme-text-muted">Мощность РФ: ~317.7 млн т/г</span>
-                        <span id="npzDamageRatioText" class="text-amber-500 font-bold">86.8% под ударом</span>
+                        <span id="npzDamageRatioText" class="text-amber-800 dark:text-amber-400 font-bold">86.8% под ударом</span>
                     </div>
                     <div class="w-full h-1.5 md:h-2 rounded-full bg-slate-700/30 overflow-hidden flex p-0.5 border theme-border">
                         <div id="npzCapacityProgressBar" class="h-full rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-red-600 transition-all duration-1000 shadow-sm" style="width: 86.8%;"></div>
@@ -776,9 +905,9 @@
             <!-- Drawer Footer / Legend -->
             <div class="p-2 md:p-3 px-3 md:px-6 border-t theme-border text-[11px] md:text-xs theme-text-muted flex flex-wrap justify-between items-center gap-1.5 md:gap-2 shrink-0 bg-[var(--bg-panel)]">
                 <div class="flex items-center gap-3 md:gap-4">
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="npz_legend_halted">Остановлен</span></span>
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span> <span data-i18n="npz_legend_restored">Восстановлен / в работе</span></span>
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="npz_legend_intact">В строю</span></span>
+                    <span class="flex items-center gap-1.5 font-semibold text-red-700 dark:text-red-400"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="npz_legend_halted">Остановлен</span></span>
+                    <span class="flex items-center gap-1.5 font-semibold text-amber-800 dark:text-amber-400"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span> <span data-i18n="npz_legend_restored">Восстановлен / в работе</span></span>
+                    <span class="flex items-center gap-1.5 font-semibold text-emerald-800 dark:text-emerald-400"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="npz_legend_intact">В строю</span></span>
                 </div>
                 <span class="hidden md:inline text-[11px] theme-text-muted italic" data-i18n="npz_legend_hint">Нажмите на карточку поврежденного НПЗ, чтобы открыть объект на карте</span>
             </div>
@@ -809,8 +938,8 @@
                 <div class="flex items-center justify-between gap-2 md:gap-4">
                     <div class="flex items-center gap-2 min-w-0">
                         <span class="text-lg md:text-2xl shrink-0">📦</span>
-                        <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 tracking-tight truncate" data-i18n="wb_title">Крупнейшие склады Wildberries</h2>
-                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-purple-500/20 text-purple-400 border border-purple-500/30 whitespace-nowrap shrink-0" id="wbTotalBadge">30 складов</span>
+                        <h2 class="text-sm sm:text-base md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r dark:from-purple-400 dark:via-violet-400 dark:to-indigo-400 from-purple-700 via-violet-700 to-indigo-800 tracking-tight truncate" data-i18n="wb_title">Крупнейшие склады Wildberries</h2>
+                        <span class="px-1.5 py-0.5 rounded-full text-[10px] md:text-xs font-bold bg-purple-500/15 text-purple-800 dark:text-purple-400 border border-purple-600/30 dark:border-purple-500/30 whitespace-nowrap shrink-0" id="wbTotalBadge">30 складов</span>
                     </div>
                     <button id="closeWbDrawerBtn" class="p-1.5 md:p-2 rounded-lg md:rounded-xl theme-bg-input border theme-border theme-text-muted hover:theme-text-main hover:bg-red-500/20 hover:text-red-400 transition cursor-pointer shrink-0" title="Закрыть" aria-label="Закрыть">
                         <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -833,36 +962,36 @@
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-red-500/10 border border-red-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-red-400 font-medium flex items-center gap-1">
+                        <span class="text-[10px] md:text-[11px] text-red-700 dark:text-red-400 font-bold flex items-center gap-1">
                             <span>🔥</span>
                             <span class="md:hidden" data-i18n="wb_halted_count_short">Остановлено</span>
                             <span class="hidden md:inline" data-i18n="wb_halted_count">Остановлено / пожар</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="wbHaltedCountText" class="text-sm md:text-xl font-extrabold text-red-400">12</span>
-                            <span id="wbHaltedPercentText" class="text-[10px] md:text-[11px] text-red-400 font-bold"></span>
+                            <span id="wbHaltedCountText" class="text-sm md:text-xl font-extrabold text-red-700 dark:text-red-400">12</span>
+                            <span id="wbHaltedPercentText" class="text-[10px] md:text-[11px] text-red-700/80 dark:text-red-400 font-bold"></span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-amber-500/10 border border-amber-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-amber-400 font-medium flex items-center gap-1">
+                        <span class="text-[10px] md:text-[11px] text-amber-800 dark:text-amber-400 font-bold flex items-center gap-1">
                             <span>🛠️</span>
                             <span class="md:hidden" data-i18n="wb_restored_count_short">В работе</span>
                             <span class="hidden md:inline" data-i18n="wb_restored_count">Восстановлено / работает</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="wbRestoredCountText" class="text-sm md:text-xl font-extrabold text-amber-400">10</span>
-                            <span id="wbRestoredPercentText" class="text-[10px] md:text-[11px] text-amber-400 font-bold"></span>
+                            <span id="wbRestoredCountText" class="text-sm md:text-xl font-extrabold text-amber-800 dark:text-amber-400">10</span>
+                            <span id="wbRestoredPercentText" class="text-[10px] md:text-[11px] text-amber-800/80 dark:text-amber-400 font-bold"></span>
                         </div>
                     </div>
                     <div class="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col justify-between">
-                        <span class="text-[10px] md:text-[11px] text-emerald-400 font-medium flex items-center gap-1">
+                        <span class="text-[10px] md:text-[11px] text-emerald-800 dark:text-emerald-400 font-bold flex items-center gap-1">
                             <span>🛡️</span>
                             <span class="md:hidden" data-i18n="wb_intact_count_short">В строю</span>
                             <span class="hidden md:inline" data-i18n="wb_intact_count">В строю / без ударов</span>
                         </span>
                         <div class="flex items-baseline gap-1 mt-0.5">
-                            <span id="wbIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-400">8</span>
-                            <span id="wbIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-400 font-bold"></span>
+                            <span id="wbIntactCountText" class="text-sm md:text-xl font-extrabold text-emerald-800 dark:text-emerald-400">8</span>
+                            <span id="wbIntactPercentText" class="text-[10px] md:text-[11px] text-emerald-800/80 dark:text-emerald-400 font-bold"></span>
                         </div>
                     </div>
                 </div>
@@ -872,7 +1001,7 @@
                     <div class="flex justify-between items-center text-[10px] md:text-[11px] theme-text-muted mb-1 font-medium">
                         <span class="hidden sm:inline" data-i18n="wb_area_total_desc">Общая площадь топ-складов Wildberries</span>
                         <span class="sm:hidden text-[10px] theme-text-muted" data-i18n="wb_area_total_desc_short">Площадь WB-складов</span>
-                        <span id="wbDamageRatioText" class="text-purple-500 font-bold">— под ударом</span>
+                        <span id="wbDamageRatioText" class="text-purple-800 dark:text-purple-400 font-bold">— под ударом</span>
                     </div>
                     <div class="w-full h-1.5 md:h-2 rounded-full bg-slate-700/30 overflow-hidden flex p-0.5 border theme-border">
                         <div id="wbAreaProgressBar" class="h-full rounded-full bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-600 transition-all duration-1000 shadow-sm" style="width: 0%;"></div>
@@ -890,9 +1019,9 @@
             <!-- Drawer Footer -->
             <div class="p-2 md:p-3 px-3 md:px-6 border-t theme-border text-[11px] md:text-xs theme-text-muted flex flex-wrap justify-between items-center gap-1.5 md:gap-2 shrink-0 bg-[var(--bg-panel)]">
                 <div class="flex items-center gap-3 md:gap-4">
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="wb_legend_halted">Остановлен / уничтожен</span></span>
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span> <span data-i18n="wb_legend_restored">Восстановлен / в работе</span></span>
-                    <span class="flex items-center gap-1.5 font-medium"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="wb_legend_intact">В строю</span></span>
+                    <span class="flex items-center gap-1.5 font-semibold text-red-700 dark:text-red-400"><span class="w-2.5 h-2.5 rounded-full bg-red-500 inline-block animate-pulse"></span> <span data-i18n="wb_legend_halted">Остановлен / уничтожен</span></span>
+                    <span class="flex items-center gap-1.5 font-semibold text-amber-800 dark:text-amber-400"><span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block"></span> <span data-i18n="wb_legend_restored">Восстановлен / в работе</span></span>
+                    <span class="flex items-center gap-1.5 font-semibold text-emerald-800 dark:text-emerald-400"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> <span data-i18n="wb_legend_intact">В строю</span></span>
                 </div>
                 <span class="hidden md:inline text-[11px] theme-text-muted italic" data-i18n="wb_legend_hint">Нажмите на карточку атакованного склада, чтобы открыть его на карте</span>
             </div>
@@ -922,6 +1051,6 @@
     <!-- Data Source -->
     <script src="data.js?v=43"></script>
     <!-- Main App Logic -->
-    <script src="app.js?v=48"></script>
+    <script src="app.js?v=49"></script>
 </body>
 </html>
