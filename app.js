@@ -82,7 +82,37 @@ document.addEventListener('DOMContentLoaded', () => {
         wb_tooltip_strike_date: { ru: 'Первый удар:', uk: 'Перший удар:', en: 'First strike:' },
         wb_tooltip_strike_count: { ru: 'Зафиксировано ударов:', uk: 'Зафіксовано ударів:', en: 'Recorded strikes:' },
         wb_tooltip_not_struck: { ru: 'Ударов не зафиксировано', uk: 'Ударів не зафіксовано', en: 'No recorded strikes' },
-        wb_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' }
+        wb_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' },
+        // Share link
+        share_btn: { ru: 'Поделиться', uk: 'Поділитися', en: 'Share' },
+        share_toast_copied: { ru: 'Ссылка скопирована в буфер обмена', uk: 'Посилання скопійовано в буфер обміну', en: 'Link copied to clipboard' },
+        // OZON Warehouses
+        ozon_title: { ru: 'Крупнейшие склады Ozon', uk: 'Найбільші склади Ozon', en: 'Largest Ozon Warehouses' },
+        ozon_subtitle: { ru: 'Склады от 45 000 м² — фулфилмент-центры Ozon, статус ударов и вывод из строя', uk: 'Склади від 45 000 м² — фулфілмент-центри Ozon, статус ударів та виведення з ладу', en: 'Warehouses 45,000+ m² — Ozon fulfillment centers, strike status and operational impact' },
+        ozon_total_count: { ru: 'Всего складов', uk: 'Всього складів', en: 'Total Warehouses' },
+        ozon_total_count_short: { ru: 'Всего', uk: 'Всього', en: 'Total' },
+        ozon_halted_count: { ru: 'Остановлено / пожар', uk: 'Зупинено / пожежа', en: 'Halted / Fire' },
+        ozon_halted_count_short: { ru: 'Остановлено', uk: 'Зупинено', en: 'Halted' },
+        ozon_restored_count: { ru: 'Восстановлено / работает', uk: 'Відновлено / працює', en: 'Restored / Operating' },
+        ozon_restored_count_short: { ru: 'В работе', uk: 'В роботі', en: 'Operating' },
+        ozon_intact_count: { ru: 'В строю / без ударов', uk: 'У строю / без ударів', en: 'No Strikes' },
+        ozon_intact_count_short: { ru: 'В строю', uk: 'У строю', en: 'Intact' },
+        ozon_area_struck: { ru: 'Поражённая площадь', uk: 'Уражена площа', en: 'Struck Area' },
+        ozon_area_short: { ru: 'Площадь', uk: 'Площа', en: 'Area' },
+        ozon_area_unit: { ru: 'тыс. м²', uk: 'тис. м²', en: 'K sqm' },
+        ozon_area_total_desc: { ru: 'Общая площадь топ-складов Ozon', uk: 'Загальна площа топ-складів Ozon', en: 'Total area of tracked Ozon fulfillment centers' },
+        ozon_area_total_desc_short: { ru: 'Площадь Ozon-складов', uk: 'Площа Ozon-складів', en: 'Ozon area' },
+        ozon_legend_halted: { ru: 'Остановлен / уничтожен', uk: 'Зупинений / знищений', en: 'Halted / Destroyed' },
+        ozon_legend_restored: { ru: 'Восстановлен / в работе', uk: 'Відновлений / працює', en: 'Restored / Operating' },
+        ozon_legend_intact: { ru: 'В строю', uk: 'Без ударів', en: 'No recorded strikes' },
+        ozon_legend_hint: { ru: 'Нажмите на карточку атакованного склада, чтобы открыть его на карте', uk: 'Натисніть на картку атакованого складу, щоб відкрити його на карті', en: 'Click any struck fulfillment center card to open it on the map' },
+        ozon_status_halted: { ru: 'Остановлен', uk: 'Зупинений', en: 'Halted' },
+        ozon_status_restored: { ru: 'Восстановлен', uk: 'Відновлений', en: 'Restored' },
+        ozon_status_intact: { ru: 'В строю (без повреждений)', uk: 'У строю (без пошкоджень)', en: 'Operational (No strikes)' },
+        ozon_tooltip_strike_date: { ru: 'Первый удар:', uk: 'Перший удар:', en: 'First strike:' },
+        ozon_tooltip_strike_count: { ru: 'Зафиксировано ударов:', uk: 'Зафіксовано ударів:', en: 'Recorded strikes:' },
+        ozon_tooltip_not_struck: { ru: 'Ударов не зафиксировано', uk: 'Ударів не зафіксовано', en: 'No recorded strikes' },
+        ozon_btn_on_map: { ru: 'На карте →', uk: 'На карті →', en: 'On map →' }
     };
 
     const supportedLangs = ['uk', 'ru', 'en'];
@@ -140,6 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof window.renderWbDrawer === 'function') {
             const wbDrawer = document.getElementById('wbDrawer');
             if (wbDrawer && wbDrawer.classList.contains('open')) window.renderWbDrawer();
+        }
+
+        // Update OZON drawer language dynamically
+        if (typeof window.renderOzonDrawer === 'function') {
+            const ozonDrawer = document.getElementById('ozonDrawer');
+            if (ozonDrawer && ozonDrawer.classList.contains('open')) window.renderOzonDrawer();
         }
     }
 
@@ -1447,6 +1483,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function openNpzDrawer() {
+        if (typeof closeWbDrawer === 'function') closeWbDrawer();
+        if (typeof closeOzonDrawer === 'function') closeOzonDrawer();
         isNpzDrawerOpen = true;
         const drawer = document.getElementById('npzDrawer');
         const backdrop = document.getElementById('npzDrawerBackdrop');
@@ -1458,6 +1496,9 @@ document.addEventListener('DOMContentLoaded', () => {
             backdrop.classList.add('opacity-100', 'pointer-events-auto');
         }
         renderNpzDrawer();
+        if (window.location.hash !== '#npz') {
+            history.replaceState(null, '', '#npz');
+        }
         if (window.va) window.va('track', 'NpzDrawerOpened');
     }
 
@@ -1473,6 +1514,9 @@ document.addEventListener('DOMContentLoaded', () => {
             backdrop.classList.remove('opacity-100', 'pointer-events-auto');
         }
         hideNpzTooltip();
+        if (window.location.hash === '#npz') {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
     }
 
     function toggleNpzDrawer() {
@@ -1845,18 +1889,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function openWbDrawer() {
+        if (typeof closeNpzDrawer === 'function') closeNpzDrawer();
+        if (typeof closeOzonDrawer === 'function') closeOzonDrawer();
         const drawer = document.getElementById('wbDrawer');
         const backdrop = document.getElementById('wbDrawerBackdrop');
         if (!drawer) return;
-        // Close NPZ drawer if open
-        const npzDrawer = document.getElementById('npzDrawer');
-        if (npzDrawer && npzDrawer.classList.contains('open')) closeNpzDrawer();
         drawer.classList.add('open');
         if (backdrop) {
             backdrop.classList.remove('opacity-0', 'pointer-events-none');
             backdrop.classList.add('opacity-100');
         }
         renderWbDrawer();
+        if (window.location.hash !== '#wb') {
+            history.replaceState(null, '', '#wb');
+        }
+        if (window.va) window.va('track', 'WbDrawerOpened');
     }
 
     function closeWbDrawer() {
@@ -1869,6 +1916,9 @@ document.addEventListener('DOMContentLoaded', () => {
             backdrop.classList.remove('opacity-100');
         }
         hideWbTooltip();
+        if (window.location.hash === '#wb') {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
     }
 
     function toggleWbDrawer() {
@@ -1903,7 +1953,498 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose globally for setLang
     window.renderWbDrawer = renderWbDrawer;
 
+    // ╔══════════════════════════════════════════════════════════════╗
+    // ║               OZON — Ozon Warehouses                         ║
+    // ╚══════════════════════════════════════════════════════════════╝
+
+    const ozonWarehousesList = [
+        // Sorted by area desc (sq m). opStatus: 'halted' | 'restored' | 'intact'
+        { id: 'ozon_horugvino', ru: { name: 'Хоругвино (МО)', region: 'Московская обл., Солнечногорск', desc: 'Флагманский логистический хаб Ozon в Подмосковье' }, uk: { name: 'Хоругвино (МО)', region: 'Московська обл., Сонячногірськ', desc: 'Флагманський логістичний хаб Ozon у Підмосков\'ї' }, en: { name: 'Khorugvino (Moscow Oblast)', region: 'Moscow Oblast, Solnechnogorsk', desc: 'Flagship Ozon logistics hub in Moscow region' }, area: 130000, lat: 56.126, lng: 37.185, queryTerms: ['хоругвино', 'khorugvino'], opStatus: 'intact' },
+        { id: 'ozon_orenburg', ru: { name: 'Оренбург (ОЭЗ)', region: 'Оренбургская обл., ОЭЗ Оренбуржье', desc: 'Крупнейший фулфилмент-центр Ozon на Южном Урале' }, uk: { name: 'Оренбург (ОЕЗ)', region: 'Оренбурзька обл., ОЕЗ Оренбуржжя', desc: 'Найбільший фулфілмент-центр Ozon на Південному Уралі' }, en: { name: 'Orenburg (SEZ)', region: 'Orenburg Oblast, SEZ Orenburzhye', desc: 'Major Ozon fulfillment center in Southern Urals' }, area: 118000, lat: 51.785, lng: 55.150, queryTerms: ['оренбург', 'orenburg'], opStatus: 'halted' },
+        { id: 'ozon_kosulino', ru: { name: 'Екатеринбург / Косулино', region: 'Свердловская обл., Белоярский р-н', desc: 'Главный логистический хаб Ozon на Урале' }, uk: { name: 'Єкатеринбург / Косуліно', region: 'Свердловська обл., Білоярський р-н', desc: 'Головний логістичний хаб Ozon на Уралі' }, en: { name: 'Yekaterinburg / Kosulino', region: 'Sverdlovsk Oblast, Beloyarsky District', desc: 'Main Ozon Ural logistics hub' }, area: 110000, lat: 56.735, lng: 61.050, queryTerms: ['косулино', 'kosulino'], opStatus: 'intact' },
+        { id: 'ozon_enem', ru: { name: 'Адыгея / Энем (Краснодар)', region: 'Респ. Адыгея, Тахтамукайский р-н', desc: 'Крупнейший южный хаб Ozon' }, uk: { name: 'Адигея / Енем (Краснодар)', region: 'Респ. Адигея, Тахтамукайський р-н', desc: 'Найбільший південний хаб Ozon' }, en: { name: 'Adygea / Enem (Krasnodar)', region: 'Republic of Adygea, Takhtamukaysky District', desc: 'Major Southern Ozon logistics hub' }, area: 105000, lat: 44.928, lng: 38.905, queryTerms: ['энем', 'enem', 'адыгея'], opStatus: 'halted' },
+        { id: 'ozon_sofino', ru: { name: 'Софьино / Жуковский', region: 'Московская обл., Раменский р-н', desc: 'Крупнейший распределительный центр Ozon' }, uk: { name: 'Соф\'їно / Жуковський', region: 'Московська обл., Раменський р-н', desc: 'Найбільший розподільчий центр Ozon' }, en: { name: 'Sofino / Zhukovsky', region: 'Moscow Oblast, Ramensky District', desc: 'Major Ozon distribution center' }, area: 100000, lat: 55.505, lng: 38.165, queryTerms: ['софьино', 'sofino'], opStatus: 'intact' },
+        { id: 'ozon_blagoveshchensk', ru: { name: 'Уфа / Благовещенск', region: 'Респ. Башкортостан, Благовещенск', desc: 'Фулфилмент-центр Ozon в Башкортостане (в работе)' }, uk: { name: 'Уфа / Благовєщенськ', region: 'Респ. Башкортостан, Благовєщенськ', desc: 'Фулфілмент-центр Ozon у Башкортостані (в роботі)' }, en: { name: 'Ufa / Blagoveshchensk', region: 'Republic of Bashkortostan, Blagoveshchensk', desc: 'Ozon Bashkortostan fulfillment center (operational)' }, area: 93000, lat: 55.035, lng: 55.975, queryTerms: ['благовещенск', 'blagoveshchensk'], opStatus: 'restored' },
+        { id: 'ozon_nevinnomyssk', ru: { name: 'Невинномысск', region: 'Ставропольский край, Невинномысск', desc: 'Логистический хаб Ozon на Северном Кавказе' }, uk: { name: 'Невинномиськ', region: 'Ставропольський край, Невинномиськ', desc: 'Логістичний хаб Ozon на Північному Кавказі' }, en: { name: 'Nevinnomyssk', region: 'Stavropol Krai, Nevinnomyssk', desc: 'North Caucasus Ozon logistics hub' }, area: 90000, lat: 44.635, lng: 41.940, queryTerms: ['невинномысск', 'nevinnomyssk'], opStatus: 'restored' },
+        { id: 'ozon_zelenodolsk', ru: { name: 'Казань / Зеленодольск', region: 'Татарстан, Зеленодольский р-н', desc: 'Ключевой хаб Ozon в Поволжье (в работе)' }, uk: { name: 'Казань / Зеленодольськ', region: 'Татарстан, Зеленодольський р-н', desc: 'Ключовий хаб Ozon у Поволжі (в роботі)' }, en: { name: 'Kazan / Zelenodolsk', region: 'Tatarstan, Zelenodolsky District', desc: 'Key Ozon Volga fulfillment center' }, area: 85000, lat: 55.845, lng: 48.590, queryTerms: ['зеленодольск', 'zelenodolsk'], opStatus: 'restored' },
+        { id: 'ozon_aksay', ru: { name: 'Ростов / Аксай', region: 'Ростовская обл., Аксайский р-н', desc: 'Фулфилмент-центр Ростовской области (в работе)' }, uk: { name: 'Ростов / Аксай', region: 'Ростовська обл., Аксайський р-н', desc: 'Фулфілмент-центр Ростовської області (в роботі)' }, en: { name: 'Rostov / Aksay', region: 'Rostov Oblast, Aksaysky District', desc: 'Rostov region Ozon fulfillment center' }, area: 85000, lat: 47.325, lng: 39.880, queryTerms: ['аксай', 'aksay'], opStatus: 'restored' },
+        { id: 'ozon_kolpino', ru: { name: 'СПб / Колпино', region: 'Санкт-Петербург, Колпино', desc: 'Крупный логистический хаб Северо-Запада' }, uk: { name: 'СПб / Колпіно', region: 'Санкт-Петербург, Колпіно', desc: 'Великий логістичний хаб Північного Заходу' }, en: { name: 'St. Petersburg / Kolpino', region: 'Saint Petersburg, Kolpino', desc: 'Major NW Ozon fulfillment center' }, area: 80000, lat: 59.745, lng: 30.605, queryTerms: ['колпино', 'kolpino'], opStatus: 'intact' },
+        { id: 'ozon_novosibirsk', ru: { name: 'Новосибирск (ПЛП)', region: 'Новосибирская обл., Толмачево', desc: 'Крупнейший хаб Ozon в Сибири' }, uk: { name: 'Новосибірськ (ПЛП)', region: 'Новосибірська обл., Толмачево', desc: 'Найбільший хаб Ozon у Сибіру' }, en: { name: 'Novosibirsk (PLP)', region: 'Novosibirsk Oblast, Tolmachevo', desc: 'Main Siberian Ozon fulfillment center' }, area: 80000, lat: 55.015, lng: 82.590, queryTerms: ['новосибирск', 'novosibirsk'], opStatus: 'intact' },
+        { id: 'ozon_chapaevsk', ru: { name: 'Самара / Чапаевск', region: 'Самарская обл., Чапаевск', desc: 'Главный фулфилмент-центр Ozon в Самарской области' }, uk: { name: 'Самара / Чапаєвськ', region: 'Самарська обл., Чапаєвськ', desc: 'Головний фулфілмент-центр Ozon у Самарській обл.' }, en: { name: 'Samara / Chapaevsk', region: 'Samara Oblast, Chapaevsk', desc: 'Main Ozon fulfillment center in Samara region' }, area: 76000, lat: 52.980, lng: 49.715, queryTerms: ['чапаевск', 'chapaevsk'], opStatus: 'halted' },
+        { id: 'ozon_novariga', ru: { name: 'Новая Рига / Истра', region: 'Московская обл., Истринский р-н', desc: 'Складской комплекс на Новорижском шоссе' }, uk: { name: 'Нова Рига / Істра', region: 'Московська обл., Істринський р-н', desc: 'Складський комплекс на Новоризькому шосе' }, en: { name: 'Nova Riga / Istra', region: 'Moscow Oblast, Istrinsky District', desc: 'Ozon Nova Riga logistics complex' }, area: 75000, lat: 55.815, lng: 36.850, queryTerms: ['нова рига', 'новая рига', 'истра', 'novariga'], opStatus: 'intact' },
+        { id: 'ozon_bugry', ru: { name: 'СПб / Бугры', region: 'Ленинградская обл., Всеволожский р-н', desc: 'Распределительный комплекс на севере Петербурга' }, uk: { name: 'СПб / Бугри', region: 'Ленінградська обл., Всеволозький р-н', desc: 'Розподільчий комплекс на півночі Петербурга' }, en: { name: 'St. Petersburg / Bugry', region: 'Leningrad Oblast, Vsevolozhsky District', desc: 'Northern St. Petersburg Ozon hub' }, area: 60000, lat: 60.065, lng: 30.415, queryTerms: ['бугры', 'bugry'], opStatus: 'intact' },
+        { id: 'ozon_kstovo', ru: { name: 'Нижний Новгород / Кстово', region: 'Нижегородская обл., Кстово', desc: 'Фулфилмент-центр в Нижегородской агломерации' }, uk: { name: 'Нижній Новгород / Кстово', region: 'Нижньогородська обл., Кстово', desc: 'Фулфілмент-центр у Нижньогородській агломерації' }, en: { name: 'Nizhny Novgorod / Kstovo', region: 'Nizhny Novgorod Oblast, Kstovo', desc: 'Nizhny Novgorod Ozon fulfillment center' }, area: 60000, lat: 56.160, lng: 44.180, queryTerms: ['кстово', 'kstovo'], opStatus: 'intact' },
+        { id: 'ozon_omsk', ru: { name: 'Омск (Солнечный)', region: 'Омская обл., Омск', desc: 'Крупный логистический хаб Западной Сибири' }, uk: { name: 'Омськ (Сонячний)', region: 'Омська обл., Омськ', desc: 'Великий логістичний хаб Західного Сибіру' }, en: { name: 'Omsk (Solnechny)', region: 'Omsk Oblast, Omsk', desc: 'Western Siberia Ozon logistics center' }, area: 60000, lat: 54.990, lng: 73.280, queryTerms: ['солнечный', 'omsk', 'омск'], opStatus: 'intact' },
+        { id: 'ozon_saratov', ru: { name: 'Саратов (Московское ш.)', region: 'Саратовская обл., Саратов', desc: 'Главный фулфилмент-центр Ozon в Саратовской обл.' }, uk: { name: 'Саратов (Московське ш.)', region: 'Саратовська обл., Саратов', desc: 'Головний фулфілмент-центр Ozon у Саратовській обл.' }, en: { name: 'Saratov (Moskovskoe hwy)', region: 'Saratov Oblast, Saratov', desc: 'Main Ozon fulfillment center in Saratov region' }, area: 60000, lat: 51.590, lng: 45.920, queryTerms: ['саратов', 'saratov'], opStatus: 'halted' },
+        { id: 'ozon_pushkino', ru: { name: 'Пушкино (МО)', region: 'Московская обл., Пушкинский р-н', desc: 'Логистический комплекс Ozon на Ярославском направлении' }, uk: { name: 'Пушкіно (МО)', region: 'Московська обл., Пушкінський р-н', desc: 'Логістичний комплекс Ozon на Ярославському напрямку' }, en: { name: 'Pushkino (Moscow Oblast)', region: 'Moscow Oblast, Pushkinsky District', desc: 'Ozon logistics complex northeast of Moscow' }, area: 52000, lat: 56.015, lng: 37.850, queryTerms: ['пушкино', 'pushkino'], opStatus: 'intact' },
+        { id: 'ozon_tyube', ru: { name: 'Дагестан / Тюбе', region: 'Респ. Дагестан, Кумторкалинский р-н', desc: 'Крупнейший фулфилмент-центр Ozon на Северном Кавказе' }, uk: { name: 'Дагестан / Тюбе', region: 'Респ. Дагестан, Кумторкалинський р-н', desc: 'Найбільший фулфілмент-центр Ozon на Північному Кавказі' }, en: { name: 'Dagestan / Tyube', region: 'Republic of Dagestan, Kumtorkalinsky District', desc: 'Major North Caucasus Ozon fulfillment center' }, area: 50000, lat: 43.015, lng: 47.310, queryTerms: ['тюбе', 'tyube', 'дагестан'], opStatus: 'halted' },
+        { id: 'ozon_voronezh', ru: { name: 'Воронеж (ОЭЗ Центр)', region: 'Воронежская обл., Новоусманский р-н', desc: 'Крупный РЦ Ozon в Центральном Черноземье' }, uk: { name: 'Воронеж (ОЕЗ Центр)', region: 'Воронезька обл., Новоусманський р-н', desc: 'Великий РЦ Ozon у Центральному Чорнозем\'ї' }, en: { name: 'Voronezh (SEZ Center)', region: 'Voronezh Oblast, Novousmansky District', desc: 'Ozon distribution center in Central Black Earth' }, area: 50000, lat: 51.580, lng: 39.380, queryTerms: ['воронеж', 'voronezh'], opStatus: 'intact' },
+        { id: 'ozon_grivno', ru: { name: 'Подольск / Гривно', region: 'Московская обл., Климовск', desc: 'Сортировочно-логистический комплекс Подмосковья' }, uk: { name: 'Подольськ / Гривно', region: 'Московська обл., Клімовськ', desc: 'Сортувально-логістичний комплекс Підмосков\'я' }, en: { name: 'Podolsk / Grivno', region: 'Moscow Oblast, Klimovsk', desc: 'Ozon sorting and logistics hub south of Moscow' }, area: 50000, lat: 55.350, lng: 37.530, queryTerms: ['гривно', 'grivno'], opStatus: 'intact' },
+        { id: 'ozon_krasnoyarsk', ru: { name: 'Красноярск (Емельяново)', region: 'Красноярский край, Емельяново', desc: 'Крупнейший логистический комплекс Восточной Сибири' }, uk: { name: 'Красноярськ (Ємельяново)', region: 'Красноярський край, Ємельяново', desc: 'Найбільший логістичний комплекс Східного Сибіру' }, en: { name: 'Krasnoyarsk (Yemelyanovo)', region: 'Krasnoyarsk Krai, Yemelyanovo', desc: 'Eastern Siberia Ozon fulfillment center' }, area: 50000, lat: 56.160, lng: 92.510, queryTerms: ['красноярск', 'krasnoyarsk'], opStatus: 'intact' },
+        { id: 'ozon_volgograd', ru: { name: 'Волгоград', region: 'Волгоградская обл., Волгоград', desc: 'Фулфилмент-центр Ozon в Нижнем Поволжье' }, uk: { name: 'Волгоград', region: 'Волгоградська обл., Волгоград', desc: 'Фулфілмент-центр Ozon у Нижньому Поволжі' }, en: { name: 'Volgograd', region: 'Volgograd Oblast, Volgograd', desc: 'Ozon Lower Volga fulfillment center' }, area: 45000, lat: 48.740, lng: 44.480, queryTerms: ['волгоград', 'volgograd'], opStatus: 'intact' },
+        { id: 'ozon_tyumen', ru: { name: 'Тюмень', region: 'Тюменская обл., Тюмень', desc: 'Фулфилмент-центр Ozon в Западной Сибири' }, uk: { name: 'Тюмень', region: 'Тюменська обл., Тюмень', desc: 'Фулфілмент-центр Ozon у Західному Сибіру' }, en: { name: 'Tyumen', region: 'Tyumen Oblast, Tyumen', desc: 'Ozon Western Siberia fulfillment center' }, area: 45000, lat: 57.140, lng: 65.550, queryTerms: ['тюмень', 'tyumen'], opStatus: 'intact' }
+    ];
+
+    // Ozon Warehouse SVG icon
+    const ozonWarehouseSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+        <defs>
+            <linearGradient id="ozonWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#005bff;stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="ozonRoofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#005bff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0038a8;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <!-- Roof -->
+        <polygon points="4,30 32,10 60,30" fill="url(#ozonRoofGrad)" stroke="#0038a8" stroke-width="1.5" stroke-linejoin="round"/>
+        <!-- Accent roof ridge line (Ozon Magenta) -->
+        <line x1="28" y1="13" x2="36" y2="13" stroke="#f91155" stroke-width="2" stroke-linecap="round"/>
+        <!-- Building walls -->
+        <rect x="8" y="30" width="48" height="26" rx="2" fill="url(#ozonWallGrad)" stroke="#005bff" stroke-width="1.5"/>
+        <!-- Door / Loading Bay -->
+        <rect x="24" y="42" width="16" height="14" rx="2" fill="#0f172a" opacity="0.85"/>
+        <!-- Left window -->
+        <rect x="12" y="35" width="8" height="7" rx="1.5" fill="#0f172a" opacity="0.6"/>
+        <!-- Right window -->
+        <rect x="44" y="35" width="8" height="7" rx="1.5" fill="#0f172a" opacity="0.6"/>
+        <!-- OZON text -->
+        <text x="32" y="27" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="5" fill="white" letter-spacing="0.5" opacity="0.95">OZON</text>
+    </svg>`;
+
+    // Fire overlay SVG for Ozon
+    const ozonFlameSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+        <ellipse cx="32" cy="58" rx="18" ry="5" fill="rgba(220,38,38,0.3)"/>
+        <path d="M32 4 C28 14 18 18 22 28 C18 24 14 26 16 34 C10 30 12 42 20 46 C16 44 14 50 20 54 C24 56 28 57 32 57 C36 57 40 56 44 54 C50 50 48 44 44 46 C52 42 54 30 48 34 C50 26 46 24 42 28 C46 18 36 14 32 4Z" fill="url(#ozonFireGrad)" filter="url(#ozonGlow)"/>
+        <defs>
+            <linearGradient id="ozonFireGrad" x1="0%" y1="100%" x2="30%" y2="0%">
+                <stop offset="0%" style="stop-color:#dc2626"/>
+                <stop offset="40%" style="stop-color:#f97316"/>
+                <stop offset="75%" style="stop-color:#fbbf24"/>
+                <stop offset="100%" style="stop-color:#fef08a"/>
+            </linearGradient>
+            <filter id="ozonGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+        </defs>
+        <path d="M32 28 C30 33 25 35 27 40 C25 38 23 39 24 43 C22 41 23 46 27 48 C25 47 24 50 27 51 C29 52 30.5 52.5 32 52.5 C33.5 52.5 35 52 37 51 C40 50 39 47 37 48 C41 46 42 41 40 43 C41 39 39 38 37 40 C39 35 34 33 32 28Z" fill="rgba(254,240,138,0.7)"/>
+    </svg>`;
+
+    function computeOzonStatus() {
+        return ozonWarehousesList.map(wh => {
+            const matches = strikeData.filter(s => {
+                const fullText = [s.ru?.target, s.ru?.region, s.en?.target, s.en?.region, s.uk?.target, s.uk?.region].filter(Boolean).join(' ').toLowerCase();
+                if (!fullText.includes('ozon') && !fullText.includes('озон')) return false;
+                return wh.queryTerms.some(q => fullText.includes(q.toLowerCase()));
+            });
+            const struck = matches.length > 0;
+            const sorted = matches.slice().sort((a, b) => {
+                const parseDate = d => { const [dd,mm,yy] = (d||'').split('.'); return new Date(+yy, +mm-1, +dd); };
+                return parseDate(a.date) - parseDate(b.date);
+            });
+            const status = struck ? (wh.opStatus || 'halted') : 'intact';
+            return {
+                ...wh,
+                struck,
+                status,
+                strikeCount: matches.length,
+                firstStrike: struck ? sorted[0].date : null,
+                latestDate: struck ? sorted[sorted.length - 1].date : null,
+                strikeIds: matches.map(s => s.id),
+                firstStrikeId: struck ? sorted[0].id : null
+            };
+        });
+    }
+
+    function renderOzonDrawer() {
+        const grid = document.getElementById('ozonGrid');
+        if (!grid) return;
+
+        const warehouses = computeOzonStatus();
+        const totalCount = warehouses.length;
+        const haltedList = warehouses.filter(w => w.status === 'halted');
+        const restoredList = warehouses.filter(w => w.status === 'restored');
+        const intactList = warehouses.filter(w => w.status === 'intact');
+        const struckList = warehouses.filter(w => w.struck);
+        const struckCount = struckList.length;
+
+        const totalArea = warehouses.reduce((acc, w) => acc + w.area, 0);
+        const struckArea = struckList.reduce((acc, w) => acc + w.area, 0);
+        const struckAreaPct = totalArea > 0 ? Math.round(struckArea / totalArea * 100) : 0;
+        const struckAreaK = Math.round(struckArea / 1000);
+
+        // Update stats
+        const el = id => document.getElementById(id);
+        if (el('ozonTotalCountText')) el('ozonTotalCountText').textContent = totalCount;
+        if (el('ozonHaltedCountText')) el('ozonHaltedCountText').textContent = haltedList.length;
+        if (el('ozonHaltedPercentText')) el('ozonHaltedPercentText').textContent = totalCount > 0 ? `(${Math.round(haltedList.length/totalCount*100)}%)` : '';
+        if (el('ozonRestoredCountText')) el('ozonRestoredCountText').textContent = restoredList.length;
+        if (el('ozonRestoredPercentText')) el('ozonRestoredPercentText').textContent = totalCount > 0 ? `(${Math.round(restoredList.length/totalCount*100)}%)` : '';
+        if (el('ozonIntactCountText')) el('ozonIntactCountText').textContent = intactList.length;
+        if (el('ozonIntactPercentText')) el('ozonIntactPercentText').textContent = totalCount > 0 ? `(${Math.round(intactList.length/totalCount*100)}%)` : '';
+
+        if (el('ozonDamageRatioText')) {
+            const ratioSuffix = currentLang === 'en' ? 'under strike' : (currentLang === 'uk' ? 'під ударом' : 'под ударом');
+            el('ozonDamageRatioText').textContent = `${struckAreaK} ${i18n.ozon_area_unit[currentLang]} (${struckAreaPct}%) ${ratioSuffix}`;
+        }
+        if (el('ozonAreaProgressBar')) {
+            setTimeout(() => { el('ozonAreaProgressBar').style.width = struckAreaPct + '%'; }, 80);
+        }
+        if (el('ozonTotalBadge')) {
+            el('ozonTotalBadge').textContent = totalCount + ' ' + (currentLang === 'ru' ? 'складов' : currentLang === 'uk' ? 'складів' : 'warehouses');
+        }
+        if (el('ozonTabBadge')) el('ozonTabBadge').textContent = struckCount;
+
+        // Render cards
+        grid.innerHTML = '';
+        warehouses.forEach(wh => {
+            const areaK = (wh.area / 1000).toFixed(0);
+            const isHalted = wh.status === 'halted';
+            const isRestored = wh.status === 'restored';
+            const isIntact = wh.status === 'intact';
+
+            const cardEl = document.createElement('div');
+            cardEl.className = `ozon-card rounded-xl border cursor-pointer select-none flex flex-col items-center text-center p-2 gap-1 relative
+                ${isHalted
+                    ? 'bg-red-500/10 border-red-500/40 hover:border-red-400 hover:shadow-[0_0_16px_rgba(239,68,68,0.25)]'
+                    : isRestored
+                    ? 'bg-amber-500/10 border-amber-500/40 hover:border-amber-400 hover:shadow-[0_0_16px_rgba(245,158,11,0.25)]'
+                    : 'theme-bg-item border-emerald-500/25 hover:border-emerald-400/60 hover:shadow-[0_0_16px_rgba(52,211,153,0.15)]'}`;
+
+            const icon = `<div class="relative w-10 h-10 md:w-12 md:h-12 shrink-0 mx-auto">
+                ${ozonWarehouseSvg}
+                ${isHalted ? `<div class="fire-overlay-icon absolute inset-0 flex items-center justify-center">${ozonFlameSvg}</div>` : ''}
+            </div>`;
+
+            const statusBadge = isHalted
+                ? `<span class="status-badge-halted inline-block px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-red-500/15 dark:bg-red-500/20 text-red-700 dark:text-red-400 border border-red-500/35 dark:border-red-500/30 leading-none whitespace-nowrap">🔥 ${i18n.ozon_status_halted[currentLang]}</span>`
+                : isRestored
+                ? `<span class="status-badge-restored inline-block px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-amber-500/20 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-600/35 dark:border-amber-500/30 leading-none whitespace-nowrap">🛠️ ${i18n.ozon_status_restored[currentLang]}</span>`
+                : `<span class="status-badge-intact inline-block px-1.5 py-0.5 rounded text-[9px] md:text-[10px] font-bold bg-emerald-500/15 dark:bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 border border-emerald-600/35 dark:border-emerald-500/25 leading-none whitespace-nowrap">🛡️ ${i18n.ozon_legend_intact[currentLang]}</span>`;
+
+            const mapBtn = wh.struck
+                ? `<button class="ozon-open-map-btn ${isHalted ? 'status-btn-halted bg-red-500/15 hover:bg-red-500/30 text-red-700 dark:text-red-400 border border-red-500/35' : 'status-btn-restored bg-amber-500/20 hover:bg-amber-500/35 text-amber-900 dark:text-amber-300 border border-amber-600/35 dark:border-amber-500/30'} mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg font-bold transition cursor-pointer" data-whid="${wh.id}">${i18n.ozon_btn_on_map[currentLang]}</button>`
+                : `<div class="status-btn-intact mt-auto w-full text-[10px] md:text-[11px] px-1.5 py-1 rounded-lg bg-emerald-500/15 dark:bg-emerald-500/10 text-emerald-800 dark:text-emerald-400 border border-emerald-600/25 dark:border-emerald-500/20 font-semibold">🛡️ ${i18n.ozon_legend_intact[currentLang]}</div>`;
+
+            cardEl.innerHTML = `
+                ${icon}
+                <div class="w-full flex flex-col items-center gap-0.5 min-w-0">
+                    <span class="text-[11px] md:text-xs font-bold theme-text-main leading-tight line-clamp-2">${wh[currentLang].name}</span>
+                    <span class="text-[9px] md:text-[10px] theme-text-muted leading-tight line-clamp-2">${wh[currentLang].region}</span>
+                </div>
+                <div class="text-[10px] md:text-[11px] font-bold ${isHalted ? 'text-red-700 dark:text-red-400' : isRestored ? 'text-amber-800 dark:text-amber-300' : 'theme-text-muted'}">${areaK} ${currentLang === 'ru' || currentLang === 'uk' ? 'тыс. м²' : 'K sqm'}</div>
+                ${statusBadge}
+                ${mapBtn}
+            `;
+
+            cardEl.dataset.whid = wh.id;
+            grid.appendChild(cardEl);
+        });
+
+        attachOzonCardEvents();
+    }
+
+    let ozonTooltipTarget = null;
+    let ozonTooltipHideTimer = null;
+
+    function attachOzonCardEvents() {
+        const cards = document.querySelectorAll('#ozonGrid .ozon-card');
+        const whs = computeOzonStatus();
+        cards.forEach(card => {
+            const whId = card.dataset.whid;
+            const wh = whs.find(w => w.id === whId);
+            if (!wh) return;
+
+            // Map button click
+            const mapBtn = card.querySelector('.ozon-open-map-btn');
+            if (mapBtn) {
+                mapBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    hideOzonTooltip();
+                    openOzonWarehouseOnMap(wh);
+                });
+            }
+
+            // Card click — open map for struck, or toast for intact
+            card.addEventListener('click', (e) => {
+                if (wh.struck) {
+                    hideOzonTooltip();
+                    openOzonWarehouseOnMap(wh);
+                } else {
+                    showToast(`${wh[currentLang].name}: ${i18n.ozon_tooltip_not_struck[currentLang]}`);
+                }
+            });
+
+            // Hover tooltip for desktop
+            card.addEventListener('mouseenter', (e) => {
+                clearTimeout(ozonTooltipHideTimer);
+                ozonTooltipTarget = card;
+                showOzonTooltip(wh, e);
+            });
+            card.addEventListener('mousemove', (e) => {
+                if (ozonTooltipTarget === card) updateOzonTooltipPosition(e);
+            });
+            card.addEventListener('mouseleave', () => {
+                ozonTooltipHideTimer = setTimeout(hideOzonTooltip, 80);
+            });
+        });
+    }
+
+    function showOzonTooltip(wh, e) {
+        const tt = document.getElementById('ozonFloatingTooltip');
+        if (!tt) return;
+        const areaK = (wh.area / 1000).toFixed(0);
+        let html = '';
+        if (wh.struck) {
+            const statusLabel = wh.status === 'halted' ? i18n.ozon_status_halted[currentLang] : i18n.ozon_status_restored[currentLang];
+            const statusColor = wh.status === 'halted' ? 'text-red-700 dark:text-red-400' : 'text-amber-800 dark:text-amber-300';
+            const statusIcon = wh.status === 'halted' ? '🔥' : '🛠️';
+            html = `<div class="flex flex-col gap-1">
+                <div class="font-bold theme-text-main text-[13px] flex items-center gap-1.5">
+                    <span>${statusIcon}</span><span>${wh[currentLang].name}</span>
+                </div>
+                <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
+                <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.ozon_area_unit[currentLang]}</div>
+                <hr class="border-slate-600/50 my-0.5">
+                <div class="flex justify-between gap-3 items-center text-[11px]">
+                    <span class="theme-text-muted">Статус:</span>
+                    <span class="font-bold ${statusColor}">${statusLabel}</span>
+                </div>
+                <div class="${statusColor} text-[11px] flex justify-between items-center gap-1">
+                    <span class="theme-text-muted">${i18n.ozon_tooltip_strike_date[currentLang]}</span>
+                    <span class="font-bold">${wh.firstStrike}</span>
+                </div>
+                ${wh.strikeCount > 1 ? `
+                <div class="${statusColor} text-[11px] flex justify-between items-center gap-1">
+                    <span class="theme-text-muted">${i18n.ozon_tooltip_strike_count[currentLang]}</span>
+                    <span class="font-bold">${wh.strikeCount}</span>
+                </div>` : ''}
+                <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
+            </div>`;
+        } else {
+            html = `<div class="flex flex-col gap-1">
+                <div class="font-bold theme-text-main text-[13px] flex items-center gap-1.5">
+                    <span>🛒</span><span>${wh[currentLang].name}</span>
+                </div>
+                <div class="theme-text-muted text-[11px] leading-snug">${wh[currentLang].region}</div>
+                <div class="theme-text-muted text-[11px]">📐 ${areaK} ${i18n.ozon_area_unit[currentLang]}</div>
+                <hr class="border-slate-600/50 my-0.5">
+                <div class="text-emerald-800 dark:text-emerald-400 text-[11px] font-bold flex items-center gap-1"><span>🛡️</span><span>${i18n.ozon_tooltip_not_struck[currentLang]}</span></div>
+                <div class="mt-1 text-[10px] theme-text-muted italic">${wh[currentLang].desc}</div>
+            </div>`;
+        }
+        tt.innerHTML = html;
+        tt.classList.remove('opacity-0', 'invisible');
+        tt.classList.add('opacity-100');
+        updateOzonTooltipPosition(e);
+    }
+
+    function updateOzonTooltipPosition(e) {
+        const tt = document.getElementById('ozonFloatingTooltip');
+        if (!tt) return;
+        const x = e.clientX;
+        const y = e.clientY;
+        const ttW = tt.offsetWidth;
+        const ttH = tt.offsetHeight;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        let left = x + 16;
+        let top = y + 16;
+        if (left + ttW > vw - 8) left = x - ttW - 12;
+        if (top + ttH > vh - 8) top = y - ttH - 12;
+        tt.style.left = left + 'px';
+        tt.style.top = top + 'px';
+    }
+
+    function hideOzonTooltip() {
+        const tt = document.getElementById('ozonFloatingTooltip');
+        if (!tt) return;
+        tt.classList.add('opacity-0', 'invisible');
+        tt.classList.remove('opacity-100');
+        ozonTooltipTarget = null;
+    }
+
+    function openOzonWarehouseOnMap(wh) {
+        if (!wh.struck || !wh.firstStrikeId) return;
+        closeOzonDrawer();
+        // Reset any active category filter to show all
+        const activeFilterBtn = document.querySelector('.cat-filter-btn.active, [data-cat].active');
+        if (activeFilterBtn && activeFilterBtn.dataset.cat && activeFilterBtn.dataset.cat !== 'all') {
+            const allBtn = document.querySelector('[data-cat="all"]');
+            if (allBtn) allBtn.click();
+        }
+        setTimeout(() => {
+            const targetMarkerObj = activeMarkers.find(m => m && m.data && m.data.id && m.data.id === wh.firstStrikeId);
+            if (targetMarkerObj && targetMarkerObj.marker && typeof targetMarkerObj.marker.getLatLng === 'function') {
+                map.setView(targetMarkerObj.marker.getLatLng(), 13, { animate: true });
+                targetMarkerObj.marker.openPopup();
+                if (window.innerWidth < 768 && document.getElementById('sidebar')) {
+                    document.getElementById('sidebar').classList.remove('open');
+                }
+            } else {
+                map.setView([wh.lat, wh.lng], 13, { animate: true });
+            }
+        }, 350);
+    }
+
+    function openOzonDrawer() {
+        if (typeof closeNpzDrawer === 'function') closeNpzDrawer();
+        if (typeof closeWbDrawer === 'function') closeWbDrawer();
+        const drawer = document.getElementById('ozonDrawer');
+        const backdrop = document.getElementById('ozonDrawerBackdrop');
+        if (!drawer) return;
+        drawer.classList.add('open');
+        if (backdrop) {
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100');
+        }
+        renderOzonDrawer();
+        if (window.location.hash !== '#ozon') {
+            history.replaceState(null, '', '#ozon');
+        }
+        if (window.va) window.va('track', 'OzonDrawerOpened');
+    }
+
+    function closeOzonDrawer() {
+        const drawer = document.getElementById('ozonDrawer');
+        const backdrop = document.getElementById('ozonDrawerBackdrop');
+        if (!drawer) return;
+        drawer.classList.remove('open');
+        if (backdrop) {
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            backdrop.classList.remove('opacity-100');
+        }
+        hideOzonTooltip();
+        if (window.location.hash === '#ozon') {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+    }
+
+    function toggleOzonDrawer() {
+        const drawer = document.getElementById('ozonDrawer');
+        if (drawer && drawer.classList.contains('open')) {
+            closeOzonDrawer();
+        } else {
+            openOzonDrawer();
+        }
+    }
+
+    // OZON event listeners
+    const ozonTabBtn = document.getElementById('ozonTabBtn');
+    if (ozonTabBtn) ozonTabBtn.addEventListener('click', toggleOzonDrawer);
+
+    const closeOzonDrawerBtn = document.getElementById('closeOzonDrawerBtn');
+    if (closeOzonDrawerBtn) closeOzonDrawerBtn.addEventListener('click', closeOzonDrawer);
+
+    const ozonDrawerCloseTab = document.getElementById('ozonDrawerCloseTab');
+    if (ozonDrawerCloseTab) ozonDrawerCloseTab.addEventListener('click', closeOzonDrawer);
+
+    const ozonDrawerBackdrop = document.getElementById('ozonDrawerBackdrop');
+    if (ozonDrawerBackdrop) ozonDrawerBackdrop.addEventListener('click', closeOzonDrawer);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const ozonDrawer = document.getElementById('ozonDrawer');
+            if (ozonDrawer && ozonDrawer.classList.contains('open')) closeOzonDrawer();
+        }
+    });
+
+    // Expose globally for setLang
+    window.renderOzonDrawer = renderOzonDrawer;
+
+    // ╔══════════════════════════════════════════════════════════════╗
+    // ║         Share Link & URL Hash Navigation                     ║
+    // ╚══════════════════════════════════════════════════════════════╝
+
+    let shareToastTimer = null;
+    function showShareToast() {
+        const toast = document.getElementById('shareToast');
+        const toastText = document.getElementById('shareToastText');
+        if (!toast) return;
+        if (toastText && i18n.share_toast_copied) {
+            toastText.textContent = i18n.share_toast_copied[currentLang] || 'Ссылка скопирована в буфер обмена';
+        }
+        clearTimeout(shareToastTimer);
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-6');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        shareToastTimer = setTimeout(() => {
+            toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-6');
+            toast.classList.remove('opacity-100', 'translate-y-0');
+        }, 2500);
+    }
+
+    function copyDrawerLink(hashTag) {
+        const url = window.location.origin + window.location.pathname + window.location.search + hashTag;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(url).then(() => {
+                showShareToast();
+            }).catch(() => {
+                fallbackCopyText(url);
+            });
+        } else {
+            fallbackCopyText(url);
+        }
+    }
+
+    function fallbackCopyText(text) {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-9999px';
+        textArea.style.top = '-9999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            showShareToast();
+        } catch (err) {
+            console.error('Failed to copy link:', err);
+        }
+        document.body.removeChild(textArea);
+    }
+
+    const shareNpzBtn = document.getElementById('shareNpzBtn');
+    if (shareNpzBtn) {
+        shareNpzBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            copyDrawerLink('#npz');
+        });
+    }
+
+    const shareWbBtn = document.getElementById('shareWbBtn');
+    if (shareWbBtn) {
+        shareWbBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            copyDrawerLink('#wb');
+        });
+    }
+
+    const shareOzonBtn = document.getElementById('shareOzonBtn');
+    if (shareOzonBtn) {
+        shareOzonBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            copyDrawerLink('#ozon');
+        });
+    }
+
+    function checkUrlHash() {
+        const hash = (window.location.hash || '').toLowerCase();
+        if (hash === '#npz') {
+            openNpzDrawer();
+        } else if (hash === '#wb') {
+            openWbDrawer();
+        } else if (hash === '#ozon') {
+            openOzonDrawer();
+        }
+    }
+
+    window.addEventListener('hashchange', checkUrlHash);
+
     setLang(currentLang);
+    checkUrlHash();
 
     // Check for ID in URL to automatically open a specific popup
     try {
