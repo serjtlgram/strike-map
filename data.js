@@ -1,5 +1,161 @@
 const strikeData = [
   {
+    "date": "12.09.2026",
+    "lat": 53.5524,
+    "lng": 49.4701,
+    "distance": 985,
+    "ru": {
+      "region": "Самарская область, Тольятти (Северный промышленный узел)",
+      "target": "Химкомбинат «КуйбышевАзот» и завод «Тольяттикаучук» (ПАО «КуйбышевАзот» / ООО «Тольяттикаучук»)",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 12 сентября 2026 года украинские ударные беспилотники атаковали крупнейшие предприятия химической промышленности в Тольятти Самарской области. Под ударом оказались мощности ПАО «КуйбышевАзот» и комбината «Тольяттикаучук», расположенные в едином Северном промышленном узле. Генштаб ВСУ подтвердил результативное поражение производства синтетических каучуков, используемых для выпуска твердого ракетного топлива тактических и баллистических ракет. «КуйбышевАзот» обеспечивает до половины выпуска капролактама в РФ и производит шинный корд для военной техники и аммиачную селитру. В результате серии взрывов на промплощадке начался пожар, пламя охватило производственные установки. Один из сбитых аппаратов врезался в жилой дом на улице Льва Яшина, ранив местного жителя. Губернатор Вячеслав Федорищев подтвердил атаку БПЛА на промышленный объект региона.",
+      "source": "Генштаб ВСУ, ASTRA, Exilenova+, росСМИ, правительство Самарской области"
+    },
+    "uk": {
+      "region": "Самарська область, Тольятті (Північний промисловий вузол)",
+      "target": "Хімкомбінат «КуйбишевАзот» та завод «Тольяттікаучук» (ПАТ «КуйбишевАзот» / ТОВ «Тольяттікаучук»)",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч проти 12 вересня 2026 року далекобійні українські дрони атакували провідні хімічні підприємства в місті Тольятті Самарської області. Ударів зазнали промислові майданчики ПАТ «КуйбишевАзот» та комбінату «Тольяттікаучук» у Північному промузлі міста. Генеральний штаб ЗСУ офіційно підтвердив ураження виробництва синтетичних каучуків, які ворог застосовує для виготовлення твердого ракетного пального для балістичних ракет. Завод «КуйбишевАзот» є ключовим виробником капролактаму, поліаміду та шинного корду для військової автобронетехніки окупантів. На території комплексу зафіксовано численні влучання та сильну пожежу в технологічних цехах. Один із дронів пошкодив житловий будинок на вулиці Лева Яшина, де зазнав поранення один мешканець. Влада області визнала наліт дронів та ураження промислового об'єкта.",
+      "source": "Генштаб ЗСУ, ASTRA, Exilenova+, росЗМІ, влада Самарської області"
+    },
+    "en": {
+      "region": "Samara Oblast, Tolyatti (Northern Industrial District)",
+      "target": "KuibyshevAzot Chemical Plant and Tolyattikauchuk (PJSC KuibyshevAzot / LLC Tolyattikauchuk)",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "Overnight on September 12, 2026, Ukrainian long-range strike drones targeted key petrochemical plants in Tolyatti, Samara Oblast. The raid hit the production facilities of PJSC KuibyshevAzot and the adjacent Tolyattikauchuk plant within the city's Northern industrial hub. Ukraine's General Staff officially verified the strike, emphasizing that Tolyattikauchuk manufactures synthetic rubbers used in solid rocket fuel for tactical and ballistic missiles. KuibyshevAzot produces about half of Russia's caprolactam and supplies tire cords and polyamide polymers for military vehicles. Multiple drone detonations triggered fires across the chemical synthesis units, sending plumes of smoke across the district. One drone damaged a residential apartment building on Lev Yashin Street, injuring one resident. Regional governor Vyacheslav Fedorishchev acknowledged drone strikes damaging industrial facilities.",
+      "source": "General Staff of AFU, ASTRA, Exilenova+, Russian Media, Samara Oblast Authorities"
+    },
+    "images": [
+      "video/tolyatti_chem_2026-09-12_1.mp4",
+      "video/tolyatti_chem_2026-09-12_2.mp4",
+      "images/tolyatti_chem_1.jpg",
+      "images/tolyatti_chem_2.jpg",
+      "images/tolyatti_chem_3.jpg",
+      "images/tolyatti_chem_4.jpg"
+    ],
+    "id": 456
+  },
+  {
+    "date": "12.09.2026",
+    "lat": 47.1994,
+    "lng": 38.8656,
+    "distance": 196,
+    "ru": {
+      "region": "Ростовская область, Таганрог",
+      "target": "Военный аэродром «Таганрог-Центральный» (708-й ВТАП и 325-й АРЗ)",
+      "category": "Военный аэродром",
+      "weapon": "Дрон",
+      "details": "В ночь на 12 сентября 2026 года Силы обороны Украины осуществили массированный налет ударных дронов на военный аэродром «Таганрог-Центральный». На авиабазе дислоцируется 708-й военно-транспортный авиационный полк и функционирует 325-й авиаремонтный завод. Президент Украины Владимир Зеленский подтвердил, что бойцы СБУ поразили радиолокационную станцию и зенитный ракетно-пушечный комплекс «Панцирь-С2», прикрывавший летное поле. Дроны Центра спецопераций «А» СБУ пробили противодроновые сетки и уничтожили резервуар с авиатопливом в резервуарном парке аэродрома. Генштаб ВСУ также зафиксировал уничтожение самолета противника в зоне авиабазы. На объекте начался масштабный ночной пожар с сильным задымлением, который продолжался до утра. Губернатор Ростовской области Юрий Слюсарь заявил об отражении налета более 70 дронов в регионе.",
+      "source": "Президент Украины, СБУ, Генштаб ВСУ, ASTRA, Exilenova+, росСМИ"
+    },
+    "uk": {
+      "region": "Ростовська область, Таганрог",
+      "target": "Військовий аеродром «Таганрог-Центральний» (708-й ВТАП та 325-й АРЗ)",
+      "category": "Військовий аеродром",
+      "weapon": "Дрон",
+      "details": "У ніч проти 12 вересня 2026 року Сили оборони України завдали масованого комбінованого удару безпілотниками по військовому аеродрому «Таганрог-Центральний». На летовищі базується 708-й військово-транспортний авіаполк РФ та діє 325-й авіаремонтний завод. Президент Володимир Зеленський повідомив про результативну роботу СБУ, воїни якої уразили ворожу РЛС та зенітний ракетно-гарматний комплекс «Панцир-С2». Спецпризначенці ЦСО «А» СБУ прямим влучанням спалили резервуар з авіаційним пальним у паливному парку авіабази. Крім того, Генштаб ЗСУ підтвердив ліквідацію одного літака окупантів. На території аеродрому спалахнула сильна пожежа, над військовим містечком тривалий час здіймався густий чорний дим. Влада Ростовської області визнала масовану нічну атаку, заявивши про перехоплення понад 70 дронів над містом та областю.",
+      "source": "Президент України, СБУ, Генштаб ЗСУ, ASTRA, Exilenova+, росЗМІ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Taganrog",
+      "target": "Taganrog-Tsentralny Military Airbase (708th VTAP & 325th ARZ)",
+      "category": "Military Airfield",
+      "weapon": "Drone",
+      "details": "Overnight on September 12, 2026, Ukrainian strike drones executed a coordinated mass attack on Taganrog-Tsentralny military airfield in Rostov Oblast. The facility hosts the Russian 708th Military Transport Aviation Regiment and the 325th Aircraft Repair Plant. Ukrainian President Volodymyr Zelensky confirmed that SBU operators struck a radar station and a Pantsir-S2 air defense system defending the runway. Special operators of SBU Alpha breached cage defenses and blew up a jet fuel storage tank inside the airbase's fuel park. The General Staff of the AFU additionally recorded the destruction of a Russian aircraft during the operation. Secondary explosions caused massive fires and thick plumes of smoke that remained visible past sunrise. Rostov Oblast governor Yury Slyusar acknowledged the swarm raid, reporting that over 70 drones were engaged across the region.",
+      "source": "President of Ukraine, SBU, General Staff of AFU, ASTRA, Exilenova+, Russian Media"
+    },
+    "images": [
+      "video/taganrog_airbase_2026-09-12_1.mp4",
+      "video/taganrog_airbase_2026-09-12_2.mp4",
+      "images/taganrog_airbase_1209_1.jpg",
+      "images/taganrog_airbase_1209_2.jpg",
+      "images/taganrog_airbase_1209_3.jpg",
+      "images/taganrog_airbase_1209_4.jpg"
+    ],
+    "id": 457
+  },
+  {
+    "date": "12.09.2026",
+    "lat": 47.2386,
+    "lng": 38.8925,
+    "distance": 193,
+    "ru": {
+      "region": "Ростовская область, Таганрог (ул. Инструментальная)",
+      "target": "Завод ударных БПЛА «Атлант Аэро» (территория ТагАЗ)",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 12 сентября 2026 года дальнобойные дроны Сил обороны Украины нанесли прицельный удар по предприятию ВПК «Атлант Аэро» в Таганроге. Завод размещен на производственных площадях бывшего Таганрогского автозавода (ТагАЗ) на Инструментальной улице. Предприятие выполняет полный цикл проектирования, сборки и тестирования разведывательно-ударных дронов типа «Молния» и компонентов для БПЛА «Орион». Президент Украины Владимир Зеленский подтвердил поражение производственных цехов сборки FPV-дронов, складов хранения готовых БПЛА и резервуара с горючим. Спутниковые снимки зафиксировали как минимум три точных попадания по цеховым корпусам завода. На территории предприятия разгорелся крупный пожар, зафиксированный тепловыми датчиками NASA FIRMS. Губернатор региона подтвердил повреждения строений в близлежащем промышленном секторе города.",
+      "source": "Президент Украины, СБУ, Exilenova+, NASA FIRMS, ASTRA, росСМИ"
+    },
+    "uk": {
+      "region": "Ростовська область, Таганрог (вул. Інструментальна)",
+      "target": "Завод ударних БпЛА «Атлант Аеро» (територія ТагАЗ)",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч проти 12 вересня 2026 року українські ударні дрони атакували ключове оборонне підприємство «Атлант Аеро» у Таганрозі Ростовської області. Виробництво розгорнуто на промислових потужностях колишнього Таганрозького автомобільного заводу (ТагАЗ). Підприємство здійснює повний цикл конструювання, серійного складання та випробувань ударних дронів «Молнія» та вузлів для БпЛА «Оріон». Президент Володимир Зеленський підтвердив, що воїни СБУ уразили цехи збирання FPV-дронів, склади зберігання безпілотників та резервуар з нафтопродуктами. Супутникові знімки зафіксували щонайменше три точні влучання у виробничі та складські корпуси заводу. Потужна детонація спричинила велику пожежу на об'єкті, сліди якої підтвердила супутникова система NASA FIRMS. Влада області підтвердила пошкодження будівель у промисловому секторі.",
+      "source": "Президент України, СБУ, Exilenova+, NASA FIRMS, ASTRA, росЗМІ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Taganrog (Instrumentalnaya Street)",
+      "target": "Atlant Aero UAV Production Plant (Former TagAZ Facility)",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "Overnight on September 12, 2026, Ukrainian deep-strike drones struck the Atlant Aero defense manufacturing facility in Taganrog, Rostov Oblast. The plant operates inside the repurposed industrial territory of the former Taganrog Automobile Plant (TagAZ). Atlant Aero handles end-to-end design, manufacturing, and testing of Molniya strike drones along with key components for Orion UAVs. Ukrainian President Volodymyr Zelensky confirmed that SBU operators destroyed FPV drone assembly workshops, drone storage warehouses, and an on-site fuel tank. Post-strike satellite imagery verified at least three direct hits on industrial assembly buildings and storage hangars across the plant. The attack caused massive fires on the factory grounds, confirmed by NASA FIRMS thermal anomaly satellite monitors. Regional officials acknowledged structural damage across the adjacent industrial area.",
+      "source": "President of Ukraine, SBU, Exilenova+, NASA FIRMS, ASTRA, Russian Media"
+    },
+    "images": [
+      "video/taganrog_atlant_2026-09-12_1.mp4",
+      "video/taganrog_atlant_2026-09-12_2.mp4",
+      "images/taganrog_atlant_1.jpg",
+      "images/taganrog_atlant_2.jpg",
+      "images/taganrog_atlant_3.jpg",
+      "images/taganrog_atlant_4.jpg"
+    ],
+    "id": 458
+  },
+  {
+    "date": "12.09.2026",
+    "lat": 43.535,
+    "lng": 39.75,
+    "distance": 597,
+    "ru": {
+      "region": "Краснодарский край, Сочи (акватория Черного моря)",
+      "target": "Нефтяной танкер теневого флота РФ в Черном море",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "12 сентября 2026 года Силы беспилотных систем ВСУ нанесли результативный удар по подсанкционному нефтяному танкеру теневого флота РФ возле побережья Сочи. Спецоперация проведена в рамках кампании «МоЛоЧКа» по перекрытию морского экспорта российской сырой нефти. Президент Украины Владимир Зеленский в суточной сводке официально подтвердил поражение цели в Черном море. По данным OSINT-мониторинга и командования СБС, судно перевозило крупные объемы углеводородов для финансирования военных расходов РФ. Украинские дроны преодолели заслоны ПВО и поразили борт танкера, несмотря на попытки российского вертолета перехватить атакующие аппараты. На борту судна возник пожар, в акваторию вышли военные патрульные катера для обеспечения спасательных работ и ликвидации возгорания. Попадание привело к временному закрытию судоходного фарватера в районе порта Сочи.",
+      "source": "Президент Украины, СБС ВСУ (Мадяр), Supernova+, Exilenova+, ASTRA"
+    },
+    "uk": {
+      "region": "Краснодарський край, Сочі (акваторія Чорного моря)",
+      "target": "Нафтовий танкер тіньового флоту РФ у Чорному морі",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "12 вересня 2026 року підрозділи Сил безпілотних систем ЗСУ завдали влучного удару по підсанкційному нафтовому танкеру тіньового флоту РФ біля узбережжя Сочі. Успішну операцію реалізовано в рамках кампанії «МоЛоЧКа», спрямованої на блокування нелегального танкерного експорту нафти агресора. Президент України Володимир Зеленський у вечірньому зверненні офіційно підтвердив ураження морської цілі в Чорному морі. За даними командування СБС, нафтоналивне судно транспортувало сировину для поповнення військового бюджету окупантів. Українські безпілотники успішно влучили в танкер, попри спроби російського вертольота збити апарати над морем. На судні спалахнула пожежа, до місця інциденту терміново вийшли патрульні катери Чорноморського флоту РФ. Атака змусила командування окупантів тимчасово обмежити рух суден у зоні порту Сочі.",
+      "source": "Президент України, СБС ЗСУ (Мадяр), Supernova+, Exilenova+, ASTRA"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Sochi (Black Sea Coast)",
+      "target": "Russian Shadow Fleet Oil Tanker in Black Sea",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On September 12, 2026, Ukrainian Unmanned Systems Forces hit a sanctioned Russian shadow fleet oil tanker navigating the Black Sea off the coast of Sochi. The deep maritime strike was executed under operation MoLoCHKa, designed to disrupt illicit Russian crude oil shipments that fund the war effort. President Volodymyr Zelensky officially verified the successful hit on a Black Sea maritime target in his daily briefing. Visual telemetry and military reports showed Ukrainian strike drones penetrating the vessel despite Russian military helicopters attempting interception. Multiple drone detonations punctured the tanker and ignited an intense fire on board the vessel. Russian patrol boats immediately deployed from the port of Sochi to assist with damage control and secure the perimeter. The engagement triggered emergency commercial shipping warnings and harbor restrictions along the Sochi shoreline.",
+      "source": "President of Ukraine, SBS of AFU (Magyar), Supernova+, Exilenova+, ASTRA"
+    },
+    "images": [
+      "video/sochi_tanker_2026-09-12_1.mp4",
+      "video/sochi_tanker_2026-09-12_2.mp4",
+      "images/sochi_tanker_1.jpg",
+      "images/sochi_tanker_2.jpg",
+      "images/sochi_tanker_3.jpg",
+      "images/sochi_tanker_4.jpg"
+    ],
+    "id": 459
+  },
+  {
     "date": "11.09.2026",
     "lat": 51.4506,
     "lng": 45.9439,
