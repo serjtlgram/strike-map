@@ -1,5 +1,42 @@
 const strikeData = [
   {
+    "date": "16.09.2026",
+    "lat": 45.642,
+    "lng": 33.2613,
+    "distance": 121,
+    "ru": {
+      "region": "АР Крым (оккупирован), Раздольненский район, с. Орловка",
+      "target": "Газораспределительная станция «Орловка» (ГРС «Орловка»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Поздно вечером 16 сентября 2026 года украинские ударные беспилотники атаковали ключевой объект газотранспортной инфраструктуры на северо-западе Крыма — газораспределительную станцию «Орловка» в Раздольненском районе. Местные жители около 22:00 зафиксировали серию мощных взрывов, после чего над газовым распределительным узлом поднялось масштабное зарево от пожара. ГРС «Орловка» играет важную роль в распределении природного газа потребителям и на оккупационные военные объекты в регионе, технологически связывая станции «Раздольное» и «Нива». В результате прямого попадания дронов технологическое оборудование станции и распределительные узлы получили серьезные повреждения. Оккупационная администрация района была вынуждена признать факт аварии на магистральных объектах и отключение газоснабжения в нескольких селах. К месту взрыва прибыли расчеты МЧС для локализации очага возгорания.",
+      "source": "Мониторинговая группа «Крымский ветер», оккупационная администрация Раздольненского района, местные жители"
+    },
+    "uk": {
+      "region": "АР Крим (окупований), Роздольненський район, с. Орлівка",
+      "target": "Газорозподільна станція «Орлівка» (ГРС «Орлівка»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Пізно ввечері 16 вересня 2026 року українські ударні безпілотники атакували важливий об'єкт газотранспортної мережі на північному заході Криму — газорозподільну станцію «Орлівка» в Роздольненському районі. Місцеві жителі близько 22:00 повідомили про звуки вибухів, після яких над територією газового вузла спалахнула масштабна пожежа із загравою на все поле. ГРС «Орлівка» виконує ключову роль у подачі блакитного палива споживачам та військовим об'єктам окупантів у Роздольненському і Сакському районах та технологічно поєднана з ГРС «Роздольне» і «Нива». Внаслідок влучання безпілотників пошкоджено технологічні газогони та запірну арматуру станції. Окупаційна адміністрація району змушена була визнати надзвичайну подію на магістральних мережах, через що без газу залишилися прилеглі населені пункти. До ліквідації вогню залучалися аварійні бригади та пожежні підрозділи.",
+      "source": "Моніторингова група «Кримський вітер», окупаційна адміністрація Роздольненського району, місцеві жителі"
+    },
+    "en": {
+      "region": "Autonomous Republic of Crimea (occupied), Razdolnensky District, Orlovka",
+      "target": "Orlovka Gas Distribution Station (GRS Orlovka)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "Late in the evening on September 16, 2026, Ukrainian long-range strike UAVs struck a vital gas transmission facility in northwestern occupied Crimea — the Orlovka Gas Distribution Station in Razdolnensky District. Around 10:00 PM local time, residents heard loud explosions, followed by a large fire with an intense glow lighting up the surrounding fields. The Orlovka GRS plays a vital role in natural gas distribution to civilian infrastructure and Russian military bases across Razdolnensky and Saksky districts, connecting with the Razdolnoye and Niva gas hubs. Direct drone impacts damaged the station's primary distribution manifolds, pressure reduction valves, and pipeline fittings. The local occupation administration confirmed disruptions to main gas transmission facilities, halting supplies to several nearby villages. Emergency response crews and firefighters were dispatched to contain the blaze and extinguish the fire.",
+      "source": "Crimean Wind OSINT monitoring group, Razdolnensky district occupation administration, local reports"
+    },
+    "images": [
+      "images/grs_orlovka_img1.jpg",
+      "images/grs_orlovka_img2.jpg",
+      "images/grs_orlovka_img3.jpg",
+      "images/grs_orlovka_img4.jpg"
+    ],
+    "id": 469
+  },
+  {
     "date": "15.09.2026",
     "lat": 53.3687,
     "lng": 35.8177,
