@@ -29,11 +29,7 @@ const strikeData = [
       "source": "Supernova+, Exilenova+, Crimeanwind, ASTRA, Russian MoD"
     },
     "images": [
-      "video/kaspiysk_1909_vid1.mp4",
-      "video/kaspiysk_1909_vid2.mp4",
-      "images/kaspiysk_1909_img1.jpg",
-      "images/kaspiysk_1909_img2.jpg",
-      "images/kaspiysk_1909_img3.jpg"
+      "video/kaspiysk_1909_vid1.mp4"
     ],
     "id": 475
   },
@@ -66,10 +62,6 @@ const strikeData = [
       "details": "In the late afternoon of September 19, 2026, Ukrainian defense forces conducted a successful drone strike against Belbek military airfield near Sevastopol in occupied Crimea. Local residents documented intensive anti-aircraft machine gun fire followed by two major explosions across the airfield at 17:24 and 17:57 local time. Eyewitness photographs confirmed distinct columns of smoke rising over the runway perimeter and aircraft parking areas. Belbek serves as the principal airbase for Russia's 38th Fighter Aviation Regiment, hosting Su-27, Su-30SM, and Su-35S multirole fighters used for missile and bomb attacks against southern Ukraine. Occupation authorities withheld commentary regarding base damage and airfield casualties. The strike disrupted regular combat sorties and alert patrols of Russian tactical aviation operating from Crimea.",
       "source": "Crimean Wind monitoring group, OSINT, local reports"
     },
-    "images": [
-      "images/belbek_1909_img1.jpg",
-      "images/belbek_1909_img2.jpg"
-    ],
     "id": 476
   },
   {
@@ -102,9 +94,7 @@ const strikeData = [
       "source": "General Staff of AFU, Crimean Wind monitoring group, OSINT"
     },
     "images": [
-      "images/saki_1809_img1.jpg",
-      "images/saki_1809_img2.jpg",
-      "images/saki_1809_img3.jpg"
+      "images/saki_1809_img1.jpg"
     ],
     "id": 472
   },
@@ -175,9 +165,7 @@ const strikeData = [
     },
     "images": [
       "video/rostov_1809_vid1.mp4",
-      "video/rostov_1809_vid2.mp4",
       "images/rostov_1809_img1.jpg",
-      "images/rostov_1809_img2.jpg",
       "images/rostov_1809_img3.jpg",
       "images/rostov_1809_img4.jpg"
     ],
@@ -214,9 +202,7 @@ const strikeData = [
     },
     "images": [
       "video/yanos_1709_vid1.mp4",
-      "video/yanos_1709_vid2.mp4",
       "images/yanos_1709_img1.jpg",
-      "images/yanos_1709_img2.jpg",
       "images/yanos_1709_img3.jpg",
       "images/yanos_1709_img4.jpg"
     ],
@@ -255,8 +241,6 @@ const strikeData = [
       "video/rostov_airbase_1709_vid1.mp4",
       "video/rostov_airbase_1709_vid2.mp4",
       "images/rostov_airbase_1709_img1.jpg",
-      "images/rostov_airbase_1709_img2.jpg",
-      "images/rostov_airbase_1709_img3.jpg",
       "images/rostov_airbase_1709_img4.jpg"
     ],
     "id": 471
@@ -291,7 +275,6 @@ const strikeData = [
       "source": "Crimean Wind OSINT monitoring group, Razdolnensky district occupation administration, local reports"
     },
     "images": [
-      "images/grs_orlovka_img1.jpg",
       "images/grs_orlovka_img2.jpg",
       "images/grs_orlovka_img3.jpg",
       "images/grs_orlovka_img4.jpg"
@@ -365,10 +348,7 @@ const strikeData = [
       "source": "429th Achilles Separate Drone Brigade, 43rd Separate Artillery Brigade, OperativnoZSU, General Staff of AFU"
     },
     "images": [
-      "video/millerovo_nebo_m_2026-09-15_1.mp4",
-      "video/millerovo_nebo_m_2026-09-15_2.mp4",
-      "images/millerovo_nebo_m_1.jpg",
-      "images/millerovo_nebo_m_2.jpg"
+      "video/millerovo_nebo_m_2026-09-15_1.mp4"
     ],
     "id": 468
   },
@@ -403,11 +383,8 @@ const strikeData = [
     },
     "images": [
       "video/syzran_npz_2026-09-14_1.mp4",
-      "video/syzran_npz_2026-09-14_2.mp4",
-      "images/syzran_npz_1.jpg",
       "images/syzran_npz_2.jpg",
-      "images/syzran_npz_3.jpg",
-      "images/syzran_npz_4.jpg"
+      "images/syzran_npz_3.jpg"
     ],
     "id": 463
   },
@@ -441,10 +418,7 @@ const strikeData = [
       "source": "General Staff of AFU, ASTRA, Exilenova+, Supernova+, NASA FIRMS, Rostov Oblast authorities"
     },
     "images": [
-      "video/taganrog_beriev_2026-09-14_1.mp4",
-      "video/taganrog_beriev_2026-09-14_2.mp4",
       "images/taganrog_beriev_1.jpg",
-      "images/taganrog_beriev_2.jpg",
       "images/taganrog_beriev_3.jpg"
     ],
     "id": 464
@@ -478,11 +452,6 @@ const strikeData = [
       "details": "Late on September 14, 2026, a Ukrainian precision missile attack on logistics and industrial infrastructure in Taganrog struck a major Ozon distribution center. The hub plays an important role in supporting southern front logistics, serving as a transit facility for military gear, communication devices, and dual-use equipment. Direct missile impacts triggered explosions and a severe fire that quickly spread through warehouse sections. Blast forces caused structural collapse of roofs and supporting frameworks, destroying substantial stocks stored on site. Rostov Oblast Governor Yury Slyusar and Taganrog Mayor Svetlana Kambulova formally confirmed the strike on the Ozon warehouse and the deployment of emergency crews. Facility personnel were evacuated immediately, while operations at this southern shipping hub were completely paralyzed.",
       "source": "ASTRA, Supernova+, OperativnoZSU, Acting Governor of Rostov Oblast, Taganrog Administration"
     },
-    "images": [
-      "video/taganrog_ozon_2026-09-14_1.mp4",
-      "images/taganrog_ozon_1.jpg",
-      "images/taganrog_ozon_2.jpg"
-    ],
     "id": 465
   },
   {
@@ -514,9 +483,6 @@ const strikeData = [
       "details": "Overnight on September 14, 2026, Ukrainian defense forces executed a successful long-range drone strike on the Saki military airfield in occupied Crimea. Located in Novofedorovka, this airbase is the home station of the Russian Black Sea Fleet's 43rd Independent Naval Assault Aviation Regiment, which operates Su-24M bombers and Su-30SM multirole fighters. According to the official statement of the General Staff of the AFU, the attack scored a direct hit on the airfield's short-range radio navigation system (RSBN). This radio-technical complex is indispensable for instrument-guided nighttime landings and adverse weather flight operations. Local residents in Saksky district reported heavy anti-aircraft fire and several loud explosions around 3:00 AM. Disabling this navigation system sharply constrained Russian naval air operations across the Black Sea operational theater.",
       "source": "General Staff of AFU, Crimean Wind, ASTRA, Exilenova+, Supernova+"
     },
-    "images": [
-      "images/saki_airfield_1.jpg"
-    ],
     "id": 466
   },
   {
@@ -552,7 +518,6 @@ const strikeData = [
       "video/taneko_npz_2026-09-13_1.mp4",
       "video/taneko_npz_2026-09-13_2.mp4",
       "images/taneko_npz_1.jpg",
-      "images/taneko_npz_2.jpg",
       "images/taneko_npz_3.jpg",
       "images/taneko_npz_4.jpg"
     ],
@@ -589,11 +554,7 @@ const strikeData = [
     },
     "images": [
       "video/slavyansk_npz_2026-09-13_1.mp4",
-      "video/slavyansk_npz_2026-09-13_2.mp4",
-      "images/slavyansk_npz_1.jpg",
-      "images/slavyansk_npz_2.jpg",
-      "images/slavyansk_npz_3.jpg",
-      "images/slavyansk_npz_4.jpg"
+      "images/slavyansk_npz_1.jpg"
     ],
     "id": 461
   },
@@ -776,7 +737,6 @@ const strikeData = [
     },
     "images": [
       "video/sochi_tanker_2026-09-12_1.mp4",
-      "video/sochi_tanker_2026-09-12_2.mp4",
       "images/sochi_tanker_1.jpg",
       "images/sochi_tanker_2.jpg",
       "images/sochi_tanker_3.jpg",
@@ -893,7 +853,6 @@ const strikeData = [
     },
     "images": [
       "video/berezniki_azot_2026-09-11_1.mp4",
-      "video/berezniki_azot_2026-09-11_2.mp4",
       "images/berezniki_azot_1.jpg",
       "images/berezniki_azot_2.jpg",
       "images/berezniki_azot_3.jpg",
