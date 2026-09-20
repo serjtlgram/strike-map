@@ -1,5 +1,78 @@
 const strikeData = [
   {
+    "date": "19.09.2026",
+    "lat": 42.8942,
+    "lng": 47.6521,
+    "distance": 1014,
+    "ru": {
+      "region": "Республика Дагестан, Каспийск",
+      "target": "Пункт базирования Каспийской флотилии ВМФ РФ (Военная гавань порта Каспийск)",
+      "category": "ВПК / Военно-морские базы",
+      "weapon": "Дрон",
+      "details": "Ранним утром 19 сентября 2026 года украинские ударные дроны совершили налет на военную гавань Каспийска в Республике Дагестан, преодолев по воздуху свыше 1000 километров. Главной целью атаки стал основной пункт базирования Каспийской флотилии ВМФ РФ и прилегающие причалы морского порта. Очевидцы сняли пролет беспилотников на предельно малой высоте и серию мощных взрывов непосредственно в районе стоянки боевых кораблей. Минобороны РФ заявило о перехвате беспилотников над Дагестаном, однако местные жители зафиксировали прилеты в прибрежной полосе. Порт Каспийска имеет стратегическое значение для российской армии, служа ключевым морским хабом по приему иранских вооружений, баллистических ракет и компонентов дронов. Удар подтвердил уязвимость тыловых объектов флота на Каспийском море для дальнобойного украинского оружия.",
+      "source": "Supernova+, Exilenova+, Crimeanwind, ASTRA, Минобороны РФ"
+    },
+    "uk": {
+      "region": "Республіка Дагестан, Каспійськ",
+      "target": "Пункт базування Каспійської флотилії ВМФ РФ (Військова гавань порту Каспійськ)",
+      "category": "ВПК / Військово-морські бази",
+      "weapon": "Дрон",
+      "details": "Вранці 19 вересня 2026 року українські ударні дрони атакували військову гавань Каспійська в Дагестані, подолавши відстань понад 1000 кілометрів від лінії фронту. Головною ціллю удару став основний пункт базування Каспійської флотилії ВМФ РФ та інфраструктура морського порту. Місцеві жителі оприлюднили відеозаписи прольоту безпілотників над містом і серію гучних вибухів безпосередньо в районі стоянки військових кораблів. Міноборони РФ заявило про збиття дронів над регіоном, проте очевидці зафіксували влучання в портовій зоні. Порт Каспійська є критичним логістичним вузлом, через який Росія отримує морем іранські озброєння, балістичні ракети та комплектуючі до дронів. Успішна операція продемонструвала досяжність російських військових об'єктів у Каспійському регіоні.",
+      "source": "Supernova+, Exilenova+, Crimeanwind, ASTRA, Міноборони РФ"
+    },
+    "en": {
+      "region": "Republic of Dagestan, Kaspiysk",
+      "target": "Caspian Flotilla Naval Base (Kaspiysk Naval Harbor)",
+      "category": "Defense / Naval Bases",
+      "weapon": "Drone",
+      "details": "Early in the morning on September 19, 2026, Ukrainian long-range strike drones targeted the naval harbor of Kaspiysk in the Republic of Dagestan, flying over 1,000 kilometers across the Caspian region. The primary target was the main naval base of the Caspian Flotilla and adjacent maritime port facilities. Eyewitness video documented low-flying UAVs and multiple detonations rocking the vicinity of Russian naval warship berths. Although the Russian Ministry of Defense claimed drone interceptions over Dagestan, local residents confirmed impacts and heavy smoke near the waterfront. Kaspiysk serves as a vital logistics node handling maritime deliveries of Iranian weaponry, ballistic missiles, and drone components to Russia. The raid highlighted the growing vulnerability of Russian naval assets stationed across the Caspian Sea.",
+      "source": "Supernova+, Exilenova+, Crimeanwind, ASTRA, Russian MoD"
+    },
+    "images": [
+      "video/kaspiysk_1909_vid1.mp4",
+      "video/kaspiysk_1909_vid2.mp4",
+      "images/kaspiysk_1909_img1.jpg",
+      "images/kaspiysk_1909_img2.jpg",
+      "images/kaspiysk_1909_img3.jpg"
+    ],
+    "id": 475
+  },
+  {
+    "date": "19.09.2026",
+    "lat": 44.6883,
+    "lng": 33.5703,
+    "distance": 229,
+    "ru": {
+      "region": "АР Крым (оккупирован), г. Севастополь, пос. Любимовка",
+      "target": "Военный аэродром «Бельбек»",
+      "category": "ВПК / Авиабазы",
+      "weapon": "Дрон",
+      "details": "Во второй половине дня 19 сентября 2026 года Силы обороны Украины нанесли результативный удар беспилотниками по военному аэродрому Бельбек под Севастополем. Местные жители зафиксировали непрерывную стрельбу мобильных огневых групп ПВО и два мощных взрыва на территории базы в 17:24 и 17:57. На опубликованных фотоматериалах видны характерные столбы дыма, поднимающиеся непосредственно над летным полем и стоянками техники. Аэродром Бельбек служит ключевой авиабазой 38-го истребительного авиаполка ВКС РФ, вооруженного самолетами Су-27, Су-30СМ и Су-35С, регулярно наносящими удары по югу Украины. Российские власти традиционно скрыли масштаб разрушений инфраструктуры аэродрома. Удар осложнил выполнение боевых вылетов российской тактической авиации с крымского направления.",
+      "source": "Мониторинговая группа «Крымский ветер», OSINT, местные паблики"
+    },
+    "uk": {
+      "region": "АР Крим (окупований), м. Севастополь, сел. Любимівка",
+      "target": "Військовий аеродром «Бельбек»",
+      "category": "ВПК / Авіабази",
+      "weapon": "Дрон",
+      "details": "У другій половині дня 19 вересня 2026 року Сили оборони України завдали результативного удару безпілотниками по військовому аеродрому Бельбек поблизу Севастополя. Мешканці навколишніх селищ зафіксували інтенсивну роботу зенітних кулеметів та два потужних вибухи на території авіабази о 17:24 та 17:57. На фотографіях очевидців чітко видно густі стовпи диму, що підіймалися безпосередньо над льотним полем та стоянками бортів. Летовище Бельбек є основним пунктом дислокації 38-го винищувального авіаполку ВКС РФ із літаками Су-27, Су-30СМ і Су-35С, які здійснюють пуски ракет по південних областях України. Окупаційна влада приховала масштаби руйнувань, уникнувши офіційних заяв щодо інциденту. Удар порушив графік бойових чергувань ворожої тактичної авіації в кримському секторі.",
+      "source": "Моніторингова група «Кримський вітер», OSINT, місцеві пабліки"
+    },
+    "en": {
+      "region": "Crimea (occupied), Sevastopol, Lyubimovka",
+      "target": "Belbek Military Airfield",
+      "category": "Defense / Airbases",
+      "weapon": "Drone",
+      "details": "In the late afternoon of September 19, 2026, Ukrainian defense forces conducted a successful drone strike against Belbek military airfield near Sevastopol in occupied Crimea. Local residents documented intensive anti-aircraft machine gun fire followed by two major explosions across the airfield at 17:24 and 17:57 local time. Eyewitness photographs confirmed distinct columns of smoke rising over the runway perimeter and aircraft parking areas. Belbek serves as the principal airbase for Russia's 38th Fighter Aviation Regiment, hosting Su-27, Su-30SM, and Su-35S multirole fighters used for missile and bomb attacks against southern Ukraine. Occupation authorities withheld commentary regarding base damage and airfield casualties. The strike disrupted regular combat sorties and alert patrols of Russian tactical aviation operating from Crimea.",
+      "source": "Crimean Wind monitoring group, OSINT, local reports"
+    },
+    "images": [
+      "images/belbek_1909_img1.jpg",
+      "images/belbek_1909_img2.jpg"
+    ],
+    "id": 476
+  },
+  {
     "date": "18.09.2026",
     "lat": 45.0933,
     "lng": 33.5986,
