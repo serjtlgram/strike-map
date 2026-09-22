@@ -1,5 +1,79 @@
 const strikeData = [
   {
+    "date": "21.09.2026",
+    "lat": 53.3676,
+    "lng": 35.805,
+    "distance": 282,
+    "ru": {
+      "region": "Орловская область, Болховский район, пос. Цымбулово",
+      "target": "Основной дронопорт ВС РФ «Цымбулово» (база пуска БПЛА «Герань-5» и склады БК)",
+      "category": "Военный аэродром",
+      "weapon": "Реактивный дрон / ракета «Нептун»",
+      "details": "В ночь на 21 сентября 2026 года Силы обороны Украины нанесли комбинированный высокоточный удар реактивными дронами и крылатыми ракетами «Нептун» по главному российскому дронопорту «Цымбулово» в Орловской области. Этот специальный военный объект в 280 километрах от границы служил ключевой стартовой площадкой для регулярных пусков беспилотников «Герань-2» и новейших реактивных «Герань-5» по центральным регионам Украины. Спутниковые снимки зафиксировали прямое пробитие двух заглубленных железобетонных бункеров с боевой частью БПЛА, причем в одном из них произошла мощная подземная детонация. Также разрушены два предпусковых ангара-склада и уничтожена стартовая позиция вместе с подготовленными к ночному вылету аппаратами. Российская ПВО заявила о перехвате целей в регионе, однако очаги вторичных взрывов подтвердили критическое поражение базы. Вывод из строя дронопорта в Цымбулово временно сорвал пусковые графики налетов шахедов на северном направлении.",
+      "source": "Генштаб ВСУ, OSINT (Exilenova+, Kiber Boroshno, Око Гора), мониторинговые каналы РФ"
+    },
+    "uk": {
+      "region": "Орловська область, Болховський район, сел. Цимбулово",
+      "target": "Головний дронопорт ЗС РФ «Цимбулово» (база пуску БпЛА «Герань-5» та склади БК)",
+      "category": "Військовий аеродром",
+      "weapon": "Реактивний дрон / ракета «Нептун»",
+      "details": "У ніч на 21 вересня 2026 року Сили оборони України завдали комбінованого високоточного удару реактивними безпілотниками та ракетами «Нептун» по головному російському дронопорту «Цимбулово» в Орловській області. Цей спеціальний об'єкт за 280 кілометрів від лінії фронту використовувався окупантами як ключовий вузол підготовки та регулярних запусків баражуючих боєприпасів «Герань-2» та реактивних «Герань-5». Супутникові знімки високої роздільної здатності підтвердили пряме влучання у два захищені підземні бункери зберігання дронів із внутрішньою та поверхневою детонацією боєкомплекту. Окрім того, руйнувань зазнали два передпускові ангари й зафіксовано вигорання стартового майданчика з підготовленими до запуску дронами. Засоби ППО противника відзвітували про збиття цілей в області, однак вторинні вибухи повністю викрили масштаб руйнувань. Ураження вузлової бази в Цимбуловому суттєво послабило спроможності ворога щодо нічного дронового терору північних областей України.",
+      "source": "Генштаб ЗСУ, OSINT (Exilenova+, Kiber Boroshno, Око Гора), моніторингові канали РФ"
+    },
+    "en": {
+      "region": "Oryol Oblast, Bolkhov District, Tsymbulovo",
+      "target": "Russian Armed Forces Main Dronoport \"Tsymbulovo\" (Geran-5 UAV base and ammo bunkers)",
+      "category": "Military Airfield",
+      "weapon": "Jet Drone / Neptune Missile",
+      "details": "On the night of September 21, 2026, Ukrainian defense forces executed a precision strike combining jet-powered strike UAVs and Neptune cruise missiles against Russia's main drone port in Tsymbulovo, Oryol Oblast. Located 280 kilometers from the border, the specialized military base served as a primary launch hub for Shahed-type Geran-2 and jet-powered Geran-5 kamikaze drones. Satellite imagery confirmed direct hits on two reinforced underground bunkers used for UAV and warhead storage, causing deep subterranean explosions. Strikes also destroyed two pre-launch preparation hangars and incinerated the main launch pad with drones prepared for takeoff. While Russian air defense reported intercepting targets across the region, secondary detonations confirmed heavy damage to the compound. Disabling Tsymbulovo disrupted Russia's launch schedules for night drone raids on northern Ukraine.",
+      "source": "General Staff of Ukraine, OSINT (Exilenova+, Kiber Boroshno, Oko Gora), Russian monitoring channels"
+    },
+    "images": [
+      "images/cymbulovo_2109_img1.jpg",
+      "images/cymbulovo_2109_img2.jpg",
+      "images/cymbulovo_2109_img3.jpg",
+      "images/cymbulovo_2109_img4.jpg"
+    ],
+    "id": 479
+  },
+  {
+    "date": "21.09.2026",
+    "lat": 54.8872,
+    "lng": 56.1264,
+    "distance": 1440,
+    "ru": {
+      "region": "Республика Башкортостан, г. Уфа, Орджоникидзевский район",
+      "target": "НПЗ «Башнефть-УНПЗ» (ПАО АНК «Башнефть») — технологические установки первичной переработки",
+      "category": "НПЗ",
+      "weapon": "Дрон",
+      "details": "Утром 21 сентября 2026 года дальнобойные ударные дроны Сил обороны Украины преодолели более 1400 километров и атаковали завод «Башнефть-УНПЗ» в северной промзоне Уфы. Нефтеперерабатывающее предприятие мощностью 7,5 млн тонн нефти в год входит в структуру «Роснефти» и выпускает бензины, дизель и авиакеросин для снабжения войск РФ. В результате серии прилетов в районе технологических установок первичной перегонки раздались взрывы и вспыхнул пожар, над заводом поднялся столб черного дыма. В городе ввели план «Ковер», временно закрыв аэропорт Уфы, а в промзоне отключали мобильный интернет. Власти Башкортостана заявили об отражении налета, однако Генштаб ВСУ официально подтвердил результативное огневое поражение завода. Удар углубил кризис в российской нефтепереработке, где из-за атак простаивает уже свыше 45% мощностей.",
+      "source": "Генштаб ВСУ, ASTRA, Supernova+, Exilenova+, Око Гора, городская администрация Уфы"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, м. Уфа, Орджонікідзевський район",
+      "target": "НПЗ «Башнафта-УНПЗ» (ПАТ АНК «Башнафта») — технологічні установки первинної переробки",
+      "category": "НПЗ",
+      "weapon": "Дрон",
+      "details": "Вранці 21 вересня 2026 року далекобійні безпілотники Сил оборони України подолали понад 1400 кілометрів та завдали удару по нафтопереробному заводу «Башнафта-УНПЗ» у північній промзоні Уфи. Підприємство проєктною потужністю 7,5 млн тонн нафти на рік належить холдингу «Роснафта» та спеціалізується на виробництві високооктанового пального і авіагасу для потреб окупаційних військ. Унаслідок кількох влучань у районі технологічних блоків первинної переробки прогриміли вибухи та спалахнула масштабна пожежа з густим задимленням. Через наліт влада республіки оголосила план «Килим», зупинивши роботу уфімського аеропорту, а в північних районах міста екстрено вимкнули мобільний зв'язок. Хоча російські посадовці стверджували про збиття апаратів ППО, Генеральний штаб ЗСУ офіційно підтвердив успішне вогневе ураження даного НПЗ. Атака посилила системний дефіцит на ринку пального агресора, вивівши з ладу черговий стратегічний вузол нафтохімічного комплексу Башкортостану.",
+      "source": "Генштаб ЗСУ, ASTRA, Supernova+, Exilenova+, Око Гора, міська адміністрація Уфи"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Ufa, Ordzhonikidzevsky District",
+      "target": "Bashneft-UNPZ Oil Refinery (PJSC ANK Bashneft) — Primary Refining Units",
+      "category": "Oil Refinery",
+      "weapon": "Drone",
+      "details": "On the morning of September 21, 2026, Ukrainian deep strike drones flew over 1,400 kilometers to hit the Bashneft-UNPZ refinery in the northern industrial zone of Ufa. With an annual capacity of 7.5 million tons of crude, the Rosneft-owned plant produces high-octane gasoline, diesel, and aviation fuel for Russian military operations. Multiple drone impacts near primary refining units triggered heavy blasts and ignited a major fire, sending dark smoke over the city. Local officials triggered emergency protocols, temporarily halting flights at Ufa International Airport and cutting mobile internet across northern districts. Despite official Russian claims that drones were intercepted, Ukraine's General Staff confirmed successful combat damage to the refinery. The strike intensified disruptions across Russia's fuel sector, where drone attacks have idled over 45% of total refining capacity.",
+      "source": "General Staff of Ukraine, ASTRA, Supernova+, Exilenova+, Oko Gora, Ufa City Administration"
+    },
+    "images": [
+      "images/ufa_npz_2109_img1.jpg",
+      "images/ufa_npz_2109_img2.jpg",
+      "images/ufa_npz_2109_img3.jpg",
+      "images/ufa_npz_2109_img4.jpg"
+    ],
+    "id": 480
+  },
+  {
     "date": "20.09.2026",
     "lat": 55.6445,
     "lng": 37.8057,
