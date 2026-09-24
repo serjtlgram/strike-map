@@ -1,5 +1,71 @@
 const strikeData = [
   {
+    "date": "24.09.2026",
+    "lat": 45.2354,
+    "lng": 38.9952,
+    "distance": 404,
+    "ru": {
+      "region": "Краснодарский край, Динской район (ст. Новотитаровская)",
+      "target": "Нефтебаза в станице Новотитаровской (ООО «Нефтебаза Новотитаровская»)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 24 сентября 2026 года подразделения Сил обороны Украины нанесли результативный удар беспилотниками по нефтебазе в станице Новотитаровской Динского района Краснодарского края. Около 4:30 утра несколько дальнобойных дронов-камикадзе спикировали на резервуарный парк и технологическую площадку слива топлива. На объекте прогремели взрывы и начался открытый пожар, к ликвидации которого экстренные службы привлекали пожарные расчеты МЧС. Оперативный штаб Краснодарского края официально признал возгорание на промышленном предприятии в Динском районе в результате падения обломков сбитых БПЛА. Кадры с места происшествия и факт поражения нефтебазы опубликовали украинские мониторинговые каналы, включая Exilenova+ и Око Гора. Данная нефтебаза играла важную роль в распределении бензина и дизеля на Кубани, обеспечивая логистику военных колонн и техники РФ в сторону крымского и приазовского направлений. Вывод из строя резервуаров усилил дефицит топлива в прифронтовом секторе.",
+      "source": "Оперштаб Краснодарского края, Exilenova+, Око Гора, OSINT (Astra)"
+    },
+    "uk": {
+      "region": "Краснодарський край, Дінський район (ст. Новотитарівська)",
+      "target": "Нафтобаза в станиці Новотитарівській (ТОВ «Нафтобаза Новотитарівська»)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 24 вересня 2026 року підрозділи Сил оборони України завдали результативного удару безпілотниками по нафтобазі в станиці Новотитарівській Дінського району Краснодарського краю. Близько 04:30 кілька далекобійних дронів-камікадзе пікірували на резервуарний парк і технологічний майданчик зливу пального. На об'єкті пролунали вибухи та спалахнула відкрита пожежа, до ліквідації якої залучалися пожежні розрахунки МНС. Оперативний штаб Краснодарського краю офіційно визнав займання на промисловому підприємстві в Дінському районі внаслідок падіння уламків збитих БПЛА. Кадри з місця подій та факт ураження нафтобази оприлюднили українські моніторингові канали, зокрема Exilenova+ та Око Гора. Ця нафтобаза відігравала важливу роль у розподілі пального на Кубані, живлячи логістику військових колон та техніки РФ у бік кримського і приазовського напрямків. Виведення з ладу резервуарів посилило дефіцит палива у прифронтовому секторі.",
+      "source": "Оперштаб Краснодарського краю, Exilenova+, Око Гора, OSINT (Astra)"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Dinskoy District (Novotitarovskaya stanitsa)",
+      "target": "Novotitarovskaya Oil Depot (LLC Novotitarovskaya Oil Depot)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 24, 2026, Ukrainian Defense Forces launched a successful drone strike targeting an oil depot in the stanitsa of Novotitarovskaya, Dinskoy District of Krasnodar Krai. Around 4:30 AM, long-range strike UAVs dove into the fuel storage tank farm and the rail offloading racks. Multiple explosions rocked the facility, sparking a significant fire that required regional emergency response teams to deploy foam extinguishing equipment. Krasnodar Krai operational headquarters officially acknowledged the blaze at an industrial facility in Dinskoy District following intercepted drone debris. Visual proof of damage was published by Ukrainian OSINT channels including Exilenova+ and Oko Gora. The Novotitarovskaya depot served as a vital regional distribution hub for gasoline and diesel supplying Russian military convoys operating towards Crimea and the Sea of Azov coast. Damaging these storage tanks created further localized fuel bottlenecks.",
+      "source": "Krasnodar Krai Operational HQ, Exilenova+, Oko Gora, OSINT (Astra)"
+    },
+    "images": [
+      "images/novotitarovskaya_oil_depot_2409_img1.jpg"
+    ],
+    "id": 484
+  },
+  {
+    "date": "24.09.2026",
+    "lat": 47.0545,
+    "lng": 39.8825,
+    "distance": 254,
+    "ru": {
+      "region": "Ростовская область, Кагальницкий район (пос. Мокрый Батай / ст. Кагальницкая)",
+      "target": "Нефтебаза в Кагальницком районе (Нефтебаза № 2 / распределительный узел ГСМ)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 24 сентября 2026 года украинские ударные дроны атаковали нефтебазу в Кагальницком районе Ростовской области. Воздушная тревога в регионе сопровождалась активной работой российских систем ПВО в районе Таганрога, Неклиновского и Кагальницкого районов. Беспилотники преодолели заградительный огонь и нанесли удар по территории объекта хранения нефтепродуктов. Губернатор Ростовской области Юрий Слюсарь официально подтвердил атаку, сообщив о повреждении административных и служебных строений нефтебазы. База в Кагальницком районе входит в распределительную сеть хранения горючего, используемую для снабжения армейских подразделений и транзитных колонн, направляющихся через Ростовский транспортный коридор. Поражение вспомогательной инфраструктуры и пунктов управления нарушило технологический цикл отгрузки топлива. Удар стал частью системной кампании по обескровливанию тыловой системы обеспечения южной группировки войск РФ.",
+      "source": "Губернатор Ростовской области, OSINT (Astra), мониторинговые каналы РФ"
+    },
+    "uk": {
+      "region": "Ростовська область, Кагальницький район (сел. Мокрий Батай / ст. Кагальницька)",
+      "target": "Нафтобаза в Кагальницькому районі (Нафтобаза № 2 / розподільчий вузол ПММ)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 24 вересня 2026 року українські ударні дрони атакували нафтобазу в Кагальницькому районі Ростовської області. Повітряна тривога в регіоні супроводжувалася активною роботою російських комплексів ППО в районі Таганрога, Неклинівського та Кагальницького районів. Безпілотники подолали загороджувальний вогонь та завдали удару по території об'єкта зберігання нафтопродуктів. Губернатор Ростовської області Юрій Слюсар офіційно підтвердив атаку, повідомивши про пошкодження адміністративних і службових будівель нафтобази. База в Кагальницькому районі входить до розподільчої мережі зберігання пального, задіяної для забезпечення армійських підрозділів і транзитних колон, що рухаються через Ростовський транспортний коридор. Ураження допоміжної інфраструктури та пунктів керування порушило технологічний цикл відвантаження палива. Удар став складовою системної кампанії зі знекровлення тилового забезпечення південного угруповання військ РФ.",
+      "source": "Губернатор Ростовської області, OSINT (Astra), моніторингові канали РФ"
+    },
+    "en": {
+      "region": "Rostov Oblast, Kagalnitsky District (Mokry Batay / Kagalnitskaya)",
+      "target": "Kagalnitsky District Oil Depot (Depot No. 2 / Fuel Logistics Terminal)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 24, 2026, Ukrainian strike drones carried out an attack against an oil depot in Kagalnitsky District of Rostov Oblast. The regional air raid alert was marked by intense Russian air defense fire across Taganrog, Neklinovsky, and Kagalnitsky districts. Ukrainian UAVs penetrated the defensive perimeter and struck the grounds of the petroleum storage facility. Rostov Oblast Governor Yuriy Slyusar officially confirmed the raid, acknowledging structural damage to administrative and operational buildings at the oil depot. The storage site in Kagalnitsky District forms a key node in the regional fuel distribution network supporting Russian military units and mechanized convoys transiting through the Rostov logistics corridor. Damaging the facility's administrative and control infrastructure disrupted the terminal's offloading cycle. This strike formed part of a systematic campaign to degrade logistical sustainment for Russian forces on the southern front.",
+      "source": "Rostov Oblast Governor, OSINT (Astra), Russian monitoring channels"
+    },
+    "images": [],
+    "id": 485
+  },
+  {
     "date": "23.09.2026",
     "lat": 54.8872,
     "lng": 56.1264,
