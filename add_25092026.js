@@ -117,8 +117,7 @@ const newEntries = [
       "video/iskra_ulyanovsk_2509_vid2.mp4",
       "images/iskra_ulyanovsk_2509_img1.jpg",
       "images/iskra_ulyanovsk_2509_img2.jpg",
-      "images/iskra_ulyanovsk_2509_img3.jpg",
-      "images/iskra_ulyanovsk_2509_img4.jpg"
+      "images/iskra_ulyanovsk_2509_img3.jpg"
     ],
     "id": 488
   },

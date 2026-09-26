@@ -108,8 +108,7 @@ const strikeData = [
       "video/iskra_ulyanovsk_2509_vid2.mp4",
       "images/iskra_ulyanovsk_2509_img1.jpg",
       "images/iskra_ulyanovsk_2509_img2.jpg",
-      "images/iskra_ulyanovsk_2509_img3.jpg",
-      "images/iskra_ulyanovsk_2509_img4.jpg"
+      "images/iskra_ulyanovsk_2509_img3.jpg"
     ],
     "id": 488
   },
@@ -281,9 +280,7 @@ const strikeData = [
     "images": [
       "video/ufa_npz_2309_vid1.mp4",
       "images/ufa_npz_2309_img1.jpg",
-      "images/ufa_npz_2309_img2.jpg",
-      "images/ufa_npz_2309_img3.jpg",
-      "images/ufa_npz_2309_img4.jpg"
+      "images/ufa_npz_2309_img2.jpg"
     ],
     "id": 483
   },
@@ -360,8 +357,7 @@ const strikeData = [
       "video/tolyatti_kauchuk_2209_vid2.mp4",
       "images/tolyatti_kauchuk_2209_img1.jpg",
       "images/tolyatti_kauchuk_2209_img2.jpg",
-      "images/tolyatti_kauchuk_2209_img3.jpg",
-      "images/tolyatti_kauchuk_2209_img4.jpg"
+      "images/tolyatti_kauchuk_2209_img3.jpg"
     ],
     "id": 482
   },
@@ -433,9 +429,7 @@ const strikeData = [
     },
     "images": [
       "images/ufa_npz_2109_img1.jpg",
-      "images/ufa_npz_2109_img2.jpg",
-      "images/ufa_npz_2109_img3.jpg",
-      "images/ufa_npz_2109_img4.jpg"
+      "images/ufa_npz_2109_img2.jpg"
     ],
     "id": 480
   },
