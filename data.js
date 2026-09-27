@@ -1,5 +1,81 @@
 const strikeData = [
   {
+    "date": "26.09.2026",
+    "lat": 44.8533,
+    "lng": 38.5684,
+    "distance": 424,
+    "ru": {
+      "region": "Краснодарский край, Северский район (пгт Ильский)",
+      "target": "Нефтеперерабатывающий завод «КНГК-ИНПЗ» (Ильский НПЗ) — установки первичной перегонки нефти АТ-4, АТ-5 и АТ-6",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 26 сентября 2026 года Силы беспилотных систем во взаимодействии с СБУ нанесли массированный комбинированный удар по Ильскому НПЗ в Краснодарском крае. Атаку провели операторы 1-го отдельного центра СБС и 414-й бригады ударных БАК «Птахи Мадяра». Несколько групп дронов-камикадзе преодолели ПВО и спикировали на технологические площадки. Точные попадания пришлись на ключевые установки первичной переработки нефти АТ-4, АТ-5, АТ-6 и комплекс ЭЛОУ-АВТ, где начался сильный пожар. На этих установках держалось свыше 99% всей перерабатывающей мощности НПЗ, составляющей 6,6 млн тонн нефти в год. Губернатор края Вениамин Кондратьев подтвердил налет дронов и возгорание в Северском районе. В результате разрушений технологический цикл завода был полностью остановлен.",
+      "source": "Генштаб ВСУ, Командование СБС (414 ОБр «Птахи Мадяра»), СБУ, оперштаб Краснодарского края, Astra, Exilenova+"
+    },
+    "uk": {
+      "region": "Краснодарський край, Сіверський район (смт Ільський)",
+      "target": "Нафтопереробний завод «КНГК-ІНПЗ» (Ільський НПЗ) — установки первинної переробки нафти АТ-4, АТ-5 та АТ-6",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 26 вересня 2026 року Сили безпілотних систем у взаємодії з СБУ завдали масованого комбінованого удару по Ільському НПЗ у Краснодарському краї. Атаку провели оператори 1-го окремого центру СБС та 414-ї бригади ударних БАК «Птахи Мадяра». Групи ударних дронів прорвали ППО окупантів та пікірували на технологічні майданчики. Основними цілями стали ключові установки первинної переробки АТ-4, АТ-5, АТ-6 і комплекс ЕЛОУ-АВТ, де спалахнула масштабна пожежа. Саме ці установки забезпечували понад 99% переробної потужності підприємства обсягом 6,6 млн тонн нафти на рік. Губернатор краю Веніамін Кондратьєв визнав атаку безпілотників і загоряння на заводі. Унаслідок критичних пошкоджень технологічний цикл НПЗ повністю зупинено.",
+      "source": "Генштаб ЗСУ, Командування СБС (414 ОБр «Птахи Мадяра»), СБУ, оперштаб Краснодарського краю, Astra, Exilenova+"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Seversky District (Ilsky)",
+      "target": "Ilsky Oil Refinery (LLC KNGK-INPZ) — Crude Distillation Units AT-4, AT-5, and AT-6",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 26, 2026, Ukraine's Unmanned Systems Forces and the SBU launched a coordinated drone strike against the Ilsky Oil Refinery in Krasnodar Krai. The mission was executed by the 1st Separate SBS Center and the 414th Strike UAV Brigade 'Birds of Magyar'. Multiple kamikaze drones penetrated Russian air defenses and plunged into core processing facilities. Direct hits struck primary atmospheric crude distillation units AT-4, AT-5, and AT-6, as well as the ELOU-AVT unit, sparking heavy blazes. These units accounted for over 99% of the facility's total refining capacity of 6.6 million tons of crude per year. Regional Governor Veniamin Kondratyev confirmed the drone assault and industrial fires in Seversky District. Severe damage to distillation infrastructure forced a complete shutdown of operations.",
+      "source": "General Staff of the AFU, SBS Command (414th Brigade Birds of Magyar), SBU, Krasnodar Krai HQ, Astra, Exilenova+"
+    },
+    "images": [
+      "video/ilsky_npz_2609_vid1.mp4",
+      "video/ilsky_npz_2609_vid2.mp4",
+      "images/ilsky_npz_2609_img1.jpg",
+      "images/ilsky_npz_2609_img2.jpg",
+      "images/ilsky_npz_2609_img3.jpg"
+    ],
+    "id": 491
+  },
+  {
+    "date": "26.09.2026",
+    "lat": 47.0936,
+    "lng": 39.4131,
+    "distance": 228,
+    "ru": {
+      "region": "Ростовская область, г. Азов (ул. Промышленная / порт)",
+      "target": "АО «Азовский оптико-механический завод» (АО «АОМЗ») и ж/д цистерны с топливом",
+      "category": "ВПК",
+      "weapon": "Ракета / Дрон",
+      "details": "В ночь на 26 сентября 2026 года СБУ совместно с Военно-морскими силами ВСУ нанесли высокоточный удар по военным объектам в городе Азов Ростовской области. В ходе операции применялись крылатые ракеты «Нептун», а также реактивные ударные БПЛА типов «Рута», «Паляниця» и «Барс». Основной удар пришелся по АО «Азовский оптико-механический завод» (АОМЗ), выпускающему тепловизионные головки самонаведения и оптику для бронетехники и ПВО. На предприятии разрушены литейный цех, цех печатных плат, гальваника и сборочные участки в пяти корпусах. Одновременно в портовой зоне Азова были поражены железнодорожные цистерны с горючим, что вызвало мощную вторичную детонацию. Губернатор Ростовской области Юрий Слюсарь признал повреждения промышленных сооружений. Генштаб ВСУ подтвердил успешное огневое поражение стратегического завода ВПК.",
+      "source": "Генштаб ВСУ, ЦСО «А» СБУ, ВМС ВСУ, губернатор Ростовской области, Astra, Exilenova+, Supernova+"
+    },
+    "uk": {
+      "region": "Ростовська область, м. Азов (вул. Промислова / порт)",
+      "target": "АТ «Азовський оптико-механічний завод» (АТ «АОМЗ») та залізничні цистерни з пальним",
+      "category": "ВПК",
+      "weapon": "Ракета / Дрон",
+      "details": "У ніч на 26 вересня 2026 року СБУ спільно з Військово-морськими силами ЗСУ завдали високоточного удару по військових об'єктах у місті Азов Ростовської області. Під час атаки застосовувалися крилаті ракети «Нептун» та реактивні далекобійні дрони «Рута», «Паляниця» і «Барс». Головною ціллю стало АТ «Азовський оптико-механічний завод» (АОМЗ), що випускає тепловізійні головки самонаведення й оптику для бронетехніки та ППО. Ураження зазнали п'ять виробничих корпусів заводу, включаючи ливарний цех, цех друкованих плат і ділянки складання. Одночасно в портовій зоні Азова під удар потрапили залізничні цистерни з пальним, що спричинило потужні вторинні вибухи. Губернатор Ростовської області Юрій Слюсар підтвердив пошкодження промислової інфраструктури. Генштаб ЗСУ офіційно верифікував успішне ураження підприємства ВПК.",
+      "source": "Генштаб ЗСУ, ЦСО «А» СБУ, ВМС ЗСУ, губернатор Ростовської області, Astra, Exilenova+, Supernova+"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov (Promyshlennaya St. / Port)",
+      "target": "JSC Azov Optical-Mechanical Plant (JSC AOMZ) and Railway Fuel Cisterns",
+      "category": "Military-Industrial Complex",
+      "weapon": "Missile / Drone",
+      "details": "On the night of September 26, 2026, the Security Service of Ukraine (SBU) and the Ukrainian Navy conducted a precision combined strike against military assets in Azov, Rostov Oblast. The assault employed Neptune cruise missiles alongside Ruta, Palyanytsya, and Bars jet strike UAVs. The key target was JSC Azov Optical-Mechanical Plant (AOMZ), which manufactures thermal imaging seekers and fire-control optics for armored vehicles and air defense. Heavy strikes damaged five production buildings, including the foundry, printed circuit board workshop, galvanic shop, and assembly bays. Concurrently, Ukrainian forces struck railway fuel cisterns in the Azov port terminal area, sparking massive secondary detonations. Regional Governor Yuriy Slyusar confirmed damage to local industrial infrastructure. Ukraine's General Staff officially verified the successful hit on the defense facility.",
+      "source": "General Staff of the AFU, SBU Alpha, Ukrainian Navy, Rostov Oblast Governor, Astra, Exilenova+, Supernova+"
+    },
+    "images": [
+      "video/azov_aomz_2609_vid1.mp4",
+      "video/azov_aomz_2609_vid2.mp4",
+      "images/azov_aomz_2609_img1.jpg",
+      "images/azov_aomz_2609_img2.jpg",
+      "images/azov_aomz_2609_img3.jpg"
+    ],
+    "id": 492
+  },
+  {
     "date": "25.09.2026",
     "lat": 57.915,
     "lng": 56.175,
