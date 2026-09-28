@@ -1,5 +1,168 @@
 const strikeData = [
   {
+    "date": "27.09.2026",
+    "lat": 48.5145,
+    "lng": 39.2638,
+    "distance": 126,
+    "ru": {
+      "region": "Луганская область, г. Луганск (кв. Мирный / база погранотряда)",
+      "target": "Склады ракетно-артиллерийского вооружения (РАВ) и логистическая база ВС РФ",
+      "category": "ВПК",
+      "weapon": "Ракета / Дрон",
+      "details": "В ночь на 27 сентября 2026 года Силы обороны Украины нанесли серию точных ударов по крупному логистическому узлу и складам вооружения российских войск в Луганске. Основной удар пришелся по территории военного городка бывшего Луганского пограничного отряда в районе квартала Мирный, где оккупанты обустроили склады ракетно-артиллерийского вооружения и временную базу снабжения. Местные жители зафиксировали не менее пяти мощных взрывов, после которых на объекте началась длительная вторичная детонация боеприпасов. Вспыхнул сильный пожар, зарево и густые клубы дыма от которого наблюдались из разных районов города. Из-за повреждения коммуникаций в части Луганска пропало водоснабжение. Генштаб ВСУ официально подтвердил успешное поражение двух складов боеприпасов на территории Луганской области. Попадания привели к уничтожению значительного запаса боекомплекта и деорганизации тылового обеспечения противника на направлении.",
+      "source": "Генштаб ВСУ, оперслужбы ЛНР, местные жители, Astra, Exilenova+, Supernova+"
+    },
+    "uk": {
+      "region": "Луганська область, м. Луганськ (кв. Мирний / база прикордонного загону)",
+      "target": "Склади ракетно-артилерійського озброєння (РАО) та логістична база ЗС РФ",
+      "category": "ВПК",
+      "weapon": "Ракета / Дрон",
+      "details": "У ніч на 27 вересня 2026 року Сили оборони України завдали серії точних ударів по великому логістичному вузлу та складах озброєння російських військ у Луганську. Головний удар припав на територію військового містечка колишнього Луганського прикордонного загону в районі кварталу Мирний, де окупанти облаштували склади ракетно-артилерійського озброєння і передову базу постачання. Місцеві жителі зафіксували щонайменше п'ять потужних вибухів, після яких на території спалахнула вторинна детонація боєприпасів. Почалася масштабна пожежа, заграву та чорний дим від якої спостерігали з різних куточків міста. Через пошкодження інженерних комунікацій у частині Луганська зникло водопостачання. Генштаб ЗСУ офіційно підтвердив успішне вогневе ураження двох складів боєприпасів на Луганщині. Точні влучання спричинили знищення вагомого запасу боєкомплекту та порушили військову логістику противника на напрямку.",
+      "source": "Генштаб ЗСУ, оперслужби окупантів, місцеві жителі, Astra, Exilenova+, Supernova+"
+    },
+    "en": {
+      "region": "Luhansk Oblast, Luhansk (Myrnyi Quarter / Former Border Guard Base)",
+      "target": "Russian Missile and Artillery Munitions Depots and Military Logistics Base",
+      "category": "Military-Industrial Complex",
+      "weapon": "Missile / Drone",
+      "details": "On the night of September 27, 2026, the Ukrainian Defense Forces carried out a precision strike on a major Russian military logistics hub and ammunition depot in occupied Luhansk. The main target was the compound of the former Luhansk Border Guard detachment in the Myrnyi quarter, repurposed by Russian forces into missile and artillery storage facilities. Local residents reported at least five massive explosions followed by heavy secondary detonations of stored munitions. A large-scale fire erupted across the compound, sending thick smoke and glow visible across the city. The explosions damaged local utility lines, causing water supply outages in several districts. The General Staff of the Armed Forces of Ukraine officially verified successful strikes on two ammunition depots in the region. The attack destroyed vital ammunition stockpiles and severely disrupted Russian supply lines on this front.",
+      "source": "General Staff of the AFU, occupation emergency services, local residents, Astra, Exilenova+, Supernova+"
+    },
+    "images": [
+      "video/luhansk_depot_2709_vid1.mp4",
+      "video/luhansk_depot_2709_vid2.mp4"
+    ],
+    "id": 493
+  },
+  {
+    "date": "27.09.2026",
+    "lat": 47.8182,
+    "lng": 38.4951,
+    "distance": 123,
+    "ru": {
+      "region": "Донецкая область, Амвросиевский район, п. Новоамвросиевское",
+      "target": "Военный распределительный склад горюче-смазочных материалов (склад ГСМ) ВС РФ",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 27 сентября 2026 года дальнобойные ударные дроны Сил обороны Украины успешно атаковали крупный тыловой склад горюче-смазочных материалов российских войск в районе поселка Новоамвросиевское. Данный распределительный узел ГСМ с резервуарным парком и железнодорожными подъездными путями играл ключевую роль в снабжении дизельным топливом и бензином бронетехники группировки РФ на восточном участке фронта. Группа беспилотников точно поразила резервуары с топливом и насосную инфраструктуру перекачки нефтепродуктов. На территории объекта начался интенсивный пожар, сопровождавшийся факельным горением и столбами густого черного дыма. Российские расчеты ПВО пытались отразить налет, однако ударники преодолели заслон и достигли назначенных координат. Генштаб ВСУ подтвердил уничтожение склада ГСМ в Новоамвросиевском. Потеря топлива существенно усложнила оперативную заправку подразделений противника.",
+      "source": "Генштаб ВСУ, оперативные сводки, мониторинговые каналы"
+    },
+    "uk": {
+      "region": "Донецька область, Амвросіївський район, сел. Новоамвросіївське",
+      "target": "Військовий розподільчий склад пально-мастильних матеріалів (склад ПММ) ЗС РФ",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 27 вересня 2026 року далекобійні ударні дрони Сил оборони України успішно атакували великий тиловий склад паливно-мастильних матеріалів російських військ біля селища Новоамвросіївське. Цей розподільчий вузол ПММ із резервуарним парком та залізничними коліями відігравав ключову роль у забезпеченні дизельним пальним і бензином бронетехніки угруповання РФ на східному напрямку. Група ударних дронів точно вразила резервуари з паливом та насосну інфраструктуру перекачування нафтопродуктів. На території бази спалахнула масштабна пожежа з факельним горінням та стовпами густого чорного диму. Російська протиповітряна оборона намагалася перехопити безпілотники, проте ударні дрони подолали заслін і досягли цілі. Генштаб ЗСУ офіційно верифікував ураження складу ПММ у Новоамвросіївському. Втрата палива відчутно ускладнила заправку передових підрозділів окупантів.",
+      "source": "Генштаб ЗСУ, оперативні зведення, моніторингові канали"
+    },
+    "en": {
+      "region": "Donetsk Oblast, Amvrosiivka District, Novoamvrosiivske",
+      "target": "Russian Military Fuel and Lubricants Distribution Depot (POL Farm)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 27, 2026, Ukrainian long-range strike drones carried out a successful attack against a major rear fuel and lubricants depot of the Russian Armed Forces near Novoamvrosiivske, Donetsk Oblast. Featuring storage tanks and dedicated railway sidings, this distribution facility served as a primary refueling hub for Russian armored units operating across the eastern sector. A strike group of UAVs penetrated local air defenses and achieved direct hits on fuel reservoirs and pumping machinery. The strike triggered a heavy fire with high-intensity combustion and massive plumes of black smoke. Russian anti-aircraft units opened fire during the raid, but failed to protect the fuel farm. The General Staff of the Armed Forces of Ukraine officially verified the destruction of the fuel depot in Novoamvrosiivske. The loss of bulk fuel stocks severely hampered supply logistics for frontline Russian forces.",
+      "source": "General Staff of the AFU, operational reports, monitoring channels"
+    },
+    "images": [],
+    "id": 494
+  },
+  {
+    "date": "27.09.2026",
+    "lat": 47.9856,
+    "lng": 37.7548,
+    "distance": 85,
+    "ru": {
+      "region": "Донецкая область, г. Донецк",
+      "target": "Пункт хранения, предстартовой подготовки и пуска ударных БПЛА ВС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 27 сентября 2026 года украинские защитники нанесли высокоточный удар по специализированной военной базе противника в Донецке. Целью стал пункт хранения, предстартовой подготовки и пуска ударных беспилотников, развернутый оккупантами на базе промышленных ангаров. С этой площадки расчеты ВС РФ систематически снаряжали и запускали дроны-камикадзе по украинским позициям и тыловым объектам Донбасса. В результате скоординированного налета уничтожены ангары предполетного обслуживания, запасы боевых частей и пусковые катапульты. На объекте зафиксированы мощные взрывы и объемный очаг возгорания с вторичной детонацией взрывчатых веществ. Генштаб ВСУ официально подтвердил поражение ключевого объекта беспилотной авиации противника. Ликвидация базы заметно снизила интенсивность применения вражеских ударных дронов на данном операционном направлении.",
+      "source": "Генштаб ВСУ, оперативные сводки"
+    },
+    "uk": {
+      "region": "Донецька область, м. Донецьк",
+      "target": "Пункт зберігання, передстартової підготовки та пуску ударних БпЛА ЗС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч на 27 вересня 2026 року українські військові завдали високоточного удару по спеціалізованій військовій базі противника в Донецьку. Головною ціллю став пункт зберігання, передстартової підготовки та запуску ударних безпілотників, облаштований окупантами на базі промислових ангарів. Саме з цього майданчика підрозділи РФ регулярно споряджали й запускали дрони-камікадзе по позиціях сил оборони та тиловій інфраструктурі Донбасу. Унаслідок комбінованого удару зруйновано ангари передпольотного обслуговування, запаси бойових частин та пускові катапульти. На території бази виникли потужні вибухи з подальшою вторинною детонацією і значним займанням. Генштаб ЗСУ офіційно підтвердив ураження місця зберігання і пуску ударних БпЛА у Донецьку. Знищення об'єкта відчутно знизило можливості окупантів щодо застосування безпілотних систем на цьому напрямку.",
+      "source": "Генштаб ЗСУ, оперативні зведення"
+    },
+    "en": {
+      "region": "Donetsk Oblast, Donetsk",
+      "target": "Russian Military Strike UAV Storage, Preparation, and Launch Facility",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "On the night of September 27, 2026, Ukrainian forces conducted a precision strike on a specialized Russian military installation in occupied Donetsk. The target was a designated base for storage, pre-flight preparation, and launching of Russian strike UAVs set up inside an industrial hangar complex. Russian drone teams routinely assembled and deployed kamikaze drones from this site against Ukrainian defensive lines and rear logistics in the Donbas. The coordinated strike demolished assembly bays, stockpiles of high-explosive warheads, and pneumatic launch rails. Witnesses recorded loud blasts accompanied by secondary detonations and large fire outbreaks across the site. The General Staff of the Armed Forces of Ukraine officially verified the strike on the drone facility. Neutralizing this launch hub significantly degraded Russian capabilities to deploy attack UAVs in the sector.",
+      "source": "General Staff of the AFU, operational reports"
+    },
+    "images": [],
+    "id": 495
+  },
+  {
+    "date": "27.09.2026",
+    "lat": 48.0934,
+    "lng": 39.0552,
+    "distance": 130,
+    "ru": {
+      "region": "Луганская область, Антрацитовский район, п. Крепенское",
+      "target": "Полевой склад боеприпасов передового обеспечения ВС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 27 сентября 2026 года подразделения Сил обороны Украины поразили полевой склад боеприпасов российских войск в районе поселка Крепенское Антрацитовского района Луганской области. Противник использовал укрепленные складские помещения для накопления артиллерийских снарядов, мин и танковых выстрелов перед их распределением на передовую. Украинские ударные беспилотники прорвали очаговую ПВО и нанесли точечные удары по ангарам хранения боекомплекта. В результате прилетов началась цепная детонация снарядов, которая продолжалась несколько часов и полностью уничтожила складской сектор. Густой столб дыма и вспышки разрывов фиксировались соседними населенными пунктами. Генштаб ВСУ включил склад в Крепенском в официальную сводку уничтоженных объектов агрессора. Разрушение базы сорвало плановый подвоз боеприпасов для подразделений оккупационной армии.",
+      "source": "Генштаб ВСУ, оперативные сводки"
+    },
+    "uk": {
+      "region": "Луганська область, Антрацитівський район, сел. Крепенське",
+      "target": "Польовий склад боєприпасів передового забезпечення ЗС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч на 27 вересня 2026 року підрозділи Сил оборони України завдали ураження польовому складу боєприпасів російських окупаційних військ у районі селища Крепенське Антрацитівського району Луганщини. Противник використовував укріплені складські приміщення для накопичення артилерійських снарядів, мін і танкових пострілів перед відправкою на передову. Українські ударні безпілотники прорвали систему ППО та завдали точкових ударів по ангарах зберігання боєкомплекту. Унаслідок серії влучань виникла ланцюгова детонація снарядів, яка тривала кілька годин і повністю зруйнувала складський комплекс. Густий дим та спалахи вибухів спостерігалися мешканцями сусідніх населених пунктів. Генштаб ЗСУ офіційно вніс склад у Крепенському до переліку уражених цілей ворога. Ліквідація складу зірвала планове постачання боєприпасів підрозділам окупантів.",
+      "source": "Генштаб ЗСУ, оперативні зведення"
+    },
+    "en": {
+      "region": "Luhansk Oblast, Antratsyt District, Krepenske",
+      "target": "Russian Forward Field Ammunition Storage Depot",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "On the night of September 27, 2026, Ukrainian Defense Forces launched a targeted strike against a Russian field ammunition storage depot near the settlement of Krepenske in the Antratsyt district of Luhansk Oblast. Russian forces used these reinforced warehouses as a forward collection point for artillery shells, mortar rounds, and tank ammunition destined for the frontline. Ukrainian strike UAVs bypassed frontline air defenses and scored direct hits on the munitions bays. The strike initiated a prolonged chain reaction of secondary detonations that lasted for several hours and completely destroyed the facility. Intense explosions and massive smoke columns were visible from surrounding villages. The General Staff of the Armed Forces of Ukraine officially verified the hit on the Krepenske ammo depot. The destruction of this supply dump severely disrupted Russian ammunition deliveries on the front.",
+      "source": "General Staff of the AFU, operational reports"
+    },
+    "images": [],
+    "id": 496
+  },
+  {
+    "date": "27.09.2026",
+    "lat": 48.0715,
+    "lng": 39.3432,
+    "distance": 150,
+    "ru": {
+      "region": "Луганская область, г. Ровеньки",
+      "target": "Военный склад материально-технического обеспечения (склад МТО) ВС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 27 сентября 2026 года Силы обороны Украины нанесли результативный удар по военному складу материально-технического обеспечения оккупационных войск в городе Ровеньки Луганской области. На территории этого логистического узла противник размещал запасы инженерного оборудования, запчастей к бронетехнике, вещевого имущества и полевых ремонтных модулей. Беспилотные летательные аппараты успешно преодолели заслоны радиоэлектронной борьбы и поразили основные ангары хранения техники и тыловых грузов. На объекте вспыхнул масштабный пожар, охвативший несколько корпусов и складских площадок. Местные службы экстренного реагирования были задействованы для тушения огня в закрытом режиме. В утренней сводке Генштаб ВСУ подтвердил успешное поражение объекта МТО в Ровеньках. Удар ослабил ремонтные и снабженческие возможности группировки РФ на данном участке.",
+      "source": "Генштаб ВСУ, оперативные сводки"
+    },
+    "uk": {
+      "region": "Луганська область, м. Ровеньки",
+      "target": "Військовий склад матеріально-технічного забезпечення (склад МТЗ) ЗС РФ",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч на 27 вересня 2026 року Сили оборони України завдали результативного удару по військовому складу матеріально-технічного забезпечення окупаційних військ у місті Ровеньки Луганської області. На території цього логістичного вузла противник зосередив запаси інженерного обладнання, запасних частин для бронетехніки, військового майна та мобільних ремонтних комплексів. Безпілотні апарати успішно подолали ворожі засоби радіоелектронної боротьби та вразили основні ангари зберігання майна. На об'єкті спалахнула велика пожежа, яка охопила виробничі приміщення та відкриті майданчики комплексу. До ліквідації загоряння окупанти залучили спеціальні пожежні підрозділи в закритому режимі. У ранковому зведенні Генштаб ЗСУ офіційно підтвердив ураження об'єкта МТЗ у Ровеньках. Удар суттєво послабив ремонтні спроможності ворожого угруповання.",
+      "source": "Генштаб ЗСУ, оперативні зведення"
+    },
+    "en": {
+      "region": "Luhansk Oblast, Rovenky",
+      "target": "Russian Military Logistical and Equipment Support (MTO) Depot",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "On the night of September 27, 2026, the Ukrainian Defense Forces carried out an effective strike against a Russian military logistical support depot in the city of Rovenky, Luhansk Oblast. This logistics node was actively utilized by Russian forces to store engineering equipment, spare parts for combat vehicles, gear, and mobile maintenance units. Ukrainian strike drones successfully penetrated electronic warfare defenses and hit key storage hangars containing critical supplies. The strike triggered a substantial fire that spread across multiple warehouses and outdoor storage areas. Emergency teams were dispatched under tight security to combat the spreading flames. In its morning operational report, the General Staff of the Armed Forces of Ukraine officially verified the hit on the logistics depot in Rovenky. The strike severely degraded maintenance and logistical capabilities for Russian forces in the sector.",
+      "source": "General Staff of the AFU, operational reports"
+    },
+    "images": [],
+    "id": 497
+  },
+  {
     "date": "26.09.2026",
     "lat": 44.8533,
     "lng": 38.5684,
