@@ -1,5 +1,176 @@
 const strikeData = [
   {
+    "date": "28.09.2026",
+    "lat": 45.2165,
+    "lng": 38.9542,
+    "distance": 422,
+    "ru": {
+      "region": "Краснодарский край, Динской район, ст. Новотитаровская",
+      "target": "Нефтебазы «Эдельвейс-95» и «Дин-Юг-Ойл» (два отдельных объекта)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 28 сентября 2026 года беспилотники Центра специальных операций «Альфа» СБУ атаковали два нефтяных склада в промышленной зоне станицы Новотитаровской Динского района. «Эдельвейс-95» — региональный оптовый поставщик дизельного топлива Евро-5 и бензина (АИ-92/95/100) с резервуарным парком объёмом 4 500 м³ и собственным железнодорожным тупиком; работает 30 лет, закупает топливо напрямую у крупных российских НПЗ. «Дин-Юг-Ойл» — другой оптовый нефтепродуктовый склад в той же промзоне у ж/д путей. Жители сообщили о шести взрывах около 3 часов ночи и пожаре в районе железной дороги. На обоих объектах зафиксированы отдельные очаги возгорания. СБУ подтвердила удар официальным заявлением; выведение нефтебаз из строя затрудняет топливоснабжение российских войск.",
+      "source": "СБУ (ЦСО «Альфа»), OSINT (Astra, Exilenova+, Supernova+), местные жители"
+    },
+    "uk": {
+      "region": "Краснодарський край, Динський район, ст. Новотитарівська",
+      "target": "Нафтобази «Едельвейс-95» та «Дін-Юг-Ойл» (два окремі об'єкти)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 28 вересня 2026 року безпілотники Центру спеціальних операцій «Альфа» СБУ атакували два нафтосклади у промисловій зоні станиці Новотитарівської Динського району. «Едельвейс-95» — регіональний оптовий постачальник дизельного палива Євро-5 і бензину (А-92/95/100) з резервуарним парком 4 500 м³ та власною залізничною гілкою; постачає паливо вже 30 років, закуповуючи його напряму у великих НПЗ. «Дін-Юг-Ойл» — інший оптовий нафтопродуктовий склад у тій же промзоні поруч із залізницею. Місцеві жителі повідомили про шість вибухів близько 3-ї ночі та пожежу в районі залізниці. На обох об'єктах зафіксовано окремі осередки займання. СБУ підтвердила удар офіційною заявою; виведення нафтобаз з ладу ускладнює паливозабезпечення російських військ.",
+      "source": "СБУ (ЦСО «Альфа»), OSINT (Astra, Exilenova+, Supernova+), місцеві мешканці"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Dinskoy District, Novotitarovskaya stanitsa",
+      "target": "Edelweiss-95 and Din-Yug-Oil Fuel Depots (two separate facilities)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 28, 2026, drones operated by the SBU's Alpha Special Operations Center struck two petroleum storage facilities in the industrial zone of Novotitarovskaya stanitsa, Dinskoy District. Edelweiss-95 is a regional wholesale fuel supplier of Euro-5 diesel and gasoline (AI-92/95/100), operating for 30 years with a 4,500 m³ tank farm and a dedicated rail siding for fuel loading. Din-Yug-Oil is another petroleum wholesale depot in the same industrial zone near the railway. Residents reported six explosions around 3 a.m. and fires in the direction of the railway. Both facilities recorded separate fire outbreaks. The SBU officially confirmed the strike, noting that disabling these depots disrupts fuel logistics for Russian forces.",
+      "source": "SBU (Alpha CSO), OSINT (Astra, Exilenova+, Supernova+), local residents"
+    },
+    "images": [
+      "video/edelweiss95_krasnodar_2809_vid1.mp4",
+      "video/edelweiss95_krasnodar_2809_vid2.mp4",
+      "images/edelweiss95_krasnodar_2809_img1.jpg",
+      "images/edelweiss95_krasnodar_2809_img2.jpg",
+      "images/edelweiss95_krasnodar_2809_img3.jpg"
+    ],
+    "id": 498
+  },
+  {
+    "date": "28.09.2026",
+    "lat": 46.1123,
+    "lng": 39.7716,
+    "distance": 372,
+    "ru": {
+      "region": "Краснодарский край, Павловский район, ст. Павловская",
+      "target": "Нефтебаза «Лукойл-Югнефтепродукт» (ст. Павловская)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 28 сентября 2026 года беспилотники ЦСО «Альфа» СБУ поразили нефтебазу компании «Лукойл-Югнефтепродукт» на юго-восточной окраине промзоны станицы Павловской. Объект специализируется на приёме, хранении и отгрузке светлых нефтепродуктов — бензина и дизеля — и насчитывает 11 резервуаров общим объёмом около 7 900 м³; мощность перевалки — порядка 150 тысяч тонн в год. «Лукойл-Югнефтепродукт» входит в розничную и дистрибутивную цепочку «Лукойла» на юге России и обеспечивает горючим сельскохозяйственный и транспортный сектор региона, а также военные структуры. В результате удара на территории нефтебазы разгорелся интенсивный пожар. СБУ подчеркнула, что эти атаки являются ответом на российские террористические удары по украинским городам.",
+      "source": "СБУ (ЦСО «Альфа»), Exilenova+, Supernova+, Astra, Interfax Украина"
+    },
+    "uk": {
+      "region": "Краснодарський край, Павлівський район, ст. Павлівська",
+      "target": "Нафтобаза «Лукойл-Югнефтепродукт» (ст. Павлівська)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 28 вересня 2026 року безпілотники ЦСО «Альфа» СБУ уразили нафтобазу компанії «Лукойл-Югнефтепродукт» на південно-східній межі промзони станиці Павлівської. Об'єкт спеціалізується на прийманні, зберіганні та відвантаженні світлих нафтопродуктів — бензину і дизельного палива — та налічує 11 резервуарів загальним об'ємом близько 7 900 м³; потужність перевалки — близько 150 тисяч тонн на рік. «Лукойл-Югнефтепродукт» входить у роздрібно-дистрибуційний ланцюг «Лукойлу» на півдні Росії та забезпечує пальним сільськогосподарський і транспортний сектори регіону, а також військові структури. Внаслідок удару на території нафтобази спалахнула інтенсивна пожежа. СБУ зазначила, що ці атаки є відповіддю на терористичні удари Росії по українських містах.",
+      "source": "СБУ (ЦСО «Альфа»), Exilenova+, Supernova+, Astra, Interfax Україна"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Pavlovsky District, Pavlovskaya stanitsa",
+      "target": "Lukoil-Yugnefteproduct Fuel Depot (Pavlovskaya)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 28, 2026, drones from the SBU's Alpha Special Operations Center struck the Lukoil-Yugnefteproduct fuel depot on the southeastern edge of the industrial zone in Pavlovskaya stanitsa. The facility specializes in receiving, storing and dispatching light petroleum products — gasoline and diesel — and features 11 storage tanks with a combined capacity of approximately 7,900 m³, with an annual throughput of around 150,000 tons. Lukoil-Yugnefteproduct is part of Lukoil's retail and distribution chain in southern Russia, supplying fuel to the agricultural sector, transport, and military structures. The strike ignited an intense fire on the depot's grounds. The SBU emphasized these attacks are a direct response to Russian terrorist strikes on Ukrainian cities.",
+      "source": "SBU (Alpha CSO), Exilenova+, Supernova+, Astra, Interfax Ukraine"
+    },
+    "images": [
+      "images/pavlovskaya_krasnodar_2809_img1.jpg",
+      "images/pavlovskaya_krasnodar_2809_img2.jpg"
+    ],
+    "id": 499
+  },
+  {
+    "date": "28.09.2026",
+    "lat": 45.4728,
+    "lng": 38.4052,
+    "distance": 438,
+    "ru": {
+      "region": "Краснодарский край, Красноармейский район, ст. Старонижестеблиевская",
+      "target": "Нефтебаза «Ангелинская» (ст. Старонижестеблиевская)",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "В ночь на 28 сентября 2026 года беспилотники ЦСО «Альфа» СБУ нанесли успешный удар по нефтебазе «Ангелинская» в станице Старонижестеблиевской Красноармейского района Краснодарского края. Объект представляет собой перевалочную нефтебазу с резервуарным парком объёмом 6 000 м³ (адрес: ул. Батарейная, 24) и является ключевым распределительным узлом нефтепродуктов в низовьях Кубани. Нефтебаза обслуживает аграрный сектор и транспортную инфраструктуру обширного Красноармейского района, который граничит с Таманским полуостровом и Азово-Черноморским побережьем — стратегически важным тыловым коридором российских войск на юге. В результате атаки на объекте вспыхнул пожар, подтверждённый СБУ и мониторинговыми ресурсами. Операция стала частью скоординированной ночной серии ударов по четырём нефтебазам Краснодарского края.",
+      "source": "СБУ (ЦСО «Альфа»), Exilenova+, Supernova+, Astra"
+    },
+    "uk": {
+      "region": "Краснодарський край, Красноармійський район, ст. Старонижестебліївська",
+      "target": "Нафтобаза «Ангелінська» (ст. Старонижестебліївська)",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "У ніч на 28 вересня 2026 року безпілотники ЦСО «Альфа» СБУ завдали успішного удару по нафтобазі «Ангелінська» у станиці Старонижестебліївській Красноармійського району Краснодарського краю. Об'єкт є перевалочною нафтобазою з резервуарним парком 6 000 м³ (адреса: вул. Батарейна, 24) і виступає ключовим розподільчим вузлом нафтопродуктів у нижній течії Кубані. Нафтобаза обслуговує аграрний сектор і транспортну інфраструктуру великого Красноармійського району, що межує з Таманським півостровом та Азово-Чорноморським узбережжям — стратегічним тиловим коридором російських військ на півдні. Внаслідок атаки на об'єкті спалахнула пожежа, підтверджена СБУ та моніторинговими ресурсами. Операція стала частиною скоординованої нічної серії ударів по чотирьох нафтобазах Краснодарського краю.",
+      "source": "СБУ (ЦСО «Альфа»), Exilenova+, Supernova+, Astra"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Krasnoarmeysky District, Staronizhesteblievskaya stanitsa",
+      "target": "Angelinskaya Fuel Depot (Staronizhesteblievskaya)",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the night of September 28, 2026, drones from the SBU's Alpha Special Operations Center successfully struck the Angelinskaya fuel depot in Staronizhesteblievskaya stanitsa, Krasnoarmeysky District, Krasnodar Krai. The facility is a petroleum transshipment depot with a 6,000 m³ tank farm (address: 24 Batareviynaya Street) and serves as a key petroleum distribution node in the lower Kuban river region. The depot supplies fuel to the agricultural sector and transportation infrastructure across the sprawling Krasnoarmeysky District, which borders the Taman Peninsula and the Azov-Black Sea coast — a strategically important rear supply corridor for Russian forces in the south. The strike ignited a fire at the depot, confirmed by the SBU and monitoring channels. The operation was part of a coordinated overnight series of strikes against four fuel depots across Krasnodar Krai.",
+      "source": "SBU (Alpha CSO), Exilenova+, Supernova+, Astra"
+    },
+    "images": [],
+    "id": 500
+  },
+  {
+    "date": "28.09.2026",
+    "lat": 54.1939,
+    "lng": 37.6186,
+    "distance": 1005,
+    "ru": {
+      "region": "Тульская область, г. Тула",
+      "target": "Оборонный завод ВПК (г. Тула) — объект производства военной техники и вооружений",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 28 сентября 2026 года украинские дальнобойные беспилотники поразили один из оборонных заводов в Тульской области. Президент Украины Владимир Зеленский официально подтвердил удар в своём ночном обращении, назвав его применением «дальнобойных возможностей» против российских предприятий ВПК. Тульская область — признанный центр российского ОПК: здесь расположены производители зенитных ракетных комплексов «Панцирь», реактивных систем залпового огня «Град» и «Смерч», противотанкового и артиллерийского вооружения. Точное название атакованного предприятия Зеленский публично не уточнил, российские власти ограничились сообщением об уничтожении над регионом 11 беспилотников. Расстояние от границы составляет около 1000 км — один из самых дальних подтверждённых ударов по объектам ВПК. Атака вписывается в системную кампанию по деградации военно-промышленного потенциала России.",
+      "source": "Президент Зеленский, Генштаб ВСУ, Astra, Supernova+, украинские СМИ"
+    },
+    "uk": {
+      "region": "Тульська область, м. Тула",
+      "target": "Оборонний завод ВПК (м. Тула) — об'єкт виробництва військової техніки та озброєнь",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч на 28 вересня 2026 року українські далекобійні безпілотники уразили один з оборонних заводів у Тульській області. Президент України Володимир Зеленський офіційно підтвердив удар у нічному зверненні, назвавши його застосуванням «далекобійних можливостей» проти підприємств ВПК Росії. Тульська область — визнаний центр російського ОПК: тут розташовані виробники зенітних ракетних комплексів «Панцирь», реактивних систем залпового вогню «Град» і «Смерч», протитанкового та артилерійського озброєння. Точну назву атакованого підприємства Зеленський публічно не уточнив, а російська влада обмежилася повідомленням про знищення над регіоном 11 безпілотників. Відстань від кордону становить близько 1000 км — один із найдальших підтверджених ударів по об'єктах ВПК. Атака вписується в системну кампанію деградації військово-промислового потенціалу Росії.",
+      "source": "Президент Зеленський, Генштаб ЗСУ, Astra, Supernova+, українські ЗМІ"
+    },
+    "en": {
+      "region": "Tula Oblast, Tula",
+      "target": "Defense Industrial Plant (Tula) — Military Equipment and Weapons Production Facility",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "On the night of September 28, 2026, Ukrainian long-range drones struck a defense plant in Tula Oblast. President Volodymyr Zelenskyy officially confirmed the strike in his nightly address, describing it as the use of 'long-range capabilities' against Russian defense-industrial facilities. The Tula region is a recognized hub of Russia's defense industry, home to producers of Pantsir air defense systems, Grad and Smerch multiple rocket launchers, and anti-tank and artillery weapons. Zelenskyy did not publicly name the specific facility targeted; Russian authorities reported the destruction of 11 UAVs over the region. At approximately 1,000 km from the Ukrainian border, this ranks among the farthest confirmed strikes on Russian defense-industrial targets. The attack is part of a systematic campaign to degrade Russia's military-industrial potential.",
+      "source": "President Zelenskyy, AFU General Staff, Astra, Supernova+, Ukrainian media"
+    },
+    "images": [],
+    "id": 501
+  },
+  {
+    "date": "28.09.2026",
+    "lat": 51.6613,
+    "lng": 39.2,
+    "distance": 453,
+    "ru": {
+      "region": "Воронежская область, г. Воронеж",
+      "target": "Оборонный завод ВПК (г. Воронеж) — предприятие военно-промышленного комплекса",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "В ночь на 28 сентября 2026 года украинские ударные беспилотники атаковали предприятие ВПК в Воронеже. Местные жители в Telegram-каналах сообщили о «многочисленных хлопках» и атаке на «одно из предприятий города». Президент Зеленский официально заявил об ударе по оборонному заводу в Воронежской области в рамках одной операции с ударом по Тульской области, подтвердив применение «дальнобойных возможностей». Регион является важным узлом российской авиастроительной и оборонной промышленности: здесь расположены Воронежский авиазавод и ряд предприятий ракетно-космической и военной отраслей. Губернатор области Александр Гусев подтвердил ночную атаку, в результате которой над регионом были сбиты около 20 БПЛА. В городе зафиксированы пожары от падения обломков, четыре человека получили ранения, включая троих детей. Точное название атакованного предприятия официально не раскрывалось.",
+      "source": "Президент Зеленский, губернатор Гусев, Supernova+, Astra, местные жители"
+    },
+    "uk": {
+      "region": "Воронезька область, м. Воронеж",
+      "target": "Оборонний завод ВПК (м. Воронеж) — підприємство військово-промислового комплексу",
+      "category": "ВПК",
+      "weapon": "Дрон",
+      "details": "У ніч на 28 вересня 2026 року українські ударні безпілотники атакували підприємство ВПК у Воронежі. Місцеві жителі у Telegram-каналах повідомили про «численні хлопки» та атаку на «одне з підприємств міста». Президент Зеленський офіційно заявив про удар по оборонному заводу у Воронезькій області в рамках однієї операції з ударом по Тульській області, підтвердивши застосування «далекобійних можливостей». Регіон є важливим вузлом російської авіабудівної й оборонної промисловості: тут розташовані Воронезький авіазавод і ряд підприємств ракетно-космічної і військової галузей. Губернатор Олександр Гусєв підтвердив нічну атаку, внаслідок якої над регіоном було збито близько 20 БПЛА. У місті зафіксовано пожежі від падіння уламків, четверо людей отримали поранення, включно з трьома дітьми. Точна назва атакованого підприємства офіційно не розголошувалась.",
+      "source": "Президент Зеленський, губернатор Гусєв, Supernova+, Astra, місцеві мешканці"
+    },
+    "en": {
+      "region": "Voronezh Oblast, Voronezh",
+      "target": "Defense Industrial Plant (Voronezh) — Military-Industrial Complex Facility",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone",
+      "details": "On the night of September 28, 2026, Ukrainian strike drones attacked a defense-industrial facility in Voronezh. Local residents reported 'multiple bangs' on Telegram channels, noting that 'one of the city's enterprises' had been targeted. President Zelenskyy officially confirmed the strike on a defense plant in Voronezh Oblast as part of the same operation targeting Tula Oblast, citing the use of 'long-range capabilities.' Voronezh is an important hub of Russia's aviation and defense industry, home to the Voronezh Aviation Plant and several rocket-space and military production enterprises. Governor Alexander Gusev confirmed the overnight attack, noting that around 20 UAVs were intercepted over the region. City fires from falling debris injured four people, including three children. The name of the specific facility struck was not officially disclosed.",
+      "source": "President Zelenskyy, Governor Gusev, Supernova+, Astra, local residents"
+    },
+    "images": [
+      "images/voronezh_plant_2809_img1.jpg"
+    ],
+    "id": 502
+  },
+  {
     "date": "27.09.2026",
     "lat": 48.5145,
     "lng": 39.2638,
