@@ -1,3 +1,5 @@
-﻿ffmpeg.exe
+ffmpeg.exe
 yt-dlp.exe
 count_objects.js
+downloads/
+dump_*.txt

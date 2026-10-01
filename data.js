@@ -1,5 +1,210 @@
 const strikeData = [
   {
+    "date": "30.09.2026",
+    "lat": 57.925,
+    "lng": 56.1683,
+    "distance": 1565,
+    "ru": {
+      "region": "Пермский край, Пермь (Индустриальный район)",
+      "target": "Промышленно-энергетический узел: НПЗ «ЛУКОЙЛ-Пермнефтеоргсинтез» (ПНОС) и оборонные заводы",
+      "category": "Нефтегаз",
+      "weapon": "Дрон",
+      "details": "Утром 30 сентября 2026 года украинские ударные дроны дальнего действия атаковали стратегический промышленный комплекс в Перми на рекордной дистанции свыше 1560 км. Главной целью налёта стал район Индустриального узла, где расположен НПЗ «ЛУКОЙЛ-Пермнефтеоргсинтез» мощностью переработки более 13 млн тонн нефти в год, а также пороховой завод и оборонные предприятия корпорации «ОДК». Местные жители зафиксировали громкие звуки взрывов и работу ПВО в промзоне. В регионе экстренно ввели план «Ковёр», закрыв воздушное пространство в радиусе 100 км, из-за чего аэропорт Большое Савино прекратил приём и отправку рейсов. В пермских вузах и на заводах проводилась срочная эвакуация персонала и студентов в убежища. Министерство обороны РФ заявило о перехвате беспилотников, однако очевидцы публиковали кадры пролётов и задымлений. Удар подтвердил способность украинских дронов поражать глубокий тыловой кластер ВПК и нефтепереработки на Урале.",
+      "source": "OSINT (Supernova+, Exilenova+), власти Пермского края, Росавиация, СМИ"
+    },
+    "uk": {
+      "region": "Пермський край, Перм (Індустріальний район)",
+      "target": "Промислово-енергетичний вузол: НПЗ «ЛУКОЙЛ-Пермнафтооргсинтез» (ПНОС) та оборонні заводи",
+      "category": "Нафтогаз",
+      "weapon": "Дрон",
+      "details": "Вранці 30 вересня 2026 року українські ударні дрони далекої дії атакували стратегічний промисловий комплекс у Пермі на рекордній відстані понад 1560 км. Головною ціллю нальоту став район Індустріального вузла, де розташований НПЗ «ЛУКОЙЛ-Пермнафтооргсинтез» потужністю переробки понад 13 млн тонн нафти на рік, а також пороховий завод та оборонні підприємства корпорації «ОДК». Місцеві жителі зафіксували гучні звуки вибухів та роботу ППО в промзоні. У регіоні екстрено ввели план «Килим», закривши повітряний простір у радіусі 100 км, через що аеропорт Велике Савіно припинив прийом і відправку рейсів. У пермських вишах і на заводах проводилася термінова евакуація персоналу та студентів в укриття. Міністерство оборони РФ заявило про перехоплення безпілотників, проте очевидці публікували кадри прольотів і задимлень. Удар підтвердив здатність українських дронів уражати глибокий тиловий кластер ВПК та нафтопереробки на Уралі.",
+      "source": "OSINT (Supernova+, Exilenova+), влада Пермського краю, Росавіація, ЗМІ"
+    },
+    "en": {
+      "region": "Perm Krai, Perm (Industrial District)",
+      "target": "Industrial and Energy Complex: LUKOIL-Permnefteorgsintez Refinery (PNOS) and Defense Plants",
+      "category": "Oil & Gas",
+      "weapon": "Drone",
+      "details": "On the morning of September 30, 2026, Ukrainian long-range strike drones targeted the strategic industrial hub of Perm at a distance of over 1,560 km. The primary objective was the city's Industrial District, home to the LUKOIL-Permnefteorgsintez refinery (capacity over 13 million tons/year), along with the Perm Gunpowder Plant and defense facilities. Local residents documented loud explosions and active air defense fire over the industrial zone. Authorities activated the Kovyor emergency airspace protocol, halting flights at Bolshoye Savino Airport. Educational institutions and plants conducted urgent student and staff evacuations to shelters. While Russian officials claimed interceptions, eyewitness videos confirmed drone flights and smoke over the city. The operation proved Ukraine's capability to hit deep rear defense and energy clusters on the Urals.",
+      "source": "OSINT (Supernova+, Exilenova+), Perm Krai authorities, Rosaviatsiya, Media"
+    },
+    "images": [
+      "video/perm_pnos_3009_vid1.mp4",
+      "video/perm_pnos_3009_vid2.mp4",
+      "images/perm_pnos_3009_img1.jpg"
+    ],
+    "id": 505
+  },
+  {
+    "date": "30.09.2026",
+    "lat": 42.8925,
+    "lng": 47.6403,
+    "distance": 1013,
+    "ru": {
+      "region": "Республика Дагестан, Каспийск",
+      "target": "Морской порт и база Каспийской флотилии ВМФ РФ (причальная зона завода «Дагдизель»)",
+      "category": "Военный объект",
+      "weapon": "Дрон",
+      "details": "Днём 30 сентября 2026 года в портовой зоне Каспийска в Дагестане прогремел мощный взрыв, над акваторией поднялся густой столб дыма. Объект расположен на побережье Каспийского моря примерно в 1013 км от линии фронта. В порту базируются корабли, катера и ракетные корветы Каспийской флотилии ВМФ РФ, а также прилегает завод «Дагдизель», производящий торпедное вооружение и морские двигатели для флота. Каспийский транспортный узел играет ключевую логистическую роль в доставке военных грузов и комплектующих по морю из Ирана. Кадры с задымлением в районе причалов оперативно опубликовали местные жители и украинские мониторинговые ресурсы. Российские власти предпочли не комментировать причины инцидента, сославшись на штатную обстановку. Поражение портовой инфраструктуры создаёт прямую угрозу безопасности кораблей-носителей крылатых ракет в Каспийском бассейне.",
+      "source": "OSINT (Exilenova+, Supernova+, Obozrevatel), очевидцы"
+    },
+    "uk": {
+      "region": "Республіка Дагестан, Каспійськ",
+      "target": "Морський порт та база Каспійської флотилії ВМФ РФ (причальна зона заводу «Дагдизель»)",
+      "category": "Військовий об'єкт",
+      "weapon": "Дрон",
+      "details": "Вдень 30 вересня 2026 року у портовій зоні Каспійська в Дагестані пролунав потужний вибух, над акваторією піднявся густий стовп диму. Об'єкт розташований на узбережжі Каспійського моря приблизно в 1013 км від лінії фронту. У порту базуються кораблі, катери та ракетні корвети Каспійської флотилії ВМФ РФ, а також прилягає завод «Дагдизель», що виробляє торпедне озброєння та морські двигуни для флоту. Каспійський транспортний вузол відіграє ключову логістичну роль у доставці військових вантажів та компонентів морем з Ірану. Кадри із задимленням у районі причалів оперативно опублікували місцеві мешканці та українські моніторингові ресурси. Російська влада воліла не коментувати причини інциденту, заявивши про штатну обстановку. Ураження портової інфраструктури створює пряму загрозу безпеці кораблів-носіїв крилатих ракет у Каспійському басейні.",
+      "source": "OSINT (Exilenova+, Supernova+, Obozrevatel), очевидці"
+    },
+    "en": {
+      "region": "Republic of Dagestan, Kaspiysk",
+      "target": "Sea Port and Caspian Flotilla Naval Base (Dagdizel Plant Pier Area)",
+      "category": "Military Infrastructure",
+      "weapon": "Drone",
+      "details": "In the afternoon of September 30, 2026, a powerful explosion rocked the port area of Kaspiysk in the Republic of Dagestan, sending a thick column of smoke into the sky. Located on the Caspian Sea coast approximately 1,013 km from the front line, the port hosts naval vessels, patrol craft, and missile corvettes of the Russian Navy Caspian Flotilla. The facility adjoins the Dagdizel machine-building plant, which manufactures naval torpedoes and propulsion systems. Kaspiysk serves as a critical maritime logistics node for military equipment and dual-use component transshipment from Iran. Local residents and Ukrainian OSINT monitoring channels published visual proof of the blast and smoke rising near the naval docks. Russian regional authorities declined to clarify the incident. The strike highlights vulnerable maritime logistics and naval staging infrastructure deep along the Caspian corridor.",
+      "source": "OSINT (Exilenova+, Supernova+, Obozrevatel), eyewitnesses"
+    },
+    "images": [
+      "images/kaspiysk_port_3009_img1.jpg"
+    ],
+    "id": 506
+  },
+  {
+    "date": "30.09.2026",
+    "lat": 46.0683,
+    "lng": 34.8214,
+    "distance": 181,
+    "ru": {
+      "region": "Херсонская область, Арабатская стрелка (с. Геническая Горка)",
+      "target": "Пункт дислокации личного состава и склад боеприпасов подразделений ВС РФ / ФСБ",
+      "category": "Склады боеприпасов",
+      "weapon": "Дрон",
+      "details": "В ночь на 30 сентября 2026 года украинские ударные беспилотники атаковали базу дислокации российских войск и склад боеприпасов в районе села Геническая Горка на Арабатской стрелке. Оккупационные подразделения и сотрудники ФСБ использовали захваченные курортные комплексы и коттеджные посёлки для размещения личного состава, штабов и складирования боекомплекта. В результате серии точных попаданий на объекте возник сильный пожар, сопровождавшийся продолжительной вторичной детонацией боеприпасов. Спутниковые термодатчики системы NASA FIRMS зафиксировали множественные крупные температурные аномалии на Арабатской косе. Местные жители сообщали о серии мощных взрывов, слышных на десятки километров вокруг. Удар существенно нарушил систему снабжения и концентрацию сил противника на южном направлении, уничтожив накопленный резерв снарядов.",
+      "source": "OSINT (Supernova+, Крымский ветер), спутниковые данные NASA FIRMS, очевидцы"
+    },
+    "uk": {
+      "region": "Херсонська область, Арабатська стрілка (с. Генічеська Гірка)",
+      "target": "Пункт дислокації особового складу та склад боєприпасів підрозділів ЗС РФ / ФСБ",
+      "category": "Склади боєприпасів",
+      "weapon": "Дрон",
+      "details": "У ніч проти 30 вересня 2026 року українські ударні безпілотники атакували базу дислокації російських військ та склад боєприпасів у районі села Генічеська Гірка на Арабатській стрілці. Окупаційні підрозділи та співробітники ФСБ використовували захоплені курортні комплекси й котеджні містечка для розміщення особового складу, штабів і накопичення боєкомплекту. Внаслідок серії влучних влучань на об'єкті виникла масштабна пожежа, яка супроводжувалася тривалою вторинною детонацією боєприпасів. Супутникові термодатчики системи NASA FIRMS зафіксували множинні великі температурні аномалії на Арабатській косі. Місцеві жителі повідомляли про серію гучних вибухів, які було чутно за десятки кілометрів навколо. Удар суттєво порушив систему постачання та концентрацію сил противника на південному напрямку, знищивши накопичений резерв снарядів.",
+      "source": "OSINT (Supernova+, Кримський вітер), супутникові дані NASA FIRMS, очевидці"
+    },
+    "en": {
+      "region": "Kherson Oblast, Arabat Spit (Henicheska Hirka village)",
+      "target": "Russian Armed Forces and FSB Staging Base and Ammunition Depot",
+      "category": "Ammunition Depots",
+      "weapon": "Drone",
+      "details": "Overnight into September 30, 2026, Ukrainian strike UAVs assaulted a Russian military base and ammunition storage depot near Henicheska Hirka village on the Arabat Spit. Russian occupation forces and FSB personnel utilized requisitioned resort complexes and private cottage clusters for troop billeting, command posts, and ammo staging. Precision drone hits ignited heavy blazes across the compound, followed by continuous secondary detonations of stored artillery and rocket ammunition. NASA FIRMS satellite thermal sensors recorded intense heat signatures confirming widespread fires throughout the area. Local residents across Henichesk and neighboring settlements reported powerful blasts and shockwaves. Neutralizing this rear staging base degraded supply capabilities and decimated forward ammunition reserves on the southern axis.",
+      "source": "OSINT (Supernova+, Crimean Wind), NASA FIRMS satellite data, eyewitnesses"
+    },
+    "images": [
+      "video/arabat_genichesk_3009_vid1.mp4",
+      "video/arabat_genichesk_3009_vid2.mp4",
+      "images/arabat_genichesk_3009_img1.jpg",
+      "images/arabat_genichesk_3009_img2.jpg"
+    ],
+    "id": 507
+  },
+  {
+    "date": "30.09.2026",
+    "lat": 48.8725,
+    "lng": 38.2917,
+    "distance": 54,
+    "ru": {
+      "region": "Луганская область, Северодонецкий район (с. Верхнекаменка / промзона Лисичанска)",
+      "target": "Склад ракетно-артиллерийского вооружения (РАО) ВС РФ",
+      "category": "Склады боеприпасов",
+      "weapon": "Высокоточное оружие / Дрон",
+      "details": "30 сентября 2026 года Силы обороны Украины нанесли результативный удар по крупному складу ракетно-артиллерийского вооружения (РАО) российских оккупантов в районе села Верхнекаменка Северодонецкого района. Объект располагался в районе Лисичанского промышленного узла и активно использовался группировкой ВС РФ для накопления боеприпасов, снабжавших подразделения на Северском и Лиманском направлениях. В результате точного огневого поражения склады с боеприпасами были полностью уничтожены, возник масштабный пожар с последующей детонацией снарядов. Успешную операцию официально подтвердил Генеральный штаб ВСУ в оперативной сводке. Ликвидация передового артиллерийского склада лишила противника оперативного запаса выстрелов для ведения наступательных действий на данном участке фронта.",
+      "source": "Генеральный штаб ВСУ (официальная сводка)"
+    },
+    "uk": {
+      "region": "Луганська область, Сєвєродонецький район (с. Верхньокам’янка / промзона Лисичанська)",
+      "target": "Склад ракетно-артилерійського озброєння (РАО) ЗС РФ",
+      "category": "Склади боєприпасів",
+      "weapon": "Високоточна зброя / Дрон",
+      "details": "30 вересня 2026 року Сили оборони України завдали результативного удару по великому складу ракетно-артилерійського озброєння (РАО) російських окупантів у районі села Верхньокам’янка Сєвєродонецького району. Об'єкт розташовувався в районі Лисичанського промислового вузла та активно використовувався угрупованням ЗС РФ для накопичення боєприпасів, що постачалися підрозділам на Сіверському та Лиманському напрямках. Внаслідок точного вогневого ураження склади з боєприпасами були повністю знищені, виникла масштабна пожежа з подальшою детонацією снарядів. Успішну операцію офіційно підтвердив Генеральний штаб ЗСУ в оперативному зведенні. Ліквідація передового артилерійського складу позбавила противника оперативного запасу пострілів для ведення наступальних дій на цій ділянці фронту.",
+      "source": "Генеральний штаб ЗСУ (офіційне зведення)"
+    },
+    "en": {
+      "region": "Luhansk Oblast, Sievierodonetsk District (Verkhnokamyanka village / Lysychansk industrial zone)",
+      "target": "Russian Missile and Artillery Munitions Depot (RAO Depot)",
+      "category": "Ammunition Depots",
+      "weapon": "Precision Weapon / Drone",
+      "details": "On September 30, 2026, Ukrainian Defense Forces launched an effective precision strike against a major Russian missile and artillery munitions (RAO) depot near Verkhnokamyanka in the Sievierodonetsk district. Situated within the broader Lysychansk industrial perimeter, the facility served as a central stockpile for artillery shells and rockets supporting frontline units on the Siversk and Lyman axes. The precision strike caused extensive destruction across the warehouse area, triggering a massive fire and sustained secondary detonations of ordnance. The successful operation was officially announced in the briefing by the General Staff of the Armed Forces of Ukraine. The depot's destruction deprived Russian forces of operational artillery ammo supplies essential for local offensive operations.",
+      "source": "General Staff of the AFU (official summary)"
+    },
+    "images": [],
+    "id": 508
+  },
+  {
+    "date": "30.09.2026",
+    "lat": 47.995,
+    "lng": 37.785,
+    "distance": 84,
+    "ru": {
+      "region": "Донецкая область, Донецк",
+      "target": "База хранения, предполетной подготовки и пуска ударных БпЛА подразделений ВС РФ",
+      "category": "Военный объект",
+      "weapon": "Высокоточное оружие / Дрон",
+      "details": "30 сентября 2026 года украинские военные нанесли точечный удар по специализированной военной базе в оккупированном Донецке, использовавшейся для хранения, предполетной подготовки и запуска ударных беспилотников ВС РФ. Данный объект являлся важным узлом подразделений БПЛА противника, откуда регулярно запускались дроны-камикадзе и вели разведку тактические расчёты. Согласно официальному сообщению Генерального штаба ВСУ, попадание привело к уничтожению складированных беспилотников, пускового оборудования и поражению пунктов управления. Ликвидация подобных специализированных центров остаётся приоритетной задачей Сил обороны для защиты гражданской и критической инфраструктуры Украины. Уничтожение базы существенно снизило интенсивность воздушной разведки и дроновых атак оккупантов на восточном фронте.",
+      "source": "Генеральный штаб ВСУ (официальная сводка)"
+    },
+    "uk": {
+      "region": "Донецька область, Донецьк",
+      "target": "Місце зберігання, передпольотної підготовки та пуску ударних БпЛА підрозділів ЗС РФ",
+      "category": "Військовий об'єкт",
+      "weapon": "Високоточна зброя / Дрон",
+      "details": "30 вересня 2026 року українські військові завдали точкового удару по спеціалізованій військовій базі в окупованому Донецьку, яка використовувалася для зберігання, передпольотної підготовки та запуску ударних безпілотників ЗС РФ. Цей об'єкт був важливим вузлом підрозділів БпЛА противника, звідки регулярно запускалися дрони-камікадзе та вели розвідку тактичні розрахунки. Згідно з офіційним повідомленням Генерального штабу ЗСУ, влучання призвело до знищення складованих безпілотників, пускового обладнання та ураження пунктів управління. Ліквідація подібних спеціалізованих центрів залишається пріоритетним завданням Сил оборони для захисту цивільної та критичної інфраструктури України. Знищення бази суттєво знизило інтенсивність повітряної розвідки та дронових атак окупантів на східному фронті.",
+      "source": "Генеральний штаб ЗСУ (офіційне зведення)"
+    },
+    "en": {
+      "region": "Donetsk Oblast, Donetsk",
+      "target": "Russian Strike UAV Storage, Assembly, and Launch Base",
+      "category": "Military Infrastructure",
+      "weapon": "Precision Weapon / Drone",
+      "details": "On September 30, 2026, Ukrainian forces conducted a pinpoint strike against a specialized military base in occupied Donetsk utilized for the storage, assembly, pre-flight preparation, and launch of Russian strike UAVs. The facility operated as a key operational node for Russian drone operators conducting loitering munition sorties and tactical reconnaissance across the Donbas theater. According to an official statement by the General Staff of the Armed Forces of Ukraine, the strike successfully destroyed stockpiles of UAVs, launch catapults, and drone control posts. Neutralizing dedicated drone staging hubs remains a top priority for Ukrainian forces to safeguard critical infrastructure. The attack substantially degraded Russian unmanned aerial reconnaissance and strike capabilities on the eastern front.",
+      "source": "General Staff of the AFU (official summary)"
+    },
+    "images": [
+      "images/donetsk_uav_3009_img1.jpg"
+    ],
+    "id": 509
+  },
+  {
+    "date": "30.09.2026",
+    "lat": 47.195,
+    "lng": 35.21,
+    "distance": 72,
+    "ru": {
+      "region": "Запорожская область, Михайловский район (с. Тимошовка)",
+      "target": "Район сосредоточения тяжелого вооружения и военной техники (ВВТ) подразделений ВС РФ",
+      "category": "Военный объект",
+      "weapon": "Высокоточное оружие / Дрон",
+      "details": "30 сентября 2026 года Силы обороны Украины нанесли огневой удар по крупному району сосредоточения вооружения и военной техники подразделений ВС РФ в районе села Тимошовка Михайловского района Запорожской области. В данном тыловом секторе противник концентрировал бронетехнику, артиллерийские установки, топливозаправщики и автотранспорт для ротации и усиления передовых позиций на Запорожском направлении. В результате результативного прилёта зафиксированы прямые попадания в скопления боевых машин, возгорание горючего и вторичные детонации боекомплекта. Успешное поражение военной техники противника подтверждено в официальной сводке Генерального штаба ВСУ. Уничтожение техники сорвало планы оккупационных войск по переброске свежих механизированных резервов на линию соприкосновения.",
+      "source": "Генеральный штаб ВСУ (официальная сводка)"
+    },
+    "uk": {
+      "region": "Запорізька область, Михайлівський район (с. Тимошівка)",
+      "target": "Район зосередження важкого озброєння та військової техніки (ОВТ) підрозділів ЗС РФ",
+      "category": "Військовий об'єкт",
+      "weapon": "Високоточна зброя / Дрон",
+      "details": "30 вересня 2026 року Сили оборони України завдали вогневого удару по великому району зосередження озброєння та військової техніки підрозділів ЗС РФ у районі села Тимошівка Михайлівського району Запорізької області. У цьому тиловому секторі противник концентрував бронетехніку, артилерійські установки, паливозаправники та автотранспорт для ротації й посилення передових позицій на Запорізькому напрямку. Внаслідок результативного прильоту зафіксовано прямі влучання у скупчення бойових машин, займання пального та вторинні детонації боєкомплекту. Успішне ураження військової техніки противника підтверджено в офіційному зведенні Генерального штабу ЗСУ. Знищення техніки зірвало плани окупаційних військ щодо перекидання свіжих механізованих резервів на лінію зіткнення.",
+      "source": "Генеральний штаб ЗСУ (офіційне зведення)"
+    },
+    "en": {
+      "region": "Zaporizhzhia Oblast, Mykhailivka District (Tymoshivka village)",
+      "target": "Russian Staging Area for Heavy Armored Vehicles and Military Equipment",
+      "category": "Military Infrastructure",
+      "weapon": "Precision Weapon / Drone",
+      "details": "On September 30, 2026, Ukrainian Defense Forces launched an effective strike targeting a major concentration area of Russian heavy weaponry and military vehicles near Tymoshivka village in the Mykhailivka district of Zaporizhzhia Oblast. Russian forces utilized this rear assembly area to gather armored combat vehicles, artillery pieces, fuel trucks, and transport logistics to reinforce frontline units on the Zaporizhzhia axis. The strike achieved direct hits on armored clusters, triggering fuel blazes and secondary ammunition cook-offs. The successful neutralization of the equipment staging area was confirmed in the official briefing by the General Staff of the Armed Forces of Ukraine. Disabling these combat assets disrupted Russian operational maneuvers and mechanized redeployments toward the front.",
+      "source": "General Staff of the AFU (official summary)"
+    },
+    "images": [],
+    "id": 510
+  },
+  {
     "date": "29.09.2026",
     "lat": 47.4564,
     "lng": 37.8686,
