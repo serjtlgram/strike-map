@@ -1,5 +1,75 @@
 const strikeData = [
   {
+    "date": "01.10.2026",
+    "lat": 56.4434,
+    "lng": 38.2294,
+    "distance": 656,
+    "ru": {
+      "region": "Московская область, Сергиево-Посадский район, Краснозаводск",
+      "target": "Краснозаводский химический завод (КХЗ): цех №4 спецхимии и производства термобарических БЧ",
+      "category": "ВПК",
+      "weapon": "Дрон / Спецоперация",
+      "details": "Вечером 1 октября 2026 года около 16:00 на территории Краснозаводского химического завода (КХЗ) в Московской области прогремела серия из трёх мощных взрывов с последующим крупным возгоранием. В результате детонации полностью обрушились конструкции производственного цеха №4 на площади около 2000 м², а площадь пожара превысила 1000 м². По данным оперативных источников, под завалами погибли 7 сотрудников предприятия, десятки рабочих были экстренно эвакуированы. Предприятие входит в холдинг «Техмаш» корпорации «Ростех» и специализируется на выпуске взрывчатых веществ, боеприпасов и термобарических боевых частей для ударных дронов «Герань-2». Власти региона объявили инцидент технологической аварией, однако завод уже неоднократно становился целью украинских атак. Разрушение цеха №4 нанесло серьезный ущерб линии производства спецхимии и снаряжения БЧ.",
+      "source": "OSINT (Exilenova+, Supernova+), очевидцы, росСМИ (SHOT, ТАСС, 112)"
+    },
+    "uk": {
+      "region": "Московська область, Сергієво-Посадський район, Краснозаводськ",
+      "target": "Краснозаводський хімічний завод (КХЗ): цех №4 спецхімії та виробництва термобаричних БЧ",
+      "category": "ВПК",
+      "weapon": "Дрон / Спецоперація",
+      "details": "Увечері 1 жовтня 2026 року близько 16:00 на території Краснозаводського хімічного заводу (КХЗ) у Московській області пролунала серія з трьох потужних вибухів із подальшою масштабною пожежею. Унаслідок детонації повністю обвалилися конструкції виробничого цеху №4 на площі близько 2000 м², а площа горіння перевищила 1000 м². За даними джерел, під завалами загинули 7 працівників підприємства, десятки робітників були екстрено евакуйовані. Завод входить до холдингу «Техмаш» держкорпорації «Ростех» та спеціалізується на випуску вибухових речовин, боєприпасів і термобаричних бойових частин для ударних дронів типу «Герань-2». Влада регіону оголосила інцидент технологічною аварією, проте підприємство вже неодноразово ставало ціллю українських атак. Руйнування цеху №4 завдало відчутного удару по лінії спецхімії та спорядження БЧ.",
+      "source": "OSINT (Exilenova+, Supernova+), очевидці, росЗМІ (SHOT, ТАРС, 112)"
+    },
+    "en": {
+      "region": "Moscow Oblast, Sergiyevo-Posadsky District, Krasnozavodsk",
+      "target": "Krasnozavodsk Chemical Plant (KKhZ): Shop No. 4 of Special Chemistry & Thermobaric Warheads",
+      "category": "Military-Industrial Complex",
+      "weapon": "Drone / Special Operation",
+      "details": "On the evening of October 1, 2026, at around 16:00, a series of three powerful explosions triggered a massive fire at the Krasnozavodsk Chemical Plant (KKhZ) in Moscow Oblast. The blasts caused the total collapse of production Shop No. 4 over an area of approximately 2,000 square meters, while the active blaze covered more than 1,000 square meters. Emergency services confirmed that at least 7 plant workers were killed beneath the debris, and dozens were urgently evacuated. Operating under the Rostec Techmash holding, the facility is a key manufacturer of military explosives, ammunition, and thermobaric warheads for Geran-2 strike drones. Although regional authorities claimed a technical accident, the strategic plant has repeatedly been targeted by Ukrainian strikes. The collapse of Shop No. 4 severely crippled a vital warhead assembly line.",
+      "source": "OSINT (Exilenova+, Supernova+), eyewitnesses, Russian media (SHOT, TASS, 112)"
+    },
+    "images": [
+      "video/krasnozavodsk_0110_vid1.mp4",
+      "video/krasnozavodsk_0110_vid2.mp4",
+      "images/krasnozavodsk_0110_img1.jpg",
+      "images/krasnozavodsk_0110_img2.jpg",
+      "images/krasnozavodsk_0110_img3.jpg",
+      "images/krasnozavodsk_0110_img4.jpg"
+    ],
+    "id": 507
+  },
+  {
+    "date": "01.10.2026",
+    "lat": 53.3676,
+    "lng": 35.805,
+    "distance": 282,
+    "ru": {
+      "region": "Орловская область, Болховский район, пос. Цымбулово",
+      "target": "Основной дронопорт ВС РФ «Цымбулово» (база пуска и склады БПЛА «Герань-5»)",
+      "category": "Военный аэродром",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 1 октября 2026 года Силы обороны Украины нанесли результативный дальнобойный удар по главному российскому дронопорту «Цымбулово» в Болховском районе Орловской области. Факт поражения стратегического объекта официально подтвердил Президент Украины Владимир Зеленский в утреннем обращении, отметив результативность дипстрайков по месту запуска и хранения ударных беспилотников. Данная военная база в 280 км от границы является ключевым операционным узлом ВС РФ, откуда ведутся регулярные пуски поршневых «Герань-2» и реактивных дронов «Герань-5» по Киеву и северным областям Украины. На объекте зафиксированы попадания в зону предстартовой подготовки и технического обслуживания беспилотников, а также повреждения инфраструктуры обеспечения. Удар в очередной раз нарушил графики массированных пусков дальнобойных БПЛА противника.",
+      "source": "Официальное обращение Президента Украины, Генштаб ВСУ, OSINT"
+    },
+    "uk": {
+      "region": "Орловська область, Болховський район, сел. Цимбулово",
+      "target": "Головний дронопорт ЗС РФ «Цимбулово» (база пуску та склади БпЛА «Герань-5»)",
+      "category": "Військовий аеродром",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 1 жовтня 2026 року Сили оборони України завдали результативного далекобійного удару по головному російському дронопорту «Цимбулово» у Болховському районі Орловської області. Факт ураження стратегічного об’єкта офіційно підтвердив Президент України Володимир Зеленський у ранковому зверненні, відзначивши влучність дипстрайків по місцю запуску та зберігання ударних безпілотників. Ця військова база за 280 км від кордону є ключовим операційним вузлом ЗС РФ, звідки здійснюються регулярні пуски поршневих «Герань-2» та реактивних дронів «Герань-5» по Києву та північних областях України. На об’єкті зафіксовано влучання в зону передстартової підготовки й технічного обслуговування дронів, а також пошкодження допоміжної інфраструктури. Удар укотре зірвав графіки масованих нальотів далекобійних БпЛА противника.",
+      "source": "Офіційне звернення Президента України, Генштаб ЗСУ, OSINT"
+    },
+    "en": {
+      "region": "Oryol Oblast, Bolkhov District, Tsymbulovo",
+      "target": "Russian Armed Forces Main Droneport \"Tsymbulovo\" (Geran-5 UAV launch base and storage)",
+      "category": "Military Airfield",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 1, 2026, the Ukrainian Defense Forces executed an effective long-range strike against Russia's main droneport at Tsymbulovo in the Bolkhov District of Oryol Oblast. The precision hit was officially confirmed by President Volodymyr Zelensky in his morning address, highlighting the success of deep strikes against Russian launch and storage sites for strike UAVs. Situated approximately 280 km from the Ukrainian border, the heavily fortified military complex serves as a primary operational hub for deploying piston-driven Geran-2 and high-speed jet-powered Geran-5 drones against Kyiv and northern Ukraine. The strike impacted pre-launch preparation areas and technical maintenance facilities, inflicting damage on specialized launch infrastructure. Disabling the facility once again disrupted Russian operational timetables for mass drone attacks.",
+      "source": "Official address of the President of Ukraine, General Staff of Ukraine, OSINT"
+    },
+    "id": 508
+  },
+  {
     "date": "30.09.2026",
     "lat": 57.925,
     "lng": 56.1683,
