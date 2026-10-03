@@ -1,5 +1,80 @@
 const strikeData = [
   {
+    "date": "02.10.2026",
+    "lat": 52.9874,
+    "lng": 50.5431,
+    "distance": 1023,
+    "ru": {
+      "region": "Самарская область, Волжский район, пос. Просвет",
+      "target": "Ключевой узел транспортировки нефти: ЛПДС «Самара» и НПС «Самара-1», «Самара-2»",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "Ночью и утром 2 октября 2026 года подразделения Сил беспилотных систем ВСУ и ГУР МО Украины провели скоординированную атаку на ключевой узел транспортировки нефти в Самарской области. Основными целями стали линейная производственно-диспетчерская станция (ЛПДС) «Самара» и смежные нефтеперекачивающие станции (НПС) «Самара-1» и «Самара-2» АО «Транснефть-Приволга» в районе посёлка Просвет Волжского района. Данный хаб является крупнейшим узлом магистральных нефтепроводов (включая ветки «Дружба» и «Куйбышев — Лисичанск»), обеспечивая смешение экспортных сортов Urals и прокачку на экспорт и заводы региона. В результате прямых попаданий группы ударных БПЛА повреждены резервуары и технологическая обвязка перекачки, возник крупный пожар с густым столбом чёрного дыма, видимым за десятки километров. Для тушения привлечены пожарные поезда и расчёты МЧС.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, очевидцы, росСМИ"
+    },
+    "uk": {
+      "region": "Самарська область, Волзький район, сел. Просвєт",
+      "target": "Ключовий вузол транспортування нафти: ЛПДС «Самара» та НПС «Самара-1», «Самара-2»",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "Уночі та вранці 2 жовтня 2026 року підрозділи Сил безпілотних систем ЗСУ та ГУР МО України завдали скоординованого удару по стратегічному вузлу магістральних нафтопроводів у Самарській області. Ціллю атаки стали лінійна виробничо-диспетчерська станція (ЛПДС) «Самара» та суміжні нафтоперекачувальні станції (НПС) «Самара-1» і «Самара-2» АТ «Транснефть-Приволга» біля селища Просвєт. Хаб виконує ключову роль у формуванні експортного потоку сорту Urals, живленні нафтопроводу «Дружба» та постачанні сировини на НПЗ регіону. Унаслідок точних влучань дронів-камікадзе спалахнули резервуари та пошкоджено розподільчу технологічну обв'язку перекачування нафти. На станції розгорнулася масштабна пожежа з великим стовпом диму, до ліквідації якої окупанти залучили пожежні потяги та спеціальні підрозділи МНС.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, очевидці, росЗМІ"
+    },
+    "en": {
+      "region": "Samara Oblast, Volzhsky District, Prosvet",
+      "target": "Key Oil Transit Junction: Samara LPDS and Samara-1, Samara-2 Pump Stations",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night and morning of October 2, 2026, the Ukrainian Unmanned Systems Forces, in cooperation with defense intelligence, executed a coordinated strike on a critical oil transit hub in Samara Oblast. The primary targets were the Samara linear production and dispatch station (LPDS) and the adjacent Samara-1 and Samara-2 oil pump stations operated by Transneft-Privolga near Prosvet. This facility serves as a vital junction in Russia's pipeline network, managing crude blending for the export Urals blend and feeding trunk pipelines including Druzhba. Multiple strike UAVs impacted storage tanks and processing pipeline manifolds, sparking large-scale fires and heavy black smoke visible across surrounding districts. Emergency services and dedicated firefighting trains were deployed to contain the blaze, disrupting pumping and regional oil logistics.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, eyewitnesses, Russian media"
+    },
+    "images": [
+      "video/samara_lpds_0210_vid1.mp4",
+      "video/samara_lpds_0210_vid2.mp4",
+      "images/samara_lpds_0210_img1.jpg",
+      "images/samara_lpds_0210_img2.jpg",
+      "images/samara_lpds_0210_img3.jpg"
+    ],
+    "id": 509
+  },
+  {
+    "date": "02.10.2026",
+    "lat": 48.5085,
+    "lng": 44.5956,
+    "distance": 516,
+    "ru": {
+      "region": "Волгоградская область, Волгоград (Красноармейский район)",
+      "target": "Волгоградский НПЗ (ООО «ЛУКОЙЛ-Волгограднефтепереработка»)",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 2 октября 2026 года ударные беспилотники Сил обороны Украины атаковали нефтеперерабатывающий завод ООО «ЛУКОЙЛ-Волгограднефтепереработка» в Красноармейском районе Волгограда. Предприятие мощностью свыше 14,8 млн тонн нефти в год является одним из крупнейших поставщиков моторных топлив в Южном федеральном округе и критическим звеном снабжения группировки оккупационных войск РФ. Несмотря на попытки противодействия со стороны ПВО и мобильных огневых групп, несколько дронов точно поразили территорию завода. По свидетельствам очевидцев, на объекте прогремела серия мощных взрывов, после чего на технологических установках началось сильное горение с ярким заревом над промышленной зоной. Пожару был присвоен повышенный ранг сложности, на место прибыли экстренные службы города. Завод уже подвергался ударам и находился в режиме восстановительного ремонта.",
+      "source": "OSINT (Supernova+, ASTRA, Крымский ветер), очевидцы, росСМИ"
+    },
+    "uk": {
+      "region": "Волгоградська область, Волгоград (Червоноармійський район)",
+      "target": "Волгоградський НПЗ (ТОВ «ЛУКОЙЛ-Волгограднафтопереробка»)",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 2 жовтня 2026 року ударні далекобійні безпілотники Сил оборони України атакували нафтопереробний завод ТОВ «ЛУКОЙЛ-Волгограднафтопереробка» у Червоноармійському районі Волгограда. Завод потужністю понад 14,8 млн тонн нафти на рік є найбільшим виробником бензину й дизельного пального в Південному окрузі РФ та ключовим постачальником паливно-мастильних матеріалів для окупаційних військ. Попри роботу стрілецьких груп та ППО, кілька безпілотників успішно влучили по технологічних об'єктах НПЗ. Місцеві жителі зафіксували яскраві спалахи, звуки вибухів та інтенсивне горіння на території підприємства, яке супроводжувалося високим стовпом диму. Пожежі було присвоєно підвищений номер складності. Підприємство раніше вже зупиняло первинну переробку через попередні атаки та перебувало на ремонті.",
+      "source": "OSINT (Supernova+, ASTRA, Кримський вітер), очевидці, росЗМІ"
+    },
+    "en": {
+      "region": "Volgograd Oblast, Volgograd (Krasnoarmeysky District)",
+      "target": "Volgograd Oil Refinery (LLC LUKOIL-Volgogradneftepererabotka)",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 2, 2026, Ukrainian deep-strike unmanned aerial vehicles hit the LUKOIL-Volgogradneftepererabotka refinery located in the Krasnoarmeysky district of Volgograd. With a nameplate processing capacity exceeding 14.8 million metric tons per year, it is a key producer of diesel, gasoline, and jet fuel supplying Russian military forces and southern logistics hubs. Several kamikaze drones broke through local defenses, striking refinery infrastructure and sparking widespread fires across primary processing installations. Residents captured loud secondary explosions followed by an intense glow over the industrial zone. Emergency response units were dispatched under elevated emergency status to control the fire. The plant, which had previously suffered drone strikes, was forced to conduct emergency shutdowns of affected units.",
+      "source": "OSINT (Supernova+, ASTRA, Crimean Wind), eyewitnesses, Russian media"
+    },
+    "images": [
+      "video/volgograd_npz_0210_vid1.mp4",
+      "images/volgograd_npz_0210_img1.jpg",
+      "images/volgograd_npz_0210_img2.jpg",
+      "images/volgograd_npz_0210_img3.jpg"
+    ],
+    "id": 510
+  },
+  {
     "date": "01.10.2026",
     "lat": 56.4434,
     "lng": 38.2294,
