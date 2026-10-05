@@ -1,5 +1,116 @@
 const strikeData = [
   {
+    "date": "04.10.2026",
+    "lat": 44.68,
+    "lng": 40.035,
+    "distance": 488,
+    "ru": {
+      "region": "Республика Адыгея, Майкопский район, станица Ханская",
+      "target": "Военный аэродром «Ханская»: уничтожение истребителей Су-35С, Су-34 и склада боеприпасов",
+      "category": "Военный аэродром",
+      "weapon": "Дальнобойный дрон / спецоперация СБУ",
+      "details": "В ночь на 4 октября 2026 года дальнобойные ударные дроны Центра спецопераций «Альфа» СБУ нанесли высокоточный удар по военному аэродрому «Ханская» в Республике Адыгея в 500 км от границы. Авиабаза является местом дислокации 272-й учебной авиабазы и служит передовым аэродромом рассредоточения тактической авиации ВКС РФ, применяемой для ударов КАБами по Украине. Беспилотники преодолели ПВО и поразили стоянки и рулежные дорожки, где находились боевые самолеты вне укрытий. В результате детонаций и сильного пожара уничтожены многоцелевой истребитель Су-35С и фронтовой бомбардировщик Су-34 общей стоимостью около 150 млн долларов, а также склад авиационных боеприпасов. Факт уничтожения бортов и инфраструктуры подтвержден спутниковыми снимками, данными пожаров NASA FIRMS и профильными OSINT-источниками.",
+      "source": "Официальное сообщение СБУ, спутниковые снимки Airbus/AviVector, OSINT (Exilenova+, Supernova+), росСМИ"
+    },
+    "uk": {
+      "region": "Республіка Адигея, Майкопський район, станиця Ханська",
+      "target": "Військовий аеродром «Ханська»: знищення винищувачів Су-35С, Су-34 та складу авіабоєприпасів",
+      "category": "Військовий аеродром",
+      "weapon": "Далекобійний дрон / спецоперація СБУ",
+      "details": "У ніч на 4 жовтня 2026 року далекобійні дрони Центру спецоперацій «Альфа» СБУ завдали результативного удару по військовому аеродрому «Ханська» в Адигеї за 500 км від кордону. Авіабаза використовується ворогом для базування 272-ї навчальної авіабази та як пункт підскоку літаків ВКС РФ, що скидають керовані авіабомби (КАБ) по лінії фронту. Українські безпілотники прорвали ПВО та вразили руліжні доріжки й відкриті стоянки літаків. Унаслідок детонацій та пожежі повністю знищено сучасний багатоцільовий винищувач Су-35С (~100 млн доларів), винищувач-бомбардувальник Су-34 (~50 млн доларів) та польовий склад авіаційних боєприпасів. Ураження бойової авіації підтверджено якісними супутниковими знімками, термальними даними NASA FIRMS та заявами СБУ.",
+      "source": "Офіційне повідомлення СБУ, супутникові знімки Airbus/AviVector, OSINT (Exilenova+, Supernova+), росЗМІ"
+    },
+    "en": {
+      "region": "Republic of Adygea, Maykopsky District, Khanskaya",
+      "target": "Khanskaya Military Airfield: Destruction of Su-35S, Su-34 Strike Aircraft and Ammo Depot",
+      "category": "Military Airfield",
+      "weapon": "Long-Range Drone / SBU Special Operation",
+      "details": "On the night of October 4, 2026, deep-strike drones operated by the SBU Alpha Special Operations Center struck the Khanskaya military airfield in Adygea, 500 km from the Ukrainian frontier. The airfield hosts the 272nd Training Aviation Base and serves as a forward-deployment hub for Russian tactical aviation dropping glide bombs (KABs) on frontline targets. Ukrainian UAVs bypassed local air defenses and hit open taxiways and staging pads where combat aircraft were parked outside shelters. Explosions and an intense blaze completely destroyed an advanced Su-35S multirole fighter (~$100M) and an Su-34 strike bomber (~$50M), while also detonating an ammunition depot. The destruction was independently confirmed by satellite imagery, NASA FIRMS thermal detections, and verified OSINT sources.",
+      "source": "Official statement by SBU, Airbus/AviVector satellite imagery, OSINT (Exilenova+, Supernova+), Russian media"
+    },
+    "images": [
+      "video/khanskaya_0410_vid1.mp4",
+      "video/khanskaya_0410_vid2.mp4",
+      "images/khanskaya_0410_img1.jpg",
+      "images/khanskaya_0410_img2.jpg",
+      "images/khanskaya_0410_img3.jpg"
+    ],
+    "id": 511
+  },
+  {
+    "date": "03.10.2026",
+    "lat": 54.5378,
+    "lng": 36.295,
+    "distance": 416,
+    "ru": {
+      "region": "Калужская область, Калуга",
+      "target": "АО «Восход» (Калужский радиоламповый завод): производство электроники для ракет Х-101 и «Искандер-М»",
+      "category": "ВПК",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 3 октября 2026 года дальнобойные средства поражения ВСУ нанесли точный удар по АО «Восход» (Калужский радиоламповый завод) в Калуге. Предприятие является стратегическим объектом ВПК РФ в сфере микроэлектроники и оптико-электронного приборостроения. Завод производит интегральные схемы, полупроводники и радиолампы, используемые в блоках наведения крылатых ракет Х-101 и ОТРК «Искандер-М». Ударные дроны пробили ПВО региона и поразили производственные корпуса предприятия, вызвав сильные взрывы и пожары в цехах точной сборки. Попытки перехвата дронов привели к падению обломков на соседнюю городскую застройку. Вывод из строя линий завода нанес ощутимый ущерб цепочке поставок электронных компонентов для ракетной программы РФ.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, очевидцы, росСМИ"
+    },
+    "uk": {
+      "region": "Калузька область, Калуга",
+      "target": "АТ «Восход» (Калузький радіоламповий завод): виробництво електроніки для ракет Х-101 та «Іскандер-М»",
+      "category": "ВПК",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 3 жовтня 2026 року далекобійні засоби ураження Сил оборони України завдали удару по АТ «Восход» (Калузький радіоламповий завод) у Калузі. Підприємство є стратегічним об'єктом воєнного комплексу РФ у галузі мікроелектроніки та радіоприладобудування. Завод випускає інтегральні мікросхеми, напівпровідники та радіодеталі, які є ключовими для систем наведення крилатих ракет Х-101 та комплексів «Іскандер-М». Безпілотники пробили ППО та влучили у виробничі корпуси заводу, спричинивши вибухи й тривалу пожежу в цехах збирання. Робота ворожої ППО в місті призвела до падіння уламків на прилеглі квартали. Ураження заводу створило відчутний дефіцит електронних плат для серійного виробництва російських високоточних ракет.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, очевидці, росЗМІ"
+    },
+    "en": {
+      "region": "Kaluga Oblast, Kaluga",
+      "target": "JSC Voskhod (Kaluga Radio Tube Plant): Electronics & Guidance Systems for Kh-101 and Iskander-M",
+      "category": "Military-Industrial Complex",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 3, 2026, Ukrainian deep-strike assets executed an effective strike on JSC Voskhod (Kaluga Radio Tube Plant) in Kaluga. The facility is a vital military-industrial asset producing microelectronics, semiconductors, and specialized vacuum electronics. Its components are essential subassemblies for targeting and guidance suites in Kh-101 cruise missiles and Iskander-M ballistic systems. Strike drones bypassed regional air defenses and directly hit manufacturing buildings, triggering secondary explosions and fires across assembly workshops. Russian air defense interceptions over urban areas resulted in debris damaging nearby civilian structures. The disruption at Voskhod creates a direct bottleneck in Russia's long-range precision missile production chain.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, eyewitnesses, Russian media"
+    },
+    "images": [
+      "video/kaluga_voskhod_0310_vid1.mp4",
+      "video/kaluga_voskhod_0310_vid2.mp4",
+      "images/kaluga_voskhod_0310_img1.jpg",
+      "images/kaluga_voskhod_0310_img2.jpg"
+    ],
+    "id": 512
+  },
+  {
+    "date": "03.10.2026",
+    "lat": 53.3649,
+    "lng": 35.8207,
+    "distance": 282,
+    "ru": {
+      "region": "Орловская область, Болховский район, пос. Цымбулово",
+      "target": "Дронопорт ВС РФ «Цымбулово» (повторный удар по складам и пусковым площадкам «Герань-5»)",
+      "category": "Военный аэродром",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 3 октября 2026 года Силы обороны Украины нанесли повторный массированный удар по дронопорту «Цымбулово» в Болховском районе Орловской области. База в 280 км от границы является ключевым операционным узлом ВС РФ для подготовки, хранения и пусков ударных БПЛА «Герань-2» и «Герань-5» по центральным областям Украины. Спутники NASA FIRMS зафиксировали множественные температурные аномалии в 01:33 ночи в секторе наземных хранилищ, площадок заправки и ангаров обслуживания. Несколько ударных дронов добились прямых попаданий по отремонтированным объектам базы, вызвав масштабные пожары и вторичную детонацию снаряженных боевых частей. Систематические удары по Цымбулово срывают графики запусков и вынуждают врага рассредоточивать силы.",
+      "source": "OSINT (Exilenova+), спутниковый мониторинг NASA FIRMS, росСМИ"
+    },
+    "uk": {
+      "region": "Орловська область, Болховський район, сел. Цимбулово",
+      "target": "Дронопорт ЗС РФ «Цимбулово» (повторний удар по складах та пускових майданчиках «Герань-5»)",
+      "category": "Військовий аеродром",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 3 жовтня 2026 року Сили оборони України завдали повторного масованого удару по дронопорту «Цимбулово» у Болховському районі Орловської області. База за 280 км від кордону є головним вузлом ЗС РФ для зберігання, технічного спорядження та пусків дронів «Герань-2» і реактивних «Герань-5» по центральних регіонах України. Система моніторингу NASA FIRMS зафіксувала пожежі о 01:33 ночі в районах сховищ, стартових майданчиків та технічних ангарів. Ударні безпілотники пробили оборону бази, спричинивши масштабні займання та вторинну детонацію пального й бойових частин. Систематичне руйнування інфраструктури «Цимбулово» зриває графіки нальотів і змушує ворога відводити пускові підрозділи вглиб території РФ.",
+      "source": "OSINT (Exilenova+), супутниковий моніторинг NASA FIRMS, росЗМІ"
+    },
+    "en": {
+      "region": "Oryol Oblast, Bolkhov District, Tsymbulovo",
+      "target": "Russian Droneport \"Tsymbulovo\" (Repeated Strike on Storage Revetments and Geran-5 Launch Pads)",
+      "category": "Military Airfield",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 3, 2026, Ukrainian forces conducted a repeated mass deep strike on the Tsymbulovo droneport in the Bolkhov District of Oryol Oblast. Located 280 km from the border, the site is a primary staging hub for fueling, preparing, and launching Geran-2 and jet-powered Geran-5 drones against central Ukraine. NASA FIRMS thermal monitoring registered strong heat signatures at 01:33 UTC+3 across storage revetments, maintenance hangars, and launch pads. Multiple strike UAVs penetrated local defenses, hitting repaired structures and sparking widespread fires and secondary detonations of fuel and warheads. Consecutive strikes on Tsymbulovo severely disrupt Russian drone launch schedules and force relocation of launch crews.",
+      "source": "OSINT (Exilenova+), NASA FIRMS thermal monitoring, Russian media"
+    },
+    "images": [
+      "images/tsymbulovo_0310_img1.jpg",
+      "images/tsymbulovo_0310_img2.jpg",
+      "images/tsymbulovo_0310_img3.jpg"
+    ],
+    "id": 513
+  },
+  {
     "date": "02.10.2026",
     "lat": 52.9874,
     "lng": 50.5431,
