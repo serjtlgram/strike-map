@@ -1,5 +1,44 @@
 const strikeData = [
   {
+    "date": "06.10.2026",
+    "lat": 43.535,
+    "lng": 39.63,
+    "distance": 592,
+    "ru": {
+      "region": "Краснодарский край, акватория Сочи (территориальные воды РФ)",
+      "target": "Танкер теневого флота РФ «AFRAMAX RIO» (IMO: 9273844): удар морских дронов по судну с ~100 тыс. тонн сырой нефти",
+      "category": "Нефтегаз",
+      "weapon": "Безэкипажные морские катера (БЭК) / морской дипстрайк",
+      "details": "Вечером 6 октября 2026 года Силы обороны Украины провели результативную операцию в Черном море, поразив безэкипажными катерами крупный нефтеналивной танкер AFRAMAX RIO (IMO: 9273844, флаг Либерии) из российского «теневого флота». Судно следовало с полной загрузкой сырой нефтью из Новороссийска в Индию, перевозя около 700–750 тысяч баррелей (до 105 тысяч тонн) сырья в обход ценовых ограничений. Атака произошла в территориальных водах РФ в 11 км от побережья Сочи. Прямые попадания морских дронов вызвали мощные взрывы и масштабный пожар с воспламенением разлившегося по морской поверхности нефтяного пятна. Густой черный дым и зарево были видны со всех пляжей курорта, вынудив городские власти закрыть набережные. Минтранс РФ подтвердил атаку надводных БЭК и созвал оперативный штаб, все 23 члена экипажа (граждане Индии) были эвакуированы. Поражение груженого супертанкера нанесло прямой ущерб экспортной логистике российской нефти в Черном море.",
+      "source": "Минтранс РФ, OSINT (Supernova+, Exilenova+, Крымский ветер), ASTRA, BAZA, очевидцы"
+    },
+    "uk": {
+      "region": "Краснодарський край, акваторія Сочі (територіальні води РФ)",
+      "target": "Танкер тіньового флоту РФ «AFRAMAX RIO» (IMO: 9273844): удар морських дронів по судну зі ~100 тис. тонн сирої нафти",
+      "category": "Нафтогаз",
+      "weapon": "Безекіпажні морські катери (БЕК) / морський дипстрайк",
+      "details": "Увечері 6 жовтня 2026 року Сили оборони України завдали результативного удару морськими дронами по великому танкеру AFRAMAX RIO (IMO: 9273844, прапор Ліберії) з російського «тіньового флоту». Судно прямувало з повною загрузкою сирою нафтою з Новоросійська до Індії, перевозячи близько 700–750 тисяч барелів (до 105 тисяч тонн) сировини в обхід санкцій. Атака відбулася в територіальних водах РФ за 11 км від узбережжя Сочі. Прямі влучання безекіпажних катерів викликали детонацію та масштабну пожежу з розливом і горінням нафтової плями в морі. Густий чорний дим спостерігався з міських пляжів, через що влада Сочі закрила доступ на набережні. Мінтранс РФ підтвердив атаку БЕКів і створив оперштаб, усі 23 члени екіпажу (громадяни Індії) були врятовані. Ураження танкера завдало відчутного удару по морській нафтоекспортній логістиці ворога в Чорному морі.",
+      "source": "Мінтранс РФ, OSINT (Supernova+, Exilenova+, Кримський вітер), ASTRA, росЗМІ, очевидці"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Sochi offshore waters (Russian territorial waters)",
+      "target": "Russian Shadow Fleet Oil Tanker \"AFRAMAX RIO\" (IMO: 9273844): Naval Drone Strike on Vessel Carrying ~100K Tons Crude Oil",
+      "category": "Oil & Gas",
+      "weapon": "Uncrewed Surface Vessels (USVs) / Deep Naval Strike",
+      "details": "On the evening of October 6, 2026, Ukrainian defense forces conducted an effective maritime strike, hitting the large crude oil tanker AFRAMAX RIO (IMO: 9273844, Liberian flag) from Russia's 'shadow fleet'. Fully loaded with crude from Novorossiysk en route to India, the vessel was transporting roughly 700,000–750,000 barrels (up to 105,000 metric tons) of oil to evade sanctions. The attack occurred in Russian territorial waters 11 km off the coast of Sochi. Direct hits from uncrewed surface vessels triggered blasts and an intense fire, igniting an oil slick spreading across the sea. Dense black smoke was visible across resort beaches, prompting Sochi authorities to close seaside promenades. Russia's Ministry of Transport confirmed the naval drone strike and convened an emergency headquarters; all 23 crew members (Indian nationals) were evacuated. The strike dealt a direct blow to Russian crude export logistics in the Black Sea.",
+      "source": "Russian Ministry of Transport, OSINT (Supernova+, Exilenova+, Crimean Wind), ASTRA, BAZA, eyewitness footage"
+    },
+    "images": [
+      "video/sochi_aframax_0610_vid1.mp4",
+      "video/sochi_aframax_0610_vid2.mp4",
+      "images/sochi_aframax_0610_img1.jpg",
+      "images/sochi_aframax_0610_img2.jpg",
+      "images/sochi_aframax_0610_img3.jpg",
+      "images/sochi_aframax_0610_img4.jpg"
+    ],
+    "id": 516
+  },
+  {
     "date": "05.10.2026",
     "lat": 55.492,
     "lng": 37.998,
