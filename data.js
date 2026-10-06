@@ -1,5 +1,80 @@
 const strikeData = [
   {
+    "date": "05.10.2026",
+    "lat": 55.492,
+    "lng": 37.998,
+    "distance": 552,
+    "ru": {
+      "region": "Московская область, Раменский район, село Константиново",
+      "target": "ЛПДС «Володарская» (АО «Транснефть — Верхняя Волга»): крупнейшая распределительная нефтебаза Московского региона",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 6 октября (начиная с вечера 5 октября) 2026 года Силы обороны Украины нанесли массированный удар дальнобойными дронами по стратегическим объектам топливно-энергетического комплекса Московского региона. Основной целью атаки стала линейная производственно-диспетчерская станция (ЛПДС) «Володарская» в селе Константиново Раменского района. Станция является крупнейшим узлом кольцевого продуктопровода и ежегодно переваливает свыше 3 млн тонн топлива, напрямую снабжая авиакеросином столичные аэропорты Домодедово, Внуково и Шереметьево. Несмотря на плотный заградительный огонь ПВО Москвы, ударные дроны поразили резервуарный парк. На объекте вспыхнул мощный пожар с открытым горением как минимум двух многотысячных резервуаров с топливом. В аэропортах столицы был объявлен план «Ковер», десятки авиарейсов задержаны и перенаправлены. Пожар тушили расчеты МЧС по повышенному рангу сложности.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, росСМИ, видео очевидцев"
+    },
+    "uk": {
+      "region": "Московська область, Раменський район, село Константиново",
+      "target": "ЛВДС «Володарська» (АТ «Транснафта — Верхня Волга»): найбільша розподільча нафтобаза Московського регіону",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 6 жовтня (починаючи з вечора 5 жовтня) 2026 року Сили оборони України здійснили масований наліт далекобійних ударних безпілотників на енергетичну інфраструктуру Московського регіону. Головною ціллю атаки стала лінійна виробничо-диспетчерська станція (ЛВДС) «Володарська» у селі Константиново Раменського району. Це найбільша нафтобаза столичного регіону та ключовий вузол магістральних нафтопродуктопроводів із щорічним обсягом перевалки понад 3 млн тонн. Станція безпосередньо забезпечує авіаційним пальним головні аеропорти Москви: Домодєдово, Внуково та Шереметьєво. Кілька дронів-камікадзе прорвали завісу ППО та уразили резервуарний парк. На території об'єкта спалахнула сильна пожежа, охопивши щонайменше два великі резервуари з нафтопродуктами. Через масштабну атаку в небі над Москвою оголошували план «Килим», десятки рейсів затримано або скасовано.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, росЗМІ, відео очевидців"
+    },
+    "en": {
+      "region": "Moscow Oblast, Ramensky District, Konstantinovo",
+      "target": "Volodarskaya LPDS Oil Depot (Transneft): Largest Fuel Hub for Moscow Aviation Cluster",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 5–6, 2026, Ukrainian deep-strike UAVs launched a massive raid targeting strategic energy infrastructure across the Moscow region. The primary target was the Volodarskaya Line Production and Dispatch Station (LPDS) in the village of Konstantinovo, Ramensky District. Operating as a major subsidiary of Transneft, it is the largest petroleum product hub in the capital area, handling over 3 million tons of fuel annually and supplying jet fuel directly through pipelines to Moscow's international airports: Domodedovo, Vnukovo, and Sheremetyevo. Multiple strike drones penetrated heavy air defense layers, scoring direct hits on the facility's main tank farm. An intense fire erupted, engulfing at least two large fuel storage tanks with massive columns of smoke. The strike triggered emergency 'Carpet' airspace closures, disrupting dozens of flights across the capital.",
+      "source": "OSINT (Exilenova+, Supernova+), ASTRA, Russian media, eyewitness footage"
+    },
+    "images": [
+      "video/volodarskaya_0510_vid1.mp4",
+      "video/volodarskaya_0510_vid2.mp4",
+      "images/volodarskaya_0510_img1.jpg",
+      "images/volodarskaya_0510_img2.jpg",
+      "images/volodarskaya_0510_img3.jpg",
+      "images/volodarskaya_0510_img4.jpg"
+    ],
+    "id": 514
+  },
+  {
+    "date": "05.10.2026",
+    "lat": 56.0464,
+    "lng": 37.0988,
+    "distance": 591,
+    "ru": {
+      "region": "Московская область, Солнечногорский район, дер. Дурыкино",
+      "target": "Логистический автотранспортный узел в дер. Дурыкино: уничтожение 19 тяжелых грузовиков и складов снабжения",
+      "category": "Логистика",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 6 октября 2026 года в рамках массированной атаки по объектам военной логистики в Подмосковье ударные беспилотники Сил обороны Украины поразили крупную транспортно-логистическую базу в деревне Дурыкино Солнечногорского округа. Расположенный на пересечении Ленинградского шоссе (М-10) и ЦКАД комплекс активно задействован в распределении военных грузов и обслуживании тяжелой техники. В результате серии точных попаданий дронов-камикадзе на парковочных и погрузочных площадках базы вспыхнул масштабный пожар. По официальным сообщениям местных властей, подтвержденным кадрами с места событий, сгорело не менее 19 грузовых автомобилей и тяжелых тягачей, обеспечивавших перевозки. Кроме того, зафиксировано повреждение соседнего крупного складского комплекса в Литвиново, где проводилась срочная эвакуация персонала. Удар нанес существенный ущерб логистическим цепочкам снабжения.",
+      "source": "OSINT (Exilenova+), администрация г.о. Солнечногорск, росСМИ"
+    },
+    "uk": {
+      "region": "Московська область, Сонячногірський район, сел. Дурикіно",
+      "target": "Логістичний автотранспортний вузол у сел. Дурикіно: знищення 19 важких вантажівок та складів постачання",
+      "category": "Логістика",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 6 жовтня 2026 року під час масованої атаки по об'єктах логістики в Підмосков'ї далекобійні ударні дрони Сил оборони України уразили велику транспортно-логістичну базу в селі Дурикіно Сонячногірського міського округу. Комплекс, розташований на розв'язці траси М-10 та ЦКАД, використовувався ворогом як перевалочний пункт і стоянка важкого транспорту для перевезення вантажів. Унаслідок прямих влучань дронів-камікадзе на відкритих майданчиках стоянки спалахнула масштабна пожежа. Місцева окупаційна адміністрація та OSINT-канали підтвердили повне знищення і згоряння 19 важких вантажівок та автопоїздів, задіяних у логістичних ланцюгах. Також зафіксовано пошкодження прилеглого великого складського комплексу в Литвиново, звідки екстрено евакуювали персонал. Удар паралізував важливий логістичний вузол на північ від Москви.",
+      "source": "OSINT (Exilenova+), адміністрація м.о. Солнечногорськ, росЗМІ"
+    },
+    "en": {
+      "region": "Moscow Oblast, Solnechnogorsk District, Durykino",
+      "target": "Durykino Logistics & Transport Hub: Destruction of 19 Heavy Cargo Trucks and Warehouses",
+      "category": "Logistics",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 5–6, 2026, during a coordinated deep-strike operation against rear military logistics in the Moscow region, Ukrainian UAVs struck a major transport and logistics terminal in Durykino, Solnechnogorsk District. Situated strategically at the intersection of the M-10 highway and the Central Ring Road (CKAD), the terminal served as a vital freight distribution and heavy truck staging point supporting military supply lines. Direct drone impacts ignited a large-scale fire across the vehicle parking and cargo loading bays. Official local authorities and verified OSINT imagery confirmed the complete destruction of 19 heavy freight trucks and tractor-trailers. Concurrently, a secondary strike damaged a nearby warehouse facility in Litvinovo, forcing the immediate evacuation of workers. The strike disrupted crucial road supply chains northwest of Moscow.",
+      "source": "OSINT (Exilenova+), Solnechnogorsk administration, Russian media"
+    },
+    "images": [
+      "images/durykino_0510_img1.jpg",
+      "images/durykino_0510_img2.jpg",
+      "images/durykino_0510_img3.jpg"
+    ],
+    "id": 515
+  },
+  {
     "date": "04.10.2026",
     "lat": 44.68,
     "lng": 40.035,
