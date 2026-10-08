@@ -1,5 +1,44 @@
 const strikeData = [
   {
+    "date": "07.10.2026",
+    "lat": 52.9874,
+    "lng": 50.5431,
+    "distance": 1023,
+    "ru": {
+      "region": "Самарская область, Волжский район, пос. Просвет / пос. Рассвет",
+      "target": "ЛПДС «Самара» (АО «Транснефть — Приволга»): повторный массированный удар по крупнейшему нефтяному хабу",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "Днем 7 октября 2026 года Силы обороны Украины нанесли повторный результативный удар дальнобойными дронами-камикадзе по стратегической линейной производственно-диспетчерской станции (ЛПДС) «Самара» в Самарской области. Объект является крупнейшим распределительным и перевалочным хабом компании «Транснефть — Приволга», где сходятся 4 магистральных нефтепровода, соединяющих месторождения Западной Сибири, Урала и Поволжья с портами Черного моря и нефтепроводом «Дружба». Станция занимает территорию свыше 216 гектаров с резервуарным парком суммарным объемом 1,6 млн кубометров. После налета 2 октября, в ходе которого было повреждено 14 резервуаров и станция налива, новая группа дронов поразила технологическую площадку НПС «Самара-2» и уцелевшие емкости. На объекте вспыхнул масштабный пожар, а гигантский шлейф черного дыма протянулся более чем на 290 км до границы Оренбургской области. Повторное поражение парализовало экспортные перетоки нефти.",
+      "source": "OSINT (Exilenova+, Supernova+, Крымский ветер), ASTRA, спутниковый мониторинг NASA FIRMS, росСМИ"
+    },
+    "uk": {
+      "region": "Самарська область, Волзький район, сел. Просвєт / сел. Рассвєт",
+      "target": "ЛВДС «Самара» (АТ «Транснафта — Приволга»): повторний масований удар по найбільшому нафтовому хабу",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "Удень 7 жовтня 2026 року Сили оборони України завдали повторного точного удару далекобійними дронами-камікадзе по стратегічній лінійній виробничо-диспетчерській станції (ЛВДС) «Самара» у Самарській області. Об'єкт є ключовим вузлом системи «Транснафта — Приволга», де сходяться 4 магістральні нафтопроводи, що транспортують сировину з Західного Сибіру та Уралу до експортних терміналів і нафтопроводу «Дружба». Станція має гігантський резервуарний парк місткістю понад 1,6 млн кубометрів на площі понад 216 гектарів. Після атаки 2 жовтня, унаслідок якої було пошкоджено 14 резервуарів, нові влучання припали на майданчик НПС «Самара-2» та технологічну інфраструктуру. На території ЛВДС спалахнула масштабна пожежа, а стовп диму за супутниковими знімками розтягнувся на 290 км у бік Оренбурзької області. Повторне ураження остаточно заблокувало експортне прокачування нафти сорту Urals.",
+      "source": "OSINT (Exilenova+, Supernova+, Кримський вітер), ASTRA, супутниковий моніторинг NASA FIRMS, росЗМІ"
+    },
+    "en": {
+      "region": "Samara Oblast, Volzhsky District, Prosvet / Rassvet",
+      "target": "Samara LPDS Oil Hub (Transneft-Privolga): Repeated Mass Deep Strike on Major Crude Transit Junction",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "During the daytime on October 7, 2026, Ukrainian deep-strike UAVs conducted a repeated successful attack on the strategic Samara Line Production and Dispatch Station (LPDS) in Samara Oblast. Operated by Transneft-Privolga, the 216-hectare facility is Russia's primary crude blending and transit hub, converging four major trunk pipelines from Western Siberia, Tatarstan, and the Urals toward the Druzhba pipeline and Black Sea export terminals. Following the initial October 2 strike that damaged 14 storage tanks and a loading station, the second strike wave directly impacted the Samara-2 pump station and adjacent tank infrastructure. A massive fire erupted across the compound, producing a dense smoke plume extending over 290 kilometers toward Orenburg Oblast as tracked by satellite imagery. The repeated strike inflicted severe damage, compounding disruptions to Russian crude export logistics.",
+      "source": "OSINT (Exilenova+, Supernova+, Crimean Wind), ASTRA, NASA FIRMS thermal imagery, Russian media"
+    },
+    "images": [
+      "video/samara_lpds_0710_vid1.mp4",
+      "video/samara_lpds_0710_vid2.mp4",
+      "images/samara_lpds_0710_img1.jpg",
+      "images/samara_lpds_0710_img2.jpg",
+      "images/samara_lpds_0710_img3.jpg",
+      "images/samara_lpds_0710_img4.jpg"
+    ],
+    "id": 517
+  },
+  {
     "date": "06.10.2026",
     "lat": 43.535,
     "lng": 39.63,
