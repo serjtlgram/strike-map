@@ -1,5 +1,122 @@
 const strikeData = [
   {
+    "date": "08.10.2026",
+    "lat": 55.0417,
+    "lng": 73.3056,
+    "distance": 2519,
+    "ru": {
+      "region": "Омская область, г. Омск",
+      "target": "Омский НПЗ («Газпромнефть — ОНПЗ»): удар по крупнейшему НПЗ России на рекордной дальности",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон FP-6 / дипстрайк",
+      "details": "Днем 8 октября 2026 года Силы обороны Украины осуществили сверхдальний результативный удар модернизированными беспилотниками FP-6 по Омскому нефтеперерабатывающему заводу («Газпромнефть — ОНПЗ»). Предприятие расположено более чем в 2500 километрах от государственной границы Украины и является крупнейшим нефтеперерабатывающим заводом России с годовой проектной мощностью свыше 21 миллиона тонн нефти. Группа ударных дронов успешно преодолела эшелонированную противовоздушную оборону Сибири и точно поразила ключевую технологическую установку первичной переработки нефти АВТ. В результате прилетов на промышленной площадке вспыхнул крупный пожар с густым черным дымом, зафиксированный спутниками и жителями окрестных районов. Попадание привело к аварийной остановке технологического цикла и вызвало панику на АЗС региона. Удар по глубокому тыловому заводу нанес тяжелый урон снабжению топливом оккупационных войск РФ.",
+      "source": "Заявления Президента Украины Владимира Зеленского, Генштаб ВСУ, OSINT (Exilenova+, Supernova+, Крымский ветер, Sternenko), ASTRA, росСМИ"
+    },
+    "uk": {
+      "region": "Омська область, м. Омськ",
+      "target": "Омський НПЗ («Газпромнафта — ОНПЗ»): удар по найбільшому НПЗ Росії на рекордній дальності",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон FP-6 / дипстрайк",
+      "details": "Удень 8 жовтня 2026 року Сили оборони України завдали наддалекого успішного удару модернізованими дронами-камікадзе FP-6 по Омському нафтопереробному заводу («Газпромнафта — ОНПЗ»). Підприємство розташоване на відстані понад 2500 кілометрів від українського кордону та є найбільшим НПЗ у Росії з потужністю первинної переробки понад 21 мільйон тонн нафти на рік. Група безпілотників зуміла прорвати ешелоновану протиповітряну оборону Сибіру та влучно поцілити в ключову технологічну установку первинної переробки АВТ. Після вибухів на території підприємства спалахнула масштабна пожежа, стовп диму від якої зафіксували супутники та численні місцеві мешканці. Ураження спричинило аварійне зупинення виробничого циклу заводу й черги на регіональних АЗС. Ця результативна атака на стратегічний об'єкт у глибокому тилу РФ завдала відчутного удару по паливному забезпеченню російських окупаційних сил.",
+      "source": "Заяви Президента України Володимира Зеленського, Генштаб ЗСУ, OSINT (Exilenova+, Supernova+, Кримський вітер, Sternenko), ASTRA, росЗМІ"
+    },
+    "en": {
+      "region": "Omsk Oblast, Omsk",
+      "target": "Omsk Refinery (Gazpromneft-ONPZ): Record-Range Strike on Russia's Largest Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone FP-6 / Deep Strike",
+      "details": "During the day on October 8, 2026, the Ukrainian Defense Forces carried out an ultra-long-range strike using modernized FP-6 attack drones against the Omsk Oil Refinery (Gazpromneft-ONPZ). Located over 2,500 kilometers from the Ukrainian border, the facility is Russia's largest crude refinery, with an annual refining capacity exceeding 21 million metric tons. Ukrainian UAVs successfully penetrated Siberian air defense systems, directly impacting the primary crude distillation unit (CDU/AVT). Multiple detonations triggered an intense fire across the production complex, documented by satellite monitoring and local residents. The hit forced an emergency shutdown of core refining processes and triggered gasoline panic across regional fuel stations. Striking this vital petrochemical asset deep inside Russia delivers a significant blow to the Russian military's fuel supply and logistical backbone.",
+      "source": "Statements by President Volodymyr Zelensky, General Staff of the AFU, OSINT (Exilenova+, Supernova+, Crimean Wind, Sternenko), ASTRA, Russian media"
+    },
+    "images": [
+      "video/omsk_refinery_0810_vid1.mp4",
+      "video/omsk_refinery_0810_vid2.mp4",
+      "images/omsk_refinery_0810_img1.jpg",
+      "images/omsk_refinery_0810_img2.jpg",
+      "images/omsk_refinery_0810_img3.jpg",
+      "images/omsk_refinery_0810_img4.jpg"
+    ],
+    "id": 520
+  },
+  {
+    "date": "08.10.2026",
+    "lat": 53.4073,
+    "lng": 55.8817,
+    "distance": 1375,
+    "ru": {
+      "region": "Республика Башкортостан, г. Салават",
+      "target": "«Газпром нефтехим Салават»: ночной удар по крупному нефтеперерабатывающему и нефтехимическому комплексу",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 8 октября 2026 года Силы обороны Украины нанесли результативный удар дальнобойными дронами-камикадзе по нефтеперерабатывающему и нефтехимическому комплексу ООО «Газпром нефтехим Салават» в Республике Башкортостан. Предприятие находится на удалении около 1400 километров от линии фронта и входит в число крупнейших производств топлива и нефтехимии в России с мощностью переработки порядка 10 миллионов тонн нефти в год. Барражирующие боеприпасы прорвали региональный заслон ПВО и поразили технологические установки переработки углеводородного сырья на территории промзоны. На объекте прогремела серия мощных детонаций, после чего начался сильный пожар, охвативший технологическое оборудование. Факт поражения зафиксирован местными жителями и тепловыми сенсорами спутникового мониторинга NASA FIRMS. Повреждение установок привело к сбою выпуска светлых нефтепродуктов, дизеля и авиационного керосина для нужд российской военной машины.",
+      "source": "Генштаб ВСУ, OSINT (Exilenova+, Supernova+, Военный Осведомитель, Крымский ветер), спутниковый мониторинг NASA FIRMS, ASTRA, росСМИ"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, м. Салават",
+      "target": "«Газпром нафтохім Салават»: нічний удар по великому нафтопереробному та нафтохімічному комплексу",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 8 жовтня 2026 року Сили оборони України здійснили точний удар далекобійними дронами-камікадзе по нафтопереробному та нафтохімічному комплексу ТОВ «Газпром нафтохім Салават» у Республіці Башкортостан. Підприємство розташоване приблизно за 1400 кілометрів від лінії фронту і є одним із провідних виробників моторного палива й нафтохімічної продукції в РФ із потужністю близько 10 мільйонів тонн нафти щороку. Ударні безпілотники подолали протиповітряну оборону регіону та поцілили безпосередньо у технологічні установки переробки сировини на виробничому майданчику. На території спалахнула потужна пожежа, супроводжувана серією вибухів і задимленням, що підтверджується супутниковими даними NASA FIRMS і відеокадрами очевидців. Ураження обладнання призвело до порушення виробничого циклу, суттєво обмеживши постачання пального, дизеля й технічних компонентів для потреб російської окупаційної армії.",
+      "source": "Генштаб ЗСУ, OSINT (Exilenova+, Supernova+, Военный Осведомитель, Кримський вітер), супутниковий моніторинг NASA FIRMS, ASTRA, росЗМІ"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Salavat",
+      "target": "Gazprom Neftekhim Salavat: Night Drone Attack on Major Refining and Petrochemical Hub",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 8, 2026, Ukrainian deep-strike kamikaze drones successfully attacked the Gazprom Neftekhim Salavat refining and petrochemical complex in the Republic of Bashkortostan. Located approximately 1,400 kilometers from the front line, Salavat is one of Russia's primary integrated petrochemical sites, processing up to 10 million tons of crude oil annually. Ukrainian UAVs bypassed local air defenses and struck primary hydrocarbon processing units within the production perimeter. The impact triggered multiple loud explosions followed by a fierce fire across industrial installations, which was confirmed by thermal tracking via NASA FIRMS and ground video footage. The damage caused an immediate operational disruption, curbing the plant's output of motor gasoline, diesel fuel, and specialized petrochemicals used directly by the Russian armed forces.",
+      "source": "General Staff of the AFU, OSINT (Exilenova+, Supernova+, Crimean Wind, Milinfolive), NASA FIRMS thermal imagery, ASTRA, Russian media"
+    },
+    "images": [
+      "video/salavat_refinery_0810_vid1.mp4",
+      "video/salavat_refinery_0810_vid2.mp4",
+      "images/salavat_refinery_0810_img1.jpg",
+      "images/salavat_refinery_0810_img2.jpg",
+      "images/salavat_refinery_0810_img3.jpg",
+      "images/salavat_refinery_0810_img4.jpg"
+    ],
+    "id": 519
+  },
+  {
+    "date": "08.10.2026",
+    "lat": 54.3734,
+    "lng": 41.9396,
+    "distance": 617,
+    "ru": {
+      "region": "Рязанская область, Сасовский район, г. Сасово",
+      "target": "Дата-центр ООО «Яндекс ДЦ» и завод «Саста»: поражение стратегического IT-хаба и оборонного предприятия",
+      "category": "Логистика / IT / ВПК",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 8 октября 2026 года дальнобойные ударные дроны Сил обороны Украины нанесли удар по дата-центру ООО «Яндекс ДЦ» и прилегающей территории станкостроительного завода «Саста» в городе Сасово Рязанской области. Объект в Сасово является одним из ключевых центров обработки данных «Яндекса», где размещались два из трех отечественных суперкомпьютеров, задействованных в обучении нейросетей и критических алгоритмов, а завод «Саста» выполняет заказы российского ВПК. В результате попаданий дронов на объекте вспыхнул разрушительный пожар, повредивший серверные залы и кабельные эстакады. Пресс-служба компании подтвердила полное прекращение работы дата-центра, а президент Украины Владимир Зеленский назвал удар зеркальным ответом на атаки по украинской цифровой инфраструктуре. Инцидент вызвал беспрецедентный общероссийский сбой работы банков, транспортных систем, маркетплейсов и госсервисов, нанеся колоссальный ущерб цифровому тылу РФ.",
+      "source": "Официальное заявление Президента Украины Владимира Зеленского, пресс-служба ООО «Яндекс», OSINT (Exilenova+, Supernova+, Крымский ветер), ASTRA, спутниковые снимки (Военный Осведомитель)"
+    },
+    "uk": {
+      "region": "Рязанська область, Сасовський район, м. Сасово",
+      "target": "Дата-центр ТОВ «Яндекс ДЦ» та завод «Саста»: ураження стратегічного IT-хабу та оборонного підприємства",
+      "category": "Логістика / IT / ВПК",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 8 жовтня 2026 року далекобійні ударні безпілотники Сил оборони України атакували дата-центр ТОВ «Яндекс ДЦ» та прилеглу територію верстатобудівного заводу «Саста» у місті Сасово Рязанської області. Об'єкт у Сасово — один із ключових дата-центрів компанії «Яндекс», де базувалися два з трьох суперкомп'ютерів, що використовувалися для навчання штучного інтелекту та стратегічних систем, а завод «Саста» безпосередньо працює на потреби російського ВПК. Унаслідок прямих влучань на об'єкті спалахнула масштабна пожежа, яка пошкодила інженерні мережі та серверні потужності. Пресслужба компанії офіційно підтвердила повне зупинення роботи дата-центру, а президент Володимир Зеленський зазначив, що удару завдано у відповідь на атаки РФ проти української IT-інфраструктури. Атака спричинила загальноросійський параліч банківських систем, транспорту, маркетплейсів і держпослуг, підірвавши стійкість цифрового сектора агресора.",
+      "source": "Офіційна заява Президента України Володимира Зеленського, пресслужба ТОВ «Яндекс», OSINT (Exilenova+, Supernova+, Кримський вітер), ASTRA, супутникові знімки (Военный Осведомитель)"
+    },
+    "en": {
+      "region": "Ryazan Oblast, Sasovo District, Sasovo",
+      "target": "Yandex Data Center (Sasovo) & Sasta Machine-Tool Plant: Critical IT Hub and Defense Manufacturer Struck",
+      "category": "Logistics / IT / Military Industry",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 8, 2026, Ukrainian long-range strike drones targeted the Yandex Data Center (Yandex DC Sasovo) and the adjacent Sasta machine-tool plant in Sasovo, Ryazan Oblast. The Sasovo facility represents a core computing hub for Russia's digital infrastructure, hosting two of Yandex's three supercomputers dedicated to neural network training and cloud workloads, while Sasta manufactures specialized equipment for the Russian defense industry. Multiple drone impacts ignited a massive blaze across server halls and power infrastructure. Yandex officially confirmed the total shutdown of the data center, while President Volodymyr Zelensky described the operation as a reciprocal response to Russian strikes on Ukrainian digital systems. The outage caused widespread disruption across Russian banking, transport booking, and e-commerce services, severely degrading adversary communications.",
+      "source": "Official statement by President Volodymyr Zelensky, Yandex press service, OSINT (Exilenova+, Supernova+, Crimean Wind), ASTRA, satellite optical imagery"
+    },
+    "images": [
+      "video/sasovo_yandex_0810_vid1.mp4",
+      "video/sasovo_yandex_0810_vid2.mp4",
+      "images/sasovo_yandex_0810_img1.jpg",
+      "images/sasovo_yandex_0810_img2.jpg",
+      "images/sasovo_yandex_0810_img3.jpg",
+      "images/sasovo_yandex_0810_img4.jpg"
+    ],
+    "id": 518
+  },
+  {
     "date": "07.10.2026",
     "lat": 52.9874,
     "lng": 50.5431,
