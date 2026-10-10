@@ -1,5 +1,190 @@
 const strikeData = [
   {
+    "date": "09.10.2026",
+    "lat": 63.567,
+    "lng": 53.683,
+    "distance": 1795,
+    "ru": {
+      "region": "Республика Коми, г. Ухта",
+      "target": "Ухтинский НПЗ («ЛУКОЙЛ-Ухтанефтепереработка»): результативный удар на рекордной дистанции свыше 1750 км",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон Ан-196 RS / дипстрайк",
+      "details": "Утром 9 октября 2026 года дальнобойные ударные беспилотники Ан-196 RS Сил обороны Украины поразили Ухтинский нефтеперерабатывающий завод компании «Лукойл» в Республике Коми. Предприятие расположено примерно в 1750 километрах от государственной границы Украины и перерабатывает свыше 4,2 миллиона тонн нефти в год, обеспечивая топливом северные регионы РФ и военную логистику. Несколько модернизированных БПЛА прорвали зональную ПВО и точно ударили по технологическим объектам завода. На территории НПЗ вспыхнул сильный пожар, над производственными установками поднялся столб густого черного дыма. В Ухте экстренно закрыли аэропорт, прервали авиасообщение, а рабочий персонал завода и школы эвакуировали в бомбоубежища. Президент Владимир Зеленский официально подтвердил успешное применение дронов Ан-196 RS по объекту в Коми. Удар привел к аварийному сбою технологического цикла НПЗ.",
+      "source": "Официальное заявление Президента Украины Владимира Зеленского, глава Республики Коми Ростислав Гольдштейн, OSINT (Exilenova+, Supernova+, Крымский ветер, Sternenko), ASTRA, росСМИ"
+    },
+    "uk": {
+      "region": "Республіка Комі, м. Ухта",
+      "target": "Ухтинський НПЗ («ЛУКОЙЛ-Ухтанафтопереробка»): результативний удар на рекордній відстані понад 1750 км",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон Ан-196 RS / дипстрайк",
+      "details": "Уранці 9 жовтня 2026 року далекобійні ударні дрони Ан-196 RS Сил оборони України атакували Ухтинський нафтопереробний завод компанії «Лукойл» у Республіці Комі. Завод розташований на відстані близько 1750 кілометрів від державного кордону України та переробляє понад 4,2 мільйона тонн нафти щорічно, забезпечуючи паливом північні регіони РФ та військову логістику. Декілька дронів-камікадзе подолали систему ППО і влучили по технологічних майданчиках підприємства. На території спалахнула велика пожежа, над установками здійнявся густий стовп диму. В Ухті терміново закрили місцевий аеропорт і скасували рейси, а працівників заводу та міські навчальні заклади евакуювали в укриття. Президент Володимир Зеленський офіційно підтвердив ураження Ухтинського НПЗ новітніми дронами Ан-196 RS. Атака спричинила аварійне зупинення технологічних процесів переробки.",
+      "source": "Офіційна заява Президента України Володимира Зеленського, голова Республіки Комі Ростислав Гольдштейн, OSINT (Exilenova+, Supernova+, Кримський вітер, Sternenko), ASTRA, росЗМІ"
+    },
+    "en": {
+      "region": "Komi Republic, Ukhta",
+      "target": "Ukhta Refinery (LUKOIL-Ukhtaneftepererabotka): Successful Long-Range Strike at Record Distance Exceeding 1,750 km",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone An-196 RS / Deep Strike",
+      "details": "On the morning of October 9, 2026, Ukrainian An-196 RS long-range strike drones struck the Lukoil-operated Ukhta Oil Refinery in the Komi Republic. Located roughly 1,750 kilometers from the Ukrainian border, the facility processes over 4.2 million tons of crude oil annually, supplying fuel to Russia's northern territories and military logistics. Several strike drones bypassed Russian air defense networks and hit core processing infrastructure. A major blaze erupted across the industrial site, sending dense smoke columns over the facility. Authorities temporarily grounded flights at Ukhta airport, while refinery personnel and nearby schools were evacuated to shelters. Ukrainian President Volodymyr Zelensky officially confirmed the deployment of An-196 RS drones against the Ukhta refinery. The attack forced an emergency operational halt across the refinery's refining units.",
+      "source": "Official statement by President Volodymyr Zelensky, Governor of Komi Rostislav Goldshtein, OSINT (Exilenova+, Supernova+, Crimean Wind, Sternenko), ASTRA, Russian media"
+    },
+    "images": [
+      "video/ukhta_refinery_0910_vid1.mp4",
+      "video/ukhta_refinery_0910_vid2.mp4",
+      "images/ukhta_refinery_0910_img1.jpg",
+      "images/ukhta_refinery_0910_img2.jpg",
+      "images/ukhta_refinery_0910_img3.jpg"
+    ],
+    "id": 525
+  },
+  {
+    "date": "09.10.2026",
+    "lat": 56.6575,
+    "lng": 36.3015,
+    "distance": 647,
+    "ru": {
+      "region": "Тверская область, Конаковский район, пгт Редкино",
+      "target": "Редкинский опытный завод: поражение производителя ракетного топлива «Децилин-М» для крылатых ракет Х-101",
+      "category": "ВПК",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 9 октября 2026 года дальнобойные ударные дроны Сил обороны Украины атаковали Редкинский опытный завод (АО «РОЗ») в поселке Редкино Тверской области. Предприятие является стратегическим звеном военно-промышленного комплекса РФ и находится под международными санкциями. Завод производит компоненты реактивного топлива «Децилин-М», применяемого в стратегических крылатых ракетах воздушного базирования Х-55 и Х-101, а также ферроценовые присадки к авиационному керосину и дизелю. В результате прямых попаданий беспилотников в производственной зоне завода начался масштабный пожар. Губернатор Тверской области Виталий Королев подтвердил факт возгорания и экстренную эвакуацию смены рабочих. Генеральный штаб ВСУ официально включил объект в перечень пораженных целей ракетной программы РФ, подчеркнув снижение темпов сборки высокоточного вооружения.",
+      "source": "Генеральный штаб ВСУ, губернатор Тверской области Виталий Королев, OSINT (Exilenova+, Supernova+, Sternenko, Crimean Wind, War Zone Inc), ASTRA, росСМИ"
+    },
+    "uk": {
+      "region": "Тверська область, Конаковський район, смт Редкіно",
+      "target": "Редкінський дослідний завод: ураження виробника ракетного пального «Децилін-М» для крилатих ракет Х-101",
+      "category": "ВПК",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 9 жовтня 2026 року далекобійні безпілотники Сил оборони України уразили Редкінський дослідний завод (АТ «РДЗ») у селищі Редкіно Тверської області. Це підприємство є критично важливим для військово-промислового комплексу РФ і перебуває під міжнародними санкціями. Завод спеціалізується на виробництві компонентів пального «Децилін-М» для стратегічних крилатих ракет Х-55 та Х-101, а також спеціальних присадок до дизельного пального та авіаційного гасу. Унаслідок серії влучань дронів на виробничих потужностях підприємства виникла сильна пожежа. Губернатор Тверської області Віталій Корольов визнав факт займання та екстрену евакуацію працівників. Генеральний штаб ЗСУ офіційно підтвердив успішне вогневе ураження заводу, зазначивши, що операція спрямована на підрив ракетно-виробничого потенціалу агресора.",
+      "source": "Генеральний штаб ЗСУ, губернатор Тверської області Віталій Корольов, OSINT (Exilenova+, Supernova+, Sternenko, Crimean Wind, War Zone Inc), ASTRA, росЗМІ"
+    },
+    "en": {
+      "region": "Tver Oblast, Konakovsky District, Redkino",
+      "target": "Redkino Experimental Plant: Strike on Decilin-M Fuel Producer for Kh-101 Cruise Missiles",
+      "category": "Military Industry",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 9, 2026, Ukrainian long-range strike drones attacked the Redkino Experimental Plant (JSC ROZ) in Redkino, Tver Oblast. The plant is a critical defense enterprise under international sanctions, manufacturing specialized Decilin-M synthetic high-density jet fuel for Kh-55 and Kh-101 cruise missiles, as well as ferrocene additives for aviation kerosene and diesel. Direct drone impacts sparked an extensive fire across the production and chemical synthesis workshops. Tver Oblast Governor Vitaly Korolyov confirmed the blaze and the emergency evacuation of night-shift personnel. The General Staff of the Armed Forces of Ukraine officially verified the strike, emphasizing that degrading propellant production directly impairs Russia's long-range missile replenishment capabilities.",
+      "source": "General Staff of the Armed Forces of Ukraine, Tver Oblast Governor Vitaly Korolyov, OSINT (Exilenova+, Supernova+, Sternenko, Crimean Wind, War Zone Inc), ASTRA, Russian media"
+    },
+    "images": [
+      "video/redkino_plant_0910_vid1.mp4",
+      "video/redkino_plant_0910_vid2.mp4",
+      "images/redkino_plant_0910_img1.jpg",
+      "images/redkino_plant_0910_img2.jpg",
+      "images/redkino_plant_0910_img3.jpg"
+    ],
+    "id": 524
+  },
+  {
+    "date": "09.10.2026",
+    "lat": 54.559,
+    "lng": 36.353,
+    "distance": 419,
+    "ru": {
+      "region": "Калужская область, г. Калуга, индустриальный парк «Грабцево»",
+      "target": "Дата-центр ООО «Яндекс ДЦ Калуга» и автозавод «АГР» (Tenet): паралич цифровой инфраструктуры и остановка конвейера",
+      "category": "Логистика / IT / ВПК",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "Утром 9 октября 2026 года ударные дроны Сил обороны Украины поразили промышленную зону индустриального парка «Грабцево» в Калуге. Под удар попали дата-центр ООО «Яндекс ДЦ Калуга» и сборочные корпуса автомобильного завода компании «АГР» (бывший завод Volkswagen, выпускающий машины Tenet). На заводской территории вспыхнул пожар, девять сотрудников получили ранения, а руководство автозавода объявило об остановке конвейера. В дата-центре «Яндекса» прилеты вывели из строя ключевые серверные стойки и инженерные сети. Это стало вторым подряд успешным ударом по IT-кластеру компании после Сасово 8 октября. В результате инцидента по всей России зафиксированы масштабные сбои в работе сервисов такси «Яндекс Go», платформы «Яндекс Про», голосового помощника «Алиса» и облака Yandex Cloud.",
+      "source": "Пресс-служба ООО «Яндекс», «АГР Холдинг», губернатор Калужской области Владислав Шапша, ТАСС, OSINT (Exilenova+, Supernova+, ASTRA, BAZA, Mash)"
+    },
+    "uk": {
+      "region": "Калузька область, м. Калуга, індустріальний парк «Грабцево»",
+      "target": "Дата-центр ТОВ «Яндекс ДЦ Калуга» та автозавод «АГР» (Tenet): параліч цифрової інфраструктури та зупинення конвеєра",
+      "category": "Логістика / IT / ВПК",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "Уранці 9 жовтня 2026 року ударні безпілотники Сил оборони України атакували промисловий вузол технопарку «Грабцево» в місті Калуга. Влучання зафіксовано по майданчику дата-центру ТОВ «Яндекс ДЦ Калуга» та виробничих цехах автозаводу «АГР» (колишній завод Volkswagen, де збирають автомобілі Tenet). На автозаводі виникла пожежа, дев'ять співробітників зазнали поранень, а виробничий конвеєр було повністю зупинено. У дата-центрі «Яндекса» ураження вивело з ладу критичні серверні модулі та підстанції. Це стало другою поспіль результативною атакою на IT-сектор ворога після удару по Сасово 8 жовтня. Напад спричинив масштабний колапс цифрових сервісів у РФ: перестали стабільно працювати «Яндекс Go», додаток для водіїв «Яндекс Про», голосовий асистент «Аліса» та хмарна інфраструктура Yandex Cloud.",
+      "source": "Пресслужба ТОВ «Яндекс», «АГР Холдинг», губернатор Калузької області Владислав Шапша, ТАСС, OSINT (Exilenova+, Supernova+, ASTRA, BAZA, Mash)"
+    },
+    "en": {
+      "region": "Kaluga Oblast, Kaluga, Grabtsevo Industrial Park",
+      "target": "Yandex DC Kaluga & AGR Auto Plant (Tenet): Digital Backbone Crippled and Assembly Line Halted",
+      "category": "Logistics / IT / Military Industry",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the morning of October 9, 2026, Ukrainian strike drones struck Grabtsevo Industrial Park in Kaluga, hitting the Yandex Data Center and the AGR automotive manufacturing plant (the former Volkswagen factory producing Tenet vehicles). Multiple explosions triggered a fire across factory workshops, injuring nine personnel and forcing an immediate halt to automobile assembly. At the adjacent Yandex facility, strikes knocked out critical server racks and cooling infrastructure. Marking the second strike on Russia's digital infrastructure following the Sasovo data center attack on October 8, the raid caused disruptions across Russian commercial services. Severe nationwide outages were reported in Yandex Go taxi hailing, Yandex Pro driver software, the Alice AI assistant, and Yandex Cloud services.",
+      "source": "Yandex press service, AGR Holding, Kaluga Oblast Governor Vladislav Shapsha, TASS, OSINT (Exilenova+, Supernova+, ASTRA, BAZA, Mash)"
+    },
+    "images": [
+      "video/kaluga_tenet_0910_vid1.mp4",
+      "video/kaluga_tenet_0910_vid2.mp4",
+      "images/kaluga_tenet_0910_img1.jpg",
+      "images/kaluga_tenet_0910_img2.jpg",
+      "images/kaluga_tenet_0910_img3.jpg",
+      "images/kaluga_tenet_0910_img4.jpg"
+    ],
+    "id": 523
+  },
+  {
+    "date": "09.10.2026",
+    "lat": 55.808,
+    "lng": 44.062,
+    "distance": 820,
+    "ru": {
+      "region": "Нижегородская область, Дальнеконстантиновский район (Дальнее Константиново-5 / Суроватиха)",
+      "target": "Объекты ЦЕНКИ (НИИ СК им. Бармина) и Центр ликвидации МБР: поражение ключевой ракетно-пусковой инфраструктуры",
+      "category": "ВПК",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 9 октября 2026 года Силы обороны Украины провели операцию по поражению ракетного кластера ВПК РФ в Нижегородской области. В военном городке Дальнее Константиново-5 поражен объект филиала АО «ЦЕНКИ» — Научно-исследовательского института стартовых комплексов имени В. П. Бармина. Организация специализируется на разработке, заправке и эксплуатации стартовых комплексов и систем управления боевыми ракетами. Одновременно в районе станции Суроватиха удар нанесен по Центру ликвидации межконтинентальных баллистических ракет, где хранятся ракетные двигатели и производятся взрывчатые вещества. Попадания дронов вызвали пожары и повреждения оборудования. В сводке Генштаба ВСУ отмечено, что поражение объектов ЦЕНКИ и ракетного арсенала существенно ослабляет возможности РФ по производству топлива и подготовке запусков баллистических ракет.",
+      "source": "Официальное сообщение Генерального штаба ВСУ, OSINT (Exilenova+, Operatyvno ZSU, War Zone Inc), российские мониторинговые каналы"
+    },
+    "uk": {
+      "region": "Нижегородська область, Дальнєконстантинівський район (Дальнє Константиново-5 / Суроватіха)",
+      "target": "Об'єкти ЦЕНКІ (НДІ СК ім. Барміна) та Центр ліквідації МБР: ураження ракетно-пускової інфраструктури",
+      "category": "ВПК",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 9 жовтня 2026 року підрозділи Сил оборони України здійснили високоточний наліт на ракетні об'єкти ВПК РФ у Нижегородській області. У районі містечка Дальнє Константиново-5 уражено філію АТ «ЦЕНКІ» — Науково-дослідний інститут стартових комплексів імені В. П. Барміна, що забезпечує функціонування стартових комплексів і систем заправки ракет. Одночасно біля станції Суроватіха завдано удару по Центру ліквідації міжконтинентальних балістичних ракет, задіяному у виробництві вибухових речовин та зберіганні ракетних двигунів. Вибухи дронів призвели до пошкоджень технологічних будівель і пожеж. Генштаб ЗСУ заявив, що операція спрямована на зниження спроможностей російського агресора щодо експлуатації ракетного озброєння та виготовлення палива для балістичних ракет.",
+      "source": "Офіційне повідомлення Генерального штабу ЗСУ, OSINT (Exilenova+, Operatyvno ZSU, War Zone Inc), російські моніторингові ресурси"
+    },
+    "en": {
+      "region": "Nizhny Novgorod Oblast, Dalnekonstantinovsky District (Dalneye Konstantinovo-5 / Surovatikha)",
+      "target": "TSENKI Facility (Barmin Research Institute) & ICBM Dismantlement Center: Strategic Launch Infrastructure Struck",
+      "category": "Military Industry",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 9, 2026, Ukrainian long-range strike drones targeted strategic missile infrastructure in Nizhny Novgorod Oblast. Near Dalneye Konstantinovo-5, strikes damaged a facility operated by JSC TSENKI — the Barmin Launch Complex Research Institute, which designs, operates, and fuels missile launch facilities. Simultaneously, near Surovatikha railway station, drones hit the ICBM Dismantlement Center, a key military site involved in solid rocket motor processing and explosives manufacturing. The drone arrivals caused fires and localized structural damage across technological installations. The General Staff of the Armed Forces of Ukraine officially verified the operation, stating that degrading TSENKI operations systematically disrupts Moscow's ballistic missile servicing and propellant manufacturing capabilities.",
+      "source": "Official statement by the General Staff of the Armed Forces of Ukraine, OSINT (Exilenova+, Operatyvno ZSU, War Zone Inc), Russian monitoring channels"
+    },
+    "images": [
+      "images/nizhny_tsenki_0910_img1.jpg",
+      "images/nizhny_tsenki_0910_img2.jpg"
+    ],
+    "id": 522
+  },
+  {
+    "date": "09.10.2026",
+    "lat": 50.7758,
+    "lng": 36.4424,
+    "distance": 88,
+    "ru": {
+      "region": "Белгородская область, Яковлевский район, г. Строитель",
+      "target": "Склад ГСМ / Нефтебаза воинских формирований ВС РФ: уничтожение топливных резервуаров",
+      "category": "Нефтегаз",
+      "weapon": "Ударный дрон / дипстрайк",
+      "details": "В ночь на 9 октября 2026 года ударные дроны Сил обороны Украины атаковали полевой склад горюче-смазочных материалов и нефтебазу российских войск в районе города Строитель Яковлевского района Белгородской области (координаты 50.7758, 36.4424). Данный топливный распределительный узел к северу от Белгорода использовался для централизованного снабжения дизельным топливом и бензином мотострелковых и танковых подразделений оккупационной группировки. В результате попаданий дронов на объекте произошло возгорание резервуаров с топливом, возник сильный пожар, сопровождавшийся серией детонаций и открытым горением. Генеральный штаб ВСУ официально подтвердил результативное огневое поражение полевого склада ГСМ в данном районе. Уничтожение запасов топлива осложнило заправку российской бронетехники на Белгородском и Харьковском направлениях.",
+      "source": "Генеральный штаб ВСУ, OSINT (Exilenova+, Supernova+), ASTRA, спутниковые снимки пожаров"
+    },
+    "uk": {
+      "region": "Бєлгородська область, Яковлівський район, м. Строїтєль",
+      "target": "Склад ПММ / Нафтобаза військових формувань ЗС РФ: знищення паливних резервуарів",
+      "category": "Нафтогаз",
+      "weapon": "Ударний дрон / дипстрайк",
+      "details": "У ніч на 9 жовтня 2026 року ударні безпілотники Сил оборони України атакували польовий склад пально-мастильних матеріалів та нафтобазу військ РФ у районі міста Строїтєль Яковлівського району Бєлгородської області (координати 50.7758, 36.4424). Цей логістичний вузол на північ від Бєлгорода відігравав ключову роль у безперебійному забезпеченні пальним мотострілецьких та бронетанкових підрозділів окупаційних сил. Унаслідок прямих влучань дронів спалахнули резервуари зі збереженим пальним, виникла масштабна пожежа із зафіксованими вторинними детонаціями. Генеральний штаб ЗСУ офіційно підтвердив успішне вогневе ураження польового складу ПММ супротивника. Ліквідація значного запасу дизельного пального та бензину суттєво ускладнила заправку техніки загарбників на Бєлгородському та прилеглих напрямках.",
+      "source": "Генеральний штаб ЗСУ, OSINT (Exilenova+, Supernova+, ASTRA, супутникові знімки пожеж"
+    },
+    "en": {
+      "region": "Belgorod Oblast, Yakovlevsky District, Stroitel",
+      "target": "Fuel Depot / POL Supply Base of the Russian Armed Forces: Destruction of Fuel Reservoirs",
+      "category": "Oil & Gas",
+      "weapon": "Strike Drone / Deep Strike",
+      "details": "On the night of October 9, 2026, Ukrainian strike drones struck a military petroleum, oil, and lubricants (POL) storage depot near the town of Stroitel, Yakovlevsky District, Belgorod Oblast (coordinates 50.7758, 36.4424). Located north of Belgorod, this distribution hub was actively utilized to supply fuel to motorized rifle and armored units deployed in the operational sector. Drone strikes directly ignited multiple storage reservoirs, triggering a fierce blaze accompanied by secondary combustions. The General Staff of the Armed Forces of Ukraine formally confirmed the strike on the field fuel depot in Stroitel. The destruction of stored fuel reserves degraded adversary military logistics and disrupted refueling operations for military equipment operating along the northern border sector.",
+      "source": "General Staff of the Armed Forces of Ukraine, OSINT (Exilenova+, Supernova+), ASTRA, thermal satellite detection"
+    },
+    "images": [
+      "images/belgorod_stroitel_0910_img1.jpg",
+      "images/belgorod_stroitel_0910_img2.jpg"
+    ],
+    "id": 521
+  },
+  {
     "date": "08.10.2026",
     "lat": 55.0417,
     "lng": 73.3056,
