@@ -1,5 +1,81 @@
 const strikeData = [
   {
+    "date": "10.10.2026",
+    "lat": 47.1657,
+    "lng": 39.6419,
+    "distance": 233,
+    "ru": {
+      "region": "Ростовская область, г. Ростов-на-Дону",
+      "target": "Нефтеналивной терминал «Юг Руси» / филиал «Ростовский» АО «НЗНП»: масштабный пожар на ключевом перевалочном хабе",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 10 октября 2026 года массированный налет украинских беспилотников привел к поражению нефтеналивного терминала в Железнодорожном районе Ростова-на-Дону. Комплекс с проектной мощностью перевалки до 3,5 млн тонн в год активно используется для отгрузки мазута, дизельного топлива и прямогонного бензина. Несколько тяжелых дронов ударили непосредственно по резервуарному парку и наливной эстакаде, спровоцировав масштабное факельное горение высшего ранга сложности. Пожарные расчеты безуспешно боролись с огнем более двадцати часов подряд. Спутниковые системы мониторинга зафиксировали шлейф густого черного дыма, растянувшийся на 111 километров вглубь региона. Этот терминал играл ключевую роль в обеспечении топливом группировок ВС РФ на южном театре военных действий.",
+      "source": "Сводки ASTRA, Supernova+, Стерненко, Exilenova+, спутниковые данные NASA FIRMS / Sentinel"
+    },
+    "uk": {
+      "region": "Ростовська область, м. Ростов-на-Дону",
+      "target": "Нафтоналивний термінал «Юг Русі» / філія «Ростовська» АТ «НЗНП»: масштабна пожежа на ключовому перевалочному хабі",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 10 жовтня 2026 року масований наліт українських безпілотників призвів до ураження спеціалізованого нафтоналивного термінала у Ростові-на-Дону. Виробничий комплекс із проєктною потужністю перевалки до 3,5 млн тонн на рік активно використовується для відвантаження мазуту, дизельного пального та бензину. Кілька ударних дронів влучили безпосередньо у резервуарний парк та наливну естакаду, спричинивши масштабне факельне горіння найвищого рангу складності. Вогнеборці боролися з полум'ям понад двадцять годин поспіль. Супутникові системи спостереження зафіксували величезний шлейф чорного диму завдовжки понад 111 кілометрів. Цей об'єкт відігравав ключову роль у логістиці постачання пального для угруповань військ агресора на південному фронті.",
+      "source": "Зведення ASTRA, Supernova+, Стерненко, Exilenova+, супутникові дані NASA FIRMS / Sentinel"
+    },
+    "en": {
+      "region": "Rostov Oblast, Rostov-on-Don",
+      "target": "NZNP Oil Terminal / Yug Rusi: Large-Scale Fire at Vital Transshipment Hub",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 10, 2026, a massive long-range drone strike successfully hit the specialized oil transshipment terminal located on the left bank of the Don in Rostov-on-Don. The critical industrial facility, with an annual transshipment capacity of up to 3.5 million tons, handles fuel oil, diesel, and straight-run gasoline. Several heavy strike drones directly hit the fuel storage tanks and the loading racks, triggering an extensive high-intensity fire. Emergency fire crews battled the blaze for over twenty consecutive hours. Satellite monitoring systems recorded a dense plume of black smoke stretching more than 111 kilometers across the region. The terminal served as an essential logistical hub supplying vital petroleum products directly to Russian forces deployed along the southern front.",
+      "source": "Reports by ASTRA, Supernova+, Sternenko, Exilenova+, NASA FIRMS / Sentinel satellite data"
+    },
+    "images": [
+      "video/rostov_terminal_1010_vid1.mp4",
+      "video/rostov_terminal_1010_vid2.mp4",
+      "images/rostov_terminal_1010_img1.jpg",
+      "images/rostov_terminal_1010_img2.jpg",
+      "images/rostov_terminal_1010_img3.jpg",
+      "images/rostov_terminal_1010_img4.jpg"
+    ],
+    "id": 527
+  },
+  {
+    "date": "10.10.2026",
+    "lat": 52.9874,
+    "lng": 50.5431,
+    "distance": 1023,
+    "ru": {
+      "region": "Самарская область, Волжский район, пос. Просвет",
+      "target": "ЛПДС «Самара» (АО «Транснефть — Приволга»): третий результативный удар по крупнейшему нефтетранспортному хабу",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 10 октября 2026 года украинские дальнобойные беспилотники нанесли очередной результативный удар по ключевой линейной производственно-диспетчерской станции «Самара» в Волжском районе Самарской области. Официальное подтверждение успешной операции опубликовал Генеральный штаб ВСУ. Объект является крупнейшим в России узлом смешивания и транспортировки нефти с годовой пропускной способностью до 130 млн тонн и резервуарным парком свыше 1,6 млн кубометров. Новые точные попадания пришлись по технологическим площадкам перекачки, трубопроводной обвязке и уцелевшим емкостям, полностью сорвав аварийно-восстановительные работы. Атака вызвала новые очаги горения и привела к критическим сбоям подачи сырья в экспортные магистральные нефтепроводы.",
+      "source": "Генеральный штаб ВСУ, Exilenova+, ASTRA, Supernova+, War Zone Inc"
+    },
+    "uk": {
+      "region": "Самарська область, Волзький район, с-ще Просвіт",
+      "target": "ЛВДС «Самара» (АТ «Транснафта — Приволжжя»): третій результативний удар по найбільшому нафтотранспортному хабу",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 10 жовтня 2026 року українські далекобійні безпілотники завдали третього поспіль результативного удару по лінійній виробничо-диспетчерській станції «Самара» у Волзькому районі Самарської області. Офіційне підтвердження успішної бойової операції оприлюднив Генеральний штаб ЗСУ. Станція є найбільшим у РФ хабом для змішування та транспортування нафти з річною пропускною спроможністю до 130 млн тонн і парком резервуарів понад 1,6 млн кубометрів. Чергові влучання припали по технологічних майданчиках перекачування, вузлах обв'язки та вцілілих місткостях, остаточно зірвавши відновлювальні роботи. Це спричинило нові пожежі та заблокувало стабільне постачання сировини до магістральних експортних трубопроводів.",
+      "source": "Генеральний штаб ЗСУ, Exilenova+, ASTRA, Supernova+, War Zone Inc"
+    },
+    "en": {
+      "region": "Samara Oblast, Volzhsky District, Prosvet",
+      "target": "Samara Oil Pipeline Dispatch Station (Transneft-Privolga): Third Strike on Russia's Major Oil Hub",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 10, 2026, Ukrainian long-range strike drones delivered a third successful blow to the strategic Samara linear production and dispatch station in Samara Oblast. The General Staff of the Armed Forces of Ukraine officially verified the results of the mission. The facility operates as Russia's premier crude oil blending and transportation hub, processing up to 130 million tons of oil annually with tank capacity exceeding 1.6 million cubic meters. Repeated direct impacts struck pumping installations, manifold piping, and surviving storage tanks, completely disrupting ongoing emergency repairs. The strike caused fresh fires across the site and severely impaired the delivery of crude oil into major export pipeline networks.",
+      "source": "General Staff of the Armed Forces of Ukraine, Exilenova+, ASTRA, Supernova+, War Zone Inc"
+    },
+    "images": [
+      "video/samara_lpds_1010_vid1.mp4",
+      "video/samara_lpds_1010_vid2.mp4",
+      "images/samara_lpds_1010_img1.jpg",
+      "images/samara_lpds_1010_img2.jpg"
+    ],
+    "id": 526
+  },
+  {
     "date": "09.10.2026",
     "lat": 63.567,
     "lng": 53.683,
