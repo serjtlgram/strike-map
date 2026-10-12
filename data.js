@@ -1,5 +1,81 @@
 const strikeData = [
   {
+    "date": "11.10.2026",
+    "lat": 56.0993,
+    "lng": 40.2012,
+    "distance": 678,
+    "ru": {
+      "region": "Владимирская область, г. Владимир",
+      "target": "ЦОД ООО «Яндекс» (мкр. Энергетик): прямой удар по ключевому дата-центру и общенациональный цифровой сбой",
+      "category": "Логистика / IT / ВПК",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 11 октября 2026 года дальнобойные ударные беспилотники атаковали крупнейший дата-центр компании «Яндекс» в микрорайоне Энергетик города Владимир. Комплекс мощностью 40 МВт вмещает свыше 2800 серверных стоек и является базовым хабом зоны доступности ru-central1-a. Несколько дронов точно поразили энергоблоки и трансформаторные подстанции объекта, вызвав сильный пожар и полное обесточивание серверного оборудования. ЦОД во Владимире стал уже третьим пораженным дата-центром компании после Сасово и Калуги, что вывело из строя свыше половины серверных мощностей «Яндекса». Атака спровоцировала масштабный сбой цифровых сервисов: отключились Яндекс Go, Про, Пэй, Алиса, облачная платформа Yandex Cloud и Кинопоиск. Также зафиксированы сбои в работе ритейла, онлайн-банкинга и федеральной государственной системы «ВетИС».",
+      "source": "ASTRA, Baza, Shot, Exilenova+, Supernova+, Стерненко, официальные заявления сервисов «Яндекса»"
+    },
+    "uk": {
+      "region": "Володимирська область, м. Владимир",
+      "target": "ЦОД ТОВ «Яндекс» (мкр. Енергетик): прямий удар по ключовому дата-центру та загальноросійський цифровий збій",
+      "category": "Логістика / IT / ВПК",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 11 жовтня 2026 року далекобійні ударні дрони атакували найбільший дата-центр компанії «Яндекс» у мікрорайоні Енергетик міста Владимир. Виробничий комплекс потужністю 40 МВт налічує понад 2800 серверних стійок і є базовим вузлом зони доступності ru-central1-a. Декілька безпілотників точно влучили в енергетичні блоки та трансформаторні підстанції об'єкта, спричинивши масштабну пожежу й повне знеструмлення обладнання. ЦОД у Владимирі став уже третім ураженим дата-центром компанії після Сасово та Калуги, що вивело з ладу понад половину потужностей «Яндекса». Удар зумовив загальноросійський збій цифрових сервісів: зупинилися Яндекс Go, Про, Пей, Аліса, хмарна платформа Yandex Cloud та Кінопошук. Також було порушено роботу торговельних мереж, банківських додатків і державної системи «ВетІС».",
+      "source": "ASTRA, Baza, Shot, Exilenova+, Supernova+, Стерненко, офіційні повідомлення сервісів «Яндекса»"
+    },
+    "en": {
+      "region": "Vladimir Oblast, Vladimir",
+      "target": "Yandex Data Center (Energetik District): Direct Strike on Major Server Hub Causing Nationwide Outage",
+      "category": "Logistics / IT / Military Industry",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 11, 2026, Ukrainian long-range strike drones targeted Yandex's largest data center located in the Energetik district of Vladimir. The 40 MW critical IT facility houses over 2,800 server racks and serves as the primary hub for the ru-central1-a availability zone. Several strike drones directly hit on-site power sub-stations and electrical distribution units, triggering an intense fire and a complete power blackout across the server halls. This marks the third Yandex data center struck following previous impacts in Sasovo and Kaluga, effectively disabling more than half of the company's total computing capacity. The incident triggered widespread disruptions across nationwide digital services, including Yandex Go, Pro, Pay, Alice, Yandex Cloud, and Kinopoisk. Retail networks, online banking systems, and the VetIS state registry also faced heavy outages.",
+      "source": "ASTRA, Baza, Shot, Exilenova+, Supernova+, Sternenko, official Yandex service statements"
+    },
+    "images": [
+      "video/vladimir_yandex_1110_vid1.mp4",
+      "video/vladimir_yandex_1110_vid2.mp4",
+      "images/vladimir_yandex_1110_img1.jpg",
+      "images/vladimir_yandex_1110_img2.jpg",
+      "images/vladimir_yandex_1110_img3.jpg",
+      "images/vladimir_yandex_1110_img4.jpg"
+    ],
+    "id": 529
+  },
+  {
+    "date": "11.10.2026",
+    "lat": 52.9874,
+    "lng": 50.5431,
+    "distance": 1023,
+    "ru": {
+      "region": "Самарская область, Волжский район, пос. Просвет",
+      "target": "ЛПДС «Самара» (АО «Транснефть — Приволга»): четвертый результативный удар за месяц и критическое разрушение резервуарного парка",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 11 октября 2026 года дальнобойные беспилотники нанесли четвертый результативный удар за месяц по ЛПДС «Самара» в Волжском районе Самарской области. Крупнейшая в Европе нефтеперекачивающая станция обеспечивает смешивание сырья и прокачку до 130 млн тонн нефти в год по магистральным трубопроводам. Очередная группа ударных БПЛА прорвала систему объектовой ПВО и атаковала емкостной резервуарный парк. Попадания привели к поражению ключевых емкостей, в результате чего 100% парка сверхкрупных резервуаров РВСПК-50000 оказалось разрушено или повреждено, а парк РВС-20000 выведен из строя примерно на 40%. На объекте вспыхнул новый крупный очаг открытого горения с плотным задымлением, что полностью сорвало регламент аварийной перекачки экспортной нефти.",
+      "source": "Генеральный штаб ВСУ, Exilenova+, ASTRA, Supernova+, War Zone Inc"
+    },
+    "uk": {
+      "region": "Самарська область, Волзький район, с-ще Просвіт",
+      "target": "ЛВДС «Самара» (АТ «Транснафта — Приволжжя»): четвертий результативний удар за місяць і критичне руйнування резервуарного парку",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч на 11 жовтня 2026 року далекобійні безпілотники завдали четвертого результативного удару за місяць по ЛВДС «Самара» у Волзькому районі Самарської області. Найбільша в Європі нафтоперекачувальна станція забезпечує змішування сировини та прокачування до 130 млн тонн нафти щорічно через магістральні трубопроводи. Чергова група ударних БПЛА прорвала ППО та атакувала місткісний резервуарний парк. Точні влучання призвели до руйнування критичних резервуарів, унаслідок чого 100% парку надвеликих резервуарів РВСПК-50000 пошкоджено або знищено, а парк РВС-20000 виведено з ладу приблизно на 40%. На об'єкті спалахнула масштабна пожежа із густим задимленням, що повністю зірвало виконання аварійного регламенту перекачування експортної нафти.",
+      "source": "Генеральний штаб ЗСУ, Exilenova+, ASTRA, Supernova+, War Zone Inc"
+    },
+    "en": {
+      "region": "Samara Oblast, Volzhsky District, Prosvet",
+      "target": "Samara Oil Pipeline Dispatch Station (Transneft-Privolga): Fourth Strike in October and Heavy Tank Farm Degradation",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 11, 2026, Ukrainian long-range strike drones carried out a fourth successful attack this month on the Samara oil pipeline dispatch station in Samara Oblast. As Europe's largest crude oil hub, the critical facility blends and pumps up to 130 million tons of oil annually through main export pipelines. Strike drones penetrated air defenses and accurately targeted the bulk storage tank farm. The strikes caused heavy destruction across the facility, leaving 100% of the ultra-large RVSPK-50000 storage tanks damaged or destroyed, while the RVS-20000 tank capacity was degraded by approximately 40%. The repeated strikes triggered extensive fires and intense smoke plumes, completely disrupting emergency pumping operations and transit oil shipments.",
+      "source": "General Staff of the Armed Forces of Ukraine, Exilenova+, ASTRA, Supernova+, War Zone Inc"
+    },
+    "images": [
+      "video/samara_lpds_1110_vid1.mp4",
+      "video/samara_lpds_1110_vid2.mp4",
+      "images/samara_lpds_1110_img1.jpg",
+      "images/samara_lpds_1110_img2.jpg"
+    ],
+    "id": 528
+  },
+  {
     "date": "10.10.2026",
     "lat": 47.1657,
     "lng": 39.6419,
