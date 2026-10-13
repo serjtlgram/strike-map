@@ -1,5 +1,41 @@
 const strikeData = [
   {
+    "date": "12.10.2026",
+    "lat": 45.1167,
+    "lng": 33.976,
+    "distance": 199,
+    "ru": {
+      "region": "АР Крым, Симферопольский район, пгт Гвардейское",
+      "target": "Военный аэродром «Гвардейское» (ВКС РФ)",
+      "category": "Военный аэродром",
+      "weapon": "Дальнобойный дрон / дипстрайк",
+      "details": "В ночь на 12 октября 2026 года дальнобойные ударные беспилотники атаковали военный аэродром «Гвардейское» в Симферопольском районе Крыма. Серия мощных взрывов гремела в районе авиабазы в период с 01:34 до 01:52 по московскому времени, что сопровождалось яркими вспышками и вторичной детонацией. Данный объект служит местом дислокации 37-го смешанного авиаполка ВКС РФ с бомбардировщиками Су-24М и штурмовиками Су-25СМ, а также узловой площадкой запуска дронов-камикадзе «Shahed-136/Герань-2» по югу Украины. Несколько дронов успешно преодолели систему объектовой ПВО, поразив инфраструктуру в юго-восточной части взлетно-посадочной полосы. Спутниковые сенсоры NASA FIRMS и Sentinel подтвердили возникновение крупного очага возгорания в зоне технического обслуживания и стоянок техники. Попадания привели к срыву боевых вылетов авиации и нарушению планов пусков ударных БПЛА противника.",
+      "source": "OSINT («Крымский ветер»), спутниковые данные NASA FIRMS / Sentinel, местные паблики и очевидцы"
+    },
+    "uk": {
+      "region": "АР Крим, Сімферопольський район, смт Гвардійське",
+      "target": "Військовий аеродром «Гвардійське» (ПКС РФ)",
+      "category": "Військовий аеродром",
+      "weapon": "Далекобійний дрон / дипстрайк",
+      "details": "У ніч проти 12 жовтня 2026 року далекобійні ударні безпілотники завдали удару по військовому аеродрому «Гвардійське» у Сімферопольському районі Криму. Серія потужних вибухів фіксувалася в районі летовища з 01:34 до 01:52 за місцевим часом і супроводжувалася яскравими спалахами та вторинною детонацією боєприпасів. Авіабаза є місцем базування 37-го змішаного авіаполку ПКС РФ з літаками Су-24М та Су-25СМ, а також важливим стартовим майданчиком для пусків ударних дронів «Shahed-136/Герань-2» по півдню України. Група безпілотників прорвала систему протиповітряної оборони обʼєкта, уразивши південно-східну частину злітно-посадкової смуги. Супутникові сенсори NASA FIRMS та знімки Sentinel зафіксували масштабний осередок пожежі в зоні технічного обслуговування авіатехніки. Удар призвів до зриву бойових вильотів авіації та суттєвого порушення планів пусків баражуючих боєприпасів ворога.",
+      "source": "OSINT («Кримський вітер»), супутникові дані NASA FIRMS / Sentinel, місцеві пабліки та очевидці"
+    },
+    "en": {
+      "region": "AR Crimea, Simferopol District, Hvardiiske",
+      "target": "Military Airfield «Hvardiiske» (Russian Aerospace Forces)",
+      "category": "Military Airfield",
+      "weapon": "Long-Range Drone / Deep Strike",
+      "details": "On the night of October 12, 2026, Ukrainian long-range strike drones targeted the Gvardeyskoye military airfield in the Simferopol District of Crimea. A series of powerful explosions shook the facility between 01:34 and 01:52 MSK, accompanied by intense flashes and secondary detonations. The airbase serves as the permanent deployment hub for the 37th Composite Aviation Regiment flying Su-24M and Su-25SM jets, and operates as a key forward staging platform for Shahed-136/Geran-2 strike drones targeting southern Ukraine. Multiple strike drones breached localized air defense screens, impacting infrastructure near the southeastern section of the runway. Thermal anomalies recorded by NASA FIRMS and Sentinel satellites verified a major blaze across technical support and dispersal facilities. The attack disrupted tactical flight sorties and delayed scheduled waves of Russian loitering munition launches.",
+      "source": "OSINT (Crimean Wind), NASA FIRMS / Sentinel satellite data, local channels and eyewitnesses"
+    },
+    "images": [
+      "images/gvardeyskoe_1210_img1.jpg",
+      "images/gvardeyskoe_1210_img2.jpg",
+      "images/gvardeyskoe_1210_img3.jpg"
+    ],
+    "id": 530
+  },
+  {
     "date": "11.10.2026",
     "lat": 56.0993,
     "lng": 40.2012,
