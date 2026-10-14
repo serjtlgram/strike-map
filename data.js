@@ -1,5 +1,111 @@
 const strikeData = [
   {
+    "date": "13.10.2026",
+    "lat": 47.2602,
+    "lng": 39.8566,
+    "distance": 236,
+    "ru": {
+      "region": "Ростовская область, г. Аксай",
+      "target": "Машиностроительный завод АО «Аксайкардандеталь»: уничтожение производственно-складского комплекса",
+      "category": "ВПК / Машиностроение",
+      "weapon": "Дальнобойный дрон / огневое поражение",
+      "details": "Днем 13 октября 2026 года на территории машиностроительного завода АО «Аксайкардандеталь» в городе Аксай Ростовской области вспыхнул масштабный пожар. Предприятие, основанное в 1955 году, является ключевым производителем карданных валов, шарниров, элементов трансмиссий и ходовой части для специальной техники и тяжелой бронетехники ВС РФ по оборонным госконтрактам. Местные жители сообщали о серии хлопков перед началом возгорания. Пламя быстро распространилось по производственным цехам и складским корпусам, охватив площадь свыше 9000 квадратных метров и вызвав обрушение несущих конструкций. Пожару присвоили высший ранг сложности, к ликвидации привлекли десятки расчетов МЧС, а прилегающие улицы перекрыли. Из-за критического превышения предельно допустимой концентрации сажи и токсичных продуктов горения в воздухе администрация района ввела экстренный режим оповещения об угрозе отравления.",
+      "source": "Оперативные службы МЧС РФ, ASTRA, Baza, Shot, Exilenova+, Supernova+, «Крымский ветер»"
+    },
+    "uk": {
+      "region": "Ростовська область, м. Аксай",
+      "target": "Машинобудівний завод АТ «Аксайкардандеталь»: знищення виробничо-складського комплексу",
+      "category": "ВПК / Машинобудування",
+      "weapon": "Далекобійний дрон / вогневе ураження",
+      "details": "Удень 13 жовтня 2026 року на території машинобудівного заводу АТ «Аксайкардандеталь» у місті Аксай Ростовської області спалахнула масштабна пожежа. Підприємство, засноване у 1955 році, є ключовим постачальником карданних валів, шарнірів, елементів трансмісій і ходової частини для спеціальної та важкої броньованої техніки ЗС РФ за військовими держконтрактами. Очевидці повідомляли про серію вибухів перед появою полум'я на території заводу. Вогонь стрімко охопив виробничі цехи та складські приміщення на площі понад 9000 квадратних метрів, спричинивши обвалення покрівлі й опорних стін. Пожежі було присвоєно найвищий ранг складності, до гасіння залучили десятки екіпажів МНС, а дорожній рух поруч перекрили. Через екстремальне перевищення гранично допустимих норм сажі та токсичних продуктів горіння місцева влада оголосила попередження про загрозу хімічного отруєння.",
+      "source": "Оперативні служби МНС РФ, ASTRA, Baza, Shot, Exilenova+, Supernova+, «Кримський вітер»"
+    },
+    "en": {
+      "region": "Rostov Oblast, Aksay",
+      "target": "Aksaykardandetal Machine-Building Plant: Destruction of Warehouse and Production Complex",
+      "category": "Military Industry / Machine Building",
+      "weapon": "Long-Range Drone / Fire Strike",
+      "details": "On the afternoon of October 13, 2026, a massive fire erupted across the Aksaykardandetal machine-building plant in Aksay, Rostov Oblast. Established in 1955, the strategic enterprise produces driveshafts, universal joints, transmission components, and chassis parts for heavy armor and military transport under Russian defense contracts. Eyewitnesses reported a series of distinct explosions before thick smoke engulfed the industrial site. The blaze rapidly engulfed production workshops and warehouse facilities across an area exceeding 9,000 square meters, causing catastrophic structural collapses of roofs and external walls. Emergency authorities declared the highest fire severity rating, dispatching dozens of fire crews and cordoning off adjacent traffic arteries. Due to hazardous concentrations of airborne particulates and toxic smoke, municipal officials issued public toxicity warnings urging residents to remain indoors.",
+      "source": "Russian Emergency Situations Ministry, ASTRA, Baza, Shot, Exilenova+, Supernova+, Crimean Wind"
+    },
+    "images": [
+      "video/aksay_1310_vid1.mp4",
+      "video/aksay_1310_vid2.mp4",
+      "images/aksay_1310_img1.jpg",
+      "images/aksay_1310_img2.jpg"
+    ],
+    "id": 531
+  },
+  {
+    "date": "13.10.2026",
+    "lat": 47.1657,
+    "lng": 39.6419,
+    "distance": 233,
+    "ru": {
+      "region": "Ростовская область, г. Ростов-на-Дону",
+      "target": "Нефтеналивной терминал «Юг Руси» / филиал «Ростовский» АО «НЗНП»: ночная детонация очередного резервуара",
+      "category": "Нефтегаз",
+      "weapon": "Повторный удар / вторичная детонация",
+      "details": "Около 23:50 по московскому времени 13 октября 2026 года на территории нефтеналивного перевалочного терминала в Железнодорожном районе Ростова-на-Дону прогремел мощный взрыв. Произошла повторная детонация с возгоранием очередного крупнотоннажного резервуара с горючим на левом берегу Дона. Нефтебаза, ранее результативно пораженная украинскими ударными дронами 10 октября, продолжала тлеть под наблюдением пожарных расчетов. Взрыв вызвал образование огромного огненного столба, осветившего ночное небо над Ростовом-на-Дону и соседним Батайском. Событие подтверждается серией видеозаписей местных жителей и детальными кадрами профильных OSINT-каналов. Полное разрушение еще одной емкости парка и повреждение магистральной насосной инфраструктуры окончательно заблокировало ремонтно-восстановительные работы и отгрузку топлива для группировки ВС РФ на юге.",
+      "source": "@ASupersharij, Exilenova+, Supernova+, «Крымский ветер», местные паблики Ростова-на-Дону"
+    },
+    "uk": {
+      "region": "Ростовська область, м. Ростов-на-Дону",
+      "target": "Нафтоналивний термінал «Юг Русі» / філія «Ростовська» АТ «НЗНП»: нічна детонація чергового резервуара",
+      "category": "Нафтогаз",
+      "weapon": "Повторний удар / вторинна детонація",
+      "details": "Близько 23:50 за місцевим часом 13 жовтня 2026 року на території нафтоналивного перевалочного термінала в Ростові-на-Дону пролунав новий потужний вибух. На лівому березі Дону сталася повторна детонація із загорянням чергового великотоннажного резервуара з пально-мастильними матеріалами. Підприємство, успішно уражене українськими дронами 10 жовтня, досі тліло під контролем екстрених служб. Черговий підрив утворив гігантський вогняний стовп, який освітив нічне небо над Ростовом та Батайськом. Факт повторної аварії підтверджують численні відеозаписи очевидців і публікації в OSINT-каналах. Знищення чергової місткості та супутніх насосних вузлів остаточно унеможливило проведення аварійних ремонтних робіт і заблокувало постачання світлих нафтопродуктів для південного угруповання окупаційних військ РФ.",
+      "source": "@ASupersharij, Exilenova+, Supernova+, «Кримський вітер», місцеві пабліки Ростова-на-Дону"
+    },
+    "en": {
+      "region": "Rostov Oblast, Rostov-on-Don",
+      "target": "NZNP Oil Terminal / Yug Rusi: Night Detonation of Fuel Storage Tank",
+      "category": "Oil & Gas",
+      "weapon": "Repeated Strike / Secondary Detonation",
+      "details": "Around 23:50 local time on October 13, 2026, a massive explosion rocked the oil transshipment terminal on the left bank of the Don River in Rostov-on-Don. The blast triggered a secondary detonation, igniting another high-capacity fuel storage tank at the complex. The facility, which was severely damaged during a Ukrainian strike on October 10, had remained burning under containment monitoring by emergency teams. The detonation created a towering column of fire visible across Rostov-on-Don and nearby Bataysk, as documented by resident footage and verified OSINT channels. The catastrophic destruction of an additional tank and adjacent manifold pumps has halted all recovery attempts. This renewed disruption completely paralyzed fuel transshipment, depriving Russian occupation forces on the southern front of steady petroleum supplies.",
+      "source": "@ASupersharij, Exilenova+, Supernova+, Crimean Wind, local Rostov-on-Don channels"
+    },
+    "images": [
+      "video/rostov_terminal_1310_vid1.mp4",
+      "video/rostov_terminal_1310_vid2.mp4"
+    ],
+    "id": 532
+  },
+  {
+    "date": "13.10.2026",
+    "lat": 52.0939,
+    "lng": 36.5558,
+    "distance": 179,
+    "ru": {
+      "region": "Курская область, Золотухинский район, с. Кондринка",
+      "target": "Ремонтная база СПУ и ТЗМ ОТРК «Искандер-М» (448-я ракетная бригада ВС РФ)",
+      "category": "ВПК / Военная инфраструктура",
+      "weapon": "Высокоточный ракетно-дроновый удар",
+      "details": "В ночь на 13 октября 2026 года Силы обороны Украины нанесли результативный комбинированный удар по тыловой ремонтной базе в районе села Кондринка Золотухинского района Курской области. Согласно официальному заявлению Генерального штаба ВСУ, на пораженном объекте осуществлялись регламентные работы, ремонт и предстартовая подготовка самоходных пусковых установок 9П78-1 и транспортно-заряжающих машин 9Т250 комплекса «Искандер-М». Техника принадлежала 448-й ракетной бригаде ВС РФ, систематически наносящей баллистические удары по гражданской инфраструктуре украинских городов, включая Киев и Харьков. Точное огневое поражение площадок сосредоточения техники привело к выводу из строя дефицитных специализированных машин и вторичным возгораниям на базе. В результате атаки были сорваны запланированные боевые выезды и ракетные пуски подразделения.",
+      "source": "Генеральный штаб ВСУ, оперативная сводка Сил обороны Украины"
+    },
+    "uk": {
+      "region": "Курська область, Золотухинський район, с. Кондринка",
+      "target": "Ремонтна база СПУ та ТЗМ ОТРК «Іскандер-М» (448-ма ракетна бригада ЗС РФ)",
+      "category": "ВПК / Військова інфраструктура",
+      "weapon": "Високоточний ракетно-дроновий удар",
+      "details": "У ніч проти 13 жовтня 2026 року Сили оборони України завдали результативного комбінованого удару по тиловій ремонтній базі поблизу села Кондринка Золотухинського району Курської області. За офіційним повідомленням Генерального штабу ЗСУ, на ураженому об'єкті проводилися регламентні роботи, відновлення та передпускова підготовка самохідних пускових установок 9П78-1 і транспортно-заряджальних машин 9Т250 комплексу «Іскандер-М». Устаткування належало 448-й ракетній бригаді армії РФ, яка систематично здійснює балістичні обстріли цивільних об'єктів та енергетики України. Високоточне влучання по майданчиках зосередження машин вивело з ладу дефіцитну спеціалізовану техніку дивізіону та спричинило вторинні загоряння. Успішна операція зірвала графік бойових завдань противника та відтермінувала підготовлені ракетні залпи.",
+      "source": "Генеральний штаб ЗСУ, оперативне зведення Сил оборони України"
+    },
+    "en": {
+      "region": "Kursk Oblast, Zolotukhinsky District, Kondrinka",
+      "target": "Iskander-M Transporter-Erector and Loader Vehicle Repair Base (448th Missile Brigade)",
+      "category": "Military Infrastructure",
+      "weapon": "Precision Missile and Drone Strike",
+      "details": "On the night of October 13, 2026, the Ukrainian Defense Forces executed a precision combined strike on a rear repair and maintenance base near Kondrinka in the Zolotukhinsky District of Kursk Oblast. According to an official statement by the General Staff of the Armed Forces of Ukraine, the targeted site served as a technical staging hub for 9P78-1 transporter-erector-launchers and 9T250 transporter-loader vehicles of the Iskander-M missile system. The equipment belonged to the 448th Missile Brigade, a unit regularly conducting ballistic missile attacks against civilian and energy infrastructure in Kyiv and Kharkiv. The precision strike caused extensive damage to rare heavy tactical vehicles across assembly areas, sparking localized secondary fires. The destruction disabled critical launcher assets and disrupted planned ballistic strike operations.",
+      "source": "General Staff of the Armed Forces of Ukraine, operational reports"
+    },
+    "images": [
+      "images/kondrinka_1310_img1.jpg"
+    ],
+    "id": 533
+  },
+  {
     "date": "12.10.2026",
     "lat": 45.1167,
     "lng": 33.976,
