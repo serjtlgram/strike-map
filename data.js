@@ -1,5 +1,40 @@
 const strikeData = [
   {
+    "date": "15.10.2026",
+    "lat": 54.5422,
+    "lng": 39.7719,
+    "distance": 525,
+    "ru": {
+      "region": "Рязанская область, г. Рязань (Южный промузел)",
+      "target": "Рязанский НПЗ (АО «РНПК», НК «Роснефть»): удар по заводу и объекту «Транснефти»",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные БПЛА / крылатые ракеты / дипстрайк",
+      "details": "Утром 15 октября 2026 года Силы обороны Украины нанесли массированный комбинированный удар по Рязанскому нефтеперерабатывающему заводу (АО «РНПК», НК «Роснефть»). Предприятие мощностью переработки 17,1 млн тонн нефти в год входит в четверку крупнейших НПЗ России и напрямую снабжает столичный регион моторным топливом. По сообщениям губернатора Павла Малкова и Минобороны РФ, в результате прилетов на территории завода вспыхнул крупный пожар, а в двух районах Рязани закрыли школы и детские сады. Согласно данным аналитиков, основной прилет пришелся по узловому объекту «Транснефти» внутри промзоны НПЗ, через который осуществляется перекачка бензинов и авиакеросина по магистральному продуктопроводу Староликеево — Рязань — Москва для нужд Московского авиаузла и логистики ВС РФ. Удар нанесен после официального объявления Украины о снятии моратория на поражение российских НПЗ в ответ на атаки по украинской энергосистеме.",
+      "source": "МО РФ, губернатор Рязанской области, @ASupersharij, Exilenova+, ASTRA, Financial Times"
+    },
+    "uk": {
+      "region": "Рязанська область, м. Рязань (Південний промвузол)",
+      "target": "Рязанський НПЗ (АТ «РНПК», НК «Роснефть»): удар по заводу та об'єкту «Транснефти»",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні БпЛА / крилаті ракети / діпстрайк",
+      "details": "Вранці 15 жовтня 2026 року Сили оборони України завдали масованого комбінованого удару по Рязанському нафтопереробному заводу (АТ «РНПК», НК «Роснефть»). Підприємство потужністю переробки 17,1 млн тонн нафти на рік належить до четвірки найбільших НПЗ Росії та безпосередньо забезпечує моторним пальним столичний регіон. За повідомленнями губернатора Павла Малкова та Міноборони РФ, у результаті влучань на території заводу спалахнула масштабна пожежа, а у двох районах Рязані скасували заняття у школах та дитсадках. За даними аналітиків, головного ураження зазнав вузловий об'єкт «Транснефти» на майданчику НПЗ, задіяний у транспортуванні бензинів та авіагасу магістральним продуктопроводом Старолікеєво — Рязань — Москва для Московського авіавузла та логістики військ РФ. Удар став відповіддю на ворожі атаки по енергосистемі після офіційної заяви України про зняття мораторію на ураження нафтопереробних заводів агресора.",
+      "source": "МО РФ, губернатор Рязанської області, @ASupersharij, Exilenova+, ASTRA, Financial Times"
+    },
+    "en": {
+      "region": "Ryazan Oblast, Ryazan (Southern Industrial Hub)",
+      "target": "Ryazan Oil Refinery (JSC RNPC / Rosneft): Strike on Refinery and Transneft Pipeline Hub",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Strike UAVs / Cruise Missiles / Deep Strike",
+      "details": "On the morning of October 15, 2026, Ukrainian Defense Forces launched a massive coordinated strike against the Ryazan Oil Refinery (JSC RNPC, Rosneft subsidiary). With a refining capacity of 17.1 million metric tons per year, it ranks among Russia's four largest refineries and serves as the primary fuel supply artery for the Moscow metropolitan area. Regional governor Pavel Malkov and the Russian Ministry of Defense confirmed significant fires breaking out inside the facility following drone impacts, prompting emergency school closures across two city districts. Monitoring sources reported that a precision hit struck Transneft trunk pipeline infrastructure within the refinery compound, which pumps automotive fuel and aviation kerosene along the Starolikeyevo-Ryazan-Moscow conduit supplying Moscow aviation hubs and military logistics. The strike followed Ukraine's official lifting of restrictions on targeting Russian oil refineries in retaliation for continuous attacks on the Ukrainian energy grid.",
+      "source": "Russian MoD, Governor of Ryazan Oblast, @ASupersharij, Exilenova+, ASTRA, Financial Times"
+    },
+    "images": [
+      "video/ryazan_1510_vid1.mp4",
+      "images/ryazan_1510_img1.jpg"
+    ],
+    "id": 536
+  },
+  {
     "date": "14.10.2026",
     "lat": 51.3617,
     "lng": 42.19,
