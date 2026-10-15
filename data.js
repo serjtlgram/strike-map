@@ -1,5 +1,80 @@
 const strikeData = [
   {
+    "date": "14.10.2026",
+    "lat": 51.3617,
+    "lng": 42.19,
+    "distance": 439,
+    "ru": {
+      "region": "Воронежская область, г. Борисоглебск",
+      "target": "Военный аэродром «Борисоглебск» (ВКС РФ): ракетный удар РК «Нептун», уничтожение 6 истребителей Су-34М",
+      "category": "Военный аэродром",
+      "weapon": "Крылатые ракеты «Нептун» / ракетный удар",
+      "details": "Вечером 14 октября 2026 года Военно-морские силы ВСУ нанесли высокоточный ракетный удар береговым ракетным комплексом «Нептун» по военному аэродрому «Борисоглебск» в Воронежской области. Авиабаза используется ВКС РФ для базирования фронтовых бомбардировщиков Су-34 и штурмовиков Су-25, регулярно атакующих управляемыми авиабомбами позиции украинских войск и гражданскую инфраструктуру. По информации ВМС ВСУ, ракетный удар привел к уничтожению шести модернизированных истребителей-бомбардировщиков Су-34М на открытой стоянке. На территории аэродрома начался сильный пожар, сопровождавшийся вторичной детонацией боекомплекта и уничтожением наземного аэродромного оборудования. Успешность удара подтвердили спутниковые снимки, зафиксировавшие масштабные следы возгорания на стоянке самолетов и скопление обломков фюзеляжей. Потери в авиатехнике существенно снизят интенсивность бомбардировок на восточном направлении.",
+      "source": "ВМС ВСУ, @ASupersharij, Exilenova+, Supernova+, «Военный осведомитель», спутниковые снимки"
+    },
+    "uk": {
+      "region": "Воронезька область, м. Борисоглєбськ",
+      "target": "Військовий аеродром «Борисоглєбськ» (ПКС РФ): ракетний удар РК «Нептун», знищення 6 винищувачів Су-34М",
+      "category": "Військовий аеродром",
+      "weapon": "Крилаті ракети «Нептун» / ракетний удар",
+      "details": "Увечері 14 жовтня 2026 року Військово-морські сили ЗСУ завдали високоточного ракетного удару береговим протикорабельним комплексом «Нептун» по військовому аеродрому «Борисоглєбськ» у Воронезькій області. Авіабаза слугує базовим майданчиком для фронтових бомбардувальників Су-34 та штурмовиків Су-25, які застосовують керовані авіабомби проти українських позицій і прифронтових міст. За офіційними даними командування ВМС ЗСУ, ракети уразили зону стоянки літаків і знищили шість модернізованих бомбардувальників Су-34М. На летовищі виникла масштабна пожежа з вторинною детонацією авіаційного озброєння та виведенням з ладу технічного обладнання забезпечення польотів. Факт розгрому підтверджено супутниковими знімками високої роздільної здатності, де зафіксовано вигорілі стоянки та уламки техніки. Втрата одразу шести бортів послабить наступальні спроможності тактичної авіації окупантів.",
+      "source": "ВМС ЗСУ, @ASupersharij, Exilenova+, Supernova+, «Военный осведомитель», супутникові знімки"
+    },
+    "en": {
+      "region": "Voronezh Oblast, Borisoglebsk",
+      "target": "Borisoglebsk Military Airfield: Neptune Missile Strike and Destruction of 6 Su-34M Bombers",
+      "category": "Military Airbase",
+      "weapon": "Neptune Cruise Missiles / Precision Strike",
+      "details": "On the evening of October 14, 2026, the Ukrainian Naval Forces executed a precision strike using Neptune land-attack cruise missiles against the Borisoglebsk military airfield in Voronezh Oblast. The tactical airbase serves as an operational hub for Russian Su-34 strike aircraft and Su-25 attack planes systematically launching guided glide bombs against Ukrainian frontline defenses. According to official confirmation from Ukrainian Navy leadership, the missiles struck the flight line, destroying six modernized Su-34M frontline fighter-bombers. The impact ignited major blazes accompanied by secondary ammunition cook-offs and severely damaged ground support equipment. High-resolution satellite imagery confirmed the catastrophic destruction, showing extensive scorch patterns across parking stands and scattered debris. The loss of six advanced combat aircraft significantly degrades Russian tactical aviation capacity across the eastern sector.",
+      "source": "Ukrainian Navy, @ASupersharij, Exilenova+, Supernova+, Military Informant, satellite imagery"
+    },
+    "images": [
+      "video/borisoglebsk_1410_vid1.mp4",
+      "video/borisoglebsk_1410_vid2.mp4",
+      "images/borisoglebsk_1410_img1.jpg",
+      "images/borisoglebsk_1410_img2.jpg",
+      "images/borisoglebsk_1410_img3.jpg"
+    ],
+    "id": 534
+  },
+  {
+    "date": "14.10.2026",
+    "lat": 51.956,
+    "lng": 47.75,
+    "distance": 804,
+    "ru": {
+      "region": "Саратовская область, г. Балаково",
+      "target": "МегаЦОД ПАО «Сбербанк» (ОЭЗ «Алмаз»): поражение крупнейшего дата-центра РФ и промышленной зоны",
+      "category": "Логистика / IT / ВПК",
+      "weapon": "Дальнобойные дроны Fire Point / дипстрайк",
+      "details": "В ночь на 14 октября 2026 года группа украинских дальнобойных дронов компании Fire Point атаковала промышленную зону города Балаково в Саратовской области. Основной целью налета стал МегаЦОД ПАО «Сбербанк» на территории особой экономической зоны «Алмаз». Комплекс проектной мощностью 82 МВт и площадью свыше 55 тысяч квадратных метров строился как крупнейший вычислительный центр России для размещения суперкомпьютеров, обслуживания банковских транзакций и систем управления цифровой инфраструктурой. В результате попаданий дронов повреждения получили фасады серверных модулей, энергораспределительные узлы и технологические постройки, а также соседняя площадка промзоны завода «МЗ Балаково». Атаку на стратегический дата-центр официально подтвердил зампред правления Сбербанка Александр Ведяхин, а также представители украинской стороны. Удар нарушил темпы ввода мощностей и устойчивость корпоративных сетевых резервов.",
+      "source": "ПАО «Сбербанк», Fire Point, Офис президента Украины, ASTRA, Exilenova+, Supernova+, «Агентство»"
+    },
+    "uk": {
+      "region": "Саратовська область, м. Балаково",
+      "target": "МегаЦОД ПАТ «Сбербанк» (ВЕЗ «Алмаз»): ураження найбільшого дата-центру РФ та промислової зони",
+      "category": "Логістика / IT / ВПК",
+      "weapon": "Далекобійні дрони Fire Point / діпстрайк",
+      "details": "У ніч проти 14 жовтня 2026 року група українських далекобійних безпілотників виробника Fire Point завдала удару по індустріальній зоні міста Балаково Саратовської області. Головною ціллю атаки став МегаЦОД банку «Сбербанк» на майданчику особливої економічної зони «Алмаз». Об'єкт проєктною потужністю 82 МВт і площею понад 55 тисяч квадратних метрів зводився як найбільший центр обробки даних у Росії для суперкомп'ютерів, фінансових розрахунків і підтримки критичної цифрової інфраструктури. Влучання ударних дронів пошкодили інженерні модулі дата-центру, розподільчі кабельні лінії та допоміжні споруди, а також прилеглу ділянку металургійного підприємства «МЗ Балаково». Факт влучання у ЦОД підтвердив перший заступник голови правління Сбербанку Олександр Вєдяхін та Офіс президента України. Успішне ураження загальмувало запуск другої черги кластера та обмежило стійкість мережевих сховищ.",
+      "source": "ПАТ «Сбербанк», Fire Point, Офіс президента України, ASTRA, Exilenova+, Supernova+, «Агентство»"
+    },
+    "en": {
+      "region": "Saratov Oblast, Balakovo",
+      "target": "Sberbank Mega Data Center (Almaz SEZ): Strike on Russia's Largest Datacenter and Industrial Hub",
+      "category": "Logistics / IT / Military Industry",
+      "weapon": "Fire Point Long-Range Drones / Deep Strike",
+      "details": "In the early hours of October 14, 2026, long-range Ukrainian strike drones developed by Fire Point targeted the industrial development zone in Balakovo, Saratov Oblast. The primary objective was Sberbank's flagship Mega Data Center inside the Almaz Special Economic Zone. Designed for an IT capacity of 82 MW across 55,000 square meters, the mega-facility was developed as the largest data center complex in Russia to power sovereign supercomputers, military banking networks, and state digital systems. Drone impacts caused structural fires and damaged server housing modules, cooling connections, and adjacent structures near the MZ Balakovo metallurgical complex. The attack on the strategic facility was officially confirmed by Sberbank First Deputy Chairman Alexander Vedyakhin and the Ukrainian Presidential Office. The strike disrupted commissioning schedules and compromised server cluster redundancy across Russian state digital networks.",
+      "source": "Sberbank, Fire Point, Office of the President of Ukraine, ASTRA, Exilenova+, Supernova+, Agentstvo"
+    },
+    "images": [
+      "video/balakovo_1410_vid1.mp4",
+      "images/balakovo_1410_img1.jpg",
+      "images/balakovo_1410_img2.jpg",
+      "images/balakovo_1410_img3.jpg"
+    ],
+    "id": 535
+  },
+  {
     "date": "13.10.2026",
     "lat": 47.2602,
     "lng": 39.8566,
