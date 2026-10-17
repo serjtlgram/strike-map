@@ -1,5 +1,113 @@
 const strikeData = [
   {
+    "date": "16.10.2026",
+    "lat": 61.2833,
+    "lng": 72.9947,
+    "distance": 2578,
+    "ru": {
+      "region": "Ханты-Мансийский АО — Югра, Сургутский район",
+      "target": "Сургутский ЗСК им. В. С. Черномырдина (ООО «Газпром переработка»): рекордный удар на 2400 км",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные БПЛА / дипстрайк",
+      "details": "Днем 16 октября 2026 года Силы обороны Украины осуществили рекордный по дальности дипстрайк, атаковав Сургутский завод стабилизации конденсата имени В. С. Черномырдина (ООО «Газпром переработка») в Ханты-Мансийском автономном округе. Предприятие расположено более чем в 2350 километрах от границы с Украиной и является крупнейшим перерабатывающим комплексом в Западной Сибири с проектной мощностью до 12 млн тонн углеводородного сырья в год. Завод играет критическую роль в энергетике РФ, перерабатывая деэтанизированный газовый конденсат северных месторождений Тюменской области в автомобильные бензины, арктическое дизельное топливо и авиакеросин марки ТС-1. Губернатор Югры Руслан Кухарук подтвердил атаку БПЛА и возникновение сильного пожара на промышленной площадке, куда были стянуты экстренные службы. Прямое попадание ударных дронов по технологическим установкам моторных топлив нанесло тяжелый ущерб цепочке поставок ГСМ для военной техники и авиации агрессора.",
+      "source": "Губернатор ХМАО, ASTRA, Supernova+, @ssternenko, «Военный осведомитель», Baza, Readovka"
+    },
+    "uk": {
+      "region": "Ханти-Мансійський АО — Югра, Сургутський район",
+      "target": "Сургутський ЗСК ім. В. С. Чорномирдіна (ТОВ «Газпром переработка»): рекордний удар на 2400 км",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні БпЛА / діпстрайк",
+      "details": "Вдень 16 жовтня 2026 року Сили оборони України здійснили рекордний за дальністю діпстрайк, уразивши Сургутський завод стабілізації конденсату імені В. С. Чорномирдіна (ТОВ «Газпром переработка») у Ханти-Мансійському автономному окрузі. Об'єкт розташований на безпрецедентній відстані понад 2350 кілометрів від державного кордону і є найбільшим газопереробним підприємством Західного Сибіру з проєктною потужністю 12 млн тонн на рік. Підприємство відіграє стратегічну роль у забезпеченні армії РФ пально-мастильними матеріалами, виробляючи автомобільний бензин, арктичне дизельне пальне та авіаційний гас марки ТС-1 з конденсату північних родовищ Тюменської області. Губернатор Югри Руслан Кухарук підтвердив атаку безпілотників і займання технологічних об'єктів підприємства, на місце прибули підрозділи МНС. Успішне влучання дронів у переробні потужності суттєво ускладнить логістику та постачання пального для авіації та бронетехніки окупаційних військ.",
+      "source": "Губернатор ХМАО, ASTRA, Supernova+, @ssternenko, «Военный осведомитель», Baza, Readovka"
+    },
+    "en": {
+      "region": "Khanty-Mansi Autonomous Okrug - Yugra, Surgut District",
+      "target": "Surgut Gas Condensate Plant (Gazprom Pererabotka): Record Deep Strike at 2,400 km",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On the afternoon of October 16, 2026, Ukrainian Defense Forces executed a record-breaking long-range deep strike targeting the Surgut Gas Condensate Stabilization Plant named after V.S. Chernomyrdin (Gazprom Pererabotka subsidiary) in the Khanty-Mansi Autonomous Okrug. Located over 2,350 kilometers from the Ukrainian border, this strategic facility is the largest processing complex in Western Siberia with a design capacity of 12 million metric tons per year. The plant plays an indispensable role in Russia's military fuel supply chain, refining de-ethanized gas condensate from Tyumen fields into automotive gasoline, arctic diesel fuel, and TS-1 aviation kerosene for combat aircraft. Khanty-Mansi Governor Ruslan Kuharuk confirmed the UAV strike and a major fire erupting across the industrial site, drawing emergency response teams. The successful strike on critical processing units severely disrupts refined product supplies intended for Russian frontline logistics and air operations.",
+      "source": "Khanty-Mansi Governor, ASTRA, Supernova+, @ssternenko, Military Informant, Baza, Readovka"
+    },
+    "images": [
+      "video/surgut_1610_vid1.mp4",
+      "video/surgut_1610_vid2.mp4",
+      "images/surgut_1610_img1.jpg",
+      "images/surgut_1610_img2.jpg"
+    ],
+    "id": 539
+  },
+  {
+    "date": "16.10.2026",
+    "lat": 52.9939,
+    "lng": 50.5288,
+    "distance": 1022,
+    "ru": {
+      "region": "Самарская область, Волжский район, пос. Просвет",
+      "target": "НПС «Самара-1» (АО «Транснефть - Приволга»): поражение резервуарного парка магистрального нефтепровода",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные БПЛА / дипстрайк",
+      "details": "16 октября 2026 года в Самарской области дальнобойный ударный дрон Сил обороны Украины успешно поразил резервуарный парк нефтеперекачивающей станции НПС «Самара-1» (АО «Транснефть - Приволга», координаты 52.9939, 50.5288) в Волжском районе. Станция является ключевым узловым элементом магистральной трубопроводной системы Поволжья, обеспечивая прием, смешение, технологический учет и перекачку сырой нефти от поволжских и западносибирских промыслов на экспортные направления и крупнейшие НПЗ региона. По опубликованным объективным кадрам фиксации последствий удара, украинский дрон пробил стальную антидроновую защиту («мангал») и вызвал детонацию с последующим полным выгоранием и разрушением крупнотоннажного резервуара для хранения нефти. Ликвидация резервуара и сопутствующие повреждения насосного оборудования существенно ограничивают пропускную способность самарского логистического нефтяного хаба.",
+      "source": "Supernova+, OSINT-анализ, спутниковые и фото/видеоматериалы объективного контроля"
+    },
+    "uk": {
+      "region": "Самарська область, Волзький район, сел. Просвєт",
+      "target": "НПС «Самара-1» (АТ «Транснефть - Приволга»): ураження резервуарного парку магістрального нафтопроводу",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні БпЛА / діпстрайк",
+      "details": "16 жовтня 2026 року в Самарській області далекобійний ударний безпілотник Сил оборони України успішно уразив резервуарний парк нафтоперекачувальної станції НПС «Самара-1» (АТ «Транснефть - Приволга», координати 52.9939, 50.5288) у Волзькому районі. Ця станція є критичним технологічним вузлом магістральної трубопровідної системи Поволжя, що здійснює прийом, компаундування, облік та перекачування сирої нафти з родовищ Західного Сибіру і Поволжя на місцеві НПЗ та експортні напрямки. Згідно з оприлюдненими фото- та відеоматеріалами об'єктивного контролю, український дрон пробив захисну антидронову сітку («мангал») над резервуаром, спричинивши масштабне займання з повним вигоранням та руйнуванням місткості для нафти. Знищення резервуара та пошкодження обв'язки суттєво знижують пропускну здатність і надійність роботи ключового нафтотранспортного хабу ворога.",
+      "source": "Supernova+, OSINT-аналіз, супутникові та фото/відеоматеріали об'єктивного контролю"
+    },
+    "en": {
+      "region": "Samara Oblast, Volzhsky District, Prosvet",
+      "target": "Samara-1 Oil Pumping Station (Transneft-Privolga): Destruction of Trunk Pipeline Storage Tank",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On October 16, 2026, a Ukrainian long-range strike UAV hit the crude oil tank farm at the Samara-1 oil pumping station (JSC Transneft-Privolga, coordinates 52.9939, 50.5288) in the Volzhsky District of Samara Oblast. The facility serves as a vital junction within Russia's Volga trunk oil pipeline network, managing reception, blending, metering, and pumping of crude oil from West Siberian and Volga fields toward regional refineries and export routes. Geolocation and visual evidence revealed that the strike drone pierced the reinforced anti-drone protective grid, triggering a catastrophic fire that completely gutted and destroyed a large-capacity crude storage tank. The obliteration of the tank and adjacent manifold piping significantly curtails the operating capacity and flexibility of the primary oil transit hub fueling the Russian war economy.",
+      "source": "Supernova+, OSINT analysis, satellite and photo/video verification materials"
+    },
+    "images": [
+      "video/samara_1610_vid1.mp4",
+      "images/samara_1610_img1.jpg",
+      "images/samara_1610_img2.jpg"
+    ],
+    "id": 538
+  },
+  {
+    "date": "16.10.2026",
+    "lat": 56.1485,
+    "lng": 40.4688,
+    "distance": 692,
+    "ru": {
+      "region": "Владимирская область, г. Владимир",
+      "target": "Владимирская ТЭЦ-2 (ПАО «Т Плюс»): групповой удар БПЛА по ключевой теплоэлектроцентрали города",
+      "category": "Энергетика",
+      "weapon": "Дальнобойные БПЛА / групповой налет",
+      "details": "В ночь на 16 октября 2026 года Силы обороны Украины нанесли групповой удар дальнобойными беспилотниками по объектам энергетической инфраструктуры во Владимире, главной целью которого стала Владимирская ТЭЦ-2 (ПАО «Т Плюс»). Станция электрической мощностью около 600 МВт и тепловой свыше 1400 Гкал/ч обеспечивает до 80% потребностей областного центра в тепле и снабжает электроэнергией ведущие оборонные и промышленные предприятия региона, включая Владимирский электромоторный завод и завод «Точмаш». Местные жители зафиксировали пролет групп БПЛА, активную работу зенитных средств и серию мощных взрывов с возникновением пожара в районе промышленной площадки станции. Губернатор Александр Авдеев подтвердил попытку удара по тепловой инфраструктуре города и признал повреждение объекта. Атака на ключевой энергоузел снижает надежность энергоснабжения предприятий ВПК в преддверии зимнего периода.",
+      "source": "Губернатор Владимирской области, ASTRA, @ASupersharij, Exilenova+, OperativnoZSU, @ssternenko"
+    },
+    "uk": {
+      "region": "Владімірська область, м. Владімір",
+      "target": "Владімірська ТЕЦ-2 (ПАТ «Т Плюс»): груповий удар БпЛА по ключовій теплоелектроцентралі міста",
+      "category": "Енергетика",
+      "weapon": "Далекобійні БпЛА / груповий наліт",
+      "details": "У ніч на 16 жовтня 2026 року Сили оборони України завдали комбінованого удару далекобійними дронами по об'єктах енергетичної інфраструктури у місті Владімір, де основною ціллю стала Владімірська ТЕЦ-2 (ПАТ «Т Плюс»). Електростанція електричною потужністю близько 600 МВт та тепловою понад 1400 Гкал/год забезпечує до 80% потреб міста в теплі й живить електроенергією провідні оборонні заводи регіону, зокрема Владімірський електромеханічний завод та виробництва ВПК «Точмаш». Місцеві мешканці чули численні вибухи, стрілянину ППО та зафіксували спалахи й пожежу на майданчику станції. Губернатор Владімірської області Олександр Авдєєв офіційно підтвердив атаку на теплову інфраструктуру та зафіксував пошкодження об'єкта. Ураження ключової теплоелектроцентралі послаблює енергопостачання промислової зони, що обслуговує оборонне замовлення російської армії.",
+      "source": "Губернатор Владімірської області, ASTRA, @ASupersharij, Exilenova+, OperativnoZSU, @ssternenko"
+    },
+    "en": {
+      "region": "Vladimir Oblast, Vladimir",
+      "target": "Vladimir CHPP-2 (PJSC T Plus): Coordinated UAV Swarm Strike on Main Regional Cogeneration Plant",
+      "category": "Energy",
+      "weapon": "Long-Range Strike UAVs / Group Raid",
+      "details": "On the night of October 16, 2026, Ukrainian long-range strike drones carried out a coordinated raid against critical energy infrastructure in the city of Vladimir, targeting the Vladimir CHPP-2 thermal power station (PJSC T Plus). With an electrical capacity of approximately 600 MW and thermal output exceeding 1,400 Gcal/h, CHPP-2 generates over 80% of the city's district heating and supplies electricity to crucial military-industrial manufacturers, including Vladimir Electric Motor Plant and Tochmash defense plants. Residents reported the flight of multiple UAV swarms, heavy air defense gunfire, and multiple loud blasts followed by fires within the facility perimeter. Regional governor Alexander Avdeyev confirmed the strike on thermal infrastructure and acknowledged damage to the site. Damaging this pivotal generation and distribution asset undermines industrial power resilience supporting Russian defense contracts.",
+      "source": "Governor of Vladimir Oblast, ASTRA, @ASupersharij, Exilenova+, OperativnoZSU, @ssternenko"
+    },
+    "images": [
+      "video/vladimir_1610_vid1.mp4",
+      "video/vladimir_1610_vid2.mp4"
+    ],
+    "id": 537
+  },
+  {
     "date": "15.10.2026",
     "lat": 54.5422,
     "lng": 39.7719,
