@@ -1,5 +1,71 @@
 const strikeData = [
   {
+    "date": "17.10.2026",
+    "lat": 52.8488,
+    "lng": 32.6685,
+    "distance": 177,
+    "ru": {
+      "region": "Брянская область, Унечский район, пос. Слобода-Селецкая",
+      "target": "Железнодорожный мост через реку Унеча: поражение ключевой артерии военных эшелонов",
+      "category": "ВПК",
+      "weapon": "Дальнобойные ударные БПЛА / дипстрайк",
+      "details": "В ночь на 17 октября 2026 года Силы обороны Украины нанесли результативный удар по стратегическому железнодорожному мосту через реку Унеча в районе поселка Слобода-Селецкая Брянской области. Железнодорожный узел Унеча представляет собой ключевую распределительную станцию на магистрали Брянск — Гомель и рокадном направлении на юг к границам Украины. По этой ветке круглосуточно курсировали военные эшелоны с бронетехникой, боеприпасами с арсеналов ГРАУ и наливными составами с горюче-смазочными материалами для подразделений группировок войск «Центр» и «Север». Генеральный штаб ВСУ официально подтвердил огневое поражение объекта с повреждением мостовых конструкций и полотна. В результате точного попадания беспилотников движение поездов на участке было парализовано, что вынудило российское командование перенаправлять военные грузы по протяженным обходным путям. Вывод из строя переправы сорвал график поставок боеприпасов на передовую.",
+      "source": "Генеральный штаб ВСУ, OperativnoZSU, ASTRA"
+    },
+    "uk": {
+      "region": "Брянська область, Унецький район, сел. Слобода-Селецька",
+      "target": "Залізничний міст через річку Унеча: ураження ключової артерії військових ешелонів",
+      "category": "ВПК",
+      "weapon": "Далекобійні ударні БпЛА / діпстрайк",
+      "details": "У ніч на 17 жовтня 2026 року підрозділи Сил оборони України завдали результативного удару по стратегічному залізничному мосту через річку Унеча в районі населеного пункту Слобода-Селецька Брянської області. Залізничний вузол Унеча є ключовою розподільчою ланкою магістралі Брянськ — Гомель та рокадної гілки на південь, безпосередньо задіяної в забезпеченні окупаційних військ. Через цей транспортний коридор здійснювалося регулярне перекидання військових ешелонів із бронетехнікою, боєприпасами з арсеналів ГРАУ та цистернами з пальним для угруповань «Центр» і «Сєвєр». Генеральний штаб ЗСУ офіційно підтвердив успішне вогневе ураження логістичного вузла з пошкодженням конструкцій мосту. Влучання ударних безпілотників заблокувало залізничний рух на дільниці, змусивши противника шукати довгі обхідні маршрути та суттєво уповільнивши постачання військової техніки й боєприпасів до лінії фронту.",
+      "source": "Генеральний штаб ЗСУ, OperativnoZSU, ASTRA"
+    },
+    "en": {
+      "region": "Bryansk Oblast, Unechsky District, Sloboda-Seletskaya",
+      "target": "Railway Bridge over Unecha River: Precision Strike on Military Logistics Artery",
+      "category": "Defense",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On the night of October 17, 2026, Ukrainian Defense Forces launched a precision strike on a strategic railway bridge crossing the Unecha River near Sloboda-Seletskaya in Bryansk Oblast. The Unecha rail junction is a crucial logistics hub connecting the Bryansk-Gomel main trunk line with southern lateral spurs directly supplying Russian invasion forces. This rail artery served as a primary transit conduit for military echelons transporting heavy armor, ammunition from GRAU arsenals, and petroleum tanker cars to the Center and North operational groups. The General Staff of the Ukrainian Armed Forces officially confirmed the successful strike, reporting substantial structural damage to the bridge spans. The UAV strike effectively severed train traffic along the line, forcing Russian military logisticians to reroute supply trains along lengthy alternative paths. Disabling this crossing critically disrupts replenishment schedules for front-line combat formations.",
+      "source": "General Staff of the Armed Forces of Ukraine, OperativnoZSU, ASTRA"
+    },
+    "images": [
+      "images/unecha_bridge_1710_img1.jpg"
+    ],
+    "id": 541
+  },
+  {
+    "date": "17.10.2026",
+    "lat": 48.9525,
+    "lng": 40.2975,
+    "distance": 200,
+    "ru": {
+      "region": "Ростовская область, г. Миллерово",
+      "target": "Военный аэродром «Миллерово» (ВКС РФ): ночной налет ударных дронов на базу тактической авиации",
+      "category": "Аэродромы",
+      "weapon": "Дальнобойные ударные БПЛА",
+      "details": "В ночь на 17 октября 2026 года военный аэродром «Миллерово» в Ростовской области подвергся атаке группы украинских дальнобойных ударных беспилотников. Авиабаза расположена примерно в 30 километрах от границы и служит местом постоянного базирования 31-го гвардейского истребительного авиаполка (истребители Су-30СМ) 1-й смешанной авиадивизии 4-й армии ВВС и ПВО. Кроме того, объект функционирует как передовой аэродром подскока для фронтовых бомбардировщиков Су-34 и ударных вертолетов Ка-52 и Ми-28, наносящих удары планирующими авиабомбами (КАБ) по украинским позициям и городам Донбасса. Около 02:30 по московскому времени жители Миллерово сообщили о громких хлопках, звуках двигателей БПЛА и интенсивном огне зенитных установок. Серия взрывов прогремела в районе взлетно-посадочной полосы и стоянок авиатехники. Регулярные удары по аэродрому снижают интенсивность вылетов тактической авиации агрессора и вынуждают рассредоточивать боевые борта вглубь территории РФ.",
+      "source": "Supernova+, местные паблики, очевидцы"
+    },
+    "uk": {
+      "region": "Ростовська область, м. Міллерово",
+      "target": "Військовий аеродром «Міллерово» (ВКС РФ): нічний наліт ударних дронів на базу тактичної авіації",
+      "category": "Аеродроми",
+      "weapon": "Далекобійні ударні БпЛА",
+      "details": "У ніч на 17 жовтня 2026 року військовий аеродром «Міллерово» в Ростовській області зазнав атаки групи українських далекобійних ударних безпілотників. Ця авіабаза розташована приблизно за 30 кілометрів від державного кордону та є пунктом постійної дислокації 31-го гвардійського винищувального авіаполку (літаки Су-30СМ) зі складу 4-ї армії ВПС та ППО. Об'єкт відіграє роль передового оперативного аеродрому підскоку для фронтових бомбардувальників Су-34 та ударних вертольотів Ка-52, задіяних у пусках керованих авіабомб (КАБ) по українських рубежах і містах Донбасу. Близько 02:30 за місцевим часом мешканці фіксували звуки прольоту дронів, щільний вогонь зенітних систем та низку гучних детонацій на летовищі. Вибухи лунали в районі злітно-посадкової смуги та капонірів технічного обслуговування. Системний вогневий вплив на базу скорочує бойовий радіус дій ворожої авіації та змушує росіян відводити літаки на дальні тилові аеродроми.",
+      "source": "Supernova+, місцеві пабліки, очевидці"
+    },
+    "en": {
+      "region": "Rostov Oblast, Millerovo",
+      "target": "Millerovo Airbase (Russian Aerospace Forces): Night UAV Raid on Tactical Aviation Hub",
+      "category": "Airbases",
+      "weapon": "Long-Range Strike UAVs",
+      "details": "On the night of October 17, 2026, Millerovo Airbase in Rostov Oblast was targeted by a swarm of Ukrainian long-range strike drones. Situated approximately 30 kilometers from the border, the airfield serves as the permanent home station for the 31st Guards Fighter Aviation Regiment operating Su-30SM multirole fighters under the 4th Air and Air Defense Forces Army. The installation functions as an indispensable forward operating base for Su-34 strike bombers and Ka-52 combat helicopters conducting guided glide bomb (KAB) strikes across Donbas defense lines. Around 02:30 local time, residents reported buzzing drone engines, dense anti-aircraft tracer fire, and multiple explosions echoing across the flight line and taxiways. Blasts were observed around runway infrastructure and hardened aircraft parking revetments. Consistent strikes against forward airbases constrain tactical sortie generation rates and compel Russia to disperse aircraft to distant airfields.",
+      "source": "Supernova+, local monitoring channels, eyewitnesses"
+    },
+    "images": [],
+    "id": 540
+  },
+  {
     "date": "16.10.2026",
     "lat": 61.2833,
     "lng": 72.9947,
