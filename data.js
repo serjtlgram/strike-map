@@ -1,5 +1,152 @@
 const strikeData = [
   {
+    "date": "18.10.2026",
+    "lat": 59.9943,
+    "lng": 30.4491,
+    "distance": 946,
+    "ru": {
+      "region": "г. Санкт-Петербург, Красногвардейский район, Пискарёвский проспект",
+      "target": "Нефтебаза «Ручьи» (ООО «ПТК-Терминал» / «Роснефть»): крупный пожар резервуаров с топливом",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные ударные БПЛА / дипстрайк",
+      "details": "В ночь на 18 октября 2026 года в ходе масштабного налета ударных беспилотников на Санкт-Петербург была атакована нефтебаза «Ручьи» (ООО «ПТК-Терминал», входящая в орбиту снабжения «Роснефти») в Красногвардейском районе города. Объект является одним из старейших и наиболее мощных топливных терминалов мегаполиса, обеспечивающим наливные поставки горюче-смазочных материалов для транспортных предприятий и объектов Северо-Западного региона. Серия прямых попаданий БПЛА пришлась по резервуарному парку базы, вызвав детонацию нефтепродуктов и интенсивный пожар, зарево от которого наблюдалось в нескольких районах города. Губернатор Санкт-Петербурга Александр Беглов подтвердил возгорание на территории нефтебазы, куда были направлены расчеты МЧС по повышенному номеру сложности. Поражение перевалочного узла нарушило плановую логистику отгрузки дизельного топлива и авиакеросина, нанеся чувствительный урон топливной инфраструктуре агрессора на Балтике.",
+      "source": "ASTRA, Exilenova+, Supernova+, губернатор Санкт-Петербурга Александр Беглов"
+    },
+    "uk": {
+      "region": "м. Санкт-Петербург, Червоногвардійський район, Піскарьовський проспект",
+      "target": "Нафтобаза «Ручьи» (ТОВ «ПТК-Термінал» / «Роснефть»): масштабна пожежа резервуарів із пальним",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні ударні БпЛА / діпстрайк",
+      "details": "У ніч на 18 жовтня 2026 року під час масштабного рейду ударних дронів на Санкт-Петербург було уражено нафтобазу «Ручьи» (ТОВ «ПТК-Термінал» з орбіти постачання компанії «Роснефть») у Червоногвардійському районі міста. Підприємство є одним із найпотужніших паливних терміналів північної столиці РФ, що забезпечує зберігання та відвантаження нафтопродуктів для промислового і транспортного секторів Північно-Західного регіону. Прямі влучання безпілотників у резервуарний парк спричинили детонацію пального та масштабну пожежу, дим від якої охопив прилеглі квартали. Губернатор Петербурга Олександр Бєглов офіційно визнав займання на території нафтобази, ліквідацією якого займалися посилені пожежні розрахунки МНС. Успішний вогневий вплив на ключовий перевалочний вузол ускладнив стабільне постачання дизельного пального та автобензинів, завдавши відчутних втрат системі зберігання ПММ противника.",
+      "source": "ASTRA, Exilenova+, Supernova+, губернатор Санкт-Петербурга Олександр Бєглов"
+    },
+    "en": {
+      "region": "Saint Petersburg, Krasnogvardeysky District, Piskaryovsky Avenue",
+      "target": "Ruchyi Oil Depot (PTK-Terminal / Rosneft): Major Fuel Storage Tank Fire",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On the night of October 18, 2026, during a massive drone raid targeting Saint Petersburg, Ukrainian strike UAVs hit the Ruchyi oil depot (PTK-Terminal LLC, affiliated with Rosneft's distribution network) in the Krasnogvardeysky District. The facility represents one of the largest and most critical refined fuel hubs in northwestern Russia, handling bulk storage and dispatch of petroleum products for regional logistics and transportation. Several direct drone impacts detonated storage tanks across the tank farm, sparking a heavy inferno visible across multiple urban districts. Saint Petersburg Governor Alexander Beglov officially confirmed the fire at the fuel depot, where emergency crews battled the blaze under an elevated disaster response protocol. The successful precision strike disrupted local distribution lines of diesel and motor fuel, delivering a severe blow to the adversary's Baltic fuel logistics network.",
+      "source": "ASTRA, Exilenova+, Supernova+, Saint Petersburg Governor Alexander Beglov"
+    },
+    "images": [
+      "video/ruchy_1810_vid1.mp4",
+      "video/ruchy_1810_vid2.mp4",
+      "images/ruchy_1810_img1.jpg",
+      "images/ruchy_1810_img2.jpg"
+    ],
+    "id": 545
+  },
+  {
+    "date": "18.10.2026",
+    "lat": 59.8825,
+    "lng": 30.2075,
+    "distance": 935,
+    "ru": {
+      "region": "г. Санкт-Петербург, Кировский район, Большой порт Санкт-Петербург",
+      "target": "АО «Петербургский нефтяной терминал» (ПНТ): повторный удар по крупнейшему морскому хабу перевалки нефтепродуктов",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные ударные БПЛА",
+      "details": "В ночь на 18 октября 2026 года дальнобойные украинские беспилотники вновь нанесли удар по инфраструктуре АО «Петербургский нефтяной терминал» (ПНТ) в Кировском районе Санкт-Петербурга. Расположенный в акватории Большого порта Санкт-Петербург, ПНТ является крупнейшим специализированным терминалом по перевалке наливных нефтепродуктов на российской Балтике с пропускной способностью до 12,5 млн тонн в год. Предприятие выступает ключевым каналом морского экспорта мазута, дизеля и базовых масел, доходы от которых прямо финансируют военный бюджет агрессора. Попадания дронов привели к взрывам и возникновению пожара на технологической площадке комплекса. Губернатор города Александр Беглов подтвердил пожар на территории предприятия, а работа порта и взлеты в аэропорту Пулково были экстренно остановлены. Системные удары по терминалу парализуют экспортные нефтяные потоки и лишают военную машину РФ валютных поступлений.",
+      "source": "ASTRA, ASupersharij, Exilenova+, губернатор Санкт-Петербурга Александр Беглов"
+    },
+    "uk": {
+      "region": "м. Санкт-Петербург, Кіровський район, Великий порт Санкт-Петербург",
+      "target": "АТ «Петербурзький нафтовий термінал» (ПНТ): повторне ураження найбільшого морського хабу перевалки нафтопродуктів",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні ударні БпЛА",
+      "details": "У ніч на 18 жовтня 2026 року далекобійні українські безпілотники завдали повторного вогневого удару по інфраструктурі АТ «Петербурзький нафтовий термінал» (ПНТ) у Кіровському районі Санкт-Петербурга. Розташований у межах Великого порту Санкт-Петербург, ПНТ є найбільшим спеціалізованим хабом із перевалки наливних нафтопродуктів на Балтійському узбережжі РФ із річною пропускною здатністю до 12,5 млн тонн. Комплекс відіграє роль головного морського експортного коридору для російського мазуту, дизпалива та світлих фракцій. Влучання кількох ударних БпЛА спричинили вибухи та займання на технологічних естакадах і перекачувальних вузлах. Губернатор Санкт-Петербурга Олександр Бєглов підтвердив пожежу на території морського термінала, а рух суден у порту та польоти в аеропорту Пулково було негайно призупинено. Вогневий тиск на ПНТ системно блокує експорт палива та обмежує надходження нафтодоларів до бюджету агресора.",
+      "source": "ASTRA, ASupersharij, Exilenova+, губернатор Санкт-Петербурга Олександр Бєглов"
+    },
+    "en": {
+      "region": "Saint Petersburg, Kirovsky District, Big Port of Saint Petersburg",
+      "target": "Petersburg Oil Terminal (POT): Repeat Strike on the Baltic's Largest Marine Fuel Hub",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Strike UAVs",
+      "details": "On the night of October 18, 2026, Ukrainian long-range strike drones delivered a repeat strike against the infrastructure of Petersburg Oil Terminal JSC (POT) in the Kirovsky District of Saint Petersburg. Situated within the Big Port of Saint Petersburg, POT is the largest specialized marine transshipment facility for petroleum products in the Russian Baltic, boasting an annual throughput capacity of up to 12.5 million metric tons. The complex serves as Russia's premier Baltic conduit for the offshore export of heavy fuel oil, diesel, and motor fuels funding Moscow's war effort. Precision UAV impacts triggered multiple explosions and active fires across processing pipelines and loading manifolds. City Governor Alexander Beglov publicly acknowledged the fire within the terminal territory, prompting the emergency shutdown of port shipping and flights at Pulkovo Airport. Consecutive strikes against POT severely impede maritime fuel export logistics.",
+      "source": "ASTRA, ASupersharij, Exilenova+, Saint Petersburg Governor Alexander Beglov"
+    },
+    "images": [
+      "video/pnt_1810_vid1.mp4",
+      "video/pnt_1810_vid2.mp4",
+      "images/pnt_1810_img1.jpg"
+    ],
+    "id": 544
+  },
+  {
+    "date": "18.10.2026",
+    "lat": 59.9115,
+    "lng": 30.5779,
+    "distance": 937,
+    "ru": {
+      "region": "Ленинградская область, Всеволожский район, дер. Новосергиевка",
+      "target": "ЦОД «ИЦВА» (Дата-центр VK): удар по цифровой инфраструктуре агрессора и отключение сервисов",
+      "category": "Логистика / IT / ВПК",
+      "weapon": "Дальнобойные ударные БПЛА / дипстрайк",
+      "details": "В ночь на 18 октября 2026 года дальнобойные ударные дроны Сил обороны Украины успешно поразили стратегический дата-центр компании VK (ЦОД «ИЦВА») в деревне Новосергиевка Всеволожского района Ленинградской области. Высокотехнологичный комплекс проектной мощностью 63 МВт вмещает свыше 20 тысяч серверов и 640 серверных стоек, обеспечивая функционирование ключевых цифровых сервисов, государственных порталов и систем мониторинга государства-агрессора. Прямые прилеты беспилотников пришлись по главному серверному корпусу и контурам промышленного охлаждения, а также задели смежную высоковольтную подстанцию 330 кВ «Восточная». В результате атаки по всей России зафиксирован глубокий блэкаут сервисов «ВКонтакте», платформ «VK Музыка» и облачной инфраструктуры, а в прилегающих районах произошло аварийное отключение электроэнергии. Вывод из строя ведущего дата-центра подорвал систему централизованной цифровой связи и управления противника.",
+      "source": "ASTRA, ASupersharij, Exilenova+, Supernova+, пресс-служба VK, Fire Point"
+    },
+    "uk": {
+      "region": "Ленінградська область, Всеволозький район, присілок Новосергіївка",
+      "target": "ЦОД «ІЦВА» (Дата-центр VK): ураження цифрової інфраструктури агресора та колапс сервісів",
+      "category": "Логістика / IT / ВПК",
+      "weapon": "Далекобійні ударні БпЛА / діпстрайк",
+      "details": "У ніч на 18 жовтня 2026 року далекобійні ударні дрони Сил оборони України завдали успішного удару по стратегічному дата-центру холдингу VK (ЦОД «ІЦВА») у присілку Новосергіївка Всеволозького району Ленінградської області. Цей високотехнологічний комплекс проєктною потужністю 63 МВт розрахований на розміщення понад 20 тисяч серверів і 640 серверних стійок, відповідаючи за функціонування державних платформ, соціальних мереж та систем цифрового контролю країни-агресора. Точні прильоти БпЛА пошкодили головний серверний корпус, системи промислового охолодження та суміжну вузлову підстанцію 330 кВ «Восточная». Ураження об'єкта спричинило загальноросійський масштабний збій у роботі соціальної мережі «ВКонтакте», сервісу «VK Музика» та корпоративних хмарних сховищ, а навколишні райони частково зазнали блекауту. Виведення з ладу опорного IT-вузла завдало серйозного удару по цифровій зв'язності агресора.",
+      "source": "ASTRA, ASupersharij, Exilenova+, Supernova+, пресслужба VK, Fire Point"
+    },
+    "en": {
+      "region": "Leningrad Oblast, Vsevolozhsky District, Novosergievka",
+      "target": "VK Data Center (ITSVA): Strike on Core Digital Infrastructure and Nationwide Outage",
+      "category": "Logistics / IT / Defense",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On the night of October 18, 2026, Ukrainian long-range strike drones successfully hit the flagship VK data center (ITSVA Data Processing Center) located in Novosergievka, Vsevolozhsky District of Leningrad Oblast. This cutting-edge facility boasts a 63 MW power capacity, hosting over 20,000 servers across 640 high-density racks that underpin Russia's state communication systems, media platforms, and administrative digital architecture. Direct UAV strikes pierced the main server building and crippled industrial cooling systems, while proximate detonations impacted the adjacent 330 kV Vostochnaya electrical substation. The damage triggered an immediate nationwide outage of VKontakte social network platforms, VK Music streaming, and cloud services, leaving tens of thousands of nearby residents without power. Disabling this tier-level data hub dealt an acute blow to the adversary's centralized digital and information warfare apparatus.",
+      "source": "ASTRA, ASupersharij, Exilenova+, Supernova+, VK Press Office, Fire Point"
+    },
+    "images": [
+      "video/vk_dc_1810_vid1.mp4",
+      "video/vk_dc_1810_vid2.mp4",
+      "images/vk_dc_1810_img1.jpg",
+      "images/vk_dc_1810_img2.jpg"
+    ],
+    "id": 543
+  },
+  {
+    "date": "18.10.2026",
+    "lat": 59.745,
+    "lng": 30.605,
+    "distance": 918,
+    "ru": {
+      "region": "г. Санкт-Петербург, Колпинский район, Софийская улица",
+      "target": "Логистический комплекс / Склад Ozon (Колпино): разрушительный ночной пожар на площади в десятки тысяч кв. метров",
+      "category": "Логистика",
+      "weapon": "Дальнобойные ударные БПЛА",
+      "details": "В ночь на 18 октября 2026 года в ходе масштабной атаки на Санкт-Петербург украинские ударные БПЛА нанесли результативный удар по флагманскому логистическому комплексу Ozon на Софийской улице в Колпинском районе города. Распределительный фулфилмент-центр площадью до 79 000 квадратных метров являлся одним из наиболее загруженных сортировочных хабов Северо-Запада, задействованным в цепочках снабжения агрессора и распределении товаров двойного назначения. Точные попадания дронов вызвали мощную детонацию и разрушительный верховой пожар, охвативший складские терминалы. Пресс-служба Ozon официально подтвердила возгорание распределительного центра и экстренную остановку операций с перенаправлением товарных потоков, а к тушению привлекались вертолеты противопожарной службы МЧС. Уничтожение крупного фулфилмент-хаба парализовало распределительную сеть маркетплейса в Северо-Западном регионе и сорвало поставки логистических партий.",
+      "source": "Пресс-служба Ozon, ASTRA, ASupersharij, Exilenova+, Supernova+, оперативные службы МЧС"
+    },
+    "uk": {
+      "region": "м. Санкт-Петербург, Колпінський район, Софійська вулиця",
+      "target": "Логістичний комплекс / Склад Ozon (Колпіно): масштабна нічна пожежа на площі у десятки тисяч кв. метрів",
+      "category": "Логістика",
+      "weapon": "Далекобійні ударні БпЛА",
+      "details": "У ніч на 18 жовтня 2026 року під час масованої атаки на Санкт-Петербург далекобійні українські дрони результативно уразили флагманський логістичний комплекс Ozon на Софійській вулиці у Колпінському районі міста. Розподільчий фулфілмент-центр площею до 79 000 квадратних метрів належав до найзавантаженіших сортувальних хабів Північно-Західного регіону РФ, активно задіяних у ланцюгах постачання товарів подвійного призначення для окупаційної армії. Влучання ударних безпілотників викликали детонацію та руйнівну пожежу, яка охопила внутрішні складські ангари. Пресслужба Ozon офіційно визнала займання розподільчого центру та зупинку його функціонування з перенаправленням замовлень, а до локалізації вогню залучалися гелікоптери МНС. Знищення цього логістичного термінала завдало тяжкого удару по товарно-транспортних мережах агресора та спричинило відчутний матеріальний колапс.",
+      "source": "Пресслужба Ozon, ASTRA, ASupersharij, Exilenova+, Supernova+, оперативні служби МНС"
+    },
+    "en": {
+      "region": "Saint Petersburg, Kolpinsky District, Sofiyskaya Street",
+      "target": "Ozon Fulfillment Center (Kolpino): Heavy Fire and Destruction of Flagship Logistics Hub",
+      "category": "Logistics",
+      "weapon": "Long-Range Strike UAVs",
+      "details": "On the night of October 18, 2026, during an extensive drone raid against Saint Petersburg, Ukrainian strike UAVs struck the flagship Ozon fulfillment center situated on Sofiyskaya Street in the Kolpinsky District. Spanning roughly 79,000 square meters, this major logistics hub served as the primary sorting node for northwestern Russia, actively supporting dual-use supply chains and regional freight staging for Russian logistics. Precision drone strikes initiated detonations and an uncontrollable blaze that ripped through storage zones and dispatch halls. Ozon's corporate press office formally confirmed the fulfillment center fire and the complete suspension of facility operations, with emergency services deploying firefighting helicopters to contain the inferno. The destruction of this primary fulfillment node paralyzed distribution routes across the northwestern federal district, causing widespread inventory loss.",
+      "source": "Ozon Corporate Press Office, ASTRA, ASupersharij, Exilenova+, Supernova+, EMERCOM Emergency Services"
+    },
+    "images": [
+      "video/ozon_spb_1810_vid1.mp4",
+      "video/ozon_spb_1810_vid2.mp4",
+      "images/ozon_spb_1810_img1.jpg",
+      "images/ozon_spb_1810_img2.jpg"
+    ],
+    "id": 542
+  },
+  {
     "date": "17.10.2026",
     "lat": 52.8488,
     "lng": 32.6685,
