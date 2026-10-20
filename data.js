@@ -1,5 +1,43 @@
 const strikeData = [
   {
+    "date": "20.10.2026",
+    "lat": 52.8832,
+    "lng": 40.4851,
+    "distance": 436,
+    "ru": {
+      "region": "Тамбовская область, Мичуринский муниципальный округ, с. Новоникольское",
+      "target": "ЛПДС «Никольское» (АО «Транснефть – Дружба»): пожар резервуара с дизельным топливом",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные ударные БПЛА / дипстрайк",
+      "details": "В ночь на 20 октября 2026 года ударные беспилотники атаковали линейную производственно-диспетчерскую станцию «Никольское» (АО «Транснефть – Дружба») в районе села Новоникольское Мичуринского муниципального округа Тамбовской области. Станция является одним из крупнейших узлов магистральных трубопроводов в европейской части РФ: ее пропускная способность достигает 300 тысяч тонн в сутки, обеспечивая перекачку нефти и светлых нефтепродуктов, включая дизельное топливо и авиакеросин. В результате попадания БПЛА на производственной площадке загорелся резервуар с дизельным топливом, над объектом поднялся столб густого черного дыма, заметный за десятки километров. Губернатор Тамбовской области Евгений Первышов подтвердил атаку дронов и пожар на предприятии, заявив о быстрой локализации, однако кадры очевидцев зафиксировали продолжающееся горение резервуарного парка в утренние часы. Удар нарушил работу важного звена топливной логистики Центрального и Южного округов РФ.",
+      "source": "ASTRA, Exilenova+, Supernova+, губернатор Тамбовской области Евгений Первышов"
+    },
+    "uk": {
+      "region": "Тамбовська область, Мічурінський муніципальний округ, с. Новонікольське",
+      "target": "ЛВДС «Нікольське» (АТ «Транснафта – Дружба»): пожежа резервуара з дизельним пальним",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні ударні БпЛА / діпстрайк",
+      "details": "У ніч на 20 жовтня 2026 року ударні безпілотники атакували лінійну виробничо-диспетчерську станцію «Нікольське» (АТ «Транснафта – Дружба») поблизу села Новонікольське Мічурінського муніципального округу Тамбовської області. Станція є одним із найбільших вузлів магістральних трубопроводів у європейській частині РФ: її пропускна здатність сягає 300 тисяч тонн на добу, забезпечуючи перекачування нафти та світлих нафтопродуктів, зокрема дизельного пального й авіагасу. Внаслідок влучання БпЛА на виробничому майданчику спалахнув резервуар із дизельним пальним, над об'єктом здійнявся стовп густого чорного диму, який було видно за десятки кілометрів. Губернатор Тамбовської області Євген Первишов підтвердив атаку дронів і пожежу на підприємстві, заявивши про швидку локалізацію, проте кадри очевидців зафіксували подальше горіння резервуарного парку в ранкові години. Удар порушив роботу важливої ланки паливної логістики Центрального та Південного округів РФ.",
+      "source": "ASTRA, Exilenova+, Supernova+, губернатор Тамбовської області Євген Первишов"
+    },
+    "en": {
+      "region": "Tambov Oblast, Michurinsky Municipal District, Novonikolskoye",
+      "target": "Nikolskoye LPDS (Transneft-Druzhba): Diesel Fuel Storage Tank Fire",
+      "category": "Oil & Gas",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On the night of October 20, 2026, Ukrainian strike drones attacked the Nikolskoye Linear Production and Dispatch Station (operated by Transneft-Druzhba) near the village of Novonikolskoye in Michurinsky Municipal District, Tambov Oblast. The station serves as one of the largest trunk pipeline hubs in European Russia, boasting a daily pumping capacity of up to 300,000 tons and handling crude oil as well as light refined products such as diesel fuel and aviation kerosene. Following a direct UAV impact at the industrial site, a diesel storage tank caught fire, sending a dense column of black smoke rising high into the sky and visible for miles around. Tambov Oblast Governor Yevgeny Pervyshov confirmed the drone attack and subsequent fire at the enterprise, claiming the blaze was quickly contained, though eyewitness footage captured the tank farm still burning well into the morning. The strike disrupted a vital fuel logistics node supplying Russia's Central and Southern districts.",
+      "source": "ASTRA, Exilenova+, Supernova+, Tambov Oblast Governor Yevgeny Pervyshov"
+    },
+    "images": [
+      "video/nikolskoye_2010_vid1.mp4",
+      "video/nikolskoye_2010_vid2.mp4",
+      "images/nikolskoye_2010_img1.jpg",
+      "images/nikolskoye_2010_img2.jpg",
+      "images/nikolskoye_2010_img3.jpg"
+    ],
+    "id": 546
+  },
+  {
     "date": "18.10.2026",
     "lat": 59.9943,
     "lng": 30.4491,
