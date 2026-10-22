@@ -1,5 +1,77 @@
 const strikeData = [
   {
+    "date": "21.10.2026",
+    "lat": 48.5731,
+    "lng": 39.3126,
+    "distance": 128,
+    "ru": {
+      "region": "г. Луганск, ул. Коцюбинского, 1",
+      "target": "Пункт управления и узел военной связи ВС РФ: здание оператора «Лугаком» (бывший «Укртелеком»)",
+      "category": "ВПК / Инфраструктура военной связи",
+      "weapon": "Ударные БПЛА (FP-2) / дипстрайк",
+      "details": "В ночь на 21 октября 2026 года ударные дроны Сил обороны Украины поразили здание оператора связи «Лугаком» (бывший филиал «Укртелекома») на улице Коцюбинского в центре оккупированного Луганска. Комплекс зданий служил ключевым узлом военной связи, где размещались Центр телекоммуникационных услуг, серверные мощности передачи закрытых данных и пункт оперативного управления группировки войск РФ. В здание влетел ударный беспилотник FP-2, вызвав масштабную детонацию и сильный пожар с полным выгоранием нескольких этажей технической инфраструктуры. Генеральный штаб ВСУ официально подтвердил поражение пункта управления оккупантов, подчеркнув, что вывод узла из строя нарушил координацию подразделений российской армии. Оккупационные власти признали гибель двух ведущих инженеров связи компании и серьезные разрушения объекта. Удар существенно парализовал закрытые военные каналы передачи данных агрессора на Луганском направлении.",
+      "source": "Генштаб ВСУ, ASTRA, Exilenova+, Supernova+, оперативные службы"
+    },
+    "uk": {
+      "region": "м. Луганськ, вул. Коцюбинського, 1",
+      "target": "Пункт управління та вузол військового зв’язку ЗС РФ: будівля оператора «Лугаком» (колишній «Укртелеком»)",
+      "category": "ВПК / Інфраструктура військового зв'язку",
+      "weapon": "Ударні БпЛА (FP-2) / діпстрайк",
+      "details": "У ніч на 21 жовтня 2026 року ударні дрони Сил оборони України уразили будівлю оператора зв’язку «Лугаком» (колишня Луганська філія «Укртелекому») на вулиці Коцюбинського в центрі окупованого Луганська. Комплекс споруд функціонував як ключовий вузол військового зв’язку, де базувалися Центр телекомунікаційних послуг, серверні станції передачі захищених даних та пункт оперативного управління угруповання військ РФ. У будівлю влучив ударний безпілотник FP-2, спричинивши потужну детонацію та сильну пожежу з повним вигоранням кількох поверхів апаратної частини. Генеральний штаб ЗСУ офіційно підтвердив успішне вогневе ураження пункту управління загарбників, зазначивши про дезорганізацію системи керівництва військами окупантів. Окупаційна адміністрація визнала загибель двох провідних інженерів зв’язку та критичні руйнування будівлі. Атака суттєво порушила військову логістику зв’язку та обмін даними агресора на Луганщині.",
+      "source": "Генштаб ЗСУ, ASTRA, Exilenova+, Supernova+, оперативні служби"
+    },
+    "en": {
+      "region": "Luhansk, Kotsyubynskoho Street, 1",
+      "target": "Russian Armed Forces Command Post & Military Telecom Node: Lugakom Facility (former Ukrtelecom)",
+      "category": "Military-Industrial Complex / Military Communications",
+      "weapon": "Strike UAVs (FP-2) / Deep Strike",
+      "details": "On the night of October 21, 2026, Ukrainian strike drones struck the headquarters of telecom operator Lugakom (formerly Ukrtelecom) on Kotsyubynskoho Street in occupied Luhansk. The facility functioned as a critical military communications hub, accommodating the Telecommunication Services Center, secure network routing infrastructure, and an operational command post of the Russian armed forces. Ukrainian FP-2 strike drones scored direct hits on the building, causing a powerful blast followed by a fire that gutted multiple floors housing equipment. The General Staff of the AFU officially confirmed the destruction of the Russian command post, noting it impaired troop command and control. Russian proxy authorities confirmed extensive structural damage and the deaths of two leading telecom engineers. The attack dealt a serious blow to military tactical data relay across the Luhansk operational sector.",
+      "source": "General Staff of the AFU, ASTRA, Exilenova+, Supernova+, emergency services"
+    },
+    "images": [
+      "video/lugansk_2110_vid1.mp4",
+      "video/lugansk_2110_vid2.mp4",
+      "images/lugansk_2110_img1.jpg",
+      "images/lugansk_2110_img2.jpg"
+    ],
+    "id": 548
+  },
+  {
+    "date": "21.10.2026",
+    "lat": 45.9525,
+    "lng": 33.7915,
+    "distance": 118,
+    "ru": {
+      "region": "Республика Крым, г. Красноперекопск (Яны-Капу), привокзальная промзона",
+      "target": "Склады материально-технического обеспечения (МТС) ВС РФ и Крымский содовый завод",
+      "category": "Логистика / ВПК",
+      "weapon": "Дальнобойные ударные БПЛА / дипстрайк",
+      "details": "В ночь на 21 октября 2026 года дальнобойные украинские беспилотники атаковали логистические и промышленные объекты российских войск в районе города Красноперекопск (Яны-Капу) на севере временно оккупированного Крыма. Основной удар пришелся по тыловым складам материально-технического обеспечения ВС РФ, развернутым на территории законсервированного консервного завода и бывшей автобазы вблизи железнодорожной станции. В результате серии прилетов БПЛА были разрушены складские боксы с военным имуществом, а детонация и взрывы привели к масштабным перебоям в энергоснабжении города. Кроме того, осколками и взрывной волной было повреждено генерирующее оборудование на Крымском содовом заводе, из-за чего ключевое химическое предприятие полуострова было обесточено и приостановило работу. Генеральный штаб ВСУ официально подтвердил поражение складов МТС противника в районе Яны-Капу, подчеркнув снижение боеспособности группировки оккупантов на южном театре военных действий.",
+      "source": "Генштаб ВСУ, Crimeanwind, ASTRA, мониторинговые каналы"
+    },
+    "uk": {
+      "region": "АР Крим, м. Яни-Капу (Красноперекопськ), привокзальна промзона",
+      "target": "Склади матеріально-технічного забезпечення (МТЗ) ЗС РФ та Кримський содовий завод",
+      "category": "Логістика / ВПК",
+      "weapon": "Далекобійні ударні БпЛА / діпстрайк",
+      "details": "У ніч на 21 жовтня 2026 року далекобійні українські безпілотники атакували логістичні та промислові об’єкти російських загарбників у районі міста Яни-Капу (Красноперекопськ) на півночі тимчасово окупованого Криму. Головного вогневого удару зазнали тилові склади матеріально-технічного забезпечення військ РФ, розгорнуті на території консервного заводу та колишньої автобази поруч із залізничною станцією. У результаті серії влучань ударних дронів спалахнули складські ангари з військовим майном, а вторинна детонація спричинила аварійні відключення електроенергії у місті. Також було уражено генерувальне енергетичне обладнання Кримського содового заводу, внаслідок чого одне з найбільших хімічних підприємств Криму зупинило виробничі лінії через знеструмлення. Генеральний штаб ЗСУ офіційно підтвердив ліквідацію складів МТЗ ворога в районі Яни-Капу, що суттєво послабило логістичне забезпечення окупаційних формувань на півдні.",
+      "source": "Генштаб ЗСУ, Crimeanwind, ASTRA, моніторингові канали"
+    },
+    "en": {
+      "region": "Autonomous Republic of Crimea, Yany Kapu (Krasnoperekopsk), Station Industrial Zone",
+      "target": "Russian Armed Forces Materiel Logistics Depots & Crimean Soda Plant Power Infrastructure",
+      "category": "Logistics / Military-Industrial Complex",
+      "weapon": "Long-Range Strike UAVs / Deep Strike",
+      "details": "On the night of October 21, 2026, Ukrainian long-range strike UAVs carried out a series of precision strikes against Russian military logistics and industrial sites in the area of Yany Kapu (Krasnoperekopsk) in northern occupied Crimea. The primary target was a logistical supply depot of the Russian Armed Forces situated across an old canning plant and automotive staging base near the main railway terminal. Multiple drone impacts ignited storage facilities loaded with military materiel, sparking explosions that resulted in citywide blackouts. Concurrently, the attack damaged power generation infrastructure at the Crimean Soda Plant, forcing the major industrial chemical enterprise to suspend manufacturing operations due to severe power loss. The General Staff of the Armed Forces of Ukraine officially verified the successful strike on the logistical depots in Yany Kapu, significantly disrupting materiel flow to Russian forces operating on the southern front.",
+      "source": "General Staff of the AFU, Crimeanwind, ASTRA, monitoring groups"
+    },
+    "images": [
+      "images/krasnoperekopsk_2110_img1.jpg",
+      "images/krasnoperekopsk_2110_img2.jpg"
+    ],
+    "id": 547
+  },
+  {
     "date": "20.10.2026",
     "lat": 52.8832,
     "lng": 40.4851,
