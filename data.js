@@ -1,5 +1,156 @@
 const strikeData = [
   {
+    "date": "13.11.2026",
+    "lat": 48.5085,
+    "lng": 44.5956,
+    "distance": 516,
+    "ru": {
+      "region": "Волгоградская область",
+      "target": "Волгоградский НПЗ (ООО «ЛУКОЙЛ-Волгограднефтепереработка»)",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные БПЛА (СБС, ССО, ГУР, ГПСУ)",
+      "details": "Ночью 13 ноября 2026 года операторы 1-го отдельного центра и 414-й бригады СБС во взаимодействии с ССО, ГУР и ГПСУ нанесли массированный удар по Волгоградскому НПЗ (мощность переработки 14,8 млн т нефти в год). На территории завода возник масштабный пожар площадью свыше 3500 кв. м с серией повторных детонаций и ярким заревом, заметным за многие километры. Опубликованные спутниковые снимки подтвердили критические повреждения установок первичной переработки АВТ-1, АВТ-3, АВТ-5 и АВТ-6, установки гидроочистки, сливо-наливной эстакады и 6 резервуаров объёмом по 2000 куб. м. Губернатор Андрей Бочаров подтвердил гибель 4 работников предприятия и госпитализацию ещё 2 человек. Из-за повреждений энергосетей временно прекратилось водоснабжение Светлого Яра и Райгорода, а на АЗС Волгограда и Астрахани выстроились очереди за бензином и дизельным топливом.",
+      "source": "Генштаб ВСУ, СБС (Птахи Мадяра), ASTRA, губернатор А. Бочаров"
+    },
+    "uk": {
+      "region": "Волгоградська область",
+      "target": "Волгоградський НПЗ (ТОВ «ЛУКОЙЛ-Волгограднафтопереробка»)",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні БпЛА (СБС, ССО, ГУР, ДПСУ)",
+      "details": "Уночі 13 листопада 2026 року оператори 1-го окремого центру та 414-ї бригади СБС у взаємодії з ССО, ГУР та ДПСУ завдали масованого удару по Волгоградському НПЗ (потужність переробки 14,8 млн т нафти на рік). На території підприємства спалахнула масштабна пожежа площею понад 3500 кв. м із серією повторних детонацій та загравою, яку фіксували мешканці за десятки кілометрів. Оприлюднені супутникові знімки підтвердили критичні пошкодження установок первинної переробки АВТ-1, АВТ-3, АВТ-5 і АВТ-6, установки гідроочищення, зливно-наливної естакади та 6 резервуарів по 2000 куб. м. Губернатор Андрій Бочаров повідомив про загибель 4 працівників заводу та госпіталізацію ще 2 осіб. Через пошкодження електромереж без водопостачання залишилися Світлий Яр і Райгород, а на АЗС Волгограда й Астрахані утворилися паливні черги.",
+      "source": "Генштаб ЗСУ, СБС (Птахи Мадяра), ASTRA, губернатор А. Бочаров"
+    },
+    "en": {
+      "region": "Volgograd Oblast",
+      "target": "Volgograd Oil Refinery (OOO LUKOIL-Volgogradneftepererabotka)",
+      "category": "Oil & Gas",
+      "weapon": "Long-range UAVs (USF, SOF, HUR, SBGS)",
+      "details": "Overnight on November 13, 2026, Ukraine's Unmanned Systems Forces (1st Separate Center and 414th Brigade), alongside SOF, HUR, and the Border Guard Service, carried out a massive strike on the Volgograd Refinery (annual capacity 14.8 million tonnes). A major fire covering over 3,500 square meters erupted across the plant, accompanied by secondary detonations and an orange glow visible for tens of kilometers. Post-strike satellite imagery confirmed severe damage to primary crude distillation units AVT-1, AVT-3, AVT-5, and AVT-6, a hydrotreater, a rail loading rack, and six 2,000-cubic-meter storage tanks. Governor Andrei Bocharov confirmed 4 plant workers killed and 2 hospitalized. Associated power line damage disrupted water supply in Svetly Yar and Raygorod, while long queues for motor fuel formed at gas stations in Volgograd and Astrakhan.",
+      "source": "General Staff of the AFU, USF, ASTRA, Governor A. Bocharov"
+    },
+    "video": [
+      "video/volgograd_npz_1311_vid1.mp4",
+      "video/volgograd_npz_1311_vid2.mp4"
+    ],
+    "images": [
+      "images/volgograd_npz_1311_img1.jpg",
+      "images/volgograd_npz_1311_img2.jpg",
+      "images/volgograd_npz_1311_img3.jpg",
+      "images/volgograd_npz_1311_img4.jpg"
+    ],
+    "id": 582
+  },
+  {
+    "date": "13.11.2026",
+    "lat": 52.9874,
+    "lng": 50.5431,
+    "distance": 1023,
+    "ru": {
+      "region": "Самарская область",
+      "target": "ЛПДС «Самара» (АО «Транснефть — Приволга»)",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные БПЛА ЦСО «Альфа» СБУ",
+      "details": "Утром 13 ноября 2026 года дальнобойные беспилотники ЦСО «Альфа» СБУ поразили линейную производственно-диспетчерскую станцию «Самара» возле посёлка Просвет в Волжском районе (эксплуатируется АО «Транснефть — Приволга»). Данный стратегический нефтетранспортный хаб осуществляет смешивание сырья из разных месторождений и формирует экспортный сорт Urals, на который приходится около 50 % всего нефтяного экспорта России. В результате точных попаданий загорелись резервуары с нефтью: очевидцы зафиксировали плотный столб чёрного дыма вдоль автодороги и на территории резервуарного парка. Интенсивное горение продолжалось более суток, повредив значительную часть оставшихся ёмкостей хранилища. Губернатор Самарской области Вячеслав Федорищев подтвердил атаку БПЛА на промышленное предприятие, гибель 4 работников и ранение нескольких сотрудников.",
+      "source": "СБУ, Генштаб ВСУ, РИА Новости (губернатор В. Федорищев), ASTRA"
+    },
+    "uk": {
+      "region": "Самарська область",
+      "target": "ЛВДС «Самара» (АТ «Транснефть — Приволга»)",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні БпЛА ЦСО «Альфа» СБУ",
+      "details": "Уранці 13 листопада 2026 року далекобійні безпілотники ЦСО «Альфа» СБУ уразили лінійну виробничо-диспетчерську станцію «Самара» поблизу селища Просвєт у Волзькому районі (оператор — АТ «Транснефть — Приволга»). Цей стратегічний нафтотранспортний вузол змішує нафту різних сортів і формує експортну суміш Urals, що забезпечує близько 50 % усього російського нафтового експорту. Внаслідок влучань загорілися резервуари з нафтою: очевидці зафіксували густий стовп чорного диму над резервуарним парком безпосередньо біля траси. Масштабна пожежа тривала понад добу й охопила суттєву частину вцілілих ємностей об'єкта. Губернатор Самарської області В'ячеслав Федорищев підтвердив атаку БпЛА на промислове підприємство, загибель 4 працівників та поранення ще кількох осіб.",
+      "source": "СБУ, Генштаб ЗСУ, РИА Новости (губернатор В. Федорищев), ASTRA"
+    },
+    "en": {
+      "region": "Samara Oblast",
+      "target": "LPDS Samara Oil Blending & Dispatch Station (Transneft-Privolga)",
+      "category": "Oil & Gas",
+      "weapon": "Long-range UAVs (SBU Alpha)",
+      "details": "On the morning of November 13, 2026, long-range UAVs operated by Ukraine's SBU Alpha Special Operations Center struck the Samara linear production and dispatch station near Prosvet settlement in Volzhsky District (operated by Transneft-Privolga). This critical pipeline hub blends crude streams from multiple oilfields to form the Urals export grade, accounting for roughly 50% of Russia's total seaborne oil exports. Direct hits ignited crude storage tanks, with eyewitness footage showing a thick column of black smoke billowing across the Transneft tank farm beside the adjacent highway. Fires burned intensely into the following day across major sections of the surviving storage facility. Samara Governor Vyacheslav Fedorishchev confirmed a UAV attack on a regional industrial enterprise that killed 4 workers and injured several others.",
+      "source": "SBU, AFU General Staff, RIA Novosti (Gov. V. Fedorishchev), ASTRA"
+    },
+    "video": [
+      "video/lpds_samara_1311_vid1.mp4"
+    ],
+    "images": [
+      "images/lpds_samara_1311_img1.jpg",
+      "images/lpds_samara_1311_img2.jpg",
+      "images/lpds_samara_1311_img3.jpg"
+    ],
+    "id": 583
+  },
+  {
+    "date": "13.11.2026",
+    "lat": 52.635,
+    "lng": 39.445,
+    "distance": 369,
+    "ru": {
+      "region": "Липецкая область",
+      "target": "Военный аэродром «Липецк-2» (4-й ЦБП и ПЛС ВКС РФ)",
+      "category": "Военная инфраструктура / Авиабаза",
+      "weapon": "Дальнобойные БПЛА",
+      "details": "13 ноября 2026 года подразделения Сил обороны Украины нанесли результативный удар по военному аэродрому «Липецк-2» в Липецкой области, расположенному западнее гражданского аэропорта. На этой авиабазе дислоцируется 4-й Государственный центр подготовки авиационного персонала и войсковых испытаний (ЦБП и ПЛС) ВКС РФ, обеспечивающий подготовку лётчиков и применение боевой авиации. Согласно официальной сводке Генерального штаба ВСУ, зафиксированы прямые попадания в ангар для размещения специальной аэродромной техники обслуживания самолётов и в резервуар с авиационным топливом. Также поражён центральный командно-диспетчерский пункт (ЦКДП), отвечающий за управление полётами на базе. Масштабы разрушений инфраструктуры, авиатопливных запасов и наземного оборудования продолжают уточняться.",
+      "source": "Генеральный штаб ВСУ"
+    },
+    "uk": {
+      "region": "Липецька область",
+      "target": "Військовий аеродром «Липецьк-2» (4-й ЦБП і ПЛС ВКС РФ)",
+      "category": "Військова інфраструктура / Авіабаза",
+      "weapon": "Далекобійні БпЛА",
+      "details": "13 листопада 2026 року підрозділи Сил оборони України завдали результативного удару по військовому аеродрому «Липецьк-2» у Липецькій області, розташованому на захід від цивільного аеропорту. На цій авіабазі базується 4-й Державний центр підготовки авіаційного персоналу та військових випробувань ВКС РФ, що забезпечує підготовку екіпажів та бойові вильоти тактичної авіації. За офіційним повідомленням Генерального штабу ЗСУ, зафіксовано влучання в ангар зі спеціальною технікою обслуговування літаків та в резервуар із авіаційним паливом. Крім того, уражено центральний командно-диспетчерський пункт (ЦКДП), який координує управління польотами на аеродромі. Детальні наслідки ураження техніки, паливної інфраструктури та засобів управління уточнюються.",
+      "source": "Генеральний штаб ЗСУ"
+    },
+    "en": {
+      "region": "Lipetsk Oblast",
+      "target": "Lipetsk-2 Military Airbase (4th Aviation Training Center)",
+      "category": "Military Infrastructure / Airbase",
+      "weapon": "Long-range UAVs",
+      "details": "On November 13, 2026, Ukrainian Defense Forces struck the Lipetsk-2 military airbase in Lipetsk Oblast, situated west of the civilian airport. The airfield houses the Russian Aerospace Forces' 4th State Center for Aviation Personnel Training and Military Trials, a key facility supporting combat pilot training and tactical aviation operations. According to the General Staff of the Armed Forces of Ukraine, confirmed hits struck a hangar housing specialized aircraft servicing equipment as well as an aviation fuel storage tank. The strike also damaged the central command and air traffic control post (TsKDP) responsible for coordinating flight operations at the base. Further battle damage assessment of aircraft support assets, fuel reserves, and flight control systems remains underway.",
+      "source": "General Staff of the AFU"
+    },
+    "video": [],
+    "images": [],
+    "id": 584
+  },
+  {
+    "date": "13.11.2026",
+    "lat": 47.2038,
+    "lng": 39.6055,
+    "distance": 228,
+    "ru": {
+      "region": "Ростовская область",
+      "target": "Производство, склад и сервисный центр БПЛА (ООО «Ионос», ООО «Аэро-Хит»)",
+      "category": "ВПК",
+      "weapon": "КР «Нептун» ВМС ВСУ, БПЛА",
+      "details": "В ночь на 13 ноября 2026 года Военно-морские силы ВСУ ракетными комплексами «Нептун» поразили ключевые звенья производственной и логистической цепочки российских ударных беспилотников в Ростове-на-Дону. По подтверждённым данным Генштаба и ВМС ВСУ, удар пришёлся по цехам производства тактических ударных БПЛА («Алёша» по проекту «Аляска») и складу готовых дронов компании ООО «Ионос» в промзоне Советского района (ул. Пескова, 1; юрлицо зарегистрировано в х. Колузаево), а также по сервисному центру ООО «Аэро-Хит», обслуживающему FPV-дроны «Велес». Опубликованные кадры ВМС и очевидцев зафиксировали мощное зарево пожара и выгоревший каркас промышленного ангара. Губернатор Юрий Слюсарь заявил о возгорании производственного помещения в Советском районе, пожаре на складе площадью 1500 кв. м в Аксайском районе и 1 пострадавшем.",
+      "source": "Генштаб ВСУ, ВМС ВСУ, ASTRA, губернатор Ю. Слюсарь"
+    },
+    "uk": {
+      "region": "Ростовська область",
+      "target": "Виробництво, склад та сервісний центр БпЛА (ТОВ «Іонос», ТОВ «Аеро-Хіт»)",
+      "category": "ВПК",
+      "weapon": "КР «Нептун» ВМС ЗСУ, БпЛА",
+      "details": "У ніч проти 13 листопада 2026 року Військово-морські сили ЗСУ крилатими ракетами «Нептун» уразили об'єкти виробництва, зберігання й ремонту ударних безпілотників у Ростові-на-Дону та прилеглому районі. За даними Генштабу та ВМС ЗСУ, уражено виробничі цехи тактичних ударних БпЛА («Альоша» в межах проєкту «Аляска») і склад готових дронів компанії ТОВ «Іонос» у промзоні Совєтського району (вул. Пєскова, 1; реєстрація — х. Колузаєво), а також сервісний центр ТОВ «Аеро-Хіт», що ремонтував FPV-дрони «Велес». Оприлюднені відео ВМС та місцевих мешканців зафіксували інтенсивне займання та вигорілий металевий каркас ангара. Губернатор Юрій Слюсар підтвердив займання виробничої будівлі в Совєтському районі, пожежу на складі площею 1500 кв. м в Аксайському районі та 1 пораненого.",
+      "source": "Генштаб ЗСУ, ВМС ЗСУ, ASTRA, губернатор Ю. Слюсар"
+    },
+    "en": {
+      "region": "Rostov Oblast",
+      "target": "UAV Production, Storage & Service Center (Ionos & Aero-Hit)",
+      "category": "Military-Industrial Complex",
+      "weapon": "Neptune Cruise Missiles (Ukrainian Navy), UAVs",
+      "details": "Overnight on November 13, 2026, Ukrainian Naval Forces launched Neptune cruise missiles against key nodes of Russia's tactical drone manufacturing and maintenance chain in Rostov-on-Don. Confirmed reports from the AFU General Staff and Ukrainian Navy identified hits on OOO Ionos's tactical strike-UAV production workshops ('Alyosha' drones under Project Alaska) and finished-drone warehouse in the Sovetsky District industrial zone (1 Peskova St.; registered in Koluzaevo), alongside the OOO Aero-Hit service center repairing Veles FPV drones. Video released by the Ukrainian Navy and eyewitnesses showed a bright horizon blaze and a gutted steel hangar frame. Rostov Governor Yuri Slyusar acknowledged an industrial facility fire in Sovetsky District, a 1,500 sq. m warehouse blaze in neighboring Aksaysky District, and 1 person injured.",
+      "source": "AFU General Staff, Ukrainian Navy, ASTRA, Gov. Yu. Slyusar"
+    },
+    "video": [
+      "video/rostov_uav_1311_vid1.mp4",
+      "video/rostov_uav_1311_vid2.mp4"
+    ],
+    "images": [
+      "images/rostov_uav_1311_img1.jpg"
+    ],
+    "id": 585
+  },
+  {
     "date": "11.11.2026",
     "lat": 59.6917,
     "lng": 28.4083,
