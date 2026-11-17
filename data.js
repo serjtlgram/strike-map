@@ -1,5 +1,203 @@
 const strikeData = [
   {
+    "date": "16.11.2026",
+    "lat": 45.3117,
+    "lng": 36.5126,
+    "distance": 300,
+    "ru": {
+      "region": "Керченский пролив, АР Крым / Краснодарский край",
+      "target": "Крымский мост (Керченский мост)",
+      "category": "Логистика",
+      "weapon": "Крылатые ракеты FP-5 «Фламинго» и ударные БПЛА (СБУ, СБС, ВМС)",
+      "details": "16 ноября 2026 года Силы обороны Украины (СБУ, 1-й отдельный центр и 414-я бригада СБС, ВМС) провели масштабную комбинированную операцию по Крымскому мосту с применением новых крылатых ракет FP-5 «Фламинго» и ударных беспилотников. В результате серийных попаданий было полностью парализовано железнодорожное и автомобильное движение, на въездах со стороны Тамани и Керчи образовались многокилометровые заторы, а полиция развернула весь транспортный поток. Точные удары повредили полотно моста, опоры и силовые элементы пролетов. Под воздействием критических повреждений конструкций в ночь на 17 ноября произошло обрушение пролета автомобильной арки прямо в Керчь-Еникальский судоходный канал, перекрывшее фарватер для морских судов между Черным и Азовским морями. СК РФ подтвердил разрушения и возбудил дело о теракте.",
+      "source": "СБУ, СБС, Генштаб ВСУ, ASTRA, @ASupersharij, СК РФ, Crimeanwind"
+    },
+    "uk": {
+      "region": "Керченська протока, АР Крим / Краснодарський край",
+      "target": "Кримський міст (Керченський міст)",
+      "category": "Логістика",
+      "weapon": "Крилаті ракети FP-5 «Фламінго» та ударні БпЛА (СБУ, СБС, ВМС)",
+      "details": "16 листопада 2026 року Сили оборони України (СБУ, 1-й окремий центр та 414-та бригада СБС, ВМС) провели масштабну комбіновану операцію проти Кримського мосту із застосуванням далекобійних крилатих ракет FP-5 «Фламінго» та ударних дронів. Унаслідок серії влучань було повністю паралізовано залізничний та автомобільний рух, на під'їздах із боку Тамані й Керчі виникли багатокілометрові затори, а транспорт розвертали назад. Влучні удари зруйнували залізничне полотно, пошкодили опори та тримальні ферми мосту. Через критичні руйнування конструкцій у ніч проти 17 листопада проліт автомобільної арки завалився безпосередньо в Керч-Єнікальський канал, заблокувавши судноплавство між Чорним та Азовським морями. Слідчий комітет рф визнав руйнування мосту та відкрив кримінальну справу про теракт.",
+      "source": "СБУ, СБС, Генштаб ЗСУ, ASTRA, @ASupersharij, СК рф, Crimeanwind"
+    },
+    "en": {
+      "region": "Kerch Strait, Autonomous Republic of Crimea / Krasnodar Krai",
+      "target": "Crimean Bridge (Kerch Bridge)",
+      "category": "Logistics",
+      "weapon": "FP-5 Flamingo cruise missiles and strike UAVs (SBU, USF, Navy)",
+      "details": "On November 16, 2026, Ukrainian forces (SBU, 1st Separate Center and 414th Brigade of the USF, Navy) launched a massive combined strike against the Crimean Bridge utilizing FP-5 Flamingo cruise missiles and strike drones. The coordinated barrage crippled roadway and railway links, halting vehicle traffic and triggering severe gridlock on both the Kerch and Taman approaches before military cordons turned all vehicles away. Multiple hits inflicted critical structural trauma on rail tracks, bridge piers, and main support trusses. Weakened by consecutive impacts, a highway arch section collapsed overnight into the Kerch-Yenikale shipping channel, blocking commercial navigation between the Black Sea and Sea of Azov. Russia's Investigative Committee formally acknowledged structural damage, opening a terrorism case over severed military supply lines.",
+      "source": "SBU, USF, General Staff of the AFU, ASTRA, @ASupersharij, ICRF, Crimeanwind"
+    },
+    "id": 590,
+    "video": [
+      "video/kerch_bridge_1611_vid1.mp4",
+      "video/kerch_bridge_1611_vid2.mp4"
+    ],
+    "images": [
+      "images/kerch_bridge_1611_img1.jpg",
+      "images/kerch_bridge_1611_img2.jpg",
+      "images/kerch_bridge_1611_img3.jpg",
+      "images/kerch_bridge_1611_img4.jpg"
+    ]
+  },
+  {
+    "date": "16.11.2026",
+    "lat": 47.1192,
+    "lng": 39.4144,
+    "distance": 226,
+    "ru": {
+      "region": "Ростовская область, г. Азов",
+      "target": "Нефтебаза ООО «Флэш Энерджи» и терминалы «Транзит-Экспресс» / «Азовская»",
+      "category": "Нефтегаз",
+      "weapon": "Ударные БПЛА (ССО ВСУ и движение «Черная искра»)",
+      "details": "В ночь на 16 ноября 2026 года Силы специальных операций ВСУ во взаимодействии с подпольным движением «Черная искра» нанесли синхронный удар дронами-камикадзе по распределительному топливному узлу в портовом городе Азове Ростовской области. Основной удар пришелся по нефтебазе ООО «Флэш Энерджи» (Складской пер., 12), где произошло прямое попадание в два резервуара с топливом, вызвавшие масштабный пожар. Одновременно были поражены соседние перевалочные терминалы ООО «Транзит-Экспресс» и портовая нефтебаза «Азовская» с резервуарным парком до 30 тыс. куб. м и перевалкой до 60 тыс. тонн в месяц. Очевидцы сняли факельное горение емкостей и зарево над городом, а спутниковые снимки зафиксировали плотный шлейф дыма. Данный узел обеспечивал бесперебойное снабжение горючим южной группировки войск РФ на Донбасском направлении.",
+      "source": "Генштаб ВСУ, ССО ВСУ, ASTRA, @ASupersharij, Supernova+, Радио Свобода"
+    },
+    "uk": {
+      "region": "Ростовська область, м. Азов",
+      "target": "Нафтобаза ТОВ «Флеш Енерджі» та термінали «Транзит-Експрес» / «Азовська»",
+      "category": "Нафтогаз",
+      "weapon": "Ударні БпЛА (ССО ЗСУ та рух «Чорна іскра»)",
+      "details": "У ніч на 16 листопада 2026 року Сили спеціальних операцій ЗСУ у взаємодії з підпільним рухом «Чорна іскра» завдали синхронного удару дронами-камікадзе по розподільчому паливному вузлу в портовому місті Азові Ростовської області. Головного ураження зазнала нафтобаза ТОВ «Флеш Енерджі» (Складський провулок, 12), де спалахнули два великі резервуари з паливом. Одночасно були атаковані сусідні термінали ТОВ «Транзит-Експрес» та портова нафтобаза «Азовська» із загальним парком до 30 тис. куб. м пального та потужністю перевалки 60 тис. тонн на місяць. Очевидці зафіксували потужне факельне горіння й вибухи, а супутникові кадри підтвердили густий стовп чорного диму над містом. База була ключовим хабом постачання паливно-мастильних матеріалів для південного угруповання окупаційної армії рф.",
+      "source": "Генштаб ЗСУ, ССО ЗСУ, ASTRA, @ASupersharij, Supernova+, Радіо Свобода"
+    },
+    "en": {
+      "region": "Rostov Oblast, Azov",
+      "target": "Flash Energy Oil Depot and Transit-Express / Azovskaya Terminals",
+      "category": "Oil & Gas",
+      "weapon": "Strike UAVs (SOF of AFU & Black Spark movement)",
+      "details": "Overnight on November 16, 2026, Ukraine's Special Operations Forces, in coordination with the underground resistance movement Black Spark, launched a coordinated drone strike on fuel distribution infrastructure in the port city of Azov, Rostov Oblast. The primary hit targeted the Flash Energy oil depot on Skladskoy Lane, igniting two large fuel tanks in a raging fire. Concurrent strikes hit adjacent transshipment facilities, including the Transit-Express terminal and the Azovskaya oil depot, which boasts a 30,000-cubic-meter storage capacity and throughput of 60,000 tonnes monthly. Eyewitness videos captured large secondary explosions, while satellite imagery revealed dense plumes of black smoke rising above the docks. The complex formed a vital logistical artery supplying diesel and gasoline to Russia's southern battlefront forces in Donbas.",
+      "source": "General Staff of the AFU, SOF, ASTRA, @ASupersharij, Supernova+, RFE/RL"
+    },
+    "id": 589,
+    "video": [
+      "video/azov_oil_1611_vid1.mp4",
+      "video/azov_oil_1611_vid2.mp4"
+    ],
+    "images": [
+      "images/azov_oil_1611_img1.jpg",
+      "images/azov_oil_1611_img2.jpg",
+      "images/azov_oil_1611_img3.jpg"
+    ]
+  },
+  {
+    "date": "16.11.2026",
+    "lat": 44.8533,
+    "lng": 38.5684,
+    "distance": 424,
+    "ru": {
+      "region": "Краснодарский край, Северский район, пгт Ильский",
+      "target": "Ильский НПЗ (ООО «КНГК-ИНПЗ»)",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные ударные БПЛА",
+      "details": "В ночь на 16 ноября 2026 года Силы обороны Украины нанесли результативный удар дальнобойными дронами по Ильскому нефтеперерабатывающему заводу (мощность 6,6 млн тонн нефти в год) в Краснодарском крае. По официальному заявлению Генштаба ВСУ, попадания пришлись по ключевым установкам первичной переработки нефти АТ-4, АТ-5 и АТ-6, обеспечивающим разделение сырья на фракции, а также по технологическому комплексу производства товарных бензинов. На территории НПЗ вспыхнули технологические колонны с серией детонаций. Оперштаб Кубани подтвердил массированную атаку, продолжавшуюся более пяти часов, и госпитализацию шестерых пострадавших в Северском районе. Ильский НПЗ является ключевым источником снабжения горюче-смазочными материалами оккупационной группировки в Крыму и на южном участке фронта.",
+      "source": "Генштаб ВСУ, ASTRA, оперштаб Краснодарского края, Crimeanwind"
+    },
+    "uk": {
+      "region": "Краснодарський край, Сіверський район, смт Ільський",
+      "target": "Ільський НПЗ (ТОВ «КНГК-ІНПЗ»)",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні ударні БпЛА",
+      "details": "У ніч на 16 листопада 2026 року Сили оборони України завдали результативного удару далекобійними дронами по Ільському нафтопереробному заводу (потужність 6,6 млн тонн нафти на рік) у Краснодарському краї. За офіційним повідомленням Генштабу ЗСУ, влучання припали по серцевині виробництва — установках первинної переробки нафти АТ-4, АТ-5 та АТ-6, а також по комплексу виробництва автомобільних бензинів. На майданчику підприємства спалахнули технологічні колони із вторинними вибухами. Оперштаб Кубані визнав масовану атаку, що тривала понад п'ять годин, та госпіталізацію шістьох постраждалих у Сіверському районі. Завод відіграє вирішальну роль у постачанні пального російським військовим частинам у Криму та на південному фронті, тому вибивання первинних установок спричинило гострий дефіцит бензину.",
+      "source": "Генштаб ЗСУ, ASTRA, оперштаб Краснодарського краю, Crimeanwind"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Seversky District, Ilsky",
+      "target": "Ilsky Oil Refinery (OOO KNGK-INPZ)",
+      "category": "Oil & Gas",
+      "weapon": "Long-range strike UAVs",
+      "details": "Overnight on November 16, 2026, the Ukrainian Defence Forces carried out a successful long-range drone attack against the Ilsky Oil Refinery (capacity of 6.6 million tonnes of crude annually) in Krasnodar Krai. According to the General Staff of the Armed Forces of Ukraine, precision strikes damaged core atmospheric distillation units AT-4, AT-5, and AT-6, which perform primary crude separation, as well as the commercial gasoline production complex. Multiple industrial distillation towers caught fire amid secondary explosions. Regional authorities confirmed a drone raid lasting over five hours, reporting six hospitalized casualties in Seversky District. The refinery serves as a critical fuel supply hub for Russian forces deployed in occupied Crimea and southern Ukraine; crippling its primary processing capacity exacerbates regional shortages of refined motor fuel.",
+      "source": "General Staff of the AFU, ASTRA, Krasnodar Krai HQ, Crimeanwind"
+    },
+    "id": 588,
+    "video": [
+      "video/ilsky_npz_1611_vid1.mp4"
+    ],
+    "images": [
+      "images/ilsky_npz_1611_img1.jpg",
+      "images/ilsky_npz_1611_img2.jpg",
+      "images/ilsky_npz_1611_img3.jpg"
+    ]
+  },
+  {
+    "date": "15.11.2026",
+    "lat": 55.5944,
+    "lng": 51.9215,
+    "distance": 1221,
+    "ru": {
+      "region": "Республика Татарстан, г. Нижнекамск",
+      "target": "ПАО «Нижнекамскнефтехим» (холдинг «СИБУР»)",
+      "category": "Нефтегаз",
+      "weapon": "Дальнобойные ударные БПЛА",
+      "details": "Утром 15 ноября 2026 года дальнобойные ударные дроны Сил обороны Украины атаковали флагман российской нефтехимии — ПАО «Нижнекамскнефтехим» (холдинг «СИБУР») в Татарстане, выпускающий более 3 млн тонн продукции ежегодно. Удар пришелся по заводу «Этилен» и установкам нового комплекса ЭП-600, а также по технологическому блоку производства высокооктановых компонентов бензина МТБЭ и ТАМЭ. На объекте зафиксированы мощные взрывы и крупный пожар с густым черным дымом, заметным за десятки километров. Повреждения получила также установка каталитического крекинга. Предприятие производит критически важные присадки к моторным топливам для нужд ВС РФ, а также мономеры для каучуков и полимеров. Из-за разрушения технологических коммуникаций выпуск продукции на заводе «Этилен» был полностью остановлен.",
+      "source": "Генштаб ВСУ, ASTRA, @ASupersharij, Exilenova+, Supernova+"
+    },
+    "uk": {
+      "region": "Республіка Татарстан, м. Нижньокамськ",
+      "target": "ПАТ «Нижньокамськнафтохім» (холдинг «СИБУР»)",
+      "category": "Нафтогаз",
+      "weapon": "Далекобійні ударні БпЛА",
+      "details": "Уранці 15 листопада 2026 року далекобійні ударні дрони Сил оборони України атакували флагман російської нафтохімії — ПАТ «Нижньокамськнафтохім» (холдинг «СИБУР») у Татарстані, що виробляє понад 3 млн тонн продукції щорічно. Удар припав на завод «Етилен» і технологічні установки нового комплексу ЕП-600, а також блок виробництва високооктанових компонентів бензину МТБЕ та ТАМЕ. На підприємстві виникли потужні вибухи та масштабна пожежа з густим чорним димом, який спостерігали за десятки кілометрів. Ураження також зазнала установка каталітичного крекінгу. Завод є монопольним виробником важливих високооктанових присадок до армійського пального, мономерів для гумотехнічних виробів і полімерів. Через пошкодження трубопроводів і колон виробництво на заводі «Етилен» повністю зупинено.",
+      "source": "Генштаб ЗСУ, ASTRA, @ASupersharij, Exilenova+, Supernova+"
+    },
+    "en": {
+      "region": "Republic of Tatarstan, Nizhnekamsk",
+      "target": "PJSC Nizhnekamskneftekhim (SIBUR Holding)",
+      "category": "Oil & Gas",
+      "weapon": "Long-range strike UAVs",
+      "details": "On the morning of November 15, 2026, Ukrainian long-range strike drones targeted one of Europe's largest petrochemical facilities, PJSC Nizhnekamskneftekhim (SIBUR Holding) in Tatarstan, which produces over 3 million tonnes of petrochemicals annually. Precision hits struck the Ethylene plant, including the newly built EP-600 olefin cracking unit, as well as production blocks for high-octane gasoline additives MTBE and TAME. Heavy explosions triggered a widespread blaze with dense black smoke visible across the entire industrial district. Secondary structural damage was also confirmed at the catalytic cracking unit. The plant supplies critical octane boosters for military motor fuels and essential feedstocks for synthetic rubber used in defense transport. Due to severe equipment damage, ethylene and additive production lines were completely shut down.",
+      "source": "General Staff of the AFU, ASTRA, @ASupersharij, Exilenova+, Supernova+"
+    },
+    "id": 587,
+    "video": [
+      "video/nizhnekamsk_neftekhim_1511_vid1.mp4",
+      "video/nizhnekamsk_neftekhim_1511_vid2.mp4"
+    ],
+    "images": [
+      "images/nizhnekamsk_neftekhim_1511_img1.jpg",
+      "images/nizhnekamsk_neftekhim_1511_img2.jpg",
+      "images/nizhnekamsk_neftekhim_1511_img3.jpg",
+      "images/nizhnekamsk_neftekhim_1511_img4.jpg"
+    ]
+  },
+  {
+    "date": "14.11.2026",
+    "lat": 48.9461,
+    "lng": 40.3802,
+    "distance": 206,
+    "ru": {
+      "region": "Ростовская область, Миллеровский район",
+      "target": "База операторов и дронопорт БПЛА «Шахед» (хутор Северный Сад / Миллерово)",
+      "category": "ВПК",
+      "weapon": "Скоростной ударный БПЛА (ЦСО «А» СБУ)",
+      "details": "В ночь на 14 ноября 2026 года дальнобойный ударный беспилотник Центра спецопераций «Альфа» СБУ нанес точный удар по пункту управления и месту дислокации операторов дронопорта на окраине Миллерово (хутор Северный Сад). Данный объект использовался противником как передовая база для запуска ударных беспилотников типа «Шахед-136/Герань-2» и реактивных модификаций. В результате попадания полностью выгорело более 300 кв. м жилого корпуса, где проживал расчет операторов, а также уничтожен готовый к пуску реактивный «Шахед» вместе с пусковой установкой на базе грузового автомобиля. Губернатор Ростовской области Юрий Слюсарь признал возгорание здания гостиничного типа в хуторе Северный Сад после прилета БПЛА. Ликвидация обученного персонала и пусковой техники существенно снижает интенсивность ночных налетов по территории Украины.",
+      "source": "СБУ (ЦСО «А»), ASTRA, губернатор Ю. Слюсарь, Exilenova+, КіберБорошно"
+    },
+    "uk": {
+      "region": "Ростовська область, Міллеровський район",
+      "target": "База операторів та дронопорт БпЛА «Шахед» (хутір Сєвєрний Сад / Міллерово)",
+      "category": "ВПК",
+      "weapon": "Швидкісний ударний БпЛА (ЦСО «А» СБУ)",
+      "details": "У ніч на 14 листопада 2026 року далекобійний ударний безпілотник Центру спецоперацій «Альфа» СБУ завдав точного удару по пункту управління та місцю дислокації операторів дронопорту на околиці Міллерового (хутір Сєвєрний Сад). Цей об’єкт використовувався противником як передова база для запусків ударних дронів типу «Шахед-136/Герань-2» та новітніх реактивних модифікацій. Унаслідок влучання повністю вигоріло понад 300 кв. м житлового корпусу, де розміщувався особовий склад розрахунків, а також знищено підготовлений до старту реактивний «Шахед» разом із пусковою установкою на базі вантажівки. Губернатор Ростовської області Юрій Слюсар визнав пожежу будівлі готельного типу в хуторі Сєвєрний Сад унаслідок удару БпЛА. Ліквідація навчених операторів і пускового обладнання послаблює можливості ворога щодо терору українських міст.",
+      "source": "СБУ (ЦСО «А»), ASTRA, губернатор Ю. Слюсар, Exilenova+, КіберБорошно"
+    },
+    "en": {
+      "region": "Rostov Oblast, Millerovsky District",
+      "target": "Shahed Droneport and UAV Operator Base (Severny Sad / Millerovo)",
+      "category": "Military-Industrial",
+      "weapon": "High-speed strike UAV (Alpha Group of SBU)",
+      "details": "Overnight on November 14, 2026, a high-speed strike drone operated by the SBU Alpha Group struck a command post and quarters of a droneport operating on the outskirts of Millerovo in the settlement of Severny Sad. The base served as a forward staging facility for launching Shahed-136/Geran-2 kamikaze drones and jet-powered variants. The direct impact ignited a massive blaze covering over 300 square meters of the living quarters where drone operators were billeted, destroying a jet-powered Shahed drone along with its vehicle-mounted launcher. Rostov Oblast Governor Yuri Slyusar confirmed a severe fire at a hotel-type facility in Severny Sad following a drone strike. Eliminating trained operator crews and specialized launch hardware directly degrades Russia's capacity to maintain saturation drone strikes against Ukrainian infrastructure.",
+      "source": "SBU (Alpha Group), ASTRA, Governor Yu. Slyusar, Exilenova+, CyberBoroshno"
+    },
+    "id": 586,
+    "video": [
+      "video/millerovo_uav_1411_vid1.mp4"
+    ],
+    "images": [
+      "images/millerovo_uav_1411_img1.jpg"
+    ]
+  },
+  {
     "date": "13.11.2026",
     "lat": 48.5085,
     "lng": 44.5956,
