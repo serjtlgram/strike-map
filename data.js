@@ -1,5 +1,77 @@
 const strikeData = [
   {
+    "date": "17.11.2026",
+    "lat": 54.9333,
+    "lng": 56.0667,
+    "distance": 1438,
+    "ru": {
+      "region": "Республика Башкортостан, г. Уфа",
+      "target": "НПЗ «Башнефть-Уфанефтехим»",
+      "category": "Нефтегаз",
+      "weapon": "Ударные БПЛА (1-й отдельный центр СБС)",
+      "details": "17 ноября 2026 года операторы 1-го отдельного центра Сил беспилотных систем ВСУ нанесли удар по нефтеперерабатывающему заводу «Башнефть-Уфанефтехим» в Уфе. Предприятие входит в уфимский нефтеперерабатывающий комплекс «Башнефти», который объединяет три крупных завода суммарной мощностью до 23,5 млн тонн в год. Сам «Уфанефтехим» перерабатывает около 10 млн тонн нефти ежегодно при глубине переработки 98,4% и выпускает высокооктановые бензины, дизельное топливо и сжиженные газы. Атака на Уфу прошла одновременно с массированным налетом БПЛА на промышленную зону Башкортостана — местные власти заявляли о перехвате более 50 дронов, а в аэропорту Уфы вводили временные ограничения на прием и вылет рейсов.",
+      "source": "Силы беспилотных систем ВСУ (СБС), Интерфакс-Украина, местные власти"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, м. Уфа",
+      "target": "НПЗ «Башнафта-Уфанафтохім»",
+      "category": "Нафтогаз",
+      "weapon": "Ударні БпЛА (1-й окремий центр СБС)",
+      "details": "17 листопада 2026 року оператори 1-го окремого центру Сил безпілотних систем ЗСУ завдали удару по нафтопереробному заводу «Башнафта-Уфанафтохім» в Уфі. Підприємство входить до уфимського нафтопереробного комплексу «Башнафти», що об'єднує три великі заводи сумарною потужністю до 23,5 млн тонн на рік. Сам «Уфанафтохім» переробляє близько 10 млн тонн нафти щороку за глибини переробки 98,4% і виробляє високооктанові бензини, дизельне пальне та скраплені гази. Атака на Уфу відбулася одночасно з масованим нальотом БпЛА на промзону Башкортостану — місцева влада заявляла про збиття понад 50 дронів, а в аеропорту Уфи запроваджували тимчасові обмеження на прийом і виліт рейсів.",
+      "source": "Сили безпілотних систем ЗСУ (СБС), Інтерфакс-Україна, місцева влада"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Ufa",
+      "target": "Bashneft-Ufaneftekhim Oil Refinery",
+      "category": "Oil & Gas",
+      "weapon": "Strike UAVs (1st Separate Center of USF)",
+      "details": "On November 17, 2026, operators of the 1st Separate Center of Ukraine's Unmanned Systems Forces struck the Bashneft-Ufaneftekhim oil refinery in Ufa, Bashkortostan. The facility is part of Bashneft's Ufa refining hub, which unites three major plants with a combined annual capacity of up to 23.5 million tons. Ufaneftekhim itself processes around 10 million tons of crude oil per year at a 98.4% refining depth, producing high-octane gasoline, diesel fuel, and liquefied gases. The strike coincided with a wider drone wave targeting Bashkortostan's industrial zones; local authorities claimed over 50 UAVs were intercepted, while Ufa airport temporarily suspended arrivals and departures.",
+      "source": "Unmanned Systems Forces of Ukraine (USF), Interfax-Ukraine, regional authorities"
+    },
+    "id": 592
+  },
+  {
+    "date": "17.11.2026",
+    "lat": 53.4073,
+    "lng": 55.8817,
+    "distance": 1375,
+    "ru": {
+      "region": "Республика Башкортостан, г. Салават",
+      "target": "ООО «Газпром нефтехим Салават»",
+      "category": "Нефтегаз",
+      "weapon": "Ударные БПЛА",
+      "details": "В ночь на 17 ноября 2026 года Силы обороны Украины нанесли массированный удар беспилотниками по одному из крупнейших нефтеперерабатывающих и нефтехимических комплексов РФ — «Газпром нефтехим Салават» в Башкортостане. Дроны преодолели около 1400–1500 км, после чего на территории предприятия прогремела серия взрывов. По данным OSINT-аналитиков, поражение пришлось по производственной установке комплекса, что вызвало масштабный пожар с несколькими очагами возгорания и густым черным дымом, заметным даже из соседнего Стерлитамака. Мощность завода составляет около 10 млн тонн нефти и газового конденсата в год; он выпускает бензин, дизельное и авиационное топливо. На фоне атаки в аэропорту Уфы вводили ограничения, а на АЗС Салавата образовались очереди.",
+      "source": "Генштаб ВСУ, ASTRA, @ASupersharij, Exilenova+, Supernova+, Crimeanwind"
+    },
+    "uk": {
+      "region": "Республіка Башкортостан, м. Салават",
+      "target": "ТОВ «Газпром нєфтєхім Салават»",
+      "category": "Нафтогаз",
+      "weapon": "Ударні БпЛА",
+      "details": "У ніч проти 17 листопада 2026 року Сили оборони України завдали масованого удару безпілотниками по одному з найбільших нафтопереробних і нафтохімічних комплексів рф — «Газпром нєфтєхім Салават» у Башкортостані. Дрони подолали близько 1400–1500 км, після чого на території підприємства пролунала серія вибухів. За даними OSINT-аналітиків, влучання прийшлося по виробничій установці комплексу, що спричинило масштабну пожежу з кількома осередками займання та густим чорним димом, видимим навіть із сусіднього Стерлітамака. Потужність заводу становить близько 10 млн тонн нафти й газового конденсату на рік; він виробляє бензин, дизельне та авіаційне пальне. На тлі атаки в аеропорту Уфи запроваджували обмеження, а на АЗС Салавата утворилися черги.",
+      "source": "Генштаб ЗСУ, ASTRA, @ASupersharij, Exilenova+, Supernova+, Crimeanwind"
+    },
+    "en": {
+      "region": "Republic of Bashkortostan, Salavat",
+      "target": "Gazprom Neftekhim Salavat Petrochemical Complex",
+      "category": "Oil & Gas",
+      "weapon": "Strike UAVs",
+      "details": "On the night of November 17, 2026, Ukrainian Defense Forces launched a massive drone strike against Gazprom Neftekhim Salavat, one of Russia's largest oil refining and petrochemical complexes in Bashkortostan. The UAVs flew roughly 1,400–1,500 km before a series of explosions rocked the facility. According to OSINT analysts, a direct hit struck a key processing unit, triggering a large fire with multiple burn zones and thick black smoke visible from neighboring Sterlitamak. With an annual capacity of around 10 million tons of crude oil and gas condensate, the plant supplies gasoline, diesel, and aviation fuel for Russia's economy and military. Amid the raid, Ufa airport faced flight restrictions while long queues formed at local gas stations in Salavat.",
+      "source": "General Staff of the AFU, ASTRA, @ASupersharij, Exilenova+, Supernova+, Crimeanwind"
+    },
+    "id": 591,
+    "video": [
+      "video/salavat_1711_vid1.mp4",
+      "video/salavat_1711_vid2.mp4"
+    ],
+    "images": [
+      "images/salavat_1711_img1.jpg",
+      "images/salavat_1711_img2.jpg",
+      "images/salavat_1711_img3.jpg",
+      "images/salavat_1711_img4.jpg"
+    ]
+  },
+  {
     "date": "16.11.2026",
     "lat": 45.3117,
     "lng": 36.5126,
