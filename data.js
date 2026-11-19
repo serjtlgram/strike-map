@@ -1,5 +1,86 @@
 const strikeData = [
   {
+    "date": "18.11.2026",
+    "lat": 44.8717,
+    "lng": 38.8336,
+    "distance": 435,
+    "ru": {
+      "region": "Краснодарский край, Северский район, пгт Афипский",
+      "target": "Афипский НПЗ (ООО «Афипский НПЗ»)",
+      "category": "Нефтегаз",
+      "weapon": "Ударные БПЛА",
+      "details": "В ночь и утром 18 ноября 2026 года Силы обороны Украины нанесли удар беспилотниками по Афипскому нефтеперерабатывающему заводу в Северском районе Краснодарского края. Атака проводилась синхронно с налетом на соседний Ильский НПЗ. По предварительным данным Генштаба ВСУ, на территории Афипского НПЗ поражена установка переработки нефти, а местный оперштаб подтвердил возгорания на двух промышленных предприятиях района. В Северском районе обломки сбитых дронов повредили газопровод и частные дома, пострадали девять человек, еще четверо были ранены в соседнем поселке Энем в Адыгее. Мощность Афипского НПЗ составляет около 6,25 млн тонн нефти в год — более 2% всей российской нефтепереработки; его топливо используется для нужд армии РФ.",
+      "source": "Генштаб ВСУ, ASTRA, @ASupersharij, Exilenova+, Supernova+, Crimeanwind"
+    },
+    "uk": {
+      "region": "Краснодарський край, Сіверський район, смт Афіпський",
+      "target": "Афіпський НПЗ (ТОВ «Афіпський НПЗ»)",
+      "category": "Нафтогаз",
+      "weapon": "Ударні БпЛА",
+      "details": "Уночі та вранці 18 листопада 2026 року Сили оборони України завдали удару безпілотниками по Афіпському нафтопереробному заводу в Сіверському районі Краснодарського краю. Атака відбувалася синхронно з нальотом на сусідній Ільський НПЗ. За попередніми даними Генштабу ЗСУ, на території Афіпського НПЗ уражено установку переробки нафти, а місцевий оперштаб підтвердив займання на двох промислових підприємствах району. У Сіверському районі уламки збитих дронів пошкодили газопровід і приватні будинки, постраждали дев'ять людей, ще четверо дістали поранення в сусідньому селищі Енем в Адигеї. Потужність Афіпського НПЗ становить близько 6,25 млн тонн нафти на рік — понад 2% усієї російської нафтопереробки; його пальне постачається армії РФ.",
+      "source": "Генштаб ЗСУ, ASTRA, @ASupersharij, Exilenova+, Supernova+, Crimeanwind"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Seversky District, Afipsky",
+      "target": "Afipsky Oil Refinery (Afipsky Refinery LLC)",
+      "category": "Oil & Gas",
+      "weapon": "Strike UAVs",
+      "details": "Overnight and into the morning of November 18, 2026, Ukrainian Defense Forces struck the Afipsky Oil Refinery in the Seversky District of Krasnodar Krai in a coordinated drone attack alongside the nearby Ilsky Refinery. According to preliminary data from the AFU General Staff, a crude oil processing unit at the Afipsky plant was hit, while regional emergency authorities confirmed fires at two industrial facilities in the district. Falling debris damaged a gas pipeline and residential buildings, injuring nine people in Seversky District and four more in the nearby settlement of Enem in Adygea. With an annual capacity of 6.25 million tons of oil—over 2% of Russia's total refining—Afipsky supplies fuel to the Russian armed forces.",
+      "source": "AFU General Staff, ASTRA, @ASupersharij, Exilenova+, Supernova+, Crimeanwind"
+    },
+    "images": [
+      "images/afipsky_1811_img1.jpg",
+      "images/afipsky_1811_img2.jpg",
+      "images/afipsky_1811_img3.jpg"
+    ],
+    "video": [
+      "video/afipsky_1811_vid1.mp4",
+      "video/afipsky_1811_vid2.mp4"
+    ],
+    "id": 594
+  },
+  {
+    "date": "18.11.2026",
+    "lat": 44.8533,
+    "lng": 38.5684,
+    "distance": 424,
+    "ru": {
+      "region": "Краснодарский край, Северский район, пгт Ильский",
+      "target": "Ильский НПЗ (ООО «КНГК-ИНПЗ»)",
+      "category": "Нефтегаз",
+      "weapon": "Ударные БПЛА (1-й отдельный центр СБС)",
+      "details": "Утром 18 ноября 2026 года операторы 1-го отдельного центра Сил беспилотных систем во взаимодействии с другими подразделениями Сил обороны Украины повторно нанесли удар по Ильскому нефтеперерабатывающему заводу в Северском районе Краснодарского края. Атака началась около 04:40 утра, после чего на территории предприятия прогремели взрывы, вспыхнул пожар и поднялся густой столб черного дыма. По данным Генштаба ВСУ, в районе завода зафиксированы возгорания и повреждены резервуары с нефтепродуктами. Ильский НПЗ — одно из крупнейших нефтеперерабатывающих предприятий юга России мощностью около 6,6 млн тонн нефти в год. Завод выпускает бензин и дизельное топливо и играет важную роль в снабжении российских войск, действующих на южном направлении.",
+      "source": "Генштаб ВСУ, СБС ВСУ, ASTRA, Exilenova+, Supernova+, Оперативний ЗСУ"
+    },
+    "uk": {
+      "region": "Краснодарський край, Сіверський район, смт Ільський",
+      "target": "Ільський НПЗ (ТОВ «КНГК-ІНПЗ»)",
+      "category": "Нафтогаз",
+      "weapon": "Ударні БпЛА (1-й окремий центр СБС)",
+      "details": "Уранці 18 листопада 2026 року оператори 1-го окремого центру Сил безпілотних систем у взаємодії з іншими складовими Сил оборони України повторно завдали удару по Ільському нафтопереробному заводу в Сіверському районі Краснодарського краю. Атака розпочалася близько 04:40 ранку, після чого на території підприємства пролунали вибухи, спалахнула пожежа та піднявся густий стовп чорного диму. За даними Генштабу ЗСУ, в районі заводу зафіксовано займання й уражено резервуари з нафтопродуктами. Ільський НПЗ — одне з найбільших нафтопереробних підприємств півдня Росії потужністю близько 6,6 млн тонн нафти на рік. Завод виробляє бензин і дизельне пальне та відіграє важливу роль у забезпеченні російських військ, що діють на південному напрямку.",
+      "source": "Генштаб ЗСУ, СБС ЗСУ, ASTRA, Exilenova+, Supernova+, Оперативний ЗСУ"
+    },
+    "en": {
+      "region": "Krasnodar Krai, Seversky District, Ilsky",
+      "target": "Ilsky Oil Refinery (KNGK-INPZ LLC)",
+      "category": "Oil & Gas",
+      "weapon": "Strike UAVs (1st Separate Center of USF)",
+      "details": "Early on November 18, 2026, operators of the 1st Separate Center of Ukraine's Unmanned Systems Forces, in coordination with other Defense Forces units, struck the Ilsky Oil Refinery in the Seversky District of Krasnodar Krai. The drone attack began around 04:40 AM, triggering explosions, open flames, and a thick column of black smoke over the facility. According to the General Staff of the Armed Forces of Ukraine, storage tanks were damaged and fires broke out on site. With an annual refining capacity of roughly 6.6 million tons of crude oil, Ilsky is one of the largest refineries in southern Russia. It produces gasoline and diesel fuel and serves as a key supplier for Russian military groupings operating along the southern front.",
+      "source": "AFU General Staff, USF, ASTRA, Exilenova+, Supernova+, Operatyvnyi ZSU"
+    },
+    "images": [
+      "images/ilsky_1811_img1.jpg",
+      "images/ilsky_1811_img2.jpg",
+      "images/ilsky_1811_img3.jpg",
+      "images/ilsky_1811_img4.jpg"
+    ],
+    "video": [
+      "video/ilsky_1811_vid1.mp4",
+      "video/ilsky_1811_vid2.mp4"
+    ],
+    "id": 593
+  },
+  {
     "date": "17.11.2026",
     "lat": 54.9333,
     "lng": 56.0667,
